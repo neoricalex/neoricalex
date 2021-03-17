@@ -1,4 +1,4 @@
- A compilação vai iniciar em 4 segundos... A compilação vai iniciar em 3 segundos... A compilação vai iniciar em 2 segundos... A compilação vai iniciar em 1 segundos... A compilação vai iniciar em 0 segundos...
+ A compilação vai iniciar em 5 segundos... A compilação vai iniciar em 4 segundos... A compilação vai iniciar em 3 segundos... A compilação vai iniciar em 2 segundos... A compilação vai iniciar em 1 segundos... A compilação vai iniciar em 0 segundos...
 
 Detalhes do desktop:
 
@@ -8,6 +8,11 @@ Número de CPU(s): 8
 Virtualização: AMD-V    
 Modo(s) operacional da CPU: 32-bit, 64-bit
 
+    VPS_DEV: Are you sure you want to destroy the 'VPS_DEV' VM? [y/N] N
+==> VPS_DEV: The VM 'VPS_DEV' will not be destroyed, since the confirmation
+==> VPS_DEV: was declined.
+./compilar.sh: linha 45: hub.com/neoricalex/baseimage-docker.git: Arquivo ou diretório inexistente
+./compilar.sh: linha 46: cd: vps: Arquivo ou diretório inexistente
     VPS_DEV: Are you sure you want to destroy the 'VPS_DEV' VM? [y/N] N
 ==> VPS_DEV: The VM 'VPS_DEV' will not be destroyed, since the confirmation
 ==> VPS_DEV: was declined.
@@ -21,9 +26,9 @@ Welcome to Ubuntu 20.04.2 LTS (GNU/Linux 5.4.0-67-generic x86_64)
  * Management:     https://landscape.canonical.com
  * Support:        https://ubuntu.com/advantage
 
-  System information as of Wed Mar 17 21:42:56 UTC 2021
+  System information as of Wed Mar 17 22:17:53 UTC 2021
 
-  System load:  0.36               Processes:                153
+  System load:  0.0                Processes:                153
   Usage of /:   11.2% of 38.71GB   Users logged in:          0
   Memory usage: 10%                IPv4 address for docker0: 172.17.0.1
   Swap usage:   0%                 IPv4 address for enp0s3:  10.0.2.15
@@ -50,7 +55,7 @@ Get:2 http://security.ubuntu.com/ubuntu focal-security InRelease [109 kB]
 Hit:3 http://archive.ubuntu.com/ubuntu focal InRelease
 Get:4 http://archive.ubuntu.com/ubuntu focal-updates InRelease [114 kB]
 Get:5 http://archive.ubuntu.com/ubuntu focal-backports InRelease [101 kB]
-Fetched 324 kB in 2s (161 kB/s)
+Fetched 324 kB in 2s (160 kB/s)
 Reading package lists...
 Building dependency tree...
 Reading state information...

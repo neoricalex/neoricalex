@@ -28,6 +28,9 @@ sec=10
 
 echo ""
 echo ""
+agora=$(date +"%c")
+echo "Compilação iniciada $agora"
+echo ""
 echo "Detalhes do $HOSTNAME:" 
 echo ""
 echo "$(lscpu | awk 'NR==14{print $1 " " $2 " " $3 " " $4 " " $5 " " $6; exit}')"
