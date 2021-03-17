@@ -7,6 +7,8 @@ if [ "$usuario" == "neo@desktop" ]; then
         vagrant cloud publish \
         --box-version $NFDOS_VERSAO \
         --release \
+        --short-description "Ubuntu from scratch coded with Portuguese Language" \
+        --version-description
         neoricalex/nfdos $NFDOS_VERSAO virtualbox \
         vps/nfdos/desktop/vagrant/NFDOS-$NFDOS_VERSAO.box # --force --debug
         vagrant cloud auth logout
