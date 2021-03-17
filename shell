@@ -9,12 +9,9 @@ instalar_requerimentos(){
         autoconf \
         make \
         tmux \
-        git \
-        virtualbox
+        git
 
     versao_vagrant_atual="2.2.9"
-    versao_vagrant_instalada=$(vagrant --version | awk 'NR==1{print $2; exit}')
-
     if ! command -v vagrant &> /dev/null   
     then
         sudo apt install virtualbox -y 
@@ -23,6 +20,7 @@ instalar_requerimentos(){
         rm ./vagrant_${versao_vagrant_atual}_x86_64.deb
     fi
 
+    versao_vagrant_instalada=$(vagrant --version | awk 'NR==1{print $2; exit}')
     if [ -z "$versao_vagrant_instalada" ]
     then
         versao_vagrant_instalada=$versao_vagrant_atual
