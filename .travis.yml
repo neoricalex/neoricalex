@@ -1,7 +1,7 @@
 dist: focal
 language: minimal
 
-install: sudo apt-get update && sudo apt upgrade -y && sudo apt-get install -y libreadline-dev zlib1g-dev && sudo apt install ruby rbenv ruby-build -y && sudo rbenv install 2.7.1 && sudo rbenv global 2.7.1 && sudo gem install nokogiri && sudo apt-get install -y dnsmasq-base ebtables libvirt-dev qemu-kvm libvirt-daemon-system libvirt-clients bridge-utils qemu-utils ruby-dev && wget -nv https://releases.hashicorp.com/vagrant/2.2.7/vagrant_2.2.7_x86_64.deb && sudo dpkg -i vagrant_2.2.7_x86_64.deb && vagrant --version && vagrant plugin install vagrant-libvirt
+install: sudo apt-get update && sudo apt upgrade -y && sudo apt-get install -y libreadline-dev zlib1g-dev && sudo apt install ruby rbenv ruby-build -y && sudo rbenv install 2.7 && sudo rbenv global 2.7 && sudo gem install nokogiri && sudo apt-get install -y dnsmasq-base ebtables libvirt-dev qemu-kvm libvirt-daemon-system libvirt-clients bridge-utils qemu-utils ruby-dev && wget -nv https://releases.hashicorp.com/vagrant/2.2.7/vagrant_2.2.7_x86_64.deb && sudo dpkg -i vagrant_2.2.7_x86_64.deb && vagrant --version && vagrant plugin install vagrant-libvirt
 
 script:
   - vagrant up --provider=libvirt
