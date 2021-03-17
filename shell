@@ -1,0 +1,35 @@
+#!/bin/bash
+
+instalar_requerimentos(){
+    echo "Atualizar repositórios e instalar requerimentos..."
+    sudo apt update
+    sudo apt install -y \
+        build-essential \
+        autoconf \
+        make \
+        virtualbox \
+        tmux \
+        git
+
+    if ! command -v vagrant &> /dev/null
+    then
+        versao_vagrant="2.2.9"
+        sudo apt update && sudo apt upgrade -y 
+        sudo apt install virtualbox -y 
+        curl -O https://releases.hashicorp.com/vagrant/${versao_vagrant}/vagrant_${versao_vagrant}_x86_64.deb
+        sudo apt install ./vagrant_${versao_vagrant}_x86_64.deb
+        vagrant plugin install vagrant-disksize
+    fi
+    
+}
+
+instalar_requerimentos
+
+if [ ! -f "src/neoricalex.o" ] ; then
+    autoreconf --install
+    ./configure
+    make
+    #make distcheck
+fi
+
+src/neoricalex

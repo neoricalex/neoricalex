@@ -1,0 +1,8 @@
+# Ver opções: https://github.com/pi-hole/docs/blob/master/mkdocs.yml
+site_name: NEORICALEX
+nav:
+    - Home: 'index.md'
+    - Sobre:
+        - 'README': 'README.md'
+        - 'Licença': 'license.md'
+theme: readthedocs

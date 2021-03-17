@@ -1,0 +1,26 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.configure("2") do |config|
+
+	config.vm.define "VPS"
+	config.vm.box = "neoricalex/nfdos"
+	config.vm.box_version = "0.4.4"
+	config.vm.hostname  = "vps"
+	config.ssh.username = "neoricalex"
+	config.ssh.password = "neoricalex"
+	config.disksize.size = '100GB' 
+
+	config.vm.provider "virtualbox" do |vb|
+		vb.customize ["modifyvm", :id, "--graphicscontroller", "vmsvga"]
+		vb.customize ["modifyvm", :id, "--nested-hw-virt", "on"]
+		vb.customize ["modifyvm", :id, "--nestedpaging", "on"]
+		vb.name		= "VPS_STAGING"
+		vb.memory	= "4096"
+		vb.cpus   	= "3"
+	end
+
+	config.vm.provision :shell,
+	  path: "vagrant-libs/bootstrap.sh"
+	end
+  
