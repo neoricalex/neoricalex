@@ -38,23 +38,23 @@ bash shell
 ## Roadmap
 
 ### Ambiente de Desenvolvimento
-#### Fase Inicial: Criação da imagem ISO e do VPS
+#### Fase Inicial: Criação da imagem ISO do NFDOS e do VPS
 - [x] Criar um Sistema de LOG
-- [x] Criar a imagem ISO do NFDOS 
-- [x] Criar uma BOX Vagrant com o NFDOS instalado
 - [x] Criar um VPS para uma reprodução fidedigna, em qualquer que seja o cliente
-  - [x] Criar um chroot ubuntu:focal
+  - [x] Criar a imagem ISO do NFDOS 
+  - [x] Criar uma BOX Vagrant com o NFDOS instalado
+  - [x] Criar um chroot para o docker (ubuntu:focal)
   - [x] Criar a imagem base docker do chroot
   - [x] Enviar para o docker hub (neoricalex/nfdos) a imagem base
   - [x] Enviar a BOX com o NFDOS instalado para a Vagrant Cloud (neoricalex/nfdos)
-  - [x] Criar o VPS baseado na imagem base docker (neoricalex/nfdos), e BOX Vagrant (neoricalex/nfdos) com o NFDOS instalado 
+  - [x] Compilar o VPS baseado na BOX Vagrant (neoricalex/nfdos), com o NFDOS instalado, e pré-configurado com a imagem base docker (neoricalex/nfdos). 
 
 #### Segunda Fase: Configuração base do VPS
 - [x] Instalar o QEMU/KVM no VPS
 - [ ] Instalar o Docker Engine, Docker Compose & Docker Machine no VPS
   - [ ] Criar um Cluster Docker Swarm
     - [ ] Criar um container master from scratch
-    - [ ] Criar uma Docker Machine Master Remota (Digital Ocean)
+    - [ ] Criar uma Docker Machine Master Remota (Digital Ocean, IBM, Google, Azure, AWS, Etc...)
     - [ ] Criar uma Docker Machine Leader Local (No VPS)
       - [ ] Criar um container para a Documentação do Projeto
       - [ ] Criar um container Docker Registry Local (No VPS)
@@ -86,8 +86,14 @@ bash shell
     - [ ] Container Wordpress
       - [ ] Maiores infos em breve
 
+### Ambiente de Homologação
+Maiores infos em breve
+
+### Ambiente de Produção
+Maiores infos em breve
+
 ## O que são os projetos NEORICALEX & NFDOS
-Embora completamente interligados, o NEORICALEX e NFDOS são dois projetos diferentes.
+Embora completamente interligados, o NFDOS e NEORICALEX são dois projetos diferentes.
 
 ### NFDOS
 O NFDOS significa Neo Free Disk Operating System, e é um Sistema Operativo criado do zero.
