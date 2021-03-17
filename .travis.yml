@@ -3,16 +3,16 @@ dist: bionic
 language: python
 
 before_install:
-  - sudo apt-get update
+  - apt-get update
 
-install: sudo apt-get update && \
-  sudo apt-get install -y \
+install: apt-get update && \
+  apt-get install -y \
     bridge-utils dnsmasq-base ebtables libvirt-bin libvirt-dev qemu-kvm qemu-utils ruby-dev && \
-  sudo wget -nv https://releases.hashicorp.com/vagrant/2.2.7/vagrant_2.2.7_x86_64.deb && \
-  sudo dpkg -i vagrant_2.2.7_x86_64.deb && \
+  wget -nv https://releases.hashicorp.com/vagrant/2.2.7/vagrant_2.2.7_x86_64.deb && \
+  dpkg -i vagrant_2.2.7_x86_64.deb && \
   vagrant --version && \
-  sudo vagrant plugin install vagrant-libvirt
+  vagrant plugin install vagrant-libvirt
 
 script:
-  - sudo vagrant up --provider=libvirt
-  - sudo vagrant ssh -c "echo 'hello world!'"
+  - vagrant up --provider=libvirt
+  - vagrant ssh -c "echo 'hello world!' && ls"
