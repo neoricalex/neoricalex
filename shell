@@ -9,9 +9,10 @@ instalar_requerimentos(){
         autoconf \
         make \
         tmux \
-        git
+        git \
+        virtualbox
 
-    versao_vagrant_atual="2.2.14"
+    versao_vagrant_atual="2.2.9"
     versao_vagrant_instalada=$(vagrant --version | awk 'NR==1{print $2; exit}')
 
     if ! command -v vagrant &> /dev/null   
