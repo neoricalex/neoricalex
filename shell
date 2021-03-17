@@ -56,5 +56,5 @@ fi
 src/neoricalex
 
 # sudo apt install ruby
-# sudo gem install travis
+# sudo gem install travis nokogiri
 # travis lint

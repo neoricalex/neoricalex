@@ -8,7 +8,7 @@ if [ "$usuario" == "neo@desktop" ]; then
         --box-version $NFDOS_VERSAO \
         --release \
         --short-description "Ubuntu from scratch coded with Portuguese Language" \
-        --version-description
+        --version-description "Adicionar late_command do d-i"
         neoricalex/nfdos $NFDOS_VERSAO virtualbox \
         vps/nfdos/desktop/vagrant/NFDOS-$NFDOS_VERSAO.box # --force --debug
         vagrant cloud auth logout
