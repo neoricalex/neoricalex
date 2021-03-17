@@ -1,6 +1,6 @@
 # NEORICALEX
 
-[![Build Status](https://travis-ci.org/neoricalex/neoricalex.svg?branch=master)](https://travis-ci.org/neoricalex/neoricalex)
+[![Build Status](https://www.travis-ci.com/neoricalex/neoricalex.svg?branch=master)](https://www.travis-ci.com/neoricalex/neoricalex)
 
 ## Início Rápido
 

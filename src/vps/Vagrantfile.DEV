@@ -1,0 +1,58 @@
+Vagrant.configure('2') do |config|
+
+    if ARGV[1] == 'confluence'
+        ARGV.delete_at(1)
+        confluence = true
+    else
+        confluence = false
+    end
+
+    config.vm.provider :virtualbox do |virtualbox, override|
+
+        #virtualbox.gui = true
+
+        virtualbox.customize ["modifyvm", :id, "--natdnshostresolver1", "on"]
+        virtualbox.customize ["modifyvm", :id, "--memory", 512]
+
+        override.vm.box = 'Ubuntu 12.10 x64 Server'
+        override.vm.box_url = 'http://goo.gl/wxdwM'
+
+    end
+
+    if confluence == false
+
+        config.vm.define :normal1 do |normal1|
+
+            normal1.vm.hostname = 'normal1'
+            normal1.vm.network :private_network, ip: "192.168.1.1"
+
+        end
+
+        config.vm.define :normal2 do |normal2|
+
+            normal2.vm.hostname = 'normal2'
+            normal2.vm.network :private_network, ip: "192.168.1.2"
+
+        end
+
+    end
+
+    if confluence == true
+
+        config.vm.define :confluence1 do |confluence1|
+
+            confluence1.vm.hostname = 'confluence1'
+            confluence1.vm.network :private_network, ip: "192.168.1.3"
+
+        end
+
+        config.vm.define :confluence2 do |confluence2|
+
+            confluence2.vm.hostname = 'confluence2'
+            confluence2.vm.network :private_network, ip: "192.168.1.4"
+
+        end
+
+    end
+
+end
