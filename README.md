@@ -5,7 +5,7 @@
 ### Requisitos
 
 * Uma Distribuição Linux Ubuntu >= 18.04 LTS
-* Um computador compatível com ambientes virtualizados, com capacidade mínima de uma máquina virtual com 4096 de RAM
+* Um computador compatível com ambientes virtualizados, com capacidade mínima de uma máquina virtual com 4096 de RAM, 100 GB de espaço em disco, e 3 CPU's
 
 ### AVISO: USE POR SUA PRÓPRIA CONTA E RISCO
 
@@ -50,6 +50,7 @@ bash shell
   - [x] Compilar o VPS baseado na BOX Vagrant (neoricalex/nfdos), com o NFDOS instalado, e pré-configurado com a imagem base docker (neoricalex/nfdos). 
 
 #### Segunda Fase: Configuração base do VPS
+- [ ] Criar um Workflow: VPS_DEV >> VPS_STAGING >> VPS_PROD
 - [x] Instalar o QEMU/KVM no VPS
 - [ ] Instalar o Docker Engine, Docker Compose & Docker Machine no VPS
   - [ ] Criar um Cluster Docker Swarm

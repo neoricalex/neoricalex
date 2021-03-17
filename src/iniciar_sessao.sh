@@ -1,7 +1,8 @@
 #!/bin/bash
 
-# NEORICALEX
+# Variáveis de Ambiente
 export NEORICALEX_HOME=$(pwd)
+export NFDOS_VERSAO="0.4.4"
 
 # Checkando se o ~/.tmux.conf existe
 if [ ! -f "~/.tmux.conf" ]; then
@@ -23,15 +24,15 @@ if [ ! -d "$log_original" ] ; then
     git clone $github_log $log_original
 fi
 
-compilar(){
+iniciar_desenvolvimento(){
     if ! tmux has-session -t nfdos 2>/dev/null; then
-        tmux new-session -s nfdos bash "$NEORICALEX_HOME/compilar.sh"
+        tmux new-session -s nfdos bash "$NEORICALEX_HOME/iniciar_desenvolvimento.sh"
     fi
     tmux kill-session -t nfdos
     echo ""
     echo "Tempo de compilação:"
 }
 
-time compilar
+time iniciar_desenvolvimento
 
 cat *.log

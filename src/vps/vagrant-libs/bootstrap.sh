@@ -31,11 +31,6 @@ wget https://download.virtualbox.org/virtualbox/6.1.18/Oracle_VM_VirtualBox_Exte
 sudo vboxmanage extpack install Oracle_VM_VirtualBox_Extension_Pack-6.1.18.vbox-extpack --accept-license=33d7284dc4a0ece381196fda3cfe2ed0e1e8e7ed7f27b9a9ebc4ee22e24bd23c
 rm Oracle_VM_VirtualBox_Extension_Pack-6.1.18.vbox-extpack
 
-# Instalar o QEMU
-sudo apt install -y qemu-kvm libvirt-daemon-system libvirt-clients bridge-utils virtinst virt-manager
-sudo usermod -aG libvirt neoricalex
-sudo usermod -aG kvm neoricalex
-
 # Instalar o Docker
 sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
@@ -51,4 +46,4 @@ echo '{"experimental": true}' > /etc/docker/daemon.json
 service docker restart
 
 # Adicionar o usuário neoricalex ao grupo docker
-sudo usermod -aG docker neoricalex
+sudo usermod -aG docker neo

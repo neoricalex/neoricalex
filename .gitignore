@@ -1,4 +1,4 @@
-.circleci/
+.circleci
 
 autom4te.cache/
 backup/

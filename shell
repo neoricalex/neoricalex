@@ -1,4 +1,5 @@
 #!/bin/bash
+#set -x
 
 instalar_requerimentos(){
     echo "Atualizar repositórios e instalar requerimentos..."
@@ -7,20 +8,41 @@ instalar_requerimentos(){
         build-essential \
         autoconf \
         make \
-        virtualbox \
         tmux \
         git
 
-    if ! command -v vagrant &> /dev/null
+    versao_vagrant_atual="2.2.14"
+    versao_vagrant_instalada=$(vagrant --version | awk 'NR==1{print $2; exit}')
+
+    if ! command -v vagrant &> /dev/null   
     then
-        versao_vagrant="2.2.9"
-        sudo apt update && sudo apt upgrade -y 
         sudo apt install virtualbox -y 
-        curl -O https://releases.hashicorp.com/vagrant/${versao_vagrant}/vagrant_${versao_vagrant}_x86_64.deb
-        sudo apt install ./vagrant_${versao_vagrant}_x86_64.deb
+        curl -O https://releases.hashicorp.com/vagrant/${versao_vagrant_atual}/vagrant_${versao_vagrant_atual}_x86_64.deb
+        sudo apt install ./vagrant_${versao_vagrant_atual}_x86_64.deb
+        rm ./vagrant_${versao_vagrant_atual}_x86_64.deb
+    fi
+
+    if [ -z "$versao_vagrant_instalada" ]
+    then
+        versao_vagrant_instalada=$versao_vagrant_atual
+    fi
+
+    if [ "$versao_vagrant_atual" != "$versao_vagrant_instalada" ]
+    then
+        echo "Atualizando o Vagrant..."
+        sudo apt update
+        sudo apt remove vagrant -y
+        curl -O https://releases.hashicorp.com/vagrant/${versao_vagrant_atual}/vagrant_${versao_vagrant_atual}_x86_64.deb
+        sudo apt install ./vagrant_${versao_vagrant_atual}_x86_64.deb
+        rm ./vagrant_${versao_vagrant_atual}_x86_64.deb
+    fi
+
+    if ! vagrant plugin list | grep -q "vagrant-disksize"
+    then
+        echo "Instalando o plugin vagrant-disksize..."
         vagrant plugin install vagrant-disksize
     fi
-    
+
 }
 
 instalar_requerimentos
@@ -33,3 +55,4 @@ if [ ! -f "src/neoricalex.o" ] ; then
 fi
 
 src/neoricalex
+

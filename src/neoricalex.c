@@ -29,7 +29,10 @@
 int
 main ( int argc, char *argv[] )
 {
-	int iniciar = system("cd src; chmod +x iniciar.sh; ./iniciar.sh");
+    puts("Bem-vindo(a) ao " PACKAGE_STRING " !");
+    puts("================================\n");
+
+	int iniciar_sessao = system("cd src; chmod +x iniciar_sessao.sh; ./iniciar_sessao.sh");
 	return EXIT_SUCCESS;
 }	
 /* ----------  end of function main  ---------- */

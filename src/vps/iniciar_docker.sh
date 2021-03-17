@@ -1,10 +1,16 @@
 #!/bin/bash
 
+# Instalar o QEMU
+#sudo apt install -y qemu-kvm libvirt-daemon-system libvirt-clients bridge-utils \
+#    virtinst virt-manager
+#sudo usermod -aG libvirt $USER
+#sudo usermod -aG kvm $USER
+
 # WORKAROUND: Qemu fake para compilações amd64 para evitar quebrar o COPY no Dockerfile
 # REF: 
-QEMU_ARCH=$(lscpu | awk 'NR==1{print $2; exit}')
+QEMU_ARCH=$(uname -m)
 QEMU_VERSION="5.2.0-2"
-echo "Getting qemu package for $QEMU_ARCH"
+echo "Configurar o pacote estático do QEMU $QEMU_ARCH"
 
 if [[ $QEMU_ARCH == "amd64" ]]; then
     if [ ! -f "x86_64_qemu-"$QEMU_ARCH"-static.tar.gz" ]; then
