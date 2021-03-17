@@ -11,7 +11,7 @@ if [ "$usuario" == "neo@desktop" ]; then
         vps/nfdos/desktop/vagrant/NFDOS-$NFDOS_VERSAO.box # --force --debug
         vagrant cloud auth logout
 fi
-
+vagrant cloud publish --box-version 0.4.4 --release neoricalex/nfdos 0.4.4 virtualbox src/vps/nfdos/desktop/vagrant/NFDOS-0.4.4.box
 echo "OK"
 sleep 10
 exit
