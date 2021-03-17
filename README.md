@@ -1,5 +1,7 @@
 # NEORICALEX
 
+[![Build Status](https://travis-ci.org/neoricalex/neoricalex.svg?branch=master)](https://travis-ci.org/neoricalex/neoricalex)
+
 ## Início Rápido
 
 ### Requisitos
