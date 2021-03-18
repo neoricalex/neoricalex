@@ -3,19 +3,19 @@
 criar_vps_base(){
     echo "[DEBUG] VPS_BASE: OK!"
     echo "$USER@$HOSTNAME"
-    sleep 5
-    exit
 }
 
 criar_vps_dev(){
     echo "[DEBUG] VPS_DEV: OK!"
     echo "$USER@$HOSTNAME"
+    shopt +s extglob
     sleep 5
     exit
 }
 
+
 case $HOSTNAME in
-  (vagrant) criar_vps_base;;
+  (travis-job-*) criar_vps_base;;
   (*)   criar_vps_dev;;
 esac
 exit
