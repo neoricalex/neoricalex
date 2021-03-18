@@ -38,6 +38,7 @@ Vagrant.configure('2') do |config|
             vps_travis.vm.hostname = 'vps_travis'
             vps_travis.vm.define "VPS_BASE"
             vps_travis.vm.box = "ubuntu/focal64"
+            vps_travis.disksize.size = "100GB"
         end
     end
 end
