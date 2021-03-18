@@ -1,8 +1,12 @@
 Vagrant.configure('2') do |config|
 
-    if ARGV[1] == 'travis'
-        ARGV.delete_at(1)
-        travis = true
+    config.vm.provision "shell" do |s|
+        s.inline = %Q(/usr/bin/env    \
+          TRAVIS=#{ENV['TRAVIS']})
+    end
+    
+    if ENV['TRAVIS'] == '1'
+         travis = true
     else
         travis = false
     end
@@ -37,7 +41,8 @@ Vagrant.configure('2') do |config|
         config.vm.define :VPS_TRAVIS do |vps_travis|
             vps_travis.vm.hostname = 'vps_travis'
             vps_travis.vm.define "VPS_BASE"
-            vps_travis.vm.box = "ubuntu/focal64"
+            vps_travis.vm.box = "generic/ubuntu1804"
+            vps_travis.vm.boot_timeout = 1800
             vps_travis.disksize.size = "100GB"
         end
     end

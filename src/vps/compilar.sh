@@ -15,8 +15,7 @@ EOF
 }
 
 compilar_travis(){
-    vagrant destroy --force
-    vagrant up --travis --provider=libvirt
+     TRAVIS=1 vagrant up --provider=libvirt
     vagrant ssh <<EOF
 #!/bin/bash
 cd /vagrant
