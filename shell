@@ -60,8 +60,8 @@ iniciar_neoricalex(){
 iniciar_neoricalex_travis(){
     instalar_requerimentos
     cd src/vps
-    chmod +x compilar.sh
-    ./compilar.sh
+    sudo chmod +x compilar.sh
+    sudo ./compilar.sh
 }
 
 case $HOSTNAME in
