@@ -44,7 +44,7 @@ echo ""
 # REF: https://github.com/neoricalex/baseimage-docker.git
 cd vps
 
-( echo "y"; ) | vagrant destroy
+# vagrant destroy
 vagrant up
 vagrant ssh <<EOF
 #!/bin/bash
