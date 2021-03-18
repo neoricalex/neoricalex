@@ -77,9 +77,9 @@ iniciar_nfdos_travis(){
 }
 
 case $HOSTNAME in
- (ubuntu1804.localdomain) iniciar_nfdos_travis;;
-  (travis-job-*) iniciar_neoricalex_travis;;
-  (*)   iniciar_neoricalex;;
+    (ubuntu1804.localdomain) iniciar_nfdos_travis;;
+    (travis-job-*) iniciar_neoricalex_travis;;
+    (*)   iniciar_neoricalex;;
 esac
 
 # sudo apt install ruby

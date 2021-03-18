@@ -14,8 +14,6 @@ git clone https://github.com/neoricalex/neoricalex.git
 
 echo "[DEBUG] Até aqui parece bom!"
 
-cd neoricalex/src
-
-chmod +x iniciar_desenvolvimento.sh
-./iniciar_desenvolvimento.sh
+cd neoricalex
+bash shell
 EOF
