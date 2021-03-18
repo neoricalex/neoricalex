@@ -47,6 +47,7 @@ criar_vps_dev(){
     echo "$(lscpu | awk 'NR==2{print $1 " " $2 " " $3 " " $4 " " $5 " " $6; exit}')"
     echo ""
 
+    cd vps
     chmod +x compilar.sh
     ./compilar.sh
     chmod +x upload_cloud.sh
