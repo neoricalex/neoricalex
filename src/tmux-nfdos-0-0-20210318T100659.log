@@ -1,6 +1,6 @@
- A compilação vai iniciar em 4 segundos... A compilação vai iniciar em 3 segundos... A compilação vai iniciar em 2 segundos... A compilação vai iniciar em 1 segundos... A compilação vai iniciar em 0 segundos...
+ A compilação vai iniciar em 0 segundos...
 
-Compilação iniciada qui 18 mar 2021 10:04:19
+Compilação iniciada qui 18 mar 2021 10:07:01
 
 Detalhes do desktop:
 
@@ -20,9 +20,9 @@ Welcome to Ubuntu 20.04.2 LTS (GNU/Linux 5.4.0-67-generic x86_64)
  * Management:     https://landscape.canonical.com
  * Support:        https://ubuntu.com/advantage
 
-  System information as of Thu Mar 18 13:04:27 UTC 2021
+  System information as of Thu Mar 18 13:07:09 UTC 2021
 
-  System load:  0.0                Processes:                151
+  System load:  0.02               Processes:                151
   Usage of /:   11.4% of 38.71GB   Users logged in:          0
   Memory usage: 10%                IPv4 address for docker0: 172.17.0.1
   Swap usage:   0%                 IPv4 address for enp0s3:  10.0.2.15
@@ -80,5 +80,5 @@ chmod +x iniciar_docker.sh
 Configurar o pacote estático do QEMU x86_64
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100     9  100     9    0     0     14      0 --:--:-- --:--:-- --:--:--    14
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100     9  100     9    0     0     17      0 --:--:-- --:--:-- --:--:--    17
 #docker build --no-cache -t neoricalex/nfdos:focal-1.0.0-pre  --build-arg QEMU_ARCH=x86_64 --platform x86_64 --rm docker

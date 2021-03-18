@@ -40,19 +40,19 @@ bash shell
 ## Roadmap
 
 ### Ambiente de Desenvolvimento
-#### Fase Inicial: Criação da imagem ISO do NFDOS e do VPS
+#### Fase Inicial: Criação de um VPS Desenvolvimento (VPS_DEV)
 - [x] Criar um Sistema de LOG
-- [x] Criar um VPS para uma reprodução fidedigna, em qualquer que seja o cliente
+- [x] Instalar o Vagrant
+- [x] Criar uma BOX Vagrant
   - [x] Criar a imagem ISO do NFDOS 
   - [x] Criar uma BOX Vagrant com o NFDOS instalado
-  - [x] Criar um chroot para o docker (ubuntu:focal)
-  - [x] Criar a imagem base docker do chroot
-  - [x] Enviar para o docker hub (neoricalex/nfdos) a imagem base
-  - [x] Enviar a BOX com o NFDOS instalado para a Vagrant Cloud (neoricalex/nfdos)
-  - [x] Compilar o VPS baseado na BOX Vagrant (neoricalex/nfdos), com o NFDOS instalado, e pré-configurado com a imagem base docker (neoricalex/nfdos). 
+  - [x] Enviar para a Vagrant Cloud a BOX com o NFDOS Instalado (neoricalex/nfdos)
+- [x] Criar o VPS_DEV baseado na box neoricalex/nfdos
 
-#### Segunda Fase: Configuração base do VPS
-- [ ] Instalar o QEMU/KVM no VPS
+#### Segunda Fase: Configuração base do VPS_DEV
+- [ ] Criar um chroot para o docker (ubuntu:focal)
+- [ ] Criar a imagem base docker do chroot
+- [ ] Enviar para o docker hub (neoricalex/nfdos) a imagem base 
 - [ ] Instalar o Docker Engine, Docker Compose & Docker Machine no VPS
   - [ ] Criar um Cluster Docker Swarm
     - [ ] Criar um container master from scratch
