@@ -15,9 +15,9 @@ EOF
 }
 
 compilar_travis(){
-    sudo vagrant destroy --force
-    sudo vagrant up travis --provider=libvirt
-    sudo vagrant ssh <<EOF
+    vagrant destroy --force
+    vagrant up --travis --provider=libvirt
+    vagrant ssh <<EOF
 #!/bin/bash
 cd /vagrant
 make vps
