@@ -52,7 +52,6 @@ bash shell
   - [x] Compilar o VPS baseado na BOX Vagrant (neoricalex/nfdos), com o NFDOS instalado, e pré-configurado com a imagem base docker (neoricalex/nfdos). 
 
 #### Segunda Fase: Configuração base do VPS
-- [ ] Criar um Workflow: VPS_DEV >> VPS_STAGING >> VPS_PROD
 - [ ] Instalar o QEMU/KVM no VPS
 - [ ] Instalar o Docker Engine, Docker Compose & Docker Machine no VPS
   - [ ] Criar um Cluster Docker Swarm
@@ -68,6 +67,7 @@ bash shell
       - [ ] Criar um container Wordpress
 
 #### Terceira Fase: Desenvolvimento dos Projetos NEORICALEX & NFDOS
+- [ ] Criar um Workflow: VPS_DEV >> VPS_STAGING >> VPS_PROD
 - [ ] Cluster Docker Swarm
   - [ ] Container master from scratch
     - [ ] Maiores infos em breve

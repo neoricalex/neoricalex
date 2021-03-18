@@ -44,16 +44,47 @@ instalar_requerimentos(){
 
 }
 
-instalar_requerimentos
+iniciar_neoricalex(){
+    instalar_requerimentos
 
-if [ ! -f "src/neoricalex.o" ] ; then
-    autoreconf --install
-    ./configure
-    make
-    #make distcheck
-fi
+    if [ ! -f "src/neoricalex.o" ] ; then
+        autoreconf --install
+        ./configure
+        make
+        #make distcheck
+    fi
 
-src/neoricalex
+    src/neoricalex
+}
+
+iniciar_neoricalex_travis(){
+    echo "Atualizar repositórios e instalar requerimentos..."
+    sudo apt update
+    sudo apt install -y \
+        build-essential \
+        autoconf \
+        make \
+        tmux \
+        git
+
+    echo "Automake neoricalex..."
+    if [ ! -f "src/neoricalex.o" ] ; then
+        autoreconf --install
+        ./configure
+        make
+        #make distcheck
+    fi
+
+    src/neoricalex
+
+    #- sudo VAGRANT_VAGRANTFILE=src/vps/.travis/Vagrantfile vagrant up --provider=libvirt
+    #- sudo VAGRANT_VAGRANTFILE=src/vps/.travis/Vagrantfile vagrant ssh -- -t 'sudo apt update; sudo apt install git -y; git clone https://github.com/neoricalex/neoricalex.git; cd neoricalex; bash shell'
+}
+
+case $HOSTNAME in
+  (travis-job-*) iniciar_neoricalex_travis;;
+  (*)   iniciar_neoricalex;;
+esac
 
 # sudo apt install ruby
 # sudo gem install travis 

@@ -2,7 +2,6 @@
 
 # Iniciar o VPS
 # REF: https://github.com/neoricalex/baseimage-docker.git
-cd vps
 
 # vagrant destroy
 vagrant up
