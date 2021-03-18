@@ -51,7 +51,7 @@ bash shell
   - [x] Enviar para a Vagrant Cloud a .box (NFDOS-x.x.x.box) com o NFDOS Instalado (neoricalex/nfdos)
 - [x] Criar o VPS_DEV baseado na box neoricalex/nfdos
 
-##### Criação de um VPS de Teste (VPS_TESTE) no Travis
+##### Criação de um Ambiente de Integração Contínua (CI) no Travis (VPS_TRAVIS)
 - [x] Criar um processo CI
   - [x] Configurar o auto-inicio da máquina do Travis
   - [x] Instalar o QEMU & Vagrant
