@@ -58,12 +58,6 @@ iniciar_neoricalex(){
 }
 
 iniciar_neoricalex_travis(){
-    cd .travis
-    chmod +x compilar_travis.sh 
-    ./compilar_travis.sh
-}
-
-iniciar_nfdos_travis(){
     instalar_requerimentos
 
     if [ ! -f "src/neoricalex.o" ] ; then
@@ -72,10 +66,11 @@ iniciar_nfdos_travis(){
         make
         #make distcheck
     fi
+
+    src/neoricalex
 }
 
 case $HOSTNAME in
-    (ubuntu1804.localdomain) iniciar_nfdos_travis;;
     (travis-job-*) iniciar_neoricalex_travis;;
     (*)   iniciar_neoricalex;;
 esac

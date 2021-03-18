@@ -13,6 +13,7 @@ sudo apt install git -y
 git clone https://github.com/neoricalex/neoricalex.git
 
 echo "[DEBUG] Até aqui parece bom!"
+echo "$USER@$HOSTNAME"
 
 cd neoricalex
 bash shell
