@@ -1,8 +1,9 @@
 #!/bin/bash
 
 criar_vps_base(){
-    echo "[DEBUG] VPS_BASE: OK!"
-    echo "$USER@$HOSTNAME"
+    echo "[DEBUG] O Travis parece bom!"
+    #- sudo VAGRANT_VAGRANTFILE=src/vps/.travis/Vagrantfile vagrant up --provider=libvirt
+    #- sudo VAGRANT_VAGRANTFILE=src/vps/.travis/Vagrantfile vagrant ssh -- -t 'sudo apt update; sudo apt install git -y; git clone https://github.com/neoricalex/neoricalex.git; cd neoricalex; bash shell'
 }
 
 criar_vps_dev(){

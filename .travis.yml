@@ -2,17 +2,18 @@
 dist: bionic
 language: python
 
-cache:
-  directories:
-  - /home/travis/.vagrant.d/boxes
+#cache:
+#  directories:
+#  - /home/travis/.vagrant.d/boxes
 
 install:
 # Instalar libvrt & KVM (REF: https://github.com/alvistack/ansible-role-virtualbox/blob/master/.travis.yml)
 - sudo apt-get update && sudo apt-get install -y bridge-utils dnsmasq-base ebtables libvirt-bin libvirt-dev qemu-kvm qemu-utils ruby-dev
 
 # Download Vagrant & Instalar
-- sudo wget -nv https://releases.hashicorp.com/vagrant/2.2.14/vagrant_2.2.14_x86_64.deb
+- wget -nv https://releases.hashicorp.com/vagrant/2.2.14/vagrant_2.2.14_x86_64.deb
 - sudo dpkg -i vagrant_2.2.14_x86_64.deb
+- rm vagrant_2.2.14_x86_64.deb
 
 # O Vagrant foi instalado corretamente?
 - vagrant --version
