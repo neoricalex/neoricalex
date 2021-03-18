@@ -7,11 +7,15 @@ vagrant destroy --force
 sudo vagrant up --provider=libvirt
 sudo vagrant ssh <<EOF
 #!/bin/bash
+
 sudo apt update
-sudo apt-get install git -y
+sudo apt install git -y
 git clone https://github.com/neoricalex/neoricalex.git
+
+echo "[DEBUG] Até aqui parece bom!"
+
 cd neoricalex/src
-echo "[DEBUG] Até aqui parece bom!
+
 chmod +x iniciar_desenvolvimento.sh
 ./iniciar_desenvolvimento.sh
 EOF
