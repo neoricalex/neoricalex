@@ -9,10 +9,10 @@ sudo vagrant ssh <<EOF
 #!/bin/bash
 
 SETAR_HOSTNAME="vps-teste"
-echo $SETAR_HOSTNAME > /proc/sys/kernel/hostname
-sed -i 's/127.0.1.1.*/127.0.1.1\t'"$SETAR_HOSTNAME"'/g' /etc/hosts
-echo $SETAR_HOSTNAME > /etc/hostname
-service hostname start
+sudo echo $SETAR_HOSTNAME > /proc/sys/kernel/hostname
+sudo sed -i 's/127.0.1.1.*/127.0.1.1\t'"$SETAR_HOSTNAME"'/g' /etc/hosts
+sudo echo $SETAR_HOSTNAME > /etc/hostname
+sudo service hostname start
 #su $SUDO_USER -c "xauth add $(xauth list | sed 's/^.*\//'"$SETAR_HOSTNAME"'\//g' | awk 'NR==1 {sub($1,"\"&\""); print}')"
 
 echo "$USER@$HOSTNAME"
