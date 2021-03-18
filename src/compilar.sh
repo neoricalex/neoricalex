@@ -56,7 +56,7 @@ EOF
 }
 
 compilar_travis(){
-    cd vps/.travis
+    cd vps
     vagrant up --provider=libvirt
     vagrant ssh <<EOF
 #!/bin/bash
