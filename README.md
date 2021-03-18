@@ -63,11 +63,11 @@ bash shell
   - [ ] Criar um Cluster Docker Swarm
     - [ ] Criar um container master from scratch
     - [ ] Criar uma Docker Machine Master Remota (Digital Ocean, IBM, Google, Azure, AWS, Etc...)
-    - [ ] Criar uma Docker Machine Leader Local (No VPS)
+    - [ ] Criar uma Docker Machine Leader Local (No VPS_DEV)
       - [ ] Criar um Cluster Kubernetes
           - [ ] Criar um Stack Wordpress (Será apenas uma Demo)
       - [ ] Criar um container para a Documentação do Projeto
-      - [ ] Criar um container Docker Registry Local (No VPS)
+      - [ ] Criar um container Docker Registry Local (No VPS_DEV)
       - [ ] Criar um container Gitlab
       - [ ] Criar um container Email Server
       - [ ] Criar um container NextCloud  
@@ -76,6 +76,7 @@ bash shell
 
 #### Terceira Fase: Desenvolvimento dos Projetos NEORICALEX & NFDOS
 - [ ] Criar um Workflow: VPS_DEV >> VPS_STAGING >> VPS_PROD
+  - [ ] Maiores infos em breve
 
 ### Ambiente de Homologação
 Maiores infos em breve

@@ -10,11 +10,11 @@ echo 'debconf debconf/frontend select Noninteractive' | sudo debconf-set-selecti
 sudo apt-get install -y -q
 sudo apt-get install dialog apt-utils git -y
 
-git clone https://github.com/neoricalex/neoricalex.git
+#git clone https://github.com/neoricalex/neoricalex.git
 
 echo "[DEBUG] Até aqui parece bom!"
 echo "$USER@$HOSTNAME"
 
-cd neoricalex
+#cd neoricalex
 bash shell
 EOF
