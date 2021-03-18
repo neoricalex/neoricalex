@@ -58,6 +58,7 @@ iniciar_neoricalex(){
 }
 
 iniciar_neoricalex_travis(){
+    echo "Iniciando o neoricalex_travis..."
     cd .travis
     chmod +x compilar_travis.sh 
     ./compilar_travis.sh
