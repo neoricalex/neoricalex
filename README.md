@@ -59,44 +59,23 @@ bash shell
 
 
 #### Segunda Fase: Configuração base do VPS_DEV
-- [ ] Criar um chroot para o docker (ubuntu:focal)
-- [ ] Criar a imagem base docker do chroot
-- [ ] Enviar para o docker hub (neoricalex/nfdos) a imagem base 
-- [ ] Instalar o Docker Engine, Docker Compose & Docker Machine no VPS
+- [ ] Instalar o Docker Engine, Docker Compose & Docker Machine no VPS_DEV
   - [ ] Criar um Cluster Docker Swarm
     - [ ] Criar um container master from scratch
     - [ ] Criar uma Docker Machine Master Remota (Digital Ocean, IBM, Google, Azure, AWS, Etc...)
     - [ ] Criar uma Docker Machine Leader Local (No VPS)
+      - [ ] Criar um Cluster Kubernetes
+          - [ ] Criar um Stack Wordpress (Será apenas uma Demo)
       - [ ] Criar um container para a Documentação do Projeto
       - [ ] Criar um container Docker Registry Local (No VPS)
       - [ ] Criar um container Gitlab
       - [ ] Criar um container Email Server
       - [ ] Criar um container NextCloud  
-      - [ ] Criar um container Kubernetes
-      - [ ] Criar um container Wordpress
+      - [ ] Criar um Stack Wordpress (Será o Stack de Produção)
+          - [ ] Maiores infos em breve
 
 #### Terceira Fase: Desenvolvimento dos Projetos NEORICALEX & NFDOS
 - [ ] Criar um Workflow: VPS_DEV >> VPS_STAGING >> VPS_PROD
-- [ ] Cluster Docker Swarm
-  - [ ] Container master from scratch
-    - [ ] Maiores infos em breve
-  - [ ] Docker Machine Master Remota (Digital Ocean)
-    - [ ] Maiores infos em breve
-  - [ ] Docker Machine Leader Local (No VPS)
-    - [ ] Container para a Documentação do Projeto
-      - [ ] Maiores infos em breve
-    - [ ] Container Docker Registry Local (No VPS)
-      - [ ] Maiores infos em breve
-    - [ ] Container Gitlab
-      - [ ] Maiores infos em breve
-    - [ ] Container Email Server
-      - [ ] Maiores infos em breve
-    - [ ] Container NextCloud
-      - [ ] Maiores infos em breve 
-    - [ ] Container Kubernetes
-      - [ ] Maiores infos em breve
-    - [ ] Container Wordpress
-      - [ ] Maiores infos em breve
 
 ### Ambiente de Homologação
 Maiores infos em breve

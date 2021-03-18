@@ -72,8 +72,6 @@ iniciar_nfdos_travis(){
         make
         #make distcheck
     fi
-
-    src/neoricalex
 }
 
 case $HOSTNAME in
