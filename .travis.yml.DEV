@@ -8,17 +8,19 @@ cache:
   - /home/travis/.vagrant.d/boxes
 
 install:
-# Install libvrt & KVM (see https://github.com/alvistack/ansible-role-virtualbox/blob/master/.travis.yml)
+# Instalar libvrt & KVM (REF: https://github.com/alvistack/ansible-role-virtualbox/blob/master/.travis.yml)
 - sudo apt-get update && sudo apt-get install -y bridge-utils dnsmasq-base ebtables libvirt-bin libvirt-dev qemu-kvm qemu-utils ruby-dev
 
-# Download Vagrant & Install Vagrant package
+# Remover o Vagrant instalado pelo bash shell
+- sudo apt remove vagrant -y
+# Download Vagrant & Instalar
 - sudo wget -nv https://releases.hashicorp.com/vagrant/2.2.14/vagrant_2.2.14_x86_64.deb
 - sudo dpkg -i vagrant_2.2.14_x86_64.deb
 
-# Vagrant correctly installed?
+# O Vagrant foi instalado corretamente?
 - vagrant --version
 
-# Install vagrant-libvirt Vagrant plugin
+# Instalar o plugin vagrant-libvirt do Vagrant
 - sudo vagrant plugin install vagrant-libvirt
 
 script:
