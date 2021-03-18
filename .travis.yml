@@ -23,4 +23,4 @@ install:
 
 script:
 - sudo VAGRANT_VAGRANTFILE=src/vps/.travis/Vagrantfile vagrant up --provider=libvirt
-- sudo VAGRANT_VAGRANTFILE=src/vps/.travis/Vagrantfile  vagrant ssh -c "ls"
+- sudo VAGRANT_VAGRANTFILE=src/vps/.travis/Vagrantfile vagrant ssh "cd /vagrant && ls"

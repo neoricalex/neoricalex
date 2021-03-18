@@ -8,7 +8,7 @@ Vagrant.configure("2") do |config|
     config.vm.boot_timeout = 1800
 
     # Prevent SharedFoldersEnableSymlinksCreate errors
-    config.vm.synced_folder ".", "/vagrant", disabled: true
+    #config.vm.synced_folder ".", "/vagrant", disabled: true
 
     config.vm.provider :virtualbox do |vb|
         vb.name = 'ubuntu'
