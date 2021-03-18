@@ -40,7 +40,7 @@ bash shell
 ## Roadmap
 
 ### Ambiente de Desenvolvimento
-#### Fase Inicial: Criação de um VPS Desenvolvimento (VPS_DEV)
+#### Fase Inicial: Criação de um VPS de Desenvolvimento (VPS_DEV)
 - [x] Criar um Sistema de LOG
 - [x] Instalar o Vagrant
 - [x] Criar uma BOX Vagrant
