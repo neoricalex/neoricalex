@@ -2,8 +2,9 @@
 
 # Iniciar o VPS
 # REF: https://github.com/neoricalex/baseimage-docker.git
+
 compilar_local(){
-    #vagrant destroy
+    vagrant destroy
     vagrant up
     vagrant ssh <<EOF
 #!/bin/bash
@@ -18,7 +19,6 @@ compilar_travis(){
     vagrant up travis --provider=libvirt
     vagrant ssh <<EOF
 #!/bin/bash
-echo "[DEBUG] Até aqui parece bom! [$USER@$HOSTNAME]"
 cd /vagrant
 make vps
 cd ..

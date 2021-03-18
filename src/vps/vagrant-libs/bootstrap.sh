@@ -15,7 +15,7 @@ sudo apt-get install -y build-essential checkinstall libreadline-gplv2-dev \
     libncursesw5-dev libssl-dev libsqlite3-dev tk-dev libgdbm-dev libc6-dev \
     libbz2-dev libffi-dev python3-pip unzip lsb-release software-properties-common \
     curl wget git rsync python-dev python3-venv xrdp libterm-readline-gnu-perl \
-    dkms
+    dkms dialog
 
 # Configurar o XRDP
 sudo adduser xrdp ssl-cert

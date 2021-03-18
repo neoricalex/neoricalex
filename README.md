@@ -41,14 +41,7 @@ bash shell
 
 ### Ambiente de Desenvolvimento
 #### Fase Inicial
-##### Criação de um VPS de Teste (VPS_TESTE) no Travis
-- [x] Criar um processo CI
-  - [x] Configurar o auto-inicio da máquina do Travis
-  - [x] Instalar o QEMU & Vagrant
-  - [x] Criar uma box padrão do vagrant com o Ubuntu 18.04 (generic/ubuntu1804)
-    - [x] Instalar o Git, clonar o NEORICALEX, entrar na pasta neoricalex, e iniciar executando o bash shell 
-
-##### Criação de um VPS de Desenvolvimento (VPS_DEV)
+##### Criação de um VM de Desenvolvimento (VPS_DEV)
 - [x] Criar um Sistema de LOG
 - [x] Instalar o Vagrant
 - [x] Criar uma box do vagrant com o Ubuntu 20.04 (ubuntu/focal64)
@@ -58,7 +51,12 @@ bash shell
   - [x] Enviar para a Vagrant Cloud a .box (NFDOS-x.x.x.box) com o NFDOS Instalado (neoricalex/nfdos)
 - [x] Criar o VPS_DEV baseado na box neoricalex/nfdos
 
-
+##### Criação de um VPS de Teste (VPS_TESTE) no Travis
+- [x] Criar um processo CI
+  - [x] Configurar o auto-inicio da máquina do Travis
+  - [x] Instalar o QEMU & Vagrant
+  - [x] Criar uma box padrão do vagrant com o Ubuntu 18.04 (generic/ubuntu1804)
+    - [x] Instalar o Git, clonar o NEORICALEX, entrar na pasta neoricalex, e iniciar executando o bash shell 
 
 #### Segunda Fase: Configuração base do VPS_DEV
 - [ ] Instalar o Docker Engine, Docker Compose & Docker Machine no VPS_DEV
