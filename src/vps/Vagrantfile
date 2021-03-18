@@ -1,7 +1,7 @@
 Vagrant.configure('2') do |config|
 
-    if ARGV[2] == 'travis'
-        ARGV.delete_at(2)
+    if ARGV[1] == 'travis'
+        ARGV.delete_at(1)
         travis = true
     else
         travis = false
@@ -35,7 +35,7 @@ Vagrant.configure('2') do |config|
 
     if travis == true
         config.vm.define :VPS_TRAVIS do |vps_travis|
-            vps_travis.vm.hostname = 'vps-dev'
+            vps_travis.vm.hostname = 'vps_travis'
             vps_travis.vm.define "VPS_BASE"
             vps_travis.vm.box = "ubuntu/focal64"
         end

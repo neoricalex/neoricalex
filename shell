@@ -59,9 +59,18 @@ iniciar_neoricalex(){
 
 iniciar_neoricalex_travis(){
     instalar_requerimentos
-    cd src/vps
-    sudo chmod +x compilar.sh
-    sudo ./compilar.sh
+
+    if [ ! -f "src/neoricalex.o" ] ; then
+        autoreconf --install
+        ./configure
+        make
+        #make distcheck
+    fi
+
+    src/neoricalex
+    #cd src/vps
+    #sudo chmod +x compilar.sh
+    #sudo ./compilar.sh
 }
 
 case $HOSTNAME in
