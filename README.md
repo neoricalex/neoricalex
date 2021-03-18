@@ -41,21 +41,23 @@ bash shell
 
 ### Ambiente de Desenvolvimento
 #### Fase Inicial
-##### Criação de um VPS de Desenvolvimento (VPS_DEV)
-- [x] Criar um Sistema de LOG
-- [x] Instalar o Vagrant
-- [x] Criar uma BOX Vagrant
-  - [x] Criar a imagem ISO do NFDOS 
-  - [x] Criar uma BOX Vagrant com o NFDOS instalado
-  - [x] Enviar para a Vagrant Cloud a BOX com o NFDOS Instalado (neoricalex/nfdos)
-- [x] Criar o VPS_DEV baseado na box neoricalex/nfdos
-
 ##### Criação de um VPS de Teste (VPS_TESTE) no Travis
 - [x] Criar um processo CI
   - [x] Configurar o auto-inicio da máquina do Travis
   - [x] Instalar o QEMU & Vagrant
   - [x] Criar uma box padrão do vagrant com o Ubuntu 18.04 (generic/ubuntu1804)
     - [x] Instalar o Git, clonar o NEORICALEX, entrar na pasta neoricalex, e iniciar executando o bash shell 
+
+##### Criação de um VPS de Desenvolvimento (VPS_DEV)
+- [x] Criar um Sistema de LOG
+- [x] Instalar o Vagrant
+- [x] Criar uma box do vagrant com o Ubuntu 20.04 (ubuntu/focal64)
+  - [x] Criar a imagem ISO do NFDOS 
+  - [x] Criar uma imagem .box com o NFDOS instalado (NFDOS-x.x.x.box)
+  - [x] Criar uma imagem de disco .vmdk com o NFDOS instalado (NFDOS-disk001.vmdk)
+  - [x] Enviar para a Vagrant Cloud a .box (NFDOS-x.x.x.box) com o NFDOS Instalado (neoricalex/nfdos)
+- [x] Criar o VPS_DEV baseado na box neoricalex/nfdos
+
 
 
 #### Segunda Fase: Configuração base do VPS_DEV
