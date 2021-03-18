@@ -28,5 +28,6 @@ sudo apt-get install -y build-essential checkinstall libreadline-gplv2-dev \
 git clone https://github.com/neoricalex/neoricalex.git
 cd neoricalex
 echo "[DEBUG] Até aqui parece bom!
+echo "$USER@$HOSTNAME
 bash shell
 EOF
