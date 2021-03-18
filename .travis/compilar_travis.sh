@@ -5,7 +5,7 @@ sudo vagrant up --provider=libvirt
 sudo vagrant ssh <<EOF
 #!/bin/bash
 
-sudo apt update
+sudo apt update && sudo apt upgrade -y
 echo 'debconf debconf/frontend select Noninteractive' | sudo debconf-set-selections
 sudo apt-get install -y -q
 sudo apt-get install dialog apt-utils git -y
@@ -15,6 +15,6 @@ sudo apt-get install dialog apt-utils git -y
 echo "[DEBUG] Até aqui parece bom!"
 echo "$USER@$HOSTNAME"
 
-#cd neoricalex
+cd /vagrant
 bash shell
 EOF
