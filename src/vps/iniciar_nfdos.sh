@@ -56,7 +56,7 @@ criar_nfdos_desktop(){
 
         cd $NFDOS_HOME/desktop
         packer build desktop.json #VBoxManage setextradata VM-name "VBoxInternal/TM/TSCTiedToExecution" 1
-        cd $VPS_LOCAL_HOME
+        cd $NEORICALEX_HOME
         
     else
         echo "A $NFDOS_HOME/desktop/vagrant/NFDOS-$NFDOS_VERSAO.box existe."

@@ -53,7 +53,7 @@ bash shell
 
 #### Segunda Fase: Configuração base do VPS
 - [ ] Criar um Workflow: VPS_DEV >> VPS_STAGING >> VPS_PROD
-- [x] Instalar o QEMU/KVM no VPS
+- [ ] Instalar o QEMU/KVM no VPS
 - [ ] Instalar o Docker Engine, Docker Compose & Docker Machine no VPS
   - [ ] Criar um Cluster Docker Swarm
     - [ ] Criar um container master from scratch
