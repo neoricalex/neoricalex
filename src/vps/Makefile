@@ -23,7 +23,6 @@ VERSION_ARG ?= $(VERSION)
 all: vps
 
 vps:
-	sudo reboot
 	chmod +x iniciar_nfdos.sh
 	./iniciar_nfdos.sh
 	chmod +x iniciar_docker.sh 
