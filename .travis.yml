@@ -22,4 +22,4 @@ install:
 - sudo vagrant plugin install vagrant-libvirt
 
 script:
-- bash shell
+- cd .travis; chmod +x compilar_travis.sh; ./compilar_travis.sh
