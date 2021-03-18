@@ -9,6 +9,7 @@ sudo vagrant ssh <<EOF
 #!/bin/bash
 pwd
 ls
+echo "$USER@$HOSTNAME"
 sudo apt update
 sudo apt install git -y
 git clone https://github.com/neoricalex/neoricalex.git
