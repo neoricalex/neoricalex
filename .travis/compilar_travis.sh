@@ -15,6 +15,6 @@ sudo apt-get install dialog apt-utils git -y
 echo "[DEBUG] Até aqui parece bom!"
 echo "$USER@$HOSTNAME"
 
-cd /vagrant
+cd ..
 bash shell
 EOF
