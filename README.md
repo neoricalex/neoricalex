@@ -131,7 +131,7 @@ Gostou da ideia?
 
 ##### Criação de um Ambiente de Integração Contínua (CI) no Travis (VPS_TRAVIS)
 - [x] Criar um processo CI
-  - [x] Configurar o auto-inicio da máquina do Travis
+  - [x] Configurar o auto-arranque da máquina do Travis via Hook no Github
   - [x] Instalar o QEMU & Vagrant
   - [x] Criar uma box padrão do vagrant com a neoricalex/nfdos que criamos no passo anterior
     - [x] Auto executar o bash shell 
