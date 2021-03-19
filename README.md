@@ -133,7 +133,7 @@ Gostou da ideia?
 - [x] Criar um processo CI
   - [x] Configurar o auto-arranque da máquina do Travis via Hook no Github
   - [x] Instalar o QEMU & Vagrant
-  - [x] Criar uma box padrão do vagrant com a *neoricalex/nfdos* que criamos no passo anterior
+  - [ ] Criar uma box padrão do vagrant com a *neoricalex/nfdos* que criamos no passo anterior
     - [x] Auto executar o bash shell 
 
 #### Segunda Fase: Criar o VPS_DEV
@@ -155,16 +155,17 @@ Gostou da ideia?
       - [ ] Clonar o repositório da Linux
       - [ ] Configurar
       - [ ] Compilar    
-    - [ ] Criar a rootfs do NFDOS (Ubuntu:Focal)
+    - [ ] Criar a rootfs do NFDOS (ubuntu:focal)
       - [ ] Gerar o rootfs via debootstrap     
       - [ ] Configurar
-      - [ ] Empacotar como imagem docker
+      - [ ] Empacotar como imagem docker (neoricalex/nfdos)
         - [ ] Zipar
-        - [ ] Enviar a imagem docker para o docker hub, também ela acessível via *neoricalex/nfdos*  
-  - [x] Criar a imagem ISO (nfdos.iso)
+        - [ ] Enviar a imagem docker para o docker hub 
+  - [x] Criar a imagem ISO do NFDOS (nfdos.iso)
     - [ ] Usar o rootfs que usamos para empacotar a imagem docker como initramfs
+      - [ ] Customizar adicionando uns pacotes extras
     - [ ] Usar o rootfs que usamos para empacotar a imagem docker como rootfs
-    - [x] Configurar o rootfs
+      - [x] Configurar o rootfs
     - [x] Gerar a imagem ISO (nfdos.iso)
   - [x] Criar uma imagem .box com o NFDOS instalado (NFDOS-x.x.x.box)
     - [x] Gerar a NFDOS-x.x.x.box
