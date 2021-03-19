@@ -137,7 +137,7 @@ Gostou da ideia?
     - [x] Auto executar o bash shell 
 
 #### Segunda Fase: Criar o VPS_DEV
-- [ ] Criar o VPS_DEV baseado na box neoricalex/nfdos que criamos na fase inicial
+- [ ] Criar o VPS_DEV baseado na box neoricalex/nfdos que configuramos na fase inicial
   - [x] Criar o núcleo do NFDOS
     - [ ] Criar o rootfs via debootstrap
     - [ ] Configurar o rootfs
