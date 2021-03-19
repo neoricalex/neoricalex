@@ -5,6 +5,7 @@ Vagrant.configure("2") do |config|
 
 	config.vm.define "VPS_DEV"
 	config.vm.box = "generic/ubuntu1804"
+	config.vm.synced_folder ".", "/vagrant", disabled: false
 	#config.vm.box_version = "0.4.4"
 	#config.vm.hostname  = "vps"
 	#config.ssh.username = "neo"
@@ -21,6 +22,16 @@ Vagrant.configure("2") do |config|
 	end
 
 	config.vm.provision :shell,
-	  path: "vagrant-libs/bootstrap.sh"
-	end
+		path: "vagrant-libs/bootstrap.sh"
+
+	#config.vm.provision :shell do |shell|
+	#	begin
+	#		shell.path = "vagrant-libs/bootstrap.sh"
+	#	rescue
+	#		shell.privileged = true
+	#		shell.inline = 'echo rebooting'
+	#		shell.reboot = true
+	#	end
+	#end
+end
   

@@ -5,13 +5,16 @@
 
 compilar_local(){
     vagrant destroy
-    vagrant up
-    vagrant ssh <<EOF
+    sudo vagrant up
+    sudo vagrant ssh <<EOF
 #!/bin/bash
+ls .
 cd /vagrant
 make vps
 cd ..
 EOF
+    # REF: https://stackoverflow.com/questions/33662074/vagrant-difference-between-package-and-repackage
+    #vagrant package --output vm1-package.box 
 }
 
 compilar_travis(){

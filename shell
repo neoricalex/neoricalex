@@ -42,6 +42,12 @@ instalar_requerimentos(){
         vagrant plugin install vagrant-disksize
     fi
 
+    #if ! vagrant plugin list | grep -q "vagrant-reload"
+    #then
+    #    echo "Instalando o plugin vagrant-reload..."
+    #    vagrant plugin install vagrant-reload
+    #fi
+
 }
 
 instalar_requerimentos

@@ -21,7 +21,7 @@ if [ "$usuario" == "neo@desktop" ]; then
                         "${OPTIONS[@]}" \
                         2>&1 >/dev/tty)
 
-        #clear
+        clear
         case $CHOICE in
                 1)
                 echo "Opção 1"

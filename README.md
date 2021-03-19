@@ -117,48 +117,54 @@ Gostou da ideia?
 
 ### Ambiente de Desenvolvimento
 #### Fase Inicial
-##### Criação das imagens ISO, BOX e VMDK
+##### Configuração base do VPS_DEV no $HOSTNAME
 - [x] Criar um Sistema de LOG
 - [x] Instalar o Vagrant
 - [x] Criar uma box do vagrant com o Ubuntu Genérico 18.04 (generic/ubuntu1804)
-  - [x] Criar a imagem ISO do NFDOS 
-  - [x] Criar uma imagem .box com o NFDOS instalado (NFDOS-x.x.x.box)
-  - [x] Criar uma imagem de disco .vmdk com o NFDOS instalado (NFDOS-disk001.vmdk)
-  - [x] Enviar para a Vagrant Cloud a .box (NFDOS-x.x.x.box) com o NFDOS Instalado (neoricalex/nfdos)
+  - [x] Instalar os requerimentos essenciais
+  - [ ] Empacotar a box com o nome nfdos.box
+  - [ ] Enviar a nfdos.box para a Vagrant Cloud ficando acessivel via neoricalex/nfdos
 
 ##### Criação de um Ambiente de Integração Contínua (CI) no Travis (VPS_TRAVIS)
 - [x] Criar um processo CI
   - [x] Configurar o auto-inicio da máquina do Travis
   - [x] Instalar o QEMU & Vagrant
-  - [x] Criar uma box padrão do vagrant com o Ubuntu 18.04 (generic/ubuntu1804)
-    - [x] Instalar o Git, clonar o NEORICALEX, entrar na pasta neoricalex, e iniciar executando o bash shell 
+  - [x] Criar uma box padrão do vagrant com a neoricalex/nfdos que criamos no passo anterior
+    - [x] Auto executar o bash shell 
 
-#### Segunda Fase: Configuração base do VPS_DEV
-- [x] Criar o VPS_DEV baseado na box neoricalex/nfdos
-  - [ ] Instalar o Docker Engine, Docker Compose & Docker Machine no VPS_DEV
-    - [ ] Criar um Cluster Docker Swarm
-      - [ ] Criar um container master from scratch
-      - [ ] Criar uma Docker Machine Master Remota (Digital Ocean, IBM, Google, Azure, AWS, Etc...)
-      - [ ] Criar uma Docker Machine Leader Local (No VPS_DEV)
-        - [ ] Criar um Cluster Kubernetes
-            - [ ] Criar um Stack Wordpress (Será apenas uma Demo)
-        - [ ] Criar um container para a Documentação do Projeto
-        - [ ] Criar um container Docker Registry Local (No VPS_DEV)
-        - [ ] Criar um container Gitlab
-        - [ ] Criar um container Email Server
-        - [ ] Criar um container NextCloud  
-        - [ ] Criar um Stack Wordpress (Será o Stack de Produção)
-            - [ ] Maiores infos em breve
+#### Segunda Fase: Criar o VPS_DEV
+- [x] Criar o VPS_DEV baseado na box neoricalex/nfdos que criamos na fase inicial
+  - [x] Criar a imagem ISO do NFDOS
+    - [ ] Criar o rootfs
+    - [ ] Configurar o rootfs
+    - [x] Gerar a imagem ISO (nfdos.iso)
+  - [x] Criar uma imagem .box com o NFDOS instalado (NFDOS-x.x.x.box)
+  - [x] Criar uma imagem de disco .vmdk com o NFDOS instalado (NFDOS-disk001.vmdk)
+  - [x] Criar um arquivo .ovf com o NFDOS instalado (NFDOS.ovf)
+  - [x] Enviar para a Vagrant Cloud a .box (NFDOS-x.x.x.box) com o NFDOS Instalado (neoricalex/nfdos)
 
 #### Terceira Fase: Desenvolvimento dos Projetos NEORICALEX & NFDOS
-- [ ] Criar um Workflow: VPS_DEV >> VPS_STAGING >> VPS_PROD
-  - [ ] Maiores infos em breve
+  - [x] Instalar o Docker Engine, Docker Compose & Docker Machine no VPS_DEV
+  - [ ] Criar um Cluster Docker Swarm
+    - [ ] Criar uma Docker Machine Master Remota (Digital Ocean, IBM, Google, Azure, AWS, Etc...)
+      - [ ] Instalar um container com o Wireguard Server
+    - [ ] Criar uma Docker Machine Leader Local (No VPS_DEV)
+      - [ ] Criar um Stack Wordpress (Será o Stack de Produção)
+          - [ ] Maiores infos em breve
+      - [ ] Criar um Cluster Kubernetes
+          - [ ] Criar um Stack Wordpress (Será apenas uma Demo)
+      - [ ] Criar um container para a Documentação do Projeto
+      - [ ] Criar um container Docker Registry Local (No VPS_DEV)
+      - [ ] Criar um container Gitlab
+      - [ ] Criar um container Email Server
+      - [ ] Criar um container NextCloud  
+      - [ ] Criar um container from scratch
 
 ### Ambiente de Homologação
-Maiores infos em breve
+- [ ] Maiores infos em breve
 
 ### Ambiente de Produção
-Maiores infos em breve
+- [ ] Maiores infos em breve
 
 ## Financiamento
 
