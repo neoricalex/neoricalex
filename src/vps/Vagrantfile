@@ -46,6 +46,7 @@ Vagrant.configure('2') do |config|
         config.vm.define :VPS_TRAVIS do |vps_travis|
             vps_travis.vm.define "VPS_DEV"
             vps_travis.vm.box = "generic/ubuntu1804"
+            vps_travis.disksize.size = "100GB"
         end
     end
 end
