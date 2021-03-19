@@ -75,6 +75,7 @@ O [NEORICALEX](https://neoricalex.com.br) é um framework de trabalho com 3 ambi
 * **Ambiente de Desenvolvimento**
     * Um Ambiente físico com o NFDOS instalado, que vamos usar para desenvolver todo o projeto. 
       * ( O Computador Pessoal )
+        * e/ou;
     * Um Ambiente baseado no Vagrant com o NFDOS instalado
       * ( O VPS de Desenvolvimento Local)
 * **Ambiente de Homologação**
