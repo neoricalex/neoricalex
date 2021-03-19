@@ -140,9 +140,9 @@ Gostou da ideia?
 - [ ] Criar o VPS_DEV baseado na box neoricalex/nfdos que criamos na fase inicial
   - [x] Criar o núcleo do NFDOS
     - [ ] Criar o rootfs via debootstrap
-      - [ ] Configurar o rootfs
-  - [ ] Empacotar o rootfs como imagem docker
-  - [ ] Enviar a imagem docker para o docker hub (neoricalex/nfdos)  
+    - [ ] Configurar o rootfs
+    - [ ] Empacotar o rootfs como imagem docker
+    - [ ] Enviar a imagem docker para o docker hub (neoricalex/nfdos)  
   - [x] Gerar a imagem ISO (nfdos.iso)
   - [x] Criar uma imagem .box com o NFDOS instalado (NFDOS-x.x.x.box)
     - [x] Gerar a NFDOS-x.x.x.box
