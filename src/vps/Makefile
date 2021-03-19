@@ -18,9 +18,9 @@ else
 endif
 VERSION_ARG ?= $(VERSION)
 
-.PHONY: all vps
+.PHONY: all vps criar_neoricalex_nfdos_docker
 
-all: vps
+all: vps 
 
 vps: criar_neoricalex_nfdos_docker
 	chmod +x iniciar_nfdos.sh

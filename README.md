@@ -155,13 +155,17 @@ Gostou da ideia?
       - [ ] Clonar o repositório da Linux
       - [ ] Configurar
       - [ ] Compilar    
-    - [ ] Criar o rootfs do NFDOS (Ubuntu:Focal)
+    - [ ] Criar a rootfs do NFDOS (Ubuntu:Focal)
       - [ ] Gerar o rootfs via debootstrap     
       - [ ] Configurar
       - [ ] Empacotar como imagem docker
         - [ ] Zipar
         - [ ] Enviar a imagem docker para o docker hub, também ela acessível via *neoricalex/nfdos*  
   - [x] Criar a imagem ISO (nfdos.iso)
+    - [ ] Usar o rootfs que usamos para empacotar a imagem docker como initramfs
+    - [ ] Usar o rootfs que usamos para empacotar a imagem docker como rootfs
+    - [x] Configurar o rootfs
+    - [x] Gerar a imagem ISO (nfdos.iso)
   - [x] Criar uma imagem .box com o NFDOS instalado (NFDOS-x.x.x.box)
     - [x] Gerar a NFDOS-x.x.x.box
     - [x] Enviar para a Vagrant Cloud (neoricalex/nfdos) a NFDOS-x.x.x.box com o NFDOS Instalado
