@@ -22,9 +22,13 @@ VERSION_ARG ?= $(VERSION)
 
 all: vps
 
-vps:
+vps: criar_neoricalex_nfdos_docker
 	chmod +x iniciar_nfdos.sh
 	./iniciar_nfdos.sh
 	chmod +x iniciar_docker.sh 
 	./iniciar_docker.sh 
 	#docker build --no-cache -t $(NAME):$(VERSION_ARG) $(BUILD_ARG) --build-arg QEMU_ARCH=x86_64 --platform x86_64 --rm docker
+
+criar_neoricalex_nfdos_docker:
+	chmod +x criar_neoricalex_nfdos_docker.sh 
+	./criar_neoricalex_nfdos_docker.sh

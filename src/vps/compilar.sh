@@ -5,8 +5,8 @@
 
 compilar_local(){
     vagrant destroy
-    sudo vagrant up
-    sudo vagrant ssh <<EOF
+    vagrant up
+    vagrant ssh <<EOF
 #!/bin/bash
 ls .
 cd /vagrant
@@ -18,8 +18,8 @@ EOF
 }
 
 compilar_travis(){
-    sudo VAGRANT_VAGRANTFILE=Vagrantfile.travis vagrant up --provider=libvirt
-    sudo vagrant ssh <<EOF
+    VAGRANT_VAGRANTFILE=Vagrantfile.travis vagrant up --provider=libvirt
+    vagrant ssh <<EOF
 #!/bin/bash
 cd /vagrant
 make vps

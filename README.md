@@ -125,28 +125,46 @@ Gostou da ideia?
 - [x] Criar um Sistema de LOG
 - [x] Instalar o Vagrant
 - [x] Criar uma box do vagrant com o Ubuntu Genérico 18.04 (generic/ubuntu1804)
-  - [x] Instalar os requerimentos essenciais
+  - [x] Instalar os requerimentos básicos essenciais (linux-generic, linux-headers, etc...)
   - [ ] Empacotar a box com o nome nfdos.box
-  - [ ] Enviar a nfdos.box para a Vagrant Cloud ficando acessivel via neoricalex/nfdos
+  - [ ] Enviar a nfdos.box para a Vagrant Cloud ficando acessivel via *neoricalex/nfdos*
 
 ##### Criação de um Ambiente de Integração Contínua (CI) no Travis (VPS_TRAVIS)
 - [x] Criar um processo CI
   - [x] Configurar o auto-arranque da máquina do Travis via Hook no Github
   - [x] Instalar o QEMU & Vagrant
-  - [x] Criar uma box padrão do vagrant com a neoricalex/nfdos que criamos no passo anterior
+  - [x] Criar uma box padrão do vagrant com a *neoricalex/nfdos* que criamos no passo anterior
     - [x] Auto executar o bash shell 
 
 #### Segunda Fase: Criar o VPS_DEV
-- [ ] Criar o VPS_DEV baseado na box neoricalex/nfdos que configuramos na fase inicial
-  - [x] Criar o núcleo do NFDOS
-    - [ ] Criar o rootfs via debootstrap
-    - [ ] Configurar o rootfs
-    - [ ] Empacotar o rootfs como imagem docker
-      - [ ] Enviar a imagem docker para o docker hub (neoricalex/nfdos)  
+- [ ] Criar o VPS_DEV baseado na box *neoricalex/nfdos* que configuramos na fase inicial
+  - [ ] Criar o núcleo do NFDOS
+    - [ ] Criar um emulador de computador localmente (QEMU)
+      - [ ] Clonar o repositório do QEMU
+      - [ ] Configurar
+      - [ ] Compilar
+    - [ ] Criar o Firmware do NFDOS (Tiano Core EDK II)
+      - [ ] Clonar o repositório do Tiano Core
+      - [ ] Configurar
+      - [ ] Compilar
+    - [ ] Criar o Bootloader do NFDOS (GRUB 2)
+      - [ ] Clonar o repositório da GRUB 2
+      - [ ] Configurar
+      - [ ] Compilar 
+    - [ ] Criar o Kernel do NFDOS (Linux)
+      - [ ] Clonar o repositório da Linux
+      - [ ] Configurar
+      - [ ] Compilar    
+    - [ ] Criar o rootfs do NFDOS (Ubuntu:Focal)
+      - [ ] Gerar o rootfs via debootstrap     
+      - [ ] Configurar
+      - [ ] Empacotar como imagem docker
+        - [ ] Zipar
+        - [ ] Enviar a imagem docker para o docker hub, também ela acessível via *neoricalex/nfdos*  
   - [x] Criar a imagem ISO (nfdos.iso)
   - [x] Criar uma imagem .box com o NFDOS instalado (NFDOS-x.x.x.box)
     - [x] Gerar a NFDOS-x.x.x.box
-    - [x] Enviar para a Vagrant Cloud a .box (NFDOS-x.x.x.box) com o NFDOS Instalado (neoricalex/nfdos)
+    - [x] Enviar para a Vagrant Cloud (neoricalex/nfdos) a NFDOS-x.x.x.box com o NFDOS Instalado
   - [x] Criar uma imagem de disco .vmdk com o NFDOS instalado (NFDOS-disk001.vmdk)
   - [x] Criar um arquivo .ovf com o NFDOS instalado (NFDOS.ovf)
 
