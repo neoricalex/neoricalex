@@ -44,40 +44,13 @@ instalar_requerimentos(){
 
 }
 
-iniciar_neoricalex(){
-    instalar_requerimentos
+instalar_requerimentos
 
-    if [ ! -f "src/neoricalex.o" ] ; then
-        autoreconf --install
-        ./configure
-        make
-        #make distcheck
-    fi
+if [ ! -f "src/neoricalex.o" ] ; then
+    autoreconf --install
+    ./configure
+    make
+    #make distcheck
+fi
 
-    src/neoricalex
-}
-
-iniciar_neoricalex_travis(){
-    instalar_requerimentos
-
-    if [ ! -f "src/neoricalex.o" ] ; then
-        autoreconf --install
-        ./configure
-        make
-        #make distcheck
-    fi
-
-    src/neoricalex
-    #cd src/vps
-    #sudo chmod +x compilar.sh
-    #sudo ./compilar.sh
-}
-
-case $HOSTNAME in
-    (travis-job-*) iniciar_neoricalex_travis;;
-    (*)   iniciar_neoricalex;;
-esac
-
-# sudo apt install ruby
-# sudo gem install travis 
-# travis lint
+src/neoricalex

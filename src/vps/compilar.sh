@@ -28,3 +28,7 @@ case $HOSTNAME in
     (travis-job-*) compilar_travis;;
     (*)   compilar_local;;
 esac
+
+# sudo apt install ruby
+# sudo gem install travis 
+# travis lint
