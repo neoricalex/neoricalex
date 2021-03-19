@@ -15,8 +15,8 @@ EOF
 }
 
 compilar_travis(){
-    TRAVIS='travis' vagrant up --provider=libvirt
-    vagrant ssh <<EOF
+    sudo TRAVIS='travis' vagrant up --provider=libvirt
+    sudo vagrant ssh <<EOF
 #!/bin/bash
 cd /vagrant
 make vps
