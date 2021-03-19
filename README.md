@@ -73,14 +73,18 @@ O [NEORICALEX](https://neoricalex.com.br) é então, a minha Plataforma e/ou Amb
 
 O [NEORICALEX](https://neoricalex.com.br) é um framework de trabalho com 3 ambientes:
 * **Ambiente de Desenvolvimento**
-    * Um Ambiente baseado no Vagrant com o NFDOS instalado, que vamos usar para desenvolver todo o projeto. 
-      * ( O Computador Pessoal e/ou o VPS de Desenvolvimento Local)
+    * Um Ambiente físico com o NFDOS instalado, que vamos usar para desenvolver todo o projeto. 
+      * ( O Computador Pessoal )
+    * Um Ambiente baseado no Vagrant com o NFDOS instalado
+      * ( O VPS de Desenvolvimento Local)
 * **Ambiente de Homologação**
+    * Um Ambiente baseado no Travis que vamos usar para testarmos o projeto. 
+      * ( O VPS de Staging remoto )
     * Um Ambiente baseado no Virtualbox que vamos usar para testarmos o projeto. 
-      * ( O VPS de Staging Local )
+      * ( O VPS de Staging local )
 * **Ambiente de Produção**
     * Um Ambiente baseado na Cloud (Digital Ocean, Google Cloud, IBM, etc) para fazermos o Deploy do Projeto. 
-      * ( O VPS Remoto )
+      * ( O VPS de Produção Remoto )
 
 A minha ideia principal para o projeto [NEORICALEX](https://neoricalex.com.br) é **criar os 3 ambientes com apenas um comando**, e depois vender o conhecimento através de um curso online, a que dei o nome de **COPED**.
 
