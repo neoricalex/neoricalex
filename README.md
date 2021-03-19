@@ -137,32 +137,35 @@ Gostou da ideia?
     - [x] Auto executar o bash shell 
 
 #### Segunda Fase: Criar o VPS_DEV
-- [x] Criar o VPS_DEV baseado na box neoricalex/nfdos que criamos na fase inicial
-  - [x] Criar a imagem ISO do NFDOS
-    - [ ] Criar o rootfs
-    - [ ] Configurar o rootfs
-    - [x] Gerar a imagem ISO (nfdos.iso)
+- [ ] Criar o VPS_DEV baseado na box neoricalex/nfdos que criamos na fase inicial
+  - [x] Criar o núcleo do NFDOS
+    - [ ] Criar o rootfs via debootstrap
+      - [ ] Configurar o rootfs
+  - [ ] Empacotar o rootfs como imagem docker
+  - [ ] Enviar a imagem docker para o docker hub (neoricalex/nfdos)  
+  - [x] Gerar a imagem ISO (nfdos.iso)
   - [x] Criar uma imagem .box com o NFDOS instalado (NFDOS-x.x.x.box)
+    - [x] Gerar a NFDOS-x.x.x.box
+    - [x] Enviar para a Vagrant Cloud a .box (NFDOS-x.x.x.box) com o NFDOS Instalado (neoricalex/nfdos)
   - [x] Criar uma imagem de disco .vmdk com o NFDOS instalado (NFDOS-disk001.vmdk)
   - [x] Criar um arquivo .ovf com o NFDOS instalado (NFDOS.ovf)
-  - [x] Enviar para a Vagrant Cloud a .box (NFDOS-x.x.x.box) com o NFDOS Instalado (neoricalex/nfdos)
 
 #### Terceira Fase: Desenvolvimento dos Projetos NEORICALEX & NFDOS
-  - [x] Instalar o Docker Engine, Docker Compose & Docker Machine no VPS_DEV
-  - [ ] Criar um Cluster Docker Swarm
-    - [ ] Criar uma Docker Machine Master Remota (Digital Ocean, IBM, Google, Azure, AWS, Etc...)
-      - [ ] Instalar um container com o Wireguard Server
-    - [ ] Criar uma Docker Machine Leader Local (No VPS_DEV)
-      - [ ] Criar um Stack Wordpress (Será o Stack de Produção)
-          - [ ] Maiores infos em breve
-      - [ ] Criar um Cluster Kubernetes
-          - [ ] Criar um Stack Wordpress (Será apenas uma Demo)
-      - [ ] Criar um container para a Documentação do Projeto
-      - [ ] Criar um container Docker Registry Local (No VPS_DEV)
-      - [ ] Criar um container Gitlab
-      - [ ] Criar um container Email Server
-      - [ ] Criar um container NextCloud  
-      - [ ] Criar um container from scratch
+- [x] Instalar o Docker Engine, Docker Compose & Docker Machine no VPS_DEV
+- [ ] Criar um Cluster Docker Swarm
+  - [ ] Criar uma Docker Machine Master Remota (Digital Ocean, IBM, Google, Azure, AWS, Etc...)
+    - [ ] Instalar um container com o Wireguard Server
+  - [ ] Criar uma Docker Machine Leader Local (No VPS_DEV)
+    - [ ] Criar um Stack Wordpress (Será o Stack de Produção)
+        - [ ] Maiores infos em breve
+    - [ ] Criar um Cluster Kubernetes
+        - [ ] Criar um Stack Wordpress (Será apenas uma Demo)
+    - [ ] Criar um container para a Documentação do Projeto
+    - [ ] Criar um container Docker Registry Local (No VPS_DEV)
+    - [ ] Criar um container Gitlab
+    - [ ] Criar um container Email Server
+    - [ ] Criar um container NextCloud  
+    - [ ] Criar um container from scratch
 
 ### Ambiente de Homologação
 - [ ] Maiores infos em breve
