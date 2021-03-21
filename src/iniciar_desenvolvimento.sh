@@ -83,8 +83,6 @@ iniciar_vps(){
 
 cd /vagrant
 
-docker images
-
 if [[ "$(docker images -q nfdos/core/rootfs:latest 2> /dev/null)" == "" ]]; then
 
     if [ ! -d "nfdos/core/rootfs" ]; then
