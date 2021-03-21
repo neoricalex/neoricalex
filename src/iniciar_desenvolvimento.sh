@@ -79,22 +79,22 @@ iniciar_desenvolvimento_local(){
 iniciar_vps(){
     vagrant up
     vagrant ssh <<EOF
-    #!/bin/bash
+#!/bin/bash
 
-    cd /vagrant
+cd /vagrant
 
-    if [[ "$(docker images -q nfdos/core/rootfs:latest 2> /dev/null)" == "" ]]; then
+if [[ "$(docker images -q nfdos/core/rootfs:latest 2> /dev/null)" == "" ]]; then
 
-        if [ ! -d "nfdos/core/rootfs" ]; then
-            sudo debootstrap --arch=amd64 --variant=minbase focal nfdos/core/rootfs
-            sudo tar -C nfdos/core/rootfs -c . | sudo docker import - nfdos/core/rootfs
-        fi
-
-        make build
-
+    if [ ! -d "nfdos/core/rootfs" ]; then
+        sudo debootstrap --arch=amd64 --variant=minbase focal nfdos/core/rootfs
+        sudo tar -C nfdos/core/rootfs -c . | sudo docker import - nfdos/core/rootfs
     fi
 
-    cd ..
+    make build
+
+fi
+
+cd ..
 EOF
 }
 
