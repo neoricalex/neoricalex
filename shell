@@ -37,13 +37,12 @@ if [ "$usuario" == "neo@desktop" ]; then
 
     cd src
     cat *.log 
-    rm *.log 
     cd ..
 
     git add .
     git commit -m "Atualização Automática via bash shell"
     #git push origin master
-    
+
     #sudo docker tag nfdos/core/rootfs neoricalex/nfdos
     #sudo docker login
     #sudo docker push neoricalex/nfdos
