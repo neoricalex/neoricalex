@@ -1,5 +1,4 @@
 #!/bin/bash
-#set -x
 
 instalar_requerimentos(){
     echo "Atualizar repositórios e instalar requerimentos..."
@@ -7,79 +6,12 @@ instalar_requerimentos(){
     sudo apt install -y \
         build-essential \
         autoconf \
-        make \
-        tmux \
-        git \
-        bindfs \
-        bridge-utils dnsmasq-base ebtables \
-        libvirt-daemon-system libvirt-clients libvirt-dev qemu-kvm qemu-utils ruby-dev
+        make
 
-    if ! command -v virtualbox &> /dev/null   
-    then
-        # Instalar o VirtualBox
-        #sudo apt install virtualbox-6.1 -y
-        # Instalar pacotes extras do Virtualbox
-        #sudo apt install -y virtualbox-guest-dkms virtualbox-guest-x11
-        #sudo apt install -y virtualbox-guest-additions-iso
-        echo "Instalar o VirtualBox..."
-        wget https://download.virtualbox.org/virtualbox/5.2.42/virtualbox-5.2_5.2.42-137960~Ubuntu~bionic_amd64.deb
-        sudo apt install ./virtualbox-5.2_5.2.42-137960~Ubuntu~bionic_amd64.deb -y
-        rm virtualbox-5.2_5.2.42-137960~Ubuntu~bionic_amd64.deb
-
-        echo "Instalar o Extension Pack do VirtualBox..."
-        wget https://download.virtualbox.org/virtualbox/5.2.42/Oracle_VM_VirtualBox_Extension_Pack-5.2.42.vbox-extpack
-        sudo vboxmanage extpack install Oracle_VM_VirtualBox_Extension_Pack-5.2.42.vbox-extpack --accept-license=56be48f923303c8cababb0bb4c478284b688ed23f16d775d729b89a2e8e5f9eb
-        rm Oracle_VM_VirtualBox_Extension_Pack-5.2.42.vbox-extpack
-    fi
-
-    versao_vagrant_atual="2.2.9"
-    if ! command -v vagrant &> /dev/null   
-    then 
-        curl -O https://releases.hashicorp.com/vagrant/${versao_vagrant_atual}/vagrant_${versao_vagrant_atual}_x86_64.deb
-        sudo apt install ./vagrant_${versao_vagrant_atual}_x86_64.deb
-        rm ./vagrant_${versao_vagrant_atual}_x86_64.deb
-    fi
-
-    versao_vagrant_instalada=$(vagrant --version | awk 'NR==1{print $2; exit}')
-    if [ -z "$versao_vagrant_instalada" ]
-    then
-        versao_vagrant_instalada=$versao_vagrant_atual
-    fi
-
-    if [ "$versao_vagrant_atual" != "$versao_vagrant_instalada" ]
-    then
-        echo "Atualizando o Vagrant..."
-        sudo apt update
-        sudo apt remove vagrant -y
-        curl -O https://releases.hashicorp.com/vagrant/${versao_vagrant_atual}/vagrant_${versao_vagrant_atual}_x86_64.deb
-        sudo apt install ./vagrant_${versao_vagrant_atual}_x86_64.deb
-        rm ./vagrant_${versao_vagrant_atual}_x86_64.deb
-    fi
-
-    if ! vagrant plugin list | grep -q "vagrant-disksize"
-    then
-        echo "Instalando o plugin vagrant-disksize..."
-        vagrant plugin install vagrant-disksize
-    fi
-
-    if ! vagrant plugin list | grep -q "vagrant-bindfs"
-    then
-        echo "Instalando o plugin vagrant-bindfs..."
-        # REF: https://github.com/gael-ian/vagrant-bindfs
-        vagrant plugin install vagrant-bindfs
-    fi
-
-    if ! vagrant plugin list | grep -q "vagrant-libvirt"
-    then
-        echo "Instalando o plugin vagrant-libvirt..."
-        # REF: https://github.com/gael-ian/vagrant-bindfs
-        vagrant plugin install vagrant-libvirt
-    fi
 }
 
-instalar_requerimentos
-
 if [ ! -f "src/neoricalex.o" ] ; then
+    instalar_requerimentos
     autoreconf --install
     ./configure
     make
@@ -87,3 +19,16 @@ if [ ! -f "src/neoricalex.o" ] ; then
 fi
 
 src/neoricalex
+
+usuario="$(whoami)@$(hostname | cut -d . -f 1-2)"
+if [ "$usuario" == "neo@desktop" ]; then
+
+    cd src
+    cat *.log
+    cd ..
+
+    #sudo docker tag nfdos/core/rootfs neoricalex/nfdos
+    #sudo docker login
+    #sudo docker push neoricalex/nfdos
+    #sudo docker logout
+fi

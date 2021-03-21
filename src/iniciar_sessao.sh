@@ -24,6 +24,13 @@ if [ ! -d "$log_original" ] ; then
     git clone $github_log $log_original
 fi
 
+# Criar o vps
+vps_original="$NEORICALEX_HOME/vps"
+github_vps="https://github.com/neoricalex/vps.git"
+if [ ! -d "$vps_original" ] ; then
+    git submodule add $github_vps $vps_original
+fi
+
 iniciar_desenvolvimento(){
     if ! tmux has-session -t nfdos 2>/dev/null; then
         tmux new-session -s nfdos bash "$NEORICALEX_HOME/iniciar_desenvolvimento.sh"
@@ -34,5 +41,3 @@ iniciar_desenvolvimento(){
 }
 
 time iniciar_desenvolvimento
-
-cat *.log

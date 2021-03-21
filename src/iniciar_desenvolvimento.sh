@@ -34,7 +34,9 @@ echo ""
 echo "Detalhes do $HOSTNAME:" 
 echo ""
 echo "$(lscpu | awk 'NR==14{print $1 " " $2 " " $3 " " $4 " " $5 " " $6; exit}')" # Nome do modelo da CPU
-echo "$(lscpu | awk 'NR==1{print $1 " " $2; exit}')" # Arquitetura
+export QEMU_ARCH=$(lscpu | awk 'NR==1{print $2; exit}')
+export PLATFORM=$QEMU_ARCH
+echo "Arquitetura: $QEMU_ARCH"
 echo "Número de $(lscpu | awk 'NR==5{print $1 " " $2 " " $3 " " $4 " " $5 " " $6; exit}')" # Número de CPU(s)
 echo "$(lscpu | awk 'NR==21{print $1 " " $2 " " $3 " " $4 " " $5 " " $6; exit}')" # Virtualização
 echo "Memória RAM: $(($(getconf _PHYS_PAGES) * $(getconf PAGE_SIZE) / (1024 * 1024))) MiB " # Memória RAM física
@@ -44,7 +46,22 @@ echo ""
 
 cd vps
 
-chmod +x compilar.sh
-./compilar.sh
-chmod +x upload_cloud.sh
+if [[ "$(docker images -q nfdos/core/rootfs:latest 2> /dev/null)" == "" ]]; then
+
+    if [ ! -d "nfdos/core/rootfs" ]; then
+        sudo debootstrap --arch=amd64 --variant=minbase focal nfdos/core/rootfs
+        sudo tar -C nfdos/core/rootfs -c . | sudo docker import - nfdos/core/rootfs
+    fi
+
+    make build
+
+fi
+
+#sudo rm -rf nfdos/core/rootfs
+#sudo apt autoremove -y
+docker run -it --rm --name neoricalex nfdos/core/rootfs
+
+#chmod +x compilar.sh
+#./compilar.sh
+#chmod +x upload_cloud.sh
 #./upload_cloud.sh
