@@ -36,10 +36,7 @@ if [ "$usuario" == "neo@desktop" ]; then
     iniciar_local
 
     cd src
-    if [ -f "*.log" ]; then
-        cat *.log
-        rm *.log
-    fi
+    cat *.log
     cd ..
 
     git add .
