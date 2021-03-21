@@ -80,6 +80,7 @@ iniciar_vps(){
     vagrant up
     vagrant ssh <<EOF
 #!/bin/bash
+set -eux
 
 cd /vagrant
 
