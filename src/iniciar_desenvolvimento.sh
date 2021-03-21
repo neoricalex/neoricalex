@@ -86,7 +86,7 @@ iniciar_vps(){
 cd /vagrant
 
 make build
-docker run -it --rm --name neoricalex nfdos/core/rootfs
+docker run --rm --name neoricalex nfdos/core/rootfs
 
 cd ..
 EOF
@@ -115,6 +115,6 @@ iniciar_desenvolvimento_travis(){
 }
 
 case $HOSTNAME in
-  (desktop1) iniciar_desenvolvimento_travis;;
+  (desktop) iniciar_desenvolvimento_travis;;
   (*)   iniciar_desenvolvimento_local;;
 esac
