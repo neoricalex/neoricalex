@@ -65,6 +65,8 @@ iniciar_desenvolvimento_local(){
 
     cd vps
 
+    iniciar_log
+    iniciar_detalhes
     iniciar_rootfs
     #sudo rm -rf nfdos/core/rootfs
     #sudo apt autoremove -y

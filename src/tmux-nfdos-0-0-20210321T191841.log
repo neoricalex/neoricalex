@@ -1,0 +1,29 @@
+ A compilação vai iniciar em 2 segundos... A compilação vai iniciar em 1 segundos... A compilação vai iniciar em 0 segundos...
+
+Compilação iniciada dom 21 mar 2021 19:18:45
+
+Detalhes do desktop:
+
+Nome do modelo: AMD FX(tm)-8350 Eight-Core
+Arquitetura: x86_64
+Número de CPU(s): 8    
+Virtualização: AMD-V    
+Memória RAM: 16041 MiB 
+Memória Virtual: 4481 MB
+Modo(s) operacional da CPU: 32-bit, 64-bit
+
+*** Running /etc/my_init.d/00_regen_ssh_host_keys.sh...
+*** Running /etc/my_init.d/10_syslog-ng.init...
+[2021-03-21T22:18:46.179566] WARNING: Configuration file format is too old, syslog-ng is running in compatibility mode. Please update it to use the syslog-ng 3.25 format at your time of convenience. To upgrade the configuration, please review the warnings about incompatible changes printed by syslog-ng, and once completed change the @version header at the top of the configuration file; config-version='3.13'
+[2021-03-21T22:18:46.195956] WARNING: With use-dns(no), dns-cache() will be forced to 'no' too!;
+Mar 21 22:18:46 98d2d0b46b3b syslog-ng[14]: syslog-ng starting up; version='3.25.1'
+Mar 21 22:18:46 98d2d0b46b3b syslog-ng[14]: WARNING: log-fifo-size() works differently starting with syslog-ng 3.22 to avoid dropping flow-controlled messages when log-fifo-size() is misconfigured. From now on, log-fifo-size() only affects messages that are not flow-controlled. (Flow-controlled log paths have the flags(flow-control) option set.) To enable the new behaviour, update the @version string in your configuration and consider lowering the value of log-fifo-size().;
+*** Booting runit daemon...
+*** Runit started as PID 22
+Mar 21 22:18:47 98d2d0b46b3b cron[25]: (CRON) INFO (pidfile fd = 3)
+Mar 21 22:18:47 98d2d0b46b3b cron[25]: (CRON) INFO (Running @reboot jobs)
+^C*** Shutting down runit daemon (PID 22)...
+*** Running /etc/my_init.post_shutdown.d/10_syslog-ng.shutdown...
+Mar 21 22:18:59 98d2d0b46b3b syslog-ng[14]: syslog-ng shutting down; version='3.25.1'
+*** Init system aborted.
+*** Killing all processes...
