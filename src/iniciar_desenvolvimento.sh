@@ -79,7 +79,7 @@ iniciar_desenvolvimento_local(){
 }
 
 iniciar_vps(){
-    vagrant up
+    vagrant up --provider=libvirt
     vagrant ssh <<EOF
 #!/bin/bash
 
