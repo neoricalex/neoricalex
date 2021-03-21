@@ -85,8 +85,7 @@ iniciar_vps(){
 
 cd /vagrant
 
-make build
-docker run --rm --name neoricalex nfdos/core/rootfs
+make vps
 
 cd ..
 EOF
