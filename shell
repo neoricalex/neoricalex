@@ -36,7 +36,7 @@ if [ "$usuario" == "neo@desktop" ]; then
     iniciar_local
 
     cd src
-    if [ -f "*.log" ] ; then
+    if [ -f "*.log" ]; then
         cat *.log
         rm *.log
     fi
@@ -50,5 +50,6 @@ if [ "$usuario" == "neo@desktop" ]; then
     #sudo docker login
     #sudo docker push neoricalex/nfdos
     #sudo docker logout
-
+else
+    iniciar_local
 fi

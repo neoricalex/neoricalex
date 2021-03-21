@@ -82,29 +82,42 @@ iniciar_vps(){
     #!/bin/bash
 
     cd /vagrant
-    iniciar_rootfs
+
+    if [[ "$(docker images -q nfdos/core/rootfs:latest 2> /dev/null)" == "" ]]; then
+
+        if [ ! -d "nfdos/core/rootfs" ]; then
+            sudo debootstrap --arch=amd64 --variant=minbase focal nfdos/core/rootfs
+            sudo tar -C nfdos/core/rootfs -c . | sudo docker import - nfdos/core/rootfs
+        fi
+
+        make build
+
+    fi
+
     cd ..
 EOF
 }
 
 iniciar_desenvolvimento_travis(){
+
     cd vps
     if vagrant status | grep "not created" > /dev/null; then
         iniciar_vps
     elif vagrant status | grep "is running" > /dev/null; then
-        echo "[DEBUG] O VPS existe e está ligado. Destruir e começar de novo?"
+        echo "[DEBUG] O VPS_DEV existe e está ligado. Destruir e começar de novo?"
         vagrant destroy
         iniciar_vps
     elif vagrant status | grep "poweroff" > /dev/null; then
-        echo "[DEBUG] O VPS existe mas está desligado. Destruir e começar de novo..."
+        echo "[DEBUG] O VPS_DEV existe mas está desligado. Destruir e começar de novo..."
         vagrant destroy -f
         iniciar_vps
     else
-        echo "[DEBUG] O VPS existe mas está com um status diferente..."
+        echo "[DEBUG] O VPS_DEV existe mas está com um status diferente..."
         vagrant status
         sleep 5
     fi
     cd ..
+
 }
 
 case $HOSTNAME in
