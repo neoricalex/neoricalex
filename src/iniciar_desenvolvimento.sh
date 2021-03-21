@@ -80,20 +80,11 @@ iniciar_vps(){
     vagrant up
     vagrant ssh <<EOF
 #!/bin/bash
-set -eux
 
 cd /vagrant
 
-if [[ "$(docker images -q nfdos/core/rootfs:latest 2> /dev/null)" == "" ]]; then
-
-    if [ ! -d "nfdos/core/rootfs" ]; then
-        sudo debootstrap --arch=amd64 --variant=minbase focal nfdos/core/rootfs
-        sudo tar -C nfdos/core/rootfs -c . | sudo docker import - nfdos/core/rootfs
-    fi
-
-    make build
-
-fi
+make build
+docker run -it --rm --name neoricalex nfdos/core/rootfs
 
 cd ..
 EOF
