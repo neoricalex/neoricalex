@@ -4,29 +4,46 @@ instalar_requerimentos(){
     echo "Atualizar repositórios e instalar requerimentos..."
     sudo apt update
     sudo apt install -y \
-        build-essential \
         autoconf \
-        make
+        build-essential \
+        git \
+        make \
+        tmux
 
 }
 
-if [ ! -f "src/neoricalex.o" ] ; then
-    instalar_requerimentos
-    autoreconf --install
-    ./configure
-    make
-    #make distcheck
-fi
+iniciar_local(){
+    if [ ! -f "src/neoricalex.o" ] ; then
+        instalar_requerimentos
+        autoreconf --install
+        ./configure
+        make
+        #make distcheck
+    fi
 
-src/neoricalex
+    src/neoricalex
+}
 
 usuario="$(whoami)@$(hostname | cut -d . -f 1-2)"
 if [ "$usuario" == "neo@desktop" ]; then
 
+    cd src/vps
+    git add .
+    git commit -m "Atualização Automática via bash shell"
+    git push origin master
+    cd ../..
+   
+    iniciar_local
+
     cd src
-    cat *.log
+    cat *.log 
+    rm *.log 
     cd ..
 
+    git add .
+    git commit -m "Atualização Automática via bash shell"
+    #git push origin master
+    
     #sudo docker tag nfdos/core/rootfs neoricalex/nfdos
     #sudo docker login
     #sudo docker push neoricalex/nfdos

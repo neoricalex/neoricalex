@@ -18,8 +18,9 @@ install:
 # O Vagrant foi instalado corretamente?
 - vagrant --version
 
-# Instalar o plugin vagrant-libvirt do Vagrant
+# Instalar os plugins do Vagrant
 - sudo vagrant plugin install vagrant-libvirt
+- vagrant plugin install vagrant-disksize
 
 script:
 - bash shell

@@ -28,7 +28,13 @@ fi
 vps_original="$NEORICALEX_HOME/vps"
 github_vps="https://github.com/neoricalex/vps.git"
 if [ ! -d "$vps_original" ] ; then
-    git submodule add $github_vps $vps_original
+    git submodule add --force $github_vps $vps_original
+else
+    git submodule update
+    cd $vps_original
+    git checkout master
+    git pull
+    cd $NEORICALEX_HOME
 fi
 
 iniciar_desenvolvimento(){
