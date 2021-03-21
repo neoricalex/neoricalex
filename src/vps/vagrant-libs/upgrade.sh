@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
 
 # Atualizar Pacotes
-sudo apt-get -y upgrade
+sudo apt update && sudo apt upgrade -y
+sudo apt-get -y dist-upgrade
+sudo apt --purge autoremove -y
 
 # Atualizar Distribuição
 if [[ -r /etc/os-release ]]; then

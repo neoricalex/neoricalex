@@ -9,12 +9,23 @@ instalar_requerimentos(){
         autoconf \
         make \
         tmux \
-        git
+        git \
+        bindfs \
+        bridge-utils dnsmasq-base ebtables \
+        libvirt-daemon-system libvirt-clients libvirt-dev qemu-kvm qemu-utils ruby-dev
+
+    if ! command -v virtualbox &> /dev/null   
+    then
+        # Instalar o VirtualBox
+        sudo apt install virtualbox-6.1 -y
+        # Instalar pacotes extras do Virtualbox
+        sudo apt install -y virtualbox-guest-dkms virtualbox-guest-x11
+        sudo apt install -y virtualbox-guest-additions-iso
+    fi
 
     versao_vagrant_atual="2.2.9"
     if ! command -v vagrant &> /dev/null   
-    then
-        sudo apt install virtualbox -y 
+    then 
         curl -O https://releases.hashicorp.com/vagrant/${versao_vagrant_atual}/vagrant_${versao_vagrant_atual}_x86_64.deb
         sudo apt install ./vagrant_${versao_vagrant_atual}_x86_64.deb
         rm ./vagrant_${versao_vagrant_atual}_x86_64.deb
@@ -42,12 +53,19 @@ instalar_requerimentos(){
         vagrant plugin install vagrant-disksize
     fi
 
-    #if ! vagrant plugin list | grep -q "vagrant-reload"
-    #then
-    #    echo "Instalando o plugin vagrant-reload..."
-    #    vagrant plugin install vagrant-reload
-    #fi
+    if ! vagrant plugin list | grep -q "vagrant-bindfs"
+    then
+        echo "Instalando o plugin vagrant-bindfs..."
+        # REF: https://github.com/gael-ian/vagrant-bindfs
+        vagrant plugin install vagrant-bindfs
+    fi
 
+    if ! vagrant plugin list | grep -q "vagrant-libvirt"
+    then
+        echo "Instalando o plugin vagrant-libvirt..."
+        # REF: https://github.com/gael-ian/vagrant-bindfs
+        vagrant plugin install vagrant-libvirt
+    fi
 }
 
 instalar_requerimentos

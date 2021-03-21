@@ -2,36 +2,44 @@
 # vi: set ft=ruby :
 
 Vagrant.configure("2") do |config|
+    # REF: https://github.com/vagrant-libvirt/vagrant-libvirt
 
-	config.vm.define "VPS_DEV"
-	config.vm.box = "generic/ubuntu1804"
-	config.vm.synced_folder ".", "/vagrant", disabled: false
-	#config.vm.box_version = "0.4.4"
-	#config.vm.hostname  = "vps"
-	#config.ssh.username = "neo"
-	#config.ssh.password = "neoricalex"
-	#config.disksize.size = '100GB' 
+    config.vm.define :VPS_DEV do |test_vm|
+        # Box name
+        #
+        test_vm.vm.box = "generic/ubuntu1804"
+        test_vm.vm.synced_folder './', '/vagrant', type: 'rsync', 
+            disabled: false, 
+            accessmode: "mapped", 
+            mount: true
+        test_vm.vm.provision :shell, path: "requerimentos.sh"
 
-	config.vm.provider "virtualbox" do |vb|
-		vb.customize ["modifyvm", :id, "--graphicscontroller", "vmsvga"]
-		vb.customize ["modifyvm", :id, "--nested-hw-virt", "on"]
-		vb.customize ["modifyvm", :id, "--nestedpaging", "on"]
-		vb.name		= "VPS_DEV"
-		vb.memory	= "4096"
-		vb.cpus   	= "3"
-	end
+        # Domain Specific Options
+        #
+        # See README for more info.
+        #
+        test_vm.vm.provider :libvirt do |domain|
+            domain.memory = 4096
+            domain.cpus = 3
+        end
 
-	config.vm.provision :shell,
-		path: "vagrant-libs/bootstrap.sh"
+        # Interfaces for VM
+        # 
+        # Networking features in the form of `config.vm.network`
+        #
+        #test_vm.vm.network :private_network, :ip => '10.20.30.40'
+        #test_vm.vm.network :public_network, :ip => '10.20.30.41'
+        #end
 
-	#config.vm.provision :shell do |shell|
-	#	begin
-	#		shell.path = "vagrant-libs/bootstrap.sh"
-	#	rescue
-	#		shell.privileged = true
-	#		shell.inline = 'echo rebooting'
-	#		shell.reboot = true
-	#	end
-	#end
+        config.vm.provider :libvirt do |libvirt|
+            libvirt.driver = "kvm"
+            # libvirt.host = "localhost"
+            libvirt.connect_via_ssh = false
+            libvirt.username = "root"
+            #libvirt.password = "secret"
+            libvirt.storage_pool_name = "default"
+            libvirt.default_prefix = 'neoricalex-'
+        end
+
+    end
 end
-  

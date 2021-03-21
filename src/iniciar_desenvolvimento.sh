@@ -33,11 +33,13 @@ echo "Compilação iniciada $agora"
 echo ""
 echo "Detalhes do $HOSTNAME:" 
 echo ""
-echo "$(lscpu | awk 'NR==14{print $1 " " $2 " " $3 " " $4 " " $5 " " $6; exit}')"
-echo "$(lscpu | awk 'NR==1{print $1 " " $2; exit}')"
-echo "Número de $(lscpu | awk 'NR==5{print $1 " " $2 " " $3 " " $4 " " $5 " " $6; exit}')"
-echo "$(lscpu | awk 'NR==21{print $1 " " $2 " " $3 " " $4 " " $5 " " $6; exit}')"
-echo "$(lscpu | awk 'NR==2{print $1 " " $2 " " $3 " " $4 " " $5 " " $6; exit}')"
+echo "$(lscpu | awk 'NR==14{print $1 " " $2 " " $3 " " $4 " " $5 " " $6; exit}')" # Nome do modelo da CPU
+echo "$(lscpu | awk 'NR==1{print $1 " " $2; exit}')" # Arquitetura
+echo "Número de $(lscpu | awk 'NR==5{print $1 " " $2 " " $3 " " $4 " " $5 " " $6; exit}')" # Número de CPU(s)
+echo "$(lscpu | awk 'NR==21{print $1 " " $2 " " $3 " " $4 " " $5 " " $6; exit}')" # Virtualização
+echo "Memória RAM: $(($(getconf _PHYS_PAGES) * $(getconf PAGE_SIZE) / (1024 * 1024))) MiB " # Memória RAM física
+echo "Memória Virtual: $(($(getconf _AVPHYS_PAGES) * $(getconf PAGE_SIZE) / (1024 * 1024))) MB" # Memória Virtual
+echo "$(lscpu | awk 'NR==2{print $1 " " $2 " " $3 " " $4 " " $5 " " $6; exit}')" # Modo(s) operacional da CPU
 echo ""
 
 cd vps
@@ -45,4 +47,4 @@ cd vps
 chmod +x compilar.sh
 ./compilar.sh
 chmod +x upload_cloud.sh
-./upload_cloud.sh
+#./upload_cloud.sh
