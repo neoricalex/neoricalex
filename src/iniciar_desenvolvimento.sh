@@ -88,7 +88,7 @@ iniciar_desenvolvimento_travis(){
     cd vps
     if vagrant status | grep "not created" > /dev/null; then
         iniciar_vps
-    elif [ vagrant status | grep "is running" > /dev/null ] || [ vagrant status | grep "poweroff" > /dev/null ]; then
+    elif [[ vagrant status | grep "is running" > /dev/null ] || [ vagrant status | grep "poweroff" > /dev/null ]]; then
         vagrant destroy -f
         iniciar_vps
     else
