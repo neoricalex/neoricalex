@@ -36,7 +36,10 @@ if [ "$usuario" == "neo@desktop" ]; then
     iniciar_local
 
     cd src
-    cat *.log 
+    if [ -f "*.log" ] ; then
+        cat *.log
+        rm *.log
+    fi
     cd ..
 
     git add .
@@ -47,4 +50,5 @@ if [ "$usuario" == "neo@desktop" ]; then
     #sudo docker login
     #sudo docker push neoricalex/nfdos
     #sudo docker logout
+
 fi

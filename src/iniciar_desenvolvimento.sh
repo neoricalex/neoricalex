@@ -48,10 +48,7 @@ iniciar_detalhes(){
     echo ""
 }
 
-iniciar_desenvolvimento_local(){
-
-    cd vps
-
+iniciar_rootfs(){
     if [[ "$(docker images -q nfdos/core/rootfs:latest 2> /dev/null)" == "" ]]; then
 
         if [ ! -d "nfdos/core/rootfs" ]; then
@@ -62,7 +59,13 @@ iniciar_desenvolvimento_local(){
         make build
 
     fi
+}
 
+iniciar_desenvolvimento_local(){
+
+    cd vps
+
+    iniciar_rootfs
     #sudo rm -rf nfdos/core/rootfs
     #sudo apt autoremove -y
     docker run -it --rm --name neoricalex nfdos/core/rootfs
@@ -79,7 +82,7 @@ iniciar_vps(){
     #!/bin/bash
 
     cd /vagrant
-    make build
+    iniciar_rootfs
     cd ..
 EOF
 }
@@ -89,13 +92,15 @@ iniciar_desenvolvimento_travis(){
     if vagrant status | grep "not created" > /dev/null; then
         iniciar_vps
     elif vagrant status | grep "is running" > /dev/null; then
-        vagrant destroy -f
+        echo "[DEBUG] O VPS existe e está ligado. Destruir e começar de novo?"
+        vagrant destroy
         iniciar_vps
     elif vagrant status | grep "poweroff" > /dev/null; then
+        echo "[DEBUG] O VPS existe mas está desligado. Destruir e começar de novo..."
         vagrant destroy -f
         iniciar_vps
     else
-        echo "[DEBUG] VPS existe mas está com um status diferente..."
+        echo "[DEBUG] O VPS existe mas está com um status diferente..."
         vagrant status
         sleep 5
     fi
