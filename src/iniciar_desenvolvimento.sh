@@ -57,9 +57,9 @@ iniciar_rootfs(){
             sudo tar -C nfdos/core/rootfs -c . | sudo docker import - nfdos/core/rootfs
         fi
 
-        make vps
-
     fi
+
+    make vps
 }
 
 iniciar_desenvolvimento_local(){
