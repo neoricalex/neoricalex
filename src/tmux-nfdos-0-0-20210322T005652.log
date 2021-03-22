@@ -1,6 +1,6 @@
- A compilação vai iniciar em 5 segundos... A compilação vai iniciar em 4 segundos... A compilação vai iniciar em 3 segundos... A compilação vai iniciar em 2 segundos... A compilação vai iniciar em 1 segundos... A compilação vai iniciar em 0 segundos...
+ A compilação vai iniciar em 6 segundos... A compilação vai iniciar em 5 segundos... A compilação vai iniciar em 4 segundos... A compilação vai iniciar em 3 segundos... A compilação vai iniciar em 2 segundos... A compilação vai iniciar em 1 segundos... A compilação vai iniciar em 0 segundos...
 
-Compilação iniciada seg 22 mar 2021 00:52:47
+Compilação iniciada seg 22 mar 2021 00:56:59
 
 Detalhes do desktop:
 
@@ -9,27 +9,27 @@ Arquitetura: x86_64
 Número de CPU(s): 8    
 Virtualização: AMD-V    
 Memória RAM: 16041 MiB 
-Memória Virtual: 6891 MB
+Memória Virtual: 6554 MB
 Modo(s) operacional da CPU: 32-bit, 64-bit
 
 ./build.sh
 Getting qemu package for amd64
 sudo docker build --no-cache -t nfdos/core/rootfs:latest  --build-arg QEMU_ARCH=amd64 --platform amd64 --rm nfdos
 [sudo] senha para neo: 
-Sending build context to Docker daemon  557.1kBSending build context to Docker daemon  15.04MBSending build context to Docker daemon   27.3MBSending build context to Docker daemon  42.34MBSending build context to Docker daemon  57.93MBSending build context to Docker daemon  67.96MBSending build context to Docker daemon  76.32MBSending build context to Docker daemon  83.56MBSending build context to Docker daemon  97.48MBSending build context to Docker daemon  112.5MBSending build context to Docker daemon  116.4MB
+Sending build context to Docker daemon  557.1kBSending build context to Docker daemon  14.48MBSending build context to Docker daemon  26.74MBSending build context to Docker daemon  41.78MBSending build context to Docker daemon  57.38MBSending build context to Docker daemon   67.4MBSending build context to Docker daemon  77.99MBSending build context to Docker daemon  85.23MBSending build context to Docker daemon  100.8MBSending build context to Docker daemon  114.8MBSending build context to Docker daemon  116.4MB
 Step 1/8 : ARG BASE_IMAGE=ubuntu:20.04
 Step 2/8 : FROM $BASE_IMAGE
  ---> 4dd97cefde62
 Step 3/8 : ARG QEMU_ARCH
- ---> Running in 3d8f06365adb
-Removing intermediate container 3d8f06365adb
- ---> f8f15f754299
+ ---> Running in 0447e9b7169d
+Removing intermediate container 0447e9b7169d
+ ---> 75bdee836cce
 Step 4/8 : ADD x86_64_qemu-${QEMU_ARCH}-static.tar.gz /usr/bin
- ---> f24f5cb4d642
+ ---> 71e4297cb24f
 Step 5/8 : COPY . /bd_build
- ---> 8b9ae4b89e9e
-Step 6/8 : RUN /bd_build/prepare.sh && 	/bd_build/system_services.sh && 	/bd_build/utilities.sh && 	/bd_build/cleanup.sh
- ---> Running in 6c1aece7e6b1
+ ---> 52e55c3c336f
+Step 6/8 : RUN /bd_build/prepare.sh && 	/bd_build/system_services.sh && 	/bd_build/utilities.sh && 	/bd_build/cleanup.sh &&     /bd_build/iniciar.sh
+ ---> Running in bede59a13404
 + export INITRD=no
 + INITRD=no
 + mkdir -p /etc/container_environment
@@ -40,35 +40,35 @@ Step 6/8 : RUN /bd_build/prepare.sh && 	/bd_build/system_services.sh && 	/bd_bui
 + apt-get update
 Get:1 http://archive.ubuntu.com/ubuntu focal InRelease [265 kB]
 Get:2 http://security.ubuntu.com/ubuntu focal-security InRelease [109 kB]
-Get:3 http://security.ubuntu.com/ubuntu focal-security/universe Sources [60.9 kB]
-Get:4 http://archive.ubuntu.com/ubuntu focal-updates InRelease [114 kB]
+Get:3 http://archive.ubuntu.com/ubuntu focal-updates InRelease [114 kB]
+Get:4 http://security.ubuntu.com/ubuntu focal-security/universe Sources [60.9 kB]
 Get:5 http://archive.ubuntu.com/ubuntu focal-backports InRelease [101 kB]
-Get:6 http://security.ubuntu.com/ubuntu focal-security/restricted Sources [11.9 kB]
-Get:7 http://security.ubuntu.com/ubuntu focal-security/main Sources [164 kB]
-Get:8 http://security.ubuntu.com/ubuntu focal-security/multiverse Sources [2122 B]
+Get:6 http://security.ubuntu.com/ubuntu focal-security/multiverse Sources [2122 B]
+Get:7 http://security.ubuntu.com/ubuntu focal-security/restricted Sources [11.9 kB]
+Get:8 http://security.ubuntu.com/ubuntu focal-security/main Sources [164 kB]
 Get:9 http://security.ubuntu.com/ubuntu focal-security/restricted amd64 Packages [187 kB]
-Get:10 http://archive.ubuntu.com/ubuntu focal/universe Sources [12.3 MB]
-Get:11 http://security.ubuntu.com/ubuntu focal-security/multiverse amd64 Packages [21.6 kB]
+Get:10 http://archive.ubuntu.com/ubuntu focal/restricted Sources [7198 B]
+Get:11 http://archive.ubuntu.com/ubuntu focal/multiverse Sources [208 kB]
 Get:12 http://security.ubuntu.com/ubuntu focal-security/main amd64 Packages [689 kB]
-Get:13 http://security.ubuntu.com/ubuntu focal-security/universe amd64 Packages [681 kB]
-Get:14 http://archive.ubuntu.com/ubuntu focal/main Sources [1079 kB]
-Get:15 http://archive.ubuntu.com/ubuntu focal/restricted Sources [7198 B]
-Get:16 http://archive.ubuntu.com/ubuntu focal/multiverse Sources [208 kB]
+Get:13 http://archive.ubuntu.com/ubuntu focal/main Sources [1079 kB]
+Get:14 http://security.ubuntu.com/ubuntu focal-security/universe amd64 Packages [681 kB]
+Get:15 http://archive.ubuntu.com/ubuntu focal/universe Sources [12.3 MB]
+Get:16 http://security.ubuntu.com/ubuntu focal-security/multiverse amd64 Packages [21.6 kB]
 Get:17 http://archive.ubuntu.com/ubuntu focal/universe amd64 Packages [11.3 MB]
-Get:18 http://archive.ubuntu.com/ubuntu focal/main amd64 Packages [1275 kB]
-Get:19 http://archive.ubuntu.com/ubuntu focal/restricted amd64 Packages [33.4 kB]
-Get:20 http://archive.ubuntu.com/ubuntu focal/multiverse amd64 Packages [177 kB]
-Get:21 http://archive.ubuntu.com/ubuntu focal-updates/restricted Sources [13.5 kB]
-Get:22 http://archive.ubuntu.com/ubuntu focal-updates/main Sources [466 kB]
-Get:23 http://archive.ubuntu.com/ubuntu focal-updates/multiverse Sources [11.8 kB]
-Get:24 http://archive.ubuntu.com/ubuntu focal-updates/universe Sources [196 kB]
+Get:18 http://archive.ubuntu.com/ubuntu focal/multiverse amd64 Packages [177 kB]
+Get:19 http://archive.ubuntu.com/ubuntu focal/main amd64 Packages [1275 kB]
+Get:20 http://archive.ubuntu.com/ubuntu focal/restricted amd64 Packages [33.4 kB]
+Get:21 http://archive.ubuntu.com/ubuntu focal-updates/main Sources [466 kB]
+Get:22 http://archive.ubuntu.com/ubuntu focal-updates/restricted Sources [13.5 kB]
+Get:23 http://archive.ubuntu.com/ubuntu focal-updates/universe Sources [196 kB]
+Get:24 http://archive.ubuntu.com/ubuntu focal-updates/multiverse Sources [11.8 kB]
 Get:25 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 Packages [1093 kB]
-Get:26 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 Packages [940 kB]
+Get:26 http://archive.ubuntu.com/ubuntu focal-updates/multiverse amd64 Packages [29.6 kB]
 Get:27 http://archive.ubuntu.com/ubuntu focal-updates/restricted amd64 Packages [220 kB]
-Get:28 http://archive.ubuntu.com/ubuntu focal-updates/multiverse amd64 Packages [29.6 kB]
+Get:28 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 Packages [940 kB]
 Get:29 http://archive.ubuntu.com/ubuntu focal-backports/universe Sources [2156 B]
 Get:30 http://archive.ubuntu.com/ubuntu focal-backports/universe amd64 Packages [4305 B]
-Fetched 31.8 MB in 7s (4625 kB/s)
+Fetched 31.8 MB in 7s (4834 kB/s)
 Reading package lists...
 + dpkg-divert --local --rename --add /sbin/initctl
 Leaving 'local diversion of /sbin/initctl to /sbin/initctl.distrib'
@@ -88,7 +88,7 @@ Need to get 213 kB of archives.
 After this operation, 852 kB of additional disk space will be used.
 Get:1 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 apt-utils amd64 2.0.4 [213 kB]
 debconf: delaying package configuration, since apt-utils is not installed
-Fetched 213 kB in 1s (175 kB/s)
+Fetched 213 kB in 1s (150 kB/s)
 Selecting previously unselected package apt-utils.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 4122 files and directories currently installed.)
 Preparing to unpack .../apt-utils_2.0.4_amd64.deb ...
@@ -110,7 +110,7 @@ Get:2 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 openssl amd64 1.
 Get:3 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 ca-certificates all 20210119~20.04.1 [146 kB]
 Get:4 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 apt-transport-https all 2.0.4 [1704 B]
 Preconfiguring packages ...
-Fetched 2088 kB in 2s (888 kB/s)
+Fetched 2088 kB in 2s (898 kB/s)
 Selecting previously unselected package libssl1.1:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 4160 files and directories currently installed.)
 Preparing to unpack .../libssl1.1_1.1.1f-1ubuntu2.2_amd64.deb ...
@@ -280,7 +280,7 @@ Get:84 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 python3-softwar
 Get:85 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 packagekit amd64 1.1.13-2ubuntu1.1 [408 kB]
 Get:86 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 software-properties-common all 0.98.9.4 [10.6 kB]
 Preconfiguring packages ...
-Fetched 29.5 MB in 7s (3967 kB/s)
+Fetched 29.5 MB in 7s (3933 kB/s)
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 4482 files and directories currently installed.)
 Preparing to unpack .../libsystemd0_245.4-4ubuntu3.5_amd64.deb ...
 Unpacking libsystemd0:amd64 (245.4-4ubuntu3.5) over (245.4-4ubuntu3.4) ...
@@ -585,8 +585,8 @@ Setting up libkrb5support0:amd64 (1.17-6ubuntu4.1) ...
 Setting up tzdata (2021a-0ubuntu0.20.04) ...
 
 Current default time zone: 'Etc/UTC'
-Local time is now:      Mon Mar 22 03:53:43 UTC 2021.
-Universal Time is now:  Mon Mar 22 03:53:43 UTC 2021.
+Local time is now:      Mon Mar 22 03:57:54 UTC 2021.
+Universal Time is now:  Mon Mar 22 03:57:54 UTC 2021.
 Run 'dpkg-reconfigure tzdata' if you wish to change it.
 
 Setting up libcap2-bin (1:2.32-1) ...
@@ -665,7 +665,7 @@ Need to get 318 kB of archives.
 After this operation, 1024 B of additional disk space will be used.
 Get:1 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libudev1 amd64 245.4-4ubuntu3.5 [81.2 kB]
 Get:2 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libzstd1 amd64 1.4.4+dfsg-3ubuntu0.1 [237 kB]
-Fetched 318 kB in 2s (184 kB/s)
+Fetched 318 kB in 2s (177 kB/s)
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 10126 files and directories currently installed.)
 Preparing to unpack .../libudev1_245.4-4ubuntu3.5_amd64.deb ...
 Unpacking libudev1:amd64 (245.4-4ubuntu3.5) over (245.4-4ubuntu3.4) ...
@@ -692,7 +692,7 @@ Get:1 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 locales all 2.31
 Get:2 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 language-pack-pt-base all 1:20.04+20210121 [2809 kB]
 Get:3 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 language-pack-pt all 1:20.04+20210121 [1900 B]
 Preconfiguring packages ...
-Fetched 6683 kB in 3s (2181 kB/s)
+Fetched 6683 kB in 3s (2324 kB/s)
 Selecting previously unselected package locales.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 10126 files and directories currently installed.)
 Preparing to unpack .../locales_2.31-0ubuntu9.2_all.deb ...
@@ -748,7 +748,7 @@ The following NEW packages will be installed:
 Need to get 95.9 kB of archives.
 After this operation, 409 kB of additional disk space will be used.
 Get:1 http://archive.ubuntu.com/ubuntu focal/universe amd64 runit amd64 2.1.2-9.2ubuntu1 [95.9 kB]
-Fetched 95.9 kB in 1s (77.7 kB/s)
+Fetched 95.9 kB in 1s (82.1 kB/s)
 Selecting previously unselected package runit.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 11218 files and directories currently installed.)
 Preparing to unpack .../runit_2.1.2-9.2ubuntu1_amd64.deb ...
@@ -809,7 +809,7 @@ Get:18 http://archive.ubuntu.com/ubuntu focal/main amd64 libnet1 amd64 1.1.6+dfs
 Get:19 http://archive.ubuntu.com/ubuntu focal/main amd64 libwrap0 amd64 7.6.q-30 [46.3 kB]
 Get:20 http://archive.ubuntu.com/ubuntu focal/universe amd64 libivykis0 amd64 0.42.4-1 [26.5 kB]
 Get:21 http://archive.ubuntu.com/ubuntu focal/universe amd64 syslog-ng-core amd64 3.25.1-3 [603 kB]
-Fetched 2308 kB in 3s (892 kB/s)
+Fetched 2308 kB in 2s (1025 kB/s)
 Selecting previously unselected package libroken18-heimdal:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 11267 files and directories currently installed.)
 Preparing to unpack .../00-libroken18-heimdal_7.7.0+dfsg-1ubuntu1_amd64.deb ...
@@ -922,7 +922,7 @@ Need to get 70.8 kB of archives.
 After this operation, 269 kB of additional disk space will be used.
 Get:1 http://archive.ubuntu.com/ubuntu focal/main amd64 libpopt0 amd64 1.16-14 [26.3 kB]
 Get:2 http://archive.ubuntu.com/ubuntu focal/main amd64 logrotate amd64 3.14.0-4ubuntu3 [44.5 kB]
-Fetched 70.8 kB in 1s (61.5 kB/s)
+Fetched 70.8 kB in 1s (67.2 kB/s)
 Selecting previously unselected package libpopt0:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 11525 files and directories currently installed.)
 Preparing to unpack .../libpopt0_1.16-14_amd64.deb ...
@@ -965,7 +965,7 @@ Get:6 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 openssh-client a
 Get:7 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 openssh-sftp-server amd64 1:8.2p1-4ubuntu0.2 [51.5 kB]
 Get:8 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 openssh-server amd64 1:8.2p1-4ubuntu0.2 [377 kB]
 Preconfiguring packages ...
-Fetched 1353 kB in 2s (600 kB/s)
+Fetched 1353 kB in 2s (606 kB/s)
 Selecting previously unselected package libbsd0:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 11547 files and directories currently installed.)
 Preparing to unpack .../0-libbsd0_0.10.0-1_amd64.deb ...
@@ -1003,11 +1003,11 @@ Setting up openssh-server (1:8.2p1-4ubuntu0.2) ...
 
 Creating config file /etc/ssh/sshd_config with new version
 Creating SSH2 RSA key; this may take some time ...
-3072 SHA256:Lb4bcFc6+0BaHhjs7Kpuicem4pcyT9LwVitDzeNCXKI root@6c1aece7e6b1 (RSA)
+3072 SHA256:sBPJRBJvMq02V7eFkmNtYjBKUDQIpnXv+uYK5sR6muw root@bede59a13404 (RSA)
 Creating SSH2 ECDSA key; this may take some time ...
-256 SHA256:+WQ+/830WyNoDFceD49+xnrSa/0qUH+bIXpaZipTNIo root@6c1aece7e6b1 (ECDSA)
+256 SHA256:+zESMh99n2gD35oBICmkR7msw/fxfNVeQN+CLc3J95E root@bede59a13404 (ECDSA)
 Creating SSH2 ED25519 key; this may take some time ...
-256 SHA256:A2PKu9lccmNty5m2h1n0fexm+o3+CDwfx+4MS5Y3Yg0 root@6c1aece7e6b1 (ED25519)
+256 SHA256:oLmNk7vMMkgbTpRq6XknAnP5rw80ulP+oaF0bPiUDeQ root@bede59a13404 (ED25519)
 Created symlink /etc/systemd/system/sshd.service -> /lib/systemd/system/ssh.service.
 Created symlink /etc/systemd/system/multi-user.target.wants/ssh.service -> /lib/systemd/system/ssh.service.
 invoke-rc.d: could not determine current runlevel
@@ -1042,7 +1042,7 @@ The following NEW packages will be installed:
 Need to get 71.5 kB of archives.
 After this operation, 268 kB of additional disk space will be used.
 Get:1 http://archive.ubuntu.com/ubuntu focal/main amd64 cron amd64 3.0pl1-136ubuntu1 [71.5 kB]
-Fetched 71.5 kB in 1s (74.3 kB/s)
+Fetched 71.5 kB in 1s (71.7 kB/s)
 Selecting previously unselected package cron.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 11666 files and directories currently installed.)
 Preparing to unpack .../cron_3.0pl1-136ubuntu1_amd64.deb ...
@@ -1094,7 +1094,7 @@ Get:8 http://archive.ubuntu.com/ubuntu focal/main amd64 libnpth0 amd64 1.6-1 [77
 Get:9 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 dirmngr amd64 2.2.19-3ubuntu2.1 [329 kB]
 Get:10 http://archive.ubuntu.com/ubuntu focal/main amd64 pinentry-curses amd64 1.1.0-3build1 [36.3 kB]
 Get:11 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 gpg-agent amd64 2.2.19-3ubuntu2.1 [232 kB]
-Fetched 1748 kB in 2s (735 kB/s)
+Fetched 1748 kB in 2s (823 kB/s)
 Selecting previously unselected package less.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 11703 files and directories currently installed.)
 Preparing to unpack .../00-less_551-1ubuntu0.1_amd64.deb ...
@@ -1194,32 +1194,6 @@ Processing triggers for mime-support (3.64ubuntu1) ...
 + find / -mount -name '*.pyc' -delete
 + find / -mount -name '*__pycache__*' -delete
 + rm -f /etc/ssh/ssh_host_ecdsa_key /etc/ssh/ssh_host_ecdsa_key.pub /etc/ssh/ssh_host_ed25519_key /etc/ssh/ssh_host_ed25519_key.pub /etc/ssh/ssh_host_rsa_key /etc/ssh/ssh_host_rsa_key.pub
-Removing intermediate container 6c1aece7e6b1
- ---> ed9547487bc4
-Step 7/8 : ENV DEBIAN_FRONTEND="teletype"     LANG="pt_BR.UTF-8"     LANGUAGE="pt_BR:br"     LC_ALL="pt_BR.UTF-8"
- ---> Running in f8c5360539ac
-Removing intermediate container f8c5360539ac
- ---> 12c46dba6159
-Step 8/8 : CMD ["/sbin/my_init"]
- ---> Running in b275957d2756
-Removing intermediate container b275957d2756
- ---> acfd4b89d333
-Successfully built acfd4b89d333
-Successfully tagged nfdos/core/rootfs:latest
-docker run --rm --name neoricalex nfdos/core/rootfs
-*** Running /etc/my_init.d/00_regen_ssh_host_keys.sh...
-*** Running /etc/my_init.d/10_syslog-ng.init...
-[2021-03-22T03:54:41.788962] WARNING: Configuration file format is too old, syslog-ng is running in compatibility mode. Please update it to use the syslog-ng 3.25 format at your time of convenience. To upgrade the configuration, please review the warnings about incompatible changes printed by syslog-ng, and once completed change the @version header at the top of the configuration file; config-version='3.13'
-[2021-03-22T03:54:41.807992] WARNING: With use-dns(no), dns-cache() will be forced to 'no' too!;
-Mar 22 03:54:41 36149c37f9c4 syslog-ng[14]: syslog-ng starting up; version='3.25.1'
-Mar 22 03:54:41 36149c37f9c4 syslog-ng[14]: WARNING: log-fifo-size() works differently starting with syslog-ng 3.22 to avoid dropping flow-controlled messages when log-fifo-size() is misconfigured. From now on, log-fifo-size() only affects messages that are not flow-controlled. (Flow-controlled log paths have the flags(flow-control) option set.) To enable the new behaviour, update the @version string in your configuration and consider lowering the value of log-fifo-size().;
-*** Booting runit daemon...
-*** Runit started as PID 22
-Mar 22 03:54:42 36149c37f9c4 cron[25]: (CRON) INFO (pidfile fd = 3)
-Mar 22 03:54:42 36149c37f9c4 cron[25]: (CRON) INFO (Running @reboot jobs)
-^C*** Shutting down runit daemon (PID 22)...
-*** Running /etc/my_init.post_shutdown.d/10_syslog-ng.shutdown...
-Mar 22 03:56:37 36149c37f9c4 syslog-ng[14]: syslog-ng shutting down; version='3.25.1'
-*** Init system aborted.
-*** Killing all processes...
-make: *** [Makefile:28: vps] Erro 2
+/bin/sh: 1: /bd_build/iniciar.sh: not found
+The command '/bin/sh -c /bd_build/prepare.sh && 	/bd_build/system_services.sh && 	/bd_build/utilities.sh && 	/bd_build/cleanup.sh &&     /bd_build/iniciar.sh' returned a non-zero code: 127
+make: *** [Makefile:32: build] Erro 127
