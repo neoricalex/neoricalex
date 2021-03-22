@@ -29,8 +29,7 @@ if [ "$usuario" == "neo@desktop" ]; then
 
     cd src/vps
     echo "Atualizar o github:neoricalex/vps..."
-    sudo 
-    git add .
+    sudo git add .
     git commit -m "Atualização Automática via bash shell"
     git push origin master
     cd ../..
