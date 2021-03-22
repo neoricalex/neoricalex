@@ -2,6 +2,7 @@
 iniciar_log(){
     # Iniciar o LOG
     if compgen -G "${NEORICALEX_HOME}/*.log" > /dev/null; then
+        pwd
         rm *.log
     else
         echo "[DEBUG]"

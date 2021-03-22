@@ -37,7 +37,6 @@ if [ "$usuario" == "neo@desktop" ]; then
 
     cd src
     cat *.log
-    #rm *.log
     cd ..
 
     git add .
