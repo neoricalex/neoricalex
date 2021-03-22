@@ -1,0 +1,65 @@
+ A compilação vai iniciar em 6 segundos... A compilação vai iniciar em 5 segundos... A compilação vai iniciar em 4 segundos... A compilação vai iniciar em 3 segundos... A compilação vai iniciar em 2 segundos... A compilação vai iniciar em 1 segundos... A compilação vai iniciar em 0 segundos...
+
+Compilação iniciada seg 22 mar 2021 12:07:50
+
+Detalhes do desktop:
+
+Nome do modelo: AMD FX(tm)-8350 Eight-Core
+Arquitetura: x86_64
+Número de CPU(s): 8    
+Virtualização: AMD-V    
+Memória RAM: 16041 MiB 
+Memória Virtual: 9416 MB
+Modo(s) operacional da CPU: 32-bit, 64-bit
+
+chmod +x criar_box.sh
+./criar_box.sh
+==> Atualizar os repositórios...
+[sudo] senha para neo: 
+0% [Trabalhando]                Atingido:1 http://download.virtualbox.org/virtualbox/debian focal InRelease
+0% [Conectando em br.archive.ubuntu.com (200.236.31.4)] [Conectando em security.ubuntu.com (91.189.88.142)] [Conectando a brav                                                                                                                              Atingido:2 http://br.archive.ubuntu.com/ubuntu focal InRelease
+0% [Aguardando por cabeçalhos] [Conectando em security.ubuntu.com (91.189.88.142)] [Conectando em brave-browser-apt-release.s                                                                                                                              Atingido:3 http://br.archive.ubuntu.com/ubuntu focal-updates InRelease
+0% [Conectando em security.ubuntu.com (91.189.88.142)] [Conectando em brave-browser-apt-release.s3.brave.com (13.227.99.105)]                                                                                                                               Atingido:4 http://br.archive.ubuntu.com/ubuntu focal-backports InRelease
+0% [Conectando em security.ubuntu.com (91.189.88.142)] [Connected to brave-browser-apt-release.s3.brave.com (13.227.99.105)] [                                                                                                                              Atingido:5 https://download.docker.com/linux/ubuntu focal InRelease
+                                                                                                                              0% [Conectando em security.ubuntu.com (91.189.88.142)] [Connected to brave-browser-apt-release.s3.brave.com (13.227.99.105)]                                                                                                                            Atingido:6 https://brave-browser-apt-release.s3.brave.com stable InRelease
+                                                                                                                            0% [Conectando em security.ubuntu.com (91.189.88.142)]0% [Conectando em security.ubuntu.com (91.189.88.142)]                                                      0% [Aguardando por cabeçalhos]                               Obter:7 http://security.ubuntu.com/ubuntu focal-security InRelease [109 kB]
+0% [7 InRelease 3.973 B/109 kB 4%]0% [7 InRelease 14,0 kB/109 kB 13%]0% [7 InRelease 14,0 kB/109 kB 13%]0% [7 InRelease 36,8 kB/109 kB 34%]0% [7 InRelease 41,1 kB/109 kB 38%]                                   0% [Trabalhando]27% [Trabalhando]                 Obter:8 http://security.ubuntu.com/ubuntu focal-security/main amd64 Packages [552 kB]
+27% [8 Packages 5.503 B/552 kB 1%]54% [8 Packages 408 kB/552 kB 74%]                                  63% [Trabalhando]63% [8 Packages store 0 B] [Aguardando por cabeçalhos]                                                       63% [Aguardando por cabeçalhos]                                Obter:9 http://security.ubuntu.com/ubuntu focal-security/main amd64 c-n-f Metadata [7.372 B]
+64% [9 Commands-amd64 7.372 B/7.372 B 100%]                                           64% [Trabalhando]                 Obter:10 http://security.ubuntu.com/ubuntu focal-security/universe amd64 Packages [550 kB]
+64% [10 Packages 5.503 B/550 kB 1%]64% [9 Commands-amd64 store 0 B] [10 Packages 5.503 B/550 kB 1%]                                                                65% [10 Packages 16,9 kB/550 kB 3%]                                   100% [Trabalhando]100% [10 Packages store 0 B]                            100% [Trabalhando]                  Baixados 1.219 kB em 3s (451 kB/s)
+Lendo listas de pacotes... 0%Lendo listas de pacotes... 0%Lendo listas de pacotes... 0%Lendo listas de pacotes... 3%Lendo listas de pacotes... 3%Lendo listas de pacotes... 5%Lendo listas de pacotes... 5%Lendo listas de pacotes... 6%Lendo listas de pacotes... 6%Lendo listas de pacotes... 7%Lendo listas de pacotes... 7%Lendo listas de pacotes... 9%Lendo listas de pacotes... 9%Lendo listas de pacotes... 9%Lendo listas de pacotes... 9%Lendo listas de pacotes... 9%Lendo listas de pacotes... 9%Lendo listas de pacotes... 9%Lendo listas de pacotes... 9%Lendo listas de pacotes... 9%Lendo listas de pacotes... 9%Lendo listas de pacotes... 9%Lendo listas de pacotes... 9%Lendo listas de pacotes... 39%Lendo listas de pacotes... 39%Lendo listas de pacotes... 55%Lendo listas de pacotes... 55%Lendo listas de pacotes... 57%Lendo listas de pacotes... 58%Lendo listas de pacotes... 58%Lendo listas de pacotes... 61%Lendo listas de pacotes... 61%Lendo listas de pacotes... 77%Lendo listas de pacotes... 77%Lendo listas de pacotes... 77%Lendo listas de pacotes... 77%Lendo listas de pacotes... 77%Lendo listas de pacotes... 77%Lendo listas de pacotes... 77%Lendo listas de pacotes... 77%Lendo listas de pacotes... 77%Lendo listas de pacotes... 77%Lendo listas de pacotes... 78%Lendo listas de pacotes... 78%Lendo listas de pacotes... 80%Lendo listas de pacotes... 80%Lendo listas de pacotes... 82%Lendo listas de pacotes... 82%Lendo listas de pacotes... 83%Lendo listas de pacotes... 83%Lendo listas de pacotes... 84%Lendo listas de pacotes... 84%Lendo listas de pacotes... 84%Lendo listas de pacotes... 84%Lendo listas de pacotes... 84%Lendo listas de pacotes... 84%Lendo listas de pacotes... 87%Lendo listas de pacotes... 87%Lendo listas de pacotes... 89%Lendo listas de pacotes... 89%Lendo listas de pacotes... 90%Lendo listas de pacotes... 90%Lendo listas de pacotes... 90%Lendo listas de pacotes... 90%Lendo listas de pacotes... 90%Lendo listas de pacotes... 90%Lendo listas de pacotes... 90%Lendo listas de pacotes... 90%Lendo listas de pacotes... 90%Lendo listas de pacotes... 90%Lendo listas de pacotes... 90%Lendo listas de pacotes... 90%Lendo listas de pacotes... 90%Lendo listas de pacotes... 90%Lendo listas de pacotes... 92%Lendo listas de pacotes... 92%Lendo listas de pacotes... 92%Lendo listas de pacotes... 92%Lendo listas de pacotes... 93%Lendo listas de pacotes... 93%Lendo listas de pacotes... 94%Lendo listas de pacotes... 94%Lendo listas de pacotes... 94%Lendo listas de pacotes... 94%Lendo listas de pacotes... 94%Lendo listas de pacotes... 94%Lendo listas de pacotes... 96%Lendo listas de pacotes... 96%Lendo listas de pacotes... 98%Lendo listas de pacotes... 98%Lendo listas de pacotes... 98%Lendo listas de pacotes... 98%Lendo listas de pacotes... 98%Lendo listas de pacotes... 98%Lendo listas de pacotes... 98%Lendo listas de pacotes... 98%Lendo listas de pacotes... 98%Lendo listas de pacotes... 98%Lendo listas de pacotes... 98%Lendo listas de pacotes... 98%Lendo listas de pacotes... 98%Lendo listas de pacotes... 98%Lendo listas de pacotes... 98%Lendo listas de pacotes... 98%Lendo listas de pacotes... Pronto
+Construindo árvore de dependências... 0%Construindo árvore de dependências... 0%Construindo árvore de dependências... 0%Construindo árvore de dependências... 50%Construindo árvore de dependências... 50%Construindo árvore de dependências       
+Lendo informação de estado... 0%  Lendo informação de estado... 0%Lendo informação de estado... Pronto
+9 packages can be upgraded. Run 'apt list --upgradable' to see them.
+==> Instalar o VirtualBox
+Lendo listas de pacotes... 0%Lendo listas de pacotes... 100%Lendo listas de pacotes... Pronto
+Construindo árvore de dependências... 0%Construindo árvore de dependências... 0%Construindo árvore de dependências... 50%Construindo árvore de dependências... 50%Construindo árvore de dependências       
+Lendo informação de estado... 0%  Lendo informação de estado... 0%Lendo informação de estado... Pronto
+virtualbox is already the newest version (6.1.16-dfsg-6~ubuntu1.20.04.1).
+virtualbox configurado para instalar manualmente.
+0 pacotes atualizados, 0 pacotes novos instalados, 0 a serem removidos e 9 não atualizados.
+Lendo listas de pacotes... 0%Lendo listas de pacotes... 100%Lendo listas de pacotes... Pronto
+Construindo árvore de dependências... 0%Construindo árvore de dependências... 0%Construindo árvore de dependências... 50%Construindo árvore de dependências... 50%Construindo árvore de dependências       
+Lendo informação de estado... 0%  Lendo informação de estado... 0%Lendo informação de estado... Pronto
+virtualbox-guest-dkms is already the newest version (6.1.16-dfsg-6~ubuntu1.20.04.1).
+virtualbox-guest-x11 is already the newest version (6.1.16-dfsg-6~ubuntu1.20.04.1).
+0 pacotes atualizados, 0 pacotes novos instalados, 0 a serem removidos e 9 não atualizados.
+Lendo listas de pacotes... 0%Lendo listas de pacotes... 100%Lendo listas de pacotes... Pronto
+Construindo árvore de dependências... 0%Construindo árvore de dependências... 0%Construindo árvore de dependências... 50%Construindo árvore de dependências... 50%Construindo árvore de dependências       
+Lendo informação de estado... 0%  Lendo informação de estado... 0%Lendo informação de estado... Pronto
+virtualbox-guest-additions-iso is already the newest version (6.1.16-1~ubuntu1.20.04.1).
+0 pacotes atualizados, 0 pacotes novos instalados, 0 a serem removidos e 9 não atualizados.
+==> Instalar o Extension Pack do VirtualBox
+--2021-03-22 12:08:09--  https://download.virtualbox.org/virtualbox/6.1.18/Oracle_VM_VirtualBox_Extension_Pack-6.1.18.vbox-extpack
+Resolvendo download.virtualbox.org (download.virtualbox.org)... 23.74.26.41
+Conectando-se a download.virtualbox.org (download.virtualbox.org)|23.74.26.41|:443... conectado.
+A requisição HTTP foi enviada, aguardando resposta... 200 OK
+Tamanho: 11157510 (11M) [text/plain]
+Salvando em: “Oracle_VM_VirtualBox_Extension_Pack-6.1.18.vbox-extpack.1”
+
+                Oracle_VM_Virtu   0%[                                                       ]       0  --.-KB/s                              Oracle_VM_Virtua  18%[=========>                                             ]   1,99M  9,94MB/s                             Oracle_VM_Virtual  39%[====================>                                  ]   4,23M  10,6MB/s                            Oracle_VM_VirtualB  60%[================================>                      ]   6,48M  10,8MB/s                           Oracle_VM_VirtualBo  79%[==========================================>            ]   8,50M  10,6MB/s               Oracle_VM_VirtualBox_Extension_ 100%[======================================================>]  10,64M  10,7MB/s    em 1,0s    
+
+2021-03-22 12:08:10 (10,7 MB/s) - “Oracle_VM_VirtualBox_Extension_Pack-6.1.18.vbox-extpack.1” salvo [11157510/11157510]
+
+License accepted.
+0%...^Cmake: *** [Makefile:31: criar_box] Interrupção
