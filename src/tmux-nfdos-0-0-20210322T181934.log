@@ -1,6 +1,6 @@
- A compilação vai iniciar em 1 segundos... A compilação vai iniciar em 0 segundos...
+ A compilação vai iniciar em 3 segundos... A compilação vai iniciar em 2 segundos... A compilação vai iniciar em 1 segundos... A compilação vai iniciar em 0 segundos...
 
-Compilação iniciada seg 22 mar 2021 18:06:50
+Compilação iniciada seg 22 mar 2021 18:19:39
 
 Detalhes do desktop:
 
@@ -9,7 +9,7 @@ Arquitetura: x86_64
 Número de CPU(s): 8    
 Virtualização: AMD-V    
 Memória RAM: 16041 MiB 
-Memória Virtual: 10958 MB
+Memória Virtual: 10954 MB
 Modo(s) operacional da CPU: 32-bit, 64-bit
 
 chmod +x criar_box.sh
@@ -35,6 +35,7 @@ Progress: 90%==> VPS_DEV: Matching MAC address for NAT networking...
     VPS_DEV: SSH username: vagrant
     VPS_DEV: SSH auth method: private key
     VPS_DEV: Warning: Connection reset. Retrying...
+    VPS_DEV: Warning: Remote connection disconnect. Retrying...
     VPS_DEV: 
     VPS_DEV: Vagrant insecure key detected. Vagrant will automatically replace
     VPS_DEV: this with a newly generated keypair for better security.
@@ -53,16 +54,19 @@ Progress: 90%==> VPS_DEV: Matching MAC address for NAT networking...
     VPS_DEV: 
     VPS_DEV: Guest Additions Version: 5.2.42
     VPS_DEV: VirtualBox Version: 6.1
+==> VPS_DEV: Mounting shared folders...
+    VPS_DEV: /vagrant => /home/neo/Público/src/vps
 ==> VPS_DEV: Running provisioner: shell...
-    VPS_DEV: Running: /tmp/vagrant-shell20210322-203991-1hyq3hn.sh
+    VPS_DEV: Running: /tmp/vagrant-shell20210322-207684-s7y2s0.sh
+    VPS_DEV: ==> Criar a pasta compartilhada ...
     VPS_DEV: ==> Atualizar os repositórios do ubuntu-bionic ...
     VPS_DEV: 
     VPS_DEV: WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
-    VPS_DEV: Hit:1 http://archive.ubuntu.com/ubuntu bionic InRelease
-    VPS_DEV: Get:2 http://security.ubuntu.com/ubuntu bionic-security InRelease [88.7 kB]
+    VPS_DEV: Get:1 http://security.ubuntu.com/ubuntu bionic-security InRelease [88.7 kB]
+    VPS_DEV: Hit:2 http://archive.ubuntu.com/ubuntu bionic InRelease
     VPS_DEV: Get:3 http://archive.ubuntu.com/ubuntu bionic-updates InRelease [88.7 kB]
-    VPS_DEV: Get:4 http://archive.ubuntu.com/ubuntu bionic-backports InRelease [74.6 kB]
-    VPS_DEV: Get:5 http://security.ubuntu.com/ubuntu bionic-security/main amd64 Packages [1610 kB]
+    VPS_DEV: Get:4 http://security.ubuntu.com/ubuntu bionic-security/main amd64 Packages [1610 kB]
+    VPS_DEV: Get:5 http://archive.ubuntu.com/ubuntu bionic-backports InRelease [74.6 kB]
     VPS_DEV: Get:6 http://archive.ubuntu.com/ubuntu bionic/universe amd64 Packages [8570 kB]
     VPS_DEV: Get:7 http://security.ubuntu.com/ubuntu bionic-security/main Translation-en [307 kB]
     VPS_DEV: Get:8 http://security.ubuntu.com/ubuntu bionic-security/restricted amd64 Packages [257 kB]
@@ -86,7 +90,7 @@ Progress: 90%==> VPS_DEV: Matching MAC address for NAT networking...
     VPS_DEV: Get:26 http://archive.ubuntu.com/ubuntu bionic-backports/main Translation-en [4764 B]
     VPS_DEV: Get:27 http://archive.ubuntu.com/ubuntu bionic-backports/universe amd64 Packages [10.3 kB]
     VPS_DEV: Get:28 http://archive.ubuntu.com/ubuntu bionic-backports/universe Translation-en [4588 B]
-    VPS_DEV: Fetched 22.4 MB in 7s (2992 kB/s)
+    VPS_DEV: Fetched 22.4 MB in 7s (3113 kB/s)
     VPS_DEV: Reading package lists...
     VPS_DEV: Building dependency tree...
     VPS_DEV: 
@@ -420,7 +424,7 @@ Progress: 90%==> VPS_DEV: Matching MAC address for NAT networking...
     VPS_DEV: Get:212 http://archive.ubuntu.com/ubuntu bionic-updates/multiverse amd64 virtualbox-qt amd64 5.2.42-dfsg-0~ubuntu1.18.04.1 [8603 kB]
     VPS_DEV: Get:213 http://archive.ubuntu.com/ubuntu bionic-updates/multiverse amd64 virtualbox-guest-additions-iso all 5.2.42-1~ubuntu1.18.04.1 [34.3 MB]
     VPS_DEV: dpkg-preconfigure: unable to re-open stdin: No such file or directory
-    VPS_DEV: Fetched 268 MB in 45s (5960 kB/s)
+    VPS_DEV: Fetched 268 MB in 45s (5901 kB/s)
     VPS_DEV: Selecting previously unselected package fonts-dejavu-core.
     VPS_DEV: (Reading database ... 
     VPS_DEV: (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%
@@ -1411,23 +1415,46 @@ Progress: 90%==> VPS_DEV: Matching MAC address for NAT networking...
 ==> VPS_DEV: Forwarding ports...
     VPS_DEV: 22 (guest) => 2222 (host) (adapter 1)
 ==> VPS_DEV: Running 'pre-boot' VM customizations...
-A customization command failed:
+==> VPS_DEV: Booting VM...
+==> VPS_DEV: Waiting for machine to boot. This may take a few minutes...
+    VPS_DEV: SSH address: 127.0.0.1:2222
+    VPS_DEV: SSH username: vagrant
+    VPS_DEV: SSH auth method: private key
+==> VPS_DEV: Machine booted and ready!
+==> VPS_DEV: Checking for guest additions in VM...
+    VPS_DEV: The guest additions on this VM do not match the installed version of
+    VPS_DEV: VirtualBox! In most cases this is fine, but in rare cases it can
+    VPS_DEV: prevent things such as shared folders from working properly. If you see
+    VPS_DEV: shared folder errors, please make sure the guest additions within the
+    VPS_DEV: virtual machine match the version of VirtualBox you have installed on
+    VPS_DEV: your host and reload your VM.
+    VPS_DEV: 
+    VPS_DEV: Guest Additions Version: 5.2.42
+    VPS_DEV: VirtualBox Version: 6.1
+==> VPS_DEV: Mounting shared folders...
+    VPS_DEV: /vagrant => /home/neo/Público/src/vps
+==> VPS_DEV: Machine already provisioned. Run `vagrant provision` or use the `--provision`
+==> VPS_DEV: flag to force provisioning. Provisioners marked to run always will still run.
+Welcome to Ubuntu 18.04.5 LTS (GNU/Linux 4.15.0-139-generic x86_64)
 
-["sharedfolder", "add", :id, "--name", "pasta_compartilhada", "--hostpath", "/home/neo/Público/src/vps"]
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
 
-The following error was experienced:
+  System information as of Mon Mar 22 21:34:15 UTC 2021
 
-#<Vagrant::Errors::VBoxManageError: There was an error while executing `VBoxManage`, a CLI used by Vagrant
-for controlling VirtualBox. The command and stderr is shown below.
+  System load:  2.52              Processes:             112
+  Usage of /:   5.2% of 48.41GB   Users logged in:       0
+  Memory usage: 3%                IP address for enp0s3: 10.0.2.15
+  Swap usage:   0%
 
-Command: ["sharedfolder", "add", "77e7305c-a89d-4f22-af9e-8aa9ac975b84", "--name", "pasta_compartilhada", "--hostpath", "/home/neo/Público/src/vps"]
 
-Stderr: VBoxManage: error: Shared folder named 'pasta_compartilhada' already exists
-VBoxManage: error: Details: code VBOX_E_OBJECT_IN_USE (0x80bb000c), component SessionMachine, interface IMachine, callee nsISupports
-VBoxManage: error: Context: "CreateSharedFolder(Bstr(pszName).raw(), Bstr(szAbsHostPath).raw(), fWritable, fAutoMount, Bstr(pszAutoMountPoint).raw())" at line 1193 of file VBoxManageMisc.cpp
->
+0 packages can be updated.
+0 of these updates are security updates.
 
-Please fix this customization and try again.
-VM must be running to open SSH connection. Run `vagrant up`
-to start the virtual machine.
-make: *** [Makefile:35: box] Erro 1
+New release '20.04.2 LTS' available.
+Run 'do-release-upgrade' to upgrade to it.
+
+
+-bash: line 3: cd: /pasta_compartilhada: No such file or directory
+make: *** No rule to make target 'iso'.  Stop.
