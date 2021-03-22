@@ -1,0 +1,23 @@
+ A compilação vai iniciar em 5 segundos... A compilação vai iniciar em 4 segundos... A compilação vai iniciar em 3 segundos... A compilação vai iniciar em 2 segundos... A compilação vai iniciar em 1 segundos... A compilação vai iniciar em 0 segundos...
+
+Compilação iniciada dom 21 mar 2021 23:08:57
+
+Detalhes do desktop:
+
+Nome do modelo: AMD FX(tm)-8350 Eight-Core
+Arquitetura: x86_64
+Número de CPU(s): 8    
+Virtualização: AMD-V    
+Memória RAM: 16041 MiB 
+Memória Virtual: 7400 MB
+Modo(s) operacional da CPU: 32-bit, 64-bit
+
+./build.sh
+Limpando as imagens Docker...
+WARNING! This will remove all images without at least one container associated to them.
+Are you sure you want to continue? [y/N] Total reclaimed space: 0B
+REPOSITORY   TAG       IMAGE ID   CREATED   SIZE
+Getting qemu package for amd64
+docker build --no-cache -t nfdos/core/rootfs:latest  --build-arg QEMU_ARCH=amd64 --platform amd64 --rm nfdos
+error checking context: 'no permission to read from '/home/neo/Público/src/vps/nfdos/core/rootfs/etc/.pwd.lock''.
+make: *** [Makefile:32: build] Erro 1
