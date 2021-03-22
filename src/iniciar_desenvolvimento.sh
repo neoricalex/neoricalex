@@ -70,7 +70,7 @@ iniciar_desenvolvimento_local(){
     iniciar_rootfs
     #sudo rm -rf nfdos/core/rootfs
     #sudo apt autoremove -y
-    docker run --rm --name neoricalex nfdos/core/rootfs
+    #docker run --rm --name neoricalex nfdos/core/rootfs
 
     #chmod +x compilar.sh
     #./compilar.sh
