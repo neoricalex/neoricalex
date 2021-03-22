@@ -65,7 +65,7 @@ iniciar_desenvolvimento_local(){
 
     #fi
 
-    make vps
+    make box
     #docker rmi nfdos/core/rootfs:latest
     #sudo rm -rf nfdos/core/rootfs
     #sudo apt autoremove -y

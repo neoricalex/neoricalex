@@ -1,0 +1,290 @@
+ A compilação vai iniciar em 6 segundos... A compilação vai iniciar em 5 segundos... A compilação vai iniciar em 4 segundos... A compilação vai iniciar em 3 segundos... A compilação vai iniciar em 2 segundos... A compilação vai iniciar em 1 segundos... A compilação vai iniciar em 0 segundos...
+
+Compilação iniciada seg 22 mar 2021 12:25:53
+
+Detalhes do desktop:
+
+Nome do modelo: AMD FX(tm)-8350 Eight-Core
+Arquitetura: x86_64
+Número de CPU(s): 8    
+Virtualização: AMD-V    
+Memória RAM: 16041 MiB 
+Memória Virtual: 8302 MB
+Modo(s) operacional da CPU: 32-bit, 64-bit
+
+chmod +x criar_box.sh
+./criar_box.sh
+==> Atualizar os repositórios...
+[sudo] senha para neo: 
+0% [Trabalhando]                Atingido:1 http://br.archive.ubuntu.com/ubuntu focal InRelease
+0% [Conectando em security.ubuntu.com (91.189.91.39)] [Conectando a download.virtualbox.org] [Connected to brave-browser-apt-r                                                                                                                              Atingido:2 http://br.archive.ubuntu.com/ubuntu focal-updates InRelease
+0% [Aguardando por cabeçalhos] [Conectando em security.ubuntu.com (91.189.91.39)] [Conectando em download.virtualbox.org (23.                                                                                                                              Atingido:3 http://br.archive.ubuntu.com/ubuntu focal-backports InRelease
+0% [Conectando em security.ubuntu.com (91.189.91.39)] [Conectando em download.virtualbox.org (23.41.195.11)] [Aguardando por c                                                                                                                              Atingido:4 https://brave-browser-apt-release.s3.brave.com stable InRelease
+                                                                                                                              0% [Conectando em security.ubuntu.com (91.189.91.39)] [Aguardando por cabeçalhos] [Aguardando por cabeçalhos]                                                                                                               Atingido:5 http://download.virtualbox.org/virtualbox/debian focal InRelease
+                                                                                                               0% [Conectando em security.ubuntu.com (91.189.91.39)] [Aguardando por cabeçalhos]                                                                                  Atingido:6 https://download.docker.com/linux/ubuntu focal InRelease
+                                                                                  0% [Conectando em security.ubuntu.com (91.189.91.39)]                                                     0% [Aguardando por cabeçalhos]                               Atingido:7 http://security.ubuntu.com/ubuntu focal-security InRelease
+                               0% [Trabalhando]0% [Trabalhando]0% [Trabalhando]0% [Trabalhando]0% [Trabalhando]0% [Trabalhando]20% [Trabalhando]                 Lendo listas de pacotes... 0%Lendo listas de pacotes... 0%Lendo listas de pacotes... 0%Lendo listas de pacotes... 3%Lendo listas de pacotes... 3%Lendo listas de pacotes... 5%Lendo listas de pacotes... 5%Lendo listas de pacotes... 6%Lendo listas de pacotes... 6%Lendo listas de pacotes... 7%Lendo listas de pacotes... 7%Lendo listas de pacotes... 9%Lendo listas de pacotes... 9%Lendo listas de pacotes... 9%Lendo listas de pacotes... 9%Lendo listas de pacotes... 9%Lendo listas de pacotes... 9%Lendo listas de pacotes... 9%Lendo listas de pacotes... 9%Lendo listas de pacotes... 9%Lendo listas de pacotes... 9%Lendo listas de pacotes... 9%Lendo listas de pacotes... 9%Lendo listas de pacotes... 39%Lendo listas de pacotes... 39%Lendo listas de pacotes... 55%Lendo listas de pacotes... 55%Lendo listas de pacotes... 57%Lendo listas de pacotes... 58%Lendo listas de pacotes... 58%Lendo listas de pacotes... 61%Lendo listas de pacotes... 61%Lendo listas de pacotes... 77%Lendo listas de pacotes... 77%Lendo listas de pacotes... 77%Lendo listas de pacotes... 77%Lendo listas de pacotes... 77%Lendo listas de pacotes... 77%Lendo listas de pacotes... 77%Lendo listas de pacotes... 77%Lendo listas de pacotes... 77%Lendo listas de pacotes... 77%Lendo listas de pacotes... 78%Lendo listas de pacotes... 78%Lendo listas de pacotes... 80%Lendo listas de pacotes... 80%Lendo listas de pacotes... 82%Lendo listas de pacotes... 82%Lendo listas de pacotes... 83%Lendo listas de pacotes... 83%Lendo listas de pacotes... 84%Lendo listas de pacotes... 84%Lendo listas de pacotes... 84%Lendo listas de pacotes... 84%Lendo listas de pacotes... 84%Lendo listas de pacotes... 84%Lendo listas de pacotes... 87%Lendo listas de pacotes... 87%Lendo listas de pacotes... 89%Lendo listas de pacotes... 89%Lendo listas de pacotes... 90%Lendo listas de pacotes... 90%Lendo listas de pacotes... 90%Lendo listas de pacotes... 90%Lendo listas de pacotes... 90%Lendo listas de pacotes... 90%Lendo listas de pacotes... 90%Lendo listas de pacotes... 90%Lendo listas de pacotes... 90%Lendo listas de pacotes... 90%Lendo listas de pacotes... 90%Lendo listas de pacotes... 90%Lendo listas de pacotes... 90%Lendo listas de pacotes... 90%Lendo listas de pacotes... 92%Lendo listas de pacotes... 92%Lendo listas de pacotes... 92%Lendo listas de pacotes... 92%Lendo listas de pacotes... 93%Lendo listas de pacotes... 93%Lendo listas de pacotes... 94%Lendo listas de pacotes... 94%Lendo listas de pacotes... 94%Lendo listas de pacotes... 94%Lendo listas de pacotes... 94%Lendo listas de pacotes... 94%Lendo listas de pacotes... 96%Lendo listas de pacotes... 96%Lendo listas de pacotes... 98%Lendo listas de pacotes... 98%Lendo listas de pacotes... 98%Lendo listas de pacotes... 98%Lendo listas de pacotes... 98%Lendo listas de pacotes... 98%Lendo listas de pacotes... 98%Lendo listas de pacotes... 98%Lendo listas de pacotes... 98%Lendo listas de pacotes... 98%Lendo listas de pacotes... 98%Lendo listas de pacotes... 98%Lendo listas de pacotes... 98%Lendo listas de pacotes... 98%Lendo listas de pacotes... 98%Lendo listas de pacotes... 98%Lendo listas de pacotes... Pronto
+Construindo árvore de dependências... 0%Construindo árvore de dependências... 0%Construindo árvore de dependências... 0%Construindo árvore de dependências... 50%Construindo árvore de dependências... 50%Construindo árvore de dependências       
+Lendo informação de estado... 0%  Lendo informação de estado... 0%Lendo informação de estado... Pronto
+9 packages can be upgraded. Run 'apt list --upgradable' to see them.
+==> Instalar o VirtualBox
+Lendo listas de pacotes... 0%Lendo listas de pacotes... 100%Lendo listas de pacotes... Pronto
+Construindo árvore de dependências... 0%Construindo árvore de dependências... 0%Construindo árvore de dependências... 50%Construindo árvore de dependências... 50%Construindo árvore de dependências       
+Lendo informação de estado... 0%  Lendo informação de estado... 0%Lendo informação de estado... Pronto
+virtualbox is already the newest version (6.1.16-dfsg-6~ubuntu1.20.04.1).
+0 pacotes atualizados, 0 pacotes novos instalados, 0 a serem removidos e 9 não atualizados.
+Lendo listas de pacotes... 0%Lendo listas de pacotes... 100%Lendo listas de pacotes... Pronto
+Construindo árvore de dependências... 0%Construindo árvore de dependências... 0%Construindo árvore de dependências... 50%Construindo árvore de dependências... 50%Construindo árvore de dependências       
+Lendo informação de estado... 0%  Lendo informação de estado... 0%Lendo informação de estado... Pronto
+virtualbox-guest-dkms is already the newest version (6.1.16-dfsg-6~ubuntu1.20.04.1).
+virtualbox-guest-x11 is already the newest version (6.1.16-dfsg-6~ubuntu1.20.04.1).
+0 pacotes atualizados, 0 pacotes novos instalados, 0 a serem removidos e 9 não atualizados.
+Lendo listas de pacotes... 0%Lendo listas de pacotes... 100%Lendo listas de pacotes... Pronto
+Construindo árvore de dependências... 0%Construindo árvore de dependências... 0%Construindo árvore de dependências... 50%Construindo árvore de dependências... 50%Construindo árvore de dependências       
+Lendo informação de estado... 0%  Lendo informação de estado... 0%Lendo informação de estado... Pronto
+virtualbox-guest-additions-iso is already the newest version (6.1.16-1~ubuntu1.20.04.1).
+0 pacotes atualizados, 0 pacotes novos instalados, 0 a serem removidos e 9 não atualizados.
+==> Instalar o Extension Pack do VirtualBox
+--2021-03-22 12:26:06--  https://download.virtualbox.org/virtualbox/6.1.18/Oracle_VM_VirtualBox_Extension_Pack-6.1.18.vbox-extpack
+Resolvendo download.virtualbox.org (download.virtualbox.org)... 23.41.195.11
+Conectando-se a download.virtualbox.org (download.virtualbox.org)|23.41.195.11|:443... conectado.
+A requisição HTTP foi enviada, aguardando resposta... 200 OK
+Tamanho: 11157510 (11M) [text/plain]
+Salvando em: “Oracle_VM_VirtualBox_Extension_Pack-6.1.18.vbox-extpack”
+
+                Oracle_VM_Virtu   0%[                                                       ]       0  --.-KB/s                              Oracle_VM_Virtua  14%[=======>                                               ]   1,57M  7,82MB/s                             Oracle_VM_Virtual  35%[==================>                                    ]   3,80M  9,43MB/s                            Oracle_VM_VirtualB  56%[==============================>                        ]   6,02M  9,99MB/s                           Oracle_VM_VirtualBo  77%[=========================================>             ]   8,27M  10,3MB/s                          Oracle_VM_VirtualBox  98%[=====================================================> ]  10,51M  10,5MB/s               Oracle_VM_VirtualBox_Extension_ 100%[======================================================>]  10,64M  10,5MB/s    em 1,0s    
+
+2021-03-22 12:26:07 (10,5 MB/s) - “Oracle_VM_VirtualBox_Extension_Pack-6.1.18.vbox-extpack” salvo [11157510/11157510]
+
+License accepted.
+0%...
+Progress state: NS_ERROR_FAILURE
+VBoxManage: error: Failed to install "/home/neo/Público/src/vps/Oracle_VM_VirtualBox_Extension_Pack-6.1.18.vbox-extpack"
+VBoxManage: error: Extension pack 'Oracle VM VirtualBox Extension Pack' is already installed. In case of a reinstallation, please uninstall it first
+VBoxManage: error: Details: code NS_ERROR_FAILURE (0x80004005), component ExtPackManagerWrap, interface IExtPackManager
+VBoxManage: error: Context: "RTEXITCODE handleExtPack(HandlerArg*)" at line 1424 of file VBoxManageMisc.cpp
+==> Download Vagrant & Instalar
+2021-03-22 12:26:12 URL:https://releases.hashicorp.com/vagrant/2.2.9/vagrant_2.2.9_x86_64.deb [42978828/42978828] -> "vagrant_2.2.9_x86_64.deb" [1]
+(Lendo banco de dados ... (Lendo banco de dados ... 5%(Lendo banco de dados ... 10%(Lendo banco de dados ... 15%(Lendo banco de dados ... 20%(Lendo banco de dados ... 25%(Lendo banco de dados ... 30%(Lendo banco de dados ... 35%(Lendo banco de dados ... 40%(Lendo banco de dados ... 45%(Lendo banco de dados ... 50%(Lendo banco de dados ... 55%(Lendo banco de dados ... 60%(Lendo banco de dados ... 65%(Lendo banco de dados ... 70%(Lendo banco de dados ... 75%(Lendo banco de dados ... 80%(Lendo banco de dados ... 85%(Lendo banco de dados ... 90%(Lendo banco de dados ... 95%(Lendo banco de dados ... 100%(Lendo banco de dados ... 237073 ficheiros e directórios actualmente instalados.)
+A preparar para desempacotar vagrant_2.2.9_x86_64.deb ...
+A descompactar vagrant (1:2.2.9) sobre (1:2.2.9) ...
+Configurando vagrant (1:2.2.9) ...
+==> Instalar plugins do Vagrant
+Installing the 'vagrant-libvirt' plugin. This can take a few minutes...
+Building native extensions. This could take a while...
+Building native extensions. This could take a while...
+^CWaiting for cleanup before exiting...
+Vagrant failed to properly resolve required dependencies. These
+errors can commonly be caused by misconfigured plugin installations
+or transient network issues. The reported error is:
+
+ERROR: Failed to build gem native extension.
+
+    current directory: /home/neo/.vagrant.d/gems/2.6.6/gems/ruby-libvirt-0.7.1/ext/libvirt
+/opt/vagrant/embedded/bin/ruby -I /opt/vagrant/embedded/lib/ruby/2.6.0 -r ./siteconf20210322-24024-f6sv7h.rb extconf.rb
+checking for virNetworkPtr in libvirt/libvirt.h... yes
+checking for virStoragePoolPtr in libvirt/libvirt.h... yes
+checking for virStorageVolPtr in libvirt/libvirt.h... yes
+checking for virSecretPtr in libvirt/libvirt.h... yes
+checking for virNWFilterPtr in libvirt/libvirt.h... yes
+checking for virInterfacePtr in libvirt/libvirt.h... yes
+checking for virDomainBlockInfoPtr in libvirt/libvirt.h... yes
+checking for virDomainMemoryStatPtr in libvirt/libvirt.h... yes
+checking for virDomainSnapshotPtr in libvirt/libvirt.h... yes
+checking for virDomainJobInfoPtr in libvirt/libvirt.h... yes
+checking for virNodeDevicePtr in libvirt/libvirt.h... yes
+checking for virStreamPtr in libvirt/libvirt.h... yes
+checking for virTypedParameterPtr in libvirt/libvirt.h... yes
+checking for virDomainBlockJobInfoPtr in libvirt/libvirt.h... yes
+checking for virStorageVolWipe() in libvirt/libvirt.h... yes
+checking for virStoragePoolIsActive() in libvirt/libvirt.h... yes
+checking for virStoragePoolIsPersistent() in libvirt/libvirt.h... yes
+checking for virStorageVolCreateXMLFrom() in libvirt/libvirt.h... yes
+checking for virConnectGetLibVersion() in libvirt/libvirt.h... yes
+checking for virConnectIsEncrypted() in libvirt/libvirt.h... yes
+checking for virConnectIsSecure() in libvirt/libvirt.h... yes
+checking for virNetworkIsActive() in libvirt/libvirt.h... yes
+checking for virNetworkIsPersistent() in libvirt/libvirt.h... yes
+checking for virNodeDeviceCreateXML() in libvirt/libvirt.h... yes
+checking for virNodeDeviceDestroy() in libvirt/libvirt.h... yes
+checking for virInterfaceIsActive() in libvirt/libvirt.h... yes
+checking for virDomainMigrateToURI() in libvirt/libvirt.h... yes
+checking for virDomainMigrateSetMaxDowntime() in libvirt/libvirt.h... yes
+checking for virDomainManagedSave() in libvirt/libvirt.h... yes
+checking for virDomainIsActive() in libvirt/libvirt.h... yes
+checking for virDomainIsPersistent() in libvirt/libvirt.h... yes
+checking for virConnectDomainXMLFromNative() in libvirt/libvirt.h... yes
+checking for virConnectDomainXMLToNative() in libvirt/libvirt.h... yes
+checking for virDomainCreateWithFlags() in libvirt/libvirt.h... yes
+checking for virDomainAttachDeviceFlags() in libvirt/libvirt.h... yes
+checking for virDomainDetachDeviceFlags() in libvirt/libvirt.h... yes
+checking for virDomainUpdateDeviceFlags() in libvirt/libvirt.h... yes
+checking for virNodeGetSecurityModel() in libvirt/libvirt.h... yes
+checking for virDomainCreateXML() in libvirt/libvirt.h... yes
+checking for virDomainGetSecurityLabel() in libvirt/libvirt.h... yes
+checking for virConnectCompareCPU() in libvirt/libvirt.h... yes
+checking for virConnectBaselineCPU() in libvirt/libvirt.h... yes
+checking for virDomainSetVcpusFlags() in libvirt/libvirt.h... yes
+checking for virDomainGetVcpusFlags() in libvirt/libvirt.h... yes
+checking for virConnectDomainEventRegisterAny() in libvirt/libvirt.h... yes
+checking for virConnectDomainEventRegister() in libvirt/libvirt.h... yes
+checking for virDomainBlockPeek() in libvirt/libvirt.h... yes
+checking for virDomainMemoryPeek() in libvirt/libvirt.h... yes
+checking for virConnectOpenAuth() in libvirt/libvirt.h... yes
+checking for virEventRegisterImpl() in libvirt/libvirt.h... yes
+checking for virDomainIsUpdated() in libvirt/libvirt.h... yes
+checking for virDomainSetMemoryParameters() in libvirt/libvirt.h... yes
+checking for virConnectGetSysinfo() in libvirt/libvirt.h... yes
+checking for virDomainSetBlkioParameters() in libvirt/libvirt.h... yes
+checking for virDomainSetMemoryFlags() in libvirt/libvirt.h... yes
+checking for virDomainGetState() in libvirt/libvirt.h... yes
+checking for virDomainOpenConsole() in libvirt/libvirt.h... yes
+checking for virDomainMigrate2() in libvirt/libvirt.h... yes
+checking for virDomainScreenshot() in libvirt/libvirt.h... yes
+checking for virInterfaceChangeBegin() in libvirt/libvirt.h... yes
+checking for virStorageVolDownload() in libvirt/libvirt.h... yes
+checking for virDomainInjectNMI() in libvirt/libvirt.h... yes
+checking for virDomainGetControlInfo() in libvirt/libvirt.h... yes
+checking for virDomainMigrateGetMaxSpeed() in libvirt/libvirt.h... yes
+checking for virNodeGetCPUStats() in libvirt/libvirt.h... yes
+checking for virNodeGetMemoryStats() in libvirt/libvirt.h... yes
+checking for virDomainDestroyFlags() in libvirt/libvirt.h... yes
+checking for virDomainSaveFlags() in libvirt/libvirt.h... yes
+checking for virDomainSaveImageGetXMLDesc() in libvirt/libvirt.h... yes
+checking for virDomainSendKey() in libvirt/libvirt.h... yes
+checking for virNetworkUpdate() in libvirt/libvirt.h... yes
+checking for virNodeSuspendForDuration() in libvirt/libvirt.h... yes
+checking for virNodeGetMemoryParameters() in libvirt/libvirt.h... yes
+checking for virNodeGetCPUMap() in libvirt/libvirt.h... yes
+checking for virDomainUndefineFlags() in libvirt/libvirt.h... yes
+checking for virDomainPinVcpuFlags() in libvirt/libvirt.h... yes
+checking for virDomainGetVcpuPinInfo() in libvirt/libvirt.h... yes
+checking for virDomainSnapshotGetName() in libvirt/libvirt.h... yes
+checking for virConnectSetKeepAlive() in libvirt/libvirt.h... yes
+checking for virDomainReset() in libvirt/libvirt.h... yes
+checking for virDomainShutdownFlags() in libvirt/libvirt.h... yes
+checking for virDomainGetHostname() in libvirt/libvirt.h... yes
+checking for virDomainGetMetadata() in libvirt/libvirt.h... yes
+checking for virDomainSetMetadata() in libvirt/libvirt.h... yes
+checking for virConnectListAllDomains() in libvirt/libvirt.h... yes
+checking for virConnectListAllNetworks() in libvirt/libvirt.h... yes
+checking for virConnectListAllInterfaces() in libvirt/libvirt.h... yes
+checking for virConnectListAllSecrets() in libvirt/libvirt.h... yes
+checking for virConnectListAllNodeDevices() in libvirt/libvirt.h... yes
+checking for virConnectListAllStoragePools() in libvirt/libvirt.h... yes
+checking for virConnectListAllNWFilters() in libvirt/libvirt.h... yes
+checking for virConnectIsAlive() in libvirt/libvirt.h... yes
+checking for virNodeDeviceDetachFlags() in libvirt/libvirt.h... yes
+checking for virDomainSendProcessSignal() in libvirt/libvirt.h... yes
+checking for virDomainListAllSnapshots() in libvirt/libvirt.h... yes
+checking for virDomainSnapshotNumChildren() in libvirt/libvirt.h... yes
+checking for virDomainSnapshotListChildrenNames() in libvirt/libvirt.h... yes
+checking for virDomainSnapshotListAllChildren() in libvirt/libvirt.h... yes
+checking for virDomainSnapshotGetParent() in libvirt/libvirt.h... yes
+checking for virDomainSnapshotIsCurrent() in libvirt/libvirt.h... yes
+checking for virDomainSnapshotHasMetadata() in libvirt/libvirt.h... yes
+checking for virDomainSetMemoryStatsPeriod() in libvirt/libvirt.h... yes
+checking for virDomainFSTrim() in libvirt/libvirt.h... yes
+checking for virDomainBlockRebase() in libvirt/libvirt.h... yes
+checking for virDomainOpenChannel() in libvirt/libvirt.h... yes
+checking for virNodeDeviceLookupSCSIHostByWWN() in libvirt/libvirt.h... yes
+checking for virStorageVolWipePattern() in libvirt/libvirt.h... yes
+checking for virStoragePoolListAllVolumes() in libvirt/libvirt.h... yes
+checking for virDomainCreateWithFiles() in libvirt/libvirt.h... yes
+checking for virDomainCreateXMLWithFiles() in libvirt/libvirt.h... yes
+checking for virDomainOpenGraphics() in libvirt/libvirt.h... yes
+checking for virStorageVolResize() in libvirt/libvirt.h... yes
+checking for virDomainPMWakeup() in libvirt/libvirt.h... yes
+checking for virDomainBlockResize() in libvirt/libvirt.h... yes
+checking for virDomainPMSuspendForDuration() in libvirt/libvirt.h... yes
+checking for virDomainMigrateGetCompressionCache() in libvirt/libvirt.h... yes
+checking for virDomainMigrateSetCompressionCache() in libvirt/libvirt.h... yes
+checking for virDomainGetDiskErrors() in libvirt/libvirt.h... yes
+checking for virDomainGetEmulatorPinInfo() in libvirt/libvirt.h... yes
+checking for virDomainPinEmulator() in libvirt/libvirt.h... yes
+checking for virDomainGetSecurityLabelList() in libvirt/libvirt.h... yes
+checking for virDomainGetJobStats() in libvirt/libvirt.h... yes
+checking for virDomainGetBlockIoTune() in libvirt/libvirt.h... yes
+checking for virDomainSetBlockIoTune() in libvirt/libvirt.h... yes
+checking for virDomainBlockCommit() in libvirt/libvirt.h... yes
+checking for virDomainBlockPull() in libvirt/libvirt.h... yes
+checking for virDomainBlockJobSetSpeed() in libvirt/libvirt.h... yes
+checking for virDomainGetBlockJobInfo() in libvirt/libvirt.h... yes
+checking for virDomainBlockJobAbort() in libvirt/libvirt.h... yes
+checking for virDomainGetInterfaceParameters() in libvirt/libvirt.h... yes
+checking for virDomainBlockStatsFlags() in libvirt/libvirt.h... yes
+checking for virDomainGetNumaParameters() in libvirt/libvirt.h... yes
+checking for virConnectGetCPUModelNames() in libvirt/libvirt.h... yes
+checking for virDomainMigrate3() in libvirt/libvirt.h... yes
+checking for virDomainGetCPUStats() in libvirt/libvirt.h... yes
+checking for virNetworkGetDHCPLeases() in libvirt/libvirt.h... *** extconf.rb failed ***
+Could not create Makefile due to some reason, probably lack of necessary
+libraries and/or headers.  Check the mkmf.log file for more details.  You may
+need configuration options.
+
+Provided configuration options:
+	--with-opt-dir
+	--with-opt-include
+	--without-opt-include=${opt-dir}/include
+	--with-opt-lib
+	--without-opt-lib=${opt-dir}/lib
+	--with-make-prog
+	--without-make-prog
+	--srcdir=.
+	--curdir
+	--ruby=/opt/vagrant/embedded/bin/$(RUBY_BASE_NAME)
+	--with-libvirt-include
+	--without-libvirt-include
+	--with-libvirt-lib
+	--without-libvirt-lib
+	--with-libvirt-config
+	--without-libvirt-config
+	--with-pkg-config
+	--without-pkg-config
+/opt/vagrant/embedded/lib/ruby/2.6.0/mkmf.rb:406:in `system': Interrupt
+	from /opt/vagrant/embedded/lib/ruby/2.6.0/mkmf.rb:406:in `block in xsystem'
+	from /opt/vagrant/embedded/lib/ruby/2.6.0/mkmf.rb:331:in `open'
+	from /opt/vagrant/embedded/lib/ruby/2.6.0/mkmf.rb:395:in `xsystem'
+	from /opt/vagrant/embedded/lib/ruby/2.6.0/mkmf.rb:474:in `try_do'
+	from /opt/vagrant/embedded/lib/ruby/2.6.0/mkmf.rb:552:in `try_link0'
+	from /opt/vagrant/embedded/lib/ruby/2.6.0/mkmf.rb:570:in `try_link'
+	from /opt/vagrant/embedded/lib/ruby/2.6.0/mkmf.rb:782:in `try_func'
+	from /opt/vagrant/embedded/lib/ruby/2.6.0/mkmf.rb:1069:in `block in have_func'
+	from /opt/vagrant/embedded/lib/ruby/2.6.0/mkmf.rb:959:in `block in checking_for'
+	from /opt/vagrant/embedded/lib/ruby/2.6.0/mkmf.rb:361:in `block (2 levels) in postpone'
+	from /opt/vagrant/embedded/lib/ruby/2.6.0/mkmf.rb:331:in `open'
+	from /opt/vagrant/embedded/lib/ruby/2.6.0/mkmf.rb:361:in `block in postpone'
+	from /opt/vagrant/embedded/lib/ruby/2.6.0/mkmf.rb:331:in `open'
+	from /opt/vagrant/embedded/lib/ruby/2.6.0/mkmf.rb:357:in `postpone'
+	from /opt/vagrant/embedded/lib/ruby/2.6.0/mkmf.rb:958:in `checking_for'
+	from /opt/vagrant/embedded/lib/ruby/2.6.0/mkmf.rb:1068:in `have_func'
+	from extconf.rb:491:in `block in <main>'
+	from extconf.rb:491:in `each'
+	from extconf.rb:491:in `<main>'
+
+To see why this extension failed to compile, please check the mkmf.log which can be found here:
+
+  /home/neo/.vagrant.d/gems/2.6.6/extensions/x86_64-linux/2.6.0/ruby-libvirt-0.7.1/mkmf.log
+
+extconf failed, exit code 1
+
+Gem files will remain installed in /home/neo/.vagrant.d/gems/2.6.6/gems/ruby-libvirt-0.7.1 for inspection.
+Results logged to /home/neo/.vagrant.d/gems/2.6.6/extensions/x86_64-linux/2.6.0/ruby-libvirt-0.7.1/gem_make.out
+
+./criar_box.sh: linha 23: rant_2.2.9_x86_64.deb: comando não encontrado
+==> Instalar plugins do Vagrant
+Installing the 'vagrant-libvirt' plugin. This can take a few minutes...
+^CWaiting for cleanup before exiting...
+^CExiting immediately, without cleanup!
+Installing the 'vagrant-disksize' plugin. This can take a few minutes...
+^CWaiting for cleanup before exiting...
+^CExiting immediately, without cleanup!
+Installing the 'vagrant-mutate' plugin. This can take a few minutes...
+^CWaiting for cleanup before exiting...
+^CExiting immediately, without cleanup!
+==> Removendo pacotes do Ubuntu desnecessários
+E: Não foi possível abrir arquivo de trava /var/lib/dpkg/lock-frontend - open (13: Permissão negada)
+E: Unable to acquire the dpkg frontend lock (/var/lib/dpkg/lock-frontend), are you root?
+./criar_box.sh: linha 32: erro de sintaxe próximo ao token inesperado `fi'
+./criar_box.sh: linha 32: `fi'
+make: *** [Makefile:34: box] Erro 2
