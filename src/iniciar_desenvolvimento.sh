@@ -96,6 +96,9 @@ EOF
 
 iniciar_desenvolvimento_travis(){
 
+    iniciar_log
+    iniciar_detalhes
+    
     cd vps
     make vps
     cd ..
