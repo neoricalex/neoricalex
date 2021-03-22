@@ -123,7 +123,7 @@ Gostou da ideia?
 ### Ambiente de Desenvolvimento
 #### Fase Inicial
 ##### Configuração base inicial do Ambiente de Desenvolvimento
-- [x] Criar uma box do vagrant com o Ubuntu Genérico 18.04 (generic/ubuntu1804)
+- [x] Criar uma box via o Vagrant Cloud com o Ubuntu 18.04 LTS (ubuntu/bionic64)
   - [ ] Criar a imagem ISO do NFDOS
   - [ ] Criar uma box do vagrant com o NFDOS Instalado
     - [ ] Enviar a box para a Vagrant Cloud ficando acessivel via *neoricalex/nfdos*
@@ -131,12 +131,11 @@ Gostou da ideia?
 ##### Criação de um Ambiente de Integração Contínua (CI) no Travis (VPS_TRAVIS)
 - [x] Criar um processo CI
   - [x] Configurar o auto-arranque da máquina do Travis via Hook no Github
-  - [x] Instalar o QEMU & Vagrant
-  - [ ] Criar uma box padrão do vagrant com a *neoricalex/nfdos* que criamos no passo anterior
-    - [x] Auto executar o bash shell 
+    - [ ] Iniciar a box do vagrant *neoricalex/nfdos* que criamos no passo anterior
+      - [ ] Auto executar o bash shell 
 
-#### Segunda Fase: Criar o VPS_DEV
-- [ ] Criar o VPS_DEV baseado na box *neoricalex/nfdos* que configuramos na fase inicial
+#### Segunda Fase: Provisionar o VPS_DEV com os projetos do Ambiente de Desenvolvimento
+- [ ] Provisionar o VPS_DEV baseado na box *neoricalex/nfdos* que criamos na fase inicial
   - [ ] Criar o núcleo do NFDOS
     - [ ] Criar um emulador de computador localmente (QEMU)
       - [ ] Clonar o repositório do QEMU
@@ -160,12 +159,8 @@ Gostou da ideia?
       - [ ] Empacotar como imagem docker (neoricalex/nfdos)
         - [ ] Zipar
         - [ ] Enviar a imagem docker para o docker hub 
-  - [x] Criar a imagem ISO do NFDOS (nfdos.iso)
-    - [ ] Usar o rootfs que usamos para empacotar a imagem docker como initramfs
-      - [ ] Customizar adicionando uns pacotes extras
-    - [ ] Usar o rootfs que usamos para empacotar a imagem docker como rootfs
-      - [x] Configurar o rootfs
-    - [x] Gerar a imagem ISO (nfdos.iso)
+  - [ ] Criar a imagem ISO do NFDOS (nfdos.iso)
+     - [x] Gerar a imagem ISO (nfdos.iso)
   - [x] Criar uma imagem .box com o NFDOS instalado (NFDOS-x.x.x.box)
     - [x] Gerar a NFDOS-x.x.x.box
     - [x] Enviar para a Vagrant Cloud (neoricalex/nfdos) a NFDOS-x.x.x.box com o NFDOS Instalado
