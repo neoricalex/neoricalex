@@ -81,24 +81,11 @@ iniciar_desenvolvimento_local(){
     #./upload_cloud.sh
 }
 
-iniciar_vps(){
-    vagrant up --provider=libvirt
-    vagrant ssh <<EOF
-#!/bin/bash
-
-cd /vagrant
-
-make vps
-
-cd ..
-EOF
-}
-
 iniciar_desenvolvimento_travis(){
 
     iniciar_log
     iniciar_detalhes
-    
+
     cd vps
     make vps
     cd ..
