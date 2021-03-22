@@ -48,7 +48,13 @@ iniciar_detalhes(){
     echo ""
 }
 
-iniciar_rootfs(){
+iniciar_desenvolvimento_local(){
+
+    iniciar_log
+    iniciar_detalhes
+
+    cd vps
+
     if [[ "$(docker images -q nfdos/core/rootfs:latest 2> /dev/null)" == "" ]]; then
 
         if [ ! -d "nfdos/core/rootfs" ]; then
@@ -60,17 +66,7 @@ iniciar_rootfs(){
     fi
 
     make vps
-}
-
-iniciar_desenvolvimento_local(){
-
-    iniciar_log
-    iniciar_detalhes
-
-    cd vps
-
     #docker rmi nfdos/core/rootfs:latest
-    iniciar_rootfs
     #sudo rm -rf nfdos/core/rootfs
     #sudo apt autoremove -y
     #docker run --rm --name neoricalex nfdos/core/rootfs
@@ -82,9 +78,6 @@ iniciar_desenvolvimento_local(){
 }
 
 iniciar_desenvolvimento_travis(){
-
-    iniciar_log
-    iniciar_detalhes
 
     cd vps
     make vps
