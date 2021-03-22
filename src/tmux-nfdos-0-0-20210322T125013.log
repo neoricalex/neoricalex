@@ -1,0 +1,43 @@
+ A compilação vai iniciar em 6 segundos... A compilação vai iniciar em 5 segundos... A compilação vai iniciar em 4 segundos... A compilação vai iniciar em 3 segundos... A compilação vai iniciar em 2 segundos... A compilação vai iniciar em 1 segundos... A compilação vai iniciar em 0 segundos...
+
+Compilação iniciada seg 22 mar 2021 12:50:21
+
+Detalhes do desktop:
+
+Nome do modelo: AMD FX(tm)-8350 Eight-Core
+Arquitetura: x86_64
+Número de CPU(s): 8    
+Virtualização: AMD-V    
+Memória RAM: 16041 MiB 
+Memória Virtual: 8255 MB
+Modo(s) operacional da CPU: 32-bit, 64-bit
+
+chmod +x criar_box.sh
+./criar_box.sh
+[sudo] senha para neo: 
+==> Atualizar os repositórios...
+[sudo] senha para neo: 
+==> Instalar o VirtualBox
+[sudo] senha para neo: 
+[sudo] senha para neo: 
+[sudo] senha para neo: 
+==> Instalar o Extension Pack do VirtualBox
+--2021-03-22 12:51:27--  https://download.virtualbox.org/virtualbox/6.1.18/Oracle_VM_VirtualBox_Extension_Pack-6.1.18.vbox-extpack
+Resolvendo download.virtualbox.org (download.virtualbox.org)... 23.4.244.57
+Conectando-se a download.virtualbox.org (download.virtualbox.org)|23.4.244.57|:443... conectado.
+A requisição HTTP foi enviada, aguardando resposta... 200 OK
+Tamanho: 11157510 (11M) [text/plain]
+Salvando em: “Oracle_VM_VirtualBox_Extension_Pack-6.1.18.vbox-extpack”
+
+                Oracle_VM_Virtua   0%[                                                        ]       0  --.-KB/s                              Oracle_VM_Virtual  19%[=========>                                              ]   2,03M  10,1MB/s                             Oracle_VM_VirtualB  40%[=====================>                                  ]   4,26M  10,6MB/s                            Oracle_VM_VirtualBo  61%[=================================>                      ]   6,51M  10,8MB/s                           Oracle_VM_VirtualBox  81%[============================================>           ]   8,71M  10,9MB/s               Oracle_VM_VirtualBox_Extension_P 100%[=======================================================>]  10,64M  10,9MB/s    em 1,0s    
+
+2021-03-22 12:51:28 (10,9 MB/s) - “Oracle_VM_VirtualBox_Extension_Pack-6.1.18.vbox-extpack” salvo [11157510/11157510]
+
+[sudo] senha para neo: 
+==> Removendo pacotes do Ubuntu desnecessários
+[sudo] senha para neo: 
+[sudo] senha para neo: 
+==> Atualizar os repositórios...
+[sudo] senha para neo: 
+==> Download Vagrant & Instalar
+^Cmake: *** [Makefile:34: box] Interrupção
