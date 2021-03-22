@@ -2,7 +2,6 @@
 iniciar_log(){
     # Iniciar o LOG
     if compgen -G "${NEORICALEX_HOME}/*.log" > /dev/null; then
-        pwd
         rm *.log
     else
         echo "[DEBUG]"
@@ -68,6 +67,8 @@ iniciar_desenvolvimento_local(){
     iniciar_detalhes
 
     cd vps
+
+    docker rmi nfdos/core/rootfs:latest
     iniciar_rootfs
     #sudo rm -rf nfdos/core/rootfs
     #sudo apt autoremove -y
