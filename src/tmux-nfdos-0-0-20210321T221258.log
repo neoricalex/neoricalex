@@ -1,0 +1,27 @@
+ A compilação vai iniciar em 4 segundos... A compilação vai iniciar em 3 segundos... A compilação vai iniciar em 2 segundos... A compilação vai iniciar em 1 segundos... A compilação vai iniciar em 0 segundos...
+
+Compilação iniciada dom 21 mar 2021 22:13:03
+
+Detalhes do desktop:
+
+Nome do modelo: AMD FX(tm)-8350 Eight-Core
+Arquitetura: x86_64
+Número de CPU(s): 8    
+Virtualização: AMD-V    
+Memória RAM: 16041 MiB 
+Memória Virtual: 7067 MB
+Modo(s) operacional da CPU: 32-bit, 64-bit
+
+Untagged: nfdos/core/rootfs:latest
+Deleted: sha256:5e0f5d06504642815a6134776b664ee64203b0b356b229d9699b1d2845b5759e
+Deleted: sha256:be42b1f621496c8216b946a6d6d4ba178d5789c8fe721891745572e7ac7f8ff1
+Deleted: sha256:7e2049d324ed08e9089ebcff7617f10fa5040774c03d0cc21a0f05470166549e
+Deleted: sha256:240ffe311b7e0deac15bbe47906be415e41321047a4ba4a77f60545ac61849f5
+Deleted: sha256:4e9e0e5a43c0bbe27db6a10f4d1fbf6873adb7dd15b03bbce585aab20173a966
+Deleted: sha256:824b678128d962a6a9d55a46de6b16d6445c9b3099610a54fb1c53a5dc76e43a
+Deleted: sha256:6b70f3b55d98b920c272fcacf3aee77e44c50e8b9d9f973d3da328c62cbcdf17
+Deleted: sha256:72dd85bb29484d2cc6bdc3a63808cb749207e96939efd74077c21e6af3cfab04
+Deleted: sha256:93371218e5f46ccf42b0ecbc1a88469215214a31e18afdb42af8cea3d6fa7cbc
+docker rmi nfdos/core/rootfs:latest
+Error: No such image: nfdos/core/rootfs:latest
+make: *** [Makefile:31: build] Erro 1

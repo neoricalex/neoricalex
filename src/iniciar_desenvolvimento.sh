@@ -56,7 +56,7 @@ iniciar_rootfs(){
             sudo tar -C nfdos/core/rootfs -c . | sudo docker import - nfdos/core/rootfs
         fi
 
-        make build
+        make vps
 
     fi
 }
