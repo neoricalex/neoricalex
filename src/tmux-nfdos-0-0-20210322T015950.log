@@ -1,0 +1,10 @@
+[DEBUG] O VPS_DEV existe e está ligado. Destruir e começar de novo?
+    VPS_DEV: Are you sure you want to destroy the 'VPS_DEV' VM? [y/N] N
+==> VPS_DEV: The VM 'VPS_DEV' will not be destroyed, since the confirmation
+==> VPS_DEV: was declined.
+Bringing machine 'VPS_DEV' up with 'libvirt' provider...
+==> VPS_DEV: Checking if box 'generic/ubuntu1804' version '3.2.10' is up to date...
+==> VPS_DEV: Machine already provisioned. Run `vagrant provision` or use the `--provision`
+==> VPS_DEV: flag to force provisioning. Provisioners marked to run always will still run.
+-bash: line 3: cd: /vagrant: No such file or directory
+make: *** No rule to make target 'vps'.  Stop.
