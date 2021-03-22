@@ -1,0 +1,87 @@
+ A compilação vai iniciar em 4 segundos... A compilação vai iniciar em 3 segundos... A compilação vai iniciar em 2 segundos... A compilação vai iniciar em 1 segundos... A compilação vai iniciar em 0 segundos...
+
+Compilação iniciada seg 22 mar 2021 14:38:18
+
+Detalhes do desktop:
+
+Nome do modelo: AMD FX(tm)-8350 Eight-Core
+Arquitetura: x86_64
+Número de CPU(s): 8    
+Virtualização: AMD-V    
+Memória RAM: 16041 MiB 
+Memória Virtual: 9165 MB
+Modo(s) operacional da CPU: 32-bit, 64-bit
+
+chmod +x criar_box.sh
+./criar_box.sh
+==> Instalar os requerimentos da box...
+==> Iniciando a box...
+Bringing machine 'VPS_DEV' up with 'virtualbox' provider...
+==> VPS_DEV: Box 'ubuntu/bionic64' could not be found. Attempting to find and install...
+    VPS_DEV: Box Provider: virtualbox
+    VPS_DEV: Box Version: >= 0
+==> VPS_DEV: Loading metadata for box 'ubuntu/bionic64'
+    VPS_DEV: URL: https://vagrantcloud.com/ubuntu/bionic64
+==> VPS_DEV: Adding box 'ubuntu/bionic64' (v20210319.0.0) for provider: virtualbox
+    VPS_DEV: Downloading: https://vagrantcloud.com/ubuntu/boxes/bionic64/versions/20210319.0.0/providers/virtualbox.box
+Progress: 0% (Rate: 0*/s, Estimated time remaining: --:--:--)Progress: 0% (Rate: 0}/s, Estimated time remaining: --:--:--)Progress: 0% (Rate: 0/s, Estimated time remaining: --:--:--)Download redirected to host: cloud-images.ubuntu.com
+Progress: 100% (Rate: 51/s, Estimated time remaining: --:--:--)Progress: 0% (Rate: 0*/s, Estimated time remaining: --:--:--)Progress: 0% (Rate: 142k/s, Estimated time remaining: 3:14:44)Progress: 0% (Rate: 1400k/s, Estimated time remaining: 0:11:22)Progress: 3% (Rate: 3982k/s, Estimated time remaining: 0:03:00)Progress: 5% (Rate: 4400k/s, Estimated time remaining: 0:02:17)Progress: 7% (Rate: 5096k/s, Estimated time remaining: 0:01:44)Progress: 9% (Rate: 6109k/s, Estimated time remaining: 0:01:33)Progress: 12% (Rate: 7459k/s, Estimated time remaining: 0:01:16)Progress: 14% (Rate: 7062k/s, Estimated time remaining: 0:01:10)Progress: 16% (Rate: 7175k/s, Estimated time remaining: 0:01:06)Progress: 18% (Rate: 6868k/s, Estimated time remaining: 0:01:02)Progress: 19% (Rate: 6698k/s, Estimated time remaining: 0:01:00)Progress: 21% (Rate: 6473k/s, Estimated time remaining: 0:00:55)Progress: 23% (Rate: 6470k/s, Estimated time remaining: 0:00:53)Progress: 25% (Rate: 6217k/s, Estimated time remaining: 0:00:51)Progress: 27% (Rate: 6220k/s, Estimated time remaining: 0:00:49)Progress: 29% (Rate: 6313k/s, Estimated time remaining: 0:00:48)Progress: 30% (Rate: 5823k/s, Estimated time remaining: 0:00:46)Progress: 33% (Rate: 5957k/s, Estimated time remaining: 0:00:44)Progress: 35% (Rate: 6401k/s, Estimated time remaining: 0:00:42)Progress: 36% (Rate: 6171k/s, Estimated time remaining: 0:00:41)Progress: 37% (Rate: 5992k/s, Estimated time remaining: 0:00:40)Progress: 40% (Rate: 6486k/s, Estimated time remaining: 0:00:38)Progress: 42% (Rate: 6336k/s, Estimated time remaining: 0:00:36)Progress: 43% (Rate: 5859k/s, Estimated time remaining: 0:00:35)Progress: 45% (Rate: 5975k/s, Estimated time remaining: 0:00:34)Progress: 47% (Rate: 6270k/s, Estimated time remaining: 0:00:33)Progress: 49% (Rate: 5962k/s, Estimated time remaining: 0:00:31)Progress: 51% (Rate: 5859k/s, Estimated time remaining: 0:00:30)Progress: 53% (Rate: 6617k/s, Estimated time remaining: 0:00:28)Progress: 55% (Rate: 5978k/s, Estimated time remaining: 0:00:28)Progress: 57% (Rate: 6323k/s, Estimated time remaining: 0:00:26)Progress: 58% (Rate: 6049k/s, Estimated time remaining: 0:00:25)Progress: 60% (Rate: 5548k/s, Estimated time remaining: 0:00:25)Progress: 62% (Rate: 5527k/s, Estimated time remaining: 0:00:23)Progress: 64% (Rate: 6222k/s, Estimated time remaining: 0:00:22)Progress: 65% (Rate: 5919k/s, Estimated time remaining: 0:00:20)Progress: 68% (Rate: 6239k/s, Estimated time remaining: 0:00:19)Progress: 69% (Rate: 6390k/s, Estimated time remaining: 0:00:18)Progress: 71% (Rate: 5959k/s, Estimated time remaining: 0:00:17)Progress: 73% (Rate: 6470k/s, Estimated time remaining: 0:00:15)Progress: 75% (Rate: 6227k/s, Estimated time remaining: 0:00:15)Progress: 77% (Rate: 6076k/s, Estimated time remaining: 0:00:13)Progress: 79% (Rate: 6506k/s, Estimated time remaining: 0:00:12)Progress: 81% (Rate: 6479k/s, Estimated time remaining: 0:00:11)Progress: 82% (Rate: 5965k/s, Estimated time remaining: 0:00:10)Progress: 84% (Rate: 6214k/s, Estimated time remaining: 0:00:09)Progress: 86% (Rate: 6250k/s, Estimated time remaining: 0:00:08)Progress: 88% (Rate: 6294k/s, Estimated time remaining: 0:00:07)Progress: 90% (Rate: 6412k/s, Estimated time remaining: 0:00:05)Progress: 92% (Rate: 6409k/s, Estimated time remaining: 0:00:04)Progress: 94% (Rate: 6410k/s, Estimated time remaining: 0:00:03)Progress: 96% (Rate: 6410k/s, Estimated time remaining: 0:00:02)Progress: 97% (Rate: 6118k/s, Estimated time remaining: 0:00:01)Progress: 99% (Rate: 6025k/s, Estimated time remaining: --:--:--)==> VPS_DEV: Successfully added box 'ubuntu/bionic64' (v20210319.0.0) for 'virtualbox'!
+==> VPS_DEV: Importing base box 'ubuntu/bionic64'...
+Progress: 90%==> VPS_DEV: Matching MAC address for NAT networking...
+==> VPS_DEV: Checking if box 'ubuntu/bionic64' version '20210319.0.0' is up to date...
+==> VPS_DEV: Setting the name of the VM: VPS_DEV
+==> VPS_DEV: Clearing any previously set network interfaces...
+==> VPS_DEV: Preparing network interfaces based on configuration...
+    VPS_DEV: Adapter 1: nat
+==> VPS_DEV: Forwarding ports...
+    VPS_DEV: 22 (guest) => 2222 (host) (adapter 1)
+==> VPS_DEV: Running 'pre-boot' VM customizations...
+==> VPS_DEV: Booting VM...
+==> VPS_DEV: Waiting for machine to boot. This may take a few minutes...
+    VPS_DEV: SSH address: 127.0.0.1:2222
+    VPS_DEV: SSH username: vagrant
+    VPS_DEV: SSH auth method: private key
+    VPS_DEV: Warning: Connection reset. Retrying...
+    VPS_DEV: Warning: Remote connection disconnect. Retrying...
+    VPS_DEV: 
+    VPS_DEV: Vagrant insecure key detected. Vagrant will automatically replace
+    VPS_DEV: this with a newly generated keypair for better security.
+    VPS_DEV: 
+    VPS_DEV: Inserting generated public key within guest...
+    VPS_DEV: Removing insecure key from the guest if it's present...
+    VPS_DEV: Key inserted! Disconnecting and reconnecting using new SSH key...
+==> VPS_DEV: Machine booted and ready!
+==> VPS_DEV: Checking for guest additions in VM...
+    VPS_DEV: The guest additions on this VM do not match the installed version of
+    VPS_DEV: VirtualBox! In most cases this is fine, but in rare cases it can
+    VPS_DEV: prevent things such as shared folders from working properly. If you see
+    VPS_DEV: shared folder errors, please make sure the guest additions within the
+    VPS_DEV: virtual machine match the version of VirtualBox you have installed on
+    VPS_DEV: your host and reload your VM.
+    VPS_DEV: 
+    VPS_DEV: Guest Additions Version: 5.2.42
+    VPS_DEV: VirtualBox Version: 6.1
+==> VPS_DEV: Mounting shared folders...
+    VPS_DEV: /vagrant => /home/neo/Público/src/vps
+Welcome to Ubuntu 18.04.5 LTS (GNU/Linux 4.15.0-139-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Mon Mar 22 17:44:29 UTC 2021
+
+  System load:  0.46              Processes:             112
+  Usage of /:   2.7% of 38.71GB   Users logged in:       0
+  Memory usage: 3%                IP address for enp0s3: 10.0.2.15
+  Swap usage:   0%
+
+
+0 packages can be updated.
+0 of these updates are security updates.
+
+New release '20.04.2 LTS' available.
+Run 'do-release-upgrade' to upgrade to it.
+
+
+-bash: line 4: make: command not found
