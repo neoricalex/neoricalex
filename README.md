@@ -134,7 +134,8 @@ Gostou da ideia?
     - [ ] Iniciar a box do vagrant *neoricalex/nfdos* que criamos no passo anterior
       - [ ] Auto executar o bash shell 
 
-#### Segunda Fase: Provisionar o VPS_DEV com os projetos do Ambiente de Desenvolvimento
+#### Segunda Fase
+##### Provisionar & Desenvolver o VPS_DEV com os projetos referentes ao NFDOS
 - [ ] Provisionar o VPS_DEV baseado na box *neoricalex/nfdos* que criamos na fase inicial
   - [ ] Criar o núcleo do NFDOS
     - [ ] Criar um emulador de computador localmente (QEMU)
@@ -153,21 +154,15 @@ Gostou da ideia?
       - [ ] Clonar o repositório da Linux
       - [ ] Configurar
       - [ ] Compilar    
-    - [ ] Criar a rootfs do NFDOS (ubuntu:focal)
-      - [ ] Gerar o rootfs via debootstrap     
-      - [ ] Configurar
-      - [ ] Empacotar como imagem docker (neoricalex/nfdos)
-        - [ ] Zipar
-        - [ ] Enviar a imagem docker para o docker hub 
-  - [ ] Criar a imagem ISO do NFDOS (nfdos.iso)
-     - [x] Gerar a imagem ISO (nfdos.iso)
-  - [x] Criar uma imagem .box com o NFDOS instalado (NFDOS-x.x.x.box)
-    - [x] Gerar a NFDOS-x.x.x.box
-    - [x] Enviar para a Vagrant Cloud (neoricalex/nfdos) a NFDOS-x.x.x.box com o NFDOS Instalado
-  - [x] Criar uma imagem de disco .vmdk com o NFDOS instalado (NFDOS-disk001.vmdk)
-  - [x] Criar um arquivo .ovf com o NFDOS instalado (NFDOS.ovf)
+  - [ ] Criar a Distribuição NFDOS
+    - [x] Atualizar a imagem ISO (nfdos.iso)
+    - [x] Atualizar a imagem .box com o NFDOS instalado (NFDOS-x.x.x.box)
+      - [x] Gerar a NFDOS-x.x.x.box
+      - [x] Atualizar a Vagrant Cloud (neoricalex/nfdos) com a NFDOS-x.x.x.box com o NFDOS Instalado
+    - [x] Atualizar a imagem de disco .vmdk com o NFDOS instalado (NFDOS-disk001.vmdk)
+    - [x] Atualizar o arquivo .ovf (NFDOS.ovf)
 
-#### Terceira Fase: Desenvolvimento dos Projetos NEORICALEX & NFDOS
+##### Provisionar & Desenvolver o VPS_DEV com os projetos referentes ao NEORICALEX
 - [x] Instalar o Docker Engine, Docker Compose & Docker Machine no VPS_DEV
 - [ ] Criar um Cluster Docker Swarm
   - [ ] Criar uma Docker Machine Master Remota (Digital Ocean, IBM, Google, Azure, AWS, Etc...)
