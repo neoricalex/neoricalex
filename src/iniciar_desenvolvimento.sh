@@ -119,6 +119,6 @@ iniciar_desenvolvimento_travis(){
 }
 
 case $HOSTNAME in
-  (desktop) iniciar_desenvolvimento_travis;;
+  (desktop1) iniciar_desenvolvimento_travis;;
   (*)   iniciar_desenvolvimento_local;;
 esac
