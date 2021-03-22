@@ -122,13 +122,11 @@ Gostou da ideia?
 
 ### Ambiente de Desenvolvimento
 #### Fase Inicial
-##### Configuração base do VPS_DEV no $HOSTNAME
-- [x] Criar um Sistema de LOG
-- [x] Instalar o Vagrant
+##### Configuração base inicial do Ambiente de Desenvolvimento
 - [x] Criar uma box do vagrant com o Ubuntu Genérico 18.04 (generic/ubuntu1804)
-  - [x] Instalar os requerimentos básicos essenciais (linux-generic, linux-headers, etc...)
-  - [ ] Empacotar a box com o nome nfdos.box
-  - [ ] Enviar a nfdos.box para a Vagrant Cloud ficando acessivel via *neoricalex/nfdos*
+  - [ ] Criar a imagem ISO do NFDOS
+  - [ ] Criar uma box do vagrant com o NFDOS Instalado
+    - [ ] Enviar a box para a Vagrant Cloud ficando acessivel via *neoricalex/nfdos*
 
 ##### Criação de um Ambiente de Integração Contínua (CI) no Travis (VPS_TRAVIS)
 - [x] Criar um processo CI
