@@ -4,7 +4,7 @@ instalar_requerimentos(){
     echo "Atualizar repositórios e instalar requerimentos..."
     sudo apt update
     sudo apt install -y \
-        autoconf autoreconf \
+        autoconf \
         build-essential \
         git \
         make \
