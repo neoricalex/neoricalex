@@ -123,21 +123,8 @@ Gostou da ideia?
 ### Ambiente de Desenvolvimento
 #### Fase Inicial
 ##### Configuração base inicial do Ambiente de Desenvolvimento
-- [x] Criar uma box via o Vagrant Cloud com o Ubuntu 18.04 LTS (ubuntu/bionic64)
-  - [ ] Criar a imagem ISO do NFDOS
-  - [ ] Criar uma box do vagrant com o NFDOS Instalado
-    - [ ] Enviar a box para a Vagrant Cloud ficando acessivel via *neoricalex/nfdos*
-
-##### Criação de um Ambiente de Integração Contínua (CI) no Travis (VPS_TRAVIS)
-- [x] Criar um processo CI
-  - [x] Configurar o auto-arranque da máquina do Travis via Hook no Github
-    - [ ] Iniciar a box do vagrant *neoricalex/nfdos* que criamos no passo anterior
-      - [ ] Auto executar o bash shell 
-
-#### Segunda Fase
-##### Provisionar & Desenvolver o VPS_DEV com os projetos referentes ao NFDOS
-- [ ] Provisionar o VPS_DEV baseado na box *neoricalex/nfdos* que criamos na fase inicial
-  - [ ] Criar o núcleo do NFDOS
+- [x] Criar uma box via o Vagrant Cloud com o Ubuntu 20.04 LTS (ubuntu/focal64)
+  - [ ] Criar a Distribuição Linux/Ubuntu NFDOS
     - [ ] Criar um emulador de computador localmente (QEMU)
       - [ ] Clonar o repositório do QEMU
       - [ ] Configurar
@@ -153,17 +140,22 @@ Gostou da ideia?
     - [ ] Criar o Kernel do NFDOS (Linux)
       - [ ] Clonar o repositório da Linux
       - [ ] Configurar
-      - [ ] Compilar    
-  - [ ] Criar a Distribuição NFDOS
-    - [x] Atualizar a imagem ISO (nfdos.iso)
-    - [x] Atualizar a imagem .box com o NFDOS instalado (NFDOS-x.x.x.box)
+      - [ ] Compilar
+    - [x] Criar a imagem ISO do NFDOS (*nfdos.iso*)
+    - [x] Criar a imagem .box do vagrant com o NFDOS instalado (*NFDOS-x.x.x.box*)
       - [x] Gerar a NFDOS-x.x.x.box
-      - [x] Atualizar a Vagrant Cloud (neoricalex/nfdos) com a NFDOS-x.x.x.box com o NFDOS Instalado
-    - [x] Atualizar a imagem de disco .vmdk com o NFDOS instalado (NFDOS-disk001.vmdk)
-    - [x] Atualizar o arquivo .ovf (NFDOS.ovf)
+      - [ ] Enviar a box para a Vagrant Cloud ficando acessivel via *neoricalex/nfdos*
+      - [x] Gerar a imagem de disco .vmdk com o NFDOS instalado (*NFDOS-disk001.vmdk*)
+      - [x] Gerar o arquivo .ovf (*NFDOS.ovf*)
 
-##### Provisionar & Desenvolver o VPS_DEV com os projetos referentes ao NEORICALEX
-- [x] Instalar o Docker Engine, Docker Compose & Docker Machine no VPS_DEV
+##### Criação de um Ambiente de Integração Contínua (CI) no Travis (VPS_TRAVIS)
+- [x] Criar um processo CI
+  - [x] Configurar o auto-arranque da máquina do Travis via Hook no Github
+    - [ ] Iniciar a box do vagrant *neoricalex/nfdos* que criamos no passo anterior
+      - [ ] Auto executar o bash shell 
+
+#### Segunda Fase
+- [ ] Instalar o Docker Engine, Docker Compose & Docker Machine no VPS_DEV
 - [ ] Criar um Cluster Docker Swarm
   - [ ] Criar uma Docker Machine Master Remota (Digital Ocean, IBM, Google, Azure, AWS, Etc...)
     - [ ] Instalar um container com o Wireguard Server
