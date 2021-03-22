@@ -55,15 +55,15 @@ iniciar_desenvolvimento_local(){
 
     cd vps
 
-    if [[ "$(docker images -q nfdos/core/rootfs:latest 2> /dev/null)" == "" ]]; then
+    #if [[ "$(docker images -q nfdos/core/rootfs:latest 2> /dev/null)" == "" ]]; then
 
-        if [ ! -d "nfdos/core/rootfs" ]; then
-            mkdir -p nfdos/core
-            sudo debootstrap --arch=amd64 --variant=minbase focal nfdos/core/rootfs
-            sudo tar -C nfdos/core/rootfs -c . | sudo docker import - nfdos/core/rootfs
-        fi
+    #    if [ ! -d "nfdos/core/rootfs" ]; then
+    #        mkdir -p nfdos/core
+    #        sudo debootstrap --arch=amd64 --variant=minbase focal nfdos/core/rootfs
+    #        sudo tar -C nfdos/core/rootfs -c . | sudo docker import - nfdos/core/rootfs
+    #    fi
 
-    fi
+    #fi
 
     make vps
     #docker rmi nfdos/core/rootfs:latest
@@ -86,6 +86,6 @@ iniciar_desenvolvimento_travis(){
 }
 
 case $HOSTNAME in
-  (desktop) iniciar_desenvolvimento_travis;;
+  (desktop1) iniciar_desenvolvimento_travis;;
   (*)   iniciar_desenvolvimento_local;;
 esac
