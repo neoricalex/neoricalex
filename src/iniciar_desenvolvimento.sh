@@ -97,6 +97,8 @@ EOF
 iniciar_desenvolvimento_travis(){
 
     cd vps
+    make vps
+    exit
     if ! vagrant box list | grep "libvirt" > /dev/null; then
         echo "[DEBUG] O ubuntu/bionic64 libvirt não existe. Criando ele..."
         vagrant box add ubuntu/bionic64
@@ -122,6 +124,6 @@ iniciar_desenvolvimento_travis(){
 }
 
 case $HOSTNAME in
-  (desktop1) iniciar_desenvolvimento_travis;;
+  (desktop) iniciar_desenvolvimento_travis;;
   (*)   iniciar_desenvolvimento_local;;
 esac
