@@ -1,0 +1,617 @@
+ A compilação vai iniciar em 5 segundos... A compilação vai iniciar em 4 segundos... A compilação vai iniciar em 3 segundos... A compilação vai iniciar em 2 segundos... A compilação vai iniciar em 1 segundos... A compilação vai iniciar em 0 segundos...
+
+Compilação iniciada seg 22 mar 2021 12:53:48
+
+Detalhes do desktop:
+
+Nome do modelo: AMD FX(tm)-8350 Eight-Core
+Arquitetura: x86_64
+Número de CPU(s): 8    
+Virtualização: AMD-V    
+Memória RAM: 16041 MiB 
+Memória Virtual: 8191 MB
+Modo(s) operacional da CPU: 32-bit, 64-bit
+
+chmod +x criar_box.sh
+./criar_box.sh
+==> Instalando os requerimentos para a box do vagrant...
+[sudo] senha para neo: 
+Lendo listas de pacotes... 0%Lendo listas de pacotes... 0%Lendo listas de pacotes... 8%Lendo listas de pacotes... Pronto
+Construindo árvore de dependências... 0%Construindo árvore de dependências... 0%Construindo árvore de dependências... 50%Construindo árvore de dependências... 50%Construindo árvore de dependências       
+Lendo informação de estado... 0%  Lendo informação de estado... 0%Lendo informação de estado... Pronto
+Note, selecting 'virtualbox-source' for glob 'virtualbox*'
+Note, selecting 'virtualbox-guest-utils' for glob 'virtualbox*'
+Note, selecting 'virtualbox-ose' for glob 'virtualbox*'
+Note, selecting 'virtualbox-guest-modules' for glob 'virtualbox*'
+Note, selecting 'virtualbox-guest-additions-iso' for glob 'virtualbox*'
+Note, selecting 'virtualbox-guest-dkms' for glob 'virtualbox*'
+Note, selecting 'virtualbox-dkms' for glob 'virtualbox*'
+Note, selecting 'virtualbox-guest-dkms-hwe' for glob 'virtualbox*'
+Note, selecting 'virtualbox-ext-pack' for glob 'virtualbox*'
+Note, selecting 'virtualbox' for glob 'virtualbox*'
+Note, selecting 'virtualbox-guest-modules-hwe' for glob 'virtualbox*'
+Note, selecting 'virtualbox-guest-x11-hwe' for glob 'virtualbox*'
+Note, selecting 'virtualbox-guest-source' for glob 'virtualbox*'
+Note, selecting 'virtualbox-qt' for glob 'virtualbox*'
+Note, selecting 'virtualbox-guest-source-hwe' for glob 'virtualbox*'
+Note, selecting 'virtualbox-2.0' for glob 'virtualbox*'
+Note, selecting 'virtualbox-2.1' for glob 'virtualbox*'
+Note, selecting 'virtualbox-2.2' for glob 'virtualbox*'
+Note, selecting 'virtualbox-modules' for glob 'virtualbox*'
+Note, selecting 'virtualbox-3.0' for glob 'virtualbox*'
+Note, selecting 'virtualbox-3.1' for glob 'virtualbox*'
+Note, selecting 'virtualbox-3.2' for glob 'virtualbox*'
+Note, selecting 'virtualbox-4.0' for glob 'virtualbox*'
+Note, selecting 'virtualbox-4.1' for glob 'virtualbox*'
+Note, selecting 'virtualbox-4.2' for glob 'virtualbox*'
+Note, selecting 'virtualbox-4.3' for glob 'virtualbox*'
+Note, selecting 'virtualbox-5.0' for glob 'virtualbox*'
+Note, selecting 'virtualbox-5.1' for glob 'virtualbox*'
+Note, selecting 'virtualbox-5.2' for glob 'virtualbox*'
+Note, selecting 'virtualbox-guest-utils-hwe' for glob 'virtualbox*'
+Note, selecting 'virtualbox-6.0' for glob 'virtualbox*'
+Note, selecting 'virtualbox-6.1' for glob 'virtualbox*'
+Note, selecting 'virtualbox-guest-x11' for glob 'virtualbox*'
+O pacote 'virtualbox-5.0' não está instalado, por isso não será removido
+O pacote 'virtualbox-5.1' não está instalado, por isso não será removido
+O pacote 'virtualbox-5.2' não está instalado, por isso não será removido
+Note, a seleccionar 'virtualbox-dkms' em vez de 'virtualbox-modules'
+O pacote 'virtualbox-2.0' não está instalado, por isso não será removido
+O pacote 'virtualbox-2.1' não está instalado, por isso não será removido
+O pacote 'virtualbox-2.2' não está instalado, por isso não será removido
+O pacote 'virtualbox-3.0' não está instalado, por isso não será removido
+O pacote 'virtualbox-3.1' não está instalado, por isso não será removido
+O pacote 'virtualbox-3.2' não está instalado, por isso não será removido
+O pacote 'virtualbox-4.0' não está instalado, por isso não será removido
+O pacote 'virtualbox-4.1' não está instalado, por isso não será removido
+O pacote 'virtualbox-4.2' não está instalado, por isso não será removido
+O pacote 'virtualbox-4.3' não está instalado, por isso não será removido
+O pacote 'virtualbox-guest-modules-hwe' não está instalado, por isso não será removido
+O pacote 'virtualbox-ose' não está instalado, por isso não será removido
+O pacote 'virtualbox-ext-pack' não está instalado, por isso não será removido
+O pacote 'virtualbox-guest-dkms-hwe' não está instalado, por isso não será removido
+O pacote 'virtualbox-guest-source' não está instalado, por isso não será removido
+O pacote 'virtualbox-guest-source-hwe' não está instalado, por isso não será removido
+O pacote 'virtualbox-guest-utils-hwe' não está instalado, por isso não será removido
+O pacote 'virtualbox-guest-x11-hwe' não está instalado, por isso não será removido
+O pacote 'virtualbox-source' não está instalado, por isso não será removido
+O pacote 'virtualbox-6.0' não está instalado, por isso não será removido
+O pacote 'virtualbox-6.1' não está instalado, por isso não será removido
+Os seguintes pacotes foram instalados automaticamente e já não são necessários:
+  libdouble-conversion3 libgsoap-2.8.91 liblzf1 libpcre2-16-0 libqt5core5a libqt5dbus5 libqt5gui5 libqt5network5
+  libqt5opengl5 libqt5printsupport5 libqt5svg5 libqt5widgets5 libqt5x11extras5 libvncserver1 libxcb-xinerama0 libxcb-xinput0
+  qt5-gtk-platformtheme qttranslations5-l10n
+Utilize 'sudo apt autoremove' para os remover.
+Os pacotes a seguir serão REMOVIDOS:
+  virtualbox* virtualbox-dkms* virtualbox-guest-additions-iso* virtualbox-guest-dkms* virtualbox-guest-utils*
+  virtualbox-guest-x11* virtualbox-qt*
+0 pacotes atualizados, 0 pacotes novos instalados, 7 a serem removidos e 9 não atualizados.
+Depois desta operação, 254 MB de espaço em disco serão liberados.
+
+7[0;15r8[1A(Lendo banco de dados ... (Lendo banco de dados ... 5%(Lendo banco de dados ... 10%(Lendo banco de dados ... 15%(Lendo banco de dados ... 20%(Lendo banco de dados ... 25%(Lendo banco de dados ... 30%(Lendo banco de dados ... 35%(Lendo banco de dados ... 40%(Lendo banco de dados ... 45%(Lendo banco de dados ... 50%(Lendo banco de dados ... 55%(Lendo banco de dados ... 60%(Lendo banco de dados ... 65%(Lendo banco de dados ... 70%(Lendo banco de dados ... 75%(Lendo banco de dados ... 80%(Lendo banco de dados ... 85%(Lendo banco de dados ... 90%(Lendo banco de dados ... 95%(Lendo banco de dados ... 100%(Lendo banco de dados ... 237073 ficheiros e directórios actualmente instalados.)
+A remover virtualbox-qt (6.1.16-dfsg-6~ubuntu1.20.04.1) ...
+7[16;0fProgress: [  0%] [.........................................................................................................] 87[16;0fProgress: [  3%] [###......................................................................................................] 87[16;0fProgress: [  7%] [#######..................................................................................................] 87[16;0fProgress: [ 10%] [##########...............................................................................................] 8A remover virtualbox (6.1.16-dfsg-6~ubuntu1.20.04.1) ...
+7[16;0fProgress: [ 14%] [##############...........................................................................................] 87[16;0fProgress: [ 17%] [##################.......................................................................................] 87[16;0fProgress: [ 21%] [#####################....................................................................................] 8A remover virtualbox-dkms (6.1.16-dfsg-6~ubuntu1.20.04.1) ...
+7[16;0fProgress: [ 24%] [#########################................................................................................] 8
+-------- Uninstall Beginning --------
+Module:  virtualbox
+Version: 6.1.16
+Kernel:  5.8.0-45-generic (x86_64)
+-------------------------------------
+
+Status: Before uninstall, this module version was ACTIVE on this kernel.
+
+vboxdrv.ko:
+ - Uninstallation
+   - Deleting from: /lib/modules/5.8.0-45-generic/updates/dkms/
+ - Original module
+   - No original module was found for this module on this kernel.
+   - Use the dkms install command to reinstall any previous module version.
+
+
+vboxnetadp.ko:
+ - Uninstallation
+   - Deleting from: /lib/modules/5.8.0-45-generic/updates/dkms/
+ - Original module
+   - No original module was found for this module on this kernel.
+   - Use the dkms install command to reinstall any previous module version.
+
+
+vboxnetflt.ko:
+ - Uninstallation
+   - Deleting from: /lib/modules/5.8.0-45-generic/updates/dkms/
+ - Original module
+   - No original module was found for this module on this kernel.
+   - Use the dkms install command to reinstall any previous module version.
+
+depmod...
+
+DKMS: uninstall completed.
+
+------------------------------
+Deleting module version: 6.1.16
+completely from the DKMS tree.
+------------------------------
+Done.
+7[16;0fProgress: [ 28%] [############################.............................................................................] 87[16;0fProgress: [ 31%] [################################.........................................................................] 87[16;0fProgress: [ 34%] [####################################.....................................................................] 8A remover virtualbox-guest-additions-iso (6.1.16-1~ubuntu1.20.04.1) ...
+7[16;0fProgress: [ 38%] [#######################################..................................................................] 87[16;0fProgress: [ 41%] [###########################################..............................................................] 87[16;0fProgress: [ 45%] [###############################################..........................................................] 87[16;0fProgress: [ 48%] [##################################################.......................................................] 8A remover virtualbox-guest-x11 (6.1.16-dfsg-6~ubuntu1.20.04.1) ...
+7[16;0fProgress: [ 52%] [######################################################...................................................] 87[16;0fProgress: [ 55%] [#########################################################................................................] 87[16;0fProgress: [ 59%] [#############################################################............................................] 8A remover virtualbox-guest-utils (6.1.16-dfsg-6~ubuntu1.20.04.1) ...
+7[16;0fProgress: [ 62%] [#################################################################........................................] 87[16;0fProgress: [ 66%] [####################################################################.....................................] 87[16;0fProgress: [ 69%] [########################################################################.................................] 8A remover virtualbox-guest-dkms (6.1.16-dfsg-6~ubuntu1.20.04.1) ...
+7[16;0fProgress: [ 72%] [############################################################################.............................] 8
+-------- Uninstall Beginning --------
+Module:  virtualbox-guest
+Version: 6.1.16
+Kernel:  5.8.0-45-generic (x86_64)
+-------------------------------------
+
+Status: Before uninstall, this module version was ACTIVE on this kernel.
+
+vboxguest.ko:
+ - Uninstallation
+   - Deleting from: /lib/modules/5.8.0-45-generic/updates/dkms/
+ - Original module
+   - No original module was found for this module on this kernel.
+   - Use the dkms install command to reinstall any previous module version.
+
+
+vboxsf.ko:
+ - Uninstallation
+   - Deleting from: /lib/modules/5.8.0-45-generic/updates/dkms/
+ - Original module
+   - No original module was found for this module on this kernel.
+   - Use the dkms install command to reinstall any previous module version.
+
+
+vboxvideo.ko:
+ - Uninstallation
+   - Deleting from: /lib/modules/5.8.0-45-generic/updates/dkms/
+ - Original module
+   - No original module was found for this module on this kernel.
+   - Use the dkms install command to reinstall any previous module version.
+
+depmod...
+
+DKMS: uninstall completed.
+
+------------------------------
+Deleting module version: 6.1.16
+completely from the DKMS tree.
+------------------------------
+Done.
+7[16;0fProgress: [ 76%] [###############################################################################..........................] 87[16;0fProgress: [ 79%] [###################################################################################......................] 87[16;0fProgress: [ 83%] [######################################################################################...................] 8A processar 'triggers' para mime-support (3.64ubuntu1) ...
+A processar 'triggers' para hicolor-icon-theme (0.17-2) ...
+A processar 'triggers' para gnome-menus (3.36.0-1ubuntu1) ...
+A processar 'triggers' para libc-bin (2.31-0ubuntu9.2) ...
+A processar 'triggers' para man-db (2.9.1-1) ...
+A processar 'triggers' para shared-mime-info (1.15-1) ...
+A processar 'triggers' para desktop-file-utils (0.24-1ubuntu3) ...
+(Lendo banco de dados ... (Lendo banco de dados ... 5%(Lendo banco de dados ... 10%(Lendo banco de dados ... 15%(Lendo banco de dados ... 20%(Lendo banco de dados ... 25%(Lendo banco de dados ... 30%(Lendo banco de dados ... 35%(Lendo banco de dados ... 40%(Lendo banco de dados ... 45%(Lendo banco de dados ... 50%(Lendo banco de dados ... 55%(Lendo banco de dados ... 60%(Lendo banco de dados ... 65%(Lendo banco de dados ... 70%(Lendo banco de dados ... 75%(Lendo banco de dados ... 80%(Lendo banco de dados ... 85%(Lendo banco de dados ... 90%(Lendo banco de dados ... 95%(Lendo banco de dados ... 100%(Lendo banco de dados ... 236084 ficheiros e directórios actualmente instalados.)
+A purgar os ficheiros de configuração para virtualbox-guest-x11 (6.1.16-dfsg-6~ubuntu1.20.04.1) ...
+7[16;0fProgress: [ 86%] [##########################################################################################...............] 8A purgar os ficheiros de configuração para virtualbox-guest-utils (6.1.16-dfsg-6~ubuntu1.20.04.1) ...
+7[16;0fProgress: [ 90%] [##############################################################################################...........] 8A purgar os ficheiros de configuração para virtualbox-qt (6.1.16-dfsg-6~ubuntu1.20.04.1) ...
+7[16;0fProgress: [ 93%] [#################################################################################################........] 8A purgar os ficheiros de configuração para virtualbox (6.1.16-dfsg-6~ubuntu1.20.04.1) ...
+dpkg: aviso: ao remover virtualbox, o directório '/usr/lib/virtualbox/ExtensionPacks' não estava vazio, por isso não foi removido
+7[16;0fProgress: [ 97%] [#####################################################################################################....] 8A processar 'triggers' para systemd (245.4-4ubuntu3.5) ...
+
+7[0;16r8[1A[J==> Atualizar os repositórios...
+0% [Trabalhando]                Atingido:1 http://download.virtualbox.org/virtualbox/debian focal InRelease
+0% [Aguardando por cabeçalhos] [Conectando a security.ubuntu.com] [Conectando a brave-browser-apt-release.s3.brave.com] [Cone                                                                                                                              Atingido:2 http://br.archive.ubuntu.com/ubuntu focal InRelease
+0% [Aguardando por cabeçalhos] [Conectando a security.ubuntu.com] [Connected to brave-browser-apt-release.s3.brave.com (13.22                                                                                                                              Obter:3 http://br.archive.ubuntu.com/ubuntu focal-updates InRelease [114 kB]
+0% [3 InRelease 4.091 B/114 kB 4%] [Conectando a security.ubuntu.com] [Connected to brave-browser-apt-release.s3.brave.com (13                                                                                                                              Atingido:4 https://brave-browser-apt-release.s3.brave.com stable InRelease
+                                                                                                                              0% [3 InRelease 42,6 kB/114 kB 37%] [Conectando a security.ubuntu.com] [Aguardando por cabeçalhos]                                                                                                   Atingido:5 https://download.docker.com/linux/ubuntu focal InRelease
+                                                                                                   0% [3 InRelease 42,6 kB/114 kB 37%] [Conectando a security.ubuntu.com]                                                                      0% [Conectando a security.ubuntu.com]                                     Obter:6 http://br.archive.ubuntu.com/ubuntu focal-backports InRelease [101 kB]
+0% [6 InRelease 4.091 B/101 kB 4%] [Conectando a security.ubuntu.com]                                                                     0% [Conectando a security.ubuntu.com]0% [Conectando em security.ubuntu.com (91.189.91.39)]                                                     0% [Aguardando por cabeçalhos]0% [Aguardando por cabeçalhos]                               Atingido:7 http://security.ubuntu.com/ubuntu focal-security InRelease
+                               0% [Trabalhando]0% [Trabalhando]0% [Trabalhando]                Obter:8 http://br.archive.ubuntu.com/ubuntu focal-updates/main amd64 Packages [867 kB]
+0% [8 Packages 5.519 B/867 kB 1%]                                 0% [Trabalhando]0% [8 Packages store 0 B]                         Obter:9 http://br.archive.ubuntu.com/ubuntu focal-updates/main i386 Packages [440 kB]
+0% [8 Packages store 0 B] [9 Packages 2.663 B/440 kB 1%]0% [8 Packages store 0 B] [9 Packages 86,9 kB/440 kB 20%]                                                         0% [8 Packages store 0 B] [Aguardando por cabeçalhos]                                                      Obter:10 http://br.archive.ubuntu.com/ubuntu focal-updates/main Translation-en [205 kB]
+0% [8 Packages store 0 B] [10 Translation-en 9.722 B/205 kB 5%]                                                               0% [8 Packages store 0 B] [Aguardando por cabeçalhos]                                                      Obter:11 http://br.archive.ubuntu.com/ubuntu focal-updates/universe amd64 Packages [752 kB]
+0% [8 Packages store 0 B] [11 Packages 6.879 B/752 kB 1%]                                                         0% [11 Packages 105 kB/752 kB 14%]0% [9 Packages store 0 B] [11 Packages 105 kB/752 kB 14%]                                                         0% [9 Packages store 0 B] [Aguardando por cabeçalhos]                                                      Obter:12 http://br.archive.ubuntu.com/ubuntu focal-updates/universe i386 Packages [559 kB]
+90% [9 Packages store 0 B] [12 Packages 347 kB/559 kB 62%]                                                          96% [9 Packages store 0 B] [Aguardando por cabeçalhos]                                                       Obter:13 http://br.archive.ubuntu.com/ubuntu focal-updates/universe Translation-en [158 kB]
+96% [9 Packages store 0 B] [13 Translation-en 9.583 B/158 kB 6%]                                                                98% [13 Translation-en 102 kB/158 kB 65%]98% [10 Translation-en store 0 B] [13 Translation-en 105 kB/158 kB 67%]                                                                       100% [10 Translation-en store 0 B]                                  100% [Trabalhando]100% [11 Packages store 0 B]                            100% [Trabalhando]100% [12 Packages store 0 B]                            100% [Trabalhando]100% [13 Translation-en store 0 B]                                  100% [Trabalhando]                  Baixados 3.193 kB em 1s (2.343 kB/s)
+Lendo listas de pacotes... 0%Lendo listas de pacotes... 0%Lendo listas de pacotes... 0%Lendo listas de pacotes... 3%Lendo listas de pacotes... 3%Lendo listas de pacotes... 5%Lendo listas de pacotes... 5%Lendo listas de pacotes... 6%Lendo listas de pacotes... 6%Lendo listas de pacotes... 7%Lendo listas de pacotes... 7%Lendo listas de pacotes... 9%Lendo listas de pacotes... 9%Lendo listas de pacotes... 9%Lendo listas de pacotes... 9%Lendo listas de pacotes... 9%Lendo listas de pacotes... 9%Lendo listas de pacotes... 9%Lendo listas de pacotes... 9%Lendo listas de pacotes... 9%Lendo listas de pacotes... 9%Lendo listas de pacotes... 9%Lendo listas de pacotes... 9%Lendo listas de pacotes... 39%Lendo listas de pacotes... 39%Lendo listas de pacotes... 54%Lendo listas de pacotes... 55%Lendo listas de pacotes... 55%Lendo listas de pacotes... 58%Lendo listas de pacotes... 58%Lendo listas de pacotes... 61%Lendo listas de pacotes... 61%Lendo listas de pacotes... 77%Lendo listas de pacotes... 77%Lendo listas de pacotes... 77%Lendo listas de pacotes... 77%Lendo listas de pacotes... 77%Lendo listas de pacotes... 77%Lendo listas de pacotes... 77%Lendo listas de pacotes... 77%Lendo listas de pacotes... 77%Lendo listas de pacotes... 77%Lendo listas de pacotes... 78%Lendo listas de pacotes... 78%Lendo listas de pacotes... 80%Lendo listas de pacotes... 80%Lendo listas de pacotes... 82%Lendo listas de pacotes... 82%Lendo listas de pacotes... 83%Lendo listas de pacotes... 83%Lendo listas de pacotes... 84%Lendo listas de pacotes... 84%Lendo listas de pacotes... 84%Lendo listas de pacotes... 84%Lendo listas de pacotes... 84%Lendo listas de pacotes... 84%Lendo listas de pacotes... 87%Lendo listas de pacotes... 87%Lendo listas de pacotes... 89%Lendo listas de pacotes... 89%Lendo listas de pacotes... 90%Lendo listas de pacotes... 90%Lendo listas de pacotes... 90%Lendo listas de pacotes... 90%Lendo listas de pacotes... 90%Lendo listas de pacotes... 90%Lendo listas de pacotes... 90%Lendo listas de pacotes... 90%Lendo listas de pacotes... 90%Lendo listas de pacotes... 90%Lendo listas de pacotes... 90%Lendo listas de pacotes... 90%Lendo listas de pacotes... 90%Lendo listas de pacotes... 90%Lendo listas de pacotes... 92%Lendo listas de pacotes... 92%Lendo listas de pacotes... 92%Lendo listas de pacotes... 92%Lendo listas de pacotes... 93%Lendo listas de pacotes... 93%Lendo listas de pacotes... 94%Lendo listas de pacotes... 94%Lendo listas de pacotes... 94%Lendo listas de pacotes... 94%Lendo listas de pacotes... 94%Lendo listas de pacotes... 94%Lendo listas de pacotes... 96%Lendo listas de pacotes... 96%Lendo listas de pacotes... 98%Lendo listas de pacotes... 98%Lendo listas de pacotes... 98%Lendo listas de pacotes... 98%Lendo listas de pacotes... 98%Lendo listas de pacotes... 98%Lendo listas de pacotes... 98%Lendo listas de pacotes... 98%Lendo listas de pacotes... 98%Lendo listas de pacotes... 98%Lendo listas de pacotes... 98%Lendo listas de pacotes... 98%Lendo listas de pacotes... 98%Lendo listas de pacotes... 98%Lendo listas de pacotes... 99%Lendo listas de pacotes... 99%Lendo listas de pacotes... Pronto
+Construindo árvore de dependências... 0%Construindo árvore de dependências... 0%Construindo árvore de dependências... 0%Construindo árvore de dependências... 50%Construindo árvore de dependências... 50%Construindo árvore de dependências       
+Lendo informação de estado... 0%  Lendo informação de estado... 0%Lendo informação de estado... Pronto
+9 packages can be upgraded. Run 'apt list --upgradable' to see them.
+==> Instalar o VirtualBox
+Lendo listas de pacotes... 0%Lendo listas de pacotes... 100%Lendo listas de pacotes... Pronto
+Construindo árvore de dependências... 0%Construindo árvore de dependências... 0%Construindo árvore de dependências... 50%Construindo árvore de dependências... 50%Construindo árvore de dependências       
+Lendo informação de estado... 0%  Lendo informação de estado... 0%Lendo informação de estado... Pronto
+The following additional packages will be installed:
+  virtualbox-dkms virtualbox-qt
+Pacotes sugeridos:
+  vde2 virtualbox-guest-additions-iso
+Os NOVOS pacotes a seguir serão instalados:
+  virtualbox virtualbox-dkms virtualbox-qt
+0 pacotes atualizados, 3 pacotes novos instalados, 0 a serem removidos e 9 não atualizados.
+É preciso baixar 0 B/43,8 MB de arquivos.
+Depois desta operação, 177 MB adicionais de espaço em disco serão usados.
+
+7[0;15r8[1AA seleccionar pacote anteriormente não seleccionado virtualbox-dkms.
+(Lendo banco de dados ... (Lendo banco de dados ... 5%(Lendo banco de dados ... 10%(Lendo banco de dados ... 15%(Lendo banco de dados ... 20%(Lendo banco de dados ... 25%(Lendo banco de dados ... 30%(Lendo banco de dados ... 35%(Lendo banco de dados ... 40%(Lendo banco de dados ... 45%(Lendo banco de dados ... 50%(Lendo banco de dados ... 55%(Lendo banco de dados ... 60%(Lendo banco de dados ... 65%(Lendo banco de dados ... 70%(Lendo banco de dados ... 75%(Lendo banco de dados ... 80%(Lendo banco de dados ... 85%(Lendo banco de dados ... 90%(Lendo banco de dados ... 95%(Lendo banco de dados ... 100%(Lendo banco de dados ... 236078 ficheiros e directórios actualmente instalados.)
+A preparar para desempacotar .../virtualbox-dkms_6.1.16-dfsg-6~ubuntu1.20.04.1_amd64.deb ...
+7[16;0fProgress: [  0%] [.........................................................................................................] 87[16;0fProgress: [  8%] [########.................................................................................................] 8A descompactar virtualbox-dkms (6.1.16-dfsg-6~ubuntu1.20.04.1) ...
+7[16;0fProgress: [ 15%] [################.........................................................................................] 8A seleccionar pacote anteriormente não seleccionado virtualbox.
+A preparar para desempacotar .../virtualbox_6.1.16-dfsg-6~ubuntu1.20.04.1_amd64.deb ...
+7[16;0fProgress: [ 23%] [########################.................................................................................] 8A descompactar virtualbox (6.1.16-dfsg-6~ubuntu1.20.04.1) ...
+7[16;0fProgress: [ 31%] [################################.........................................................................] 8A seleccionar pacote anteriormente não seleccionado virtualbox-qt.
+A preparar para desempacotar .../virtualbox-qt_6.1.16-dfsg-6~ubuntu1.20.04.1_amd64.deb ...
+7[16;0fProgress: [ 38%] [########################################.................................................................] 8A descompactar virtualbox-qt (6.1.16-dfsg-6~ubuntu1.20.04.1) ...
+7[16;0fProgress: [ 46%] [################################################.........................................................] 8Configurando virtualbox-dkms (6.1.16-dfsg-6~ubuntu1.20.04.1) ...
+7[16;0fProgress: [ 54%] [########################################################.................................................] 8Loading new virtualbox-6.1.16 DKMS files...
+Building for 5.8.0-45-generic
+Building initial module for 5.8.0-45-generic
+This system doesn't support Secure Boot
+Secure Boot not enabled on this system.
+Done.
+
+vboxdrv.ko:
+Running module version sanity check.
+ - Original module
+   - No original module exists within this kernel
+ - Installation
+   - Installing to /lib/modules/5.8.0-45-generic/updates/dkms/
+
+vboxnetadp.ko:
+Running module version sanity check.
+ - Original module
+   - No original module exists within this kernel
+ - Installation
+   - Installing to /lib/modules/5.8.0-45-generic/updates/dkms/
+
+vboxnetflt.ko:
+Running module version sanity check.
+ - Original module
+   - No original module exists within this kernel
+ - Installation
+   - Installing to /lib/modules/5.8.0-45-generic/updates/dkms/
+
+depmod...
+
+DKMS: install completed.
+7[16;0fProgress: [ 62%] [################################################################.........................................] 8Configurando virtualbox (6.1.16-dfsg-6~ubuntu1.20.04.1) ...
+7[16;0fProgress: [ 69%] [########################################################################.................................] 8Created symlink /etc/systemd/system/multi-user.target.wants/vboxweb.service → /lib/systemd/system/vboxweb.service.
+Job for vboxweb.service failed because the service did not take the steps required by its unit configuration.
+See "systemctl status vboxweb.service" and "journalctl -xe" for details.
+7[16;0fProgress: [ 77%] [################################################################################.........................] 8Configurando virtualbox-qt (6.1.16-dfsg-6~ubuntu1.20.04.1) ...
+7[16;0fProgress: [ 85%] [########################################################################################.................] 87[16;0fProgress: [ 92%] [################################################################################################.........] 8A processar 'triggers' para desktop-file-utils (0.24-1ubuntu3) ...
+A processar 'triggers' para mime-support (3.64ubuntu1) ...
+A processar 'triggers' para hicolor-icon-theme (0.17-2) ...
+A processar 'triggers' para gnome-menus (3.36.0-1ubuntu1) ...
+A processar 'triggers' para systemd (245.4-4ubuntu3.5) ...
+A processar 'triggers' para man-db (2.9.1-1) ...
+A processar 'triggers' para shared-mime-info (1.15-1) ...
+
+7[0;16r8[1A[JLendo listas de pacotes... 0%Lendo listas de pacotes... 100%Lendo listas de pacotes... Pronto
+Construindo árvore de dependências... 0%Construindo árvore de dependências... 0%Construindo árvore de dependências... 50%Construindo árvore de dependências... 50%Construindo árvore de dependências       
+Lendo informação de estado... 0%  Lendo informação de estado... 0%Lendo informação de estado... Pronto
+The following additional packages will be installed:
+  virtualbox-guest-utils
+Os NOVOS pacotes a seguir serão instalados:
+  virtualbox-guest-dkms virtualbox-guest-utils virtualbox-guest-x11
+0 pacotes atualizados, 3 pacotes novos instalados, 0 a serem removidos e 9 não atualizados.
+É preciso baixar 0 B/2.087 kB de arquivos.
+Depois desta operação, 15,7 MB adicionais de espaço em disco serão usados.
+
+7[0;15r8[1AA seleccionar pacote anteriormente não seleccionado virtualbox-guest-dkms.
+(Lendo banco de dados ... (Lendo banco de dados ... 5%(Lendo banco de dados ... 10%(Lendo banco de dados ... 15%(Lendo banco de dados ... 20%(Lendo banco de dados ... 25%(Lendo banco de dados ... 30%(Lendo banco de dados ... 35%(Lendo banco de dados ... 40%(Lendo banco de dados ... 45%(Lendo banco de dados ... 50%(Lendo banco de dados ... 55%(Lendo banco de dados ... 60%(Lendo banco de dados ... 65%(Lendo banco de dados ... 70%(Lendo banco de dados ... 75%(Lendo banco de dados ... 80%(Lendo banco de dados ... 85%(Lendo banco de dados ... 90%(Lendo banco de dados ... 95%(Lendo banco de dados ... 100%(Lendo banco de dados ... 236722 ficheiros e directórios actualmente instalados.)
+A preparar para desempacotar .../virtualbox-guest-dkms_6.1.16-dfsg-6~ubuntu1.20.04.1_all.deb ...
+7[16;0fProgress: [  0%] [.........................................................................................................] 87[16;0fProgress: [  8%] [########.................................................................................................] 8A descompactar virtualbox-guest-dkms (6.1.16-dfsg-6~ubuntu1.20.04.1) ...
+7[16;0fProgress: [ 15%] [################.........................................................................................] 8A seleccionar pacote anteriormente não seleccionado virtualbox-guest-utils.
+A preparar para desempacotar .../virtualbox-guest-utils_6.1.16-dfsg-6~ubuntu1.20.04.1_amd64.deb ...
+7[16;0fProgress: [ 23%] [########################.................................................................................] 8A descompactar virtualbox-guest-utils (6.1.16-dfsg-6~ubuntu1.20.04.1) ...
+7[16;0fProgress: [ 31%] [################################.........................................................................] 8A seleccionar pacote anteriormente não seleccionado virtualbox-guest-x11.
+A preparar para desempacotar .../virtualbox-guest-x11_6.1.16-dfsg-6~ubuntu1.20.04.1_amd64.deb ...
+7[16;0fProgress: [ 38%] [########################################.................................................................] 8A descompactar virtualbox-guest-x11 (6.1.16-dfsg-6~ubuntu1.20.04.1) ...
+7[16;0fProgress: [ 46%] [################################################.........................................................] 8Configurando virtualbox-guest-dkms (6.1.16-dfsg-6~ubuntu1.20.04.1) ...
+7[16;0fProgress: [ 54%] [########################################################.................................................] 8Loading new virtualbox-guest-6.1.16 DKMS files...
+Building for 5.8.0-45-generic
+Building initial module for 5.8.0-45-generic
+This system doesn't support Secure Boot
+Secure Boot not enabled on this system.
+Done.
+
+vboxguest.ko:
+Running module version sanity check.
+ - Original module
+ - Installation
+   - Installing to /lib/modules/5.8.0-45-generic/updates/dkms/
+
+vboxsf.ko:
+Running module version sanity check.
+ - Original module
+ - Installation
+   - Installing to /lib/modules/5.8.0-45-generic/updates/dkms/
+
+vboxvideo.ko:
+Running module version sanity check.
+ - Original module
+ - Installation
+   - Installing to /lib/modules/5.8.0-45-generic/updates/dkms/
+
+depmod...
+
+DKMS: install completed.
+7[16;0fProgress: [ 62%] [################################################################.........................................] 8Configurando virtualbox-guest-utils (6.1.16-dfsg-6~ubuntu1.20.04.1) ...
+7[16;0fProgress: [ 69%] [########################################################################.................................] 8Created symlink /etc/systemd/system/multi-user.target.wants/virtualbox-guest-utils.service → /lib/systemd/system/virtualbox-guest-utils.service.
+7[16;0fProgress: [ 77%] [################################################################################.........................] 8Configurando virtualbox-guest-x11 (6.1.16-dfsg-6~ubuntu1.20.04.1) ...
+7[16;0fProgress: [ 85%] [########################################################################################.................] 87[16;0fProgress: [ 92%] [################################################################################################.........] 8A processar 'triggers' para man-db (2.9.1-1) ...
+A processar 'triggers' para systemd (245.4-4ubuntu3.5) ...
+
+7[0;16r8[1A[JLendo listas de pacotes... 0%Lendo listas de pacotes... 100%Lendo listas de pacotes... Pronto
+Construindo árvore de dependências... 0%Construindo árvore de dependências... 0%Construindo árvore de dependências... 50%Construindo árvore de dependências... 50%Construindo árvore de dependências       
+Lendo informação de estado... 0%  Lendo informação de estado... 0%Lendo informação de estado... Pronto
+Os NOVOS pacotes a seguir serão instalados:
+  virtualbox-guest-additions-iso
+0 pacotes atualizados, 1 pacotes novos instalados, 0 a serem removidos e 9 não atualizados.
+É preciso baixar 44,7 MB de arquivos.
+Depois desta operação, 61,0 MB adicionais de espaço em disco serão usados.
+0% [Trabalhando]                Obter:1 http://br.archive.ubuntu.com/ubuntu focal-updates/multiverse amd64 virtualbox-guest-additions-iso all 6.1.16-1~ubuntu1.20.04.1 [44,7 MB]
+0% [1 virtualbox-guest-additions-iso 6.890 B/44,7 MB 0%]7% [1 virtualbox-guest-additions-iso 3.828 kB/44,7 MB 9%]17% [1 virtualbox-guest-additions-iso 9.633 kB/44,7 MB 22%]                                                           26% [1 virtualbox-guest-additions-iso 14,6 MB/44,7 MB 33%]27% [1 virtualbox-guest-additions-iso 15,2 MB/44,7 MB 34%]38% [1 virtualbox-guest-additions-iso 21,1 MB/44,7 MB 47%]48% [1 virtualbox-guest-additions-iso 26,8 MB/44,7 MB 60%]58% [1 virtualbox-guest-additions-iso 32,7 MB/44,7 MB 73%]68% [1 virtualbox-guest-additions-iso 37,8 MB/44,7 MB 84%]73% [1 virtualbox-guest-additions-iso 40,7 MB/44,7 MB 91%]79% [1 virtualbox-guest-additions-iso 44,2 MB/44,7 MB 99%]                                                          100% [Trabalhando]                  Baixados 44,7 MB em 5s (8.260 kB/s)
+
+7[0;15r8[1AA seleccionar pacote anteriormente não seleccionado virtualbox-guest-additions-iso.
+(Lendo banco de dados ... (Lendo banco de dados ... 5%(Lendo banco de dados ... 10%(Lendo banco de dados ... 15%(Lendo banco de dados ... 20%(Lendo banco de dados ... 25%(Lendo banco de dados ... 30%(Lendo banco de dados ... 35%(Lendo banco de dados ... 40%(Lendo banco de dados ... 45%(Lendo banco de dados ... 50%(Lendo banco de dados ... 55%(Lendo banco de dados ... 60%(Lendo banco de dados ... 65%(Lendo banco de dados ... 70%(Lendo banco de dados ... 75%(Lendo banco de dados ... 80%(Lendo banco de dados ... 85%(Lendo banco de dados ... 90%(Lendo banco de dados ... 95%(Lendo banco de dados ... 100%(Lendo banco de dados ... 237069 ficheiros e directórios actualmente instalados.)
+A preparar para desempacotar .../virtualbox-guest-additions-iso_6.1.16-1~ubuntu1.20.04.1_all.deb ...
+7[16;0fProgress: [  0%] [.........................................................................................................] 87[16;0fProgress: [ 20%] [#####################....................................................................................] 8A descompactar virtualbox-guest-additions-iso (6.1.16-1~ubuntu1.20.04.1) ...
+7[16;0fProgress: [ 40%] [##########################################...............................................................] 8Configurando virtualbox-guest-additions-iso (6.1.16-1~ubuntu1.20.04.1) ...
+7[16;0fProgress: [ 60%] [###############################################################..........................................] 87[16;0fProgress: [ 80%] [####################################################################################.....................] 8
+7[0;16r8[1A[J==> Instalar o Extension Pack do VirtualBox
+--2021-03-22 12:55:25--  https://download.virtualbox.org/virtualbox/6.1.18/Oracle_VM_VirtualBox_Extension_Pack-6.1.18.vbox-extpack
+Resolvendo download.virtualbox.org (download.virtualbox.org)... 104.90.0.86
+Conectando-se a download.virtualbox.org (download.virtualbox.org)|104.90.0.86|:443... conectado.
+A requisição HTTP foi enviada, aguardando resposta... 200 OK
+Tamanho: 11157510 (11M) [text/plain]
+Salvando em: “Oracle_VM_VirtualBox_Extension_Pack-6.1.18.vbox-extpack”
+
+                Oracle_VM_Virtu   0%[                                                       ]       0  --.-KB/s                              Oracle_VM_Virtua  19%[=========>                                             ]   2,07M  10,3MB/s                             Oracle_VM_Virtual  40%[=====================>                                 ]   4,32M  10,8MB/s                            Oracle_VM_VirtualB  61%[================================>                      ]   6,56M  10,9MB/s                           Oracle_VM_VirtualBo  82%[============================================>          ]   8,80M  11,0MB/s               Oracle_VM_VirtualBox_Extension_ 100%[======================================================>]  10,64M  11,0MB/s    em 1,0s    
+
+2021-03-22 12:55:26 (11,0 MB/s) - “Oracle_VM_VirtualBox_Extension_Pack-6.1.18.vbox-extpack” salvo [11157510/11157510]
+
+License accepted.
+0%...
+Progress state: NS_ERROR_FAILURE
+VBoxManage: error: Failed to install "/home/neo/Público/src/vps/Oracle_VM_VirtualBox_Extension_Pack-6.1.18.vbox-extpack"
+VBoxManage: error: Extension pack 'Oracle VM VirtualBox Extension Pack' is already installed. In case of a reinstallation, please uninstall it first
+VBoxManage: error: Details: code NS_ERROR_FAILURE (0x80004005), component ExtPackManagerWrap, interface IExtPackManager
+VBoxManage: error: Context: "RTEXITCODE handleExtPack(HandlerArg*)" at line 1424 of file VBoxManageMisc.cpp
+==> Removendo pacotes do Ubuntu desnecessários
+Lendo listas de pacotes... 0%Lendo listas de pacotes... 100%Lendo listas de pacotes... Pronto
+Construindo árvore de dependências... 0%Construindo árvore de dependências... 0%Construindo árvore de dependências... 50%Construindo árvore de dependências... 50%Construindo árvore de dependências       
+Lendo informação de estado... 0%  Lendo informação de estado... 0%Lendo informação de estado... Pronto
+0 pacotes atualizados, 0 pacotes novos instalados, 0 a serem removidos e 9 não atualizados.
+Lendo listas de pacotes... 0%Lendo listas de pacotes... 100%Lendo listas de pacotes... Pronto
+Construindo árvore de dependências... 0%Construindo árvore de dependências... 0%Construindo árvore de dependências... 50%Construindo árvore de dependências... 50%Construindo árvore de dependências       
+Lendo informação de estado... 0%  Lendo informação de estado... 0%Lendo informação de estado... Pronto
+E: Impossível encontrar o pacote vagrant_2.2.9_x86_64.deb
+E: Impossível encontrar o pacote vagrant-libs
+==> Atualizar os repositórios...
+0% [Trabalhando]                Atingido:1 http://download.virtualbox.org/virtualbox/debian focal InRelease
+0% [Aguardando por cabeçalhos] [Conectando a security.ubuntu.com] [Conectando a brave-browser-apt-release.s3.brave.com] [Cone                                                                                                                              Atingido:2 http://br.archive.ubuntu.com/ubuntu focal InRelease
+0% [Aguardando por cabeçalhos] [Conectando a security.ubuntu.com] [Conectando em brave-browser-apt-release.s3.brave.com (13.2                                                                                                                              Atingido:3 http://br.archive.ubuntu.com/ubuntu focal-updates InRelease
+0% [Conectando a security.ubuntu.com] [Connected to brave-browser-apt-release.s3.brave.com (13.227.99.47)] [Connected to downl                                                                                                                              Obter:4 http://br.archive.ubuntu.com/ubuntu focal-backports InRelease [101 kB]
+0% [4 InRelease 2.663 B/101 kB 3%] [Conectando a security.ubuntu.com] [Connected to brave-browser-apt-release.s3.brave.com (13                                                                                                                              Atingido:5 https://download.docker.com/linux/ubuntu focal InRelease
+                                                                                                                              0% [4 InRelease 48,4 kB/101 kB 48%] [Conectando a security.ubuntu.com] [Aguardando por cabeçalhos]                                                                                                   Atingido:6 https://brave-browser-apt-release.s3.brave.com stable InRelease
+                                                                                                   0% [4 InRelease 48,4 kB/101 kB 48%] [Conectando a security.ubuntu.com]                                                                      0% [Conectando a security.ubuntu.com]0% [Conectando em security.ubuntu.com (91.189.88.142)]0% [Conectando em security.ubuntu.com (91.189.88.142)]                                                      0% [Aguardando por cabeçalhos]0% [Aguardando por cabeçalhos]                               Obter:7 http://security.ubuntu.com/ubuntu focal-security InRelease [109 kB]
+0% [7 InRelease 6.829 B/109 kB 6%]0% [7 InRelease 14,0 kB/109 kB 13%]0% [7 InRelease 39,7 kB/109 kB 36%]                                   0% [7 InRelease 107 kB/109 kB 98%]                                  0% [Trabalhando]94% [Trabalhando]                 Obter:8 http://security.ubuntu.com/ubuntu focal-security/main amd64 c-n-f Metadata [7.376 B]
+94% [8 Commands-amd64 1.222 B/7.376 B 17%]                                          96% [Trabalhando]96% [8 Commands-amd64 store 0 B] [Aguardando por cabeçalhos]                                                             96% [Aguardando por cabeçalhos]                                Obter:9 http://security.ubuntu.com/ubuntu focal-security/universe amd64 c-n-f Metadata [10,6 kB]
+98% [9 Commands-amd64 5.505 B/10,6 kB 52%]                                          100% [Trabalhando]100% [9 Commands-amd64 store 0 B]                                 100% [Trabalhando]                  Baixados 228 kB em 3s (84,2 kB/s)
+Lendo listas de pacotes... 0%Lendo listas de pacotes... 0%Lendo listas de pacotes... 0%Lendo listas de pacotes... 3%Lendo listas de pacotes... 3%Lendo listas de pacotes... 5%Lendo listas de pacotes... 5%Lendo listas de pacotes... 6%Lendo listas de pacotes... 6%Lendo listas de pacotes... 7%Lendo listas de pacotes... 7%Lendo listas de pacotes... 9%Lendo listas de pacotes... 9%Lendo listas de pacotes... 9%Lendo listas de pacotes... 9%Lendo listas de pacotes... 9%Lendo listas de pacotes... 9%Lendo listas de pacotes... 9%Lendo listas de pacotes... 9%Lendo listas de pacotes... 9%Lendo listas de pacotes... 9%Lendo listas de pacotes... 9%Lendo listas de pacotes... 9%Lendo listas de pacotes... 39%Lendo listas de pacotes... 39%Lendo listas de pacotes... 55%Lendo listas de pacotes... 55%Lendo listas de pacotes... 56%Lendo listas de pacotes... 58%Lendo listas de pacotes... 58%Lendo listas de pacotes... 61%Lendo listas de pacotes... 61%Lendo listas de pacotes... 77%Lendo listas de pacotes... 77%Lendo listas de pacotes... 77%Lendo listas de pacotes... 77%Lendo listas de pacotes... 77%Lendo listas de pacotes... 77%Lendo listas de pacotes... 77%Lendo listas de pacotes... 77%Lendo listas de pacotes... 77%Lendo listas de pacotes... 77%Lendo listas de pacotes... 78%Lendo listas de pacotes... 78%Lendo listas de pacotes... 80%Lendo listas de pacotes... 80%Lendo listas de pacotes... 82%Lendo listas de pacotes... 82%Lendo listas de pacotes... 83%Lendo listas de pacotes... 83%Lendo listas de pacotes... 84%Lendo listas de pacotes... 84%Lendo listas de pacotes... 84%Lendo listas de pacotes... 84%Lendo listas de pacotes... 84%Lendo listas de pacotes... 84%Lendo listas de pacotes... 87%Lendo listas de pacotes... 87%Lendo listas de pacotes... 89%Lendo listas de pacotes... 89%Lendo listas de pacotes... 90%Lendo listas de pacotes... 90%Lendo listas de pacotes... 90%Lendo listas de pacotes... 90%Lendo listas de pacotes... 90%Lendo listas de pacotes... 90%Lendo listas de pacotes... 90%Lendo listas de pacotes... 90%Lendo listas de pacotes... 90%Lendo listas de pacotes... 90%Lendo listas de pacotes... 90%Lendo listas de pacotes... 90%Lendo listas de pacotes... 90%Lendo listas de pacotes... 90%Lendo listas de pacotes... 92%Lendo listas de pacotes... 92%Lendo listas de pacotes... 92%Lendo listas de pacotes... 92%Lendo listas de pacotes... 93%Lendo listas de pacotes... 93%Lendo listas de pacotes... 94%Lendo listas de pacotes... 94%Lendo listas de pacotes... 94%Lendo listas de pacotes... 94%Lendo listas de pacotes... 94%Lendo listas de pacotes... 94%Lendo listas de pacotes... 96%Lendo listas de pacotes... 96%Lendo listas de pacotes... 98%Lendo listas de pacotes... 98%Lendo listas de pacotes... 98%Lendo listas de pacotes... 98%Lendo listas de pacotes... 98%Lendo listas de pacotes... 98%Lendo listas de pacotes... 98%Lendo listas de pacotes... 98%Lendo listas de pacotes... 98%Lendo listas de pacotes... 98%Lendo listas de pacotes... 98%Lendo listas de pacotes... 98%Lendo listas de pacotes... 98%Lendo listas de pacotes... 98%Lendo listas de pacotes... 98%Lendo listas de pacotes... 98%Lendo listas de pacotes... Pronto
+Construindo árvore de dependências... 0%Construindo árvore de dependências... 0%Construindo árvore de dependências... 0%Construindo árvore de dependências... 50%Construindo árvore de dependências... 50%Construindo árvore de dependências       
+Lendo informação de estado... 0%  Lendo informação de estado... 0%Lendo informação de estado... Pronto
+9 packages can be upgraded. Run 'apt list --upgradable' to see them.
+==> Download Vagrant & Instalar
+^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A2021-03-22 12:55:40 URL:https://releases.hashicorp.com/vagrant/2.2.9/vagrant_2.2.9_x86_64.deb [42978828/42978828] -> "vagrant_2.2.9_x86_64.deb.1" [1]
+(Lendo banco de dados ... (Lendo banco de dados ... 5%(Lendo banco de dados ... 10%(Lendo banco de dados ... 15%(Lendo banco de dados ... 20%(Lendo banco de dados ... 25%(Lendo banco de dados ... 30%(Lendo banco de dados ... 35%(Lendo banco de dados ... 40%(Lendo banco de dados ... 45%(Lendo banco de dados ... 50%(Lendo banco de dados ... 55%(Lendo banco de dados ... 60%(Lendo banco de dados ... 65%(Lendo banco de dados ... 70%(Lendo banco de dados ... 75%(Lendo banco de dados ... 80%(Lendo banco de dados ... 85%(Lendo banco de dados ... 90%(Lendo banco de dados ... 95%(Lendo banco de dados ... 100%(Lendo banco de dados ... 237073 ficheiros e directórios actualmente instalados.)
+A preparar para desempacotar vagrant_2.2.9_x86_64.deb ...
+A descompactar vagrant (1:2.2.9) sobre (1:2.2.9) ...
+dpkg-deb (sub-processo): não pode copiar membro do arquivo de 'vagrant_2.2.9_x86_64.deb' para o pipe do descompressor: fim de ficheiro ou stream inesperado
+dpkg-deb: erro: o subprocesso colar retornou erro do status de saída 2
+dpkg: erro ao processar o arquivo vagrant_2.2.9_x86_64.deb (--install):
+ não pode copiar dados extráidos para './opt/vagrant/embedded/lib/libruby.so.2.6.6' para '/opt/vagrant/embedded/lib/libruby.so.2.6.6.dpkg-new': fim de ficheiro ou stream inesperado
+Erros foram encontrados durante o processamento de:
+ vagrant_2.2.9_x86_64.deb
+==> Instalar plugins do Vagrant
+Installing the 'vagrant-libvirt' plugin. This can take a few minutes...
+Building native extensions. This could take a while...
+Building native extensions. This could take a while...
+^CWaiting for cleanup before exiting...
+Vagrant failed to properly resolve required dependencies. These
+errors can commonly be caused by misconfigured plugin installations
+or transient network issues. The reported error is:
+
+ERROR: Failed to build gem native extension.
+
+    current directory: /home/neo/.vagrant.d/gems/2.6.6/gems/ruby-libvirt-0.7.1/ext/libvirt
+/opt/vagrant/embedded/bin/ruby -I /opt/vagrant/embedded/lib/ruby/2.6.0 -r ./siteconf20210322-51993-rwyfz9.rb extconf.rb
+checking for virNetworkPtr in libvirt/libvirt.h... yes
+checking for virStoragePoolPtr in libvirt/libvirt.h... yes
+checking for virStorageVolPtr in libvirt/libvirt.h... yes
+checking for virSecretPtr in libvirt/libvirt.h... yes
+checking for virNWFilterPtr in libvirt/libvirt.h... yes
+checking for virInterfacePtr in libvirt/libvirt.h... yes
+checking for virDomainBlockInfoPtr in libvirt/libvirt.h... yes
+checking for virDomainMemoryStatPtr in libvirt/libvirt.h... yes
+checking for virDomainSnapshotPtr in libvirt/libvirt.h... yes
+checking for virDomainJobInfoPtr in libvirt/libvirt.h... yes
+checking for virNodeDevicePtr in libvirt/libvirt.h... yes
+checking for virStreamPtr in libvirt/libvirt.h... yes
+checking for virTypedParameterPtr in libvirt/libvirt.h... yes
+checking for virDomainBlockJobInfoPtr in libvirt/libvirt.h... yes
+checking for virStorageVolWipe() in libvirt/libvirt.h... yes
+checking for virStoragePoolIsActive() in libvirt/libvirt.h... yes
+checking for virStoragePoolIsPersistent() in libvirt/libvirt.h... yes
+checking for virStorageVolCreateXMLFrom() in libvirt/libvirt.h... yes
+checking for virConnectGetLibVersion() in libvirt/libvirt.h... yes
+checking for virConnectIsEncrypted() in libvirt/libvirt.h... yes
+checking for virConnectIsSecure() in libvirt/libvirt.h... yes
+checking for virNetworkIsActive() in libvirt/libvirt.h... yes
+checking for virNetworkIsPersistent() in libvirt/libvirt.h... yes
+checking for virNodeDeviceCreateXML() in libvirt/libvirt.h... yes
+checking for virNodeDeviceDestroy() in libvirt/libvirt.h... yes
+checking for virInterfaceIsActive() in libvirt/libvirt.h... yes
+checking for virDomainMigrateToURI() in libvirt/libvirt.h... yes
+checking for virDomainMigrateSetMaxDowntime() in libvirt/libvirt.h... yes
+checking for virDomainManagedSave() in libvirt/libvirt.h... yes
+checking for virDomainIsActive() in libvirt/libvirt.h... yes
+checking for virDomainIsPersistent() in libvirt/libvirt.h... yes
+checking for virConnectDomainXMLFromNative() in libvirt/libvirt.h... yes
+checking for virConnectDomainXMLToNative() in libvirt/libvirt.h... yes
+checking for virDomainCreateWithFlags() in libvirt/libvirt.h... yes
+checking for virDomainAttachDeviceFlags() in libvirt/libvirt.h... yes
+checking for virDomainDetachDeviceFlags() in libvirt/libvirt.h... yes
+checking for virDomainUpdateDeviceFlags() in libvirt/libvirt.h... yes
+checking for virNodeGetSecurityModel() in libvirt/libvirt.h... yes
+checking for virDomainCreateXML() in libvirt/libvirt.h... yes
+checking for virDomainGetSecurityLabel() in libvirt/libvirt.h... yes
+checking for virConnectCompareCPU() in libvirt/libvirt.h... yes
+checking for virConnectBaselineCPU() in libvirt/libvirt.h... yes
+checking for virDomainSetVcpusFlags() in libvirt/libvirt.h... yes
+checking for virDomainGetVcpusFlags() in libvirt/libvirt.h... yes
+checking for virConnectDomainEventRegisterAny() in libvirt/libvirt.h... yes
+checking for virConnectDomainEventRegister() in libvirt/libvirt.h... yes
+checking for virDomainBlockPeek() in libvirt/libvirt.h... yes
+checking for virDomainMemoryPeek() in libvirt/libvirt.h... yes
+checking for virConnectOpenAuth() in libvirt/libvirt.h... yes
+checking for virEventRegisterImpl() in libvirt/libvirt.h... yes
+checking for virDomainIsUpdated() in libvirt/libvirt.h... yes
+checking for virDomainSetMemoryParameters() in libvirt/libvirt.h... yes
+checking for virConnectGetSysinfo() in libvirt/libvirt.h... yes
+checking for virDomainSetBlkioParameters() in libvirt/libvirt.h... yes
+checking for virDomainSetMemoryFlags() in libvirt/libvirt.h... yes
+checking for virDomainGetState() in libvirt/libvirt.h... yes
+checking for virDomainOpenConsole() in libvirt/libvirt.h... yes
+checking for virDomainMigrate2() in libvirt/libvirt.h... yes
+checking for virDomainScreenshot() in libvirt/libvirt.h... yes
+checking for virInterfaceChangeBegin() in libvirt/libvirt.h... yes
+checking for virStorageVolDownload() in libvirt/libvirt.h... yes
+checking for virDomainInjectNMI() in libvirt/libvirt.h... yes
+checking for virDomainGetControlInfo() in libvirt/libvirt.h... yes
+checking for virDomainMigrateGetMaxSpeed() in libvirt/libvirt.h... yes
+checking for virNodeGetCPUStats() in libvirt/libvirt.h... yes
+checking for virNodeGetMemoryStats() in libvirt/libvirt.h... yes
+checking for virDomainDestroyFlags() in libvirt/libvirt.h... yes
+checking for virDomainSaveFlags() in libvirt/libvirt.h... yes
+checking for virDomainSaveImageGetXMLDesc() in libvirt/libvirt.h... yes
+checking for virDomainSendKey() in libvirt/libvirt.h... yes
+checking for virNetworkUpdate() in libvirt/libvirt.h... yes
+checking for virNodeSuspendForDuration() in libvirt/libvirt.h... yes
+checking for virNodeGetMemoryParameters() in libvirt/libvirt.h... yes
+checking for virNodeGetCPUMap() in libvirt/libvirt.h... yes
+checking for virDomainUndefineFlags() in libvirt/libvirt.h... yes
+checking for virDomainPinVcpuFlags() in libvirt/libvirt.h... yes
+checking for virDomainGetVcpuPinInfo() in libvirt/libvirt.h... yes
+checking for virDomainSnapshotGetName() in libvirt/libvirt.h... yes
+checking for virConnectSetKeepAlive() in libvirt/libvirt.h... yes
+checking for virDomainReset() in libvirt/libvirt.h... yes
+checking for virDomainShutdownFlags() in libvirt/libvirt.h... yes
+checking for virDomainGetHostname() in libvirt/libvirt.h... yes
+checking for virDomainGetMetadata() in libvirt/libvirt.h... yes
+checking for virDomainSetMetadata() in libvirt/libvirt.h... yes
+checking for virConnectListAllDomains() in libvirt/libvirt.h... yes
+checking for virConnectListAllNetworks() in libvirt/libvirt.h... *** extconf.rb failed ***
+Could not create Makefile due to some reason, probably lack of necessary
+libraries and/or headers.  Check the mkmf.log file for more details.  You may
+need configuration options.
+
+Provided configuration options:
+	--with-opt-dir
+	--with-opt-include
+	--without-opt-include=${opt-dir}/include
+	--with-opt-lib
+	--without-opt-lib=${opt-dir}/lib
+	--with-make-prog
+	--without-make-prog
+	--srcdir=.
+	--curdir
+	--ruby=/opt/vagrant/embedded/bin/$(RUBY_BASE_NAME)
+	--with-libvirt-include
+	--without-libvirt-include
+	--with-libvirt-lib
+	--without-libvirt-lib
+	--with-libvirt-config
+	--without-libvirt-config
+	--with-pkg-config
+	--without-pkg-config
+/opt/vagrant/embedded/lib/ruby/2.6.0/mkmf.rb:406:in `system': Interrupt
+	from /opt/vagrant/embedded/lib/ruby/2.6.0/mkmf.rb:406:in `block in xsystem'
+	from /opt/vagrant/embedded/lib/ruby/2.6.0/mkmf.rb:331:in `open'
+	from /opt/vagrant/embedded/lib/ruby/2.6.0/mkmf.rb:395:in `xsystem'
+	from /opt/vagrant/embedded/lib/ruby/2.6.0/mkmf.rb:474:in `try_do'
+	from /opt/vagrant/embedded/lib/ruby/2.6.0/mkmf.rb:552:in `try_link0'
+	from /opt/vagrant/embedded/lib/ruby/2.6.0/mkmf.rb:570:in `try_link'
+	from /opt/vagrant/embedded/lib/ruby/2.6.0/mkmf.rb:782:in `try_func'
+	from /opt/vagrant/embedded/lib/ruby/2.6.0/mkmf.rb:1069:in `block in have_func'
+	from /opt/vagrant/embedded/lib/ruby/2.6.0/mkmf.rb:959:in `block in checking_for'
+	from /opt/vagrant/embedded/lib/ruby/2.6.0/mkmf.rb:361:in `block (2 levels) in postpone'
+	from /opt/vagrant/embedded/lib/ruby/2.6.0/mkmf.rb:331:in `open'
+	from /opt/vagrant/embedded/lib/ruby/2.6.0/mkmf.rb:361:in `block in postpone'
+	from /opt/vagrant/embedded/lib/ruby/2.6.0/mkmf.rb:331:in `open'
+	from /opt/vagrant/embedded/lib/ruby/2.6.0/mkmf.rb:357:in `postpone'
+	from /opt/vagrant/embedded/lib/ruby/2.6.0/mkmf.rb:958:in `checking_for'
+	from /opt/vagrant/embedded/lib/ruby/2.6.0/mkmf.rb:1068:in `have_func'
+	from extconf.rb:491:in `block in <main>'
+	from extconf.rb:491:in `each'
+	from extconf.rb:491:in `<main>'
+
+To see why this extension failed to compile, please check the mkmf.log which can be found here:
+
+  /home/neo/.vagrant.d/gems/2.6.6/extensions/x86_64-linux/2.6.0/ruby-libvirt-0.7.1/mkmf.log
+
+extconf failed, exit code 1
+
+Gem files will remain installed in /home/neo/.vagrant.d/gems/2.6.6/gems/ruby-libvirt-0.7.1 for inspection.
+Results logged to /home/neo/.vagrant.d/gems/2.6.6/extensions/x86_64-linux/2.6.0/ruby-libvirt-0.7.1/gem_make.out
+
+Installing the 'vagrant-disksize' plugin. This can take a few minutes...
+^CWaiting for cleanup before exiting...
+^CExiting immediately, without cleanup!
+Installing the 'vagrant-mutate' plugin. This can take a few minutes...
+^CWaiting for cleanup before exiting...
+^CExiting immediately, without cleanup!
+==> Removendo pacotes do Ubuntu desnecessários
+Lendo listas de pacotes... 0%Lendo listas de pacotes... 0%Lendo listas de pacotes... 8%Lendo listas de pacotes... Pronto
+Construindo árvore de dependências... 0%Construindo árvore de dependências... 0%Construindo árvore de dependências... 50%Construindo árvore de dependências... 50%Construindo árvore de dependências       
+Lendo informação de estado... 0%  Lendo informação de estado... 0%Lendo informação de estado... Pronto
+0 pacotes atualizados, 0 pacotes novos instalados, 0 a serem removidos e 9 não atualizados.
+==> Iniciando a box...
+^CVagrant failed to initialize at a very early stage:
+
+The plugins failed to initialize correctly. This may be due to manual
+modifications made within the Vagrant home directory. Vagrant can
+attempt to automatically correct this issue by running:
+
+  vagrant plugin repair
+
+If Vagrant was recently updated, this error may be due to incompatible
+versions of dependencies. To fix this problem please remove and re-install
+all plugins. Vagrant can attempt to do this automatically by running:
+
+  vagrant plugin expunge --reinstall
+
+Or you may want to try updating the installed plugins to their latest
+versions:
+
+  vagrant plugin update
+
+Error message given during initialization: Unable to resolve dependency: 'fog-libvirt (>= 0.6.0)' requires 'ruby-libvirt (>= 0.7.0)'
+^C[DEBUG] O VPS_DEV existe mas está com um status diferente...
+Vagrant failed to initialize at a very early stage:
+
+The plugins failed to initialize correctly. This may be due to manual
+modifications made within the Vagrant home directory. Vagrant can
+attempt to automatically correct this issue by running:
+
+  vagrant plugin repair
+
+If Vagrant was recently updated, this error may be due to incompatible
+versions of dependencies. To fix this problem please remove and re-install
+all plugins. Vagrant can attempt to do this automatically by running:
+
+  vagrant plugin expunge --reinstall
+
+Or you may want to try updating the installed plugins to their latest
+versions:
+
+  vagrant plugin update
+
+Error message given during initialization: Unable to resolve dependency: 'fog-libvirt (>= 0.6.0)' requires 'ruby-libvirt (>= 0.7.0)'
+^Cmake: *** [Makefile:34: box] Interrupção
