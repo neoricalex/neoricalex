@@ -42,6 +42,7 @@ if [ "$usuario" == "neo@desktop" ]; then
     cat *.log
     cd ..
 
+    echo "Atualizar o github:neoricalex/neoricalex..."
     git add .
     git commit -m "Atualização Automática via bash shell"
     #git push origin master
