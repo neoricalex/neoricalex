@@ -68,7 +68,7 @@ iniciar_desenvolvimento_local(){
 
     cd vps
 
-    docker rmi nfdos/core/rootfs:latest
+    #docker rmi nfdos/core/rootfs:latest
     iniciar_rootfs
     #sudo rm -rf nfdos/core/rootfs
     #sudo apt autoremove -y
