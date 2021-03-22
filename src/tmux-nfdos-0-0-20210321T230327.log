@@ -1,6 +1,6 @@
  A compilação vai iniciar em 5 segundos... A compilação vai iniciar em 4 segundos... A compilação vai iniciar em 3 segundos... A compilação vai iniciar em 2 segundos... A compilação vai iniciar em 1 segundos... A compilação vai iniciar em 0 segundos...
 
-Compilação iniciada dom 21 mar 2021 23:01:46
+Compilação iniciada dom 21 mar 2021 23:03:34
 
 Detalhes do desktop:
 
@@ -9,11 +9,19 @@ Arquitetura: x86_64
 Número de CPU(s): 8    
 Virtualização: AMD-V    
 Memória RAM: 16041 MiB 
-Memória Virtual: 7186 MB
+Memória Virtual: 7183 MB
 Modo(s) operacional da CPU: 32-bit, 64-bit
 
 ./build.sh
 Getting qemu package for amd64
+docker images
+REPOSITORY   TAG       IMAGE ID       CREATED          SIZE
+<none>       <none>    d4ba51341212   33 minutes ago   186MB
+ubuntu       20.04     4dd97cefde62   2 weeks ago      72.9MB
+docker ps
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+docker ps -a
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
 docker build --no-cache -t nfdos/core/rootfs:latest  --build-arg QEMU_ARCH=amd64 --platform amd64 --rm nfdos
 error checking context: 'no permission to read from '/home/neo/Público/src/vps/nfdos/core/rootfs/etc/.pwd.lock''.
-make: *** [Makefile:32: build] Erro 1
+make: *** [Makefile:35: build] Erro 1
