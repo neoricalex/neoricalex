@@ -1,0 +1,16 @@
+ A compilação vai iniciar em 5 segundos... A compilação vai iniciar em 4 segundos... A compilação vai iniciar em 3 segundos... A compilação vai iniciar em 2 segundos... A compilação vai iniciar em 1 segundos... A compilação vai iniciar em 0 segundos...
+
+Compilação iniciada seg 22 mar 2021 01:30:10
+
+Detalhes do desktop:
+
+Nome do modelo: AMD FX(tm)-8350 Eight-Core
+Arquitetura: x86_64
+Número de CPU(s): 8    
+Virtualização: AMD-V    
+Memória RAM: 16041 MiB 
+Memória Virtual: 5875 MB
+Modo(s) operacional da CPU: 32-bit, 64-bit
+
+Parece bom!
+#docker run --rm --name neoricalex nfdos/core/rootfs
