@@ -36,7 +36,8 @@ else
     git pull
     cd $NEORICALEX_HOME
 fi
-
+sleep 5
+exit
 iniciar_desenvolvimento(){
     if ! tmux has-session -t nfdos 2>/dev/null; then
         tmux new-session -s nfdos bash "$NEORICALEX_HOME/iniciar_desenvolvimento.sh"
