@@ -1,0 +1,286 @@
+ A compilação vai iniciar em 4 segundos... A compilação vai iniciar em 3 segundos... A compilação vai iniciar em 2 segundos... A compilação vai iniciar em 1 segundos... A compilação vai iniciar em 0 segundos...
+
+Compilação iniciada seg 22 mar 2021 14:17:00
+
+Detalhes do desktop:
+
+Nome do modelo: AMD FX(tm)-8350 Eight-Core
+Arquitetura: x86_64
+Número de CPU(s): 8    
+Virtualização: AMD-V    
+Memória RAM: 16041 MiB 
+Memória Virtual: 4587 MB
+Modo(s) operacional da CPU: 32-bit, 64-bit
+
+chmod +x criar_box.sh
+./criar_box.sh
+==> Instalar os requerimentos da box...
+==> Atualizar os repositórios...
+[sudo] senha para neo: 
+0% [Trabalhando]                Atingido:1 http://br.archive.ubuntu.com/ubuntu focal InRelease
+0% [Conectando em security.ubuntu.com (91.189.91.38)] [Aguardando por cabeçalhos] [Connected to brave-browser-apt-release.s3.                                                                                                                              Atingido:2 http://br.archive.ubuntu.com/ubuntu focal-updates InRelease
+0% [Aguardando por cabeçalhos] [Conectando em security.ubuntu.com (91.189.91.38)] [Aguardando por cabeçalhos] [Aguardando po                                                                                                                              Obter:3 http://br.archive.ubuntu.com/ubuntu focal-backports InRelease [101 kB]
+0% [3 InRelease 4.091 B/101 kB 4%] [Conectando em security.ubuntu.com (91.189.91.38)] [Aguardando por cabeçalhos] [Aguardando                                                                                                                              Atingido:4 https://brave-browser-apt-release.s3.brave.com stable InRelease
+0% [3 InRelease 14,1 kB/101 kB 14%] [Conectando em security.ubuntu.com (91.189.91.38)] [Aguardando por cabeçalhos] [Aguardand                                                                                                                              Atingido:5 http://download.virtualbox.org/virtualbox/debian focal InRelease
+                                                                                                                              0% [3 InRelease 14,1 kB/101 kB 14%] [Conectando em security.ubuntu.com (91.189.91.38)] [Aguardando por cabeçalhos]                                                                                                                   Atingido:6 https://download.docker.com/linux/ubuntu focal InRelease
+                                                                                                                   0% [3 InRelease 14,1 kB/101 kB 14%] [Conectando em security.ubuntu.com (91.189.91.38)]                                                                                      0% [Conectando em security.ubuntu.com (91.189.91.38)]                                                     0% [Aguardando por cabeçalhos]                               Atingido:7 http://security.ubuntu.com/ubuntu focal-security InRelease
+                               0% [Trabalhando]0% [Trabalhando]0% [Trabalhando]0% [Trabalhando]0% [Trabalhando]0% [Trabalhando]100% [Trabalhando]                  Baixados 101 kB em 1s (86,7 kB/s)
+Lendo listas de pacotes... 0%Lendo listas de pacotes... 0%Lendo listas de pacotes... 0%Lendo listas de pacotes... 3%Lendo listas de pacotes... 3%Lendo listas de pacotes... 5%Lendo listas de pacotes... 5%Lendo listas de pacotes... 6%Lendo listas de pacotes... 6%Lendo listas de pacotes... 7%Lendo listas de pacotes... 7%Lendo listas de pacotes... 9%Lendo listas de pacotes... 9%Lendo listas de pacotes... 9%Lendo listas de pacotes... 9%Lendo listas de pacotes... 9%Lendo listas de pacotes... 9%Lendo listas de pacotes... 9%Lendo listas de pacotes... 9%Lendo listas de pacotes... 9%Lendo listas de pacotes... 9%Lendo listas de pacotes... 9%Lendo listas de pacotes... 9%Lendo listas de pacotes... 39%Lendo listas de pacotes... 39%Lendo listas de pacotes... 55%Lendo listas de pacotes... 55%Lendo listas de pacotes... 58%Lendo listas de pacotes... 58%Lendo listas de pacotes... 61%Lendo listas de pacotes... 61%Lendo listas de pacotes... 61%Lendo listas de pacotes... 77%Lendo listas de pacotes... 77%Lendo listas de pacotes... 77%Lendo listas de pacotes... 77%Lendo listas de pacotes... 77%Lendo listas de pacotes... 77%Lendo listas de pacotes... 77%Lendo listas de pacotes... 77%Lendo listas de pacotes... 77%Lendo listas de pacotes... 77%Lendo listas de pacotes... 78%Lendo listas de pacotes... 78%Lendo listas de pacotes... 80%Lendo listas de pacotes... 80%Lendo listas de pacotes... 82%Lendo listas de pacotes... 82%Lendo listas de pacotes... 83%Lendo listas de pacotes... 83%Lendo listas de pacotes... 84%Lendo listas de pacotes... 84%Lendo listas de pacotes... 84%Lendo listas de pacotes... 84%Lendo listas de pacotes... 84%Lendo listas de pacotes... 84%Lendo listas de pacotes... 87%Lendo listas de pacotes... 87%Lendo listas de pacotes... 89%Lendo listas de pacotes... 89%Lendo listas de pacotes... 90%Lendo listas de pacotes... 90%Lendo listas de pacotes... 90%Lendo listas de pacotes... 90%Lendo listas de pacotes... 90%Lendo listas de pacotes... 90%Lendo listas de pacotes... 90%Lendo listas de pacotes... 90%Lendo listas de pacotes... 90%Lendo listas de pacotes... 90%Lendo listas de pacotes... 90%Lendo listas de pacotes... 90%Lendo listas de pacotes... 90%Lendo listas de pacotes... 90%Lendo listas de pacotes... 92%Lendo listas de pacotes... 92%Lendo listas de pacotes... 92%Lendo listas de pacotes... 92%Lendo listas de pacotes... 93%Lendo listas de pacotes... 93%Lendo listas de pacotes... 94%Lendo listas de pacotes... 94%Lendo listas de pacotes... 94%Lendo listas de pacotes... 94%Lendo listas de pacotes... 94%Lendo listas de pacotes... 94%Lendo listas de pacotes... 96%Lendo listas de pacotes... 96%Lendo listas de pacotes... 98%Lendo listas de pacotes... 98%Lendo listas de pacotes... 98%Lendo listas de pacotes... 98%Lendo listas de pacotes... 98%Lendo listas de pacotes... 98%Lendo listas de pacotes... 98%Lendo listas de pacotes... 98%Lendo listas de pacotes... 98%Lendo listas de pacotes... 98%Lendo listas de pacotes... 98%Lendo listas de pacotes... 98%Lendo listas de pacotes... 98%Lendo listas de pacotes... 98%Lendo listas de pacotes... 98%Lendo listas de pacotes... 98%Lendo listas de pacotes... Pronto
+Construindo árvore de dependências... 0%Construindo árvore de dependências... 0%Construindo árvore de dependências... 0%Construindo árvore de dependências... 50%Construindo árvore de dependências... 50%Construindo árvore de dependências       
+Lendo informação de estado... 0%  Lendo informação de estado... 0%Lendo informação de estado... Pronto
+9 packages can be upgraded. Run 'apt list --upgradable' to see them.
+==> Instalar Linux/Ubuntu base...
+Lendo listas de pacotes... 0%Lendo listas de pacotes... 100%Lendo listas de pacotes... Pronto
+Construindo árvore de dependências... 0%Construindo árvore de dependências... 0%Construindo árvore de dependências... 50%Construindo árvore de dependências... 50%Construindo árvore de dependências       
+Lendo informação de estado... 0%  Lendo informação de estado... 0%Lendo informação de estado... Pronto
+dkms is already the newest version (2.8.1-5ubuntu2).
+linux-generic is already the newest version (5.4.0.67.70).
+linux-headers-5.8.0-45-generic is already the newest version (5.8.0-45.51~20.04.1).
+ubuntu-minimal is already the newest version (1.450.2).
+0 pacotes atualizados, 0 pacotes novos instalados, 0 a serem removidos e 9 não atualizados.
+==> Instalar libvrt & KVM (REF: https://github.com/alvistack/ansible-role-virtualbox/blob/master/.travis.yml)
+Lendo listas de pacotes... 0%Lendo listas de pacotes... 100%Lendo listas de pacotes... Pronto
+Construindo árvore de dependências... 0%Construindo árvore de dependências... 0%Construindo árvore de dependências... 50%Construindo árvore de dependências... 50%Construindo árvore de dependências       
+Lendo informação de estado... 0%  Lendo informação de estado... 0%Lendo informação de estado... Pronto
+Note, a seleccionar 'libxslt1-dev' em vez de 'libxslt-dev'
+bridge-utils is already the newest version (1.6-2ubuntu1).
+ebtables is already the newest version (2.0.11-3build1).
+libxml2-dev is already the newest version (2.9.10+dfsg-5).
+libxslt1-dev is already the newest version (1.1.34-4).
+ruby-dev is already the newest version (1:2.7+1).
+ruby-libvirt is already the newest version (0.7.1-1build1).
+dnsmasq-base is already the newest version (2.80-1.1ubuntu1.3).
+libvirt-clients is already the newest version (6.0.0-0ubuntu8.8).
+libvirt-daemon-system is already the newest version (6.0.0-0ubuntu8.8).
+qemu-kvm is already the newest version (1:4.2-3ubuntu6.14).
+qemu-utils is already the newest version (1:4.2-3ubuntu6.14).
+zlib1g-dev is already the newest version (1:1.2.11.dfsg-2ubuntu1.2).
+libvirt-dev is already the newest version (6.0.0-0ubuntu8.8).
+qemu-user-static is already the newest version (1:4.2-3ubuntu6.14).
+0 pacotes atualizados, 0 pacotes novos instalados, 0 a serem removidos e 9 não atualizados.
+==> Download Vagrant & Instalar
+2021-03-22 14:17:15 URL:https://releases.hashicorp.com/vagrant/2.2.9/vagrant_2.2.9_x86_64.deb [42978828/42978828] -> "vagrant_2.2.9_x86_64.deb" [1]
+A seleccionar pacote anteriormente não seleccionado vagrant.
+(Lendo banco de dados ... (Lendo banco de dados ... 5%(Lendo banco de dados ... 10%(Lendo banco de dados ... 15%(Lendo banco de dados ... 20%(Lendo banco de dados ... 25%(Lendo banco de dados ... 30%(Lendo banco de dados ... 35%(Lendo banco de dados ... 40%(Lendo banco de dados ... 45%(Lendo banco de dados ... 50%(Lendo banco de dados ... 55%(Lendo banco de dados ... 60%(Lendo banco de dados ... 65%(Lendo banco de dados ... 70%(Lendo banco de dados ... 75%(Lendo banco de dados ... 80%(Lendo banco de dados ... 85%(Lendo banco de dados ... 90%(Lendo banco de dados ... 95%(Lendo banco de dados ... 100%(Lendo banco de dados ... 238053 ficheiros e directórios actualmente instalados.)
+A preparar para desempacotar vagrant_2.2.9_x86_64.deb ...
+A descompactar vagrant (1:2.2.9) ...
+Configurando vagrant (1:2.2.9) ...
+==> Instalar plugins do Vagrant
+Installing the 'vagrant-libvirt' plugin. This can take a few minutes...
+^CWaiting for cleanup before exiting...
+^CExiting immediately, without cleanup!
+Installing the 'vagrant-disksize' plugin. This can take a few minutes...
+^CWaiting for cleanup before exiting...
+^CExiting immediately, without cleanup!
+^CLendo listas de pacotes... 0%Lendo listas de pacotes... 0%Lendo listas de pacotes... 8%Lendo listas de pacotes... Pronto
+Construindo árvore de dependências... 0%Construindo árvore de dependências... 0%Construindo árvore de dependências... 50%Construindo árvore de dependências... 50%Construindo árvore de dependências       
+Lendo informação de estado... 0%  Lendo informação de estado... 0%Lendo informação de estado... Pronto
+Note, selecting 'virtualbox-source' for glob 'virtualbox*'
+Note, selecting 'virtualbox-guest-utils' for glob 'virtualbox*'
+Note, selecting 'virtualbox-ose' for glob 'virtualbox*'
+Note, selecting 'virtualbox-guest-modules' for glob 'virtualbox*'
+Note, selecting 'virtualbox-guest-additions-iso' for glob 'virtualbox*'
+Note, selecting 'virtualbox-guest-dkms' for glob 'virtualbox*'
+Note, selecting 'virtualbox-dkms' for glob 'virtualbox*'
+Note, selecting 'virtualbox-guest-dkms-hwe' for glob 'virtualbox*'
+Note, selecting 'virtualbox-ext-pack' for glob 'virtualbox*'
+Note, selecting 'virtualbox' for glob 'virtualbox*'
+Note, selecting 'virtualbox-guest-modules-hwe' for glob 'virtualbox*'
+Note, selecting 'virtualbox-guest-x11-hwe' for glob 'virtualbox*'
+Note, selecting 'virtualbox-guest-source' for glob 'virtualbox*'
+Note, selecting 'virtualbox-qt' for glob 'virtualbox*'
+Note, selecting 'virtualbox-guest-source-hwe' for glob 'virtualbox*'
+Note, selecting 'virtualbox-2.0' for glob 'virtualbox*'
+Note, selecting 'virtualbox-2.1' for glob 'virtualbox*'
+Note, selecting 'virtualbox-2.2' for glob 'virtualbox*'
+Note, selecting 'virtualbox-modules' for glob 'virtualbox*'
+Note, selecting 'virtualbox-3.0' for glob 'virtualbox*'
+Note, selecting 'virtualbox-3.1' for glob 'virtualbox*'
+Note, selecting 'virtualbox-3.2' for glob 'virtualbox*'
+Note, selecting 'virtualbox-4.0' for glob 'virtualbox*'
+Note, selecting 'virtualbox-4.1' for glob 'virtualbox*'
+Note, selecting 'virtualbox-4.2' for glob 'virtualbox*'
+Note, selecting 'virtualbox-4.3' for glob 'virtualbox*'
+Note, selecting 'virtualbox-5.0' for glob 'virtualbox*'
+Note, selecting 'virtualbox-5.1' for glob 'virtualbox*'
+Note, selecting 'virtualbox-5.2' for glob 'virtualbox*'
+Note, selecting 'virtualbox-guest-utils-hwe' for glob 'virtualbox*'
+Note, selecting 'virtualbox-6.0' for glob 'virtualbox*'
+Note, selecting 'virtualbox-6.1' for glob 'virtualbox*'
+Note, selecting 'virtualbox-guest-x11' for glob 'virtualbox*'
+O pacote 'virtualbox-5.0' não está instalado, por isso não será removido
+O pacote 'virtualbox-5.1' não está instalado, por isso não será removido
+O pacote 'virtualbox-5.2' não está instalado, por isso não será removido
+Note, a seleccionar 'virtualbox-dkms' em vez de 'virtualbox-modules'
+O pacote 'virtualbox-2.0' não está instalado, por isso não será removido
+O pacote 'virtualbox-2.1' não está instalado, por isso não será removido
+O pacote 'virtualbox-2.2' não está instalado, por isso não será removido
+O pacote 'virtualbox-3.0' não está instalado, por isso não será removido
+O pacote 'virtualbox-3.1' não está instalado, por isso não será removido
+O pacote 'virtualbox-3.2' não está instalado, por isso não será removido
+O pacote 'virtualbox-4.0' não está instalado, por isso não será removido
+O pacote 'virtualbox-4.1' não está instalado, por isso não será removido
+O pacote 'virtualbox-4.2' não está instalado, por isso não será removido
+O pacote 'virtualbox-4.3' não está instalado, por isso não será removido
+O pacote 'virtualbox-guest-modules-hwe' não está instalado, por isso não será removido
+O pacote 'virtualbox-ose' não está instalado, por isso não será removido
+O pacote 'virtualbox-ext-pack' não está instalado, por isso não será removido
+O pacote 'virtualbox-guest-dkms-hwe' não está instalado, por isso não será removido
+O pacote 'virtualbox-guest-source' não está instalado, por isso não será removido
+O pacote 'virtualbox-guest-source-hwe' não está instalado, por isso não será removido
+O pacote 'virtualbox-guest-utils-hwe' não está instalado, por isso não será removido
+O pacote 'virtualbox-guest-x11-hwe' não está instalado, por isso não será removido
+O pacote 'virtualbox-source' não está instalado, por isso não será removido
+O pacote 'virtualbox-6.0' não está instalado, por isso não será removido
+O pacote 'virtualbox-6.1' não está instalado, por isso não será removido
+Os seguintes pacotes foram instalados automaticamente e já não são necessários:
+  libdouble-conversion3 libgsoap-2.8.91 liblzf1 libpcre2-16-0 libqt5core5a libqt5dbus5 libqt5gui5 libqt5network5 libqt5opengl5
+  libqt5printsupport5 libqt5svg5 libqt5widgets5 libqt5x11extras5 libvncserver1 libxcb-xinerama0 libxcb-xinput0
+  qt5-gtk-platformtheme qttranslations5-l10n
+Utilize 'sudo apt autoremove' para os remover.
+Os pacotes a seguir serão REMOVIDOS:
+  virtualbox* virtualbox-dkms* virtualbox-guest-additions-iso* virtualbox-guest-dkms* virtualbox-guest-utils*
+  virtualbox-guest-x11* virtualbox-qt*
+0 pacotes atualizados, 0 pacotes novos instalados, 7 a serem removidos e 9 não atualizados.
+Depois desta operação, 254 MB de espaço em disco serão liberados.
+
+7[0;15r8[1A(Lendo banco de dados ... (Lendo banco de dados ... 5%(Lendo banco de dados ... 10%(Lendo banco de dados ... 15%(Lendo banco de dados ... 20%(Lendo banco de dados ... 25%(Lendo banco de dados ... 30%(Lendo banco de dados ... 35%(Lendo banco de dados ... 40%(Lendo banco de dados ... 45%(Lendo banco de dados ... 50%(Lendo banco de dados ... 55%(Lendo banco de dados ... 60%(Lendo banco de dados ... 65%(Lendo banco de dados ... 70%(Lendo banco de dados ... 75%(Lendo banco de dados ... 80%(Lendo banco de dados ... 85%(Lendo banco de dados ... 90%(Lendo banco de dados ... 95%(Lendo banco de dados ... 100%(Lendo banco de dados ... 244642 ficheiros e directórios actualmente instalados.)
+A remover virtualbox-qt (6.1.16-dfsg-6~ubuntu1.20.04.1) ...
+7[16;0fProgress: [  0%] [...........................................................................................................] 87[16;0fProgress: [  3%] [###........................................................................................................] 87[16;0fProgress: [  7%] [#######....................................................................................................] 87[16;0fProgress: [ 10%] [###########................................................................................................] 8A remover virtualbox (6.1.16-dfsg-6~ubuntu1.20.04.1) ...
+7[16;0fProgress: [ 14%] [##############.............................................................................................] 87[16;0fProgress: [ 17%] [##################.........................................................................................] 87[16;0fProgress: [ 21%] [######################.....................................................................................] 8A remover virtualbox-dkms (6.1.16-dfsg-6~ubuntu1.20.04.1) ...
+7[16;0fProgress: [ 24%] [#########################..................................................................................] 8
+-------- Uninstall Beginning --------
+Module:  virtualbox
+Version: 6.1.16
+Kernel:  5.8.0-45-generic (x86_64)
+-------------------------------------
+
+Status: Before uninstall, this module version was ACTIVE on this kernel.
+
+vboxdrv.ko:
+ - Uninstallation
+   - Deleting from: /lib/modules/5.8.0-45-generic/updates/dkms/
+ - Original module
+   - No original module was found for this module on this kernel.
+   - Use the dkms install command to reinstall any previous module version.
+
+
+vboxnetadp.ko:
+ - Uninstallation
+   - Deleting from: /lib/modules/5.8.0-45-generic/updates/dkms/
+ - Original module
+   - No original module was found for this module on this kernel.
+   - Use the dkms install command to reinstall any previous module version.
+
+
+vboxnetflt.ko:
+ - Uninstallation
+   - Deleting from: /lib/modules/5.8.0-45-generic/updates/dkms/
+ - Original module
+   - No original module was found for this module on this kernel.
+   - Use the dkms install command to reinstall any previous module version.
+
+depmod...
+
+DKMS: uninstall completed.
+
+------------------------------
+Deleting module version: 6.1.16
+completely from the DKMS tree.
+------------------------------
+Done.
+7[16;0fProgress: [ 28%] [#############################..............................................................................] 87[16;0fProgress: [ 31%] [#################################..........................................................................] 87[16;0fProgress: [ 34%] [####################################.......................................................................] 8A remover virtualbox-guest-additions-iso (6.1.16-1~ubuntu1.20.04.1) ...
+7[16;0fProgress: [ 38%] [########################################...................................................................] 87[16;0fProgress: [ 41%] [############################################...............................................................] 87[16;0fProgress: [ 45%] [###############################################............................................................] 87[16;0fProgress: [ 48%] [###################################################........................................................] 8A remover virtualbox-guest-x11 (6.1.16-dfsg-6~ubuntu1.20.04.1) ...
+7[16;0fProgress: [ 52%] [#######################################################....................................................] 87[16;0fProgress: [ 55%] [###########################################################................................................] 87[16;0fProgress: [ 59%] [##############################################################.............................................] 8A remover virtualbox-guest-utils (6.1.16-dfsg-6~ubuntu1.20.04.1) ...
+7[16;0fProgress: [ 62%] [##################################################################.........................................] 87[16;0fProgress: [ 66%] [######################################################################.....................................] 87[16;0fProgress: [ 69%] [#########################################################################..................................] 8A remover virtualbox-guest-dkms (6.1.16-dfsg-6~ubuntu1.20.04.1) ...
+7[16;0fProgress: [ 72%] [#############################################################################..............................] 8
+-------- Uninstall Beginning --------
+Module:  virtualbox-guest
+Version: 6.1.16
+Kernel:  5.8.0-45-generic (x86_64)
+-------------------------------------
+
+Status: Before uninstall, this module version was ACTIVE on this kernel.
+
+vboxguest.ko:
+ - Uninstallation
+   - Deleting from: /lib/modules/5.8.0-45-generic/updates/dkms/
+ - Original module
+   - No original module was found for this module on this kernel.
+   - Use the dkms install command to reinstall any previous module version.
+
+
+vboxsf.ko:
+ - Uninstallation
+   - Deleting from: /lib/modules/5.8.0-45-generic/updates/dkms/
+ - Original module
+   - No original module was found for this module on this kernel.
+   - Use the dkms install command to reinstall any previous module version.
+
+
+vboxvideo.ko:
+ - Uninstallation
+   - Deleting from: /lib/modules/5.8.0-45-generic/updates/dkms/
+ - Original module
+   - No original module was found for this module on this kernel.
+   - Use the dkms install command to reinstall any previous module version.
+
+depmod...
+
+DKMS: uninstall completed.
+
+------------------------------
+Deleting module version: 6.1.16
+completely from the DKMS tree.
+------------------------------
+Done.
+7[16;0fProgress: [ 76%] [#################################################################################..........................] 87[16;0fProgress: [ 79%] [####################################################################################.......................] 87[16;0fProgress: [ 83%] [########################################################################################...................] 8A processar 'triggers' para mime-support (3.64ubuntu1) ...
+A processar 'triggers' para hicolor-icon-theme (0.17-2) ...
+A processar 'triggers' para gnome-menus (3.36.0-1ubuntu1) ...
+A processar 'triggers' para libc-bin (2.31-0ubuntu9.2) ...
+A processar 'triggers' para man-db (2.9.1-1) ...
+A processar 'triggers' para shared-mime-info (1.15-1) ...
+A processar 'triggers' para desktop-file-utils (0.24-1ubuntu3) ...
+(Lendo banco de dados ... (Lendo banco de dados ... 5%(Lendo banco de dados ... 10%(Lendo banco de dados ... 15%(Lendo banco de dados ... 20%(Lendo banco de dados ... 25%(Lendo banco de dados ... 30%(Lendo banco de dados ... 35%(Lendo banco de dados ... 40%(Lendo banco de dados ... 45%(Lendo banco de dados ... 50%(Lendo banco de dados ... 55%(Lendo banco de dados ... 60%(Lendo banco de dados ... 65%(Lendo banco de dados ... 70%(Lendo banco de dados ... 75%(Lendo banco de dados ... 80%(Lendo banco de dados ... 85%(Lendo banco de dados ... 90%(Lendo banco de dados ... 95%(Lendo banco de dados ... 100%(Lendo banco de dados ... 243653 ficheiros e directórios actualmente instalados.)
+A purgar os ficheiros de configuração para virtualbox-guest-x11 (6.1.16-dfsg-6~ubuntu1.20.04.1) ...
+7[16;0fProgress: [ 86%] [############################################################################################...............] 8A purgar os ficheiros de configuração para virtualbox-guest-utils (6.1.16-dfsg-6~ubuntu1.20.04.1) ...
+7[16;0fProgress: [ 90%] [###############################################################################################............] 8A purgar os ficheiros de configuração para virtualbox-qt (6.1.16-dfsg-6~ubuntu1.20.04.1) ...
+7[16;0fProgress: [ 93%] [###################################################################################################........] 8A purgar os ficheiros de configuração para virtualbox (6.1.16-dfsg-6~ubuntu1.20.04.1) ...
+dpkg: aviso: ao remover virtualbox, o directório '/usr/lib/virtualbox/ExtensionPacks' não estava vazio, por isso não foi removido
+7[16;0fProgress: [ 97%] [#######################################################################################################....] 8A processar 'triggers' para systemd (245.4-4ubuntu3.5) ...
+
+7[0;16r8[1A[J^CW: A operação foi interrompida antes de poder terminar
+E: O sub-processo [ ! -f /usr/bin/snap ] || /usr/bin/snap advise-snap --from-apt 2>/dev/null || true recebeu o sinal 2.
+E: Failure running hook [ ! -f /usr/bin/snap ] || /usr/bin/snap advise-snap --from-apt 2>/dev/null || true
+Lendo listas de pacotes... 0%Lendo listas de pacotes... 100%Lendo listas de pacotes... Pronto
+Construindo árvore de dependências... 0%Construindo árvore de dependências... 0%Construindo árvore de dependências... 50%Construindo árvore de dependências... 50%Construindo árvore de dependências       
+Lendo informação de estado... 0%  Lendo informação de estado... 0%Lendo informação de estado... Pronto
+Os pacotes a seguir serão REMOVIDOS:
+  libdouble-conversion3 libgsoap-2.8.91 liblzf1 libpcre2-16-0 libqt5core5a libqt5dbus5 libqt5gui5 libqt5network5 libqt5opengl5
+  libqt5printsupport5 libqt5svg5 libqt5widgets5 libqt5x11extras5 libvncserver1 libxcb-xinerama0 libxcb-xinput0
+  qt5-gtk-platformtheme qttranslations5-l10n
+0 pacotes atualizados, 0 pacotes novos instalados, 18 a serem removidos e 9 não atualizados.
+Depois desta operação, 47,2 MB de espaço em disco serão liberados.
+
+7[0;15r8[1A(Lendo banco de dados ... (Lendo banco de dados ... 5%(Lendo banco de dados ... 10%(Lendo banco de dados ... 15%(Lendo banco de dados ... 20%(Lendo banco de dados ... 25%(Lendo banco de dados ... 30%(Lendo banco de dados ... 35%(Lendo banco de dados ... 40%(Lendo banco de dados ... 45%(Lendo banco de dados ... 50%(Lendo banco de dados ... 55%(Lendo banco de dados ... 60%(Lendo banco de dados ... 65%(Lendo banco de dados ... 70%(Lendo banco de dados ... 75%(Lendo banco de dados ... 80%(Lendo banco de dados ... 85%(Lendo banco de dados ... 90%(Lendo banco de dados ... 95%(Lendo banco de dados ... 100%(Lendo banco de dados ... 243647 ficheiros e directórios actualmente instalados.)
+A remover qt5-gtk-platformtheme:amd64 (5.12.8+dfsg-0ubuntu1) ...
+7[16;0fProgress: [  0%] [...........................................................................................................] 87[16;0fProgress: [  3%] [##.........................................................................................................] 87[16;0fProgress: [  5%] [#####......................................................................................................] 8A remover libqt5svg5:amd64 (5.12.8-0ubuntu1) ...
+7[16;0fProgress: [  8%] [########...................................................................................................] 87[16;0fProgress: [ 11%] [###########................................................................................................] 8A remover libqt5printsupport5:amd64 (5.12.8+dfsg-0ubuntu1) ...
+7[16;0fProgress: [ 14%] [##############.............................................................................................] 87[16;0fProgress: [ 16%] [#################..........................................................................................] 8A remover libqt5x11extras5:amd64 (5.12.8-0ubuntu1) ...
+7[16;0fProgress: [ 19%] [####################.......................................................................................] 87[16;0fProgress: [ 22%] [#######################....................................................................................] 8A remover libqt5opengl5:amd64 (5.12.8+dfsg-0ubuntu1) ...
+7[16;0fProgress: [ 24%] [##########################.................................................................................] 87[16;0fProgress: [ 27%] [############################...............................................................................] 8A remover libgsoap-2.8.91:amd64 (2.8.91-2) ...
+7[16;0fProgress: [ 30%] [###############################............................................................................] 87[16;0fProgress: [ 32%] [##################################.........................................................................] 8A remover liblzf1:amd64 (3.6-2~ubuntu1.20.04.1) ...
+7[16;0fProgress: [ 35%] [#####################################......................................................................] 87[16;0fProgress: [ 38%] [########################################...................................................................] 8A remover libvncserver1:amd64 (0.9.12+dfsg-9ubuntu0.3) ...
+7[16;0fProgress: [ 41%] [###########################################................................................................] 87[16;0fProgress: [ 43%] [##############################################.............................................................] 8A remover qttranslations5-l10n (5.12.8-0ubuntu1) ...
+7[16;0fProgress: [ 46%] [#################################################..........................................................] 87[16;0fProgress: [ 49%] [####################################################.......................................................] 8A remover libqt5widgets5:amd64 (5.12.8+dfsg-0ubuntu1) ...
+7[16;0fProgress: [ 51%] [######################################################.....................................................] 87[16;0fProgress: [ 54%] [#########################################################..................................................] 8A remover libqt5gui5:amd64 (5.12.8+dfsg-0ubuntu1) ...
+7[16;0fProgress: [ 57%] [############################################################...............................................] 87[16;0fProgress: [ 59%] [###############################################################............................................] 8A remover libqt5network5:amd64 (5.12.8+dfsg-0ubuntu1) ...
+7[16;0fProgress: [ 62%] [##################################################################.........................................] 87[16;0fProgress: [ 65%] [#####################################################################......................................] 8A remover libqt5dbus5:amd64 (5.12.8+dfsg-0ubuntu1) ...
+7[16;0fProgress: [ 68%] [########################################################################...................................] 87[16;0fProgress: [ 70%] [###########################################################################................................] 8A remover libxcb-xinerama0:amd64 (1.14-2) ...
+7[16;0fProgress: [ 73%] [##############################################################################.............................] 87[16;0fProgress: [ 76%] [################################################################################...........................] 8A remover libxcb-xinput0:amd64 (1.14-2) ...
+7[16;0fProgress: [ 78%] [###################################################################################........................] 87[16;0fProgress: [ 81%] [######################################################################################.....................] 8A remover libqt5core5a:amd64 (5.12.8+dfsg-0ubuntu1) ...
+7[16;0fProgress: [ 84%] [#########################################################################################..................] 87[16;0fProgress: [ 86%] [############################################################################################...............] 8A remover libdouble-conversion3:amd64 (3.1.5-4ubuntu1) ...
+7[16;0fProgress: [ 89%] [###############################################################################################............] 87[16;0fProgress: [ 92%] [##################################################################################################.........] 8A remover libpcre2-16-0:amd64 (10.34-7) ...
+7[16;0fProgress: [ 95%] [#####################################################################################################......] 87[16;0fProgress: [ 97%] [########################################################################################################...] 8A processar 'triggers' para libc-bin (2.31-0ubuntu9.2) ...
+
+7[0;16r8[1A[J^Cmake: *** [Makefile:34: box] Interrupção
