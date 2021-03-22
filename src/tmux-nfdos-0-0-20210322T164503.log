@@ -1,6 +1,6 @@
- A compilação vai iniciar em 3 segundos... A compilação vai iniciar em 2 segundos... A compilação vai iniciar em 1 segundos... A compilação vai iniciar em 0 segundos...
+ A compilação vai iniciar em 4 segundos... A compilação vai iniciar em 3 segundos... A compilação vai iniciar em 2 segundos... A compilação vai iniciar em 1 segundos... A compilação vai iniciar em 0 segundos...
 
-Compilação iniciada seg 22 mar 2021 16:27:08
+Compilação iniciada seg 22 mar 2021 16:45:08
 
 Detalhes do desktop:
 
@@ -9,7 +9,7 @@ Arquitetura: x86_64
 Número de CPU(s): 8    
 Virtualização: AMD-V    
 Memória RAM: 16041 MiB 
-Memória Virtual: 8492 MB
+Memória Virtual: 9802 MB
 Modo(s) operacional da CPU: 32-bit, 64-bit
 
 chmod +x criar_box.sh
@@ -22,10 +22,10 @@ Welcome to Ubuntu 18.04.5 LTS (GNU/Linux 4.15.0-139-generic x86_64)
  * Management:     https://landscape.canonical.com
  * Support:        https://ubuntu.com/advantage
 
-  System information as of Mon Mar 22 19:27:16 UTC 2021
+  System information as of Mon Mar 22 19:45:17 UTC 2021
 
-  System load:  0.13              Processes:             110
-  Usage of /:   4.4% of 48.41GB   Users logged in:       0
+  System load:  0.47              Processes:             112
+  Usage of /:   5.4% of 48.41GB   Users logged in:       0
   Memory usage: 4%                IP address for enp0s3: 10.0.2.15
   Swap usage:   0%
 
@@ -44,10 +44,11 @@ Atualizar repositórios e instalar requerimentos...
 
 WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
 
-Hit:1 http://security.ubuntu.com/ubuntu bionic-security InRelease
-Hit:2 http://archive.ubuntu.com/ubuntu bionic InRelease
-Hit:3 http://archive.ubuntu.com/ubuntu bionic-updates InRelease
-Hit:4 http://archive.ubuntu.com/ubuntu bionic-backports InRelease
+Hit:1 http://archive.ubuntu.com/ubuntu bionic InRelease
+Get:2 http://security.ubuntu.com/ubuntu bionic-security InRelease [88.7 kB]
+Get:3 http://archive.ubuntu.com/ubuntu bionic-updates InRelease [88.7 kB]
+Get:4 http://archive.ubuntu.com/ubuntu bionic-backports InRelease [74.6 kB]
+Fetched 252 kB in 2s (135 kB/s)
 Reading package lists...
 Building dependency tree...
 Reading state information...
@@ -70,20 +71,20 @@ grub-pc-bin is already the newest version (2.02-2ubuntu8.21).
 squashfs-tools is already the newest version (1:4.3-6ubuntu0.18.04.1).
 unzip is already the newest version (6.0-21ubuntu1.1).
 0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
-Checkando se a /vagrant/nfdos existe
-Checkando se a /vagrant/nfdos/core/nfdos.iso existe
-A /vagrant/nfdos/core/nfdos.iso não existe. Criando ela...
-Checkando se a /vagrant/nfdos/core existe
-A /vagrant/nfdos/core existe
-Checkando se a /vagrant/nfdos/core/nfdos.img existe
-Criando a /vagrant/nfdos/core/nfdos.img. Aguarde por favor...
+Checkando se a /neoricalex/nfdos existe
+Checkando se a /neoricalex/nfdos/core/nfdos.iso existe
+A /neoricalex/nfdos/core/nfdos.iso não existe. Criando ela...
+Checkando se a /neoricalex/nfdos/core existe
+A /neoricalex/nfdos/core existe
+Checkando se a /neoricalex/nfdos/core/nfdos.img existe
+Criando a /neoricalex/nfdos/core/nfdos.img. Aguarde por favor...
 1024+0 records in
 1024+0 records out
-10737418240 bytes (11 GB, 10 GiB) copied, 74.4593 s, 144 MB/s
-Formatando a /vagrant/nfdos/core/nfdos.img
+10737418240 bytes (11 GB, 10 GiB) copied, 75.8121 s, 142 MB/s
+Formatando a /neoricalex/nfdos/core/nfdos.img
 mke2fs 1.44.1 (24-Mar-2018)
 Creating filesystem with 2621440 4k blocks and 655360 inodes
-Filesystem UUID: a0d69549-5e97-4fc2-b86a-56fe8d2d9adf
+Filesystem UUID: 9c150972-6ffb-4d63-9bbf-6b571b451c0f
 Superblock backups stored on blocks: 
 	32768, 98304, 163840, 229376, 294912, 819200, 884736, 1605632
 
@@ -92,23 +93,23 @@ Writing inode tables:  0/80     done
 Creating journal (16384 blocks): done
 Writing superblocks and filesystem accounting information:  0/80     done
 
-Checkando se a /vagrant/nfdos/core/rootfs existe
-Criando a /vagrant/nfdos/core/rootfs...
-Checkando se a /vagrant/nfdos/core/rootfs está montada
-mount: /vagrant/nfdos/core/rootfs: can't read superblock on /dev/loop0.
+Checkando se a /neoricalex/nfdos/core/rootfs existe
+Criando a /neoricalex/nfdos/core/rootfs...
+Checkando se a /neoricalex/nfdos/core/rootfs está montada
+mount: /neoricalex/nfdos/core/rootfs: can't read superblock on /dev/loop0.
 Checkando se o ROOTFS existe
 Criando o ROOTFS
-mknod: /vagrant/nfdos/core/rootfs/test-dev-null: Operation not permitted
-E: Cannot install into target '/vagrant/nfdos/core/rootfs' mounted with noexec or nodev
+mknod: /neoricalex/nfdos/core/rootfs/test-dev-null: Operation not permitted
+E: Cannot install into target '/neoricalex/nfdos/core/rootfs' mounted with noexec or nodev
 Montar a /dev e /run
-mount: /vagrant/nfdos/core/rootfs/dev: mount point does not exist.
-mount: /vagrant/nfdos/core/rootfs/run: mount point does not exist.
+mount: /neoricalex/nfdos/core/rootfs/dev: mount point does not exist.
+mount: /neoricalex/nfdos/core/rootfs/run: mount point does not exist.
 Copiar arquivos necessários
-Entrar no /vagrant/nfdos/core/rootfs e executar o rootfs_head.nfdos
+Entrar no /neoricalex/nfdos/core/rootfs e executar o rootfs_head.nfdos
 chroot: failed to run command ‘/bin/bash’: No such file or directory
-Entrar no /vagrant/nfdos/core/rootfs e executar o rootfs_footer.nfdos
+Entrar no /neoricalex/nfdos/core/rootfs e executar o rootfs_footer.nfdos
 chroot: failed to run command ‘/bin/bash’: No such file or directory
-Remover o rootfs_*.nfdos do /vagrant/nfdos/core/rootfs
+Remover o rootfs_*.nfdos do /neoricalex/nfdos/core/rootfs
 OK. Neste ponto a nossa imagem de disco (nfdos.img) está criada.
 Agora vamos criar uma imagem de CD/DVD para que possamos rodar ela em qualquer Computador/VPS/VM/Etc
 # INFO: Vai aparecer vários "Unrecognised xattr prefix system.posix_acl_access" mas não é nada de preocupante :-)
@@ -155,7 +156,7 @@ Number of gids 1
  Configurar a GRUB UEFI 
 10+0 records in
 10+0 records out
-10485760 bytes (10 MB, 10 MiB) copied, 0.0934801 s, 112 MB/s
+10485760 bytes (10 MB, 10 MiB) copied, 0.0595183 s, 176 MB/s
 mkfs.fat 4.1 (2017-01-24)
  Configurar a GRUB BIOS 
  Criar o md5sum 
@@ -165,23 +166,23 @@ xorriso 1.4.8 : RockRidge filesystem manipulator, libburnia project.
 Drive current: -outdev 'stdio:../nfdos.iso'
 Media current: stdio file, overwriteable
 Media status : is blank
-Media summary: 0 sessions, 0 data blocks, 0 data, 25.3g free
-Added to ISO image: directory '/'='/vagrant/nfdos/core/image'
+Media summary: 0 sessions, 0 data blocks, 0 data, 24.7g free
+Added to ISO image: directory '/'='/neoricalex/nfdos/core/image'
 xorriso : UPDATE : 15 files added in 1 seconds
-Added to ISO image: file '/boot/grub/bios.img'='/vagrant/nfdos/core/image/isolinux/bios.img'
-Added to ISO image: file '/EFI/efiboot.img'='/vagrant/nfdos/core/image/isolinux/efiboot.img'
+Added to ISO image: file '/boot/grub/bios.img'='/neoricalex/nfdos/core/image/isolinux/bios.img'
+Added to ISO image: file '/EFI/efiboot.img'='/neoricalex/nfdos/core/image/isolinux/efiboot.img'
 xorriso : UPDATE : 17 files added in 1 seconds
 xorriso : NOTE : Copying to System Area: 512 bytes from file '/usr/lib/grub/i386-pc/boot_hybrid.img'
-xorriso : UPDATE :  9.04% done
+xorriso : UPDATE :  12.67% done
 ISO image produced: 12040 sectors
 Written to medium : 12040 sectors at LBA 0
 Writing to 'stdio:../nfdos.iso' completed successfully.
 
 Desmontar a /dev e /run
-umount: /vagrant/nfdos/core/rootfs/dev: no mount point specified.
-umount: /vagrant/nfdos/core/rootfs/run: no mount point specified.
-Desmontar o /vagrant/nfdos/core/rootfs
-umount: /vagrant/nfdos/core/rootfs: not mounted.
+umount: /neoricalex/nfdos/core/rootfs/dev: no mount point specified.
+umount: /neoricalex/nfdos/core/rootfs/run: no mount point specified.
+Desmontar o /neoricalex/nfdos/core/rootfs
+umount: /neoricalex/nfdos/core/rootfs: not mounted.
 Limpando...
 
 WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
@@ -190,16 +191,45 @@ Reading package lists...
 Building dependency tree...
 Reading state information...
 0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
-Checkando se a /vagrant/nfdos/desktop/vagrant/NFDOS-0.4.4.box existe
-A /vagrant/nfdos/desktop/vagrant/NFDOS-0.4.4.box não existe. Criando ela...
+Checkando se a /neoricalex/nfdos/desktop/vagrant/NFDOS-0.4.4.box existe
+A /neoricalex/nfdos/desktop/vagrant/NFDOS-0.4.4.box não existe. Criando ela...
 Checkando o SHA256 da imagem ISO...
 NFDOS: output will be in this color.
 
-Build 'NFDOS' errored after 1 millisecond 147 microseconds: Failed creating VirtualBox driver: exec: "VBoxManage": executable file not found in $PATH
-
-==> Wait completed after 1 millisecond 230 microseconds
-
-==> Some builds didn't complete successfully and had errors:
---> NFDOS: Failed creating VirtualBox driver: exec: "VBoxManage": executable file not found in $PATH
-
-==> Builds finished but no artifacts were created.
+==> NFDOS: Retrieving Guest additions
+==> NFDOS: Trying /usr/share/virtualbox/VBoxGuestAdditions.iso
+==> NFDOS: Trying /usr/share/virtualbox/VBoxGuestAdditions.iso
+==> NFDOS: /usr/share/virtualbox/VBoxGuestAdditions.iso => /usr/share/virtualbox/VBoxGuestAdditions.iso
+==> NFDOS: Retrieving ISO
+==> NFDOS: Trying ../core/nfdos.iso
+==> NFDOS: Trying ../core/nfdos.iso?checksum=sha256%3A130c90abf5422cc1278b11e32ffd821ebdf691b854b289cef9da2a8968889d5f
+==> NFDOS: ../core/nfdos.iso?checksum=sha256%3A130c90abf5422cc1278b11e32ffd821ebdf691b854b289cef9da2a8968889d5f => /neoricalex/nfdos/core/nfdos.iso
+==> NFDOS: Starting HTTP server on port 8800
+==> NFDOS: Creating virtual machine...
+==> NFDOS: Creating hard drive...
+==> NFDOS: Mounting ISOs...
+    NFDOS: Mounting boot ISO...
+    NFDOS: Mounting guest additions ISO...
+==> NFDOS: Creating forwarded port mapping for communicator (SSH, WinRM, etc) (host port 3353)
+==> NFDOS: Executing custom VBoxManage commands...
+    NFDOS: Executing: modifyvm NFDOS --ioapic on
+    NFDOS: Executing: modifyvm NFDOS --graphicscontroller vmsvga
+    NFDOS: Executing: modifyvm NFDOS --rtcuseutc on
+    NFDOS: Executing: modifyvm NFDOS --audio none
+    NFDOS: Executing: modifyvm NFDOS --usb off
+    NFDOS: Executing: modifyvm NFDOS --vram 32
+    NFDOS: Executing: modifyvm NFDOS --vrde off
+    NFDOS: Executing: modifyvm NFDOS --memory 2048
+    NFDOS: Executing: modifyvm NFDOS --nestedpaging on
+    NFDOS: Executing: modifyvm NFDOS --largepages on
+    NFDOS: Executing: modifyvm NFDOS --vtxux on
+    NFDOS: Executing: modifyvm NFDOS --paravirtprovider kvm
+    NFDOS: Executing: modifyvm NFDOS --clipboard bidirectional
+    NFDOS: Executing: modifyvm NFDOS --draganddrop bidirectional
+    NFDOS: Executing: modifyvm NFDOS --cpus 1
+==> NFDOS: Starting the virtual machine...
+    NFDOS: The VM will be run headless, without a GUI. If you want to
+    NFDOS: view the screen of the VM, connect via VRDP without a password to
+    NFDOS: rdp://127.0.0.1:5937
+==> NFDOS: Waiting 10m0s for boot...
+^C
