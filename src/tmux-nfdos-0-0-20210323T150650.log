@@ -1,0 +1,30 @@
+ A compilação vai iniciar em 1 segundos... A compilação vai iniciar em 0 segundos...
+
+Compilação iniciada ter 23 mar 2021 15:06:53
+
+Detalhes do desktop:
+
+Nome do modelo: AMD FX(tm)-8350 Eight-Core
+Arquitetura: x86_64
+Número de CPU(s): 8    
+Virtualização: AMD-V    
+Memória RAM: 16041 MiB 
+Memória Virtual: 4683 MB
+Modo(s) operacional da CPU: 32-bit, 64-bit
+
+chmod +x compilar_box.sh
+./compilar_box.sh
+==> Instalar os requerimentos da box...
+==> Iniciando a box...
+Bringing machine 'VPS_DEV' up with 'virtualbox' provider...
+There are errors in the configuration of this machine. Please fix
+the following errors and try again:
+
+vm:
+* A box must be specified.
+
+
+==> VPS_DEV: VM not created. Moving on...
+VM must be created before running this command. Run `vagrant up` first.
+./compilar_box.sh: linha 108: erro de sintaxe: fim prematuro do arquivo
+make: *** [Makefile:35: box] Erro 2
