@@ -148,12 +148,6 @@ Gostou da ideia?
       - [x] Gerar a imagem de disco .vmdk com o NFDOS instalado (*NFDOS-disk001.vmdk*)
       - [x] Gerar o arquivo .ovf (*NFDOS.ovf*)
 
-##### Criação de um Ambiente de Integração Contínua (CI) no Travis (VPS_TRAVIS)
-- [x] Criar um processo CI
-  - [x] Configurar o auto-arranque da máquina do Travis via Hook no Github
-    - [ ] Iniciar a box do vagrant *neoricalex/nfdos* que criamos no passo anterior
-      - [ ] Auto executar o bash shell 
-
 #### Segunda Fase
 - [ ] Instalar o Docker Engine, Docker Compose & Docker Machine no VPS_DEV
 - [ ] Criar um Cluster Docker Swarm
@@ -172,6 +166,13 @@ Gostou da ideia?
     - [ ] Criar um container from scratch
 
 ### Ambiente de Homologação
+##### Criação de um VPS de Staging Remoto (Travis)
+- [x] Criar um processo CI
+  - [x] Configurar o auto-arranque da máquina do Travis via Hook no Github
+    - [ ] Iniciar a box do vagrant *neoricalex/nfdos*
+      - [ ] Auto executar o bash shell 
+
+##### Criação de um VPS de Staging local (Virtualbox)
 - [ ] Maiores infos em breve
 
 ### Ambiente de Produção
