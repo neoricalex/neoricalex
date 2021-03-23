@@ -219,4 +219,141 @@ NFDOS: output will be in this color.
 2021/03/23 14:48:46 packer-builder-qemu plugin: Sending char 'n', code 0x6E, shift false
 2021/03/23 14:48:46 packer-builder-qemu plugin: Sending char 'e', code 0x65, shift false
 2021/03/23 14:48:46 packer-builder-qemu plugin: Sending char 'o', code 0x6F, shift false
-2021/03/23 14:48:46 packer-buil
+2021/03/23 14:48:46 packer-builder-qemu plugin: Sending char 'r', code 0x72, shift false
+2021/03/23 14:48:47 packer-builder-qemu plugin: Sending char 'i', code 0x69, shift false
+2021/03/23 14:48:47 packer-builder-qemu plugin: Sending char 'c', code 0x63, shift false
+2021/03/23 14:48:47 packer-builder-qemu plugin: Sending char 'a', code 0x61, shift false
+2021/03/23 14:48:47 packer-builder-qemu plugin: Sending char 'l', code 0x6C, shift false
+2021/03/23 14:48:47 packer-builder-qemu plugin: Sending char 'e', code 0x65, shift false
+2021/03/23 14:48:48 packer-builder-qemu plugin: Sending char 'x', code 0x78, shift false
+2021/03/23 14:48:48 packer-builder-qemu plugin: Special code '<tab>' found, replacing with: 0xFF09
+2021/03/23 14:48:48 packer-builder-qemu plugin: [INFO] Waiting 1s
+2021/03/23 14:48:49 packer-builder-qemu plugin: Sending char 'n', code 0x6E, shift false
+2021/03/23 14:48:49 packer-builder-qemu plugin: Sending char 'e', code 0x65, shift false
+2021/03/23 14:48:49 packer-builder-qemu plugin: Sending char 'o', code 0x6F, shift false
+2021/03/23 14:48:50 packer-builder-qemu plugin: Sending char 'r', code 0x72, shift false
+2021/03/23 14:48:50 packer-builder-qemu plugin: Sending char 'i', code 0x69, shift false
+2021/03/23 14:48:50 packer-builder-qemu plugin: Sending char 'c', code 0x63, shift false
+2021/03/23 14:48:50 packer-builder-qemu plugin: Sending char 'a', code 0x61, shift false
+2021/03/23 14:48:50 packer-builder-qemu plugin: Sending char 'l', code 0x6C, shift false
+2021/03/23 14:48:51 packer-builder-qemu plugin: Sending char 'e', code 0x65, shift false
+2021/03/23 14:48:51 packer-builder-qemu plugin: Sending char 'x', code 0x78, shift false
+2021/03/23 14:48:51 packer-builder-qemu plugin: Special code '<tab>' found, replacing with: 0xFF09
+2021/03/23 14:48:51 packer-builder-qemu plugin: Special code '<tab>' found, replacing with: 0xFF09
+2021/03/23 14:48:51 packer-builder-qemu plugin: Special code '<enter>' found, replacing with: 0xFF0D
+2021/03/23 14:48:52 packer-builder-qemu plugin: [INFO] Waiting 1h15m0s
+    NFDOS: Not using a NetBridge -- skipping StepWaitGuestAddress
+2021/03/23 16:03:52 packer-builder-qemu plugin: [INFO] Waiting for SSH, up to timeout: 30m0s
+==> NFDOS: Using ssh communicator to connect: 127.0.0.1
+==> NFDOS: Waiting for SSH to become available...
+2021/03/23 16:03:52 packer-builder-qemu plugin: [INFO] Attempting SSH connection to 127.0.0.1:4268...
+2021/03/23 16:03:52 packer-builder-qemu plugin: [DEBUG] reconnecting to TCP connection for SSH
+2021/03/23 16:03:52 packer-builder-qemu plugin: [DEBUG] handshaking with SSH
+==> NFDOS: Connected to SSH!
+2021/03/23 16:03:52 packer-builder-qemu plugin: [DEBUG] handshake complete!
+2021/03/23 16:03:52 packer-builder-qemu plugin: [INFO] no local agent socket, will not connect agent
+2021/03/23 16:03:52 packer-builder-qemu plugin: Running the provision hook
+2021/03/23 16:03:52 [INFO] (telemetry) Starting provisioner shell
+==> NFDOS: Provisioning with shell script: homologacao.sh
+2021/03/23 16:03:52 packer-provisioner-shell plugin: Opening homologacao.sh for reading
+2021/03/23 16:03:52 packer-builder-qemu plugin: [DEBUG] Opening new ssh session
+2021/03/23 16:03:52 packer-provisioner-shell plugin: [INFO] 59 bytes written for 'uploadData'
+2021/03/23 16:03:52 [INFO] 59 bytes written for 'uploadData'
+2021/03/23 16:03:54 packer-builder-qemu plugin: [DEBUG] Starting remote scp process:  scp -vt /tmp
+2021/03/23 16:03:54 packer-builder-qemu plugin: [DEBUG] Started SCP session, beginning transfers...
+2021/03/23 16:03:54 packer-builder-qemu plugin: [DEBUG] Copying input data into temporary file so we can read the length
+2021/03/23 16:03:54 packer-builder-qemu plugin: [DEBUG] scp: Uploading script_6453.sh: perms=C0644 size=59
+2021/03/23 16:03:54 packer-builder-qemu plugin: [DEBUG] SCP session complete, closing stdin pipe.
+2021/03/23 16:03:54 packer-builder-qemu plugin: [DEBUG] Waiting for SSH session to complete.
+2021/03/23 16:03:54 packer-builder-qemu plugin: [DEBUG] scp stderr (length 30): Sink: C0644 59 script_6453.sh
+2021/03/23 16:03:54 packer-builder-qemu plugin: [DEBUG] Opening new ssh session
+2021/03/23 16:03:54 packer-builder-qemu plugin: [DEBUG] starting remote command: chmod 0755 /tmp/script_6453.sh
+2021/03/23 16:03:54 packer-builder-qemu plugin: [INFO] RPC endpoint: Communicator ended with: 0
+2021/03/23 16:03:54 [INFO] RPC client: Communicator ended with: 0
+2021/03/23 16:03:54 [INFO] RPC endpoint: Communicator ended with: 0
+2021/03/23 16:03:54 packer-provisioner-shell plugin: [INFO] RPC client: Communicator ended with: 0
+2021/03/23 16:03:54 packer-builder-qemu plugin: [DEBUG] Opening new ssh session
+2021/03/23 16:03:54 packer-builder-qemu plugin: [DEBUG] starting remote command: echo 'neoricalex'|DEBIAN_FRONTEND='noninteractive' DISABLE_IPV6='true' PACKER_BUILDER_TYPE='qemu' PACKER_BUILD_NAME='NFDOS' PACKER_HTTP_ADDR='10.0.2.2:8533' PACKER_HTTP_IP='10.0.2.2' PACKER_HTTP_PORT='8533' SSH_PASSWORD='neoricalex' SSH_USERNAME='neo' UPDATE='true' http_proxy='' https_proxy='' no_proxy=''  sudo -E -S bash '/tmp/script_6453.sh'
+    NFDOS: ==> O NFDOS foi instalado com sucesso!
+2021/03/23 16:03:55 packer-builder-qemu plugin: [INFO] RPC endpoint: Communicator ended with: 0
+2021/03/23 16:03:55 [INFO] 40 bytes written for 'stdout'
+2021/03/23 16:03:55 [INFO] 0 bytes written for 'stderr'
+2021/03/23 16:03:55 [INFO] RPC client: Communicator ended with: 0
+2021/03/23 16:03:55 [INFO] RPC endpoint: Communicator ended with: 0
+2021/03/23 16:03:55 packer-provisioner-shell plugin: [INFO] 40 bytes written for 'stdout'
+2021/03/23 16:03:55 packer-provisioner-shell plugin: [INFO] 0 bytes written for 'stderr'
+2021/03/23 16:03:55 packer-provisioner-shell plugin: [INFO] RPC client: Communicator ended with: 0
+2021/03/23 16:03:55 packer-builder-qemu plugin: [DEBUG] Opening new ssh session
+2021/03/23 16:03:55 packer-builder-qemu plugin: [DEBUG] starting remote command: rm -f /tmp/script_6453.sh
+2021/03/23 16:03:55 packer-builder-qemu plugin: [INFO] RPC endpoint: Communicator ended with: 0
+2021/03/23 16:03:55 [INFO] RPC client: Communicator ended with: 0
+2021/03/23 16:03:55 [INFO] RPC endpoint: Communicator ended with: 0
+2021/03/23 16:03:55 packer-provisioner-shell plugin: [INFO] RPC client: Communicator ended with: 0
+2021/03/23 16:03:55 packer-builder-qemu plugin: [DEBUG] Opening new ssh session
+2021/03/23 16:03:55 packer-builder-qemu plugin: [DEBUG] starting remote command: rm -f
+2021/03/23 16:03:55 packer-builder-qemu plugin: [INFO] RPC endpoint: Communicator ended with: 0
+2021/03/23 16:03:55 [INFO] RPC client: Communicator ended with: 0
+2021/03/23 16:03:55 [INFO] RPC endpoint: Communicator ended with: 0
+2021/03/23 16:03:55 packer-provisioner-shell plugin: [INFO] RPC client: Communicator ended with: 0
+2021/03/23 16:03:55 [INFO] (telemetry) ending shell
+==> NFDOS: Gracefully halting virtual machine...
+2021/03/23 16:03:55 packer-builder-qemu plugin: Executing shutdown command: echo 'neoricalex' | sudo -S shutdown -P now
+2021/03/23 16:03:55 packer-builder-qemu plugin: [DEBUG] Opening new ssh session
+2021/03/23 16:03:55 packer-builder-qemu plugin: [DEBUG] starting remote command: echo 'neoricalex' | sudo -S shutdown -P now
+2021/03/23 16:03:57 packer-builder-qemu plugin: [ERROR] Remote command exited without exit status or exit signal.
+2021/03/23 16:03:57 packer-builder-qemu plugin: Waiting max 5m0s for shutdown to complete
+==> NFDOS: Converting hard drive...
+2021/03/23 16:04:01 packer-builder-qemu plugin: VM shut down.
+2021/03/23 16:04:01 packer-builder-qemu plugin: Executing qemu-img: []string{"convert", "-O", "qcow2", "libvirt/packer-NFDOS", "libvirt/packer-NFDOS.convert"}
+2021/03/23 16:04:34 packer-builder-qemu plugin: stdout:
+2021/03/23 16:04:34 packer-builder-qemu plugin: stderr:
+2021/03/23 16:04:35 packer-builder-qemu plugin: failed to unlock port lockfile: close tcp 127.0.0.1:5930: use of closed network connection
+2021/03/23 16:04:35 packer-builder-qemu plugin: failed to unlock port lockfile: close tcp 127.0.0.1:4268: use of closed network connection
+2021/03/23 16:04:35 [INFO] (telemetry) ending qemu
+2021/03/23 16:04:35 [INFO] (telemetry) Starting post-processor vagrant
+==> NFDOS: Running post-processor: vagrant
+==> NFDOS (vagrant): Creating a dummy Vagrant box to ensure the host system can create one correctly
+2021/03/23 16:04:35 packer-post-processor-vagrant plugin: Turning dir into box: /tmp/packer526522573 => /tmp/box-656676296.box
+2021/03/23 16:04:35 packer-post-processor-vagrant plugin: Compressing with gzip compression level: 9
+2021/03/23 16:04:35 packer-post-processor-vagrant plugin: Skipping directory '/tmp/packer526522573' for box '/tmp/box-656676296.box'
+2021/03/23 16:04:35 packer-post-processor-vagrant plugin: Box add: '/tmp/packer526522573/metadata.json' to '/tmp/box-656676296.box'
+==> NFDOS (vagrant): Creating Vagrant box for 'libvirt' provider
+    NFDOS (vagrant): Copying from artifact: libvirt/packer-NFDOS
+    NFDOS (vagrant): Compressing: Vagrantfile
+    NFDOS (vagrant): Compressing: box.img
+2021/03/23 16:05:04 packer-post-processor-vagrant plugin: Turning dir into box: /tmp/packer502574727 => vagrant/libvirt/NFDOS-0.4.4.box
+2021/03/23 16:05:04 packer-post-processor-vagrant plugin: Compressing with gzip compression level: 9
+2021/03/23 16:05:04 packer-post-processor-vagrant plugin: Skipping directory '/tmp/packer502574727' for box 'vagrant/libvirt/NFDOS-0.4.4.box'
+2021/03/23 16:05:04 packer-post-processor-vagrant plugin: Box add: '/tmp/packer502574727/Vagrantfile' to 'vagrant/libvirt/NFDOS-0.4.4.box'
+2021/03/23 16:05:04 packer-post-processor-vagrant plugin: Box add: '/tmp/packer502574727/box.img' to 'vagrant/libvirt/NFDOS-0.4.4.box'
+2021/03/23 16:11:45 packer-post-processor-vagrant plugin: Box add: '/tmp/packer502574727/metadata.json' to 'vagrant/libvirt/NFDOS-0.4.4.box'
+    NFDOS (vagrant): Compressing: metadata.json
+2021/03/23 16:11:46 [INFO] (telemetry) ending vagrant
+2021/03/23 16:11:46 Flagging to keep original artifact from post-processor 'vagrant'
+Build 'NFDOS' finished after 1 hour 46 minutes.
+
+==> Wait completed after 1 hour 46 minutes
+==> Builds finished. The artifacts of successful builds are:
+==> Wait completed after 1 hour 46 minutes
+
+==> Builds finished. The artifacts of successful builds are:
+2021/03/23 16:11:46 machine readable: NFDOS,artifact-count []string{"2"}
+2021/03/23 16:11:46 machine readable: NFDOS,artifact []string{"0", "builder-id", "transcend.qemu"}
+2021/03/23 16:11:46 machine readable: NFDOS,artifact []string{"0", "id", "VM"}
+2021/03/23 16:11:46 machine readable: NFDOS,artifact []string{"0", "string", "VM files in directory: libvirt"}
+--> NFDOS: VM files in directory: libvirt
+2021/03/23 16:11:46 machine readable: NFDOS,artifact []string{"0", "files-count", "1"}
+2021/03/23 16:11:46 machine readable: NFDOS,artifact []string{"0", "file", "0", "libvirt/packer-NFDOS"}
+2021/03/23 16:11:46 machine readable: NFDOS,artifact []string{"0", "end"}
+2021/03/23 16:11:46 machine readable: NFDOS,artifact []string{"1", "builder-id", "mitchellh.post-processor.vagrant"}
+2021/03/23 16:11:46 machine readable: NFDOS,artifact []string{"1", "id", "libvirt"}
+2021/03/23 16:11:46 machine readable: NFDOS,artifact []string{"1", "string", "'libvirt' provider box: vagrant/libvirt/NFDOS-0.4.4.box"}
+2021/03/23 16:11:46 machine readable: NFDOS,artifact []string{"1", "files-count", "1"}
+2021/03/23 16:11:46 machine readable: NFDOS,artifact []string{"1", "file", "0", "vagrant/libvirt/NFDOS-0.4.4.box"}
+2021/03/23 16:11:46 machine readable: NFDOS,artifact []string{"1", "end"}
+--> NFDOS: 'libvirt' provider box: vagrant/libvirt/NFDOS-0.4.4.box
+2021/03/23 16:11:46 [INFO] (telemetry) Finalizing.
+2021/03/23 16:11:48 waiting for all plugin processes to complete...
+2021/03/23 16:11:48 /usr/local/bin/packer: plugin process exited
+2021/03/23 16:11:48 /usr/local/bin/packer: plugin process exited
+2021/03/23 16:11:48 /usr/local/bin/packer: plugin process exited
