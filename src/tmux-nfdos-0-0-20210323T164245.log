@@ -1,6 +1,6 @@
+ A compilação vai iniciar em 2 segundos... A compilação vai iniciar em 1 segundos... A compilação vai iniciar em 0 segundos...
 
-
-Compilação iniciada ter 23 mar 2021 16:39:21
+Compilação iniciada ter 23 mar 2021 16:42:49
 
 Detalhes do desktop:
 
@@ -9,7 +9,7 @@ Arquitetura: x86_64
 Número de CPU(s): 8    
 Virtualização: AMD-V    
 Memória RAM: 16041 MiB 
-Memória Virtual: 4905 MB
+Memória Virtual: 5414 MB
 Modo(s) operacional da CPU: 32-bit, 64-bit
 
 chmod +x compilar_box.sh
@@ -22,9 +22,9 @@ Welcome to Ubuntu 20.04.2 LTS (GNU/Linux 5.4.0-67-generic x86_64)
  * Management:     https://landscape.canonical.com
  * Support:        https://ubuntu.com/advantage
 
-  System information as of Tue Mar 23 19:39:30 UTC 2021
+  System information as of Tue Mar 23 19:42:58 UTC 2021
 
-  System load:  0.0               Processes:               132
+  System load:  0.0               Processes:               137
   Usage of /:   8.7% of 48.41GB   Users logged in:         0
   Memory usage: 5%                IPv4 address for enp0s3: 10.0.2.15
   Swap usage:   0%                IPv4 address for virbr0: 192.168.122.1
