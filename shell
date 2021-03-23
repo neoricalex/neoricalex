@@ -31,9 +31,9 @@ if [ "$usuario" == "neo@desktop" ]; then
     if [ -d "src/vps" ] ; then
         cd src/vps
         echo "Atualizar o github:neoricalex/vps..."
-        git add .
-        git commit -m "Atualização Automática via bash shell"
-        git push origin master
+        #git add .
+        #git commit -m "Atualização Automática via bash shell"
+        #git push origin master
         cd ../..
     fi
    
@@ -44,9 +44,9 @@ if [ "$usuario" == "neo@desktop" ]; then
     cd ..
 
     echo "Atualizar o github:neoricalex/neoricalex..."
-    git add .
-    git commit -m "Atualização Automática via bash shell"
-    git push origin master
+    #git add .
+    #git commit -m "Atualização Automática via bash shell"
+    #git push origin master
 
     #sudo docker tag nfdos/core/rootfs neoricalex/nfdos
     #sudo docker login

@@ -1,0 +1,1357 @@
+ A compilação vai iniciar em 4 segundos... A compilação vai iniciar em 3 segundos... A compilação vai iniciar em 2 segundos... A compilação vai iniciar em 1 segundos... A compilação vai iniciar em 0 segundos...
+
+Compilação iniciada ter 23 mar 2021 17:47:39
+
+Detalhes do desktop:
+
+Nome do modelo: AMD FX(tm)-8350 Eight-Core
+Arquitetura: x86_64
+Número de CPU(s): 8    
+Virtualização: AMD-V    
+Memória RAM: 16041 MiB 
+Memória Virtual: 7555 MB
+Modo(s) operacional da CPU: 32-bit, 64-bit
+
+chmod +x compilar_box.sh
+./compilar_box.sh
+==> Instalar os requerimentos para rodar o VPS_DEV...
+==> Atualizar os repositórios...
+[sudo] senha para neo: 
+0% [Trabalhando]                Obter:1 https://brave-browser-apt-release.s3.brave.com stable InRelease [4.317 B]
+0% [Conectando a br.archive.ubuntu.com] [Conectando a security.ubuntu.com] [1 InRelease 4.317 B/4.317 B 100%] [Connected to do                                                                                                                              0% [Conectando a br.archive.ubuntu.com] [Conectando a security.ubuntu.com] [Connected to download.docker.com (99.84.31.25)]                                                                                                                           Atingido:2 https://download.docker.com/linux/ubuntu focal InRelease
+                                                                                                                           0% [Conectando a br.archive.ubuntu.com] [Conectando a security.ubuntu.com]                                                                          Atingido:3 http://br.archive.ubuntu.com/ubuntu focal InRelease
+                                                                          0% [Conectando em security.ubuntu.com (91.189.88.152)]                                                      Obter:4 http://br.archive.ubuntu.com/ubuntu focal-updates InRelease [114 kB]
+0% [4 InRelease 4.091 B/114 kB 4%] [Conectando em security.ubuntu.com (91.189.88.152)]0% [4 InRelease 14,1 kB/114 kB 12%] [Conectando em security.ubuntu.com (91.189.88.152)]                                                                                       Obter:5 https://brave-browser-apt-release.s3.brave.com stable/main amd64 Packages [4.715 B]
+0% [4 InRelease 34,1 kB/114 kB 30%] [Conectando em security.ubuntu.com (91.189.88.152)] [5 Packages 4.715 B/4.715 B 100%]                                                                                                                         0% [4 InRelease 41,2 kB/114 kB 36%] [Conectando em security.ubuntu.com (91.189.88.152)]0% [5 Packages store 0 B] [4 InRelease 41,2 kB/114 kB 36%] [Conectando em security.ubuntu.com (91.189.88.152)]                                                                                                              0% [4 InRelease 41,2 kB/114 kB 36%] [Conectando em security.ubuntu.com (91.189.88.152)]                                                                                       0% [Conectando em security.ubuntu.com (91.189.88.152)]                                                      Obter:6 http://br.archive.ubuntu.com/ubuntu focal-backports InRelease [101 kB]
+0% [6 InRelease 4.091 B/101 kB 4%] [Conectando em security.ubuntu.com (91.189.88.152)] [Conectando a download.virtualbox.org]                                                                                                                             0% [Conectando em security.ubuntu.com (91.189.88.152)] [Conectando a download.virtualbox.org]0% [Conectando em security.ubuntu.com (91.189.88.152)] [Conectando em download.virtualbox.org (104.90.0.86)]                                                                                                            Atingido:7 http://download.virtualbox.org/virtualbox/debian focal InRelease
+                                                                                                            0% [Conectando em security.ubuntu.com (91.189.88.152)]                                                      0% [Aguardando por cabeçalhos]                               Obter:8 http://security.ubuntu.com/ubuntu focal-security InRelease [109 kB]
+0% [8 InRelease 5.401 B/109 kB 5%]0% [8 InRelease 14,0 kB/109 kB 13%]                                   Ign:9 http://br.archive.ubuntu.com/ubuntu focal-updates/main amd64 Packages
+0% [8 InRelease 14,0 kB/109 kB 13%]                                   Ign:10 http://br.archive.ubuntu.com/ubuntu focal-updates/main i386 Packages
+0% [Aguardando por cabeçalhos] [8 InRelease 14,0 kB/109 kB 13%]                                                                Ign:11 http://br.archive.ubuntu.com/ubuntu focal-updates/main Translation-en
+                                                                Obter:12 http://br.archive.ubuntu.com/ubuntu focal-updates/main amd64 DEP-11 Metadata [264 kB]
+0% [12 Components-amd64 12,0 kB/264 kB 5%] [8 InRelease 14,0 kB/109 kB 13%]                                                                           0% [8 InRelease 14,0 kB/109 kB 13%]                                   Obter:13 http://br.archive.ubuntu.com/ubuntu focal-updates/restricted amd64 Packages [171 kB]
+0% [13 Packages 8.568 B/171 kB 5%] [8 InRelease 14,0 kB/109 kB 13%]0% [12 Components-amd64 store 0 B] [13 Packages 8.568 B/171 kB 5%] [8 InRelease 14,0 kB/109 kB 13%]                                                                                                   0% [12 Components-amd64 store 0 B] [Aguardando por cabeçalhos] [8 InRelease 14,0 kB/109 kB 13%]                                                                                                Obter:14 http://br.archive.ubuntu.com/ubuntu focal-updates/restricted Translation-en [25,3 kB]
+0% [12 Components-amd64 store 0 B] [14 Translation-en 7.489 B/25,3 kB 30%] [8 InRelease 14,0 kB/109 kB 13%]                                                                                                           0% [12 Components-amd64 store 0 B] [8 InRelease 14,0 kB/109 kB 13%]                                                                   Ign:15 http://br.archive.ubuntu.com/ubuntu focal-updates/universe i386 Packages
+                                                                   Ign:16 http://br.archive.ubuntu.com/ubuntu focal-updates/universe amd64 Packages
+                                                                   Ign:17 http://br.archive.ubuntu.com/ubuntu focal-updates/universe Translation-en
+0% [12 Components-amd64 store 0 B] [Aguardando por cabeçalhos] [8 InRelease 14,0 kB/109 kB 13%]                                                                                                Obter:18 http://br.archive.ubuntu.com/ubuntu focal-updates/universe amd64 DEP-11 Metadata [303 kB]
+0% [12 Components-amd64 store 0 B] [18 Components-amd64 11,1 kB/303 kB 4%] [8 InRelease 14,0 kB/109 kB 13%]0% [12 Components-amd64 store 0 B] [18 Components-amd64 157 kB/303 kB 52%] [8 InRelease 14,0 kB/109 kB 13%]                                                                                                           0% [18 Components-amd64 302 kB/303 kB 100%] [8 InRelease 39,7 kB/109 kB 36%]0% [13 Packages store 0 B] [18 Components-amd64 302 kB/303 kB 100%] [8 InRelease 39,7 kB/109 kB 36%]                                                                                                    0% [13 Packages store 0 B] [8 InRelease 39,7 kB/109 kB 36%]                                                           Obter:19 http://br.archive.ubuntu.com/ubuntu focal-updates/multiverse amd64 DEP-11 Metadata [2.468 B]
+0% [13 Packages store 0 B] [19 Components-amd64 2.468 B/2.468 B 100%] [8 InRelease 39,7 kB/109 kB 36%]                                                                                                      0% [13 Packages store 0 B] [8 InRelease 39,7 kB/109 kB 36%]                                                           Obter:9 http://br.archive.ubuntu.com/ubuntu focal-updates/main amd64 Packages [889 kB]
+0% [13 Packages store 0 B] [9 Packages 0 B/889 kB 0%] [8 InRelease 39,7 kB/109 kB 36%]                                                                                      0% [9 Packages 215 kB/889 kB 24%] [8 InRelease 42,5 kB/109 kB 39%]0% [14 Translation-en store 0 B] [9 Packages 217 kB/889 kB 24%] [8 InRelease 42,5 kB/109 kB 39%]                                                                                                0% [9 Packages 261 kB/889 kB 29%] [8 InRelease 42,5 kB/109 kB 39%]0% [18 Components-amd64 store 0 B] [9 Packages 261 kB/889 kB 29%] [8 InRelease 42,5 kB/109 kB 39%]                                                                                                  0% [18 Components-amd64 store 0 B] [8 InRelease 42,5 kB/109 kB 39%]                                                                   Obter:10 http://br.archive.ubuntu.com/ubuntu focal-updates/main i386 Packages [443 kB]
+0% [18 Components-amd64 store 0 B] [10 Packages 7.087 B/443 kB 2%] [8 InRelease 42,5 kB/109 kB 39%]0% [18 Components-amd64 store 0 B] [10 Packages 59,6 kB/443 kB 13%] [8 InRelease 42,5 kB/109 kB 39%]                                                                                                    0% [10 Packages 120 kB/443 kB 27%] [8 InRelease 42,5 kB/109 kB 39%]0% [19 Components-amd64 store 0 B] [10 Packages 120 kB/443 kB 27%] [8 InRelease 42,5 kB/109 kB 39%]                                                                                                   0% [10 Packages 121 kB/443 kB 27%] [8 InRelease 42,5 kB/109 kB 39%]0% [9 Packages store 0 B] [10 Packages 122 kB/443 kB 28%] [8 InRelease 42,5 kB/109 kB 39%]                                                                                          0% [9 Packages store 0 B] [Aguardando por cabeçalhos] [8 InRelease 42,5 kB/109 kB 39%]                                                                                       Obter:11 http://br.archive.ubuntu.com/ubuntu focal-updates/main Translation-en [207 kB]
+0% [9 Packages store 0 B] [11 Translation-en 7.415 B/207 kB 4%] [8 InRelease 42,5 kB/109 kB 39%]                                                                                                0% [9 Packages store 0 B] [Aguardando por cabeçalhos] [8 InRelease 42,5 kB/109 kB 39%]                                                                                       Obter:15 http://br.archive.ubuntu.com/ubuntu focal-updates/universe i386 Packages [559 kB]
+0% [9 Packages store 0 B] [15 Packages 7.435 B/559 kB 1%] [8 InRelease 42,5 kB/109 kB 39%]                                                                                          0% [9 Packages store 0 B] [8 InRelease 48,2 kB/109 kB 44%]                                                          Obter:16 http://br.archive.ubuntu.com/ubuntu focal-updates/universe amd64 Packages [753 kB]
+0% [9 Packages store 0 B] [16 Packages 4.639 B/753 kB 1%] [8 InRelease 48,2 kB/109 kB 44%]                                                                                          0% [16 Packages 261 kB/753 kB 35%] [8 InRelease 59,7 kB/109 kB 55%]0% [10 Packages store 0 B] [16 Packages 262 kB/753 kB 35%] [8 InRelease 59,7 kB/109 kB 55%]                                                                                           0% [10 Packages store 0 B] [8 InRelease 73,9 kB/109 kB 68%]                                                           Obter:17 http://br.archive.ubuntu.com/ubuntu focal-updates/universe Translation-en [159 kB]
+0% [10 Packages store 0 B] [17 Translation-en 0 B/159 kB 0%] [8 InRelease 73,9 kB/109 kB 68%]                                                                                             0% [10 Packages store 0 B] [Aguardando por cabeçalhos] [8 InRelease 78,2 kB/109 kB 72%]                                                                                        Obter:20 http://br.archive.ubuntu.com/ubuntu focal-backports/universe amd64 DEP-11 Metadata [1.768 B]
+                                                                                        0% [10 Packages store 0 B] [8 InRelease 82,5 kB/109 kB 76%]                                                           0% [8 InRelease 85,4 kB/109 kB 78%]0% [11 Translation-en store 0 B] [8 InRelease 85,4 kB/109 kB 78%]                                                                 0% [8 InRelease 99,6 kB/109 kB 91%]0% [15 Packages store 0 B] [8 InRelease 99,6 kB/109 kB 91%]                                                           0% [8 InRelease 108 kB/109 kB 99%]0% [16 Packages store 0 B] [8 InRelease 108 kB/109 kB 99%]                                                          0% [16 Packages store 0 B]                          0% [Trabalhando]0% [17 Translation-en store 0 B]                                0% [Trabalhando]0% [20 Components-amd64 store 0 B]                                  0% [Trabalhando]98% [Trabalhando]                 Obter:21 http://security.ubuntu.com/ubuntu focal-security/main amd64 DEP-11 Metadata [24,3 kB]
+98% [21 Components-amd64 5.505 B/24,3 kB 23%]                                             99% [Trabalhando]99% [21 Components-amd64 store 0 B]                                   99% [Aguardando por cabeçalhos]                                Obter:22 http://security.ubuntu.com/ubuntu focal-security/universe amd64 DEP-11 Metadata [58,2 kB]
+99% [22 Components-amd64 5.505 B/58,2 kB 9%]                                            100% [Trabalhando]100% [22 Components-amd64 store 0 B]                                    100% [Trabalhando]                  Baixados 4.194 kB em 2s (2.108 kB/s)
+Lendo listas de pacotes... 0%Lendo listas de pacotes... 0%Lendo listas de pacotes... 0%Lendo listas de pacotes... 3%Lendo listas de pacotes... 3%Lendo listas de pacotes... 5%Lendo listas de pacotes... 5%Lendo listas de pacotes... 6%Lendo listas de pacotes... 6%Lendo listas de pacotes... 7%Lendo listas de pacotes... 7%Lendo listas de pacotes... 9%Lendo listas de pacotes... 9%Lendo listas de pacotes... 9%Lendo listas de pacotes... 9%Lendo listas de pacotes... 9%Lendo listas de pacotes... 9%Lendo listas de pacotes... 9%Lendo listas de pacotes... 9%Lendo listas de pacotes... 9%Lendo listas de pacotes... 9%Lendo listas de pacotes... 9%Lendo listas de pacotes... 9%Lendo listas de pacotes... 39%Lendo listas de pacotes... 39%Lendo listas de pacotes... 55%Lendo listas de pacotes... 55%Lendo listas de pacotes... 57%Lendo listas de pacotes... 58%Lendo listas de pacotes... 58%Lendo listas de pacotes... 60%Lendo listas de pacotes... 60%Lendo listas de pacotes... 76%Lendo listas de pacotes... 76%Lendo listas de pacotes... 77%Lendo listas de pacotes... 77%Lendo listas de pacotes... 77%Lendo listas de pacotes... 77%Lendo listas de pacotes... 77%Lendo listas de pacotes... 77%Lendo listas de pacotes... 77%Lendo listas de pacotes... 77%Lendo listas de pacotes... 77%Lendo listas de pacotes... 77%Lendo listas de pacotes... 80%Lendo listas de pacotes... 80%Lendo listas de pacotes... 82%Lendo listas de pacotes... 82%Lendo listas de pacotes... 83%Lendo listas de pacotes... 83%Lendo listas de pacotes... 84%Lendo listas de pacotes... 84%Lendo listas de pacotes... 84%Lendo listas de pacotes... 84%Lendo listas de pacotes... 84%Lendo listas de pacotes... 84%Lendo listas de pacotes... 87%Lendo listas de pacotes... 87%Lendo listas de pacotes... 89%Lendo listas de pacotes... 89%Lendo listas de pacotes... 90%Lendo listas de pacotes... 90%Lendo listas de pacotes... 90%Lendo listas de pacotes... 90%Lendo listas de pacotes... 90%Lendo listas de pacotes... 90%Lendo listas de pacotes... 90%Lendo listas de pacotes... 90%Lendo listas de pacotes... 90%Lendo listas de pacotes... 90%Lendo listas de pacotes... 90%Lendo listas de pacotes... 90%Lendo listas de pacotes... 90%Lendo listas de pacotes... 90%Lendo listas de pacotes... 92%Lendo listas de pacotes... 92%Lendo listas de pacotes... 92%Lendo listas de pacotes... 92%Lendo listas de pacotes... 93%Lendo listas de pacotes... 93%Lendo listas de pacotes... 94%Lendo listas de pacotes... 94%Lendo listas de pacotes... 94%Lendo listas de pacotes... 94%Lendo listas de pacotes... 94%Lendo listas de pacotes... 94%Lendo listas de pacotes... 96%Lendo listas de pacotes... 96%Lendo listas de pacotes... 98%Lendo listas de pacotes... 98%Lendo listas de pacotes... 98%Lendo listas de pacotes... 98%Lendo listas de pacotes... 98%Lendo listas de pacotes... 98%Lendo listas de pacotes... 98%Lendo listas de pacotes... 98%Lendo listas de pacotes... 98%Lendo listas de pacotes... 98%Lendo listas de pacotes... 98%Lendo listas de pacotes... 98%Lendo listas de pacotes... 98%Lendo listas de pacotes... 98%Lendo listas de pacotes... 98%Lendo listas de pacotes... 98%Lendo listas de pacotes... Pronto
+Construindo árvore de dependências... 0%Construindo árvore de dependências... 0%Construindo árvore de dependências... 0%Construindo árvore de dependências... 50%Construindo árvore de dependências... 50%Construindo árvore de dependências       
+Lendo informação de estado... 0%  Lendo informação de estado... 0%Lendo informação de estado... Pronto
+15 packages can be upgraded. Run 'apt list --upgradable' to see them.
+==> Instalar o Linux/Ubuntu base...
+Lendo listas de pacotes... 0%Lendo listas de pacotes... 100%Lendo listas de pacotes... Pronto
+Construindo árvore de dependências... 0%Construindo árvore de dependências... 0%Construindo árvore de dependências... 50%Construindo árvore de dependências... 50%Construindo árvore de dependências       
+Lendo informação de estado... 0%  Lendo informação de estado... 0%Lendo informação de estado... Pronto
+dkms is already the newest version (2.8.1-5ubuntu2).
+linux-headers-5.8.0-45-generic is already the newest version (5.8.0-45.51~20.04.1).
+ubuntu-minimal is already the newest version (1.450.2).
+The following additional packages will be installed:
+  linux-headers-5.4.0-70 linux-headers-5.4.0-70-generic linux-headers-generic linux-image-5.4.0-70-generic
+  linux-image-generic linux-modules-5.4.0-70-generic linux-modules-extra-5.4.0-70-generic
+Pacotes sugeridos:
+  fdutils linux-doc | linux-source-5.4.0 linux-tools
+Os NOVOS pacotes a seguir serão instalados:
+  linux-headers-5.4.0-70 linux-headers-5.4.0-70-generic linux-image-5.4.0-70-generic linux-modules-5.4.0-70-generic
+  linux-modules-extra-5.4.0-70-generic
+Os pacotes a seguir serão atualizados:
+  linux-generic linux-headers-generic linux-image-generic
+3 pacotes atualizados, 5 pacotes novos instalados, 0 a serem removidos e 12 não atualizados.
+É preciso baixar 75,5 MB de arquivos.
+Depois desta operação, 377 MB adicionais de espaço em disco serão usados.
+0% [Trabalhando]                Obter:1 http://br.archive.ubuntu.com/ubuntu focal-updates/main amd64 linux-modules-5.4.0-70-generic amd64 5.4.0-70.78 [14,8 MB]
+0% [1 linux-modules-5.4.0-70-generic 6.891 B/14,8 MB 0%]5% [1 linux-modules-5.4.0-70-generic 4.321 kB/14,8 MB 29%]10% [1 linux-modules-5.4.0-70-generic 9.533 kB/14,8 MB 64%]16% [1 linux-modules-5.4.0-70-generic 14,8 MB/14,8 MB 100%]                                                           18% [Trabalhando]                 Obter:2 http://br.archive.ubuntu.com/ubuntu focal-updates/main amd64 linux-image-5.4.0-70-generic amd64 5.4.0-70.78 [8.971 kB]
+18% [2 linux-image-5.4.0-70-generic 4.036 B/8.971 kB 0%]24% [2 linux-image-5.4.0-70-generic 5.725 kB/8.971 kB 64%]                                                          30% [Aguardando por cabeçalhos]                                Obter:3 http://br.archive.ubuntu.com/ubuntu focal-updates/main amd64 linux-modules-extra-5.4.0-70-generic amd64 5.4.0-70.78 [39,4 MB]
+30% [3 linux-modules-extra-5.4.0-70-generic 65,5 kB/39,4 MB 0%]36% [3 linux-modules-extra-5.4.0-70-generic 5.590 kB/39,4 MB 14%]40% [3 linux-modules-extra-5.4.0-70-generic 9.453 kB/39,4 MB 24%]                                                                 43% [3 linux-modules-extra-5.4.0-70-generic 12,3 MB/39,4 MB 31%]46% [3 linux-modules-extra-5.4.0-70-generic 15,3 MB/39,4 MB 39%]50% [3 linux-modules-extra-5.4.0-70-generic 18,8 MB/39,4 MB 48%]54% [3 linux-modules-extra-5.4.0-70-generic 22,1 MB/39,4 MB 56%]57% [3 linux-modules-extra-5.4.0-70-generic 25,5 MB/39,4 MB 65%]60% [3 linux-modules-extra-5.4.0-70-generic 28,3 MB/39,4 MB 72%]                                                 8.066 kB/s 2s64% [3 linux-modules-extra-5.4.0-70-generic 31,6 MB/39,4 MB 80%]                                                 8.066 kB/s 2s67% [3 linux-modules-extra-5.4.0-70-generic 34,9 MB/39,4 MB 89%]                                                 8.066 kB/s 2s70% [3 linux-modules-extra-5.4.0-70-generic 38,0 MB/39,4 MB 97%]                                                 8.066 kB/s 1s74% [Trabalhando]                                                                                                8.066 kB/s 1s                                                                                                                              Obter:4 http://br.archive.ubuntu.com/ubuntu focal-updates/main amd64 linux-generic amd64 5.4.0.70.73 [1.896 B]
+74% [4 linux-generic 1.896 B/1.896 B 100%]                                                                       8.066 kB/s 1s77% [Trabalhando]                                                                                                8.066 kB/s 1s                                                                                                                              Obter:5 http://br.archive.ubuntu.com/ubuntu focal-updates/main amd64 linux-image-generic amd64 5.4.0.70.73 [2.560 B]
+77% [5 linux-image-generic 2.560 B/2.560 B 100%]                                                                 8.066 kB/s 1s79% [Aguardando por cabeçalhos]                                                                                 8.066 kB/s 1s                                                                                                                              Obter:6 http://br.archive.ubuntu.com/ubuntu focal-updates/main amd64 linux-headers-5.4.0-70 all 5.4.0-70.78 [11,0 MB]
+79% [6 linux-headers-5.4.0-70 19,4 kB/11,0 MB 0%]                                                                8.066 kB/s 1s84% [6 linux-headers-5.4.0-70 4.503 kB/11,0 MB 41%]                                                              8.066 kB/s 0s87% [6 linux-headers-5.4.0-70 7.432 kB/11,0 MB 68%]                                                              8.066 kB/s 0s90% [6 linux-headers-5.4.0-70 10,1 MB/11,0 MB 92%]                                                               8.066 kB/s 0s94% [Aguardando por cabeçalhos]                                                                                 8.066 kB/s 0s                                                                                                                              Obter:7 http://br.archive.ubuntu.com/ubuntu focal-updates/main amd64 linux-headers-5.4.0-70-generic amd64 5.4.0-70.78 [1.400 kB]
+94% [7 linux-headers-5.4.0-70-generic 52,2 kB/1.400 kB 4%]                                                       8.066 kB/s 0s97% [Aguardando por cabeçalhos]                                                                                 8.066 kB/s 0s                                                                                                                              Obter:8 http://br.archive.ubuntu.com/ubuntu focal-updates/main amd64 linux-headers-generic amd64 5.4.0.70.73 [2.428 B]
+100% [Trabalhando]                                                                                               8.066 kB/s 0s                                                                                                                              Baixados 75,5 MB em 10s (7.332 kB/s)
+A seleccionar pacote anteriormente não seleccionado linux-modules-5.4.0-70-generic.
+(Lendo banco de dados ... (Lendo banco de dados ... 5%(Lendo banco de dados ... 10%(Lendo banco de dados ... 15%(Lendo banco de dados ... 20%(Lendo banco de dados ... 25%(Lendo banco de dados ... 30%(Lendo banco de dados ... 35%(Lendo banco de dados ... 40%(Lendo banco de dados ... 45%(Lendo banco de dados ... 50%(Lendo banco de dados ... 55%(Lendo banco de dados ... 60%(Lendo banco de dados ... 65%(Lendo banco de dados ... 70%(Lendo banco de dados ... 75%(Lendo banco de dados ... 80%(Lendo banco de dados ... 85%(Lendo banco de dados ... 90%(Lendo banco de dados ... 95%(Lendo banco de dados ... 100%(Lendo banco de dados ... 245833 ficheiros e directórios actualmente instalados.)
+A preparar para desempacotar .../0-linux-modules-5.4.0-70-generic_5.4.0-70.78_amd64.deb ...
+A descompactar linux-modules-5.4.0-70-generic (5.4.0-70.78) ...
+A seleccionar pacote anteriormente não seleccionado linux-image-5.4.0-70-generic.
+A preparar para desempacotar .../1-linux-image-5.4.0-70-generic_5.4.0-70.78_amd64.deb ...
+A descompactar linux-image-5.4.0-70-generic (5.4.0-70.78) ...
+A seleccionar pacote anteriormente não seleccionado linux-modules-extra-5.4.0-70-generic.
+A preparar para desempacotar .../2-linux-modules-extra-5.4.0-70-generic_5.4.0-70.78_amd64.deb ...
+A descompactar linux-modules-extra-5.4.0-70-generic (5.4.0-70.78) ...
+A preparar para desempacotar .../3-linux-generic_5.4.0.70.73_amd64.deb ...
+A descompactar linux-generic (5.4.0.70.73) sobre (5.4.0.67.70) ...
+A preparar para desempacotar .../4-linux-image-generic_5.4.0.70.73_amd64.deb ...
+A descompactar linux-image-generic (5.4.0.70.73) sobre (5.4.0.67.70) ...
+A seleccionar pacote anteriormente não seleccionado linux-headers-5.4.0-70.
+A preparar para desempacotar .../5-linux-headers-5.4.0-70_5.4.0-70.78_all.deb ...
+A descompactar linux-headers-5.4.0-70 (5.4.0-70.78) ...
+A seleccionar pacote anteriormente não seleccionado linux-headers-5.4.0-70-generic.
+A preparar para desempacotar .../6-linux-headers-5.4.0-70-generic_5.4.0-70.78_amd64.deb ...
+A descompactar linux-headers-5.4.0-70-generic (5.4.0-70.78) ...
+A preparar para desempacotar .../7-linux-headers-generic_5.4.0.70.73_amd64.deb ...
+A descompactar linux-headers-generic (5.4.0.70.73) sobre (5.4.0.67.70) ...
+Configurando linux-headers-5.4.0-70 (5.4.0-70.78) ...
+Configurando linux-modules-5.4.0-70-generic (5.4.0-70.78) ...
+Configurando linux-image-5.4.0-70-generic (5.4.0-70.78) ...
+I: /boot/vmlinuz.old is now a symlink to vmlinuz-5.4.0-67-generic
+I: /boot/initrd.img.old is now a symlink to initrd.img-5.4.0-67-generic
+I: /boot/vmlinuz is now a symlink to vmlinuz-5.4.0-70-generic
+I: /boot/initrd.img is now a symlink to initrd.img-5.4.0-70-generic
+Configurando linux-headers-5.4.0-70-generic (5.4.0-70.78) ...
+/etc/kernel/header_postinst.d/dkms:
+ * dkms: running auto installation service for kernel 5.4.0-70-generic
+
+Kernel preparation unnecessary for this kernel.  Skipping...
+
+Building module:
+cleaning build area...
+make -j8 KERNELRELEASE=5.4.0-70-generic -C /lib/modules/5.4.0-70-generic/build M=/var/lib/dkms/virtualbox/6.1.16/build......
+Signing module:
+ - /var/lib/dkms/virtualbox/6.1.16/5.4.0-70-generic/x86_64/module/vboxdrv.ko
+ - /var/lib/dkms/virtualbox/6.1.16/5.4.0-70-generic/x86_64/module/vboxnetadp.ko
+ - /var/lib/dkms/virtualbox/6.1.16/5.4.0-70-generic/x86_64/module/vboxnetflt.ko
+This system doesn't support Secure Boot
+Secure Boot not enabled on this system.
+cleaning build area...
+
+DKMS: build completed.
+
+vboxdrv.ko:
+Running module version sanity check.
+ - Original module
+   - No original module exists within this kernel
+ - Installation
+   - Installing to /lib/modules/5.4.0-70-generic/updates/dkms/
+
+vboxnetadp.ko:
+Running module version sanity check.
+ - Original module
+   - No original module exists within this kernel
+ - Installation
+   - Installing to /lib/modules/5.4.0-70-generic/updates/dkms/
+
+vboxnetflt.ko:
+Running module version sanity check.
+ - Original module
+   - No original module exists within this kernel
+ - Installation
+   - Installing to /lib/modules/5.4.0-70-generic/updates/dkms/
+
+depmod...
+
+DKMS: install completed.
+
+Kernel preparation unnecessary for this kernel.  Skipping...
+
+Building module:
+cleaning build area...
+make -j8 KERNELRELEASE=5.4.0-70-generic -C /lib/modules/5.4.0-70-generic/build M=/var/lib/dkms/virtualbox-guest/6.1.16/build.....
+Signing module:
+ - /var/lib/dkms/virtualbox-guest/6.1.16/5.4.0-70-generic/x86_64/module/vboxsf.ko
+ - /var/lib/dkms/virtualbox-guest/6.1.16/5.4.0-70-generic/x86_64/module/vboxvideo.ko
+ - /var/lib/dkms/virtualbox-guest/6.1.16/5.4.0-70-generic/x86_64/module/vboxguest.ko
+This system doesn't support Secure Boot
+Secure Boot not enabled on this system.
+cleaning build area...
+
+DKMS: build completed.
+
+vboxguest.ko:
+Running module version sanity check.
+
+Good news! Module version 6.1.16_Ubuntu for vboxguest.ko
+exactly matches what is already found in kernel 5.4.0-70-generic.
+DKMS will not replace this module.
+You may override by specifying --force.
+
+vboxsf.ko:
+Running module version sanity check.
+
+Good news! Module version 6.1.16_Ubuntu for vboxsf.ko
+exactly matches what is already found in kernel 5.4.0-70-generic.
+DKMS will not replace this module.
+You may override by specifying --force.
+
+vboxvideo.ko:
+Running module version sanity check.
+ - Original module
+   - No original module exists within this kernel
+ - Installation
+   - Installing to /lib/modules/5.4.0-70-generic/updates/dkms/
+
+depmod...
+
+DKMS: install completed.
+   ...done.
+Configurando linux-headers-generic (5.4.0.70.73) ...
+Configurando linux-modules-extra-5.4.0-70-generic (5.4.0-70.78) ...
+Configurando linux-image-generic (5.4.0.70.73) ...
+Configurando linux-generic (5.4.0.70.73) ...
+A processar 'triggers' para linux-image-5.4.0-70-generic (5.4.0-70.78) ...
+/etc/kernel/postinst.d/dkms:
+ * dkms: running auto installation service for kernel 5.4.0-70-generic
+   ...done.
+/etc/kernel/postinst.d/initramfs-tools:
+update-initramfs: Generating /boot/initrd.img-5.4.0-70-generic
+/etc/kernel/postinst.d/vboxadd:
+VirtualBox Guest Additions: Building the modules for kernel 5.4.0-70-generic.
+update-initramfs: deferring update (hook will be called later)
+/etc/kernel/postinst.d/zz-update-grub:
+Sourcing file `/etc/default/grub'
+Sourcing file `/etc/default/grub.d/init-select.cfg'
+Generating grub configuration file ...
+Imagem Linux encontrada: /boot/vmlinuz-5.8.0-45-generic
+Imagem initrd encontrada: /boot/initrd.img-5.8.0-45-generic
+Imagem Linux encontrada: /boot/vmlinuz-5.8.0-44-generic
+Imagem initrd encontrada: /boot/initrd.img-5.8.0-44-generic
+Imagem Linux encontrada: /boot/vmlinuz-5.4.0-70-generic
+Imagem initrd encontrada: /boot/initrd.img-5.4.0-70-generic
+Imagem Linux encontrada: /boot/vmlinuz-5.4.0-67-generic
+Imagem initrd encontrada: /boot/initrd.img-5.4.0-67-generic
+Adding boot menu entry for UEFI Firmware Settings
+concluído
+==> Instalar libvrt & KVM
+Lendo listas de pacotes... 0%Lendo listas de pacotes... 100%Lendo listas de pacotes... Pronto
+Construindo árvore de dependências... 0%Construindo árvore de dependências... 0%Construindo árvore de dependências... 50%Construindo árvore de dependências... 50%Construindo árvore de dependências       
+Lendo informação de estado... 0%  Lendo informação de estado... 0%Lendo informação de estado... Pronto
+Note, a seleccionar 'libxslt1-dev' em vez de 'libxslt-dev'
+bridge-utils is already the newest version (1.6-2ubuntu1).
+ebtables is already the newest version (2.0.11-3build1).
+libxml2-dev is already the newest version (2.9.10+dfsg-5).
+libxslt1-dev is already the newest version (1.1.34-4).
+ruby-dev is already the newest version (1:2.7+1).
+ruby-libvirt is already the newest version (0.7.1-1build1).
+dnsmasq-base is already the newest version (2.80-1.1ubuntu1.3).
+libvirt-clients is already the newest version (6.0.0-0ubuntu8.8).
+libvirt-daemon-system is already the newest version (6.0.0-0ubuntu8.8).
+qemu-kvm is already the newest version (1:4.2-3ubuntu6.14).
+qemu-utils is already the newest version (1:4.2-3ubuntu6.14).
+zlib1g-dev is already the newest version (1:1.2.11.dfsg-2ubuntu1.2).
+libvirt-dev is already the newest version (6.0.0-0ubuntu8.8).
+qemu-user-static is already the newest version (1:4.2-3ubuntu6.14).
+Os seguintes pacotes foram instalados automaticamente e já não são necessários:
+  linux-headers-5.4.0-67 linux-headers-5.4.0-67-generic linux-image-5.4.0-67-generic linux-modules-5.4.0-67-generic
+  linux-modules-extra-5.4.0-67-generic
+Utilize 'sudo apt autoremove' para os remover.
+0 pacotes atualizados, 0 pacotes novos instalados, 0 a serem removidos e 12 não atualizados.
+Lendo listas de pacotes... 0%Lendo listas de pacotes... 100%Lendo listas de pacotes... Pronto
+Construindo árvore de dependências... 0%Construindo árvore de dependências... 0%Construindo árvore de dependências... 50%Construindo árvore de dependências... 50%Construindo árvore de dependências       
+Lendo informação de estado... 0%  Lendo informação de estado... 0%Lendo informação de estado... Pronto
+E: Impossível encontrar o pacote vagrant-libs
+Lendo listas de pacotes... 0%Lendo listas de pacotes... 100%Lendo listas de pacotes... Pronto
+Construindo árvore de dependências... 0%Construindo árvore de dependências... 0%Construindo árvore de dependências... 50%Construindo árvore de dependências... 50%Construindo árvore de dependências       
+Lendo informação de estado... 0%  Lendo informação de estado... 0%Lendo informação de estado... Pronto
+Os pacotes a seguir serão REMOVIDOS:
+  linux-headers-5.4.0-67 linux-headers-5.4.0-67-generic linux-image-5.4.0-67-generic linux-modules-5.4.0-67-generic
+  linux-modules-extra-5.4.0-67-generic
+0 pacotes atualizados, 0 pacotes novos instalados, 5 a serem removidos e 12 não atualizados.
+Depois desta operação, 377 MB de espaço em disco serão liberados.
+
+7[0;13r8[1A(Lendo banco de dados ... (Lendo banco de dados ... 5%(Lendo banco de dados ... 10%(Lendo banco de dados ... 15%(Lendo banco de dados ... 20%(Lendo banco de dados ... 25%(Lendo banco de dados ... 30%(Lendo banco de dados ... 35%(Lendo banco de dados ... 40%(Lendo banco de dados ... 45%(Lendo banco de dados ... 50%(Lendo banco de dados ... 55%(Lendo banco de dados ... 60%(Lendo banco de dados ... 65%(Lendo banco de dados ... 70%(Lendo banco de dados ... 75%(Lendo banco de dados ... 80%(Lendo banco de dados ... 85%(Lendo banco de dados ... 90%(Lendo banco de dados ... 95%(Lendo banco de dados ... 100%(Lendo banco de dados ... 282249 ficheiros e directórios actualmente instalados.)
+A remover linux-headers-5.4.0-67-generic (5.4.0-67.75) ...
+7[14;0fProgress: [  0%] [.........................................................................................................] 87[14;0fProgress: [  9%] [#########................................................................................................] 87[14;0fProgress: [ 18%] [###################......................................................................................] 8A remover linux-headers-5.4.0-67 (5.4.0-67.75) ...
+7[14;0fProgress: [ 27%] [############################.............................................................................] 87[14;0fProgress: [ 36%] [######################################...................................................................] 8A remover linux-modules-extra-5.4.0-67-generic (5.4.0-67.75) ...
+7[14;0fProgress: [ 45%] [###############################################..........................................................] 87[14;0fProgress: [ 55%] [#########################################################................................................] 8A remover linux-image-5.4.0-67-generic (5.4.0-67.75) ...
+7[14;0fProgress: [ 64%] [##################################################################.......................................] 87[14;0fProgress: [ 73%] [############################################################################.............................] 8I: /boot/vmlinuz.old is now a symlink to vmlinuz-5.8.0-45-generic
+I: /boot/initrd.img.old is now a symlink to initrd.img-5.8.0-45-generic
+/etc/kernel/postrm.d/initramfs-tools:
+update-initramfs: Deleting /boot/initrd.img-5.4.0-67-generic
+/etc/kernel/postrm.d/zz-update-grub:
+Sourcing file `/etc/default/grub'
+Sourcing file `/etc/default/grub.d/init-select.cfg'
+Generating grub configuration file ...
+Imagem Linux encontrada: /boot/vmlinuz-5.8.0-45-generic
+Imagem initrd encontrada: /boot/initrd.img-5.8.0-45-generic
+Imagem Linux encontrada: /boot/vmlinuz-5.8.0-44-generic
+Imagem initrd encontrada: /boot/initrd.img-5.8.0-44-generic
+Imagem Linux encontrada: /boot/vmlinuz-5.4.0-70-generic
+Imagem initrd encontrada: /boot/initrd.img-5.4.0-70-generic
+Adding boot menu entry for UEFI Firmware Settings
+concluído
+A remover linux-modules-5.4.0-67-generic (5.4.0-67.75) ...
+7[14;0fProgress: [ 82%] [#####################################################################################....................] 87[14;0fProgress: [ 91%] [###############################################################################################..........] 8
+7[0;14r8[1A[J==> Download Vagrant & Instalar
+2021-03-23 17:50:12 URL:https://releases.hashicorp.com/vagrant/2.2.9/vagrant_2.2.9_x86_64.deb [42978828/42978828] -> "vagrant_2.2.9_x86_64.deb" [1]
+(Lendo banco de dados ... (Lendo banco de dados ... 5%(Lendo banco de dados ... 10%(Lendo banco de dados ... 15%(Lendo banco de dados ... 20%(Lendo banco de dados ... 25%(Lendo banco de dados ... 30%(Lendo banco de dados ... 35%(Lendo banco de dados ... 40%(Lendo banco de dados ... 45%(Lendo banco de dados ... 50%(Lendo banco de dados ... 55%(Lendo banco de dados ... 60%(Lendo banco de dados ... 65%(Lendo banco de dados ... 70%(Lendo banco de dados ... 75%(Lendo banco de dados ... 80%(Lendo banco de dados ... 85%(Lendo banco de dados ... 90%(Lendo banco de dados ... 95%(Lendo banco de dados ... 100%(Lendo banco de dados ... 245835 ficheiros e directórios actualmente instalados.)
+A preparar para desempacotar vagrant_2.2.9_x86_64.deb ...
+A descompactar vagrant (1:2.2.9) sobre (1:2.2.9) ...
+Configurando vagrant (1:2.2.9) ...
+==> Instalar plugins do Vagrant
+Installing the 'vagrant-libvirt' plugin. This can take a few minutes...
+Building native extensions. This could take a while...
+Building native extensions. This could take a while...
+Installed the plugin 'vagrant-libvirt (0.4.0)'!
+Installing the 'vagrant-disksize' plugin. This can take a few minutes...
+Building native extensions. This could take a while...
+Building native extensions. This could take a while...
+Installed the plugin 'vagrant-disksize (0.1.3)'!
+Installing the 'vagrant-mutate' plugin. This can take a few minutes...
+Building native extensions. This could take a while...
+Building native extensions. This could take a while...
+Installed the plugin 'vagrant-mutate (1.2.0)'!
+Lendo listas de pacotes... 0%Lendo listas de pacotes... 0%Lendo listas de pacotes... 8%Lendo listas de pacotes... Pronto
+Construindo árvore de dependências... 0%Construindo árvore de dependências... 0%Construindo árvore de dependências... 50%Construindo árvore de dependências... 50%Construindo árvore de dependências       
+Lendo informação de estado... 0%  Lendo informação de estado... 0%Lendo informação de estado... Pronto
+Note, selecting 'virtualbox-source' for glob 'virtualbox*'
+Note, selecting 'virtualbox-guest-utils' for glob 'virtualbox*'
+Note, selecting 'virtualbox-ose' for glob 'virtualbox*'
+Note, selecting 'virtualbox-guest-modules' for glob 'virtualbox*'
+Note, selecting 'virtualbox-guest-additions-iso' for glob 'virtualbox*'
+Note, selecting 'virtualbox-guest-dkms' for glob 'virtualbox*'
+Note, selecting 'virtualbox-dkms' for glob 'virtualbox*'
+Note, selecting 'virtualbox-guest-dkms-hwe' for glob 'virtualbox*'
+Note, selecting 'virtualbox-ext-pack' for glob 'virtualbox*'
+Note, selecting 'virtualbox' for glob 'virtualbox*'
+Note, selecting 'virtualbox-guest-modules-hwe' for glob 'virtualbox*'
+Note, selecting 'virtualbox-guest-x11-hwe' for glob 'virtualbox*'
+Note, selecting 'virtualbox-guest-source' for glob 'virtualbox*'
+Note, selecting 'virtualbox-qt' for glob 'virtualbox*'
+Note, selecting 'virtualbox-guest-source-hwe' for glob 'virtualbox*'
+Note, selecting 'virtualbox-2.0' for glob 'virtualbox*'
+Note, selecting 'virtualbox-2.1' for glob 'virtualbox*'
+Note, selecting 'virtualbox-2.2' for glob 'virtualbox*'
+Note, selecting 'virtualbox-modules' for glob 'virtualbox*'
+Note, selecting 'virtualbox-3.0' for glob 'virtualbox*'
+Note, selecting 'virtualbox-3.1' for glob 'virtualbox*'
+Note, selecting 'virtualbox-3.2' for glob 'virtualbox*'
+Note, selecting 'virtualbox-4.0' for glob 'virtualbox*'
+Note, selecting 'virtualbox-4.1' for glob 'virtualbox*'
+Note, selecting 'virtualbox-4.2' for glob 'virtualbox*'
+Note, selecting 'virtualbox-4.3' for glob 'virtualbox*'
+Note, selecting 'virtualbox-5.0' for glob 'virtualbox*'
+Note, selecting 'virtualbox-5.1' for glob 'virtualbox*'
+Note, selecting 'virtualbox-5.2' for glob 'virtualbox*'
+Note, selecting 'virtualbox-guest-utils-hwe' for glob 'virtualbox*'
+Note, selecting 'virtualbox-6.0' for glob 'virtualbox*'
+Note, selecting 'virtualbox-6.1' for glob 'virtualbox*'
+Note, selecting 'virtualbox-guest-x11' for glob 'virtualbox*'
+O pacote 'virtualbox-5.0' não está instalado, por isso não será removido
+O pacote 'virtualbox-5.1' não está instalado, por isso não será removido
+O pacote 'virtualbox-5.2' não está instalado, por isso não será removido
+Note, a seleccionar 'virtualbox-dkms' em vez de 'virtualbox-modules'
+O pacote 'virtualbox-2.0' não está instalado, por isso não será removido
+O pacote 'virtualbox-2.1' não está instalado, por isso não será removido
+O pacote 'virtualbox-2.2' não está instalado, por isso não será removido
+O pacote 'virtualbox-3.0' não está instalado, por isso não será removido
+O pacote 'virtualbox-3.1' não está instalado, por isso não será removido
+O pacote 'virtualbox-3.2' não está instalado, por isso não será removido
+O pacote 'virtualbox-4.0' não está instalado, por isso não será removido
+O pacote 'virtualbox-4.1' não está instalado, por isso não será removido
+O pacote 'virtualbox-4.2' não está instalado, por isso não será removido
+O pacote 'virtualbox-4.3' não está instalado, por isso não será removido
+O pacote 'virtualbox-guest-modules-hwe' não está instalado, por isso não será removido
+O pacote 'virtualbox-ose' não está instalado, por isso não será removido
+O pacote 'virtualbox-ext-pack' não está instalado, por isso não será removido
+O pacote 'virtualbox-guest-dkms-hwe' não está instalado, por isso não será removido
+O pacote 'virtualbox-guest-source' não está instalado, por isso não será removido
+O pacote 'virtualbox-guest-source-hwe' não está instalado, por isso não será removido
+O pacote 'virtualbox-guest-utils-hwe' não está instalado, por isso não será removido
+O pacote 'virtualbox-guest-x11-hwe' não está instalado, por isso não será removido
+O pacote 'virtualbox-source' não está instalado, por isso não será removido
+O pacote 'virtualbox-6.0' não está instalado, por isso não será removido
+O pacote 'virtualbox-6.1' não está instalado, por isso não será removido
+Os seguintes pacotes foram instalados automaticamente e já não são necessários:
+  libdouble-conversion3 libgsoap-2.8.91 liblzf1 libpcre2-16-0 libqt5core5a libqt5dbus5 libqt5gui5 libqt5network5
+  libqt5opengl5 libqt5printsupport5 libqt5svg5 libqt5widgets5 libqt5x11extras5 libvncserver1 libxcb-xinerama0 libxcb-xinput0
+  qt5-gtk-platformtheme qttranslations5-l10n
+Utilize 'sudo apt autoremove' para os remover.
+Os pacotes a seguir serão REMOVIDOS:
+  virtualbox* virtualbox-dkms* virtualbox-guest-additions-iso* virtualbox-guest-dkms* virtualbox-guest-utils*
+  virtualbox-guest-x11* virtualbox-qt*
+0 pacotes atualizados, 0 pacotes novos instalados, 7 a serem removidos e 12 não atualizados.
+Depois desta operação, 254 MB de espaço em disco serão liberados.
+
+7[0;13r8[1A(Lendo banco de dados ... (Lendo banco de dados ... 5%(Lendo banco de dados ... 10%(Lendo banco de dados ... 15%(Lendo banco de dados ... 20%(Lendo banco de dados ... 25%(Lendo banco de dados ... 30%(Lendo banco de dados ... 35%(Lendo banco de dados ... 40%(Lendo banco de dados ... 45%(Lendo banco de dados ... 50%(Lendo banco de dados ... 55%(Lendo banco de dados ... 60%(Lendo banco de dados ... 65%(Lendo banco de dados ... 70%(Lendo banco de dados ... 75%(Lendo banco de dados ... 80%(Lendo banco de dados ... 85%(Lendo banco de dados ... 90%(Lendo banco de dados ... 95%(Lendo banco de dados ... 100%(Lendo banco de dados ... 245835 ficheiros e directórios actualmente instalados.)
+A remover virtualbox-qt (6.1.16-dfsg-6~ubuntu1.20.04.1) ...
+7[14;0fProgress: [  0%] [.........................................................................................................] 87[14;0fProgress: [  3%] [###......................................................................................................] 87[14;0fProgress: [  7%] [#######..................................................................................................] 87[14;0fProgress: [ 10%] [##########...............................................................................................] 8A remover virtualbox (6.1.16-dfsg-6~ubuntu1.20.04.1) ...
+7[14;0fProgress: [ 14%] [##############...........................................................................................] 87[14;0fProgress: [ 17%] [##################.......................................................................................] 87[14;0fProgress: [ 21%] [#####################....................................................................................] 8A remover virtualbox-dkms (6.1.16-dfsg-6~ubuntu1.20.04.1) ...
+7[14;0fProgress: [ 24%] [#########################................................................................................] 8
+-------- Uninstall Beginning --------
+Module:  virtualbox
+Version: 6.1.16
+Kernel:  5.4.0-70-generic (x86_64)
+-------------------------------------
+
+Status: Before uninstall, this module version was ACTIVE on this kernel.
+
+vboxdrv.ko:
+ - Uninstallation
+   - Deleting from: /lib/modules/5.4.0-70-generic/updates/dkms/
+ - Original module
+   - No original module was found for this module on this kernel.
+   - Use the dkms install command to reinstall any previous module version.
+
+
+vboxnetadp.ko:
+ - Uninstallation
+   - Deleting from: /lib/modules/5.4.0-70-generic/updates/dkms/
+ - Original module
+   - No original module was found for this module on this kernel.
+   - Use the dkms install command to reinstall any previous module version.
+
+
+vboxnetflt.ko:
+ - Uninstallation
+   - Deleting from: /lib/modules/5.4.0-70-generic/updates/dkms/
+ - Original module
+   - No original module was found for this module on this kernel.
+   - Use the dkms install command to reinstall any previous module version.
+
+depmod...
+
+DKMS: uninstall completed.
+
+-------- Uninstall Beginning --------
+Module:  virtualbox
+Version: 6.1.16
+Kernel:  5.8.0-45-generic (x86_64)
+-------------------------------------
+
+Status: Before uninstall, this module version was ACTIVE on this kernel.
+
+vboxdrv.ko:
+ - Uninstallation
+   - Deleting from: /lib/modules/5.8.0-45-generic/updates/dkms/
+ - Original module
+   - No original module was found for this module on this kernel.
+   - Use the dkms install command to reinstall any previous module version.
+
+
+vboxnetadp.ko:
+ - Uninstallation
+   - Deleting from: /lib/modules/5.8.0-45-generic/updates/dkms/
+ - Original module
+   - No original module was found for this module on this kernel.
+   - Use the dkms install command to reinstall any previous module version.
+
+
+vboxnetflt.ko:
+ - Uninstallation
+   - Deleting from: /lib/modules/5.8.0-45-generic/updates/dkms/
+ - Original module
+   - No original module was found for this module on this kernel.
+   - Use the dkms install command to reinstall any previous module version.
+
+depmod...
+
+DKMS: uninstall completed.
+
+------------------------------
+Deleting module version: 6.1.16
+completely from the DKMS tree.
+------------------------------
+Done.
+7[14;0fProgress: [ 28%] [############################.............................................................................] 87[14;0fProgress: [ 31%] [################################.........................................................................] 87[14;0fProgress: [ 34%] [####################################.....................................................................] 8A remover virtualbox-guest-additions-iso (6.1.16-1~ubuntu1.20.04.1) ...
+7[14;0fProgress: [ 38%] [#######################################..................................................................] 87[14;0fProgress: [ 41%] [###########################################..............................................................] 87[14;0fProgress: [ 45%] [###############################################..........................................................] 87[14;0fProgress: [ 48%] [##################################################.......................................................] 8A remover virtualbox-guest-x11 (6.1.16-dfsg-6~ubuntu1.20.04.1) ...
+7[14;0fProgress: [ 52%] [######################################################...................................................] 87[14;0fProgress: [ 55%] [#########################################################................................................] 87[14;0fProgress: [ 59%] [#############################################################............................................] 8A remover virtualbox-guest-utils (6.1.16-dfsg-6~ubuntu1.20.04.1) ...
+7[14;0fProgress: [ 62%] [#################################################################........................................] 87[14;0fProgress: [ 66%] [####################################################################.....................................] 87[14;0fProgress: [ 69%] [########################################################################.................................] 8A remover virtualbox-guest-dkms (6.1.16-dfsg-6~ubuntu1.20.04.1) ...
+7[14;0fProgress: [ 72%] [############################################################################.............................] 8
+-------- Uninstall Beginning --------
+Module:  virtualbox-guest
+Version: 6.1.16
+Kernel:  5.4.0-70-generic (x86_64)
+-------------------------------------
+
+Status: Before uninstall, this module version was ACTIVE on this kernel.
+
+vboxguest.ko:
+ - Uninstallation
+   - Deleting from: /lib/modules/5.4.0-70-generic/
+rmdir: falhou em remover '': Arquivo ou diretório inexistente
+ - Original module
+   - No original module was found for this module on this kernel.
+   - Use the dkms install command to reinstall any previous module version.
+
+
+vboxsf.ko:
+ - Uninstallation
+   - Deleting from: /lib/modules/5.4.0-70-generic/
+rmdir: falhou em remover '': Arquivo ou diretório inexistente
+ - Original module
+   - No original module was found for this module on this kernel.
+   - Use the dkms install command to reinstall any previous module version.
+
+
+vboxvideo.ko:
+ - Uninstallation
+   - Deleting from: /lib/modules/5.4.0-70-generic/updates/dkms/
+ - Original module
+   - No original module was found for this module on this kernel.
+   - Use the dkms install command to reinstall any previous module version.
+
+depmod...
+
+DKMS: uninstall completed.
+
+-------- Uninstall Beginning --------
+Module:  virtualbox-guest
+Version: 6.1.16
+Kernel:  5.8.0-45-generic (x86_64)
+-------------------------------------
+
+Status: Before uninstall, this module version was ACTIVE on this kernel.
+
+vboxguest.ko:
+ - Uninstallation
+   - Deleting from: /lib/modules/5.8.0-45-generic/updates/dkms/
+ - Original module
+   - No original module was found for this module on this kernel.
+   - Use the dkms install command to reinstall any previous module version.
+
+
+vboxsf.ko:
+ - Uninstallation
+   - Deleting from: /lib/modules/5.8.0-45-generic/updates/dkms/
+ - Original module
+   - No original module was found for this module on this kernel.
+   - Use the dkms install command to reinstall any previous module version.
+
+
+vboxvideo.ko:
+ - Uninstallation
+   - Deleting from: /lib/modules/5.8.0-45-generic/updates/dkms/
+ - Original module
+   - No original module was found for this module on this kernel.
+   - Use the dkms install command to reinstall any previous module version.
+
+depmod...
+
+DKMS: uninstall completed.
+
+------------------------------
+Deleting module version: 6.1.16
+completely from the DKMS tree.
+------------------------------
+Done.
+7[14;0fProgress: [ 76%] [###############################################################################..........................] 87[14;0fProgress: [ 79%] [###################################################################################......................] 87[14;0fProgress: [ 83%] [######################################################################################...................] 8A processar 'triggers' para mime-support (3.64ubuntu1) ...
+A processar 'triggers' para hicolor-icon-theme (0.17-2) ...
+A processar 'triggers' para gnome-menus (3.36.0-1ubuntu1) ...
+A processar 'triggers' para libc-bin (2.31-0ubuntu9.2) ...
+A processar 'triggers' para man-db (2.9.1-1) ...
+A processar 'triggers' para shared-mime-info (1.15-1) ...
+A processar 'triggers' para desktop-file-utils (0.24-1ubuntu3) ...
+(Lendo banco de dados ... (Lendo banco de dados ... 5%(Lendo banco de dados ... 10%(Lendo banco de dados ... 15%(Lendo banco de dados ... 20%(Lendo banco de dados ... 25%(Lendo banco de dados ... 30%(Lendo banco de dados ... 35%(Lendo banco de dados ... 40%(Lendo banco de dados ... 45%(Lendo banco de dados ... 50%(Lendo banco de dados ... 55%(Lendo banco de dados ... 60%(Lendo banco de dados ... 65%(Lendo banco de dados ... 70%(Lendo banco de dados ... 75%(Lendo banco de dados ... 80%(Lendo banco de dados ... 85%(Lendo banco de dados ... 90%(Lendo banco de dados ... 95%(Lendo banco de dados ... 100%(Lendo banco de dados ... 244846 ficheiros e directórios actualmente instalados.)
+A purgar os ficheiros de configuração para virtualbox-guest-x11 (6.1.16-dfsg-6~ubuntu1.20.04.1) ...
+7[14;0fProgress: [ 86%] [##########################################################################################...............] 8A purgar os ficheiros de configuração para virtualbox-guest-utils (6.1.16-dfsg-6~ubuntu1.20.04.1) ...
+7[14;0fProgress: [ 90%] [##############################################################################################...........] 8A purgar os ficheiros de configuração para virtualbox-qt (6.1.16-dfsg-6~ubuntu1.20.04.1) ...
+7[14;0fProgress: [ 93%] [#################################################################################################........] 8A purgar os ficheiros de configuração para virtualbox (6.1.16-dfsg-6~ubuntu1.20.04.1) ...
+dpkg: aviso: ao remover virtualbox, o directório '/usr/lib/virtualbox/ExtensionPacks' não estava vazio, por isso não foi removido
+7[14;0fProgress: [ 97%] [#####################################################################################################....] 8A processar 'triggers' para systemd (245.4-4ubuntu3.5) ...
+
+7[0;14r8[1A[JLendo listas de pacotes... 0%Lendo listas de pacotes... 100%Lendo listas de pacotes... Pronto
+Construindo árvore de dependências... 0%Construindo árvore de dependências... 0%Construindo árvore de dependências... 50%Construindo árvore de dependências... 50%Construindo árvore de dependências       
+Lendo informação de estado... 0%  Lendo informação de estado... 0%Lendo informação de estado... Pronto
+Os pacotes a seguir serão REMOVIDOS:
+  libdouble-conversion3 libgsoap-2.8.91 liblzf1 libpcre2-16-0 libqt5core5a libqt5dbus5 libqt5gui5 libqt5network5
+  libqt5opengl5 libqt5printsupport5 libqt5svg5 libqt5widgets5 libqt5x11extras5 libvncserver1 libxcb-xinerama0 libxcb-xinput0
+  qt5-gtk-platformtheme qttranslations5-l10n
+0 pacotes atualizados, 0 pacotes novos instalados, 18 a serem removidos e 12 não atualizados.
+Depois desta operação, 47,2 MB de espaço em disco serão liberados.
+
+7[0;13r8[1A(Lendo banco de dados ... (Lendo banco de dados ... 5%(Lendo banco de dados ... 10%(Lendo banco de dados ... 15%(Lendo banco de dados ... 20%(Lendo banco de dados ... 25%(Lendo banco de dados ... 30%(Lendo banco de dados ... 35%(Lendo banco de dados ... 40%(Lendo banco de dados ... 45%(Lendo banco de dados ... 50%(Lendo banco de dados ... 55%(Lendo banco de dados ... 60%(Lendo banco de dados ... 65%(Lendo banco de dados ... 70%(Lendo banco de dados ... 75%(Lendo banco de dados ... 80%(Lendo banco de dados ... 85%(Lendo banco de dados ... 90%(Lendo banco de dados ... 95%(Lendo banco de dados ... 100%(Lendo banco de dados ... 244840 ficheiros e directórios actualmente instalados.)
+A remover qt5-gtk-platformtheme:amd64 (5.12.8+dfsg-0ubuntu1) ...
+7[14;0fProgress: [  0%] [.........................................................................................................] 87[14;0fProgress: [  3%] [##.......................................................................................................] 87[14;0fProgress: [  5%] [#####....................................................................................................] 8A remover libqt5svg5:amd64 (5.12.8-0ubuntu1) ...
+7[14;0fProgress: [  8%] [########.................................................................................................] 87[14;0fProgress: [ 11%] [###########..............................................................................................] 8A remover libqt5printsupport5:amd64 (5.12.8+dfsg-0ubuntu1) ...
+7[14;0fProgress: [ 14%] [##############...........................................................................................] 87[14;0fProgress: [ 16%] [#################........................................................................................] 8A remover libqt5x11extras5:amd64 (5.12.8-0ubuntu1) ...
+7[14;0fProgress: [ 19%] [###################......................................................................................] 87[14;0fProgress: [ 22%] [######################...................................................................................] 8A remover libqt5opengl5:amd64 (5.12.8+dfsg-0ubuntu1) ...
+7[14;0fProgress: [ 24%] [#########################................................................................................] 87[14;0fProgress: [ 27%] [############################.............................................................................] 8A remover libgsoap-2.8.91:amd64 (2.8.91-2) ...
+7[14;0fProgress: [ 30%] [###############################..........................................................................] 87[14;0fProgress: [ 32%] [##################################.......................................................................] 8A remover liblzf1:amd64 (3.6-2~ubuntu1.20.04.1) ...
+7[14;0fProgress: [ 35%] [####################################.....................................................................] 87[14;0fProgress: [ 38%] [#######################################..................................................................] 8A remover libvncserver1:amd64 (0.9.12+dfsg-9ubuntu0.3) ...
+7[14;0fProgress: [ 41%] [##########################################...............................................................] 87[14;0fProgress: [ 43%] [#############################################............................................................] 8A remover qttranslations5-l10n (5.12.8-0ubuntu1) ...
+7[14;0fProgress: [ 46%] [################################################.........................................................] 87[14;0fProgress: [ 49%] [###################################################......................................................] 8A remover libqt5widgets5:amd64 (5.12.8+dfsg-0ubuntu1) ...
+7[14;0fProgress: [ 51%] [#####################################################....................................................] 87[14;0fProgress: [ 54%] [########################################################.................................................] 8A remover libqt5gui5:amd64 (5.12.8+dfsg-0ubuntu1) ...
+7[14;0fProgress: [ 57%] [###########################################################..............................................] 87[14;0fProgress: [ 59%] [##############################################################...........................................] 8A remover libqt5network5:amd64 (5.12.8+dfsg-0ubuntu1) ...
+7[14;0fProgress: [ 62%] [#################################################################........................................] 87[14;0fProgress: [ 65%] [####################################################################.....................................] 8A remover libqt5dbus5:amd64 (5.12.8+dfsg-0ubuntu1) ...
+7[14;0fProgress: [ 68%] [######################################################################...................................] 87[14;0fProgress: [ 70%] [#########################################################################................................] 8A remover libxcb-xinerama0:amd64 (1.14-2) ...
+7[14;0fProgress: [ 73%] [############################################################################.............................] 87[14;0fProgress: [ 76%] [###############################################################################..........................] 8A remover libxcb-xinput0:amd64 (1.14-2) ...
+7[14;0fProgress: [ 78%] [##################################################################################.......................] 87[14;0fProgress: [ 81%] [#####################################################################################....................] 8A remover libqt5core5a:amd64 (5.12.8+dfsg-0ubuntu1) ...
+7[14;0fProgress: [ 84%] [#######################################################################################..................] 87[14;0fProgress: [ 86%] [##########################################################################################...............] 8A remover libdouble-conversion3:amd64 (3.1.5-4ubuntu1) ...
+7[14;0fProgress: [ 89%] [#############################################################################################............] 87[14;0fProgress: [ 92%] [################################################################################################.........] 8A remover libpcre2-16-0:amd64 (10.34-7) ...
+7[14;0fProgress: [ 95%] [###################################################################################################......] 87[14;0fProgress: [ 97%] [######################################################################################################...] 8A processar 'triggers' para libc-bin (2.31-0ubuntu9.2) ...
+
+7[0;14r8[1A[J==> Instalar o VirtualBox
+Lendo listas de pacotes... 0%Lendo listas de pacotes... 100%Lendo listas de pacotes... Pronto
+Construindo árvore de dependências... 0%Construindo árvore de dependências... 0%Construindo árvore de dependências... 50%Construindo árvore de dependências... 50%Construindo árvore de dependências       
+Lendo informação de estado... 0%  Lendo informação de estado... 0%Lendo informação de estado... Pronto
+The following additional packages will be installed:
+  libdouble-conversion3 libgsoap-2.8.91 liblzf1 libpcre2-16-0 libqt5core5a libqt5dbus5 libqt5gui5 libqt5network5
+  libqt5opengl5 libqt5printsupport5 libqt5svg5 libqt5widgets5 libqt5x11extras5 libvncserver1 libxcb-xinerama0 libxcb-xinput0
+  qt5-gtk-platformtheme qttranslations5-l10n virtualbox-dkms virtualbox-qt
+Pacotes sugeridos:
+  qt5-image-formats-plugins qtwayland5 vde2 virtualbox-guest-additions-iso
+Os NOVOS pacotes a seguir serão instalados:
+  libdouble-conversion3 libgsoap-2.8.91 liblzf1 libpcre2-16-0 libqt5core5a libqt5dbus5 libqt5gui5 libqt5network5
+  libqt5opengl5 libqt5printsupport5 libqt5svg5 libqt5widgets5 libqt5x11extras5 libvncserver1 libxcb-xinerama0 libxcb-xinput0
+  qt5-gtk-platformtheme qttranslations5-l10n virtualbox virtualbox-dkms virtualbox-qt
+0 pacotes atualizados, 21 pacotes novos instalados, 0 a serem removidos e 12 não atualizados.
+É preciso baixar 231 kB/54,7 MB de arquivos.
+Depois desta operação, 225 MB adicionais de espaço em disco serão usados.
+99% [Trabalhando]                 Obter:1 http://br.archive.ubuntu.com/ubuntu focal/universe amd64 libgsoap-2.8.91 amd64 2.8.91-2 [231 kB]
+99% [1 libgsoap-2.8.91 5.466 B/231 kB 2%]                                         100% [Trabalhando]                  Baixados 231 kB em 0s (1.731 kB/s)
+
+7[0;13r8[1AA seleccionar pacote anteriormente não seleccionado libdouble-conversion3:amd64.
+(Lendo banco de dados ... (Lendo banco de dados ... 5%(Lendo banco de dados ... 10%(Lendo banco de dados ... 15%(Lendo banco de dados ... 20%(Lendo banco de dados ... 25%(Lendo banco de dados ... 30%(Lendo banco de dados ... 35%(Lendo banco de dados ... 40%(Lendo banco de dados ... 45%(Lendo banco de dados ... 50%(Lendo banco de dados ... 55%(Lendo banco de dados ... 60%(Lendo banco de dados ... 65%(Lendo banco de dados ... 70%(Lendo banco de dados ... 75%(Lendo banco de dados ... 80%(Lendo banco de dados ... 85%(Lendo banco de dados ... 90%(Lendo banco de dados ... 95%(Lendo banco de dados ... 100%(Lendo banco de dados ... 244407 ficheiros e directórios actualmente instalados.)
+A preparar para desempacotar .../00-libdouble-conversion3_3.1.5-4ubuntu1_amd64.deb ...
+7[14;0fProgress: [  0%] [.........................................................................................................] 87[14;0fProgress: [  1%] [#........................................................................................................] 8A descompactar libdouble-conversion3:amd64 (3.1.5-4ubuntu1) ...
+7[14;0fProgress: [  2%] [##.......................................................................................................] 8A seleccionar pacote anteriormente não seleccionado libpcre2-16-0:amd64.
+A preparar para desempacotar .../01-libpcre2-16-0_10.34-7_amd64.deb ...
+7[14;0fProgress: [  4%] [###......................................................................................................] 8A descompactar libpcre2-16-0:amd64 (10.34-7) ...
+7[14;0fProgress: [  5%] [####.....................................................................................................] 8A seleccionar pacote anteriormente não seleccionado libqt5core5a:amd64.
+A preparar para desempacotar .../02-libqt5core5a_5.12.8+dfsg-0ubuntu1_amd64.deb ...
+7[14;0fProgress: [  6%] [######...................................................................................................] 8A descompactar libqt5core5a:amd64 (5.12.8+dfsg-0ubuntu1) ...
+7[14;0fProgress: [  7%] [#######..................................................................................................] 8A seleccionar pacote anteriormente não seleccionado libqt5dbus5:amd64.
+A preparar para desempacotar .../03-libqt5dbus5_5.12.8+dfsg-0ubuntu1_amd64.deb ...
+7[14;0fProgress: [  8%] [########.................................................................................................] 8A descompactar libqt5dbus5:amd64 (5.12.8+dfsg-0ubuntu1) ...
+7[14;0fProgress: [  9%] [#########................................................................................................] 8A seleccionar pacote anteriormente não seleccionado libqt5network5:amd64.
+A preparar para desempacotar .../04-libqt5network5_5.12.8+dfsg-0ubuntu1_amd64.deb ...
+7[14;0fProgress: [ 11%] [###########..............................................................................................] 8A descompactar libqt5network5:amd64 (5.12.8+dfsg-0ubuntu1) ...
+7[14;0fProgress: [ 12%] [############.............................................................................................] 8A seleccionar pacote anteriormente não seleccionado libxcb-xinerama0:amd64.
+A preparar para desempacotar .../05-libxcb-xinerama0_1.14-2_amd64.deb ...
+7[14;0fProgress: [ 13%] [#############............................................................................................] 8A descompactar libxcb-xinerama0:amd64 (1.14-2) ...
+7[14;0fProgress: [ 14%] [##############...........................................................................................] 8A seleccionar pacote anteriormente não seleccionado libxcb-xinput0:amd64.
+A preparar para desempacotar .../06-libxcb-xinput0_1.14-2_amd64.deb ...
+7[14;0fProgress: [ 15%] [################.........................................................................................] 8A descompactar libxcb-xinput0:amd64 (1.14-2) ...
+7[14;0fProgress: [ 16%] [#################........................................................................................] 8A seleccionar pacote anteriormente não seleccionado libqt5gui5:amd64.
+A preparar para desempacotar .../07-libqt5gui5_5.12.8+dfsg-0ubuntu1_amd64.deb ...
+7[14;0fProgress: [ 18%] [##################.......................................................................................] 8A descompactar libqt5gui5:amd64 (5.12.8+dfsg-0ubuntu1) ...
+7[14;0fProgress: [ 19%] [###################......................................................................................] 8A seleccionar pacote anteriormente não seleccionado libqt5widgets5:amd64.
+A preparar para desempacotar .../08-libqt5widgets5_5.12.8+dfsg-0ubuntu1_amd64.deb ...
+7[14;0fProgress: [ 20%] [#####################....................................................................................] 8A descompactar libqt5widgets5:amd64 (5.12.8+dfsg-0ubuntu1) ...
+7[14;0fProgress: [ 21%] [######################...................................................................................] 8A seleccionar pacote anteriormente não seleccionado libqt5svg5:amd64.
+A preparar para desempacotar .../09-libqt5svg5_5.12.8-0ubuntu1_amd64.deb ...
+7[14;0fProgress: [ 22%] [#######################..................................................................................] 8A descompactar libqt5svg5:amd64 (5.12.8-0ubuntu1) ...
+7[14;0fProgress: [ 24%] [########################.................................................................................] 8A seleccionar pacote anteriormente não seleccionado libgsoap-2.8.91:amd64.
+A preparar para desempacotar .../10-libgsoap-2.8.91_2.8.91-2_amd64.deb ...
+7[14;0fProgress: [ 25%] [#########################................................................................................] 8A descompactar libgsoap-2.8.91:amd64 (2.8.91-2) ...
+7[14;0fProgress: [ 26%] [###########################..............................................................................] 8A seleccionar pacote anteriormente não seleccionado liblzf1:amd64.
+A preparar para desempacotar .../11-liblzf1_3.6-2~ubuntu1.20.04.1_amd64.deb ...
+7[14;0fProgress: [ 27%] [############################.............................................................................] 8A descompactar liblzf1:amd64 (3.6-2~ubuntu1.20.04.1) ...
+7[14;0fProgress: [ 28%] [#############################............................................................................] 8A seleccionar pacote anteriormente não seleccionado libqt5opengl5:amd64.
+A preparar para desempacotar .../12-libqt5opengl5_5.12.8+dfsg-0ubuntu1_amd64.deb ...
+7[14;0fProgress: [ 29%] [##############################...........................................................................] 8A descompactar libqt5opengl5:amd64 (5.12.8+dfsg-0ubuntu1) ...
+7[14;0fProgress: [ 31%] [################################.........................................................................] 8A seleccionar pacote anteriormente não seleccionado libqt5printsupport5:amd64.
+A preparar para desempacotar .../13-libqt5printsupport5_5.12.8+dfsg-0ubuntu1_amd64.deb ...
+7[14;0fProgress: [ 32%] [#################################........................................................................] 8A descompactar libqt5printsupport5:amd64 (5.12.8+dfsg-0ubuntu1) ...
+7[14;0fProgress: [ 33%] [##################################.......................................................................] 8A seleccionar pacote anteriormente não seleccionado libqt5x11extras5:amd64.
+A preparar para desempacotar .../14-libqt5x11extras5_5.12.8-0ubuntu1_amd64.deb ...
+7[14;0fProgress: [ 34%] [###################################......................................................................] 8A descompactar libqt5x11extras5:amd64 (5.12.8-0ubuntu1) ...
+7[14;0fProgress: [ 35%] [#####################################....................................................................] 8A seleccionar pacote anteriormente não seleccionado libvncserver1:amd64.
+A preparar para desempacotar .../15-libvncserver1_0.9.12+dfsg-9ubuntu0.3_amd64.deb ...
+7[14;0fProgress: [ 36%] [######################################...................................................................] 8A descompactar libvncserver1:amd64 (0.9.12+dfsg-9ubuntu0.3) ...
+7[14;0fProgress: [ 38%] [#######################################..................................................................] 8A seleccionar pacote anteriormente não seleccionado qt5-gtk-platformtheme:amd64.
+A preparar para desempacotar .../16-qt5-gtk-platformtheme_5.12.8+dfsg-0ubuntu1_amd64.deb ...
+7[14;0fProgress: [ 39%] [########################################.................................................................] 8A descompactar qt5-gtk-platformtheme:amd64 (5.12.8+dfsg-0ubuntu1) ...
+7[14;0fProgress: [ 40%] [##########################################...............................................................] 8A seleccionar pacote anteriormente não seleccionado qttranslations5-l10n.
+A preparar para desempacotar .../17-qttranslations5-l10n_5.12.8-0ubuntu1_all.deb ...
+7[14;0fProgress: [ 41%] [###########################################..............................................................] 8A descompactar qttranslations5-l10n (5.12.8-0ubuntu1) ...
+7[14;0fProgress: [ 42%] [############################################.............................................................] 8A seleccionar pacote anteriormente não seleccionado virtualbox-dkms.
+A preparar para desempacotar .../18-virtualbox-dkms_6.1.16-dfsg-6~ubuntu1.20.04.1_amd64.deb ...
+7[14;0fProgress: [ 44%] [#############################################............................................................] 8A descompactar virtualbox-dkms (6.1.16-dfsg-6~ubuntu1.20.04.1) ...
+7[14;0fProgress: [ 45%] [##############################################...........................................................] 8A seleccionar pacote anteriormente não seleccionado virtualbox.
+A preparar para desempacotar .../19-virtualbox_6.1.16-dfsg-6~ubuntu1.20.04.1_amd64.deb ...
+7[14;0fProgress: [ 46%] [################################################.........................................................] 8A descompactar virtualbox (6.1.16-dfsg-6~ubuntu1.20.04.1) ...
+7[14;0fProgress: [ 47%] [#################################################........................................................] 8A seleccionar pacote anteriormente não seleccionado virtualbox-qt.
+A preparar para desempacotar .../20-virtualbox-qt_6.1.16-dfsg-6~ubuntu1.20.04.1_amd64.deb ...
+7[14;0fProgress: [ 48%] [##################################################.......................................................] 8A descompactar virtualbox-qt (6.1.16-dfsg-6~ubuntu1.20.04.1) ...
+7[14;0fProgress: [ 49%] [###################################################......................................................] 8Configurando libdouble-conversion3:amd64 (3.1.5-4ubuntu1) ...
+7[14;0fProgress: [ 51%] [#####################################################....................................................] 87[14;0fProgress: [ 52%] [######################################################...................................................] 8Configurando libxcb-xinput0:amd64 (1.14-2) ...
+7[14;0fProgress: [ 53%] [#######################################################..................................................] 87[14;0fProgress: [ 54%] [########################################################.................................................] 8Configurando libpcre2-16-0:amd64 (10.34-7) ...
+7[14;0fProgress: [ 55%] [##########################################################...............................................] 87[14;0fProgress: [ 56%] [###########################################################..............................................] 8Configurando libvncserver1:amd64 (0.9.12+dfsg-9ubuntu0.3) ...
+7[14;0fProgress: [ 58%] [############################################################.............................................] 87[14;0fProgress: [ 59%] [#############################################################............................................] 8Configurando libxcb-xinerama0:amd64 (1.14-2) ...
+7[14;0fProgress: [ 60%] [###############################################################..........................................] 87[14;0fProgress: [ 61%] [################################################################.........................................] 8Configurando qttranslations5-l10n (5.12.8-0ubuntu1) ...
+7[14;0fProgress: [ 62%] [#################################################################........................................] 87[14;0fProgress: [ 64%] [##################################################################.......................................] 8Configurando liblzf1:amd64 (3.6-2~ubuntu1.20.04.1) ...
+7[14;0fProgress: [ 65%] [###################################################################......................................] 87[14;0fProgress: [ 66%] [#####################################################################....................................] 8Configurando libqt5core5a:amd64 (5.12.8+dfsg-0ubuntu1) ...
+7[14;0fProgress: [ 67%] [######################################################################...................................] 87[14;0fProgress: [ 68%] [#######################################################################..................................] 8Configurando libqt5dbus5:amd64 (5.12.8+dfsg-0ubuntu1) ...
+7[14;0fProgress: [ 69%] [########################################################################.................................] 87[14;0fProgress: [ 71%] [##########################################################################...............................] 8Configurando libgsoap-2.8.91:amd64 (2.8.91-2) ...
+7[14;0fProgress: [ 72%] [###########################################################################..............................] 87[14;0fProgress: [ 73%] [############################################################################.............................] 8Configurando virtualbox-dkms (6.1.16-dfsg-6~ubuntu1.20.04.1) ...
+7[14;0fProgress: [ 74%] [#############################################################################............................] 8Loading new virtualbox-6.1.16 DKMS files...
+Building for 5.8.0-45-generic
+Building initial module for 5.8.0-45-generic
+This system doesn't support Secure Boot
+Secure Boot not enabled on this system.
+Done.
+
+vboxdrv.ko:
+Running module version sanity check.
+ - Original module
+   - No original module exists within this kernel
+ - Installation
+   - Installing to /lib/modules/5.8.0-45-generic/updates/dkms/
+
+vboxnetadp.ko:
+Running module version sanity check.
+ - Original module
+   - No original module exists within this kernel
+ - Installation
+   - Installing to /lib/modules/5.8.0-45-generic/updates/dkms/
+
+vboxnetflt.ko:
+Running module version sanity check.
+ - Original module
+   - No original module exists within this kernel
+ - Installation
+   - Installing to /lib/modules/5.8.0-45-generic/updates/dkms/
+
+depmod...
+
+DKMS: install completed.
+7[14;0fProgress: [ 75%] [###############################################################################..........................] 8Configurando libqt5network5:amd64 (5.12.8+dfsg-0ubuntu1) ...
+7[14;0fProgress: [ 76%] [################################################################################.........................] 87[14;0fProgress: [ 78%] [#################################################################################........................] 8Configurando virtualbox (6.1.16-dfsg-6~ubuntu1.20.04.1) ...
+7[14;0fProgress: [ 79%] [##################################################################################.......................] 8Created symlink /etc/systemd/system/multi-user.target.wants/vboxweb.service → /lib/systemd/system/vboxweb.service.
+Job for vboxweb.service failed because the service did not take the steps required by its unit configuration.
+See "systemctl status vboxweb.service" and "journalctl -xe" for details.
+7[14;0fProgress: [ 80%] [####################################################################################.....................] 8Configurando libqt5gui5:amd64 (5.12.8+dfsg-0ubuntu1) ...
+7[14;0fProgress: [ 81%] [#####################################################################################....................] 87[14;0fProgress: [ 82%] [######################################################################################...................] 8Configurando libqt5widgets5:amd64 (5.12.8+dfsg-0ubuntu1) ...
+7[14;0fProgress: [ 84%] [#######################################################################################..................] 87[14;0fProgress: [ 85%] [########################################################################################.................] 8Configurando qt5-gtk-platformtheme:amd64 (5.12.8+dfsg-0ubuntu1) ...
+7[14;0fProgress: [ 86%] [##########################################################################################...............] 87[14;0fProgress: [ 87%] [###########################################################################################..............] 8Configurando libqt5printsupport5:amd64 (5.12.8+dfsg-0ubuntu1) ...
+7[14;0fProgress: [ 88%] [############################################################################################.............] 87[14;0fProgress: [ 89%] [#############################################################################################............] 8Configurando libqt5opengl5:amd64 (5.12.8+dfsg-0ubuntu1) ...
+7[14;0fProgress: [ 91%] [###############################################################################################..........] 87[14;0fProgress: [ 92%] [################################################################################################.........] 8Configurando libqt5x11extras5:amd64 (5.12.8-0ubuntu1) ...
+7[14;0fProgress: [ 93%] [#################################################################################################........] 87[14;0fProgress: [ 94%] [##################################################################################################.......] 8Configurando libqt5svg5:amd64 (5.12.8-0ubuntu1) ...
+7[14;0fProgress: [ 95%] [####################################################################################################.....] 87[14;0fProgress: [ 96%] [#####################################################################################################....] 8Configurando virtualbox-qt (6.1.16-dfsg-6~ubuntu1.20.04.1) ...
+7[14;0fProgress: [ 98%] [######################################################################################################...] 87[14;0fProgress: [ 99%] [#######################################################################################################..] 8A processar 'triggers' para desktop-file-utils (0.24-1ubuntu3) ...
+A processar 'triggers' para mime-support (3.64ubuntu1) ...
+A processar 'triggers' para hicolor-icon-theme (0.17-2) ...
+A processar 'triggers' para gnome-menus (3.36.0-1ubuntu1) ...
+A processar 'triggers' para libc-bin (2.31-0ubuntu9.2) ...
+A processar 'triggers' para systemd (245.4-4ubuntu3.5) ...
+A processar 'triggers' para man-db (2.9.1-1) ...
+A processar 'triggers' para shared-mime-info (1.15-1) ...
+
+7[0;14r8[1A[JLendo listas de pacotes... 0%Lendo listas de pacotes... 100%Lendo listas de pacotes... Pronto
+Construindo árvore de dependências... 0%Construindo árvore de dependências... 0%Construindo árvore de dependências... 50%Construindo árvore de dependências... 50%Construindo árvore de dependências       
+Lendo informação de estado... 0%  Lendo informação de estado... 0%Lendo informação de estado... Pronto
+The following additional packages will be installed:
+  virtualbox-guest-utils
+Os NOVOS pacotes a seguir serão instalados:
+  virtualbox-guest-dkms virtualbox-guest-utils virtualbox-guest-x11
+0 pacotes atualizados, 3 pacotes novos instalados, 0 a serem removidos e 12 não atualizados.
+É preciso baixar 0 B/2.087 kB de arquivos.
+Depois desta operação, 15,7 MB adicionais de espaço em disco serão usados.
+
+7[0;13r8[1AA seleccionar pacote anteriormente não seleccionado virtualbox-guest-dkms.
+(Lendo banco de dados ... (Lendo banco de dados ... 5%(Lendo banco de dados ... 10%(Lendo banco de dados ... 15%(Lendo banco de dados ... 20%(Lendo banco de dados ... 25%(Lendo banco de dados ... 30%(Lendo banco de dados ... 35%(Lendo banco de dados ... 40%(Lendo banco de dados ... 45%(Lendo banco de dados ... 50%(Lendo banco de dados ... 55%(Lendo banco de dados ... 60%(Lendo banco de dados ... 65%(Lendo banco de dados ... 70%(Lendo banco de dados ... 75%(Lendo banco de dados ... 80%(Lendo banco de dados ... 85%(Lendo banco de dados ... 90%(Lendo banco de dados ... 95%(Lendo banco de dados ... 100%(Lendo banco de dados ... 245484 ficheiros e directórios actualmente instalados.)
+A preparar para desempacotar .../virtualbox-guest-dkms_6.1.16-dfsg-6~ubuntu1.20.04.1_all.deb ...
+7[14;0fProgress: [  0%] [.........................................................................................................] 87[14;0fProgress: [  8%] [########.................................................................................................] 8A descompactar virtualbox-guest-dkms (6.1.16-dfsg-6~ubuntu1.20.04.1) ...
+7[14;0fProgress: [ 15%] [################.........................................................................................] 8A seleccionar pacote anteriormente não seleccionado virtualbox-guest-utils.
+A preparar para desempacotar .../virtualbox-guest-utils_6.1.16-dfsg-6~ubuntu1.20.04.1_amd64.deb ...
+7[14;0fProgress: [ 23%] [########################.................................................................................] 8A descompactar virtualbox-guest-utils (6.1.16-dfsg-6~ubuntu1.20.04.1) ...
+7[14;0fProgress: [ 31%] [################################.........................................................................] 8A seleccionar pacote anteriormente não seleccionado virtualbox-guest-x11.
+A preparar para desempacotar .../virtualbox-guest-x11_6.1.16-dfsg-6~ubuntu1.20.04.1_amd64.deb ...
+7[14;0fProgress: [ 38%] [########################################.................................................................] 8A descompactar virtualbox-guest-x11 (6.1.16-dfsg-6~ubuntu1.20.04.1) ...
+7[14;0fProgress: [ 46%] [################################################.........................................................] 8Configurando virtualbox-guest-dkms (6.1.16-dfsg-6~ubuntu1.20.04.1) ...
+7[14;0fProgress: [ 54%] [########################################################.................................................] 8Loading new virtualbox-guest-6.1.16 DKMS files...
+Building for 5.8.0-45-generic
+Building initial module for 5.8.0-45-generic
+This system doesn't support Secure Boot
+Secure Boot not enabled on this system.
+Done.
+
+vboxguest.ko:
+Running module version sanity check.
+ - Original module
+ - Installation
+   - Installing to /lib/modules/5.8.0-45-generic/updates/dkms/
+
+vboxsf.ko:
+Running module version sanity check.
+ - Original module
+ - Installation
+   - Installing to /lib/modules/5.8.0-45-generic/updates/dkms/
+
+vboxvideo.ko:
+Running module version sanity check.
+ - Original module
+ - Installation
+   - Installing to /lib/modules/5.8.0-45-generic/updates/dkms/
+
+depmod...
+
+DKMS: install completed.
+7[14;0fProgress: [ 62%] [################################################################.........................................] 8Configurando virtualbox-guest-utils (6.1.16-dfsg-6~ubuntu1.20.04.1) ...
+7[14;0fProgress: [ 69%] [########################################################################.................................] 8Created symlink /etc/systemd/system/multi-user.target.wants/virtualbox-guest-utils.service → /lib/systemd/system/virtualbox-guest-utils.service.
+7[14;0fProgress: [ 77%] [################################################################################.........................] 8Configurando virtualbox-guest-x11 (6.1.16-dfsg-6~ubuntu1.20.04.1) ...
+7[14;0fProgress: [ 85%] [########################################################################################.................] 87[14;0fProgress: [ 92%] [################################################################################################.........] 8A processar 'triggers' para man-db (2.9.1-1) ...
+A processar 'triggers' para systemd (245.4-4ubuntu3.5) ...
+
+7[0;14r8[1A[JLendo listas de pacotes... 0%Lendo listas de pacotes... 100%Lendo listas de pacotes... Pronto
+Construindo árvore de dependências... 0%Construindo árvore de dependências... 0%Construindo árvore de dependências... 50%Construindo árvore de dependências... 50%Construindo árvore de dependências       
+Lendo informação de estado... 0%  Lendo informação de estado... 0%Lendo informação de estado... Pronto
+Os NOVOS pacotes a seguir serão instalados:
+  virtualbox-guest-additions-iso
+0 pacotes atualizados, 1 pacotes novos instalados, 0 a serem removidos e 12 não atualizados.
+É preciso baixar 44,7 MB de arquivos.
+Depois desta operação, 61,0 MB adicionais de espaço em disco serão usados.
+0% [Trabalhando]                Obter:1 http://br.archive.ubuntu.com/ubuntu focal-updates/multiverse amd64 virtualbox-guest-additions-iso all 6.1.16-1~ubuntu1.20.04.1 [44,7 MB]
+0% [1 virtualbox-guest-additions-iso 6.890 B/44,7 MB 0%]10% [1 virtualbox-guest-additions-iso 5.328 kB/44,7 MB 12%]                                                           20% [1 virtualbox-guest-additions-iso 11,2 MB/44,7 MB 25%]30% [1 virtualbox-guest-additions-iso 17,1 MB/44,7 MB 38%]41% [1 virtualbox-guest-additions-iso 22,9 MB/44,7 MB 51%]51% [1 virtualbox-guest-additions-iso 28,3 MB/44,7 MB 63%]55% [1 virtualbox-guest-additions-iso 30,9 MB/44,7 MB 69%]61% [1 virtualbox-guest-additions-iso 34,0 MB/44,7 MB 76%]67% [1 virtualbox-guest-additions-iso 37,6 MB/44,7 MB 84%]73% [1 virtualbox-guest-additions-iso 41,0 MB/44,7 MB 92%]79% [1 virtualbox-guest-additions-iso 43,9 MB/44,7 MB 98%]                                                          100% [Trabalhando]                  Baixados 44,7 MB em 6s (8.096 kB/s)
+
+7[0;13r8[1AA seleccionar pacote anteriormente não seleccionado virtualbox-guest-additions-iso.
+(Lendo banco de dados ... (Lendo banco de dados ... 5%(Lendo banco de dados ... 10%(Lendo banco de dados ... 15%(Lendo banco de dados ... 20%(Lendo banco de dados ... 25%(Lendo banco de dados ... 30%(Lendo banco de dados ... 35%(Lendo banco de dados ... 40%(Lendo banco de dados ... 45%(Lendo banco de dados ... 50%(Lendo banco de dados ... 55%(Lendo banco de dados ... 60%(Lendo banco de dados ... 65%(Lendo banco de dados ... 70%(Lendo banco de dados ... 75%(Lendo banco de dados ... 80%(Lendo banco de dados ... 85%(Lendo banco de dados ... 90%(Lendo banco de dados ... 95%(Lendo banco de dados ... 100%(Lendo banco de dados ... 245831 ficheiros e directórios actualmente instalados.)
+A preparar para desempacotar .../virtualbox-guest-additions-iso_6.1.16-1~ubuntu1.20.04.1_all.deb ...
+7[14;0fProgress: [  0%] [.........................................................................................................] 87[14;0fProgress: [ 20%] [#####################....................................................................................] 8A descompactar virtualbox-guest-additions-iso (6.1.16-1~ubuntu1.20.04.1) ...
+7[14;0fProgress: [ 40%] [##########################################...............................................................] 8Configurando virtualbox-guest-additions-iso (6.1.16-1~ubuntu1.20.04.1) ...
+7[14;0fProgress: [ 60%] [###############################################################..........................................] 87[14;0fProgress: [ 80%] [####################################################################################.....................] 8
+7[0;14r8[1A[J==> Instalar o Extension Pack do VirtualBox
+--2021-03-23 17:56:45--  https://download.virtualbox.org/virtualbox/6.1.18/Oracle_VM_VirtualBox_Extension_Pack-6.1.18.vbox-extpack
+Resolvendo download.virtualbox.org (download.virtualbox.org)... 104.90.0.86
+Conectando-se a download.virtualbox.org (download.virtualbox.org)|104.90.0.86|:443... conectado.
+A requisição HTTP foi enviada, aguardando resposta... 200 OK
+Tamanho: 11157510 (11M) [text/plain]
+Salvando em: “Oracle_VM_VirtualBox_Extension_Pack-6.1.18.vbox-extpack”
+
+                Oracle_VM_Virtu   0%[                                                       ]       0  --.-KB/s                              Oracle_VM_Virtua  16%[=======>                                               ]   1,72M  8,61MB/s                             Oracle_VM_Virtual  27%[==============>                                        ]   2,90M  7,25MB/s                            Oracle_VM_VirtualB  38%[===================>                                   ]   4,04M  6,58MB/s                           Oracle_VM_VirtualBo  47%[=========================>                             ]   5,08M  6,22MB/s                          Oracle_VM_VirtualBox  61%[================================>                      ]   6,53M  6,34MB/s                         Oracle_VM_VirtualBox_  80%[===========================================>           ]   8,55M  6,95MB/s               Oracle_VM_VirtualBox_Extension_ 100%[======================================================>]  10,64M  7,50MB/s    em 1,4s    
+
+2021-03-23 17:56:47 (7,50 MB/s) - “Oracle_VM_VirtualBox_Extension_Pack-6.1.18.vbox-extpack” salvo [11157510/11157510]
+
+License accepted.
+0%...10%...20%...30%...40%...50%...60%...70%...80%...90%...100%
+Successfully installed "Oracle VM VirtualBox Extension Pack".
+==> Removendo pacotes do Ubuntu desnecessários
+Lendo listas de pacotes... 0%Lendo listas de pacotes... 100%Lendo listas de pacotes... Pronto
+Construindo árvore de dependências... 0%Construindo árvore de dependências... 0%Construindo árvore de dependências... 50%Construindo árvore de dependências... 50%Construindo árvore de dependências       
+Lendo informação de estado... 0%  Lendo informação de estado... 0%Lendo informação de estado... Pronto
+0 pacotes atualizados, 0 pacotes novos instalados, 0 a serem removidos e 12 não atualizados.
+==> Checkando se a box neoricalex/ubuntu existe localmente no desktop ...
+==> Checkando se o download da box já foi feito...
+Iniciando o download...
+virtualbox.box                    0%[                                                       ]       0  --.-KB/s               virtualbox.box                    0%[                                                       ]  24,00K   118KB/s               virtualbox.box                    0%[                                                       ]  56,00K   137KB/s               virtualbox.box                    0%[                                                       ] 152,00K   241KB/s               virtualbox.box                    0%[                                                       ] 312,00K   371KB/s               virtualbox.box                    0%[                                                       ] 632,00K   604KB/s               virtualbox.box                    0%[                                                       ]   1,23M  1006KB/s               virtualbox.box                    0%[                                                       ]   2,41M  1,66MB/s               virtualbox.box                    0%[                                                       ]   4,52M  2,74MB/s               virtualbox.box                    1%[                                                       ]   6,77M  3,66MB/s               virtualbox.box                    1%[                                                       ]   6,91M  3,25MB/s               virtualbox.box                    1%[>                                                      ]   9,91M  4,24MB/s               virtualbox.box                    2%[>                                                      ]  10,95M  4,07MB/s               virtualbox.box                    2%[>                                                      ]  13,85M  4,74MB/s               virtualbox.box                    3%[>                                                      ]  15,41M  4,94MB/s    TED 99s    virtualbox.box                    3%[>                                                      ]  15,55M  4,64MB/s    TED 99s    virtualbox.box                    3%[>                                                      ]  18,24M  5,11MB/s    TED 99s    virtualbox.box                    3%[=>                                                     ]  19,60M  4,96MB/s    TED 99s    virtualbox.box                    4%[=>                                                     ]  22,16M  5,58MB/s    TED 91s    virtualbox.box                    4%[=>                                                     ]  23,97M  6,04MB/s    TED 91s    virtualbox.box                    5%[=>                                                     ]  26,21M  6,52MB/s    TED 91s    virtualbox.box                    5%[==>                                                    ]  28,45M  7,00MB/s    TED 91s    virtualbox.box                    6%[==>                                                    ]  30,66M  7,66MB/s    TED 91s    virtualbox.box                    6%[==>                                                    ]  31,38M  7,49MB/s    TED 79s    virtualbox.box                    6%[==>                                                    ]  34,38M  7,86MB/s    TED 79s    virtualbox.box                    7%[==>                                                    ]  36,59M  8,02MB/s    TED 79s    virtualbox.box                    7%[===>                                                   ]  37,76M  7,48MB/s    TED 79s    virtualbox.box                    7%[===>                                                   ]  40,29M  8,17MB/s    TED 79s    virtualbox.box                    8%[===>                                                   ]  41,62M  7,78MB/s    TED 71s    virtualbox.box                    8%[===>                                                   ]  42,91M  7,68MB/s    TED 71s    virtualbox.box                    8%[===>                                                   ]  42,93M  7,23MB/s    TED 71s    virtualbox.box                    8%[===>                                                   ]  45,40M  7,73MB/s    TED 71s    virtualbox.box                    9%[====>                                                  ]  46,93M  7,47MB/s    TED 72s    virtualbox.box                    9%[====>                                                  ]  49,15M  7,68MB/s    TED 72s    virtualbox.box                    9%[====>                                                  ]  49,32M  7,65MB/s    TED 72s    virtualbox.box                    9%[====>                                                  ]  49,34M  6,92MB/s    TED 72s    virtualbox.box                   10%[====>                                                  ]  52,32M  7,20MB/s    TED 72s    virtualbox.box                   10%[====>                                                  ]  54,55M  7,25MB/s    TED 71s    virtualbox.box                   11%[=====>                                                 ]  55,80M  6,69MB/s    TED 71s    virtualbox.box                   11%[=====>                                                 ]  55,82M  6,13MB/s    TED 71s    virtualbox.box                   11%[=====>                                                 ]  58,45M  6,61MB/s    TED 71s    virtualbox.box                   12%[=====>                                                 ]  60,98M  6,57MB/s    TED 70s    virtualbox.box                   12%[=====>                                                 ]  61,59M  5,95MB/s    TED 70s    virtualbox.box                   12%[=====>                                                 ]  61,60M  5,88MB/s    TED 70s    virtualbox.box                   12%[=====>                                                 ]  63,95M  5,84MB/s    TED 70s    virtualbox.box                   13%[======>                                                ]  66,57M  6,17MB/s    TED 70s    virtualbox.box                   13%[======>                                                ]  67,82M  5,79MB/s    TED 70s    virtualbox.box                   13%[======>                                                ]  67,87M  5,70MB/s    TED 70s    virtualbox.box                   13%[======>                                                ]  70,60M  6,37MB/s    TED 70s    virtualbox.box                   14%[======>                                                ]  71,43M  5,75MB/s    TED 70s    virtualbox.box                   14%[======>                                                ]  72,45M  5,64MB/s    TED 72s    virtualbox.box                   14%[=======>                                               ]  74,62M  5,68MB/s    TED 72s    virtualbox.box                   15%[=======>                                               ]  76,80M  6,05MB/s    TED 72s    virtualbox.box                   15%[=======>                                               ]  78,96M  6,61MB/s    TED 72s    virtualbox.box                   15%[=======>                                               ]  80,49M  5,96MB/s    TED 72s    virtualbox.box                   15%[=======>                                               ]  80,51M  5,47MB/s    TED 70s    virtualbox.box                   16%[========>                                              ]  82,77M  5,89MB/s    TED 70s    virtualbox.box                   16%[========>                                              ]  85,40M  6,53MB/s    TED 70s    virtualbox.box                   17%[========>                                              ]  86,99M  6,06MB/s    TED 70s    virtualbox.box                   17%[========>                                              ]  87,02M  5,67MB/s    TED 69s    virtualbox.box                   17%[========>                                              ]  89,99M  5,87MB/s    TED 69s    virtualbox.box                   18%[=========>                                             ]  92,04M  6,02MB/s    TED 69s    virtualbox.box                   18%[=========>                                             ]  94,79M  6,15MB/s    TED 66s    virtualbox.box                   19%[=========>                                             ]  96,60M  5,99MB/s    TED 66s    virtualbox.box                   19%[=========>                                             ]  98,80M  6,33MB/s    TED 66s    virtualbox.box                   19%[=========>                                             ]  99,05M  6,41MB/s    TED 66s    virtualbox.box                   19%[=========>                                             ]  99,09M  5,80MB/s    TED 66s    virtualbox.box                   20%[==========>                                            ] 102,01M  6,46MB/s    TED 65s    virtualbox.box                   20%[==========>                                            ] 104,40M  6,76MB/s    TED 65s    virtualbox.box                   20%[==========>                                            ] 105,02M  6,25MB/s    TED 65s    virtualbox.box                   20%[==========>                                            ] 105,04M  5,78MB/s    TED 65s    virtualbox.box                   21%[==========>                                            ] 107,71M  5,89MB/s    TED 65s    virtualbox.box                   21%[==========>                                            ] 110,20M  6,28MB/s    TED 63s    virtualbox.box                   21%[===========>                                           ] 110,79M  6,25MB/s    TED 63s    virtualbox.box                   21%[===========>                                           ] 111,13M  5,63MB/s    TED 63s    virtualbox.box                   22%[===========>                                           ] 113,73M  6,06MB/s    TED 63s    virtualbox.box                   22%[===========>                                           ] 115,60M  6,55MB/s    TED 63s    virtualbox.box                   23%[===========>                                           ] 117,09M  5,54MB/s    TED 64s    virtualbox.box                   23%[===========>                                           ] 119,34M  6,27MB/s    TED 64s    virtualbox.box                   24%[============>                                          ] 121,98M  6,27MB/s    TED 64s    virtualbox.box                   24%[============>                                          ] 123,55M  6,03MB/s    TED 64s    virtualbox.box                   24%[============>                                          ] 123,57M  5,58MB/s    TED 63s    virtualbox.box                   25%[============>                                          ] 126,55M  6,08MB/s    TED 63s    virtualbox.box                   25%[=============>                                         ] 128,74M  6,65MB/s    TED 63s    virtualbox.box                   25%[=============>                                         ] 128,95M  6,17MB/s    TED 63s    virtualbox.box                   25%[=============>                                         ] 128,96M  5,55MB/s    TED 63s    virtualbox.box                   26%[=============>                                         ] 131,95M  5,78MB/s    TED 61s    virtualbox.box                   26%[=============>                                         ] 134,12M  6,23MB/s    TED 61s    virtualbox.box                   26%[=============>                                         ] 135,04M  6,35MB/s    TED 61s    virtualbox.box                   26%[=============>                                         ] 135,07M  5,70MB/s    TED 61s    virtualbox.box                   27%[=============>                                         ] 137,40M  5,78MB/s    TED 60s    virtualbox.box                   27%[==============>                                        ] 140,02M  5,91MB/s    TED 60s    virtualbox.box                   28%[==============>                                        ] 141,71M  6,33MB/s    TED 60s    virtualbox.box                   28%[==============>                                        ] 141,73M  5,72MB/s    TED 60s    virtualbox.box                   28%[==============>                                        ] 144,01M  5,81MB/s    TED 59s    virtualbox.box                   29%[==============>                                        ] 146,60M  5,96MB/s    TED 59s    virtualbox.box                   29%[===============>                                       ] 148,29M  6,22MB/s    TED 59s    virtualbox.box                   29%[===============>                                       ] 150,57M  6,14MB/s    TED 59s    virtualbox.box                   29%[===============>                                       ] 150,96M  6,05MB/s    TED 58s    virtualbox.box                   29%[===============>                                       ] 150,98M  6,04MB/s    TED 58s    virtualbox.box                   30%[===============>                                       ] 153,95M  6,05MB/s    TED 58s    virtualbox.box                   30%[===============>                                       ] 156,15M  6,11MB/s    TED 58s    virtualbox.box                   30%[================>                                      ] 156,34M  6,05MB/s    TED 58s    virtualbox.box                   30%[================>                                      ] 156,35M  6,05MB/s    TED 57s    virtualbox.box                   31%[================>                                      ] 158,66M  5,91MB/s    TED 57s    virtualbox.box                   31%[================>                                      ] 161,23M  6,04MB/s    TED 57s    virtualbox.box                   32%[================>                                      ] 162,90M  6,42MB/s    TED 57s    virtualbox.box                   32%[================>                                      ] 162,91M  5,91MB/s    TED 56s    virtualbox.box                   32%[================>                                      ] 165,24M  5,71MB/s    TED 56s    virtualbox.box                   33%[=================>                                     ] 167,87M  5,95MB/s    TED 56s    virtualbox.box                   33%[=================>                                     ] 169,27M  6,04MB/s    TED 56s    virtualbox.box                   33%[=================>                                     ] 169,85M  6,10MB/s    TED 55s    virtualbox.box                   34%[=================>                                     ] 172,29M  6,20MB/s    TED 55s    virtualbox.box                   34%[=================>                                     ] 173,79M  5,90MB/s    TED 55s    virtualbox.box                   34%[==================>                                    ] 176,01M  6,09MB/s    TED 55s    virtualbox.box                   34%[==================>                                    ] 176,35M  6,07MB/s    TED 55s    virtualbox.box                   34%[==================>                                    ] 176,37M  5,61MB/s    TED 54s    virtualbox.box                   35%[==================>                                    ] 178,59M  6,01MB/s    TED 54s    virtualbox.box                   35%[==================>                                    ] 180,80M  6,57MB/s    TED 54s    virtualbox.box                   35%[==================>                                    ] 181,84M  5,86MB/s    TED 54s    virtualbox.box                   36%[==================>                                    ] 182,02M  5,74MB/s    TED 54s    virtualbox.box                   36%[===================>                                   ] 184,09M  6,26MB/s    TED 53s    virtualbox.box                   36%[===================>                                   ] 186,21M  6,29MB/s    TED 53s    virtualbox.box                   37%[===================>                                   ] 188,46M  6,25MB/s    TED 53s    virtualbox.box                   37%[===================>                                   ] 188,52M  5,84MB/s    TED 53s    virtualbox.box                   37%[===================>                                   ] 190,79M  6,28MB/s    TED 53s    virtualbox.box                   37%[===================>                                   ] 190,82M  6,26MB/s    TED 52s    virtualbox.box                   37%[===================>                                   ] 191,15M  5,90MB/s    TED 52s    virtualbox.box                   38%[====================>                                  ] 193,62M  5,81MB/s    TED 52s    virtualbox.box                   38%[====================>                                  ] 195,85M  6,19MB/s    TED 52s    virtualbox.box                   39%[====================>                                  ] 197,71M  6,12MB/s    TED 50s    virtualbox.box                   39%[====================>                                  ] 199,91M  6,29MB/s    TED 50s    virtualbox.box                   39%[====================>                                  ] 200,63M  5,87MB/s    TED 50s    virtualbox.box                   40%[=====================>                                 ] 202,77M  6,27MB/s    TED 50s    virtualbox.box                   40%[=====================>                                 ] 203,63M  6,35MB/s    TED 50s    virtualbox.box                   40%[=====================>                                 ] 203,65M  5,82MB/s    TED 50s    virtualbox.box                   40%[=====================>                                 ] 206,01M  5,84MB/s    TED 50s    virtualbox.box                   41%[=====================>                                 ] 208,34M  5,92MB/s    TED 50s    virtualbox.box                   41%[=====================>                                 ] 210,10M  6,37MB/s    TED 50s    virtualbox.box                   41%[=====================>                                 ] 210,15M  5,84MB/s    TED 49s    virtualbox.box                   42%[======================>                                ] 212,65M  5,98MB/s    TED 49s    virtualbox.box                   42%[======================>                                ] 214,30M  5,90MB/s    TED 49s    virtualbox.box                   42%[======================>                                ] 216,49M  6,29MB/s    TED 49s    virtualbox.box                   42%[======================>                                ] 217,02M  6,20MB/s    TED 49s    virtualbox.box                   42%[======================>                                ] 217,04M  6,05MB/s    TED 47s    virtualbox.box                   43%[======================>                                ] 219,96M  6,14MB/s    TED 47s    virtualbox.box                   44%[=======================>                               ] 222,66M  5,84MB/s    TED 47s    virtualbox.box                   44%[=======================>                               ] 222,70M  5,69MB/s    TED 47s    virtualbox.box                   44%[=======================>                               ] 225,59M  5,90MB/s    TED 46s    virtualbox.box                   44%[=======================>                               ] 227,04M  6,13MB/s    TED 46s    virtualbox.box                   45%[=======================>                               ] 228,45M  5,98MB/s    TED 46s    virtualbox.box                   45%[========================>                              ] 229,87M  6,62MB/s    TED 46s    virtualbox.box                   45%[========================>                              ] 231,27M  6,47MB/s    TED 46s    virtualbox.box                   46%[========================>                              ] 232,68M  6,30MB/s    TED 44s    virtualbox.box                   46%[========================>                              ] 234,07M  6,42MB/s    TED 44s    virtualbox.box                   46%[========================>                              ] 234,54M  6,52MB/s    TED 44s    virtualbox.box                   46%[========================>                              ] 235,87M  6,25MB/s    TED 44s    virtualbox.box                   47%[========================>                              ] 238,05M  6,38MB/s    TED 44s    virtualbox.box                   47%[=========================>                             ] 239,45M  6,29MB/s    TED 43s    virtualbox.box                   47%[=========================>                             ] 239,65M  6,08MB/s    TED 43s    virtualbox.box                   47%[=========================>                             ] 241,05M  6,56MB/s    TED 43s    virtualbox.box                   48%[=========================>                             ] 243,16M  6,33MB/s    TED 43s    virtualbox.box                   48%[=========================>                             ] 244,55M  6,43MB/s    TED 43s    virtualbox.box                   48%[=========================>                             ] 244,99M  6,54MB/s    TED 43s    virtualbox.box                   48%[=========================>                             ] 246,34M  6,11MB/s    TED 43s    virtualbox.box                   49%[==========================>                            ] 248,49M  6,31MB/s    TED 43s    virtualbox.box                   49%[==========================>                            ] 249,88M  6,32MB/s    TED 43s    virtualbox.box                   49%[==========================>                            ] 250,21M  5,88MB/s    TED 43s    virtualbox.box                   49%[==========================>                            ] 251,66M  5,89MB/s    TED 41s    virtualbox.box                   50%[==========================>                            ] 253,76M  6,10MB/s    TED 41s    virtualbox.box                   50%[==========================>                            ] 254,34M  5,68MB/s    TED 41s    virtualbox.box                   50%[==========================>                            ] 255,80M  6,07MB/s    TED 41s    virtualbox.box                   51%[===========================>                           ] 257,95M  6,31MB/s    TED 41s    virtualbox.box                   51%[===========================>                           ] 258,88M  5,68MB/s    TED 40s    virtualbox.box                   51%[===========================>                           ] 258,96M  5,24MB/s    TED 40s    virtualbox.box                   51%[===========================>                           ] 261,76M  6,01MB/s    TED 40s    virtualbox.box                   52%[===========================>                           ] 263,27M  6,05MB/s    TED 40s    virtualbox.box                   52%[===========================>                           ] 264,66M  5,83MB/s    TED 40s    virtualbox.box                   52%[===========================>                           ] 265,98M  5,83MB/s    TED 39s    virtualbox.box                   52%[============================>                          ] 267,21M  6,16MB/s    TED 39s    virtualbox.box                   53%[============================>                          ] 268,45M  6,14MB/s    TED 39s    virtualbox.box                   53%[============================>                          ] 269,68M  5,86MB/s    TED 39s    virtualbox.box                   53%[============================>                          ] 270,91M  5,83MB/s    TED 39s    virtualbox.box                   53%[============================>                          ] 272,23M  6,21MB/s    TED 38s    virtualbox.box                   54%[============================>                          ] 273,46M  5,92MB/s    TED 38s    virtualbox.box                   54%[============================>                          ] 274,70M  5,90MB/s    TED 38s    virtualbox.box                   54%[=============================>                         ] 275,93M  6,28MB/s    TED 38s    virtualbox.box                   54%[=============================>                         ] 277,35M  6,00MB/s    TED 38s    virtualbox.box                   55%[=============================>                         ] 278,63M  6,01MB/s    TED 37s    virtualbox.box                   55%[=============================>                         ] 279,88M  6,39MB/s    TED 37s    virtualbox.box                   55%[=============================>                         ] 281,12M  6,41MB/s    TED 37s    virtualbox.box                   55%[=============================>                         ] 282,35M  6,33MB/s    TED 37s    virtualbox.box                   56%[=============================>                         ] 283,59M  6,29MB/s    TED 37s    virtualbox.box                   56%[=============================>                         ] 284,84M  6,24MB/s    TED 36s    virtualbox.box                   56%[==============================>                        ] 286,05M  5,87MB/s    TED 36s    virtualbox.box                   56%[==============================>                        ] 286,12M  5,39MB/s    TED 36s    virtualbox.box                   57%[==============================>                        ] 288,79M  5,78MB/s    TED 36s    virtualbox.box                   57%[==============================>                        ] 290,23M  5,84MB/s    TED 35s    virtualbox.box                   57%[==============================>                        ] 291,65M  5,87MB/s    TED 35s    virtualbox.box                   58%[==============================>                        ] 293,16M  5,96MB/s    TED 35s    virtualbox.box                   58%[===============================>                       ] 294,32M  5,37MB/s    TED 35s    virtualbox.box                   58%[===============================>                       ] 296,05M  5,51MB/s    TED 34s    virtualbox.box                   58%[===============================>                       ] 297,77M  5,61MB/s    TED 34s    virtualbox.box                   59%[===============================>                       ] 299,54M  5,73MB/s    TED 34s    virtualbox.box                   59%[===============================>                       ] 301,27M  5,88MB/s    TED 34s    virtualbox.box                   60%[================================>                      ] 303,40M  6,13MB/s    TED 34s    virtualbox.box                   60%[================================>                      ] 303,43M  5,79MB/s    TED 33s    virtualbox.box                   60%[================================>                      ] 305,40M  5,98MB/s    TED 33s    virtualbox.box                   60%[================================>                      ] 306,29M  5,43MB/s    TED 33s    virtualbox.box                   61%[================================>                      ] 309,29M  5,85MB/s    TED 33s    virtualbox.box                   61%[================================>                      ] 311,30M  6,03MB/s    TED 32s    virtualbox.box                   61%[================================>                      ] 311,32M  6,03MB/s    TED 32s    virtualbox.box                   62%[=================================>                     ] 314,05M  6,00MB/s    TED 32s    virtualbox.box                   62%[=================================>                     ] 315,65M  6,15MB/s    TED 32s    virtualbox.box                   62%[=================================>                     ] 317,85M  6,33MB/s    TED 32s    virtualbox.box                   62%[=================================>                     ] 318,38M  6,02MB/s    TED 31s    virtualbox.box                   63%[=================================>                     ] 318,40M  5,57MB/s    TED 31s    virtualbox.box                   63%[=================================>                     ] 320,79M  6,30MB/s    TED 31s    virtualbox.box                   64%[==================================>                    ] 323,46M  6,53MB/s    TED 31s    virtualbox.box                   64%[==================================>                    ] 324,87M  6,21MB/s    TED 30s    virtualbox.box                   64%[==================================>                    ] 324,88M  5,76MB/s    TED 30s    virtualbox.box                   64%[==================================>                    ] 327,87M  6,07MB/s    TED 30s    virtualbox.box                   65%[==================================>                    ] 330,02M  6,15MB/s    TED 30s    virtualbox.box                   65%[==================================>                    ] 330,16M  6,05MB/s    TED 30s    virtualbox.box                   65%[===================================>                   ] 332,51M  6,20MB/s    TED 28s    virtualbox.box                   65%[===================================>                   ] 333,18M  6,43MB/s    TED 28s    virtualbox.box                   66%[===================================>                   ] 335,41M  6,24MB/s    TED 28s    virtualbox.box                   66%[===================================>                   ] 335,45M  5,37MB/s    TED 28s    virtualbox.box                   66%[===================================>                   ] 338,20M  5,95MB/s    TED 28s    virtualbox.box                   67%[====================================>                  ] 340,44M  6,53MB/s    TED 28s    virtualbox.box                   67%[====================================>                  ] 341,87M  5,96MB/s    TED 28s    virtualbox.box                   67%[====================================>                  ] 342,63M  5,60MB/s    TED 27s    virtualbox.box                   68%[====================================>                  ] 344,87M  5,64MB/s    TED 27s    virtualbox.box                   68%[====================================>                  ] 347,07M  6,12MB/s    TED 27s    virtualbox.box                   69%[=====================================>                 ] 349,26M  6,67MB/s    TED 27s    virtualbox.box                   69%[=====================================>                 ] 349,46M  6,23MB/s    TED 27s    virtualbox.box                   69%[=====================================>                 ] 349,48M  5,54MB/s    TED 26s    virtualbox.box                   69%[=====================================>                 ] 351,82M  5,68MB/s    TED 26s    virtualbox.box                   70%[=====================================>                 ] 354,48M  6,20MB/s    TED 26s    virtualbox.box                   70%[=====================================>                 ] 355,90M  6,39MB/s    TED 26s    virtualbox.box                   70%[=====================================>                 ] 357,54M  5,95MB/s    TED 24s    virtualbox.box                   70%[=====================================>                 ] 357,55M  5,60MB/s    TED 24s    virtualbox.box                   71%[======================================>                ] 360,15M  6,01MB/s    TED 24s    virtualbox.box                   71%[======================================>                ] 362,35M  6,01MB/s    TED 24s    virtualbox.box                   71%[======================================>                ] 363,43M  5,88MB/s    TED 24s    virtualbox.box                   71%[======================================>                ] 363,65M  6,20MB/s    TED 23s    virtualbox.box                   72%[======================================>                ] 366,41M  6,20MB/s    TED 23s    virtualbox.box                   72%[=======================================>               ] 367,79M  6,07MB/s    TED 23s    virtualbox.box                   73%[=======================================>               ] 369,99M  6,13MB/s    TED 23s    virtualbox.box                   73%[=======================================>               ] 370,49M  6,44MB/s    TED 23s    virtualbox.box                   73%[=======================================>               ] 370,51M  5,89MB/s    TED 22s    virtualbox.box                   73%[=======================================>               ] 372,76M  5,94MB/s    TED 22s    virtualbox.box                   74%[=======================================>               ] 375,32M  6,08MB/s    TED 22s    virtualbox.box                   74%[========================================>              ] 377,05M  6,43MB/s    TED 22s    virtualbox.box                   75%[========================================>              ] 379,24M  6,48MB/s    TED 21s    virtualbox.box                   75%[========================================>              ] 379,34M  5,75MB/s    TED 21s    virtualbox.box                   75%[========================================>              ] 379,73M  5,68MB/s    TED 21s    virtualbox.box                   75%[========================================>              ] 382,10M  6,01MB/s    TED 21s    virtualbox.box                   75%[========================================>              ] 383,70M  6,40MB/s    TED 21s    virtualbox.box                   76%[========================================>              ] 385,90M  6,33MB/s    TED 20s    virtualbox.box                   76%[=========================================>             ] 386,99M  6,01MB/s    TED 20s    virtualbox.box                   76%[=========================================>             ] 387,05M  5,49MB/s    TED 20s    virtualbox.box                   77%[=========================================>             ] 389,99M  6,07MB/s    TED 20s    virtualbox.box                   77%[=========================================>             ] 392,21M  6,63MB/s    TED 19s    virtualbox.box                   77%[=========================================>             ] 393,18M  6,18MB/s    TED 19s    virtualbox.box                   77%[=========================================>             ] 393,20M  5,78MB/s    TED 19s    virtualbox.box                   78%[==========================================>            ] 396,10M  5,92MB/s    TED 19s    virtualbox.box                   78%[==========================================>            ] 398,29M  6,03MB/s    TED 18s    virtualbox.box                   78%[==========================================>            ] 398,77M  6,08MB/s    TED 18s    virtualbox.box                   79%[==========================================>            ] 401,29M  6,14MB/s    TED 18s    virtualbox.box                   79%[==========================================>            ] 403,53M  6,08MB/s    TED 18s    virtualbox.box                   80%[===========================================>           ] 404,37M  5,89MB/s    TED 18s    virtualbox.box                   80%[===========================================>           ] 404,40M  5,72MB/s    TED 17s    virtualbox.box                   80%[===========================================>           ] 406,77M  5,79MB/s    TED 17s    virtualbox.box                   80%[===========================================>           ] 409,18M  6,11MB/s    TED 17s    virtualbox.box                   80%[===========================================>           ] 409,35M  5,93MB/s    TED 17s    virtualbox.box                   81%[===========================================>           ] 412,12M  5,99MB/s    TED 15s    virtualbox.box                   81%[============================================>          ] 414,34M  6,12MB/s    TED 15s    virtualbox.box                   82%[============================================>          ] 416,57M  6,17MB/s    TED 15s    virtualbox.box                   82%[============================================>          ] 416,95M  6,07MB/s    TED 15s    virtualbox.box                   82%[============================================>          ] 416,96M  6,07MB/s    TED 15s    virtualbox.box                   82%[============================================>          ] 419,32M  5,92MB/s    TED 14s    virtualbox.box                   83%[============================================>          ] 421,54M  5,97MB/s    TED 14s    virtualbox.box                   83%[=============================================>         ] 423,77M  6,30MB/s    TED 14s    virtualbox.box                   83%[=============================================>         ] 423,82M  6,36MB/s    TED 14s    virtualbox.box                   83%[=============================================>         ] 423,84M  5,71MB/s    TED 14s    virtualbox.box                   84%[=============================================>         ] 426,20M  5,77MB/s    TED 13s    virtualbox.box                   84%[=============================================>         ] 428,85M  6,20MB/s    TED 13s    virtualbox.box                   85%[=============================================>         ] 430,09M  6,32MB/s    TED 13s    virtualbox.box                   85%[=============================================>         ] 430,10M  5,76MB/s    TED 13s    virtualbox.box                   85%[==============================================>        ] 432,80M  5,90MB/s    TED 13s    virtualbox.box                   85%[==============================================>        ] 434,43M  6,10MB/s    TED 12s    virtualbox.box                   86%[==============================================>        ] 436,65M  6,61MB/s    TED 12s    virtualbox.box                   86%[==============================================>        ] 436,84M  6,24MB/s    TED 12s    virtualbox.box                   86%[==============================================>        ] 439,05M  6,36MB/s    TED 12s    virtualbox.box                   87%[==============================================>        ] 439,85M  6,50MB/s    TED 12s    virtualbox.box                   87%[===============================================>       ] 442,23M  6,46MB/s    TED 10s    virtualbox.box                   87%[===============================================>       ] 442,95M  6,11MB/s    TED 10s    virtualbox.box                   87%[===============================================>       ] 442,98M  5,63MB/s    TED 10s    virtualbox.box                   88%[===============================================>       ] 445,26M  5,90MB/s    TED 10s    virtualbox.box                   88%[===============================================>       ] 447,87M  6,50MB/s    TED 9s     virtualbox.box                   88%[===============================================>       ] 449,51M  6,20MB/s    TED 9s     virtualbox.box                   89%[===============================================>       ] 449,98M  5,80MB/s    TED 9s     virtualbox.box                   89%[================================================>      ] 452,45M  5,87MB/s    TED 9s     virtualbox.box                   89%[================================================>      ] 454,18M  6,13MB/s    TED 8s     virtualbox.box                   90%[================================================>      ] 456,40M  5,94MB/s    TED 8s     virtualbox.box                   90%[================================================>      ] 456,43M  5,54MB/s    TED 8s     virtualbox.box                   90%[================================================>      ] 456,45M  5,60MB/s    TED 8s     virtualbox.box                   90%[================================================>      ] 459,13M  5,59MB/s    TED 8s     virtualbox.box                   91%[=================================================>     ] 461,34M  5,75MB/s    TED 8s     virtualbox.box                   91%[=================================================>     ] 461,52M  5,39MB/s    TED 8s     virtualbox.box                   91%[=================================================>     ] 464,52M  5,87MB/s    TED 8s     virtualbox.box                   92%[=================================================>     ] 466,73M  5,93MB/s    TED 6s     virtualbox.box                   92%[==================================================>    ] 468,90M  5,89MB/s    TED 6s     virtualbox.box                   92%[==================================================>    ] 469,02M  5,70MB/s    TED 6s     virtualbox.box                   93%[==================================================>    ] 471,66M  6,36MB/s    TED 6s     virtualbox.box                   93%[==================================================>    ] 472,98M  6,21MB/s    TED 5s     virtualbox.box                   94%[==================================================>    ] 475,21M  6,14MB/s    TED 5s     virtualbox.box                   94%[==================================================>    ] 476,15M  6,39MB/s    TED 5s     virtualbox.box                   94%[==================================================>    ] 476,30M  5,70MB/s    TED 5s     virtualbox.box                   94%[===================================================>   ] 479,09M  6,09MB/s    TED 4s     virtualbox.box                   95%[===================================================>   ] 481,12M  6,10MB/s    TED 4s     virtualbox.box                   95%[===================================================>   ] 482,55M  6,07MB/s    TED 4s     virtualbox.box                   95%[===================================================>   ] 482,59M  6,32MB/s    TED 4s     virtualbox.box                   95%[===================================================>   ] 484,90M  6,80MB/s    TED 3s     virtualbox.box                   96%[====================================================>  ] 487,55M  6,81MB/s    TED 3s     virtualbox.box                   96%[====================================================>  ] 488,63M  6,43MB/s    TED 3s     virtualbox.box                   96%[====================================================>  ] 488,65M  6,28MB/s    TED 3s     virtualbox.box                   97%[====================================================>  ] 491,30M  6,21MB/s    TED 3s     virtualbox.box                   97%[====================================================>  ] 492,85M  6,11MB/s    TED 2s     virtualbox.box                   97%[====================================================>  ] 495,02M  6,15MB/s    TED 2s     virtualbox.box                   98%[====================================================>  ] 495,74M  6,48MB/s    TED 2s     virtualbox.box                   98%[=====================================================> ] 496,26M  5,89MB/s    TED 2s     virtualbox.box                   98%[=====================================================> ] 498,04M  5,92MB/s    TED 2s     virtualbox.box                   98%[=====================================================> ] 500,02M  6,01MB/s    TED 1s     virtualbox.box                   99%[=====================================================> ] 502,18M  6,04MB/s    TED 1s     virtualbox.box                   99%[=====================================================> ] 502,87M  6,42MB/s    TED 1s     virtualbox.box                   99%[=====================================================> ] 502,88M  5,67MB/s    TED 1s     virtualbox.box                  100%[======================================================>] 505,39M  6,10MB/s    em 83s     
+==> O download da box já foi feito.
+Traceback (most recent call last):
+	16: from /opt/vagrant/embedded/gems/2.2.9/gems/vagrant-2.2.9/bin/vagrant:205:in `<main>'
+	15: from /opt/vagrant/embedded/gems/2.2.9/gems/vagrant-2.2.9/lib/vagrant/environment.rb:290:in `cli'
+	14: from /opt/vagrant/embedded/gems/2.2.9/gems/vagrant-2.2.9/lib/vagrant/cli.rb:67:in `execute'
+	13: from /opt/vagrant/embedded/gems/2.2.9/gems/vagrant-2.2.9/plugins/commands/box/command/root.rb:66:in `execute'
+	12: from /opt/vagrant/embedded/gems/2.2.9/gems/vagrant-2.2.9/plugins/commands/box/command/add.rb:78:in `execute'
+	11: from /opt/vagrant/embedded/gems/2.2.9/gems/vagrant-2.2.9/lib/vagrant/action/runner.rb:89:in `run'
+	10: from /opt/vagrant/embedded/gems/2.2.9/gems/vagrant-2.2.9/lib/vagrant/util/busy.rb:19:in `busy'
+	 9: from /opt/vagrant/embedded/gems/2.2.9/gems/vagrant-2.2.9/lib/vagrant/action/runner.rb:89:in `block in run'
+	 8: from /opt/vagrant/embedded/gems/2.2.9/gems/vagrant-2.2.9/lib/vagrant/action/builder.rb:116:in `call'
+	 7: from /opt/vagrant/embedded/gems/2.2.9/gems/vagrant-2.2.9/lib/vagrant/action/warden.rb:48:in `call'
+	 6: from /opt/vagrant/embedded/gems/2.2.9/gems/vagrant-2.2.9/lib/vagrant/action/builtin/box_add.rb:89:in `call'
+	 5: from /opt/vagrant/embedded/gems/2.2.9/gems/vagrant-2.2.9/lib/vagrant/action/builtin/box_add.rb:89:in `map'
+	 4: from /opt/vagrant/embedded/gems/2.2.9/gems/vagrant-2.2.9/lib/vagrant/action/builtin/box_add.rb:91:in `block in call'
+	 3: from /opt/vagrant/embedded/gems/2.2.9/gems/vagrant-2.2.9/lib/vagrant/action/builtin/box_add.rb:492:in `metadata_url?'
+	 2: from /opt/vagrant/embedded/lib/ruby/2.6.0/uri/common.rb:234:in `parse'
+	 1: from /opt/vagrant/embedded/lib/ruby/2.6.0/uri/rfc3986_parser.rb:73:in `parse'
+/opt/vagrant/embedded/lib/ruby/2.6.0/uri/rfc3986_parser.rb:21:in `split': URI must be ascii only "file:///home/neo/P\u00FAblico/src/boxes/virtualbox.box" (URI::InvalidURIError)
+==> A box existe no desktop
+    PID TTY          TIME CMD
+  51493 pts/4    00:00:00 bash
+  51598 pts/4    00:00:00 make
+  51600 pts/4    00:00:00 compilar_box.sh
+  85844 pts/4    00:00:00 ps
+==> Iniciando o VPS_DEV...
+Bringing machine 'VPS_DEV' up with 'virtualbox' provider...
+==> VPS_DEV: Box 'neoricalex/ubuntu' could not be found. Attempting to find and install...
+    VPS_DEV: Box Provider: virtualbox
+    VPS_DEV: Box Version: >= 0
+==> VPS_DEV: Box file was not detected as metadata. Adding it directly...
+==> VPS_DEV: Adding box 'neoricalex/ubuntu' (v0) for provider: virtualbox
+    VPS_DEV: Unpacking necessary files from: file:///home/neo/P%C3%BAblico/src/vps/vagrant-libs/virtualbox.box
+Progress: 0% (Rate: 0/s, Estimated time remaining: --:--:--)Progress: 84% (Rate: 811M/s, Estimated time remaining: --:--:--)==> VPS_DEV: Successfully added box 'neoricalex/ubuntu' (v0) for 'virtualbox'!
+==> VPS_DEV: Importing base box 'neoricalex/ubuntu'...
+^[[A^[[A^[[A^[[A^[[AProgress: 90%==> VPS_DEV: Matching MAC address for NAT networking...
+==> VPS_DEV: Setting the name of the VM: VPS_DEV
+==> VPS_DEV: Clearing any previously set network interfaces...
+==> VPS_DEV: Preparing network interfaces based on configuration...
+    VPS_DEV: Adapter 1: nat
+==> VPS_DEV: Forwarding ports...
+    VPS_DEV: 22 (guest) => 2222 (host) (adapter 1)
+==> VPS_DEV: Running 'pre-boot' VM customizations...
+==> VPS_DEV: Resized disk: old 40960 MB, req 51200 MB, new 51200 MB
+==> VPS_DEV: You may need to resize the filesystem from within the guest.
+==> VPS_DEV: Booting VM...
+==> VPS_DEV: Waiting for machine to boot. This may take a few minutes...
+    VPS_DEV: SSH address: 127.0.0.1:2222
+    VPS_DEV: SSH username: vagrant
+    VPS_DEV: SSH auth method: private key
+    VPS_DEV: Warning: Connection reset. Retrying...
+    VPS_DEV: Warning: Remote connection disconnect. Retrying...
+    VPS_DEV: 
+    VPS_DEV: Vagrant insecure key detected. Vagrant will automatically replace
+    VPS_DEV: this with a newly generated keypair for better security.
+    VPS_DEV: 
+    VPS_DEV: Inserting generated public key within guest...
+    VPS_DEV: Removing insecure key from the guest if it's present...
+    VPS_DEV: Key inserted! Disconnecting and reconnecting using new SSH key...
+==> VPS_DEV: Machine booted and ready!
+==> VPS_DEV: Checking for guest additions in VM...
+==> VPS_DEV: Mounting shared folders...
+    VPS_DEV: /vagrant => /home/neo/Público/src/vps
+==> VPS_DEV: Running provisioner: shell...
+    VPS_DEV: Running: /tmp/vagrant-shell20210323-85871-1s4sh09.sh
+    VPS_DEV: ==> Instalar os requerimentos da box...
+    VPS_DEV: ==> Atualizar os repositórios do ubuntu-focal ...
+    VPS_DEV: 
+    VPS_DEV: WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+    VPS_DEV: Get:1 http://security.ubuntu.com/ubuntu focal-security InRelease [109 kB]
+    VPS_DEV: Hit:2 http://archive.ubuntu.com/ubuntu focal InRelease
+    VPS_DEV: Get:3 http://archive.ubuntu.com/ubuntu focal-updates InRelease [114 kB]
+    VPS_DEV: Get:4 http://security.ubuntu.com/ubuntu focal-security/main amd64 Packages [552 kB]
+    VPS_DEV: Get:5 http://archive.ubuntu.com/ubuntu focal-backports InRelease [101 kB]
+    VPS_DEV: Get:6 http://security.ubuntu.com/ubuntu focal-security/main Translation-en [117 kB]
+    VPS_DEV: Get:7 http://security.ubuntu.com/ubuntu focal-security/main amd64 c-n-f Metadata [7376 B]
+    VPS_DEV: Get:8 http://security.ubuntu.com/ubuntu focal-security/universe amd64 Packages [550 kB]
+    VPS_DEV: Get:9 http://archive.ubuntu.com/ubuntu focal/universe amd64 Packages [8628 kB]
+    VPS_DEV: Get:10 http://security.ubuntu.com/ubuntu focal-security/universe Translation-en [81.2 kB]
+    VPS_DEV: Get:11 http://security.ubuntu.com/ubuntu focal-security/universe amd64 c-n-f Metadata [10.6 kB]
+    VPS_DEV: Get:12 http://security.ubuntu.com/ubuntu focal-security/multiverse amd64 Packages [14.8 kB]
+    VPS_DEV: Get:13 http://security.ubuntu.com/ubuntu focal-security/multiverse Translation-en [3160 B]
+    VPS_DEV: Get:14 http://security.ubuntu.com/ubuntu focal-security/multiverse amd64 c-n-f Metadata [340 B]
+    VPS_DEV: Get:15 http://archive.ubuntu.com/ubuntu focal/universe Translation-en [5124 kB]
+    VPS_DEV: Get:16 http://archive.ubuntu.com/ubuntu focal/universe amd64 c-n-f Metadata [265 kB]
+    VPS_DEV: Get:17 http://archive.ubuntu.com/ubuntu focal/multiverse amd64 Packages [144 kB]
+    VPS_DEV: Get:18 http://archive.ubuntu.com/ubuntu focal/multiverse Translation-en [104 kB]
+    VPS_DEV: Get:19 http://archive.ubuntu.com/ubuntu focal/multiverse amd64 c-n-f Metadata [9136 B]
+    VPS_DEV: Get:20 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 Packages [889 kB]
+    VPS_DEV: Get:21 http://archive.ubuntu.com/ubuntu focal-updates/main Translation-en [207 kB]
+    VPS_DEV: Get:22 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 c-n-f Metadata [12.8 kB]
+    VPS_DEV: Get:23 http://archive.ubuntu.com/ubuntu focal-updates/restricted amd64 Packages [171 kB]
+    VPS_DEV: Get:24 http://archive.ubuntu.com/ubuntu focal-updates/restricted Translation-en [25.3 kB]
+    VPS_DEV: Get:25 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 Packages [753 kB]
+    VPS_DEV: Get:26 http://archive.ubuntu.com/ubuntu focal-updates/universe Translation-en [159 kB]
+    VPS_DEV: Get:27 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 c-n-f Metadata [16.3 kB]
+    VPS_DEV: Get:28 http://archive.ubuntu.com/ubuntu focal-updates/multiverse amd64 Packages [21.6 kB]
+    VPS_DEV: Get:29 http://archive.ubuntu.com/ubuntu focal-updates/multiverse Translation-en [5508 B]
+    VPS_DEV: Get:30 http://archive.ubuntu.com/ubuntu focal-updates/multiverse amd64 c-n-f Metadata [596 B]
+    VPS_DEV: Get:31 http://archive.ubuntu.com/ubuntu focal-backports/main amd64 c-n-f Metadata [112 B]
+    VPS_DEV: Get:32 http://archive.ubuntu.com/ubuntu focal-backports/restricted amd64 c-n-f Metadata [116 B]
+    VPS_DEV: Get:33 http://archive.ubuntu.com/ubuntu focal-backports/universe amd64 Packages [4032 B]
+    VPS_DEV: Get:34 http://archive.ubuntu.com/ubuntu focal-backports/universe Translation-en [1448 B]
+    VPS_DEV: Get:35 http://archive.ubuntu.com/ubuntu focal-backports/universe amd64 c-n-f Metadata [224 B]
+    VPS_DEV: Get:36 http://archive.ubuntu.com/ubuntu focal-backports/multiverse amd64 c-n-f Metadata [116 B]
+    VPS_DEV: Fetched 18.2 MB in 6s (2859 kB/s)
+    VPS_DEV: Reading package lists...
+    VPS_DEV: Building dependency tree...
+    VPS_DEV: 
+    VPS_DEV: Reading state information...
+    VPS_DEV: 7 packages can be upgraded. Run 'apt list --upgradable' to see them.
+    VPS_DEV: 
+    VPS_DEV: WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+    VPS_DEV: Reading package lists...
+    VPS_DEV: Building dependency tree...
+    VPS_DEV: 
+    VPS_DEV: Reading state information...
+    VPS_DEV: Calculating upgrade...
+    VPS_DEV: The following NEW packages will be installed:
+    VPS_DEV:   linux-headers-5.4.0-70 linux-headers-5.4.0-70-generic
+    VPS_DEV:   linux-image-5.4.0-70-generic linux-modules-5.4.0-70-generic
+    VPS_DEV: The following packages will be upgraded:
+    VPS_DEV:   isc-dhcp-client isc-dhcp-common linux-headers-generic linux-headers-virtual
+    VPS_DEV:   linux-image-virtual linux-virtual open-vm-tools
+    VPS_DEV: 7 upgraded, 4 newly installed, 0 to remove and 0 not upgraded.
+    VPS_DEV: Need to get 37.0 MB of archives.
+    VPS_DEV: After this operation, 175 MB of additional disk space will be used.
+    VPS_DEV: Get:1 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 isc-dhcp-client amd64 4.4.1-2.1ubuntu5.20.04.1 [247 kB]
+    VPS_DEV: Get:2 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 isc-dhcp-common amd64 4.4.1-2.1ubuntu5.20.04.1 [44.8 kB]
+    VPS_DEV: Get:3 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 linux-headers-5.4.0-70 all 5.4.0-70.78 [11.0 MB]
+    VPS_DEV: Get:4 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 linux-headers-5.4.0-70-generic amd64 5.4.0-70.78 [1400 kB]
+    VPS_DEV: Get:5 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 linux-modules-5.4.0-70-generic amd64 5.4.0-70.78 [14.8 MB]
+    VPS_DEV: Get:6 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 linux-image-5.4.0-70-generic amd64 5.4.0-70.78 [8971 kB]
+    VPS_DEV: Get:7 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 linux-virtual amd64 5.4.0.70.73 [1876 B]
+    VPS_DEV: Get:8 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 linux-image-virtual amd64 5.4.0.70.73 [2532 B]
+    VPS_DEV: Get:9 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 linux-headers-virtual amd64 5.4.0.70.73 [1840 B]
+    VPS_DEV: Get:10 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 linux-headers-generic amd64 5.4.0.70.73 [2428 B]
+    VPS_DEV: Get:11 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 open-vm-tools amd64 2:11.1.5-1~ubuntu20.04.2 [561 kB]
+    VPS_DEV: dpkg-preconfigure: unable to re-open stdin: No such file or directory
+    VPS_DEV: Fetched 37.0 MB in 7s (5159 kB/s)
+    VPS_DEV: (Reading database ... 
+    VPS_DEV: (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%
+    VPS_DEV: (Reading database ... 60%
+    VPS_DEV: (Reading database ... 65%
+    VPS_DEV: (Reading database ... 70%
+    VPS_DEV: (Reading database ... 75%
+    VPS_DEV: (Reading database ... 80%
+    VPS_DEV: (Reading database ... 85%
+    VPS_DEV: (Reading database ... 90%
+    VPS_DEV: (Reading database ... 95%
+    VPS_DEV: (Reading database ... 100%(Reading database ... 63124 files and directories currently installed.)
+    VPS_DEV: Preparing to unpack .../00-isc-dhcp-client_4.4.1-2.1ubuntu5.20.04.1_amd64.deb ...
+    VPS_DEV: Unpacking isc-dhcp-client (4.4.1-2.1ubuntu5.20.04.1) over (4.4.1-2.1ubuntu5) ...
+    VPS_DEV: Preparing to unpack .../01-isc-dhcp-common_4.4.1-2.1ubuntu5.20.04.1_amd64.deb ...
+    VPS_DEV: Unpacking isc-dhcp-common (4.4.1-2.1ubuntu5.20.04.1) over (4.4.1-2.1ubuntu5) ...
+    VPS_DEV: Selecting previously unselected package linux-headers-5.4.0-70.
+    VPS_DEV: Preparing to unpack .../02-linux-headers-5.4.0-70_5.4.0-70.78_all.deb ...
+    VPS_DEV: Unpacking linux-headers-5.4.0-70 (5.4.0-70.78) ...
+    VPS_DEV: Selecting previously unselected package linux-headers-5.4.0-70-generic.
+    VPS_DEV: Preparing to unpack .../03-linux-headers-5.4.0-70-generic_5.4.0-70.78_amd64.deb ...
+    VPS_DEV: Unpacking linux-headers-5.4.0-70-generic (5.4.0-70.78) ...
+    VPS_DEV: Selecting previously unselected package linux-modules-5.4.0-70-generic.
+    VPS_DEV: Preparing to unpack .../04-linux-modules-5.4.0-70-generic_5.4.0-70.78_amd64.deb ...
+    VPS_DEV: Unpacking linux-modules-5.4.0-70-generic (5.4.0-70.78) ...
+    VPS_DEV: Selecting previously unselected package linux-image-5.4.0-70-generic.
+    VPS_DEV: Preparing to unpack .../05-linux-image-5.4.0-70-generic_5.4.0-70.78_amd64.deb ...
+    VPS_DEV: Unpacking linux-image-5.4.0-70-generic (5.4.0-70.78) ...
+    VPS_DEV: Preparing to unpack .../06-linux-virtual_5.4.0.70.73_amd64.deb ...
+    VPS_DEV: Unpacking linux-virtual (5.4.0.70.73) over (5.4.0.67.70) ...
+    VPS_DEV: Preparing to unpack .../07-linux-image-virtual_5.4.0.70.73_amd64.deb ...
+    VPS_DEV: Unpacking linux-image-virtual (5.4.0.70.73) over (5.4.0.67.70) ...
+    VPS_DEV: Preparing to unpack .../08-linux-headers-virtual_5.4.0.70.73_amd64.deb ...
+    VPS_DEV: Unpacking linux-headers-virtual (5.4.0.70.73) over (5.4.0.67.70) ...
+    VPS_DEV: Preparing to unpack .../09-linux-headers-generic_5.4.0.70.73_amd64.deb ...
+    VPS_DEV: Unpacking linux-headers-generic (5.4.0.70.73) over (5.4.0.67.70) ...
+    VPS_DEV: Preparing to unpack .../10-open-vm-tools_2%3a11.1.5-1~ubuntu20.04.2_amd64.deb ...
+    VPS_DEV: Unpacking open-vm-tools (2:11.1.5-1~ubuntu20.04.2) over (2:11.0.5-4) ...
+    VPS_DEV: Setting up isc-dhcp-client (4.4.1-2.1ubuntu5.20.04.1) ...
+    VPS_DEV: Setting up open-vm-tools (2:11.1.5-1~ubuntu20.04.2) ...
+    VPS_DEV: Installing new version of config file /etc/vmware-tools/tools.conf.example ...
+    VPS_DEV: Setting up linux-headers-5.4.0-70 (5.4.0-70.78) ...
+    VPS_DEV: Setting up isc-dhcp-common (4.4.1-2.1ubuntu5.20.04.1) ...
+    VPS_DEV: Setting up linux-modules-5.4.0-70-generic (5.4.0-70.78) ...
+    VPS_DEV: Setting up linux-image-5.4.0-70-generic (5.4.0-70.78) ...
+    VPS_DEV: I: /boot/vmlinuz is now a symlink to vmlinuz-5.4.0-70-generic
+    VPS_DEV: I: /boot/initrd.img is now a symlink to initrd.img-5.4.0-70-generic
+    VPS_DEV: Setting up linux-headers-5.4.0-70-generic (5.4.0-70.78) ...
+    VPS_DEV: Setting up linux-image-virtual (5.4.0.70.73) ...
+    VPS_DEV: Setting up linux-headers-generic (5.4.0.70.73) ...
+    VPS_DEV: Setting up linux-headers-virtual (5.4.0.70.73) ...
+    VPS_DEV: Setting up linux-virtual (5.4.0.70.73) ...
+    VPS_DEV: Processing triggers for systemd (245.4-4ubuntu3.5) ...
+    VPS_DEV: Processing triggers for man-db (2.9.1-1) ...
+    VPS_DEV: Processing triggers for libc-bin (2.31-0ubuntu9.2) ...
+    VPS_DEV: Processing triggers for linux-image-5.4.0-70-generic (5.4.0-70.78) ...
+    VPS_DEV: /etc/kernel/postinst.d/initramfs-tools:
+    VPS_DEV: update-initramfs: Generating /boot/initrd.img-5.4.0-70-generic
+    VPS_DEV: /etc/kernel/postinst.d/zz-update-grub:
+    VPS_DEV: Sourcing file `/etc/default/grub'
+    VPS_DEV: Sourcing file `/etc/default/grub.d/50-cloudimg-settings.cfg'
+    VPS_DEV: Sourcing file `/etc/default/grub.d/init-select.cfg'
+    VPS_DEV: Generating grub configuration file ...
+    VPS_DEV: Found linux image: /boot/vmlinuz-5.4.0-70-generic
+    VPS_DEV: Found initrd image: /boot/initrd.img-5.4.0-70-generic
+    VPS_DEV: Found linux image: /boot/vmlinuz-5.4.0-67-generic
+    VPS_DEV: Found initrd image: /boot/initrd.img-5.4.0-67-generic
+    VPS_DEV: done
+    VPS_DEV: ==> Instalar os pacotes base no ubuntu-focal...
+    VPS_DEV: Reading package lists...
+    VPS_DEV: Building dependency tree...
+    VPS_DEV: 
+    VPS_DEV: Reading state information...
+    VPS_DEV: linux-headers-5.4.0-67-generic is already the newest version (5.4.0-67.75).
+    VPS_DEV: linux-headers-5.4.0-67-generic set to manually installed.
+    VPS_DEV: ubuntu-minimal is already the newest version (1.450.2).
+    VPS_DEV: The following additional packages will be installed:
+    VPS_DEV:   adwaita-icon-theme amd64-microcode at-spi2-core automake autotools-dev
+    VPS_DEV:   binutils binutils-common binutils-x86-64-linux-gnu cpp cpp-9 crda
+    VPS_DEV:   dctrl-tools dpkg-dev fakeroot fontconfig fontconfig-config fonts-dejavu-core
+    VPS_DEV:   g++ g++-9 gcc gcc-9 gcc-9-base gtk-update-icon-cache hicolor-icon-theme
+    VPS_DEV:   humanity-icon-theme intel-microcode iucode-tool iw libalgorithm-diff-perl
+    VPS_DEV:   libalgorithm-diff-xs-perl libalgorithm-merge-perl libasan5 libasyncns0
+    VPS_DEV:   libatk-bridge2.0-0 libatk1.0-0 libatk1.0-data libatomic1 libatspi2.0-0
+    VPS_DEV:   libavahi-client3 libavahi-common-data libavahi-common3 libbinutils
+    VPS_DEV:   libc-dev-bin libc6-dev libcaca0 libcairo-gobject2 libcairo2 libcc1-0
+    VPS_DEV:   libcolord2 libcrypt-dev libctf-nobfd0 libctf0 libcups2 libdatrie1
+    VPS_DEV:   libdbus-glib-1-2 libdouble-conversion3 libdpkg-perl libdrm-amdgpu1
+    VPS_DEV:   libdrm-intel1 libdrm-nouveau2 libdrm-radeon1 libegl-mesa0 libegl1 libepoxy0
+    VPS_DEV:   libevdev2 libfakeroot libfile-fcntllock-perl libflac8 libfontconfig1 libgbm1
+    VPS_DEV:   libgcc-9-dev libgdk-pixbuf2.0-0 libgdk-pixbuf2.0-bin libgdk-pixbuf2.0-common
+    VPS_DEV:   libgl1 libgl1-mesa-dri libglapi-mesa libglvnd0 libglx-mesa0 libglx0 libgomp1
+    VPS_DEV:   libgraphite2-3 libgsoap-2.8.91 libgtk-3-0 libgtk-3-bin libgtk-3-common
+    VPS_DEV:   libharfbuzz0b libice6 libinput-bin libinput10 libisl22 libitm1 libjbig0
+    VPS_DEV:   libjpeg-turbo8 libjpeg8 liblcms2-2 libllvm11 liblsan0 liblzf1 libmpc3
+    VPS_DEV:   libmtdev1 libnl-3-200 libnl-genl-3-200 libopus0 libpango-1.0-0
+    VPS_DEV:   libpangocairo-1.0-0 libpangoft2-1.0-0 libpciaccess0 libpcre2-16-0
+    VPS_DEV:   libpixman-1-0 libpulse0 libqt5core5a libqt5dbus5 libqt5gui5 libqt5network5
+    VPS_DEV:   libqt5opengl5 libqt5printsupport5 libqt5svg5 libqt5widgets5 libqt5x11extras5
+    VPS_DEV:   libquadmath0 librest-0.7-0 librsvg2-2 librsvg2-common libsdl1.2debian
+    VPS_DEV:   libsensors-config libsensors5 libsm6 libsndfile1 libsoup-gnome2.4-1
+    VPS_DEV:   libstdc++-9-dev libthai-data libthai0 libtiff5 libtsan0 libubsan1
+    VPS_DEV:   libvncserver1 libvorbisenc2 libvpx6 libvulkan1 libwacom-bin libwacom-common
+    VPS_DEV:   libwacom2 libwayland-client0 libwayland-cursor0 libwayland-egl1
+    VPS_DEV:   libwayland-server0 libwebp6 libx11-xcb1 libxcb-dri2-0 libxcb-dri3-0
+    VPS_DEV:   libxcb-glx0 libxcb-icccm4 libxcb-image0 libxcb-keysyms1 libxcb-present0
+    VPS_DEV:   libxcb-randr0 libxcb-render-util0 libxcb-render0 libxcb-shape0 libxcb-shm0
+    VPS_DEV:   libxcb-sync1 libxcb-util1 libxcb-xfixes0 libxcb-xinerama0 libxcb-xinput0
+    VPS_DEV:   libxcb-xkb1 libxcomposite1 libxcursor1 libxdamage1 libxfixes3 libxi6
+    VPS_DEV:   libxinerama1 libxkbcommon-x11-0 libxkbcommon0 libxrandr2 libxrender1
+    VPS_DEV:   libxshmfence1 libxt6 libxtst6 libxxf86vm1 linux-firmware linux-image-generic
+    VPS_DEV:   linux-libc-dev linux-modules-extra-5.4.0-70-generic m4 manpages-dev
+    VPS_DEV:   mesa-vulkan-drivers qt5-gtk-platformtheme qttranslations5-l10n thermald
+    VPS_DEV:   ubuntu-mono virtualbox-dkms virtualbox-qt wireless-regdb x11-common
+    VPS_DEV: Suggested packages:
+    VPS_DEV:   autoconf-archive gnu-standards autoconf-doc libtool gettext binutils-doc
+    VPS_DEV:   cpp-doc gcc-9-locales debtags menu debian-keyring g++-multilib
+    VPS_DEV:   g++-9-multilib gcc-9-doc gcc-multilib flex bison gdb gcc-doc gcc-9-multilib
+    VPS_DEV:   glibc-doc colord cups-common bzr gvfs liblcms2-utils opus-tools pulseaudio
+    VPS_DEV:   qt5-image-formats-plugins qtwayland5 librsvg2-bin lm-sensors libstdc++-9-doc
+    VPS_DEV:   m4-doc make-doc vde2
+    VPS_DEV: The following NEW packages will be installed:
+    VPS_DEV:   adwaita-icon-theme amd64-microcode at-spi2-core autoconf automake
+    VPS_DEV:   autotools-dev binutils binutils-common binutils-x86-64-linux-gnu
+    VPS_DEV:   build-essential cpp cpp-9 crda dctrl-tools dkms dpkg-dev fakeroot fontconfig
+    VPS_DEV:   fontconfig-config fonts-dejavu-core g++ g++-9 gcc gcc-9 gcc-9-base
+    VPS_DEV:   gtk-update-icon-cache hicolor-icon-theme humanity-icon-theme intel-microcode
+    VPS_DEV:   iucode-tool iw libalgorithm-diff-perl libalgorithm-diff-xs-perl
+    VPS_DEV:   libalgorithm-merge-perl libasan5 libasyncns0 libatk-bridge2.0-0 libatk1.0-0
+    VPS_DEV:   libatk1.0-data libatomic1 libatspi2.0-0 libavahi-client3
+    VPS_DEV:   libavahi-common-data libavahi-common3 libbinutils libc-dev-bin libc6-dev
+    VPS_DEV:   libcaca0 libcairo-gobject2 libcairo2 libcc1-0 libcolord2 libcrypt-dev
+    VPS_DEV:   libctf-nobfd0 libctf0 libcups2 libdatrie1 libdbus-glib-1-2
+    VPS_DEV:   libdouble-conversion3 libdpkg-perl libdrm-amdgpu1 libdrm-intel1
+    VPS_DEV:   libdrm-nouveau2 libdrm-radeon1 libegl-mesa0 libegl1 libepoxy0 libevdev2
+    VPS_DEV:   libfakeroot libfile-fcntllock-perl libflac8 libfontconfig1 libgbm1
+    VPS_DEV:   libgcc-9-dev libgdk-pixbuf2.0-0 libgdk-pixbuf2.0-bin libgdk-pixbuf2.0-common
+    VPS_DEV:   libgl1 libgl1-mesa-dri libglapi-mesa libglvnd0 libglx-mesa0 libglx0 libgomp1
+    VPS_DEV:   libgraphite2-3 libgsoap-2.8.91 libgtk-3-0 libgtk-3-bin libgtk-3-common
+    VPS_DEV:   libharfbuzz0b libice6 libinput-bin libinput10 libisl22 libitm1 libjbig0
+    VPS_DEV:   libjpeg-turbo8 libjpeg8 liblcms2-2 libllvm11 liblsan0 liblzf1 libmpc3
+    VPS_DEV:   libmtdev1 libnl-3-200 libnl-genl-3-200 libopus0 libpango-1.0-0
+    VPS_DEV:   libpangocairo-1.0-0 libpangoft2-1.0-0 libpciaccess0 libpcre2-16-0
+    VPS_DEV:   libpixman-1-0 libpulse0 libqt5core5a libqt5dbus5 libqt5gui5 libqt5network5
+    VPS_DEV:   libqt5opengl5 libqt5printsupport5 libqt5svg5 libqt5widgets5 libqt5x11extras5
+    VPS_DEV:   libquadmath0 librest-0.7-0 librsvg2-2 librsvg2-common libsdl1.2debian
+    VPS_DEV:   libsensors-config libsensors5 libsm6 libsndfile1 libsoup-gnome2.4-1
+    VPS_DEV:   libstdc++-9-dev libthai-data libthai0 libtiff5 libtsan0 libubsan1
+    VPS_DEV:   libvncserver1 libvorbisenc2 libvpx6 libvulkan1 libwacom-bin libwacom-common
+    VPS_DEV:   libwacom2 libwayland-client0 libwayland-cursor0 libwayland-egl1
+    VPS_DEV:   libwayland-server0 libwebp6 libx11-xcb1 libxcb-dri2-0 libxcb-dri3-0
+    VPS_DEV:   libxcb-glx0 libxcb-icccm4 libxcb-image0 libxcb-keysyms1 libxcb-present0
+    VPS_DEV:   libxcb-randr0 libxcb-render-util0 libxcb-render0 libxcb-shape0 libxcb-shm0
+    VPS_DEV:   libxcb-sync1 libxcb-util1 libxcb-xfixes0 libxcb-xinerama0 libxcb-xinput0
+    VPS_DEV:   libxcb-xkb1 libxcomposite1 libxcursor1 libxdamage1 libxfixes3 libxi6
+    VPS_DEV:   libxinerama1 libxkbcommon-x11-0 libxkbcommon0 libxrandr2 libxrender1
+    VPS_DEV:   libxshmfence1 libxt6 libxtst6 libxxf86vm1 linux-firmware linux-generic
+    VPS_DEV:   linux-image-generic linux-libc-dev linux-modules-extra-5.4.0-70-generic m4
+    VPS_DEV:   make manpages-dev mesa-vulkan-drivers qt5-gtk-platformtheme
+    VPS_DEV:   qttranslations5-l10n thermald ubuntu-mono virtualbox virtualbox-dkms
+    VPS_DEV:   virtualbox-guest-additions-iso virtualbox-guest-dkms virtualbox-qt
+    VPS_DEV:   wireless-regdb x11-common
+    VPS_DEV: 0 upgraded, 204 newly installed, 0 to remove and 0 not upgraded.
+    VPS_DEV: Need to get 337 MB of archives.
+    VPS_DEV: After this operation, 1721 MB of additional disk space will be used.
+    VPS_DEV: Get:1 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 gcc-9-base amd64 9.3.0-17ubuntu1~20.04 [19.1 kB]
+    VPS_DEV: Get:2 http://archive.ubuntu.com/ubuntu focal/main amd64 libisl22 amd64 0.22.1-1 [592 kB]
+    VPS_DEV: Get:3 http://archive.ubuntu.com/ubuntu focal/main amd64 libmpc3 amd64 1.1.0-1 [40.8 kB]
+    VPS_DEV: Get:4 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 cpp-9 amd64 9.3.0-17ubuntu1~20.04 [7494 kB]
+    VPS_DEV: Get:5 http://archive.ubuntu.com/ubuntu focal/main amd64 cpp amd64 4:9.3.0-1ubuntu2 [27.6 kB]
+    VPS_DEV: Get:6 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libcc1-0 amd64 10.2.0-5ubuntu1~20.04 [41.1 kB]
+    VPS_DEV: Get:7 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 binutils-common amd64 2.34-6ubuntu1.1 [207 kB]
+    VPS_DEV: Get:8 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libbinutils amd64 2.34-6ubuntu1.1 [475 kB]
+    VPS_DEV: Get:9 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libctf-nobfd0 amd64 2.34-6ubuntu1.1 [47.1 kB]
+    VPS_DEV: Get:10 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libctf0 amd64 2.34-6ubuntu1.1 [46.6 kB]
+    VPS_DEV: Get:11 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 binutils-x86-64-linux-gnu amd64 2.34-6ubuntu1.1 [1613 kB]
+    VPS_DEV: Get:12 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 binutils amd64 2.34-6ubuntu1.1 [3380 B]
+    VPS_DEV: Get:13 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libgomp1 amd64 10.2.0-5ubuntu1~20.04 [102 kB]
+    VPS_DEV: Get:14 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libitm1 amd64 10.2.0-5ubuntu1~20.04 [26.4 kB]
+    VPS_DEV: Get:15 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libatomic1 amd64 10.2.0-5ubuntu1~20.04 [9300 B]
+    VPS_DEV: Get:16 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libasan5 amd64 9.3.0-17ubuntu1~20.04 [394 kB]
+    VPS_DEV: Get:17 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 liblsan0 amd64 10.2.0-5ubuntu1~20.04 [144 kB]
+    VPS_DEV: Get:18 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libtsan0 amd64 10.2.0-5ubuntu1~20.04 [320 kB]
+    VPS_DEV: Get:19 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libubsan1 amd64 10.2.0-5ubuntu1~20.04 [136 kB]
+    VPS_DEV: Get:20 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libquadmath0 amd64 10.2.0-5ubuntu1~20.04 [146 kB]
+    VPS_DEV: Get:21 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libgcc-9-dev amd64 9.3.0-17ubuntu1~20.04 [2360 kB]
+    VPS_DEV: Get:22 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 gcc-9 amd64 9.3.0-17ubuntu1~20.04 [8241 kB]
+    VPS_DEV: Get:23 http://archive.ubuntu.com/ubuntu focal/main amd64 gcc amd64 4:9.3.0-1ubuntu2 [5208 B]
+    VPS_DEV: Get:24 http://archive.ubuntu.com/ubuntu focal/main amd64 libdpkg-perl all 1.19.7ubuntu3 [230 kB]
+    VPS_DEV: Get:25 http://archive.ubuntu.com/ubuntu focal/main amd64 make amd64 4.2.1-1.2 [162 kB]
+    VPS_DEV: Get:26 http://archive.ubuntu.com/ubuntu focal/main amd64 dpkg-dev all 1.19.7ubuntu3 [679 kB]
+    VPS_DEV: Get:27 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libc-dev-bin amd64 2.31-0ubuntu9.2 [71.8 kB]
+    VPS_DEV: Get:28 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 linux-libc-dev amd64 5.4.0-70.78 [1120 kB]
+    VPS_DEV: Get:29 http://archive.ubuntu.com/ubuntu focal/main amd64 libcrypt-dev amd64 1:4.4.10-10ubuntu4 [104 kB]
+    VPS_DEV: Get:30 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libc6-dev amd64 2.31-0ubuntu9.2 [2520 kB]
+    VPS_DEV: Get:31 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libstdc++-9-dev amd64 9.3.0-17ubuntu1~20.04 [1714 kB]
+    VPS_DEV: Get:32 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 g++-9 amd64 9.3.0-17ubuntu1~20.04 [8405 kB]
+    VPS_DEV: Get:33 http://archive.ubuntu.com/ubuntu focal/main amd64 g++ amd64 4:9.3.0-1ubuntu2 [1604 B]
+    VPS_DEV: Get:34 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 build-essential amd64 12.8ubuntu1.1 [4664 B]
+    VPS_DEV: Get:35 http://archive.ubuntu.com/ubuntu focal/main amd64 dctrl-tools amd64 2.24-3 [61.5 kB]
+    VPS_DEV: Get:36 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 dkms all 2.8.1-5ubuntu2 [66.8 kB]
+    VPS_DEV: Get:37 http://archive.ubuntu.com/ubuntu focal/universe amd64 libdouble-conversion3 amd64 3.1.5-4ubuntu1 [37.9 kB]
+    VPS_DEV: Get:38 http://archive.ubuntu.com/ubuntu focal/main amd64 libpcre2-16-0 amd64 10.34-7 [181 kB]
+    VPS_DEV: Get:39 http://archive.ubuntu.com/ubuntu focal/universe amd64 libqt5core5a amd64 5.12.8+dfsg-0ubuntu1 [2005 kB]
+    VPS_DEV: Get:40 http://archive.ubuntu.com/ubuntu focal/main amd64 fonts-dejavu-core all 2.37-1 [1041 kB]
+    VPS_DEV: Get:41 http://archive.ubuntu.com/ubuntu focal/main amd64 fontconfig-config all 2.13.1-2ubuntu3 [28.8 kB]
+    VPS_DEV: Get:42 http://archive.ubuntu.com/ubuntu focal/main amd64 libfontconfig1 amd64 2.13.1-2ubuntu3 [114 kB]
+    VPS_DEV: Get:43 http://archive.ubuntu.com/ubuntu focal/main amd64 fontconfig amd64 2.13.1-2ubuntu3 [171 kB]
+    VPS_DEV: Get:44 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libglvnd0 amd64 1.3.2-1~ubuntu0.20.04.1 [51.4 kB]
+    VPS_DEV: Get:45 http://archive.ubuntu.com/ubuntu focal/main amd64 libwayland-server0 amd64 1.18.0-1 [31.6 kB]
+    VPS_DEV: Get:46 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libgbm1 amd64 20.2.6-0ubuntu0.20.04.1 [30.4 kB]
+    VPS_DEV: Get:47 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libglapi-mesa amd64 20.2.6-0ubuntu0.20.04.1 [26.7 kB]
+    VPS_DEV: Get:48 http://archive.ubuntu.com/ubuntu focal/main amd64 libwayland-client0 amd64 1.18.0-1 [23.9 kB]
+    VPS_DEV: Get:49 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libx11-xcb1 amd64 2:1.6.9-2ubuntu1.1 [9220 B]
+    VPS_DEV: Get:50 http://archive.ubuntu.com/ubuntu focal/main amd64 libxcb-dri2-0 amd64 1.14-2 [6920 B]
+    VPS_DEV: Get:51 http://archive.ubuntu.com/ubuntu focal/main amd64 libxcb-dri3-0 amd64 1.14-2 [6552 B]
+    VPS_DEV: Get:52 http://archive.ubuntu.com/ubuntu focal/main amd64 libxcb-present0 amd64 1.14-2 [5560 B]
+    VPS_DEV: Get:53 http://archive.ubuntu.com/ubuntu focal/main amd64 libxcb-sync1 amd64 1.14-2 [8884 B]
+    VPS_DEV: Get:54 http://archive.ubuntu.com/ubuntu focal/main amd64 libxcb-xfixes0 amd64 1.14-2 [9296 B]
+    VPS_DEV: Get:55 http://archive.ubuntu.com/ubuntu focal/main amd64 libxshmfence1 amd64 1.3-1 [5028 B]
+    VPS_DEV: Get:56 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libegl-mesa0 amd64 20.2.6-0ubuntu0.20.04.1 [97.7 kB]
+    VPS_DEV: Get:57 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libegl1 amd64 1.3.2-1~ubuntu0.20.04.1 [31.9 kB]
+    VPS_DEV: Get:58 http://archive.ubuntu.com/ubuntu focal/main amd64 libxcb-glx0 amd64 1.14-2 [22.1 kB]
+    VPS_DEV: Get:59 http://archive.ubuntu.com/ubuntu focal/main amd64 libxdamage1 amd64 1:1.1.5-2 [6996 B]
+    VPS_DEV: Get:60 http://archive.ubuntu.com/ubuntu focal/main amd64 libxfixes3 amd64 1:5.0.3-2 [10.9 kB]
+    VPS_DEV: Get:61 http://archive.ubuntu.com/ubuntu focal/main amd64 libxxf86vm1 amd64 1:1.1.4-1build1 [10.2 kB]
+    VPS_DEV: Get:62 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libdrm-amdgpu1 amd64 2.4.102-1ubuntu1~20.04.1 [18.4 kB]
+    VPS_DEV: Get:63 http://archive.ubuntu.com/ubuntu focal/main amd64 libpciaccess0 amd64 0.16-0ubuntu1 [17.9 kB]
+    VPS_DEV: Get:64 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libdrm-intel1 amd64 2.4.102-1ubuntu1~20.04.1 [60.3 kB]
+    VPS_DEV: Get:65 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libdrm-nouveau2 amd64 2.4.102-1ubuntu1~20.04.1 [16.4 kB]
+    VPS_DEV: Get:66 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libdrm-radeon1 amd64 2.4.102-1ubuntu1~20.04.1 [19.7 kB]
+    VPS_DEV: Get:67 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libllvm11 amd64 1:11.0.0-2~ubuntu20.04.1 [17.6 MB]
+    VPS_DEV: Get:68 http://archive.ubuntu.com/ubuntu focal/main amd64 libsensors-config all 1:3.6.0-2ubuntu1 [6092 B]
+    VPS_DEV: Get:69 http://archive.ubuntu.com/ubuntu focal/main amd64 libsensors5 amd64 1:3.6.0-2ubuntu1 [27.4 kB]
+    VPS_DEV: Get:70 http://archive.ubuntu.com/ubuntu focal/main amd64 libvulkan1 amd64 1.2.131.2-1 [93.3 kB]
+    VPS_DEV: Get:71 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libgl1-mesa-dri amd64 20.2.6-0ubuntu0.20.04.1 [10.1 MB]
+    VPS_DEV: Get:72 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libglx-mesa0 amd64 20.2.6-0ubuntu0.20.04.1 [142 kB]
+    VPS_DEV: Get:73 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libglx0 amd64 1.3.2-1~ubuntu0.20.04.1 [32.6 kB]
+    VPS_DEV: Get:74 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libgl1 amd64 1.3.2-1~ubuntu0.20.04.1 [86.9 kB]
+    VPS_DEV: Get:75 http://archive.ubuntu.com/ubuntu focal/main amd64 libgraphite2-3 amd64 1.3.13-11build1 [73.5 kB]
+    VPS_DEV: Get:76 http://archive.ubuntu.com/ubuntu focal/main amd64 libharfbuzz0b amd64 2.6.4-1ubuntu4 [391 kB]
+    VPS_DEV: Get:77 http://archive.ubuntu.com/ubuntu focal/main amd64 x11-common all 1:7.7+19ubuntu14 [22.3 kB]
+    VPS_DEV: Get:78 http://archive.ubuntu.com/ubuntu focal/main amd64 libice6 amd64 2:1.0.10-0ubuntu1 [41.0 kB]
+    VPS_DEV: Get:79 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libevdev2 amd64 1.9.0+dfsg-1ubuntu0.1 [31.6 kB]
+    VPS_DEV: Get:80 http://archive.ubuntu.com/ubuntu focal/main amd64 libmtdev1 amd64 1.1.5-1.1 [14.2 kB]
+    VPS_DEV: Get:81 http://archive.ubuntu.com/ubuntu focal/main amd64 libwacom-common all 1.3-2ubuntu1 [44.3 kB]
+    VPS_DEV: Get:82 http://archive.ubuntu.com/ubuntu focal/main amd64 libwacom2 amd64 1.3-2ubuntu1 [19.7 kB]
+    VPS_DEV: Get:83 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libinput-bin amd64 1.15.5-1ubuntu0.2 [19.1 kB]
+    VPS_DEV: Get:84 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libinput10 amd64 1.15.5-1ubuntu0.2 [112 kB]
+    VPS_DEV: Get:85 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libjpeg-turbo8 amd64 2.0.3-0ubuntu1.20.04.1 [117 kB]
+    VPS_DEV: Get:86 http://archive.ubuntu.com/ubuntu focal/main amd64 libjpeg8 amd64 8c-2ubuntu8 [2194 B]
+    VPS_DEV: Get:87 http://archive.ubuntu.com/ubuntu focal/universe amd64 libqt5dbus5 amd64 5.12.8+dfsg-0ubuntu1 [208 kB]
+    VPS_DEV: Get:88 http://archive.ubuntu.com/ubuntu focal/universe amd64 libqt5network5 amd64 5.12.8+dfsg-0ubuntu1 [674 kB]
+    VPS_DEV: Get:89 http://archive.ubuntu.com/ubuntu focal/main amd64 libsm6 amd64 2:1.2.3-1 [16.1 kB]
+    VPS_DEV: Get:90 http://archive.ubuntu.com/ubuntu focal/main amd64 libxcb-icccm4 amd64 0.4.1-1.1 [10.8 kB]
+    VPS_DEV: Get:91 http://archive.ubuntu.com/ubuntu focal/main amd64 libxcb-shm0 amd64 1.14-2 [5584 B]
+    VPS_DEV: Get:92 http://archive.ubuntu.com/ubuntu focal/main amd64 libxcb-util1 amd64 0.4.0-0ubuntu3 [11.2 kB]
+    VPS_DEV: Get:93 http://archive.ubuntu.com/ubuntu focal/main amd64 libxcb-image0 amd64 0.4.0-1build1 [12.3 kB]
+    VPS_DEV: Get:94 http://archive.ubuntu.com/ubuntu focal/main amd64 libxcb-keysyms1 amd64 0.4.0-1build1 [8452 B]
+    VPS_DEV: Get:95 http://archive.ubuntu.com/ubuntu focal/main amd64 libxcb-randr0 amd64 1.14-2 [16.3 kB]
+    VPS_DEV: Get:96 http://archive.ubuntu.com/ubuntu focal/main amd64 libxcb-render0 amd64 1.14-2 [14.8 kB]
+    VPS_DEV: Get:97 http://archive.ubuntu.com/ubuntu focal/main amd64 libxcb-render-util0 amd64 0.3.9-1build1 [9912 B]
+    VPS_DEV: Get:98 http://archive.ubuntu.com/ubuntu focal/main amd64 libxcb-shape0 amd64 1.14-2 [5928 B]
+    VPS_DEV: Get:99 http://archive.ubuntu.com/ubuntu focal/main amd64 libxcb-xinerama0 amd64 1.14-2 [5260 B]
+    VPS_DEV: Get:100 http://archive.ubuntu.com/ubuntu focal/main amd64 libxcb-xinput0 amd64 1.14-2 [29.3 kB]
+    VPS_DEV: Get:101 http://archive.ubuntu.com/ubuntu focal/main amd64 libxcb-xkb1 amd64 1.14-2 [29.6 kB]
+    VPS_DEV: Get:102 http://archive.ubuntu.com/ubuntu focal/main amd64 libxkbcommon0 amd64 0.10.0-1 [98.4 kB]
+    VPS_DEV: Get:103 http://archive.ubuntu.com/ubuntu focal/main amd64 libxkbcommon-x11-0 amd64 0.10.0-1 [13.4 kB]
+    VPS_DEV: Get:104 http://archive.ubuntu.com/ubuntu focal/main amd64 libxrender1 amd64 1:0.9.10-1 [18.7 kB]
+    VPS_DEV: Get:105 http://archive.ubuntu.com/ubuntu focal/universe amd64 libqt5gui5 amd64 5.12.8+dfsg-0ubuntu1 [2971 kB]
+    VPS_DEV: Get:106 http://archive.ubuntu.com/ubuntu focal/universe amd64 libqt5widgets5 amd64 5.12.8+dfsg-0ubuntu1 [2293 kB]
+    VPS_DEV: Get:107 http://archive.ubuntu.com/ubuntu focal/universe amd64 libqt5svg5 amd64 5.12.8-0ubuntu1 [131 kB]
+    VPS_DEV: Get:108 http://archive.ubuntu.com/ubuntu focal/main amd64 hicolor-icon-theme all 0.17-2 [9976 B]
+    VPS_DEV: Get:109 http://archive.ubuntu.com/ubuntu focal/main amd64 libjbig0 amd64 2.1-3.1build1 [26.7 kB]
+    VPS_DEV: Get:110 http://archive.ubuntu.com/ubuntu focal/main amd64 libwebp6 amd64 0.6.1-2 [185 kB]
+    VPS_DEV: Get:111 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libtiff5 amd64 4.1.0+git191117-2ubuntu0.20.04.1 [162 kB]
+    VPS_DEV: Get:112 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libgdk-pixbuf2.0-common all 2.40.0+dfsg-3ubuntu0.2 [4652 B]
+    VPS_DEV: Get:113 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libgdk-pixbuf2.0-0 amd64 2.40.0+dfsg-3ubuntu0.2 [168 kB]
+    VPS_DEV: Get:114 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 gtk-update-icon-cache amd64 3.24.20-0ubuntu1 [28.9 kB]
+    VPS_DEV: Get:115 http://archive.ubuntu.com/ubuntu focal/main amd64 libpixman-1-0 amd64 0.38.4-0ubuntu1 [227 kB]
+    VPS_DEV: Get:116 http://archive.ubuntu.com/ubuntu focal/main amd64 libcairo2 amd64 1.16.0-4ubuntu1 [583 kB]
+    VPS_DEV: Get:117 http://archive.ubuntu.com/ubuntu focal/main amd64 libcairo-gobject2 amd64 1.16.0-4ubuntu1 [17.2 kB]
+    VPS_DEV: Get:118 http://archive.ubuntu.com/ubuntu focal/main amd64 libthai-data all 0.1.28-3 [134 kB]
+    VPS_DEV: Get:119 http://archive.ubuntu.com/ubuntu focal/main amd64 libdatrie1 amd64 0.2.12-3 [18.7 kB]
+    VPS_DEV: Get:120 http://archive.ubuntu.com/ubuntu focal/main amd64 libthai0 amd64 0.1.28-3 [18.1 kB]
+    VPS_DEV: Get:121 http://archive.ubuntu.com/ubuntu focal/main amd64 libpango-1.0-0 amd64 1.44.7-2ubuntu4 [162 kB]
+    VPS_DEV: Get:122 http://archive.ubuntu.com/ubuntu focal/main amd64 libpangoft2-1.0-0 amd64 1.44.7-2ubuntu4 [34.9 kB]
+    VPS_DEV: Get:123 http://archive.ubuntu.com/ubuntu focal/main amd64 libpangocairo-1.0-0 amd64 1.44.7-2ubuntu4 [24.8 kB]
+    VPS_DEV: Get:124 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 librsvg2-2 amd64 2.48.9-1ubuntu0.20.04.1 [2253 kB]
+    VPS_DEV: Get:125 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 librsvg2-common amd64 2.48.9-1ubuntu0.20.04.1 [9212 B]
+    VPS_DEV: Get:126 http://archive.ubuntu.com/ubuntu focal/main amd64 humanity-icon-theme all 0.6.15 [1250 kB]
+    VPS_DEV: Get:127 http://archive.ubuntu.com/ubuntu focal/main amd64 ubuntu-mono all 19.04-0ubuntu3 [147 kB]
+    VPS_DEV: Get:128 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 adwaita-icon-theme all 3.36.1-2ubuntu0.20.04.2 [3441 kB]
+    VPS_DEV: Get:129 http://archive.ubuntu.com/ubuntu focal/main amd64 libatspi2.0-0 amd64 2.36.0-2 [64.2 kB]
+    VPS_DEV: Get:130 http://archive.ubuntu.com/ubuntu focal/main amd64 libxtst6 amd64 2:1.2.3-1 [12.8 kB]
+    VPS_DEV: Get:131 http://archive.ubuntu.com/ubuntu focal/main amd64 at-spi2-core amd64 2.36.0-2 [48.7 kB]
+    VPS_DEV: Get:132 http://archive.ubuntu.com/ubuntu focal/main amd64 m4 amd64 1.4.18-4 [199 kB]
+    VPS_DEV: Get:133 http://archive.ubuntu.com/ubuntu focal/main amd64 autoconf all 2.69-11.1 [321 kB]
+    VPS_DEV: Get:134 http://archive.ubuntu.com/ubuntu focal/main amd64 autotools-dev all 20180224.1 [39.6 kB]
+    VPS_DEV: Get:135 http://archive.ubuntu.com/ubuntu focal/main amd64 automake all 1:1.16.1-4ubuntu6 [522 kB]
+    VPS_DEV: Get:136 http://archive.ubuntu.com/ubuntu focal/main amd64 libnl-3-200 amd64 3.4.0-1 [53.9 kB]
+    VPS_DEV: Get:137 http://archive.ubuntu.com/ubuntu focal/main amd64 libnl-genl-3-200 amd64 3.4.0-1 [11.1 kB]
+    VPS_DEV: Get:138 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 wireless-regdb all 2020.11.20-0ubuntu1~20.04.1 [10.3 kB]
+    VPS_DEV: Get:139 http://archive.ubuntu.com/ubuntu focal/main amd64 iw amd64 5.4-1 [94.0 kB]
+    VPS_DEV: Get:140 http://archive.ubuntu.com/ubuntu focal/main amd64 crda amd64 3.18-1build1 [63.5 kB]
+    VPS_DEV: Get:141 http://archive.ubuntu.com/ubuntu focal/main amd64 libfakeroot amd64 1.24-1 [25.7 kB]
+    VPS_DEV: Get:142 http://archive.ubuntu.com/ubuntu focal/main amd64 fakeroot amd64 1.24-1 [62.6 kB]
+    VPS_DEV: Get:143 http://archive.ubuntu.com/ubuntu focal/main amd64 iucode-tool amd64 2.3.1-1 [45.6 kB]
+    VPS_DEV: Get:144 http://archive.ubuntu.com/ubuntu focal/main amd64 libalgorithm-diff-perl all 1.19.03-2 [46.6 kB]
+    VPS_DEV: Get:145 http://archive.ubuntu.com/ubuntu focal/main amd64 libalgorithm-diff-xs-perl amd64 0.04-6 [11.3 kB]
+    VPS_DEV: Get:146 http://archive.ubuntu.com/ubuntu focal/main amd64 libalgorithm-merge-perl all 0.08-3 [12.0 kB]
+    VPS_DEV: Get:147 http://archive.ubuntu.com/ubuntu focal/main amd64 libasyncns0 amd64 0.8-6 [12.1 kB]
+    VPS_DEV: Get:148 http://archive.ubuntu.com/ubuntu focal/main amd64 libatk1.0-data all 2.35.1-1ubuntu2 [2964 B]
+    VPS_DEV: Get:149 http://archive.ubuntu.com/ubuntu focal/main amd64 libatk1.0-0 amd64 2.35.1-1ubuntu2 [45.5 kB]
+    VPS_DEV: Get:150 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libatk-bridge2.0-0 amd64 2.34.2-0ubuntu2~20.04.1 [58.2 kB]
+    VPS_DEV: Get:151 http://archive.ubuntu.com/ubuntu focal/main amd64 libavahi-common-data amd64 0.7-4ubuntu7 [21.4 kB]
+    VPS_DEV: Get:152 http://archive.ubuntu.com/ubuntu focal/main amd64 libavahi-common3 amd64 0.7-4ubuntu7 [21.7 kB]
+    VPS_DEV: Get:153 http://archive.ubuntu.com/ubuntu focal/main amd64 libavahi-client3 amd64 0.7-4ubuntu7 [25.5 kB]
+    VPS_DEV: Get:154 http://archive.ubuntu.com/ubuntu focal/main amd64 libcaca0 amd64 0.99.beta19-2.1ubuntu1 [202 kB]
+    VPS_DEV: Get:155 http://archive.ubuntu.com/ubuntu focal/main amd64 liblcms2-2 amd64 2.9-4 [140 kB]
+    VPS_DEV: Get:156 http://archive.ubuntu.com/ubuntu focal/main amd64 libcolord2 amd64 1.4.4-2 [133 kB]
+    VPS_DEV: Get:157 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libcups2 amd64 2.3.1-9ubuntu1.1 [233 kB]
+    VPS_DEV: Get:158 http://archive.ubuntu.com/ubuntu focal/main amd64 libdbus-glib-1-2 amd64 0.110-5fakssync1 [59.1 kB]
+    VPS_DEV: Get:159 http://archive.ubuntu.com/ubuntu focal/main amd64 libepoxy0 amd64 1.5.4-1 [191 kB]
+    VPS_DEV: Get:160 http://archive.ubuntu.com/ubuntu focal/main amd64 libfile-fcntllock-perl amd64 0.22-3build4 [33.1 kB]
+    VPS_DEV: Get:161 http://archive.ubuntu.com/ubuntu focal/main amd64 libflac8 amd64 1.3.3-1build1 [103 kB]
+    VPS_DEV: Get:162 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libgdk-pixbuf2.0-bin amd64 2.40.0+dfsg-3ubuntu0.2 [14.1 kB]
+    VPS_DEV: Get:163 http://archive.ubuntu.com/ubuntu focal/universe amd64 libgsoap-2.8.91 amd64 2.8.91-2 [231 kB]
+    VPS_DEV: Get:164 http://archive.ubuntu.com/ubuntu focal/main amd64 libsoup-gnome2.4-1 amd64 2.70.0-1 [6136 B]
+    VPS_DEV: Get:165 http://archive.ubuntu.com/ubuntu focal/main amd64 librest-0.7-0 amd64 0.8.1-1 [32.2 kB]
+    VPS_DEV: Get:166 http://archive.ubuntu.com/ubuntu focal/main amd64 libwayland-cursor0 amd64 1.18.0-1 [10.3 kB]
+    VPS_DEV: Get:167 http://archive.ubuntu.com/ubuntu focal/main amd64 libwayland-egl1 amd64 1.18.0-1 [5692 B]
+    VPS_DEV: Get:168 http://archive.ubuntu.com/ubuntu focal/main amd64 libxcomposite1 amd64 1:0.4.5-1 [6976 B]
+    VPS_DEV: Get:169 http://archive.ubuntu.com/ubuntu focal/main amd64 libxcursor1 amd64 1:1.2.0-2 [20.1 kB]
+    VPS_DEV: Get:170 http://archive.ubuntu.com/ubuntu focal/main amd64 libxi6 amd64 2:1.7.10-0ubuntu1 [29.9 kB]
+    VPS_DEV: Get:171 http://archive.ubuntu.com/ubuntu focal/main amd64 libxinerama1 amd64 2:1.1.4-2 [6904 B]
+    VPS_DEV: Get:172 http://archive.ubuntu.com/ubuntu focal/main amd64 libxrandr2 amd64 2:1.5.2-0ubuntu1 [18.5 kB]
+    VPS_DEV: Get:173 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libgtk-3-common all 3.24.20-0ubuntu1 [235 kB]
+    VPS_DEV: Get:174 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libgtk-3-0 amd64 3.24.20-0ubuntu1 [2620 kB]
+    VPS_DEV: Get:175 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libgtk-3-bin amd64 3.24.20-0ubuntu1 [61.9 kB]
+    VPS_DEV: Get:176 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 liblzf1 amd64 3.6-2~ubuntu1.20.04.1 [7304 B]
+    VPS_DEV: Get:177 http://archive.ubuntu.com/ubuntu focal/main amd64 libopus0 amd64 1.3.1-0ubuntu1 [191 kB]
+    VPS_DEV: Get:178 http://archive.ubuntu.com/ubuntu focal/main amd64 libvorbisenc2 amd64 1.3.6-2ubuntu1 [70.7 kB]
+    VPS_DEV: Get:179 http://archive.ubuntu.com/ubuntu focal/main amd64 libsndfile1 amd64 1.0.28-7 [170 kB]
+    VPS_DEV: Get:180 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libpulse0 amd64 1:13.99.1-1ubuntu3.10 [262 kB]
+    VPS_DEV: Get:181 http://archive.ubuntu.com/ubuntu focal/universe amd64 libqt5opengl5 amd64 5.12.8+dfsg-0ubuntu1 [136 kB]
+    VPS_DEV: Get:182 http://archive.ubuntu.com/ubuntu focal/universe amd64 libqt5printsupport5 amd64 5.12.8+dfsg-0ubuntu1 [193 kB]
+    VPS_DEV: Get:183 http://archive.ubuntu.com/ubuntu focal/universe amd64 libqt5x11extras5 amd64 5.12.8-0ubuntu1 [10.3 kB]
+    VPS_DEV: Get:184 http://archive.ubuntu.com/ubuntu focal/universe amd64 libsdl1.2debian amd64 1.2.15+dfsg2-5 [175 kB]
+    VPS_DEV: Get:185 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libvncserver1 amd64 0.9.12+dfsg-9ubuntu0.3 [119 kB]
+    VPS_DEV: Get:186 http://archive.ubuntu.com/ubuntu focal/main amd64 libvpx6 amd64 1.8.2-1build1 [820 kB]
+    VPS_DEV: Get:187 http://archive.ubuntu.com/ubuntu focal/main amd64 libwacom-bin amd64 1.3-2ubuntu1 [5484 B]
+    VPS_DEV: Get:188 http://archive.ubuntu.com/ubuntu focal/main amd64 libxt6 amd64 1:1.1.5-1 [160 kB]
+    VPS_DEV: Get:189 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 linux-firmware all 1.187.10 [103 MB]
+^C==> VPS_DEV: Waiting for cleanup before exiting...
+^C==> VPS_DEV: Exiting immediately, without cleanup!
+==> VPS_DEV: Attempting graceful shutdown of VM...
+==> VPS_DEV: Clearing any previously set forwarded ports...
+==> VPS_DEV: Clearing any previously set network interfaces...
+==> VPS_DEV: Preparing network interfaces based on configuration...
+    VPS_DEV: Adapter 1: nat
+==> VPS_DEV: Forwarding ports...
+    VPS_DEV: 22 (guest) => 2222 (host) (adapter 1)
+==> VPS_DEV: Running 'pre-boot' VM customizations...
+==> VPS_DEV: Booting VM...
+==> VPS_DEV: Waiting for machine to boot. This may take a few minutes...
+    VPS_DEV: SSH address: 127.0.0.1:2222
+    VPS_DEV: SSH username: vagrant
+    VPS_DEV: SSH auth method: private key
+^C==> VPS_DEV: Waiting for cleanup before exiting...
+Vagrant exited after cleanup due to external interrupt.
+Welcome to Ubuntu 20.04.2 LTS (GNU/Linux 5.4.0-70-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Tue Mar 23 21:00:58 UTC 2021
+
+  System load:  0.08              Processes:               140
+  Usage of /:   3.7% of 48.41GB   Users logged in:         0
+  Memory usage: 5%                IPv4 address for enp0s3: 10.0.2.15
+  Swap usage:   0%
+
+
+0 updates can be installed immediately.
+0 of these updates are security updates.
+
+
+-bash: line 4: make: command not found
+^C
