@@ -1,7 +1,7 @@
 #!/bin/bash
 
 instalar_requerimentos(){
-    echo "Atualizar repositórios e instalar requerimentos..."
+    echo "Atualizar repositórios e instalar os requerimentos para rodar o neoricalex..."
     sudo apt update
     sudo apt install -y \
         autoconf \
@@ -10,7 +10,6 @@ instalar_requerimentos(){
         git \
         make \
         tmux
-
 }
 
 iniciar_local(){
@@ -31,9 +30,9 @@ if [ "$usuario" == "neo@desktop" ]; then
     if [ -d "src/vps" ] ; then
         cd src/vps
         echo "Atualizar o github:neoricalex/vps..."
-        #git add .
-        #git commit -m "Atualização Automática via bash shell"
-        #git push origin master
+        git add .
+        git commit -m "Atualização Automática via bash shell"
+        git push origin master
         cd ../..
     fi
    
