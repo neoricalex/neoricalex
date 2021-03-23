@@ -1,6 +1,6 @@
- A compilação vai iniciar em 4 segundos... A compilação vai iniciar em 3 segundos... A compilação vai iniciar em 2 segundos... A compilação vai iniciar em 1 segundos... A compilação vai iniciar em 0 segundos...
+ A compilação vai iniciar em 5 segundos... A compilação vai iniciar em 4 segundos... A compilação vai iniciar em 3 segundos... A compilação vai iniciar em 2 segundos... A compilação vai iniciar em 1 segundos... A compilação vai iniciar em 0 segundos...
 
-Compilação iniciada ter 23 mar 2021 13:26:40
+Compilação iniciada ter 23 mar 2021 13:41:54
 
 Detalhes do desktop:
 
@@ -9,7 +9,7 @@ Arquitetura: x86_64
 Número de CPU(s): 8    
 Virtualização: AMD-V    
 Memória RAM: 16041 MiB 
-Memória Virtual: 1079 MB
+Memória Virtual: 1031 MB
 Modo(s) operacional da CPU: 32-bit, 64-bit
 
 chmod +x criar_box.sh
@@ -22,11 +22,11 @@ Welcome to Ubuntu 20.04.2 LTS (GNU/Linux 5.4.0-67-generic x86_64)
  * Management:     https://landscape.canonical.com
  * Support:        https://ubuntu.com/advantage
 
-  System information as of Tue Mar 23 16:26:50 UTC 2021
+  System information as of Tue Mar 23 16:42:04 UTC 2021
 
-  System load:  0.03              Processes:               130
+  System load:  0.21              Processes:               141
   Usage of /:   8.9% of 48.41GB   Users logged in:         0
-  Memory usage: 5%                IPv4 address for enp0s3: 10.0.2.15
+  Memory usage: 6%                IPv4 address for enp0s3: 10.0.2.15
   Swap usage:   0%                IPv4 address for virbr0: 192.168.122.1
 
  * Introducing self-healing high availability clusters in MicroK8s.
@@ -49,7 +49,7 @@ Hit:1 http://archive.ubuntu.com/ubuntu focal InRelease
 Get:2 http://security.ubuntu.com/ubuntu focal-security InRelease [109 kB]
 Get:3 http://archive.ubuntu.com/ubuntu focal-updates InRelease [114 kB]
 Get:4 http://archive.ubuntu.com/ubuntu focal-backports InRelease [101 kB]
-Fetched 324 kB in 2s (155 kB/s)
+Fetched 324 kB in 2s (149 kB/s)
 Reading package lists...
 Building dependency tree...
 Reading state information...
@@ -75,16 +75,5 @@ jq is already the newest version (1.6-1ubuntu0.20.04.1).
 Checkando se a /vagrant/nfdos existe
 Checkando se a /vagrant/nfdos/core/nfdos.iso existe
 A /vagrant/nfdos/core/nfdos.iso existe
-Checkando se a /vagrant/nfdos/desktop/vagrant/NFDOS-0.4.4.box existe
-A /vagrant/nfdos/desktop/vagrant/NFDOS-0.4.4.box não existe. Criando ela...
-Checkando o SHA256 da imagem ISO...
-NFDOS: output will be in this color.
-
-==> NFDOS: Retrieving Guest additions
-==> NFDOS: Trying /usr/share/virtualbox/VBoxGuestAdditions.iso
-==> NFDOS: Trying /usr/share/virtualbox/VBoxGuestAdditions.iso
-==> NFDOS: /usr/share/virtualbox/VBoxGuestAdditions.iso => /usr/share/virtualbox/VBoxGuestAdditions.iso
-==> NFDOS: Retrieving ISO
-==> NFDOS: Trying ../core/nfdos.iso
-==> NFDOS: Trying ../core/nfdos.iso?checksum=sha256%3Abd8ae8b659678def6458b5412827a2e7dea164a24426de45173f1b9823dbca1d
-^C
+Checkando se a /vagrant/nfdos/desktop/vagrant/libvirt/NFDOS-0.4.4.box existe...
+Checkando se a /vagrant/nfdos/desktop/vagrant/libvirt/NFDOS-0.4.4.box existe.
