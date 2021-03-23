@@ -5,6 +5,7 @@ instalar_requerimentos(){
     sudo apt update
     sudo apt install -y \
         autoconf \
+        automake \
         build-essential \
         git \
         make \
