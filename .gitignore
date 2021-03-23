@@ -4,6 +4,7 @@ autom4te.cache/
 backup/
 
 src/.deps/
+src/boxes/*.box
 src/logs/
 
 #src/vps/nfdos/core/image
