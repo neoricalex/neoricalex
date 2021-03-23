@@ -6,8 +6,8 @@
 
 ### Requisitos
 
-* Uma Distribuição Linux Ubuntu >= 18.04 LTS
-* Um computador compatível com ambientes virtualizados, com capacidade mínima de uma máquina virtual com 4096 de RAM, 100 GB de espaço em disco, e 3 CPU's
+* Uma Distribuição Linux Ubuntu >= 20.04 LTS
+* Um computador compatível com ambientes virtualizados, com capacidade mínima de uma máquina virtual com 4096 de RAM, 128 GB de espaço em disco virtual, e 3 CPU's
 
 ### AVISO: USE POR SUA PRÓPRIA CONTA E RISCO
 
@@ -121,34 +121,40 @@ Gostou da ideia?
 ## Roadmap
 ### Ambiente de Desenvolvimento
 #### Fase Inicial
+Nesta primeira fase vamos mitigar ao máximo quaisquer danos no computador fisico. Vamos criar duas box do vagrant. 
+
+A primeira, vamos baixar da vagrant cloud com o ubuntu focal (*ubuntu/focal64*). Depois vamos instalar nela as ferramentas necessárias, e vamos enviar de volta para a vagrant cloud com o nome  *neoricalex/ubuntu*.
+
+Depois de termos uma box para trabalhar, vamos criar dentro dela, já nada tendo a ver com o nosso computador fisico local, uma segunda box c
 ##### Criação de um VPS de Desenvolvimento Local (VPS_DEV)
 - [x] Criar uma box via o Vagrant Cloud com o Ubuntu 20.04 LTS (ubuntu/focal64)
-  - [ ] Provisionar com pacotes minimos de desenvolvimento
+  - [ ] Provisionar com pacotes minimos de desenvolvimento (Linux headers, build-essentials, etc...)
   - [ ] Enviar a box para a Vagrant Cloud ficando acessivel via *neoricalex/ubuntu*
-##### Criação da Distribuição GNU/Linux NFDOS baseada no Ubuntu no VPS_DEV
-- [x] Criar uma box via o Vagrant Cloud *neoricalex/ubuntu*
-  - [ ] Criar um emulador de computador localmente (QEMU)
-    - [ ] Clonar o repositório do QEMU
-    - [ ] Configurar
-    - [ ] Compilar
-  - [ ] Criar o Firmware do NFDOS (Tiano Core EDK II)
-    - [ ] Clonar o repositório do Tiano Core
-    - [ ] Configurar
-    - [ ] Compilar
-  - [ ] Criar o Bootloader do NFDOS (GRUB 2)
-    - [ ] Clonar o repositório da GRUB 2
-    - [ ] Configurar
-    - [ ] Compilar 
-  - [ ] Criar o Kernel do NFDOS (Linux)
-    - [ ] Clonar o repositório da Linux
-    - [ ] Configurar
-    - [ ] Compilar
-  - [x] Criar a imagem ISO do NFDOS (*nfdos.iso*)
-  - [x] Criar a imagem .box do vagrant com o NFDOS instalado (*NFDOS-x.x.x.box*)
-    - [x] Gerar a NFDOS-x.x.x.box
-    - [ ] Enviar a box para a Vagrant Cloud ficando acessivel via *neoricalex/nfdos*
-    - [x] Gerar a imagem de disco .vmdk com o NFDOS instalado (*NFDOS-disk001.vmdk*)
-    - [x] Gerar o arquivo .ovf (*NFDOS.ovf*)
+  - [ ] Deletar a box ubuntu/focal64 do host
+- [ ] Criar a Distribuição GNU/Linux NFDOS baseada no Ubuntu
+  - [x] Criar uma box via o Vagrant Cloud *neoricalex/ubuntu*
+    - [ ] Criar um emulador de computador localmente (QEMU)
+      - [ ] Clonar o repositório do QEMU
+      - [ ] Configurar
+      - [ ] Compilar
+    - [ ] Criar o Firmware do NFDOS (Tiano Core EDK II)
+      - [ ] Clonar o repositório do Tiano Core
+      - [ ] Configurar
+      - [ ] Compilar
+    - [ ] Criar o Bootloader do NFDOS (GRUB 2)
+      - [ ] Clonar o repositório da GRUB 2
+      - [ ] Configurar
+      - [ ] Compilar 
+    - [ ] Criar o Kernel do NFDOS (Linux)
+      - [ ] Clonar o repositório da Linux
+      - [ ] Configurar
+      - [ ] Compilar
+    - [x] Criar a imagem ISO do NFDOS (*nfdos.iso*)
+    - [x] Criar a imagem .box do vagrant com o NFDOS instalado (*NFDOS-x.x.x.box*)
+      - [x] Gerar a NFDOS-x.x.x.box
+      - [ ] Enviar a box para a Vagrant Cloud ficando acessivel via *neoricalex/nfdos*
+      - [x] Gerar a imagem de disco .vmdk com o NFDOS instalado (*NFDOS-disk001.vmdk*)
+      - [x] Gerar o arquivo .ovf (*NFDOS.ovf*)
 
 #### Segunda Fase
 - [ ] Instalar o Docker Engine, Docker Compose & Docker Machine no VPS_DEV
