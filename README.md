@@ -123,20 +123,24 @@ Gostou da ideia?
 #### Fase Inicial
 Nesta primeira fase vamos mitigar ao máximo quaisquer danos no computador fisico. Vamos criar duas box do vagrant. 
 
-A primeira, vamos baixar da vagrant cloud com o ubuntu focal (*ubuntu/focal64*). Depois vamos instalar nela as ferramentas necessárias, e vamos enviar de volta para a vagrant cloud com o nome  *neoricalex/ubuntu*.
+A primeira, com o Ubuntu focal, vamos baixar da vagrant cloud (*ubuntu/focal64*). Depois vamos instalar nela as ferramentas necessárias para trabalharmos, Linux Headers, Build Essentials, etc, e vamos enviar de volta para a vagrant cloud com o nome  *neoricalex/ubuntu*. Para nós, esta box está referenciada na CLI como *VPS_DEV*.
 
-Depois de termos uma box para trabalhar, vamos criar dentro dela, já nada tendo a ver com o nosso computador fisico local, uma segunda box c
+Depois de termos uma box para trabalhar, a *neoricalex/ubuntu* (*VPS_DEV*), vamos criar e desenvolver o NFDOS dentro dela, criando uma imagem ISO para usarmos em computadores fisicos, uma imagem VMDK para usarmos no Virtualbox, e, uma imagem BOX para uso no Vagrant onde iremos também enviar para a vagrant cloud, porém desta vez com o nome *neoricalex/nfdos*. Para nós, esta box está referenciada na CLI como *NFDOS*.
+
 ##### Criação de um VPS de Desenvolvimento Local (VPS_DEV)
 - [x] Criar uma box via o Vagrant Cloud com o Ubuntu 20.04 LTS (ubuntu/focal64)
   - [ ] Provisionar com pacotes minimos de desenvolvimento (Linux headers, build-essentials, etc...)
   - [ ] Enviar a box para a Vagrant Cloud ficando acessivel via *neoricalex/ubuntu*
   - [ ] Deletar a box ubuntu/focal64 do host
-- [ ] Criar a Distribuição GNU/Linux NFDOS baseada no Ubuntu
-  - [x] Criar uma box via o Vagrant Cloud *neoricalex/ubuntu*
-    - [ ] Criar um emulador de computador localmente (QEMU)
-      - [ ] Clonar o repositório do QEMU
+- [ ] Configurar as Ferramentas de Desenvolvimento
+  - [ ] Clonar o repositório do QEMU
+    - [ ] Configurar
+    - [ ] Compilar
+  - [ ] Clonar o repositório do Packer
       - [ ] Configurar
       - [ ] Compilar
+- [ ] Criar a Distribuição GNU/Linux NFDOS baseada no Ubuntu
+  - [x] Criar uma box via o Vagrant Cloud *neoricalex/ubuntu*
     - [ ] Criar o Firmware do NFDOS (Tiano Core EDK II)
       - [ ] Clonar o repositório do Tiano Core
       - [ ] Configurar
