@@ -119,34 +119,36 @@ Será algo tipo "Plug n Play". Colocar o CD/DVD no Leitor, arrancar o Desktop/No
 Gostou da ideia?
 
 ## Roadmap
-
 ### Ambiente de Desenvolvimento
 #### Fase Inicial
-##### Configuração base inicial do Ambiente de Desenvolvimento
+##### Criação de um VPS de Desenvolvimento Local (VPS_DEV)
 - [x] Criar uma box via o Vagrant Cloud com o Ubuntu 20.04 LTS (ubuntu/focal64)
-  - [ ] Criar a Distribuição Linux/Ubuntu NFDOS
-    - [ ] Criar um emulador de computador localmente (QEMU)
-      - [ ] Clonar o repositório do QEMU
-      - [ ] Configurar
-      - [ ] Compilar
-    - [ ] Criar o Firmware do NFDOS (Tiano Core EDK II)
-      - [ ] Clonar o repositório do Tiano Core
-      - [ ] Configurar
-      - [ ] Compilar
-    - [ ] Criar o Bootloader do NFDOS (GRUB 2)
-      - [ ] Clonar o repositório da GRUB 2
-      - [ ] Configurar
-      - [ ] Compilar 
-    - [ ] Criar o Kernel do NFDOS (Linux)
-      - [ ] Clonar o repositório da Linux
-      - [ ] Configurar
-      - [ ] Compilar
-    - [x] Criar a imagem ISO do NFDOS (*nfdos.iso*)
-    - [x] Criar a imagem .box do vagrant com o NFDOS instalado (*NFDOS-x.x.x.box*)
-      - [x] Gerar a NFDOS-x.x.x.box
-      - [ ] Enviar a box para a Vagrant Cloud ficando acessivel via *neoricalex/nfdos*
-      - [x] Gerar a imagem de disco .vmdk com o NFDOS instalado (*NFDOS-disk001.vmdk*)
-      - [x] Gerar o arquivo .ovf (*NFDOS.ovf*)
+  - [ ] Provisionar com pacotes minimos de desenvolvimento
+  - [ ] Enviar a box para a Vagrant Cloud ficando acessivel via *neoricalex/ubuntu*
+##### Criação da Distribuição GNU/Linux NFDOS baseada no Ubuntu no VPS_DEV
+- [x] Criar uma box via o Vagrant Cloud *neoricalex/ubuntu*
+  - [ ] Criar um emulador de computador localmente (QEMU)
+    - [ ] Clonar o repositório do QEMU
+    - [ ] Configurar
+    - [ ] Compilar
+  - [ ] Criar o Firmware do NFDOS (Tiano Core EDK II)
+    - [ ] Clonar o repositório do Tiano Core
+    - [ ] Configurar
+    - [ ] Compilar
+  - [ ] Criar o Bootloader do NFDOS (GRUB 2)
+    - [ ] Clonar o repositório da GRUB 2
+    - [ ] Configurar
+    - [ ] Compilar 
+  - [ ] Criar o Kernel do NFDOS (Linux)
+    - [ ] Clonar o repositório da Linux
+    - [ ] Configurar
+    - [ ] Compilar
+  - [x] Criar a imagem ISO do NFDOS (*nfdos.iso*)
+  - [x] Criar a imagem .box do vagrant com o NFDOS instalado (*NFDOS-x.x.x.box*)
+    - [x] Gerar a NFDOS-x.x.x.box
+    - [ ] Enviar a box para a Vagrant Cloud ficando acessivel via *neoricalex/nfdos*
+    - [x] Gerar a imagem de disco .vmdk com o NFDOS instalado (*NFDOS-disk001.vmdk*)
+    - [x] Gerar o arquivo .ovf (*NFDOS.ovf*)
 
 #### Segunda Fase
 - [ ] Instalar o Docker Engine, Docker Compose & Docker Machine no VPS_DEV
