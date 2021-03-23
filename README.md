@@ -125,9 +125,8 @@ Depois de termos uma box para trabalhar, a *neoricalex/ubuntu* (*VPS_DEV*), vamo
 
 ##### Criação de um VPS de Desenvolvimento Local (VPS_DEV)
 - [x] Criar uma box via o Vagrant Cloud com o Ubuntu 20.04 LTS (ubuntu/focal64)
-  - [ ] Provisionar com pacotes minimos de desenvolvimento (Linux headers, build-essentials, etc...)
+  - [x] Provisionar com pacotes minimos de desenvolvimento (Linux headers, build-essentials, etc...)
   - [ ] Enviar a box para a Vagrant Cloud ficando acessivel via *neoricalex/ubuntu*
-  - [ ] Deletar a box ubuntu/focal64 do host
 - [ ] Configurar as Ferramentas de Desenvolvimento
   - [ ] Clonar o repositório do QEMU
     - [ ] Configurar
@@ -150,11 +149,14 @@ Depois de termos uma box para trabalhar, a *neoricalex/ubuntu* (*VPS_DEV*), vamo
       - [ ] Configurar
       - [ ] Compilar
     - [x] Criar a imagem ISO do NFDOS (*nfdos.iso*)
-    - [x] Criar a imagem .box do vagrant com o NFDOS instalado (*NFDOS-x.x.x.box*)
-      - [x] Gerar a NFDOS-x.x.x.box
-      - [ ] Enviar a box para a Vagrant Cloud ficando acessivel via *neoricalex/nfdos*
-      - [x] Gerar a imagem de disco .vmdk com o NFDOS instalado (*NFDOS-disk001.vmdk*)
-      - [x] Gerar o arquivo .ovf (*NFDOS.ovf*)
+    - [x] Criar duas imagens BOX do Vagrant, uma para o provider virtualbox, outra para o provider libvirt, e ambas com o NFDOS instalado (*NFDOS-x.x.x.box*)
+        - [x] BOX para o Virtualbox
+          - [x] Gerar a NFDOS-x.x.x.box
+          - [x] Gerar a imagem de disco .vmdk com o NFDOS instalado (*NFDOS-disk001.vmdk*)
+          - [x] Gerar o arquivo .ovf (*NFDOS.ovf*)
+        - [x] BOX para o Libvirt
+          - [x] Gerar a NFDOS-x.x.x.box
+          - [ ] Enviar a box para a Vagrant Cloud ficando acessivel via *neoricalex/nfdos*. (Esta box será também a usada pelo Travis)
 
 #### Segunda Fase
 - [ ] Instalar o Docker Engine, Docker Compose & Docker Machine no VPS_DEV
