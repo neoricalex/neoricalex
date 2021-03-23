@@ -66,15 +66,7 @@ iniciar_desenvolvimento_local(){
     #fi
 
     make box
-    #docker rmi nfdos/core/rootfs:latest
-    #sudo rm -rf nfdos/core/rootfs
-    #sudo apt autoremove -y
-    #docker run --rm --name neoricalex nfdos/core/rootfs
 
-    #chmod +x compilar.sh
-    #./compilar.sh
-    #chmod +x upload_cloud.sh
-    #./upload_cloud.sh
 }
 
 iniciar_desenvolvimento_travis(){

@@ -61,6 +61,17 @@ if [ "$usuario" == "neo@desktop" ]; then
     # sudo apt install default-jre default-jdk -y
     # java -jar tools/bfg-1.14.0.jar --strip-blobs-bigger-than 100M .
     # git gc --prune=now --aggressive
+
+    #docker rmi nfdos/core/rootfs:latest
+    #sudo rm -rf nfdos/core/rootfs
+    #sudo apt autoremove -y
+    #docker run --rm --name neoricalex nfdos/core/rootfs
+
+    #chmod +x compilar.sh
+    #./compilar.sh
+    #chmod +x upload_cloud.sh
+    #./upload_cloud.sh
+    
 else
     iniciar_local
 fi
