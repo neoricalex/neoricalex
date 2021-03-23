@@ -1,6 +1,6 @@
- A compilação vai iniciar em 7 segundos... A compilação vai iniciar em 6 segundos... A compilação vai iniciar em 5 segundos... A compilação vai iniciar em 4 segundos... A compilação vai iniciar em 3 segundos... A compilação vai iniciar em 2 segundos... A compilação vai iniciar em 1 segundos... A compilação vai iniciar em 0 segundos...
+ A compilação vai iniciar em 4 segundos... A compilação vai iniciar em 3 segundos... A compilação vai iniciar em 2 segundos... A compilação vai iniciar em 1 segundos... A compilação vai iniciar em 0 segundos...
 
-Compilação iniciada ter 23 mar 2021 10:00:28
+Compilação iniciada ter 23 mar 2021 10:12:58
 
 Detalhes do desktop:
 
@@ -9,7 +9,7 @@ Arquitetura: x86_64
 Número de CPU(s): 8    
 Virtualização: AMD-V    
 Memória RAM: 16041 MiB 
-Memória Virtual: 2424 MB
+Memória Virtual: 2407 MB
 Modo(s) operacional da CPU: 32-bit, 64-bit
 
 chmod +x criar_box.sh
@@ -22,12 +22,12 @@ Welcome to Ubuntu 20.04.2 LTS (GNU/Linux 5.4.0-67-generic x86_64)
  * Management:     https://landscape.canonical.com
  * Support:        https://ubuntu.com/advantage
 
-  System information as of Tue Mar 23 13:00:25 UTC 2021
+  System information as of Tue Mar 23 13:12:54 UTC 2021
 
-  System load:  0.0               Processes:               126
-  Usage of /:   6.9% of 48.41GB   Users logged in:         0
-  Memory usage: 6%                IPv4 address for enp0s3: 10.0.2.15
-  Swap usage:   0%
+  System load:  0.7               Processes:               138
+  Usage of /:   7.6% of 48.41GB   Users logged in:         0
+  Memory usage: 8%                IPv4 address for enp0s3: 10.0.2.15
+  Swap usage:   0%                IPv4 address for virbr0: 192.168.122.1
 
  * Introducing self-healing high availability clusters in MicroK8s.
    Simple, hardened, Kubernetes for production, from RaspberryPi to DC.
@@ -79,11 +79,26 @@ A /vagrant/nfdos/desktop/vagrant/libvirt/NFDOS-0.4.4.box não existe. Criando el
 Checkando o SHA256 da imagem ISO...
 NFDOS: output will be in this color.
 
-Build 'NFDOS' errored after 1 millisecond 27 microseconds: Failed creating Qemu driver: exec: "/usr/bin/qemu-system-x86_64": stat /usr/bin/qemu-system-x86_64: no such file or directory
+==> NFDOS: Retrieving ISO
+==> NFDOS: Trying ../core/nfdos.iso
+==> NFDOS: Trying ../core/nfdos.iso?checksum=sha256%3Abd8ae8b659678def6458b5412827a2e7dea164a24426de45173f1b9823dbca1d
+==> NFDOS: ../core/nfdos.iso?checksum=sha256%3Abd8ae8b659678def6458b5412827a2e7dea164a24426de45173f1b9823dbca1d => /vagrant/nfdos/core/nfdos.iso
+==> NFDOS: Creating required virtual machine disks
+==> NFDOS: Starting HTTP server on port 8183
+==> NFDOS: Found port for communicator (SSH, WinRM, etc): 2888.
+==> NFDOS: Looking for available port between 5900 and 6000 on 127.0.0.1
+==> NFDOS: Starting VM, booting from CD-ROM
+    NFDOS: The VM will be run headless, without a GUI. If you want to
+    NFDOS: view the screen of the VM, connect via VNC without a password to
+    NFDOS: vnc://127.0.0.1:5972
+==> NFDOS: Overriding default Qemu arguments with QemuArgs...
+==> NFDOS: Error launching VM: Qemu failed to start. Please run with PACKER_LOG=1 to get more info.
+==> NFDOS: Deleting output directory...
+Build 'NFDOS' errored after 10 seconds 721 milliseconds: Build was halted.
 
-==> Wait completed after 1 millisecond 91 microseconds
+==> Wait completed after 10 seconds 721 milliseconds
 
 ==> Some builds didn't complete successfully and had errors:
---> NFDOS: Failed creating Qemu driver: exec: "/usr/bin/qemu-system-x86_64": stat /usr/bin/qemu-system-x86_64: no such file or directory
+--> NFDOS: Build was halted.
 
 ==> Builds finished but no artifacts were created.
