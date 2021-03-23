@@ -66,8 +66,6 @@ Começar do completo Zero demanda tempo que eu não tenho. Preciso monetizar par
 
 Para já, a grande vantagem que pretendo, é trabalhar em "Real Time". Ou seja, tudo o que for feito, será sincronizado em tempo real, ou bem próximo disso. Dessa forma poderá até rebentar uma bomba nuclear que o trabalho estará sempre salvo e sincronizado.
 
-Por outras palavras, eu não comecei a Distribuição Linux - NFDOS - no Assembly. Comecei bem mais na frente, criando uma versão customizada do Ubuntu 20.04 do completo zero. Dessa forma economizo um bom tempo.
-
 O [NEORICALEX](https://neoricalex.com.br) pode ser visto como:
 
 * Uma ferramenta para criar uma Distribuição [Linux](https://www.kernel.org/) do Zero baseada no [Ubuntu](https://ubuntu.com/).
@@ -121,7 +119,11 @@ Nesta primeira fase vamos mitigar ao máximo quaisquer danos no computador fisic
 
 A primeira, com o Ubuntu focal, vamos baixar da vagrant cloud (*ubuntu/focal64*). Depois vamos instalar nela as ferramentas necessárias para trabalharmos, Linux Headers, Build Essentials, etc, e vamos enviar de volta para a vagrant cloud com o nome  *neoricalex/ubuntu*. Para nós, esta box está referenciada na CLI como *VPS_DEV*.
 
-Depois de termos uma box para trabalhar, a *neoricalex/ubuntu* (*VPS_DEV*), vamos criar e desenvolver o NFDOS dentro dela, criando uma imagem ISO para usarmos em computadores fisicos, uma imagem VMDK para usarmos no Virtualbox, e, uma imagem BOX para uso no Vagrant onde iremos também enviar para a vagrant cloud, porém desta vez com o nome *neoricalex/nfdos*. Para nós, esta box está referenciada na CLI como *NFDOS*.
+Depois de termos uma box para trabalhar, a *neoricalex/ubuntu* (*VPS_DEV*), vamos criar e desenvolver o NFDOS dentro dela, criando uma imagem ISO para usarmos em computadores fisicos, uma imagem VMDK para usarmos no Virtualbox, e, duas imagens BOX para uso no Vagrant. 
+  * Uma configurada para o provider virtualbox. E;
+  * Outra configurada com o provider libvirt. Esta iremos também enviar para a vagrant cloud, porém desta vez com o nome *neoricalex/nfdos*. 
+    * Para nós, esta box está referenciada na CLI como *NFDOS*.
+    * Esta box será também usada pelo Travis (VPS de Staging Remoto) para homologação do projeto.
 
 ##### Criação de um VPS de Desenvolvimento Local (VPS_DEV)
 - [x] Criar uma box via o Vagrant Cloud com o Ubuntu 20.04 LTS (ubuntu/focal64)
