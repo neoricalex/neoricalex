@@ -1,0 +1,46 @@
+ A compilação vai iniciar em 4 segundos... A compilação vai iniciar em 3 segundos... A compilação vai iniciar em 2 segundos... A compilação vai iniciar em 1 segundos... A compilação vai iniciar em 0 segundos...
+
+Compilação iniciada ter 23 mar 2021 15:37:53
+
+Detalhes do desktop:
+
+Nome do modelo: AMD FX(tm)-8350 Eight-Core
+Arquitetura: x86_64
+Número de CPU(s): 8    
+Virtualização: AMD-V    
+Memória RAM: 16041 MiB 
+Memória Virtual: 8498 MB
+Modo(s) operacional da CPU: 32-bit, 64-bit
+
+chmod +x compilar_box.sh
+./compilar_box.sh
+==> Instalar os requerimentos da box...
+==> Iniciando a box...
+==> Checkando se a box existe localmente...
+==> Checkando se o download da box já foi feito...
+==> O download da box já foi feito!
+==> A box existe!
+Bringing machine 'VPS_DEV' up with 'virtualbox' provider...
+==> VPS_DEV: Box 'neoricalex/ubuntu' could not be found. Attempting to find and install...
+    VPS_DEV: Box Provider: virtualbox
+    VPS_DEV: Box Version: >= 0
+==> VPS_DEV: Box file was not detected as metadata. Adding it directly...
+==> VPS_DEV: Adding box 'neoricalex/ubuntu' (v0) for provider: virtualbox
+    VPS_DEV: Unpacking necessary files from: file:///home/neo/P%C3%BAblico/src/vps/vagrant-libs/virtualbox.box
+Progress: 0% (Rate: 0/s, Estimated time remaining: --:--:--)The box failed to unpackage properly. Please verify that the box
+file you're trying to add is not corrupted and that enough disk space
+is available and then try again.
+The output from attempting to unpackage (if any):
+
+bsdtar: Error opening archive: Unrecognized archive format
+
+==> VPS_DEV: VM not created. Moving on...
+VM must be created before running this command. Run `vagrant up` first.
+Current machine states:
+
+VPS_DEV                   not created (libvirt)
+
+The Libvirt domain is not created. Run `vagrant up` to create it.
+^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[B^[[B^[[B^[[B^[[B./compilar_box.sh: linha 106: erro de sintaxe próximo ao token inesperado `fi'
+./compilar_box.sh: linha 106: `fi'
+make: *** [Makefile:35: box] Erro 2
