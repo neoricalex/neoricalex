@@ -1,6 +1,6 @@
- A compilação vai iniciar em 2 segundos... A compilação vai iniciar em 1 segundos... A compilação vai iniciar em 0 segundos...
+ A compilação vai iniciar em 5 segundos... A compilação vai iniciar em 4 segundos... A compilação vai iniciar em 3 segundos... A compilação vai iniciar em 2 segundos... A compilação vai iniciar em 1 segundos... A compilação vai iniciar em 0 segundos...
 
-Compilação iniciada ter 23 mar 2021 13:43:38
+Compilação iniciada ter 23 mar 2021 13:45:52
 
 Detalhes do desktop:
 
@@ -9,7 +9,7 @@ Arquitetura: x86_64
 Número de CPU(s): 8    
 Virtualização: AMD-V    
 Memória RAM: 16041 MiB 
-Memória Virtual: 1026 MB
+Memória Virtual: 1027 MB
 Modo(s) operacional da CPU: 32-bit, 64-bit
 
 chmod +x criar_box.sh
@@ -22,9 +22,9 @@ Welcome to Ubuntu 20.04.2 LTS (GNU/Linux 5.4.0-67-generic x86_64)
  * Management:     https://landscape.canonical.com
  * Support:        https://ubuntu.com/advantage
 
-  System information as of Tue Mar 23 16:43:48 UTC 2021
+  System information as of Tue Mar 23 16:46:02 UTC 2021
 
-  System load:  0.11              Processes:               144
+  System load:  0.03              Processes:               142
   Usage of /:   8.9% of 48.41GB   Users logged in:         0
   Memory usage: 6%                IPv4 address for enp0s3: 10.0.2.15
   Swap usage:   0%                IPv4 address for virbr0: 192.168.122.1
@@ -45,11 +45,11 @@ Atualizar repositórios e instalar requerimentos...
 
 WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
 
-Hit:1 http://archive.ubuntu.com/ubuntu focal InRelease
-Get:2 http://security.ubuntu.com/ubuntu focal-security InRelease [109 kB]
+Get:1 http://security.ubuntu.com/ubuntu focal-security InRelease [109 kB]
+Hit:2 http://archive.ubuntu.com/ubuntu focal InRelease
 Get:3 http://archive.ubuntu.com/ubuntu focal-updates InRelease [114 kB]
 Get:4 http://archive.ubuntu.com/ubuntu focal-backports InRelease [101 kB]
-Fetched 324 kB in 2s (168 kB/s)
+Fetched 324 kB in 2s (153 kB/s)
 Reading package lists...
 Building dependency tree...
 Reading state information...
@@ -75,5 +75,5 @@ jq is already the newest version (1.6-1ubuntu0.20.04.1).
 Checkando se a /vagrant/nfdos existe
 Checkando se a /vagrant/nfdos/core/nfdos.iso existe
 A /vagrant/nfdos/core/nfdos.iso existe
-Checkando se a /vagrant/nfdos/desktop/vagrant/libvirt/NFDOS-0.4.4.box existe...
-A /vagrant/nfdos/desktop/vagrant/libvirt/NFDOS-0.4.4.box já existe.
+Checkando se a /vagrant/nfdos/desktop/vagrant/virtualbox/NFDOS-0.4.4.box existe...
+A /vagrant/nfdos/desktop/vagrant/virtualbox/NFDOS-0.4.4.box existe.
