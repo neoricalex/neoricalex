@@ -21,7 +21,7 @@ install:
 # Instalar os plugins do Vagrant
 - sudo vagrant plugin install vagrant-libvirt
 #- vagrant plugin install vagrant-disksize
-- vagrant plugin install vagrant-mutate
+#- vagrant plugin install vagrant-mutate
 
 script:
 - bash shell
