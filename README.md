@@ -38,8 +38,58 @@ bash shell
 ```
 
 ## O que são os projetos NEORICALEX & NFDOS
-Embora completamente interligados, o NFDOS e NEORICALEX são dois projetos diferentes.
+Embora completamente interligados, o NEORICALEX & NFDOS são dois projetos diferentes.
+### NEORICALEX
+O [NEORICALEX](https://neoricalex.com.br) é a minha Plataforma e/ou Ambiente de Trabalho. O local onde eu condenso tudo o que eu sei fazer em TI.
 
+O [NEORICALEX](https://neoricalex.com.br) é um framework de trabalho com 3 ambientes:
+* **Ambiente de Desenvolvimento**
+    * Um Ambiente físico com o NFDOS instalado, que vamos usar para desenvolver todo o projeto. 
+      * ( O Computador Pessoal )
+        * e/ou;
+    * Um Ambiente baseado no Vagrant com o NFDOS instalado
+      * ( O VPS de Desenvolvimento Local)
+* **Ambiente de Homologação**
+    * Um Ambiente baseado no Travis que vamos usar para testarmos o projeto. 
+      * ( O VPS de Staging remoto )
+    * Um Ambiente baseado no Virtualbox que vamos usar para testarmos o projeto. 
+      * ( O VPS de Staging local )
+* **Ambiente de Produção**
+    * Um Ambiente baseado na Cloud (Digital Ocean, Google Cloud, IBM, etc) para fazermos o Deploy do Projeto. 
+      * ( O VPS de Produção Remoto )
+
+A minha ideia principal para o projeto [NEORICALEX](https://neoricalex.com.br) é **criar os 3 ambientes com apenas um comando**, e depois vender o conhecimento através de um curso online, a que dei o nome de **COPED**.
+
+Para conseguir chegar nesse objetivo, eu originalmente tinha decidido de criar uma Distribuição Linux do Zero. O NFDOS. No entanto, em Fevereiro 2020, eu fiquei desempregado com a pandemia do COVID19. Foi preciso encontrar uma forma de pagar as contas ao final do mês e, decidi de monetizar meu conhecimento trabalhando em meu próprio projeto pessoal. Com isso, criar uma Distribuição Linux do Zero passou a ser o meu "sonho". Por enquanto preciso monetizar. Então eu decidi seguir o atalho de criar um "Ubuntu from scratch".
+
+Começar do completo Zero demanda tempo que eu não tenho. Preciso monetizar para depois sim, ir indo no encontro de um SO do Zero no sentido literal do conceito.
+
+Para já, a grande vantagem que pretendo, é trabalhar em "Real Time". Ou seja, tudo o que for feito, será sincronizado em tempo real, ou bem próximo disso. Dessa forma poderá até rebentar uma bomba nuclear que o trabalho estará sempre salvo e sincronizado.
+
+Por outras palavras, eu não comecei a Distribuição Linux - NFDOS - no Assembly. Comecei bem mais na frente, criando uma versão customizada do Ubuntu 20.04 do completo zero. Dessa forma economizo um bom tempo.
+
+O [NEORICALEX](https://neoricalex.com.br) pode ser visto como:
+
+* Uma ferramenta para criar uma Distribuição [Linux](https://www.kernel.org/) do Zero baseada no [Ubuntu](https://ubuntu.com/).
+    * Nessa Distribuição a que dei o nome NFDOS, existe, ou vai existir:
+        * Uma Firewall
+        * Um Proxy Reverso
+        * Um Load Balancer
+        * Um Cluster LXC/LXD
+        * Um Cluster Docker
+        * Um Cluster Kubernetes
+        * Uma VPN
+        * E muito mais...
+
+O detalhe é, como já comentei, eu quero que **tudo seja feito com um único comando**.
+
+Dessa forma, **com apenas um comando**, em caso de catástrofe, a imagem ISO estará pronta com tudo o que é necessário para que o [NEORICALEX](https://neoricalex.com.br) funcione, sem que para isso eu tenha de instalar software, atualizar, e/ou fazer lá seja aquilo que fôr. 
+
+Será algo tipo "Plug n Play". Colocar o CD/DVD no Leitor, arrancar o Desktop/Notebook ou o Servidor/VPS pelo Live CD/DVD e pronto. O Sistema está no Ar e pronto a executar aquilo que quisermos que ele execute.
+
+Para levar a bom termo esse projeto, eu vou precisar de um Desktop para criar/desenvolver o código, e, um Servidor para hospedar na cloud.
+
+Fazer a Placa-Mãe, Memória RAM, e todas as outras partes físicas do Desktop e Servidor, eu não vou conseguir saber fazer. Mas o Sistema Operativo, e todo o Software que o Desktop e/ou o Servidor vão precisar para funcionarem, aí já tenho uma palavra a dizer.
 ### NFDOS
 O NFDOS significa Neo Free Disk Operating System, e é um Sistema Operativo criado do zero.
 
@@ -60,61 +110,7 @@ Originalmente, o NFDOS foi pensado para servir de aprendizado, uma vez que o NFD
 
 Por outras palavras, o NFDOS não é uma ferramenta para fazer coisas por você. O NFDOS é uma ferramenta do tipo DIY - Do It Yourself - para você aprender a fazer você mesmo. Você lê o código, vê como se faz, e reproduz da forma que você bem quiser e entender.
 
-No entanto, em Fevereiro 2020, eu fiquei desempregado com a pandemia do COVID19. Foi preciso encontrar uma forma de pagar as contas ao final do mês e, decidi de monetizar meu conhecimento trabalhando em meu próprio projeto pessoal.
-
-E foi assim então dessa forma, que o NEORICALEX passou de um projeto em modo "Hobbye", para modo "Produção".
-
-Para levar a bom termo esse projeto, eu vou precisar de um Desktop para criar/desenvolver o código, e, um Servidor para hospedar na cloud.
-
-Fazer a Placa-Mãe, Memória RAM, e todas as outras partes físicas do Desktop e Servidor, eu não vou conseguir saber fazer. Mas o Sistema Operativo, e todo o Software que o Desktop e/ou o Servidor vão precisar para funcionarem, aí já tenho uma palavra a dizer.
-
-### NEORICALEX
-O [NEORICALEX](https://neoricalex.com.br) é então, a minha Plataforma e/ou Ambiente de Trabalho. O local onde eu condenso tudo o que eu sei fazer em TI.
-
-O [NEORICALEX](https://neoricalex.com.br) é um framework de trabalho com 3 ambientes:
-* **Ambiente de Desenvolvimento**
-    * Um Ambiente físico com o NFDOS instalado, que vamos usar para desenvolver todo o projeto. 
-      * ( O Computador Pessoal )
-        * e/ou;
-    * Um Ambiente baseado no Vagrant com o NFDOS instalado
-      * ( O VPS de Desenvolvimento Local)
-* **Ambiente de Homologação**
-    * Um Ambiente baseado no Travis que vamos usar para testarmos o projeto. 
-      * ( O VPS de Staging remoto )
-    * Um Ambiente baseado no Virtualbox que vamos usar para testarmos o projeto. 
-      * ( O VPS de Staging local )
-* **Ambiente de Produção**
-    * Um Ambiente baseado na Cloud (Digital Ocean, Google Cloud, IBM, etc) para fazermos o Deploy do Projeto. 
-      * ( O VPS de Produção Remoto )
-
-A minha ideia principal para o projeto [NEORICALEX](https://neoricalex.com.br) é **criar os 3 ambientes com apenas um comando**, e depois vender o conhecimento através de um curso online, a que dei o nome de **COPED**.
-
-Para conseguir chegar nesse objetivo, eu originalmente tinha decidido de criar uma Distribuição Linux do Zero. No entanto, como já falei, fiquei desempregado com a maldita pandemia, então na verdade isso passou a ser o meu "sonho". Por enquanto preciso monetizar. Então eu optei por seguir o atalho de criar um "Ubuntu from scratch".
-
-Começar do completo Zero demanda tempo que eu não tenho. Preciso monetizar para depois sim, ir indo no encontro de um SO do Zero no sentido literal do conceito.
-
-Para já, a grande vantagem que pretendo, é trabalhar em "Real Time". Ou seja, tudo o que for feito, será sincronizado em tempo real, ou bem próximo disso. Dessa forma poderá até rebentar uma bomba nuclear que o trabalho estará sempre salvo e sincronizado.
-
-Por outras palavras, eu não comecei no Assembly. Comecei bem mais na frente, criando uma versão customizada do Ubuntu 20.04 do completo zero. Dessa forma economizo um bom tempo.
-
-O [NEORICALEX](https://neoricalex.com.br) pode ser visto como:
-
-* Uma ferramenta para criar uma Distribuição [Linux](https://www.kernel.org/) do Zero baseada no [Ubuntu](https://ubuntu.com/).
-    * Nessa Distribuição a que dei o nome NFDOS, existe, ou vai existir:
-        * Uma Firewall
-        * Um Proxy Reverso
-        * Um Load Balancer
-        * Um Cluster LXC/LXD
-        * Um Cluster Docker
-        * Um Cluster Kubernetes
-        * Uma VPN
-        * E muito mais...
-
-O detalhe é, como já comentei, eu quero que **tudo seja feito com um único comando**.
-
-Dessa forma, **com apenas um comando**, em caso de catástrofe, a imagem ISO estará pronta com tudo o que é necessário para que o [NEORICALEX](https://neoricalex.com.br) funcione, sem que para isso eu tenha de instalar software, atualizar, e/ou fazer lá seja aquilo que fôr. 
-
-Será algo tipo "Plug n Play". Colocar o CD/DVD no Leitor, arrancar o Desktop/Notebook ou o Servidor/VPS pelo Live CD/DVD e pronto. O Sistema está no Ar e pronto a executar aquilo que quisermos que ele execute.
+No entanto, como já comentei, eu fiquei desempregado com a maldita pandemia. Foi assim então dessa forma, que o NFDOS passou de um projeto em modo "Hobbye", para modo "Produção".
 
 Gostou da ideia?
 
