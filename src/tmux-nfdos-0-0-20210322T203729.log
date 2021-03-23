@@ -92,4 +92,54 @@ NFDOS: output will be in this color.
     NFDOS: Mounting guest additions ISO...
 ==> NFDOS: Creating forwarded port mapping for communicator (SSH, WinRM, etc) (host port 3737)
 ==> NFDOS: Executing custom VBoxManage commands...
-    NFDO
+    NFDOS: Executing: modifyvm NFDOS --ioapic on
+    NFDOS: Executing: modifyvm NFDOS --graphicscontroller vmsvga
+    NFDOS: Executing: modifyvm NFDOS --rtcuseutc on
+    NFDOS: Executing: modifyvm NFDOS --audio none
+    NFDOS: Executing: modifyvm NFDOS --usb off
+    NFDOS: Executing: modifyvm NFDOS --vram 32
+    NFDOS: Executing: modifyvm NFDOS --vrde off
+    NFDOS: Executing: modifyvm NFDOS --memory 2048
+    NFDOS: Executing: modifyvm NFDOS --nestedpaging on
+    NFDOS: Executing: modifyvm NFDOS --largepages on
+    NFDOS: Executing: modifyvm NFDOS --vtxux on
+    NFDOS: Executing: modifyvm NFDOS --paravirtprovider kvm
+    NFDOS: Executing: modifyvm NFDOS --clipboard bidirectional
+    NFDOS: Executing: modifyvm NFDOS --draganddrop bidirectional
+    NFDOS: Executing: modifyvm NFDOS --cpus 1
+==> NFDOS: Starting the virtual machine...
+    NFDOS: The VM will be run headless, without a GUI. If you want to
+    NFDOS: view the screen of the VM, connect via VRDP without a password to
+    NFDOS: rdp://127.0.0.1:5992
+==> NFDOS: Waiting 10m0s for boot...
+==> NFDOS: Typing the boot command...
+==> NFDOS: Using ssh communicator to connect: 127.0.0.1
+==> NFDOS: Waiting for SSH to become available...
+==> NFDOS: Connected to SSH!
+==> NFDOS: Uploading VirtualBox version info (6.1.16)
+==> NFDOS: Provisioning with shell script: homologacao.sh
+    NFDOS: ==> O NFDOS foi instalado com sucesso!
+==> NFDOS: Gracefully halting virtual machine...
+==> NFDOS: Preparing to export machine...
+    NFDOS: Deleting forwarded port mapping for the communicator (SSH, WinRM, etc) (host port 3737)
+==> NFDOS: Exporting virtual machine...
+    NFDOS: Executing: export NFDOS --output virtualbox/NFDOS.ovf
+==> NFDOS: Cleaning up floppy disk...
+==> NFDOS: Deregistering and deleting VM...
+==> NFDOS: Running post-processor: vagrant
+==> NFDOS (vagrant): Creating a dummy Vagrant box to ensure the host system can create one correctly
+==> NFDOS (vagrant): Creating Vagrant box for 'virtualbox' provider
+    NFDOS (vagrant): Copying from artifact: virtualbox/NFDOS-disk001.vmdk
+    NFDOS (vagrant): Copying from artifact: virtualbox/NFDOS.ovf
+    NFDOS (vagrant): Renaming the OVF to box.ovf...
+    NFDOS (vagrant): Compressing: NFDOS-disk001.vmdk
+    NFDOS (vagrant): Compressing: Vagrantfile
+    NFDOS (vagrant): Compressing: box.ovf
+    NFDOS (vagrant): Compressing: metadata.json
+Build 'NFDOS' finished after 1 hour 43 minutes.
+
+==> Wait completed after 1 hour 43 minutes
+
+==> Builds finished. The artifacts of successful builds are:
+--> NFDOS: VM files in directory: virtualbox
+--> NFDOS: 'virtualbox' provider box: vagrant/NFDOS-0.4.4.box
