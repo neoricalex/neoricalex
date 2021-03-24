@@ -130,7 +130,7 @@ Depois de termos uma box para trabalhar, a [neoricalex/ubuntu](https://app.vagra
   - [x] Provisionar com pacotes minimos de desenvolvimento (Linux headers, build-essentials, etc...)
   - [x] Enviar a box para a Vagrant Cloud ficando acessivel via [neoricalex/ubuntu](https://app.vagrantup.com/neoricalex/boxes/ubuntu)
 - [ ] Criar a Distribuição GNU/Linux NFDOS baseada no Ubuntu
-  - [x] Criar uma box via a Vagrant Cloud [neoricalex/ubuntu](https://app.vagrantup.com/neoricalex/boxes/ubuntu)
+  - [x] Criar uma box via a Vagrant Cloud [neoricalex/ubuntu](https://app.vagrantup.com/neoricalex/boxes/ubuntu) (VPS_DEV)
     - [ ] Configurar as Ferramentas de Desenvolvimento
       - [ ] Clonar o repositório do QEMU
         - [ ] Configurar
