@@ -122,8 +122,8 @@ A primeira, com o Ubuntu focal, vamos baixar da vagrant cloud (*ubuntu/focal64*)
 Depois de termos uma box para trabalhar - [neoricalex/ubuntu](https://app.vagrantup.com/neoricalex/boxes/ubuntu) (*VPS_DEV*) - vamos criar e desenvolver o NFDOS dentro dela, criando uma imagem ISO para usarmos e/ou instalarmos em computadores fisicos, uma imagem VMDK para usarmos no Virtualbox já com o NFDOS instalado, e, duas imagens BOX para uso no Vagrant também elas com o NFDOS instalado:  
   1. Uma configurada para o provider virtualbox. E;
   2. Outra configurada com o provider libvirt. Esta iremos também enviar para a vagrant cloud, porém desta vez com o nome *neoricalex/nfdos*. 
-    - Para nós, esta box está referenciada na CLI como *NFDOS*.
-    - Esta box será também usada pelo Travis (VPS de Staging Remoto) para homologação do projeto.
+    * Para nós, esta box está referenciada na CLI como *NFDOS*.
+    * Esta box será também usada pelo Travis (VPS de Staging Remoto) para homologação do projeto.
 ##### Criação de um VPS de Desenvolvimento Local (VPS_DEV)
 - [x] Criar uma box via o Vagrant Cloud com o Ubuntu 20.04 LTS (ubuntu/focal64)
   - [x] Provisionar com pacotes minimos de desenvolvimento (Linux headers, build-essentials, etc...)
