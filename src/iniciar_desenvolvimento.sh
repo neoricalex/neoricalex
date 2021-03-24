@@ -49,24 +49,11 @@ iniciar_detalhes(){
 }
 
 iniciar_desenvolvimento_local(){
-
     iniciar_log
     iniciar_detalhes
-
     cd vps
-
-    #if [[ "$(docker images -q nfdos/core/rootfs:latest 2> /dev/null)" == "" ]]; then
-
-    #    if [ ! -d "nfdos/core/rootfs" ]; then
-    #        mkdir -p nfdos/core
-    #        sudo debootstrap --arch=amd64 --variant=minbase focal nfdos/core/rootfs
-    #        sudo tar -C nfdos/core/rootfs -c . | sudo docker import - nfdos/core/rootfs
-    #    fi
-
-    #fi
-
-    make box
-
+    make vps
+	cd ..
 }
 
 iniciar_desenvolvimento_travis(){

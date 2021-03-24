@@ -128,9 +128,9 @@ Depois de termos uma box para trabalhar, a *neoricalex/ubuntu* (*VPS_DEV*), vamo
 ##### Criação de um VPS de Desenvolvimento Local (VPS_DEV)
 - [x] Criar uma box via o Vagrant Cloud com o Ubuntu 20.04 LTS (ubuntu/focal64)
   - [x] Provisionar com pacotes minimos de desenvolvimento (Linux headers, build-essentials, etc...)
-  - [ ] Enviar a box para a Vagrant Cloud ficando acessivel via *neoricalex/ubuntu*
+  - [x] Enviar a box para a Vagrant Cloud ficando acessivel via *neoricalex/ubuntu*
 - [ ] Criar a Distribuição GNU/Linux NFDOS baseada no Ubuntu
-  - [ ] Criar uma box via o Vagrant Cloud *neoricalex/ubuntu*
+  - [x] Criar uma box via a Vagrant Cloud *neoricalex/ubuntu*
     - [ ] Configurar as Ferramentas de Desenvolvimento
       - [ ] Clonar o repositório do QEMU
         - [ ] Configurar
@@ -138,27 +138,27 @@ Depois de termos uma box para trabalhar, a *neoricalex/ubuntu* (*VPS_DEV*), vamo
       - [ ] Clonar o repositório do Packer
           - [ ] Configurar
           - [ ] Compilar
-      - [ ] Criar o Firmware do NFDOS (Tiano Core EDK II)
-        - [ ] Clonar o repositório do Tiano Core
-        - [ ] Configurar
-        - [ ] Compilar
-      - [ ] Criar o Bootloader do NFDOS (GRUB 2)
-        - [ ] Clonar o repositório da GRUB 2
-        - [ ] Configurar
-        - [ ] Compilar 
-      - [ ] Criar o Kernel do NFDOS (Linux)
-        - [ ] Clonar o repositório da Linux
-        - [ ] Configurar
-        - [ ] Compilar
-      - [x] Criar a imagem ISO do NFDOS (*nfdos.iso*)
-      - [x] Criar duas imagens BOX do Vagrant, uma para o provider virtualbox, outra para o provider libvirt, e ambas com o NFDOS instalado (*NFDOS-x.x.x.box*)
-          - [x] BOX para o Virtualbox
-            - [x] Gerar a NFDOS-x.x.x.box
-            - [x] Gerar a imagem de disco .vmdk com o NFDOS instalado (*NFDOS-disk001.vmdk*)
-            - [x] Gerar o arquivo .ovf (*NFDOS.ovf*)
-          - [x] BOX para o Libvirt
-            - [x] Gerar a NFDOS-x.x.x.box
-            - [ ] Enviar a box para a Vagrant Cloud ficando acessivel via *neoricalex/nfdos*. (Esta box será também a usada pelo Travis)
+    - [ ] Criar o Firmware do NFDOS (Tiano Core EDK II)
+      - [ ] Clonar o repositório do Tiano Core
+      - [ ] Configurar
+      - [ ] Compilar
+    - [ ] Criar o Bootloader do NFDOS (GRUB 2)
+      - [ ] Clonar o repositório da GRUB 2
+      - [ ] Configurar
+      - [ ] Compilar 
+    - [ ] Criar o Kernel do NFDOS (Linux)
+      - [ ] Clonar o repositório da Linux
+      - [ ] Configurar
+      - [ ] Compilar
+    - [x] Criar a imagem ISO do NFDOS (*nfdos.iso*)
+    - [ ] Criar duas imagens BOX do Vagrant, uma para o provider virtualbox, outra para o provider libvirt, e ambas com o NFDOS instalado (*NFDOS-x.x.x.box*)
+        - [x] BOX para o Virtualbox
+          - [x] Gerar a NFDOS-x.x.x.box
+          - [x] Gerar a imagem de disco .vmdk com o NFDOS instalado (*NFDOS-disk001.vmdk*)
+          - [x] Gerar o arquivo .ovf (*NFDOS.ovf*)
+        - [ ] BOX para o Libvirt
+          - [x] Gerar a NFDOS-x.x.x.box
+          - [ ] Enviar a box para a Vagrant Cloud ficando acessivel via *neoricalex/nfdos*. (Esta box será também a usada pelo Travis)
 
 #### Segunda Fase
 - [ ] Instalar o Docker Engine, Docker Compose & Docker Machine no VPS_DEV
