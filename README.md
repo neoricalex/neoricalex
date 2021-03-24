@@ -117,9 +117,9 @@ Gostou da ideia?
 #### Fase Inicial
 Nesta primeira fase vamos mitigar ao máximo quaisquer danos no computador fisico. Vamos criar duas box do vagrant. 
 
-A primeira, com o Ubuntu focal, vamos baixar da vagrant cloud (*ubuntu/focal64*). Depois vamos instalar nela as ferramentas necessárias para trabalharmos, Linux Headers, Build Essentials, etc, e vamos enviar de volta para a vagrant cloud com o nome  *neoricalex/ubuntu*. Para nós, esta box está referenciada na CLI como *VPS_DEV*.
+A primeira, com o Ubuntu focal, vamos baixar da vagrant cloud (*ubuntu/focal64*). Depois vamos instalar nela as ferramentas necessárias para trabalharmos, Linux Headers, Build Essentials, etc, e vamos enviar de volta para a vagrant cloud com o nome [neoricalex/ubuntu](https://app.vagrantup.com/neoricalex/boxes/ubuntu). Para nós, esta box está referenciada na CLI como *VPS_DEV*.
 
-Depois de termos uma box para trabalhar, a *neoricalex/ubuntu* (*VPS_DEV*), vamos criar e desenvolver o NFDOS dentro dela, criando uma imagem ISO para usarmos em computadores fisicos, uma imagem VMDK para usarmos no Virtualbox, e, duas imagens BOX para uso no Vagrant. 
+Depois de termos uma box para trabalhar, a [neoricalex/ubuntu](https://app.vagrantup.com/neoricalex/boxes/ubuntu) (*VPS_DEV*), vamos criar e desenvolver o NFDOS dentro dela, criando uma imagem ISO para usarmos em computadores fisicos, uma imagem VMDK para usarmos no Virtualbox, e, duas imagens BOX para uso no Vagrant. 
   * Uma configurada para o provider virtualbox. E;
   * Outra configurada com o provider libvirt. Esta iremos também enviar para a vagrant cloud, porém desta vez com o nome *neoricalex/nfdos*. 
     * Para nós, esta box está referenciada na CLI como *NFDOS*.
@@ -128,9 +128,9 @@ Depois de termos uma box para trabalhar, a *neoricalex/ubuntu* (*VPS_DEV*), vamo
 ##### Criação de um VPS de Desenvolvimento Local (VPS_DEV)
 - [x] Criar uma box via o Vagrant Cloud com o Ubuntu 20.04 LTS (ubuntu/focal64)
   - [x] Provisionar com pacotes minimos de desenvolvimento (Linux headers, build-essentials, etc...)
-  - [x] Enviar a box para a Vagrant Cloud ficando acessivel via *neoricalex/ubuntu*
+  - [x] Enviar a box para a Vagrant Cloud ficando acessivel via [neoricalex/ubuntu](https://app.vagrantup.com/neoricalex/boxes/ubuntu)
 - [ ] Criar a Distribuição GNU/Linux NFDOS baseada no Ubuntu
-  - [x] Criar uma box via a Vagrant Cloud *neoricalex/ubuntu*
+  - [x] Criar uma box via a Vagrant Cloud [neoricalex/ubuntu](https://app.vagrantup.com/neoricalex/boxes/ubuntu)
     - [ ] Configurar as Ferramentas de Desenvolvimento
       - [ ] Clonar o repositório do QEMU
         - [ ] Configurar
