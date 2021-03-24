@@ -115,7 +115,7 @@ Gostou da ideia?
 ## Roadmap
 ### Ambiente de Desenvolvimento
 #### Fase Inicial
-Nesta primeira fase vamos mitigar ao máximo quaisquer danos no computador fisico. Vamos criar duas box do vagrant. 
+Nesta primeira fase vamos mitigar ao máximo quaisquer danos no computador fisico que usamos em nosso dia-a-dia, e vamos criar duas box do vagrant. 
 
 A primeira, com o Ubuntu focal, vamos baixar da vagrant cloud (*ubuntu/focal64*). Depois vamos instalar nela as ferramentas necessárias para trabalharmos, Linux Headers, Build Essentials, etc, e vamos enviar de volta para a vagrant cloud com o nome [neoricalex/ubuntu](https://app.vagrantup.com/neoricalex/boxes/ubuntu). Para nós, esta box está referenciada na CLI como *VPS_DEV*.
 
