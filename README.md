@@ -119,7 +119,7 @@ Nesta primeira fase vamos mitigar ao máximo quaisquer danos no computador fisic
 
 A primeira, com o Ubuntu focal, vamos baixar da vagrant cloud (*ubuntu/focal64*). Depois vamos instalar nela as ferramentas necessárias para trabalharmos, Linux Headers, Build Essentials, etc, e vamos enviar de volta para a vagrant cloud com o nome [neoricalex/ubuntu](https://app.vagrantup.com/neoricalex/boxes/ubuntu). Para nós, esta box está referenciada na CLI como *VPS_DEV*.
 
-Depois de termos uma box para trabalhar, a [neoricalex/ubuntu](https://app.vagrantup.com/neoricalex/boxes/ubuntu) (*VPS_DEV*), vamos criar e desenvolver o NFDOS dentro dela, criando uma imagem ISO para usarmos em computadores fisicos, uma imagem VMDK para usarmos no Virtualbox, e, duas imagens BOX para uso no Vagrant. 
+Depois de termos uma box para trabalhar - [neoricalex/ubuntu](https://app.vagrantup.com/neoricalex/boxes/ubuntu) (*VPS_DEV*) - vamos criar e desenvolver o NFDOS dentro dela, criando uma imagem ISO para usarmos e/ou instalarmos em computadores fisicos, uma imagem VMDK para usarmos no Virtualbox já com o NFDOS instalado, e, duas imagens BOX para uso no Vagrant também elas com o NFDOS instalado:  
   1. Uma configurada para o provider virtualbox. E;
   2. Outra configurada com o provider libvirt. Esta iremos também enviar para a vagrant cloud, porém desta vez com o nome *neoricalex/nfdos*. 
     - Para nós, esta box está referenciada na CLI como *NFDOS*.
