@@ -132,6 +132,13 @@ Depois de termos uma box para trabalhar - [neoricalex/ubuntu](https://app.vagran
 - [ ] Criar a Distribuição GNU/Linux NFDOS baseada no Ubuntu
   - [ ] Criar uma box via a Vagrant Cloud [neoricalex/ubuntu](https://app.vagrantup.com/neoricalex/boxes/ubuntu) (VPS_DEV)
     - [x] Criar a imagem ISO do NFDOS (*nfdos.iso*)
+      - [x] Gerar a *initramfs*
+        - [x] Configurar
+      - [x] Gerar o *rootfs*
+        - [x] Configurar
+      - [x] Gerar o *bootloader*
+        - [x] Configurar
+      - [x] Gerar a imagem ISO
     - [ ] Criar duas imagens BOX do Vagrant, uma para o provider virtualbox, outra para o provider libvirt, e ambas com o NFDOS instalado (*NFDOS-x.x.x.box*)
         - [x] BOX para o Virtualbox
           - [x] Gerar a NFDOS-x.x.x.box
@@ -141,40 +148,43 @@ Depois de termos uma box para trabalhar - [neoricalex/ubuntu](https://app.vagran
           - [x] Gerar a NFDOS-x.x.x.box
           - [ ] Enviar a box para a Vagrant Cloud ficando acessivel via *neoricalex/nfdos*. (Esta box será também a usada pelo Travis)
 #### Segunda Fase
-- [ ] Configurar as Ferramentas de Desenvolvimento
-  - [ ] Clonar o repositório do QEMU
-    - [ ] Configurar
-    - [ ] Compilar
-  - [ ] Clonar o repositório do Packer
+- [ ] Desenvolver a Distribuição GNU/Linux NFDOS baseada no Ubuntu
+  - [ ] Configurar as Ferramentas de Desenvolvimento
+    - [ ] Clonar o repositório do QEMU
       - [ ] Configurar
       - [ ] Compilar
-- [ ] Criar o Firmware do NFDOS (Tiano Core EDK II)
-  - [ ] Clonar o repositório do Tiano Core
-  - [ ] Configurar
-  - [ ] Compilar
-- [ ] Criar o Bootloader do NFDOS (GRUB 2)
-  - [ ] Clonar o repositório da GRUB 2
-  - [ ] Configurar
-  - [ ] Compilar 
-- [ ] Criar o Kernel do NFDOS (Linux)
-  - [ ] Clonar o repositório da Linux
-  - [ ] Configurar
-  - [ ] Compilar
-- [ ] Instalar o Docker Engine, Docker Compose & Docker Machine no VPS_DEV
-- [ ] Criar um Cluster Docker Swarm
-  - [ ] Criar uma Docker Machine Master Remota (Digital Ocean, IBM, Google, Azure, AWS, Etc...)
-    - [ ] Instalar um container com o Wireguard Server
-  - [ ] Criar uma Docker Machine Leader Local (No VPS_DEV)
-    - [ ] Criar um Stack Wordpress (Será o Stack de Produção)
-        - [ ] Maiores infos em breve
-    - [ ] Criar um Cluster Kubernetes
-        - [ ] Criar um Stack Wordpress (Será apenas uma Demo)
-    - [ ] Criar um container para a Documentação do Projeto
-    - [ ] Criar um container Docker Registry Local (No VPS_DEV)
-    - [ ] Criar um container Gitlab
-    - [ ] Criar um container Email Server
-    - [ ] Criar um container NextCloud  
-    - [ ] Criar um container from scratch
+    - [ ] Clonar o repositório do Packer
+        - [ ] Configurar
+        - [ ] Compilar
+  - [ ] Criar o Firmware do NFDOS (Tiano Core EDK II)
+    - [ ] Clonar o repositório do Tiano Core
+    - [ ] Configurar
+    - [ ] Compilar
+  - [ ] Criar o Bootloader do NFDOS (GRUB 2)
+    - [ ] Clonar o repositório da GRUB 2
+    - [ ] Configurar
+    - [ ] Compilar 
+  - [ ] Criar o Kernel do NFDOS (Linux)
+    - [ ] Clonar o repositório da Linux
+    - [ ] Configurar
+    - [ ] Compilar
+  - [ ] Desenvolver a *initramfs*
+  - [ ] Desenvolver a *rootfs*
+    - [ ] Instalar o Docker Engine, Docker Compose & Docker Machine no VPS_DEV
+    - [ ] Criar um Cluster Docker Swarm
+      - [ ] Criar uma Docker Machine Master Remota (Digital Ocean, IBM, Google, Azure, AWS, Etc...)
+        - [ ] Instalar um container com o Wireguard Server
+      - [ ] Criar uma Docker Machine Leader Local (No VPS_DEV)
+        - [ ] Criar um Stack Wordpress (Será o Stack de Produção)
+            - [ ] Maiores infos em breve
+        - [ ] Criar um Cluster Kubernetes
+            - [ ] Criar um Stack Wordpress (Será apenas uma Demo)
+        - [ ] Criar um container para a Documentação do Projeto
+        - [ ] Criar um container Docker Registry Local (No VPS_DEV)
+        - [ ] Criar um container Gitlab
+        - [ ] Criar um container Email Server
+        - [ ] Criar um container NextCloud  
+        - [ ] Criar um container from scratch
 
 ### Ambiente de Homologação
 ##### Criação de um VPS de Staging Remoto (Travis)
