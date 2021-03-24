@@ -127,7 +127,8 @@ Depois de termos uma box para trabalhar - [neoricalex/ubuntu](https://app.vagran
 ##### Criação de um VPS de Desenvolvimento Local (VPS_DEV)
 - [x] Criar uma box via o Vagrant Cloud com o Ubuntu 20.04 LTS (ubuntu/focal64)
   - [x] Provisionar com pacotes minimos de desenvolvimento (Linux headers, build-essentials, etc...)
-  - [x] Enviar a box para a Vagrant Cloud ficando acessivel via [neoricalex/ubuntu](https://app.vagrantup.com/neoricalex/boxes/ubuntu)
+  - [x] Empacotar e enviar a box para a Vagrant Cloud ficando acessivel via [neoricalex/ubuntu](https://app.vagrantup.com/neoricalex/boxes/ubuntu)
+  - [x] Excluir/Remover/Deletar a box ubuntu/focal64 pois não será mais necessária.
 - [ ] Criar a Distribuição GNU/Linux NFDOS baseada no Ubuntu
   - [ ] Criar uma box via a Vagrant Cloud [neoricalex/ubuntu](https://app.vagrantup.com/neoricalex/boxes/ubuntu) (VPS_DEV)
     - [x] Criar a imagem ISO do NFDOS (*nfdos.iso*)
