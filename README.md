@@ -185,6 +185,7 @@ Depois de termos uma box para trabalhar - [neoricalex/ubuntu](https://app.vagran
         - [ ] Criar um container Email Server
         - [ ] Criar um container NextCloud  
         - [ ] Criar um container from scratch
+    - [ ] Personalizações e/ou Customizações
 
 ### Ambiente de Homologação
 ##### Criação de um VPS de Staging Remoto (Travis)
