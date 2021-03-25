@@ -1,5 +1,4 @@
-export NEORICALEX=$(pwd)
-export NEORICALEX_HOME=$NEORICALEX/src
+export NEORICALEX_HOME=$(pwd)/src
 
 export NFDOS_VERSAO="0.4.4"
 

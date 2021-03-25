@@ -1,7 +1,5 @@
 #!/bin/bash
 
-source ../.variaveis_ambiente
-
 configurar_tmux(){
 	echo "==> Checkando se o ~/.tmux.conf existe"
 	if [ ! -f "~/.tmux.conf" ]; then
@@ -18,7 +16,7 @@ configurar_tmux(){
 checkar_atualizacoes_modulos(){
 
 	echo "==> Checkando por atualizações no módulo do Log..."
-	log_original="$NEORICALEX_HOME/logs"
+	log_original="$NEORICALEX_HOME/log"
 	git submodule update
 	cd $log_original
 	git checkout master
