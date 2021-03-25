@@ -1,0 +1,3 @@
+[submodule "/home/neo/Público/src/log"]
+	path = /home/neo/Público/src/log
+	url = https://github.com/neoricalex/vps.git
