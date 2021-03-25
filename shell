@@ -49,18 +49,14 @@ instalar_requerimentos(){
         caminho_vps="$NEORICALEX_HOME/vps"
         github_vps="https://github.com/neoricalex/vps.git"
         if [ ! -d "$caminho_vps" ] ; then
-            git submodule add $github_vps $caminho_vps
-            git submodule init
-            git submodule update
+            git submodule add --force $github_vps $caminho_vps
         fi
 
         echo "==> Criar o sub-módulo dos LOG's"
         caminho_log="$NEORICALEX_HOME/log"
         github_log="https://github.com/neoricalex/log.git"
         if [ ! -d "$caminho_log" ] ; then
-            git submodule add $github_log $caminho_log
-            git submodule init
-            git submodule update
+            git submodule add --force $github_log $caminho_log
         fi
 
 		echo "==> Removendo pacotes do Ubuntu desnecessários"
