@@ -1,4 +1,7 @@
 #!/bin/bash
+
+source ../.variaveis_ambiente
+
 iniciar_log(){
     # Iniciar o LOG
     if compgen -G "${NEORICALEX_HOME}/*.log" > /dev/null; then
@@ -9,21 +12,22 @@ iniciar_log(){
         echo "      Para ligar o sistema de LOG's pressione as teclas: \"CTRL b\" (sem aspas) seguido de \"SHIFT p\" (também sem aspas)"
     fi
 
-    hour=0
-    min=0
-    sec=10
-        while [ $hour -ge 0 ]; do
-            while [ $min -ge 0 ]; do
-                while [ $sec -ge 0 ]; do
-                    echo -ne " A compilação vai iniciar em $sec segundos...\r"
-                    let "sec=sec-1"
+	# Inicia uma contagem decrescente
+    hora=0
+    minuto=0
+    segundo=10
+        while [ $hora -ge 0 ]; do
+            while [ $minuto -ge 0 ]; do
+                while [ $segundo -ge 0 ]; do
+                    echo -ne " A compilação vai iniciar em $segundo segundos...\r"
+                    let "segundo=segundo-1"
                     sleep 1
                 done
-                sec=59
-                let "min=min-1"
+                segundo=59
+                let "minuto=minuto-1"
             done
-            min=59
-            let "hour=hour-1"
+            minuto=59
+            let "hora=hora-1"
         done
 
     echo ""
@@ -31,14 +35,14 @@ iniciar_log(){
 }
 
 iniciar_detalhes(){
+
+	# TODO: Arrumar esta salganhada
     agora=$(date +"%c")
     echo "Compilação iniciada $agora"
     echo ""
     echo "Detalhes do $HOSTNAME:" 
     echo ""
     echo "$(lscpu | awk 'NR==14{print $1 " " $2 " " $3 " " $4 " " $5 " " $6; exit}')" # Nome do modelo da CPU
-    export QEMU_ARCH=$(lscpu | awk 'NR==1{print $2; exit}')
-    export PLATFORM=$QEMU_ARCH
     echo "Arquitetura: $QEMU_ARCH"
     echo "Número de $(lscpu | awk 'NR==5{print $1 " " $2 " " $3 " " $4 " " $5 " " $6; exit}')" # Número de CPU(s)
     echo "$(lscpu | awk 'NR==21{print $1 " " $2 " " $3 " " $4 " " $5 " " $6; exit}')" # Virtualização
@@ -49,11 +53,13 @@ iniciar_detalhes(){
 }
 
 iniciar_desenvolvimento_local(){
+
     iniciar_log
     iniciar_detalhes
     cd vps
     make vps
 	cd ..
+	
 }
 
 iniciar_desenvolvimento_travis(){

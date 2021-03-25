@@ -1,0 +1,7 @@
+export NEORICALEX=$(pwd)
+export NEORICALEX_HOME=$NEORICALEX/src
+
+export NFDOS_VERSAO="0.4.4"
+
+export QEMU_ARCH=$(lscpu | awk 'NR==1{print $2; exit}')
+export PLATFORM=$QEMU_ARCH

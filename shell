@@ -1,5 +1,7 @@
 #!/bin/bash
 
+source .variaveis_ambiente
+
 instalar_requerimentos(){
 
 	echo "==> Checkando se os requerimentos foram instalados..."
@@ -44,7 +46,7 @@ instalar_requerimentos(){
 		fi
 
         echo "==> Criar o sub-módulo do VPS_DEV"
-        caminho_vps="./vps"
+        caminho_vps="$NEORICALEX_HOME/vps"
         github_vps="https://github.com/neoricalex/vps.git"
         if [ ! -d "$caminho_vps" ] ; then
             git submodule add $github_vps $caminho_vps
@@ -53,7 +55,7 @@ instalar_requerimentos(){
         fi
 
         echo "==> Criar o sub-módulo dos LOG's"
-        caminho_log="./log"
+        caminho_log="$NEORICALEX_HOME/log"
         github_log="https://github.com/neoricalex/log.git"
         if [ ! -d "$caminho_log" ] ; then
             git submodule add $github_vps $caminho_log
@@ -82,8 +84,9 @@ iniciar_local(){
     src/neoricalex
 }
 
+# Separar a rota do desenvolvedor da do usuário
 usuario="$(whoami)@$(hostname | cut -d . -f 1-2)"
-if [ "$usuario" == "neo@desktop" ]; then
+if [ "$usuario" == "neo@desktop1" ]; then
 
     if [ -d "src/vps" ] ; then
         cd src/vps
