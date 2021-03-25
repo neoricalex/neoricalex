@@ -1,5 +1,5 @@
 #!/bin/bash
-Reduzir espaço
+
 source .variaveis_ambiente
 
 instalar_requerimentos(){
@@ -122,6 +122,12 @@ if [ "$usuario" == "neo@desktop1" ]; then
     #sudo rm -rf nfdos/core/rootfs
     #sudo apt autoremove -y
     #docker run --rm --name neoricalex nfdos/core/rootfs
+    
+    #git rm --cached src/vps
+    #git rm --cached /home/neo/Público/src/vps
+    #rm -rf .git/modules/src/vps
+    #rm -rf .git/modules/home/neo/Público/src/vps
+
     
 else
     instalar_requerimentos
