@@ -16,21 +16,21 @@ configurar_tmux(){
 checkar_atualizacoes_modulos(){
 
 	echo "==> Checkando por atualizações no módulo do Log..."
-	log_original="$NEORICALEX_HOME/log"
+	caminho_log="$NEORICALEX_HOME/log"
 	git submodule update
-	cd $log_original
-	git checkout master
-	git pull
-	cd $NEORICALEX_HOME
+	#cd $caminho_log
+	#git checkout master
+	#git pull
+	#cd $NEORICALEX_HOME
 
 	echo "==> Checkando por atualizações no módulo do VPS..."
 	caminho_vps="$NEORICALEX_HOME/vps"
 	git submodule update
-	cd $caminho_vps
-	git checkout master
-	git pull
-	cd $NEORICALEX_HOME
-
+	#cd $caminho_vps
+	#git checkout master
+	#git pull
+	#cd $NEORICALEX_HOME
+	exit
 }
 
 
