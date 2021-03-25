@@ -1,5 +1,5 @@
 #!/bin/bash
-home/neo/Público/src/log
+home/neo/Público/src/log  rm -rf .git/modules/
 source .variaveis_ambiente
 
 instalar_requerimentos(){
