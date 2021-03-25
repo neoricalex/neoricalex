@@ -1,4 +1,0 @@
-
-[submodule "src/vps"]
-	path = src/vps
-	url = https://github.com/neoricalex/vps.git
