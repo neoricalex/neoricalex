@@ -29,6 +29,7 @@ vps_original="$NEORICALEX_HOME/vps"
 github_vps="https://github.com/neoricalex/vps.git"
 if [ ! -d "$vps_original" ] ; then
     git submodule add $github_vps $vps_original
+	git submodule init
 else
     git submodule update
     cd $vps_original

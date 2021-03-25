@@ -1,15 +1,73 @@
 #!/bin/bash
 
 instalar_requerimentos(){
-    echo "Atualizar repositórios e instalar os requerimentos para rodar o neoricalex..."
-    sudo apt update
-    sudo apt install -y \
-        autoconf \
-        automake \
-        build-essential \
-        git \
-        make \
-        tmux
+
+	echo "==> Checkando se os requerimentos foram instalados..."
+    if [ ! -f ".requerimentos_host.box" ];
+	then
+        echo "Atualizar repositórios e instalar os requerimentos..."
+        sudo apt update
+        sudo apt install -y \
+            autoconf \
+            automake \
+            build-essential \
+            git \
+            make \
+            tmux
+
+		if ! command -v vboxmanage &> /dev/null;
+		then
+            echo "==> Instalar o VirtualBox"
+            #sudo apt install -y virtualbox
+            sudo deb [arch=amd64] https://download.virtualbox.org/virtualbox/debian focal contrib
+            wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -
+            wget -q https://www.virtualbox.org/download/oracle_vbox.asc -O- | sudo apt-key add -
+            sudo apt-get update
+            sudo apt-get install virtualbox-6.1 -y
+            sudo apt install -y virtualbox-guest-dkms virtualbox-guest-x11
+            sudo apt install -y virtualbox-guest-additions-iso
+
+            echo "==> Instalar o Extension Pack do VirtualBox"
+            wget https://download.virtualbox.org/virtualbox/6.1.18/Oracle_VM_VirtualBox_Extension_Pack-6.1.18.vbox-extpack \
+                -q --show-progress \
+                --progress=bar:force:noscroll
+            sudo vboxmanage extpack install Oracle_VM_VirtualBox_Extension_Pack-6.1.18.vbox-extpack --accept-license=33d7284dc4a0ece381196fda3cfe2ed0e1e8e7ed7f27b9a9ebc4ee22e24bd23c
+            rm Oracle_VM_VirtualBox_Extension_Pack-6.1.18.vbox-extpack 
+		fi
+
+		if ! command -v vagrant &> /dev/null;
+		then
+            echo "==> Download Vagrant & Instalar"
+            wget -nv https://releases.hashicorp.com/vagrant/2.2.9/vagrant_2.2.9_x86_64.deb
+            sudo dpkg -i vagrant_2.2.9_x86_64.deb
+            rm vagrant_2.2.9_x86_64.deb
+		fi
+
+        echo "==> Criar o sub-módulo do VPS_DEV"
+        caminho_vps="./vps"
+        github_vps="https://github.com/neoricalex/vps.git"
+        if [ ! -d "$caminho_vps" ] ; then
+            git submodule add $github_vps $caminho_vps
+            git submodule init
+            git submodule update
+        fi
+
+        echo "==> Criar o sub-módulo dos LOG's"
+        caminho_log="./log"
+        github_log="https://github.com/neoricalex/log.git"
+        if [ ! -d "$caminho_log" ] ; then
+            git submodule add $github_vps $caminho_log
+            git submodule init
+            git submodule update
+        fi
+
+		echo "==> Removendo pacotes do Ubuntu desnecessários"
+		sudo apt autoremove -y
+		touch .requerimentos_host.box
+
+	fi
+    echo "==> Os requerimentos minimos foram instalados. Serão necessários mais, mas será já dentro do VPS"
+    sleep 3
 }
 
 iniciar_local(){
@@ -35,17 +93,17 @@ if [ "$usuario" == "neo@desktop" ]; then
         git push origin master
         cd ../..
     fi
-   
+
+    #echo "Atualizar o github:neoricalex/neoricalex..."
+    #git add .
+    #git commit -m "Atualização Automática via bash shell"
+    #git push origin master
+
     iniciar_local
 
     cd src
     cat *.log
     cd ..
-
-    echo "Atualizar o github:neoricalex/neoricalex..."
-    git add .
-    git commit -m "Atualização Automática via bash shell"
-    git push origin master
 
     #sudo docker tag nfdos/core/rootfs neoricalex/nfdos
     #sudo docker login
@@ -65,11 +123,6 @@ if [ "$usuario" == "neo@desktop" ]; then
     #sudo rm -rf nfdos/core/rootfs
     #sudo apt autoremove -y
     #docker run --rm --name neoricalex nfdos/core/rootfs
-
-    #chmod +x compilar.sh
-    #./compilar.sh
-    #chmod +x upload_cloud.sh
-    #./upload_cloud.sh
     
 else
     iniciar_local

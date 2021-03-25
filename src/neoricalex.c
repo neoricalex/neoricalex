@@ -32,7 +32,7 @@ main ( int argc, char *argv[] )
     puts("Bem-vindo(a) ao " PACKAGE_STRING " !");
     puts("================================\n");
 
-	int iniciar_sessao = system("cd src; chmod +x iniciar_sessao.sh; ./iniciar_sessao.sh");
+	int iniciar_sessao_tmux = system("cd src; chmod +x iniciar_sessao_tmux.sh; ./iniciar_sessao_tmux.sh");
 	return EXIT_SUCCESS;
 }	
 /* ----------  end of function main  ---------- */
