@@ -1,5 +1,5 @@
 #!/bin/bash
-home/neo/Público/src/log  rm -rf .git/modules/
+Reduzir espaço
 source .variaveis_ambiente
 
 instalar_requerimentos(){
@@ -49,14 +49,14 @@ instalar_requerimentos(){
         caminho_vps="$NEORICALEX_HOME/vps"
         github_vps="https://github.com/neoricalex/vps.git"
         if [ ! -d "$caminho_vps" ] ; then
-            git submodule add --force $github_vps $caminho_vps
+            git submodule add $github_vps src/vps
         fi
 
         echo "==> Criar o sub-módulo dos LOG's"
         caminho_log="$NEORICALEX_HOME/log"
         github_log="https://github.com/neoricalex/log.git"
         if [ ! -d "$caminho_log" ] ; then
-            git submodule add --force $github_log $caminho_log
+            git submodule add $github_log src/log
         fi
 
 		echo "==> Removendo pacotes do Ubuntu desnecessários"
