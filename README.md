@@ -159,6 +159,9 @@ Depois de termos uma box para trabalhar - [neoricalex/ubuntu](https://app.vagran
     - [ ] Clonar o repositório do Vagrant
         - [ ] Configurar
         - [ ] Compilar
+    - [ ] Clonar o repositório do Vagrant-Libvirt
+        - [ ] Configurar
+        - [ ] Compilar
   - [ ] Configurar o Firmware do NFDOS (Tiano Core EDK II)
     - [ ] Clonar o repositório do Tiano Core
     - [ ] Configurar
