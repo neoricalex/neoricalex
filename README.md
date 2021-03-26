@@ -2,6 +2,8 @@
 
 [![Build Status](https://www.travis-ci.com/neoricalex/neoricalex.svg?branch=master)](https://www.travis-ci.com/neoricalex/neoricalex)
 
+[![Coverage Status](https://coveralls.io/repos/github/neoricalex/neoricalex/badge.svg?branch=master)](https://coveralls.io/github/neoricalex/neoricalex?branch=master)
+
 ## Início Rápido
 
 ### Requisitos
@@ -173,17 +175,17 @@ Depois de termos uma box para trabalhar - [neoricalex/ubuntu](https://app.vagran
     - [ ] Compilar
   - [ ] Desenvolver a *initramfs*
   - [ ] Desenvolver a *rootfs*
-    - [ ] Instalar o Docker Engine, Docker Compose & Docker Machine no VPS_DEV
+    - [ ] Instalar o Docker Engine, Docker Compose & Docker Machine no NFDOS
     - [ ] Criar um Cluster Docker Swarm
       - [ ] Criar uma Docker Machine Master Remota (Digital Ocean, IBM, Google, Azure, AWS, Etc...)
         - [ ] Instalar um container com o Wireguard Server
-      - [ ] Criar uma Docker Machine Leader Local (No VPS_DEV)
+      - [ ] Criar uma Docker Machine Leader Local (No NFDOS)
         - [ ] Criar um Stack Wordpress (Será o Stack de Produção)
             - [ ] Maiores infos em breve
         - [ ] Criar um Cluster Kubernetes
             - [ ] Criar um Stack Wordpress (Será apenas uma Demo)
         - [ ] Criar um container para a Documentação do Projeto
-        - [ ] Criar um container Docker Registry Local (No VPS_DEV)
+        - [ ] Criar um container Docker Registry Local (No NFDOS)
         - [ ] Criar um container Gitlab
         - [ ] Criar um container Email Server
         - [ ] Criar um container NextCloud  
