@@ -85,7 +85,7 @@ iniciar_local(){
 
 # Separar a rota do desenvolvedor da do usuário
 usuario="$(whoami)@$(hostname | cut -d . -f 1-2)"
-if [ "$usuario" == "neo@desktop1" ]; then
+if [ "$usuario" == "neo@desktop" ]; then
 
     if [ -d "src/vps" ] ; then
         cd src/vps
@@ -96,10 +96,10 @@ if [ "$usuario" == "neo@desktop1" ]; then
         cd ../..
     fi
 
-    #echo "Atualizar o github:neoricalex/neoricalex..."
-    #git add .
-    #git commit -m "Atualização Automática via bash shell"
-    #git push origin master
+    echo "Atualizar o github:neoricalex/neoricalex..."
+    git add .
+    git commit -m "Atualização Automática via bash shell"
+    git push --progress origin master
 
     iniciar_local
 
