@@ -18,19 +18,19 @@ checkar_atualizacoes_modulos(){
 	echo "==> Checkando por atualizações no módulo do Log..."
 	caminho_log="$NEORICALEX_HOME/log"
 	git submodule update
-	#cd $caminho_log
-	#git checkout master
-	#git pull
-	#cd $NEORICALEX_HOME
+	cd $caminho_log
+	git checkout master
+	git pull
+	cd $NEORICALEX_HOME
 
 	echo "==> Checkando por atualizações no módulo do VPS..."
 	caminho_vps="$NEORICALEX_HOME/vps"
 	git submodule update
-	#cd $caminho_vps
-	#git checkout master
-	#git pull
-	#cd $NEORICALEX_HOME
-	exit
+	cd $caminho_vps
+	git checkout master
+	git pull
+	cd $NEORICALEX_HOME
+
 }
 
 

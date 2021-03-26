@@ -43,6 +43,9 @@ instalar_requerimentos(){
             wget -nv https://releases.hashicorp.com/vagrant/2.2.9/vagrant_2.2.9_x86_64.deb
             sudo dpkg -i vagrant_2.2.9_x86_64.deb
             rm vagrant_2.2.9_x86_64.deb
+
+            echo "==> Instalar plugins do Vagrant"
+            vagrant plugin install vagrant-disksize # Só funciona no Virtualboxe
 		fi
 
         echo "==> Criar o sub-módulo do VPS_DEV"

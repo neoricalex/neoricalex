@@ -32,3 +32,4 @@ install-sh
 Makefile.in
 missing
 neoricalex-1.0.tar.gz
+.requerimentos_host.box

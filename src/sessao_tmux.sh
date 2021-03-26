@@ -1,7 +1,5 @@
 #!/bin/bash
 
-source ../.variaveis_ambiente
-
 iniciar_log(){
     # Iniciar o LOG
     if compgen -G "${NEORICALEX_HOME}/*.log" > /dev/null; then

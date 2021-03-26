@@ -1,0 +1,132 @@
+ A compilação vai iniciar em 6 segundos... A compilação vai iniciar em 5 segundos... A compilação vai iniciar em 4 segundos... A compilação vai iniciar em 3 segundos... A compilação vai iniciar em 2 segundos... A compilação vai iniciar em 1 segundos... A compilação vai iniciar em 0 segundos...
+
+Compilação iniciada qui 25 mar 2021 10:58:51
+
+Detalhes do desktop:
+
+Nome do modelo: AMD FX(tm)-8350 Eight-Core
+Arquitetura: x86_64
+Número de CPU(s): 8    
+Virtualização: AMD-V    
+Memória RAM: 16041 MiB 
+Memória Virtual: 2647 MB
+Modo(s) operacional da CPU: 32-bit, 64-bit
+
+chmod +x compilar_vps.sh
+./compilar_vps.sh
+==> Entrando no neoricalex/ubuntu (VPS_DEV)...
+Welcome to Ubuntu 20.04.2 LTS (GNU/Linux 5.4.0-70-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Thu Mar 25 13:59:00 UTC 2021
+
+  System load:  0.01               Processes:               137
+  Usage of /:   2.7% of 124.02GB   Users logged in:         0
+  Memory usage: 3%                 IPv4 address for enp0s3: 10.0.2.15
+  Swap usage:   0%
+
+ * Introducing self-healing high availability clusters in MicroK8s.
+   Simple, hardened, Kubernetes for production, from RaspberryPi to DC.
+
+     https://microk8s.io/high-availability
+
+1 update can be installed immediately.
+0 of these updates are security updates.
+To see these additional updates run: apt list --upgradable
+
+
+Parece bom
+chmod +x compilar_iso.sh
+./compilar_iso.sh
+Iniciando a compilação da imagem ISO do NFDOS 0.4.4 ...
+Checkando se a /neoricalex/nfdos existe
+Checkando se a /neoricalex/nfdos/core/nfdos.iso existe
+A /neoricalex/nfdos/core/nfdos.iso existe
+Checkando se a /neoricalex/nfdos/desktop/vagrant/libvirt/NFDOS-0.4.4.box existe...
+A /neoricalex/nfdos/desktop/vagrant/libvirt/NFDOS-0.4.4.box não existe. Criando ela...
+Checkando o SHA256 da imagem ISO...
+2021/03/25 13:59:13 [INFO] Packer version: 1.6.4 [go1.15.2 linux amd64]
+2021/03/25 13:59:13 Checking 'PACKER_CONFIG' for a config file path
+2021/03/25 13:59:13 'PACKER_CONFIG' not set; checking the default config file path
+2021/03/25 13:59:13 Attempting to open config file: /home/vagrant/.packerconfig
+2021/03/25 13:59:13 [WARN] Config file doesn't exist: /home/vagrant/.packerconfig
+2021/03/25 13:59:13 Setting cache directory: /neoricalex/nfdos/desktop/packer_cache
+Running in background, not using a TTY
+2021/03/25 13:59:13 Creating plugin client for path: /usr/local/bin/packer
+2021/03/25 13:59:13 Starting plugin: /usr/local/bin/packer []string{"/usr/local/bin/packer", "plugin", "packer-builder-qemu"}
+2021/03/25 13:59:13 Waiting for RPC address for: /usr/local/bin/packer
+2021/03/25 13:59:13 packer-builder-qemu plugin: [INFO] Packer version: 1.6.4 [go1.15.2 linux amd64]
+2021/03/25 13:59:13 packer-builder-qemu plugin: Checking 'PACKER_CONFIG' for a config file path
+2021/03/25 13:59:13 packer-builder-qemu plugin: 'PACKER_CONFIG' not set; checking the default config file path
+2021/03/25 13:59:13 packer-builder-qemu plugin: Attempting to open config file: /home/vagrant/.packerconfig
+2021/03/25 13:59:13 packer-builder-qemu plugin: [WARN] Config file doesn't exist: /home/vagrant/.packerconfig
+2021/03/25 13:59:13 packer-builder-qemu plugin: Setting cache directory: /neoricalex/nfdos/desktop/packer_cache
+2021/03/25 13:59:13 packer-builder-qemu plugin: args: []string{"packer-builder-qemu"}
+2021/03/25 13:59:13 Received unix RPC address for /usr/local/bin/packer: addr is /tmp/packer-plugin930593492
+2021/03/25 13:59:13 packer-builder-qemu plugin: Plugin address: unix /tmp/packer-plugin930593492
+2021/03/25 13:59:13 packer-builder-qemu plugin: Waiting for connection...
+2021/03/25 13:59:13 packer-builder-qemu plugin: Serving a plugin connection...
+2021/03/25 13:59:13 Creating plugin client for path: /usr/local/bin/packer
+2021/03/25 13:59:13 Starting plugin: /usr/local/bin/packer []string{"/usr/local/bin/packer", "plugin", "packer-provisioner-shell"}
+2021/03/25 13:59:13 Waiting for RPC address for: /usr/local/bin/packer
+2021/03/25 13:59:13 packer-provisioner-shell plugin: [INFO] Packer version: 1.6.4 [go1.15.2 linux amd64]
+2021/03/25 13:59:13 packer-provisioner-shell plugin: Checking 'PACKER_CONFIG' for a config file path
+2021/03/25 13:59:13 packer-provisioner-shell plugin: 'PACKER_CONFIG' not set; checking the default config file path
+2021/03/25 13:59:13 packer-provisioner-shell plugin: Attempting to open config file: /home/vagrant/.packerconfig
+2021/03/25 13:59:13 packer-provisioner-shell plugin: [WARN] Config file doesn't exist: /home/vagrant/.packerconfig
+2021/03/25 13:59:13 packer-provisioner-shell plugin: Setting cache directory: /neoricalex/nfdos/desktop/packer_cache
+2021/03/25 13:59:13 packer-provisioner-shell plugin: args: []string{"packer-provisioner-shell"}
+2021/03/25 13:59:13 Received unix RPC address for /usr/local/bin/packer: addr is /tmp/packer-plugin054816927
+2021/03/25 13:59:13 packer-provisioner-shell plugin: Plugin address: unix /tmp/packer-plugin054816927
+2021/03/25 13:59:13 packer-provisioner-shell plugin: Waiting for connection...
+2021/03/25 13:59:13 packer-provisioner-shell plugin: Serving a plugin connection...
+2021/03/25 13:59:13 Creating plugin client for path: /usr/local/bin/packer
+2021/03/25 13:59:13 Starting plugin: /usr/local/bin/packer []string{"/usr/local/bin/packer", "plugin", "packer-post-processor-vagrant"}
+2021/03/25 13:59:13 Waiting for RPC address for: /usr/local/bin/packer
+2021/03/25 13:59:13 packer-post-processor-vagrant plugin: [INFO] Packer version: 1.6.4 [go1.15.2 linux amd64]
+2021/03/25 13:59:13 packer-post-processor-vagrant plugin: Checking 'PACKER_CONFIG' for a config file path
+2021/03/25 13:59:13 packer-post-processor-vagrant plugin: 'PACKER_CONFIG' not set; checking the default config file path
+2021/03/25 13:59:13 packer-post-processor-vagrant plugin: Attempting to open config file: /home/vagrant/.packerconfig
+2021/03/25 13:59:13 packer-post-processor-vagrant plugin: [WARN] Config file doesn't exist: /home/vagrant/.packerconfig
+2021/03/25 13:59:13 packer-post-processor-vagrant plugin: Setting cache directory: /neoricalex/nfdos/desktop/packer_cache
+2021/03/25 13:59:13 packer-post-processor-vagrant plugin: args: []string{"packer-post-processor-vagrant"}
+2021/03/25 13:59:13 packer-post-processor-vagrant plugin: Plugin address: unix /tmp/packer-plugin290570858
+2021/03/25 13:59:13 packer-post-processor-vagrant plugin: Waiting for connection...
+2021/03/25 13:59:13 Received unix RPC address for /usr/local/bin/packer: addr is /tmp/packer-plugin290570858
+2021/03/25 13:59:13 packer-post-processor-vagrant plugin: Serving a plugin connection...
+2021/03/25 13:59:13 Preparing build: NFDOS
+2021/03/25 13:59:13 packer-builder-qemu plugin: use specified accelerator: kvm
+2021/03/25 13:59:13 packer-builder-qemu plugin: MemorySize 0 is too small, using default: 512
+2021/03/25 13:59:13 packer-builder-qemu plugin: CpuCount 0 too small, using default: 1
+NFDOS: output will be in this color.
+
+2021/03/25 13:59:13 Build debug mode: false
+2021/03/25 13:59:13 Force build: false
+2021/03/25 13:59:13 On error: 
+2021/03/25 13:59:13 Waiting on builds to complete...
+2021/03/25 13:59:13 Starting build run: NFDOS
+2021/03/25 13:59:13 Running builder: qemu
+2021/03/25 13:59:13 [INFO] (telemetry) Starting builder qemu
+2021/03/25 13:59:13 [INFO] (telemetry) ending qemu
+==> Wait completed after 1 millisecond 501 microseconds
+2021/03/25 13:59:13 machine readable: error-count []string{"1"}
+==> Some builds didn't complete successfully and had errors:
+2021/03/25 13:59:13 machine readable: NFDOS,error []string{"Failed creating Qemu driver: exec: \"/usr/bin/qemu-system-x86_64\": stat /usr/bin/qemu-system-x86_64: no such file or directory"}
+==> Builds finished but no artifacts were created.
+Build 'NFDOS' errored after 1 millisecond 314 microseconds: Failed creating Qemu driver: exec: "/usr/bin/qemu-system-x86_64": stat /usr/bin/qemu-system-x86_64: no such file or directory
+
+==> Wait completed after 1 millisecond 501 microseconds
+
+==> Some builds didn't complete successfully and had errors:
+--> NFDOS: Failed creating Qemu driver: exec: "/usr/bin/qemu-system-x86_64": stat /usr/bin/qemu-system-x86_64: no such file or directory
+
+==> Builds finished but no artifacts were created.
+2021/03/25 13:59:13 [INFO] (telemetry) Finalizing.
+2021/03/25 13:59:14 waiting for all plugin processes to complete...
+2021/03/25 13:59:15 /usr/local/bin/packer: plugin process exited
+2021/03/25 13:59:15 /usr/local/bin/packer: plugin process exited
+2021/03/25 13:59:15 /usr/local/bin/packer: plugin process exited
+A /neoricalex/nfdos/desktop/vagrant/libvirt/NFDOS-0.4.4.box já existe.
