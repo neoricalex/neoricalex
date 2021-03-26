@@ -110,6 +110,9 @@ if [ "$usuario" == "neo@desktop" ]; then
     cat *.log
     cd ..
 
+    # RESET
+    # 
+
     #sudo docker tag nfdos/core/rootfs neoricalex/nfdos
     #sudo docker login
     #sudo docker push neoricalex/nfdos

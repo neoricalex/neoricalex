@@ -38,25 +38,29 @@ bash shell
 ```
 
 ## O que são os projetos NEORICALEX & NFDOS
+
 Embora completamente interligados, o NEORICALEX & NFDOS são dois projetos diferentes.
+
 ### NEORICALEX
+
 O [NEORICALEX](https://neoricalex.com.br) é a minha Plataforma e/ou Ambiente de Trabalho. O local onde eu condenso tudo o que eu sei fazer em TI.
 
 O [NEORICALEX](https://neoricalex.com.br) é um framework de trabalho com 3 ambientes:
+
 * **Ambiente de Desenvolvimento**
-    * Um Ambiente físico com o NFDOS instalado, que vamos usar para desenvolver todo o projeto. 
-      * ( O Computador Pessoal )
-        * e/ou;
-    * Um Ambiente baseado no Vagrant com o NFDOS instalado
-      * ( O VPS de Desenvolvimento Local)
+  * Um Ambiente físico com o NFDOS instalado, que vamos usar para desenvolver todo o projeto.
+    * ( O Computador Pessoal )
+      * e/ou;
+  * Um Ambiente baseado no Vagrant com o NFDOS instalado
+    * ( O VPS de Desenvolvimento Local)
 * **Ambiente de Homologação**
-    * Um Ambiente baseado no Travis que vamos usar para testarmos o projeto. 
-      * ( O VPS de Staging remoto )
-    * Um Ambiente baseado no Virtualbox que vamos usar para testarmos o projeto. 
-      * ( O VPS de Staging local )
+  * Um Ambiente baseado no Travis que vamos usar para testarmos o projeto.
+    * ( O VPS de Staging remoto )
+  * Um Ambiente baseado no Virtualbox que vamos usar para testarmos o projeto.
+    * ( O VPS de Staging local )
 * **Ambiente de Produção**
-    * Um Ambiente baseado na Cloud (Digital Ocean, Google Cloud, IBM, etc) para fazermos o Deploy do Projeto. 
-      * ( O VPS de Produção Remoto )
+  * Um Ambiente baseado na Cloud (Digital Ocean, Google Cloud, IBM, etc) para fazermos o Deploy do Projeto.
+    * ( O VPS de Produção Remoto )
 
 A minha ideia principal para o projeto [NEORICALEX](https://neoricalex.com.br) é **criar os 3 ambientes com apenas um comando**, e depois vender o conhecimento através de um curso online, a que dei o nome de **COPED**.
 
@@ -69,26 +73,28 @@ Para já, a grande vantagem que pretendo, é trabalhar em "Real Time". Ou seja, 
 O [NEORICALEX](https://neoricalex.com.br) pode ser visto como:
 
 * Uma ferramenta para criar uma Distribuição [Linux](https://www.kernel.org/) do Zero baseada no [Ubuntu](https://ubuntu.com/).
-    * Nessa Distribuição a que dei o nome NFDOS, existe, ou vai existir:
-        * Uma Firewall
-        * Um Proxy Reverso
-        * Um Load Balancer
-        * Um Cluster LXC/LXD
-        * Um Cluster Docker
-        * Um Cluster Kubernetes
-        * Uma VPN
-        * E muito mais...
+  * Nessa Distribuição a que dei o nome NFDOS, existe, ou vai existir:
+    * Uma Firewall
+    * Um Proxy Reverso
+    * Um Load Balancer
+    * Um Cluster LXC/LXD
+    * Um Cluster Docker
+    * Um Cluster Kubernetes
+    * Uma VPN
+    * E muito mais...
 
 O detalhe é, como já comentei, eu quero que **tudo seja feito com um único comando**.
 
-Dessa forma, **com apenas um comando**, em caso de catástrofe, a imagem ISO estará pronta com tudo o que é necessário para que o [NEORICALEX](https://neoricalex.com.br) funcione, sem que para isso eu tenha de instalar software, atualizar, e/ou fazer lá seja aquilo que fôr. 
+Dessa forma, **com apenas um comando**, em caso de catástrofe, a imagem ISO estará pronta com tudo o que é necessário para que o [NEORICALEX](https://neoricalex.com.br) funcione, sem que para isso eu tenha de instalar software, atualizar, e/ou fazer lá seja aquilo que fôr.
 
 Será algo tipo "Plug n Play". Colocar o CD/DVD no Leitor, arrancar o Desktop/Notebook ou o Servidor/VPS pelo Live CD/DVD e pronto. O Sistema está no Ar e pronto a executar aquilo que quisermos que ele execute.
 
 Para levar a bom termo esse projeto, eu vou precisar de um Desktop para criar/desenvolver o código, e, um Servidor para hospedar na cloud.
 
 Fazer a Placa-Mãe, Memória RAM, e todas as outras partes físicas do Desktop e Servidor, eu não vou conseguir saber fazer. Mas o Sistema Operativo, e todo o Software que o Desktop e/ou o Servidor vão precisar para funcionarem, aí já tenho uma palavra a dizer.
+
 ### NFDOS
+
 O NFDOS significa Neo Free Disk Operating System, e é um Sistema Operativo criado do zero.
 
 Eu não sei você, mas eu sempre quis saber como se faz um sistema operacional do zero. Mas isso apenas não bastava. Eu também queria saber como se faz um sistema de distribuição completo, onde eu digitava um comando ou dois, e eu tinha uma imagem ISO gerada para poder distribuir o meu sistema, ou usar em qualquer computador.
@@ -113,98 +119,110 @@ No entanto, como já comentei, eu fiquei desempregado com a maldita pandemia. Fo
 Gostou da ideia?
 
 ## Roadmap
+
 ### Ambiente de Desenvolvimento
+
 #### Fase Inicial
-Nesta primeira fase vamos mitigar ao máximo quaisquer danos no computador fisico que usamos em nosso dia-a-dia, e vamos criar duas box do vagrant. 
+
+Nesta primeira fase vamos mitigar ao máximo quaisquer danos no computador fisico que usamos em nosso dia-a-dia, e vamos criar duas box do vagrant.
 
 A primeira, com o Ubuntu focal, vamos baixar da vagrant cloud (*ubuntu/focal64*). Depois vamos instalar nela as ferramentas necessárias para trabalharmos, Linux Headers, Build Essentials, etc, e vamos enviar de volta para a vagrant cloud com o nome [neoricalex/ubuntu](https://app.vagrantup.com/neoricalex/boxes/ubuntu). Para nós, esta box está referenciada na CLI como *VPS_DEV*.
 
 Depois de termos uma box para trabalhar - [neoricalex/ubuntu](https://app.vagrantup.com/neoricalex/boxes/ubuntu) (*VPS_DEV*) - vamos criar e desenvolver o NFDOS dentro dela, criando uma imagem ISO para usarmos e/ou instalarmos em computadores fisicos, uma imagem VMDK para usarmos no Virtualbox já com o NFDOS instalado, e, duas imagens BOX para uso no Vagrant também elas com o NFDOS instalado:  
+
 1. Uma configurada para o provider virtualbox. E;
-2. Outra configurada com o provider libvirt. Esta iremos também enviar para a vagrant cloud, porém desta vez com o nome *neoricalex/nfdos*. 
+2. Outra configurada com o provider libvirt. Esta iremos também enviar para a vagrant cloud, porém desta vez com o nome *neoricalex/nfdos*.
     1. Para nós, esta box está referenciada na CLI como *NFDOS*.
     2. Esta box será também usada pelo Travis (VPS de Staging Remoto) para homologação do projeto.
+
 ##### Criação de um VPS de Desenvolvimento Local (VPS_DEV)
-- [x] Criar uma box via o Vagrant Cloud com o Ubuntu 20.04 LTS (ubuntu/focal64)
-  - [x] Provisionar com pacotes minimos de desenvolvimento (Linux headers, build-essentials, etc...)
-  - [x] Empacotar e enviar a box para a Vagrant Cloud ficando acessivel via [neoricalex/ubuntu](https://app.vagrantup.com/neoricalex/boxes/ubuntu)
-  - [x] Excluir/Remover/Deletar a box ubuntu/focal64 pois não será mais necessária.
-- [ ] Criar a Distribuição GNU/Linux NFDOS baseada no Ubuntu
-  - [ ] Criar uma box via a Vagrant Cloud [neoricalex/ubuntu](https://app.vagrantup.com/neoricalex/boxes/ubuntu) (VPS_DEV)
-    - [x] Criar a imagem ISO do NFDOS (*nfdos.iso*)
-      - [x] Gerar a *initramfs*
-        - [x] Configurar
-      - [x] Gerar o *rootfs*
-        - [x] Configurar
-      - [x] Gerar o *bootloader*
-        - [x] Configurar
-      - [x] Gerar a imagem ISO
-    - [ ] Criar duas imagens BOX do Vagrant, uma para o provider virtualbox, outra para o provider libvirt, e ambas com o NFDOS instalado (*NFDOS-x.x.x.box*)
-        - [x] BOX para o Virtualbox
-          - [x] Gerar a NFDOS-x.x.x.box
-          - [x] Gerar a imagem de disco .vmdk com o NFDOS instalado (*NFDOS-disk001.vmdk*)
-          - [x] Gerar o arquivo .ovf (*NFDOS.ovf*)
-        - [ ] BOX para o Libvirt
-          - [x] Gerar a NFDOS-x.x.x.box
-          - [ ] Enviar a box para a Vagrant Cloud ficando acessivel via *neoricalex/nfdos*. (Esta box será também a usada pelo Travis)
+
+* [x] Criar uma box via o Vagrant Cloud com o Ubuntu 20.04 LTS (ubuntu/focal64)
+  * [x] Provisionar com pacotes minimos de desenvolvimento (Linux headers, build-essentials, etc...)
+  * [x] Empacotar e enviar a box para a Vagrant Cloud ficando acessivel via [neoricalex/ubuntu](https://app.vagrantup.com/neoricalex/boxes/ubuntu)
+  * [x] Excluir/Remover/Deletar a box ubuntu/focal64 pois não será mais necessária.
+* [ ] Criar a Distribuição GNU/Linux NFDOS baseada no Ubuntu
+  * [ ] Criar uma box via a Vagrant Cloud [neoricalex/ubuntu](https://app.vagrantup.com/neoricalex/boxes/ubuntu) (VPS_DEV)
+    * [x] Criar a imagem ISO do NFDOS (*nfdos.iso*)
+      * [x] Gerar a *initramfs*
+        * [x] Configurar
+      * [x] Gerar o *rootfs*
+        * [x] Configurar
+      * [x] Gerar o *bootloader*
+        * [x] Configurar
+      * [x] Gerar a imagem ISO
+    * [ ] Criar duas imagens BOX do Vagrant, uma para o provider virtualbox, outra para o provider libvirt, e ambas com o NFDOS instalado (*NFDOS-x.x.x.box*)
+      * [x] BOX para o Virtualbox
+        * [x] Gerar a NFDOS-x.x.x.box
+        * [x] Gerar a imagem de disco .vmdk com o NFDOS instalado (*NFDOS-disk001.vmdk*)
+        * [x] Gerar o arquivo .ovf (*NFDOS.ovf*)
+      * [ ] BOX para o Libvirt
+        * [x] Gerar a NFDOS-x.x.x.box
+        * [ ] Enviar a box para a Vagrant Cloud ficando acessivel via *neoricalex/nfdos*. (Esta box será também a usada pelo Travis)
+
 #### Segunda Fase
-- [ ] Desenvolver a Distribuição GNU/Linux NFDOS baseada no Ubuntu
-  - [ ] Configurar as Ferramentas de Desenvolvimento
-    - [ ] Clonar o repositório do QEMU
-      - [ ] Configurar
-      - [ ] Compilar
-    - [ ] Clonar o repositório do Packer
-        - [ ] Configurar
-        - [ ] Compilar
-    - [ ] Clonar o repositório do Vagrant
-        - [ ] Configurar
-        - [ ] Compilar
-    - [ ] Clonar o repositório do Vagrant-Libvirt
-        - [ ] Configurar
-        - [ ] Compilar
-  - [ ] Configurar o Firmware do NFDOS (Tiano Core EDK II)
-    - [ ] Clonar o repositório do Tiano Core
-    - [ ] Configurar
-    - [ ] Compilar
-  - [ ] Configurar o Bootloader do NFDOS (GRUB 2)
-    - [ ] Clonar o repositório da GRUB 2
-    - [ ] Configurar
-    - [ ] Compilar 
-  - [ ] Configurar o Kernel do NFDOS (Linux)
-    - [ ] Clonar o repositório da Linux
-    - [ ] Configurar
-    - [ ] Compilar
-  - [ ] Desenvolver a *initramfs*
-  - [ ] Desenvolver a *rootfs*
-    - [ ] Instalar o Docker Engine, Docker Compose & Docker Machine no NFDOS
-    - [ ] Criar um Cluster Docker Swarm
-      - [ ] Criar uma Docker Machine Master Remota (Digital Ocean, IBM, Google, Azure, AWS, Etc...)
-        - [ ] Instalar um container com o Wireguard Server
-      - [ ] Criar uma Docker Machine Leader Local (No NFDOS)
-        - [ ] Criar um Stack Wordpress (Será o Stack de Produção)
-            - [ ] Maiores infos em breve
-        - [ ] Criar um Cluster Kubernetes
-            - [ ] Criar um Stack Wordpress (Será apenas uma Demo)
-        - [ ] Criar um container para a Documentação do Projeto
-        - [ ] Criar um container Docker Registry Local (No NFDOS)
-        - [ ] Criar um container Gitlab
-        - [ ] Criar um container Email Server
-        - [ ] Criar um container NextCloud  
-        - [ ] Criar um container from scratch
-    - [ ] Personalizações e/ou Customizações
+
+* [ ] Desenvolver a Distribuição GNU/Linux NFDOS baseada no Ubuntu
+  * [ ] Configurar as Ferramentas de Desenvolvimento
+    * [ ] Clonar o repositório do QEMU
+      * [ ] Configurar
+      * [ ] Compilar
+    * [ ] Clonar o repositório do Packer
+      * [ ] Configurar
+      * [ ] Compilar
+    * [ ] Clonar o repositório do Vagrant
+      * [ ] Configurar
+      * [ ] Compilar
+    * [ ] Clonar o repositório do Vagrant-Libvirt
+      * [ ] Configurar
+      * [ ] Compilar
+  * [ ] Configurar o Firmware do NFDOS (Tiano Core EDK II)
+    * [ ] Clonar o repositório do Tiano Core
+    * [ ] Configurar
+    * [ ] Compilar
+  * [ ] Configurar o Bootloader do NFDOS (GRUB 2)
+    * [ ] Clonar o repositório da GRUB 2
+    * [ ] Configurar
+    * [ ] Compilar
+  * [ ] Configurar o Kernel do NFDOS (Linux)
+    * [ ] Clonar o repositório da Linux
+    * [ ] Configurar
+    * [ ] Compilar
+  * [ ] Desenvolver a *initramfs*
+  * [ ] Desenvolver a *rootfs*
+    * [ ] Instalar o Docker Engine, Docker Compose & Docker Machine no NFDOS
+    * [ ] Criar um Cluster Docker Swarm
+      * [ ] Criar uma Docker Machine Master Remota (Digital Ocean, IBM, Google, Azure, AWS, Etc...)
+        * [ ] Instalar um container com o Wireguard Server
+      * [ ] Criar uma Docker Machine Leader Local (No NFDOS)
+        * [ ] Criar um Stack Wordpress (Será o Stack de Produção)
+          * [ ] Maiores infos em breve
+        * [ ] Criar um Cluster Kubernetes
+          * [ ] Criar um Stack Wordpress (Será apenas uma Demo)
+        * [ ] Criar um container para a Documentação do Projeto
+        * [ ] Criar um container Docker Registry Local (No NFDOS)
+        * [ ] Criar um container Gitlab
+        * [ ] Criar um container Email Server
+        * [ ] Criar um container NextCloud  
+        * [ ] Criar um container from scratch
+    * [ ] Personalizações e/ou Customizações
 
 ### Ambiente de Homologação
+
 ##### Criação de um VPS de Staging Remoto (Travis)
-- [x] Criar um processo CI
-  - [x] Configurar o auto-arranque da máquina do Travis via Hook no Github
-    - [ ] Iniciar a box do vagrant *neoricalex/nfdos*
-      - [ ] Auto executar o bash shell 
+
+* [x] Criar um processo CI
+  * [x] Configurar o auto-arranque da máquina do Travis via Hook no Github
+    * [ ] Iniciar a box do vagrant *neoricalex/nfdos*
+      * [ ] Auto executar o bash shell
 
 ##### Criação de um VPS de Staging local (Virtualbox)
-- [ ] Maiores infos em breve
+
+* [ ] Maiores infos em breve
 
 ### Ambiente de Produção
-- [ ] Maiores infos em breve
+
+* [ ] Maiores infos em breve
 
 ## Financiamento
 
@@ -214,6 +232,7 @@ Ajude via [Paypal](https://www.paypal.me/AleexFL).
 Obrigado desde já pelo "café" :-)
 
 ## Documentação
+
 Maiores infos em breve.
 
 ## Licença
