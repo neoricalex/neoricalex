@@ -156,15 +156,18 @@ Depois de termos uma box para trabalhar - [neoricalex/ubuntu](https://app.vagran
     - [ ] Clonar o repositório do Packer
         - [ ] Configurar
         - [ ] Compilar
-  - [ ] Criar o Firmware do NFDOS (Tiano Core EDK II)
+    - [ ] Clonar o repositório do Vagrant
+        - [ ] Configurar
+        - [ ] Compilar
+  - [ ] Configurar o Firmware do NFDOS (Tiano Core EDK II)
     - [ ] Clonar o repositório do Tiano Core
     - [ ] Configurar
     - [ ] Compilar
-  - [ ] Criar o Bootloader do NFDOS (GRUB 2)
+  - [ ] Configurar o Bootloader do NFDOS (GRUB 2)
     - [ ] Clonar o repositório da GRUB 2
     - [ ] Configurar
     - [ ] Compilar 
-  - [ ] Criar o Kernel do NFDOS (Linux)
+  - [ ] Configurar o Kernel do NFDOS (Linux)
     - [ ] Clonar o repositório da Linux
     - [ ] Configurar
     - [ ] Compilar
