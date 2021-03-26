@@ -1,6 +1,6 @@
 # NEORICALEX
 
-[![Build Status](https://www.travis-ci.com/neoricalex/neoricalex.svg?branch=master)](https://www.travis-ci.com/neoricalex/neoricalex)[![Coverage Status](https://coveralls.io/repos/github/neoricalex/neoricalex/badge.svg?branch=master)](https://coveralls.io/github/neoricalex/neoricalex?branch=master)
+[![Build Status](https://www.travis-ci.com/neoricalex/neoricalex.svg?branch=master)](https://www.travis-ci.com/neoricalex/neoricalex) [![Coverage Status](https://coveralls.io/repos/github/neoricalex/neoricalex/badge.svg?branch=master)](https://coveralls.io/github/neoricalex/neoricalex?branch=master)
 
 ## Início Rápido
 
