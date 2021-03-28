@@ -137,6 +137,10 @@ if [ "$usuario" == "neo@desktop" ]; then
     #rm -rf .git/modules/src/vps
     #rm -rf .git/modules/home/neo/Público/src/vps
 
+    # sudo sed -i -e "\\#PasswordAuthentication yes# s#PasswordAuthentication yes#PasswordAuthentication no#g" /etc/ssh/sshd_config
+    # sudo systemctl restart sshd.service
+    # echo "finished"
+
     
 else
     instalar_requerimentos

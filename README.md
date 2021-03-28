@@ -162,6 +162,8 @@ Depois de termos uma box para trabalhar - [neoricalex/ubuntu](https://app.vagran
 
 #### Segunda Fase
 
+Maiores infos em breve
+
 * [ ] Desenvolver a Distribuição GNU/Linux NFDOS baseada no Ubuntu
   * [ ] Configurar as Ferramentas de Desenvolvimento
     * [ ] Clonar o repositório do QEMU
@@ -209,6 +211,7 @@ Depois de termos uma box para trabalhar - [neoricalex/ubuntu](https://app.vagran
 
 ### Ambiente de Homologação
 
+Maiores infos em breve
 ##### Criação de um VPS de Staging Remoto (Travis)
 
 * [x] Criar um processo CI
@@ -222,7 +225,7 @@ Depois de termos uma box para trabalhar - [neoricalex/ubuntu](https://app.vagran
 
 ### Ambiente de Produção
 
-* [ ] Maiores infos em breve
+Maiores infos em breve
 
 ## Financiamento
 
