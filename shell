@@ -96,6 +96,15 @@ if [ "$usuario" == "neo@desktop" ]; then
         cd ../..
     fi
 
+    if [ -d "src/log" ] ; then
+        cd src/log
+        echo "Atualizar o github:neoricalex/log..."
+        git add .
+        git commit -m "Atualização Automática via bash shell"
+        git push origin master
+        cd ../..
+    fi
+
     echo "Atualizar o github:neoricalex/neoricalex..."
     cd src/vps
     rm *.log
