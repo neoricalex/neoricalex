@@ -97,18 +97,18 @@ if [ "$usuario" == "neo@desktop" ]; then
     fi
 
     echo "Atualizar o github:neoricalex/neoricalex..."
-    cd src
+    cd src/vps
     rm *.log
-    cd ..
+    cd ../..
     git add .
     git commit -m "Atualização Automática via bash shell"
     git push --progress origin master
 
     iniciar_local
 
-    cd src
+    cd src/vps
     cat *.log
-    cd ..
+    cd ../..
 
     # RESET
     # 
