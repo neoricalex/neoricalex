@@ -2,8 +2,8 @@
 
 iniciar_log(){
     # Iniciar o LOG
-    if compgen -G "${NEORICALEX_HOME}/*.log" > /dev/null; then
-        rm *.log
+    if compgen -G "${NEORICALEX_HOME}/vps/*.log" > /dev/null; then
+        rm vps/*.log
     else
         echo "[DEBUG]"
         echo "      Nenhum LOG encontrado."
