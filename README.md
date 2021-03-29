@@ -7,7 +7,8 @@
 ### Requisitos
 
 * Uma Distribuição Linux Ubuntu >= 20.04 LTS
-* Um computador compatível com ambientes virtualizados, com capacidade mínima de uma máquina virtual com 4096 de RAM, 128 GB de espaço em disco virtual, e 3 CPU's
+* Um computador compatível com ambientes virtualizados, com capacidade mínima de uma máquina virtual com 6144 de RAM, 128 GB de espaço em disco virtual, e 3 CPU's
+  * É possível reduzir a RAM para 4096, porém terá de alargar o tempo de compilação em pelo menos 1 hora (Não testado)
 
 ### AVISO: USE POR SUA PRÓPRIA CONTA E RISCO
 
@@ -50,7 +51,6 @@ O [NEORICALEX](https://neoricalex.com.br) é um framework de trabalho com 3 ambi
 * **Ambiente de Desenvolvimento**
   * Um Ambiente físico com o NFDOS instalado, que vamos usar para desenvolver todo o projeto.
     * ( O Computador Pessoal )
-      * e/ou;
   * Um Ambiente baseado no Vagrant com o NFDOS instalado
     * ( O VPS de Desenvolvimento Local)
 * **Ambiente de Homologação**
@@ -126,21 +126,20 @@ Gostou da ideia?
 
 Nesta primeira fase vamos mitigar ao máximo quaisquer danos no computador fisico que usamos em nosso dia-a-dia, e vamos criar duas box do vagrant.
 
-A primeira, com o Ubuntu focal, vamos baixar da vagrant cloud (*ubuntu/focal64*). Depois vamos instalar nela as ferramentas necessárias para trabalharmos, Linux Headers, Build Essentials, etc, e vamos enviar de volta para a vagrant cloud com o nome [neoricalex/ubuntu](https://app.vagrantup.com/neoricalex/boxes/ubuntu). Para nós, esta box está referenciada na CLI como *VPS_DEV*.
+A primeira, com o Ubuntu Focal, vamos baixar da vagrant cloud (*ubuntu/focal64*). Depois vamos instalar nela as ferramentas necessárias para trabalharmos, Linux Headers, Build Essentials, etc, e vamos enviar de volta para a vagrant cloud com o nome [neoricalex/ubuntu](https://app.vagrantup.com/neoricalex/boxes/ubuntu). Para nós, esta box está referenciada na CLI como *VPS_DEV*.
 
-Depois de termos uma box para trabalhar - [neoricalex/ubuntu](https://app.vagrantup.com/neoricalex/boxes/ubuntu) (*VPS_DEV*) - vamos criar e desenvolver o NFDOS dentro dela, criando uma imagem ISO para usarmos e/ou instalarmos em computadores fisicos, uma imagem VMDK para usarmos no Virtualbox já com o NFDOS instalado, e, duas imagens BOX para uso no Vagrant também elas com o NFDOS instalado:  
+* [x] Criar uma box via o Vagrant Cloud com o Ubuntu 20.04 LTS (ubuntu/focal64)
+  * [x] Provisionar com pacotes minimos de desenvolvimento (Linux headers, build-essentials, etc...)
+  * [x] Empacotar e enviar a box para a Vagrant Cloud ficando acessivel via [neoricalex/ubuntu](https://app.vagrantup.com/neoricalex/boxes/ubuntu)
+  * [x] Excluir/Remover/Deletar localmente a box ubuntu/focal64 pois não será mais necessária.
+
+Depois de termos uma box para trabalhar - [neoricalex/ubuntu](https://app.vagrantup.com/neoricalex/boxes/ubuntu) (*VPS_DEV*) - vamos criar e desenvolver o NFDOS dentro dela, criando uma imagem ISO para usarmos e/ou instalarmos em computadores fisicos, uma imagem VMDK para usarmos no Virtualbox já com o NFDOS instalado e, duas imagens BOX para uso no Vagrant também elas com o NFDOS instalado:  
 
 1. Uma configurada para o provider virtualbox. E;
 2. Outra configurada com o provider libvirt. Esta iremos também enviar para a vagrant cloud, porém desta vez com o nome *neoricalex/nfdos*.
     1. Para nós, esta box está referenciada na CLI como *NFDOS*.
     2. Esta box será também usada pelo Travis (VPS de Staging Remoto) para homologação do projeto.
 
-##### Criação de um VPS de Desenvolvimento Local (VPS_DEV)
-
-* [x] Criar uma box via o Vagrant Cloud com o Ubuntu 20.04 LTS (ubuntu/focal64)
-  * [x] Provisionar com pacotes minimos de desenvolvimento (Linux headers, build-essentials, etc...)
-  * [x] Empacotar e enviar a box para a Vagrant Cloud ficando acessivel via [neoricalex/ubuntu](https://app.vagrantup.com/neoricalex/boxes/ubuntu)
-  * [x] Excluir/Remover/Deletar a box ubuntu/focal64 pois não será mais necessária.
 * [ ] Criar a Distribuição GNU/Linux NFDOS baseada no Ubuntu
   * [ ] Criar uma box via a Vagrant Cloud [neoricalex/ubuntu](https://app.vagrantup.com/neoricalex/boxes/ubuntu) (VPS_DEV)
     * [x] Criar a imagem ISO do NFDOS (*nfdos.iso*)
@@ -159,6 +158,16 @@ Depois de termos uma box para trabalhar - [neoricalex/ubuntu](https://app.vagran
       * [ ] BOX para o Libvirt
         * [x] Gerar a NFDOS-x.x.x.box
         * [ ] Enviar a box para a Vagrant Cloud ficando acessivel via *neoricalex/nfdos*. (Esta box será também a usada pelo Travis)
+
+Ao final da primeira fase ficaremos com:
+* Uma Box Base ("Backup") com todas as ferramentas necessárias para trabalharmos localizada em: *src/vps/vagrant-libs/base.box*
+* Uma Box de trabalho (VPS_DEV) dísponivel online via a Vagrant Cloud no endereço: *neoricalex/ubuntu*
+  * Dentro da Box de trabalho (VPS_DEV):
+    * Uma Box Vagrant para o provider virtualbox com o NFDOS instalado
+      * Será usada como VPS de Staging Local
+    * Uma Box Vagrant para o provider libvirt com o NFDOS instalado
+      * Será usada como VPS de Staging Remoto (No Travis)
+      * Ficará dísponivel online via a Vagrant Cloud no endereço: *neoricalex/nfdos*
 
 #### Segunda Fase
 
