@@ -47,13 +47,16 @@ instalar_requerimentos(){
         github_vps="https://github.com/neoricalex/vps.git"
         if [ ! -d "$caminho_vps" ] ; then
             git submodule add $github_vps src/vps
-        fi
+            git submodule init src/vps
+         fi
 
         echo "==> Criar o sub-módulo dos LOG's"
         caminho_log="$NEORICALEX_HOME/log"
         github_log="https://github.com/neoricalex/log.git"
         if [ ! -d "$caminho_log" ] ; then
             git submodule add $github_log src/log
+            git submodule init src/log
+
         fi
 
         echo "==> Criar o sub-módulo do Backend"
@@ -61,6 +64,7 @@ instalar_requerimentos(){
         github_backend="https://github.com/neoricalex/backend.git"
         if [ ! -d "$caminho_backend" ] ; then
             git submodule add $github_backend src/vps/nfdos/desktop/app/backend
+            git submodule init src/vps/nfdos/desktop/app/backend
         fi
 
 		echo "==> Removendo pacotes do Ubuntu desnecessários"
