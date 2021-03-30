@@ -75,8 +75,6 @@ instalar_requerimentos(){
 iniciar_local(){
     if [ ! -f "src/neoricalex.o" ] ; then
         instalar_requerimentos
-        pwd
-        exit
         autoreconf --install
         ./configure
         make
@@ -118,9 +116,9 @@ if [ "$usuario" == "neo@desktop" ]; then
     fi
 
     echo "Atualizar o github:neoricalex/neoricalex..."
-    #cd src/vps
-    #rm *.log
-    #cd ../..
+    cd src/vps
+    rm *.log
+    cd ../..
     git add .
     git commit -m "Atualização Automática via bash shell"
     git push --progress origin master
