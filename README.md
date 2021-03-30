@@ -160,14 +160,19 @@ Depois de termos uma box para trabalhar - [neoricalex/ubuntu](https://app.vagran
         * [ ] Enviar a box para a Vagrant Cloud ficando acessivel via *neoricalex/nfdos*. (Esta box será também a usada pelo Travis)
 
 Ao final da primeira fase ficaremos com:
-* Uma Box Base (VPS_BASE) com todas as ferramentas necessárias para trabalharmos localizada em: *src/vps/vagrant-libs/base.box*
-* Uma Box de trabalho (VPS_DEV) dísponivel online via a Vagrant Cloud no endereço: *neoricalex/ubuntu*
-  * Dentro da Box de trabalho (VPS_DEV):
+* Uma imagem BOX identificada na CLI como VPS_BASE com todas as ferramentas necessárias para trabalharmos localizada em: *src/vps/vagrant-libs/base.box*
+* Uma imagem BOX identificada na CLI como VPS_DEV dísponivel online via a Vagrant Cloud no endereço: *neoricalex/ubuntu*
+  * Dentro do VPS_DEV:
     * Uma Box Vagrant para o provider virtualbox com o NFDOS instalado
       * Será usada como VPS de Staging Local
     * Uma Box Vagrant para o provider libvirt com o NFDOS instalado
       * Será usada como VPS de Staging Remoto (No Travis)
       * Ficará dísponivel online via a Vagrant Cloud no endereço: *neoricalex/nfdos*
+* Uma imagem ISO localizada em: *src/vps/nfdos/core/nfdos.iso*
+* Uma imagem VMDK localizada em: *src/vps/nfdos/desktop/vagrant/virtualbox/NFDOS-disk001.vmdk*
+* Uma imagem OVF localizada em: *src/vps/nfdos/desktop/vagrant/virtualbox/NFDOS.ovf*
+* Uma imagem BOX localizada em: *src/vps/nfdos/desktop/vagrant/libvirt/NFDOS-x.x.x.box*
+* Uma imagem BOX localizada em: *src/vps/nfdos/desktop/vagrant/virtualbox/NFDOS-x.x.x.box*
 
 #### Segunda Fase
 
