@@ -62,6 +62,13 @@ instalar_requerimentos(){
             git submodule add $github_log src/log
         fi
 
+        echo "==> Criar o sub-módulo do Backend"
+        caminho_backend="$NEORICALEX_HOME/vps/nfdos/desktop/app/backend"
+        github_backend="https://github.com/neoricalex/backend.git"
+        if [ ! -d "$caminho_backend" ] ; then
+            git submodule add $github_backend src/vps/nfdos/desktop/app/backend
+        fi
+
 		echo "==> Removendo pacotes do Ubuntu desnecessários"
 		sudo apt autoremove -y
 		touch .requerimentos_host.box
@@ -103,6 +110,15 @@ if [ "$usuario" == "neo@desktop" ]; then
         git commit -m "Atualização Automática via bash shell"
         git push origin master
         cd ../..
+    fi
+
+    if [ -d "src/vps/nfdos/desktop/app/backend" ] ; then
+        cd src/vps/nfdos/desktop/app/backend
+        echo "Atualizar o github:neoricalex/backend..."
+        git add .
+        git commit -m "Atualização Automática via bash shell"
+        git push origin master
+        cd ../../../../..
     fi
 
     echo "Atualizar o github:neoricalex/neoricalex..."
