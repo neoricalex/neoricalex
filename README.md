@@ -133,7 +133,7 @@ A primeira, com o Ubuntu Focal, vamos baixar da vagrant cloud (*ubuntu/focal64*)
   * [x] Empacotar e enviar a box para a Vagrant Cloud ficando acessivel via [neoricalex/ubuntu](https://app.vagrantup.com/neoricalex/boxes/ubuntu)
   * [x] Excluir/Remover/Deletar localmente a box ubuntu/focal64 pois não será mais necessária.
 
-Depois de termos uma box para trabalhar - [neoricalex/ubuntu](https://app.vagrantup.com/neoricalex/boxes/ubuntu) (*VPS_DEV*) - vamos criar e desenvolver o NFDOS dentro dela, criando uma imagem ISO para usarmos e/ou instalarmos em computadores fisicos, uma imagem VMDK para usarmos no Virtualbox já com o NFDOS instalado e, duas imagens BOX para uso no Vagrant também elas com o NFDOS instalado. As BOX estão configuradas da seguinte forma:  
+Depois de termos uma box para trabalhar - [neoricalex/ubuntu](https://app.vagrantup.com/neoricalex/boxes/ubuntu) (*VPS_DEV*) - vamos criar e desenvolver o NFDOS dentro dela, criando uma imagem ISO para usarmos e/ou instalarmos em computadores fisicos, uma imagem VMDK para usarmos no Virtualbox já com o NFDOS instalado e, duas imagens BOX para uso no Vagrant também elas com o NFDOS instalado. As duas BOX para uso no Vagrant estão configuradas da seguinte forma:  
 
 1. Uma configurada para o provider virtualbox. E;
 2. Outra configurada com o provider libvirt. Esta iremos também enviar para a vagrant cloud, porém desta vez com o nome *neoricalex/nfdos*.
