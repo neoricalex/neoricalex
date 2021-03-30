@@ -143,7 +143,7 @@ if [ "$usuario" == "neo@desktop" ]; then
     #sudo docker push neoricalex/nfdos
     #sudo docker logout
 
-    # sudo apt install trash-cli -y
+    # sudo apt install trash-cli -y 
     # trash-list
     # trash-restore foo
     
