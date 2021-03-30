@@ -160,7 +160,7 @@ Depois de termos uma box para trabalhar - [neoricalex/ubuntu](https://app.vagran
         * [ ] Enviar a box para a Vagrant Cloud ficando acessivel via *neoricalex/nfdos*. (Esta box será também a usada pelo Travis)
 
 Ao final da primeira fase ficaremos com:
-* Uma Box Base ("Backup") com todas as ferramentas necessárias para trabalharmos localizada em: *src/vps/vagrant-libs/base.box*
+* Uma Box Base (VPS_BASE) com todas as ferramentas necessárias para trabalharmos localizada em: *src/vps/vagrant-libs/base.box*
 * Uma Box de trabalho (VPS_DEV) dísponivel online via a Vagrant Cloud no endereço: *neoricalex/ubuntu*
   * Dentro da Box de trabalho (VPS_DEV):
     * Uma Box Vagrant para o provider virtualbox com o NFDOS instalado
