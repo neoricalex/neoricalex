@@ -60,7 +60,7 @@ instalar_requerimentos(){
         caminho_backend="$NEORICALEX_HOME/vps/nfdos/desktop/app/backend"
         github_backend="https://github.com/neoricalex/backend.git"
         if [ ! -d "$caminho_backend" ] ; then
-            git clone $github_backend src/vps/nfdos/desktop/app/backend
+            git submodule add $github_backend src/vps/nfdos/desktop/app/backend
         fi
 
 		echo "==> Removendo pacotes do Ubuntu desnecessários"
