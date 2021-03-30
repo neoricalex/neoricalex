@@ -33,7 +33,6 @@ checkar_atualizacoes_modulos(){
 
 	echo "==> Checkando por atualizações no módulo do Backend..."
 	caminho_backend="$NEORICALEX_HOME/vps/nfdos/desktop/app/backend"
-	git submodule update
 	cd $caminho_backend
 	git checkout master
 	git pull
