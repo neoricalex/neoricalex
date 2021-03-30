@@ -126,14 +126,14 @@ Gostou da ideia?
 
 Nesta primeira fase vamos mitigar ao máximo quaisquer danos no computador fisico que usamos em nosso dia-a-dia, e vamos criar duas box do vagrant.
 
-A primeira, com o Ubuntu Focal, vamos baixar da vagrant cloud (*ubuntu/focal64*). Depois vamos instalar nela as ferramentas necessárias para trabalharmos, Linux Headers, Build Essentials, etc, e vamos enviar de volta para a vagrant cloud com o nome [neoricalex/ubuntu](https://app.vagrantup.com/neoricalex/boxes/ubuntu). Para nós, esta box está referenciada na CLI como *VPS_DEV*.
+A primeira, com o Ubuntu Focal, vamos baixar da vagrant cloud (*ubuntu/focal64*). Depois vamos instalar nela as ferramentas necessárias para trabalharmos, Linux Headers, Build Essentials, etc, e vamos enviar de volta para a vagrant cloud com o nome [neoricalex/ubuntu](https://app.vagrantup.com/neoricalex/boxes/ubuntu). Para nós, esta box está referenciada na CLI como *VPS_BASE*.
 
 * [x] Criar uma box via o Vagrant Cloud com o Ubuntu 20.04 LTS (ubuntu/focal64)
   * [x] Provisionar com pacotes minimos de desenvolvimento (Linux headers, build-essentials, etc...)
   * [x] Empacotar e enviar a box para a Vagrant Cloud ficando acessivel via [neoricalex/ubuntu](https://app.vagrantup.com/neoricalex/boxes/ubuntu)
   * [x] Excluir/Remover/Deletar localmente a box ubuntu/focal64 pois não será mais necessária.
 
-Depois de termos uma box para trabalhar - [neoricalex/ubuntu](https://app.vagrantup.com/neoricalex/boxes/ubuntu) (*VPS_DEV*) - vamos criar e desenvolver o NFDOS dentro dela, criando uma imagem ISO para usarmos e/ou instalarmos em computadores fisicos, uma imagem VMDK para usarmos no Virtualbox já com o NFDOS instalado e, duas imagens BOX para uso no Vagrant também elas com o NFDOS instalado:  
+Depois de termos uma box para trabalhar - [neoricalex/ubuntu](https://app.vagrantup.com/neoricalex/boxes/ubuntu) (*VPS_DEV*) - vamos criar e desenvolver o NFDOS dentro dela, criando uma imagem ISO para usarmos e/ou instalarmos em computadores fisicos, uma imagem VMDK para usarmos no Virtualbox já com o NFDOS instalado e, duas imagens BOX para uso no Vagrant também elas com o NFDOS instalado. As BOX estão configuradas da seguinte forma:  
 
 1. Uma configurada para o provider virtualbox. E;
 2. Outra configurada com o provider libvirt. Esta iremos também enviar para a vagrant cloud, porém desta vez com o nome *neoricalex/nfdos*.
@@ -160,19 +160,21 @@ Depois de termos uma box para trabalhar - [neoricalex/ubuntu](https://app.vagran
         * [ ] Enviar a box para a Vagrant Cloud ficando acessivel via *neoricalex/nfdos*. (Esta box será também a usada pelo Travis)
 
 Ao final da primeira fase ficaremos com:
-* Uma imagem BOX identificada na CLI como VPS_BASE com todas as ferramentas necessárias para trabalharmos localizada em: *src/vps/vagrant-libs/base.box*
-* Uma imagem BOX identificada na CLI como VPS_DEV dísponivel online via a Vagrant Cloud no endereço: *neoricalex/ubuntu*
-  * Dentro do VPS_DEV:
-    * Uma Box Vagrant para o provider virtualbox com o NFDOS instalado
-      * Será usada como VPS de Staging Local
-    * Uma Box Vagrant para o provider libvirt com o NFDOS instalado
-      * Será usada como VPS de Staging Remoto (No Travis)
-      * Ficará dísponivel online via a Vagrant Cloud no endereço: *neoricalex/nfdos*
 * Uma imagem ISO localizada em: *src/vps/nfdos/core/nfdos.iso*
 * Uma imagem VMDK localizada em: *src/vps/nfdos/desktop/vagrant/virtualbox/NFDOS-disk001.vmdk*
 * Uma imagem OVF localizada em: *src/vps/nfdos/desktop/vagrant/virtualbox/NFDOS.ovf*
 * Uma imagem BOX localizada em: *src/vps/nfdos/desktop/vagrant/libvirt/NFDOS-x.x.x.box*
 * Uma imagem BOX localizada em: *src/vps/nfdos/desktop/vagrant/virtualbox/NFDOS-x.x.x.box*
+* Uma imagem BOX identificada na CLI como VPS_BASE com todas as ferramentas necessárias para trabalharmos localizada em: *src/vps/vagrant-libs/base.box*
+* Uma imagem BOX identificada na CLI como VPS_DEV dísponivel online via a Vagrant Cloud no endereço: *neoricalex/ubuntu*
+  * Dentro do VPS_DEV:
+    * Uma Box Vagrant para o provider virtualbox com o NFDOS instalado
+      * Será usada como VPS de Staging Local
+      * É a BOX localizada em *src/vps/nfdos/desktop/vagrant/virtualbox/NFDOS-x.x.x.box*
+    * Uma Box Vagrant para o provider libvirt com o NFDOS instalado
+      * Será usada como VPS de Staging Remoto (No Travis)
+      * Ficará dísponivel online via a Vagrant Cloud no endereço: *neoricalex/nfdos*
+      * É a BOX localizada em *src/vps/nfdos/desktop/vagrant/libvirt/NFDOS-x.x.x.box*
 
 #### Segunda Fase
 
