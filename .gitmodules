@@ -4,3 +4,6 @@
 [submodule "src/log"]
 	path = src/log
 	url = https://github.com/neoricalex/log.git
+[submodule "src/vps/nfdos/desktop/app/backend"]
+	path = src/vps/nfdos/desktop/app/backend
+	url = https://github.com/neoricalex/backend.git
