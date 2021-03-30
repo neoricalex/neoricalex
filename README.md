@@ -171,7 +171,7 @@ Ao final da primeira fase ficaremos com:
     * Uma Box Vagrant para o provider virtualbox com o NFDOS instalado
       * Será usada como VPS de Staging Local
       * É a BOX localizada em *src/vps/nfdos/desktop/vagrant/virtualbox/NFDOS-x.x.x.box*
-    * Uma Box Vagrant para o provider libvirt com o NFDOS instalado
+    * Uma Box Vagrant identificada na CLI como NFDOS para o provider libvirt com o NFDOS instalado
       * Será usada como VPS de Staging Remoto (No Travis)
       * Ficará dísponivel online via a Vagrant Cloud no endereço: *neoricalex/nfdos*
       * É a BOX localizada em *src/vps/nfdos/desktop/vagrant/libvirt/NFDOS-x.x.x.box*
