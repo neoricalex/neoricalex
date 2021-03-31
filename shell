@@ -48,7 +48,7 @@ instalar_requerimentos(){
         if [ ! -d "$caminho_vps" ] ; then
             git submodule add $github_vps src/vps
             git commit -m "Adicionar o sub-módulo do VPS_DEV"
-         fi
+        fi
 
         echo "==> Criar o sub-módulo dos LOG's"
         caminho_log="$NEORICALEX_HOME/log"
