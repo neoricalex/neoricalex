@@ -7,8 +7,8 @@
 ### Requisitos
 
 * Uma Distribuição Linux Ubuntu >= 20.04 LTS
-* Um computador compatível com ambientes virtualizados, com capacidade mínima de uma máquina virtual com 6144 de RAM, 128 GB de espaço em disco virtual, e 3 CPU's
-  * É possível reduzir a RAM para 4096, porém terá de alargar o tempo de compilação em pelo menos 1 hora (Não testado)
+* Um computador compatível com ambientes virtualizados, com capacidade mínima de uma máquina virtual com 6144 de RAM, 128 GB de espaço em disco virtual, e 4 CPU's
+  * É possível reduzir a RAM para 4096, assim como o número de núcleos, porém terá de alargar o tempo de compilação em pelo menos 1 hora ou talvez mesmo duas (Não testado)
 
 ### AVISO: USE POR SUA PRÓPRIA CONTA E RISCO
 
@@ -128,8 +128,8 @@ Nesta primeira fase vamos mitigar ao máximo quaisquer danos no computador fisic
 
 A primeira, com o Ubuntu Focal, vamos baixar da vagrant cloud (*ubuntu/focal64*). Depois vamos instalar nela as ferramentas necessárias para trabalharmos, Linux Headers, Build Essentials, etc, e vamos enviar de volta para a vagrant cloud com o nome [neoricalex/ubuntu](https://app.vagrantup.com/neoricalex/boxes/ubuntu). Para nós, esta box está referenciada na CLI como *VPS_BASE*.
 
-* [x] Criar uma box via o Vagrant Cloud com o Ubuntu 20.04 LTS (ubuntu/focal64)
-  * [x] Provisionar com pacotes minimos de desenvolvimento (Linux headers, build-essentials, etc...)
+* [ ] Criar uma box via o Vagrant Cloud com o Ubuntu 20.04 LTS (ubuntu/focal64)
+  * [ ] Provisionar com pacotes minimos de desenvolvimento (Linux headers, build-essentials, etc...)
   * [x] Empacotar e enviar a box para a Vagrant Cloud ficando acessivel via [neoricalex/ubuntu](https://app.vagrantup.com/neoricalex/boxes/ubuntu)
   * [x] Excluir/Remover/Deletar localmente a box ubuntu/focal64 pois não será mais necessária.
 
@@ -167,8 +167,8 @@ Ao final da primeira fase ficaremos com:
 * Uma imagem ISO localizada em: *src/vps/nfdos/core/nfdos.iso*
 * Uma imagem VMDK localizada em: *src/vps/nfdos/desktop/vagrant/virtualbox/NFDOS-disk001.vmdk*
 * Uma imagem OVF localizada em: *src/vps/nfdos/desktop/vagrant/virtualbox/NFDOS.ovf*
-* Uma imagem BOX localizada em: *src/vps/nfdos/desktop/vagrant/libvirt/NFDOS-x.x.x.box*
-* Uma imagem BOX localizada em: *src/vps/nfdos/desktop/vagrant/virtualbox/NFDOS-x.x.x.box*
+* Uma imagem BOX para o provider libvirt do Vagrant localizada em: *src/vps/nfdos/desktop/vagrant/libvirt/NFDOS-x.x.x.box*
+* Uma imagem BOX para o provider virtualbox do Vagrant localizada em: *src/vps/nfdos/desktop/vagrant/virtualbox/NFDOS-x.x.x.box*
 * Um VPS do Vagrant identificado na CLI como VPS_BASE com todas as ferramentas necessárias para trabalharmos localizada em: *src/vps/vagrant-libs/base.box*
 * Um VPS do Vagrant identificado na CLI como VPS_DEV dísponivel online via a Vagrant Cloud no endereço: *neoricalex/ubuntu*
   * Dentro do VPS_DEV:
@@ -231,7 +231,9 @@ Maiores infos em breve
 
 ### Ambiente de Homologação
 
-Maiores infos em breve
+O processo de homologação será feito de duas formas:
+1. Vamos criar um VPS de Staging Remoto no Travis, e vamos homologar a geração de todo o sistema. Ou, por outras palavras, vamos homologar a execução do comando *bash shell*.
+2. Vamos criar um VPS de Staging Local no Virtualbox, e vamos homologar a experiência do usuário final no modo gráfico (GUI). Ou, por outras palavras, vamos homologar todo o processo de instalação da imagem ISO do NFDOS no Computador.
 ##### Criação de um VPS de Staging Remoto (Travis)
 
 * [x] Criar um processo CI
@@ -241,7 +243,7 @@ Maiores infos em breve
 
 ##### Criação de um VPS de Staging local (Virtualbox)
 
-* [ ] Maiores infos em breve
+Maiores infos em breve
 
 ### Ambiente de Produção
 
