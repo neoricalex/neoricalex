@@ -63,7 +63,18 @@ iniciar_desenvolvimento_local(){
 iniciar_desenvolvimento_travis(){
 
     cd vps
-    make vps
+
+	echo "==> Provisionando o NFDOS..."
+    vagrant up
+	echo "==> Entrando no NFDOS..."
+    vagrant ssh <<ENTRAR_VPS
+#!/bin/bash
+
+echo "Parece Bom!"
+$USER@$HOSTNAME
+
+ENTRAR_VPS
+
     cd ..
 
 }
