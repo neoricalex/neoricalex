@@ -4,19 +4,7 @@ autom4te.cache/
 backup/
 
 src/.deps/
-src/boxes/*.box
-src/logs/
 
-#src/vps/nfdos/core/image
-#src/vps/nfdos/core/rootfs
-#src/vps/nfdos/core/nfdos.img
-#src/vps/nfdos/core/nfdos.iso
-
-#src/vps/nfdos/desktop/packer_cache
-#src/vps/nfdos/desktop/vagrant
-#src/vps/nfdos/desktop/virtualbox
-
-#src/vps/.vagrant/
 src/neoricalex
 src/neoricalex.o
 src/Makefile
