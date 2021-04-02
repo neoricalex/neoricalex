@@ -65,14 +65,12 @@ iniciar_desenvolvimento_travis(){
     cd vps
 
 	echo "==> Provisionando o NFDOS..."
-    vagrant up
+    vagrant up --provider libvirt
 	echo "==> Entrando no NFDOS..."
     vagrant ssh <<ENTRAR_VPS
 #!/bin/bash
 
-echo "Parece Bom!"
-$USER@$HOSTNAME
-
+echo "Parece bom!"
 ENTRAR_VPS
 
     cd ..
@@ -80,6 +78,6 @@ ENTRAR_VPS
 }
 
 case $HOSTNAME in
-  (desktop1) iniciar_desenvolvimento_travis;;
+  (travis-job-*) iniciar_desenvolvimento_travis;;
   (*)   iniciar_desenvolvimento_local;;
 esac
