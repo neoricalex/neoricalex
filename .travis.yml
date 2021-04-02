@@ -24,4 +24,4 @@ install:
 #- vagrant plugin install vagrant-mutate
 
 script:
-- bash shell
+- cd src/vps && vagrant up

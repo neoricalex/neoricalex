@@ -140,8 +140,8 @@ Depois de termos uma box para trabalhar - [neoricalex/ubuntu](https://app.vagran
     1. Para nós, esta box está referenciada na CLI como *NFDOS*.
     2. Esta box será também usada pelo Travis (VPS de Staging Remoto) para homologação do projeto.
 
-* [ ] Criar a Distribuição GNU/Linux NFDOS baseada no Ubuntu
-  * [ ] Criar uma box via a Vagrant Cloud [neoricalex/ubuntu](https://app.vagrantup.com/neoricalex/boxes/ubuntu) (VPS_DEV)
+* [x] Criar a Distribuição GNU/Linux NFDOS baseada no Ubuntu
+  * [x] Criar uma box via a Vagrant Cloud [neoricalex/ubuntu](https://app.vagrantup.com/neoricalex/boxes/ubuntu) (VPS_DEV)
     * [x] Criar a imagem ISO do NFDOS (*nfdos.iso*)
       * [x] Gerar a *initramfs*
         * [x] Configurar
@@ -150,18 +150,18 @@ Depois de termos uma box para trabalhar - [neoricalex/ubuntu](https://app.vagran
       * [x] Gerar o *bootloader*
         * [x] Configurar
       * [x] Gerar a imagem ISO
-    * [ ] Criar duas imagens BOX do Vagrant, uma para o provider virtualbox, outra para o provider libvirt, e ambas com o NFDOS instalado (*NFDOS-x.x.x.box*)
+    * [x] Criar duas imagens BOX do Vagrant, uma para o provider virtualbox, outra para o provider libvirt, e ambas com o NFDOS instalado (*NFDOS-x.x.x.box*)
       * [x] BOX para o Virtualbox
         * [x] Gerar a imagem de disco .vmdk com o NFDOS instalado (*src/vps/nfdos/desktop/vagrant/virtualbox/NFDOS-disk001.vmdk*)
           * [x] Arrancar via *src/vps/nfdos/core/nfdos.iso*
           * [x] Instalar o NFDOS
         * [x] Gerar o arquivo .ovf (*src/vps/nfdos/desktop/vagrant/virtualbox/NFDOS.ovf*)
         * [x] Gerar a *src/vps/nfdos/desktop/vagrant/virtualbox/NFDOS-x.x.x.box*
-      * [ ] BOX para o Libvirt
+      * [x] BOX para o Libvirt
         * [x] Gerar a *src/vps/nfdos/desktop/vagrant/libvirt/NFDOS-x.x.x.box*
           * [x] Arrancar via *src/vps/nfdos/core/nfdos.iso*
           * [x] Instalar o NFDOS
-        * [ ] Enviar a box para a Vagrant Cloud ficando acessivel via *neoricalex/nfdos*. (Esta box será também a usada pelo Travis)
+        * [X] Enviar a box para a Vagrant Cloud ficando acessivel via *neoricalex/nfdos*. (Esta box será também a usada pelo Travis)
 
 Ao final da primeira fase ficaremos com:
 * Uma imagem ISO localizada em: *src/vps/nfdos/core/nfdos.iso*
@@ -211,7 +211,7 @@ Maiores infos em breve
     * [ ] Configurar
     * [ ] Compilar
   * [ ] Desenvolver a *initramfs*
-  * [ ] Desenvolver a *rootfs*
+  * [ ] Desenvolver o *rootfs*
     * [ ] Instalar o Docker Engine, Docker Compose & Docker Machine no NFDOS
     * [ ] Criar um Cluster Docker Swarm
       * [ ] Criar uma Docker Machine Master Remota (Digital Ocean, IBM, Google, Azure, AWS, Etc...)

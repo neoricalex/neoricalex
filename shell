@@ -131,36 +131,29 @@ if [ "$usuario" == "neo@desktop" ]; then
 
     iniciar_local
 
-	echo "==> Enviar a box neoricalex/ubuntu para a Vagrant Cloud..."
-	usuario="$(whoami)@$(hostname | cut -d . -f 1-2)"
-	if [ "$usuario" == "neo@desktop" ]; 
-	then
-		vagrant cloud auth login
-		vagrant cloud publish \
-			--box-version 0.0.1 \
-			--release \
-			--short-description "Um VPS baseado no ubuntu/focal64 para desenvolvimento do projeto NEORICALEX e NFDOS" \
-			--version-description "Versão inicial" \
-			neoricalex/ubuntu 0.0.1 virtualbox \
-			src/vps/vagrant-libs/base.box # --force --debug
-	fi
+    vagrant cloud auth login
 
-	echo "==> Enviar a box neoricalex/nfdos para a Vagrant Cloud..."
-	usuario="$(whoami)@$(hostname | cut -d . -f 1-2)"
-	if [ "$usuario" == "neo@desktop" ]; 
-	then
-		vagrant package \
-			--base NFDOS \
-			--output src/vps/nfdos/desktop/vagrant/libvirt/NFDOS-0.4.5.box
-		vagrant cloud publish \
-			--box-version $NFDOS_VERSAO \
-			--release \
-			--short-description "Ubuntu from scratch coded with Portuguese Language" \
-			--version-description "Primeira versão box" \
-			neoricalex/nfdos 0.4.5 libvirt \
-			src/vps/nfdos/desktop/vagrant/libvirt/NFDOS-0.4.5.box # --force --debug
-		vagrant cloud auth logout
-	fi
+    vagrant cloud publish \
+        --box-version 0.0.1 \
+        --release \
+        --short-description "Um VPS baseado no ubuntu/focal64 para desenvolvimento do projeto NEORICALEX e NFDOS" \
+        --version-description "Versão inicial" \
+        neoricalex/ubuntu 0.0.1 virtualbox \
+        src/vps/vagrant-libs/base.box # --force --debug
+
+    vagrant package \
+        --base NFDOS \
+        --output src/vps/nfdos/desktop/vagrant/libvirt/NFDOS-0.4.5.box
+
+    vagrant cloud publish \
+        --box-version 0.4.5 \
+        --release \
+        --short-description "Ubuntu from scratch coded with Portuguese Language" \
+        --version-description "Primeira versão box" \
+        neoricalex/nfdos 0.4.5 libvirt \
+        src/vps/nfdos/desktop/vagrant/libvirt/NFDOS-0.4.5.box # --force --debug
+        
+    vagrant cloud auth logout
 
     cd src/vps
     cat *.log
