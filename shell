@@ -143,9 +143,9 @@ if [ "$usuario" == "neo@desktop" ]; then
         src/vps/vagrant-libs/base.box # --force --debug
 
     cd src/vps
-    vagrant box repackage NFDOS libvirt 0
+    vagrant box repackage nfdos/desktop/vagrant/libvirt/NFDOS-0.4.5.box libvirt 0
     rm src/vps/nfdos/desktop/vagrant/libvirt/NFDOS-0.4.5.box
-    mv package.box src/vps/nfdos/desktop/vagrant/libvirt/NFDOS-0.4.5.box
+    mv package.box nfdos/desktop/vagrant/libvirt/NFDOS-0.4.5.box
     cd ../..
 
     vagrant cloud publish \
