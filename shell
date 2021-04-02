@@ -142,9 +142,11 @@ if [ "$usuario" == "neo@desktop" ]; then
         neoricalex/ubuntu 0.0.1 virtualbox \
         src/vps/vagrant-libs/base.box # --force --debug
 
-    vagrant package \
-        --base NFDOS \
-        --output src/vps/nfdos/desktop/vagrant/libvirt/NFDOS-0.4.5.box
+    cd src/vps
+    vagrant box repackage NFDOS libvirt 0
+    rm src/vps/nfdos/desktop/vagrant/libvirt/NFDOS-0.4.5.box
+    mv package.box src/vps/nfdos/desktop/vagrant/libvirt/NFDOS-0.4.5.box
+    cd ../..
 
     vagrant cloud publish \
         --box-version 0.4.5 \
