@@ -65,9 +65,9 @@ iniciar_desenvolvimento_travis(){
     cd vps
 
 	echo "==> Provisionando o NFDOS..."
-    vagrant up --provider libvirt
+    sudo vagrant up --provider libvirt
 	echo "==> Entrando no NFDOS..."
-    vagrant ssh <<ENTRAR_VPS
+    sudo vagrant ssh <<ENTRAR_VPS
 #!/bin/bash
 
 echo "Parece bom!"
