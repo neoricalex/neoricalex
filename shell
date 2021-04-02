@@ -39,6 +39,7 @@ instalar_requerimentos(){
 
             echo "==> Instalar plugins do Vagrant"
             vagrant plugin install vagrant-disksize # Só funciona no Virtualbox
+            vagrant plugin install vagrant-vbguest
 		fi
 
         echo "==> Criar o sub-módulo do VPS_DEV"
