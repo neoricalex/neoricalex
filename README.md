@@ -238,7 +238,7 @@ O processo de homologação será feito de duas formas:
 
 * [x] Criar um processo CI
   * [x] Configurar o auto-arranque da máquina do Travis via Hook no Github
-    * [ ] Iniciar a box do vagrant *neoricalex/nfdos*
+    * [x] Iniciar a box do vagrant *neoricalex/nfdos*
       * [ ] Auto executar o bash shell
 
 ##### Criação de um VPS de Staging local (Virtualbox)
