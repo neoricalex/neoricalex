@@ -11,9 +11,9 @@ install:
 - sudo apt-get update && sudo apt-get install -y bridge-utils dnsmasq-base ebtables libvirt-bin libvirt-dev qemu-kvm qemu-utils ruby-dev
 
 # Download Vagrant & Instalar
-- sudo wget -nv https://releases.hashicorp.com/vagrant/2.2.9/vagrant_2.2.9_x86_64.deb
-- sudo dpkg -i vagrant_2.2.9_x86_64.deb
-- sudo rm vagrant_2.2.9_x86_64.deb
+- sudo wget -nv https://releases.hashicorp.com/vagrant/2.2.14/vagrant_2.2.14_x86_64.deb
+- sudo dpkg -i vagrant_2.2.14_x86_64.deb
+- sudo rm vagrant_2.2.14_x86_64.deb
 
 # O Vagrant foi instalado corretamente?
 - vagrant --version
@@ -24,4 +24,4 @@ install:
 #- vagrant plugin install vagrant-mutate
 
 script:
-- cd src/vps && vagrant up
+- echo "$HOSTNAME"

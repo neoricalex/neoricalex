@@ -152,12 +152,8 @@ if [ "$usuario" == "neo@desktop" ]; then
         --version-description "Primeira versão box" \
         neoricalex/nfdos 0.4.5 libvirt \
         src/vps/nfdos/desktop/vagrant/libvirt/NFDOS-0.4.5.box # --force --debug
-        
-    vagrant cloud auth logout
 
-    cd src/vps
-    cat *.log
-    cd ../..
+    vagrant cloud auth logout
 
     # RESET
     # 
