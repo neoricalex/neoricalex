@@ -94,6 +94,7 @@ iniciar_local(){
 usuario="$(whoami)@$(hostname | cut -d . -f 1-2)"
 if [ "$usuario" == "neo@desktop" ]; then
 
+    #gnome-session-quit --force
     if [ -d "src/vps" ] ; then
         cd src/vps
         echo "Atualizar o github:neoricalex/vps..."
