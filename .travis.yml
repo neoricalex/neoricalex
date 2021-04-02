@@ -2,9 +2,9 @@
 dist: bionic
 language: python
 
-cache:
-  directories:
-  - /home/travis/.vagrant.d/boxes
+#cache:
+#  directories:
+#  - /home/travis/.vagrant.d/boxes
 
 install:
 # Instalar libvrt & KVM (REF: https://github.com/alvistack/ansible-role-virtualbox/blob/master/.travis.yml)

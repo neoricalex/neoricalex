@@ -78,6 +78,6 @@ ENTRAR_VPS
 }
 
 case $HOSTNAME in
-  (travis-job-*) iniciar_desenvolvimento_travis;;
+  (travis-job*) iniciar_desenvolvimento_travis;;
   (*)   iniciar_desenvolvimento_local;;
 esac
