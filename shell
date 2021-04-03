@@ -42,7 +42,7 @@ instalar_requerimentos(){
             vagrant plugin install vagrant-vbguest
 		fi
 
-        git submodule update --init --recursive
+        git submodule update --init --recursive --force
 
 		echo "==> Removendo pacotes do Ubuntu desnecessários"
 		sudo apt autoremove -y
