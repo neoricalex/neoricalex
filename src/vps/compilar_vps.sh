@@ -63,8 +63,8 @@ if ! vagrant plugin list | grep "vagrant-libvirt" > /dev/null;
 then
 
 	echo -e "==> [ WORKAROUND ]: Instalar plugins do Vagrant. \n Não sei porquê, mas se colocarmos a instalação dos plugins nos requerimentos, eles de alguma forma, não ficam \"ativos\" \n"
-	sudo vagrant plugin install vagrant-libvirt
-	sudo vagrant plugin install vagrant-vbguest
+	vagrant plugin install vagrant-libvirt
+	vagrant plugin install vagrant-vbguest
 	#vagrant plugin install vagrant-disksize # Só funciona no Virtualbox
 	#vagrant plugin install vagrant-mutate
 	#vagrant plugin install vagrant-bindfs
@@ -77,10 +77,11 @@ then
 
 fi
 
-vagrant destroy -f --name NFDOS
+vagrant destroy -f NFDOS
 
 echo "Compilando o NFDOS..."
 make nfdos
+
 echo $USER@$HOSTNAME
 usuario="$(whoami)@$(hostname | cut -d . -f 1-2)"
 if [ "$usuario" == "neo@desktop" ]; then
