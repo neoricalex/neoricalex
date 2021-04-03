@@ -165,6 +165,7 @@ git add .
 git commit -m "Atualização automática via NFDOS"
 
 cd /var/lib/neoricalex/src/vps/nfdos/desktop/cli
+pwd
 bash iniciar.sh
 
 cd /var/lib/neoricalex
