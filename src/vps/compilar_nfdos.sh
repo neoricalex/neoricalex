@@ -172,7 +172,6 @@ ENTRAR_VPS
 
 if ! vagrant plugin list | grep "vagrant-libvirt" > /dev/null;
 then
-	vagrant destroy -f
 
 	echo -e "==> [ WORKAROUND ]: Instalar plugins do Vagrant. \n Não sei porquê, mas se colocarmos a instalação dos plugins nos requerimentos, eles de alguma forma, não ficam \"ativos\" \n"
 	sudo vagrant plugin install vagrant-libvirt
@@ -180,6 +179,8 @@ then
 	#vagrant plugin install vagrant-disksize # Só funciona no Virtualbox
 	#vagrant plugin install vagrant-mutate
 	#vagrant plugin install vagrant-bindfs
+
+	vagrant destroy -f
 
 	echo -e "==> [ WORKAROUND ]: Certificar em como as permissões do KVM estão setadas. \n Não sei porquê, mas se setarmos as permissões nos requerimentos, elas de alguma forma, não ficam \"ativas\" \n"
 	sudo chown root:kvm /dev/kvm
