@@ -5,7 +5,8 @@ cd /var/lib/neoricalex
 
 git submodule update --init --recursive
 
-cd src/vps/nfdos/desktop
+sudo apt install -y zenity ansible
+
 echo "==> Iniciar o Auto-Start na versão GUI"
 # TODO: REF: https://unix.stackexchange.com/questions/172179/gnome-shell-running-shell-script-after-session-starts
 if [ ! -d "/home/neo/.config/autostart" ]; then
