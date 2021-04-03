@@ -131,7 +131,7 @@ if [ "$usuario" == "neo@desktop" ]; then
     #    neoricalex/nfdos 0.4.5 libvirt \
     #    src/vps/nfdos/desktop/vagrant/libvirt/NFDOS-0.4.5.box # --force --debug
 
-    vagrant cloud auth logout
+    #vagrant cloud auth logout
 
     # RESET
     # 
@@ -160,8 +160,8 @@ if [ "$usuario" == "neo@desktop" ]; then
     #rm -rf .git/modules/src/vps/nfdos/desktop/ansible
     #rm -rf .git/modules/home/neo/Público/src/vps/nfdos/desktop/ansible
 
-    #git filter-branch -f --index-filter "git rm -rf  --cached --ignore-unmatch nfdos/desktop/ansible" -- --all
-    #git filter-branch -f --index-filter "git rm -rf --ignore-unmatch nfdos/desktop/ansible" -- --all
+    #git filter-branch -f --index-filter "git rm -rf  --cached --ignore-unmatch src/vps/nfdos/desktop/ansible" -- --all
+    #git filter-branch -f --index-filter "git rm -rf --ignore-unmatch src/vps/nfdos/desktop/ansible" -- --all
     #rm -rf .git/refs/original/
     #git reflog expire --expire=now --all
     #git gc --prune=now
