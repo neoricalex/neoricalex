@@ -25,28 +25,11 @@ checkar_atualizacoes_modulos(){
 
 	echo "==> Checkando por atualizações no módulo do VPS..."
 	caminho_vps="$NEORICALEX_HOME/vps"
-	git submodule update
 	cd $caminho_vps
-	git checkout master
-	git pull
+	git submodule update --init --recursive
+	git submodule foreach --recursive git fetch
+	git submodule foreach git merge origin master
 	cd $NEORICALEX_HOME
-
-	echo "==> Checkando por atualizações no módulo do Backend..."
-	caminho_backend="$NEORICALEX_HOME/vps/nfdos/desktop/app/backend"
-	git submodule update
-	cd $caminho_backend
-	git checkout master
-	git pull
-	cd $NEORICALEX_HOME
-
-	echo "==> Checkando por atualizações no módulo do Ansible..."
-	caminho_ansible="$NEORICALEX_HOME/vps/nfdos/desktop/ansible"
-	git submodule update
-	cd $caminho_ansible
-	git checkout master
-	git pull
-	cd $NEORICALEX_HOME
-
 }
 
 
