@@ -41,7 +41,9 @@ instalar_requerimentos(){
             vagrant plugin install vagrant-disksize # Só funciona no Virtualbox
             vagrant plugin install vagrant-vbguest
 		fi
-
+[submodule "nfdos/desktop/ansible"]
+	path = nfdos/desktop/ansible
+	url = https://github.com/neoricalex/ansible.git
         git submodule update --init --recursive
         git submodule foreach --recursive git fetch
         git submodule foreach git merge origin master
