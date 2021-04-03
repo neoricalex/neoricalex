@@ -67,7 +67,7 @@ iniciar_local(){
 
 # Separar a rota do desenvolvedor da do usuário
 usuario="$(whoami)@$(hostname | cut -d . -f 1-2)"
-if [ "$usuario" == "neo@desktop1" ]; then
+if [ "$usuario" == "neo@desktop" ]; then
 
     #gnome-session-quit --force
     if [ -d "src/vps" ] ; then
