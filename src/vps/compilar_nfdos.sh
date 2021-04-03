@@ -179,6 +179,12 @@ then
 	#vagrant plugin install vagrant-mutate
 	#vagrant plugin install vagrant-bindfs
 
+	echo -e "==> [ WORKAROUND ]: Certificar em como as permissões do KVM estão setadas. \n Não sei porquê, mas se setarmos as permissões nos requerimentos, elas de alguma forma, não ficam \"ativas\" \n"
+	sudo chown root:kvm /dev/kvm
+	sudo chmod -R 660 /dev/kvm
+	sudo udevadm control --reload-rules
+	sudo systemctl restart libvirtd
+
 fi
 
 if vagrant status | grep "not created" > /dev/null;
@@ -191,12 +197,6 @@ then
 		--name neoricalex/nfdos \
 		--provider $VERSAO_BOX_VAGRANT \
 		$NFDOS_HOME/desktop/vagrant/$VERSAO_BOX_VAGRANT/NFDOS-$NFDOS_VERSAO.box
-
-	echo -e "==> [ WORKAROUND ]: Certificar em como as permissões do KVM estão setadas. \n Não sei porquê, mas se setarmos as permissões nos requerimentos, elas de alguma forma, não ficam \"ativas\" \n"
-	sudo chown root:kvm /dev/kvm
-	sudo chmod -R 660 /dev/kvm
-	sudo udevadm control --reload-rules
-	sudo systemctl restart libvirtd
 
 	echo "==> Provisionando o NFDOS..."
     vagrant up --provider $VERSAO_BOX_VAGRANT
