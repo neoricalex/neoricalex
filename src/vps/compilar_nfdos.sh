@@ -161,10 +161,16 @@ sudo chown -R neo:neo /var/lib/neoricalex
 cd /var/lib/neoricalex
 git pull
 git submodule update --init --recursive
+git add .
 git commit -m "Atualização automática via NFDOS"
 
-cd /var/lib/neoricalex/src/vps/nfdos/desktop/app
+cd /var/lib/neoricalex/src/vps/nfdos/desktop/cli
 bash iniciar.sh
+
+cd /var/lib/neoricalex
+git add .
+git commit -m "Atualização automática via NFDOS"
+#git push origin master
 ENTRAR_VPS
 }
 
