@@ -17,10 +17,10 @@ checkar_atualizacoes_modulos(){
 
 	echo "==> Checkando por atualizações no módulo do Log..."
 	caminho_log="$NEORICALEX_HOME/log"
-	git submodule update
 	cd $caminho_log
-	git checkout master
-	git pull
+	git submodule update --init --recursive
+	git submodule foreach --recursive git fetch
+	git submodule foreach git merge origin master
 	cd $NEORICALEX_HOME
 
 	echo "==> Checkando por atualizações no módulo do VPS..."
