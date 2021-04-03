@@ -172,6 +172,8 @@ ENTRAR_VPS
 
 if ! vagrant plugin list | grep "vagrant-libvirt" > /dev/null;
 then
+	vagrant destroy -f
+
 	echo -e "==> [ WORKAROUND ]: Instalar plugins do Vagrant. \n Não sei porquê, mas se colocarmos a instalação dos plugins nos requerimentos, eles de alguma forma, não ficam \"ativos\" \n"
 	sudo vagrant plugin install vagrant-libvirt
 	sudo vagrant plugin install vagrant-vbguest
