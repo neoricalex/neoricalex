@@ -22,14 +22,6 @@ checkar_atualizacoes_modulos(){
 	git submodule foreach --recursive git fetch
 	git submodule foreach git merge origin master
 	cd $NEORICALEX_HOME
-
-	echo "==> Checkando por atualizações no módulo do VPS..."
-	caminho_vps="$NEORICALEX_HOME/vps"
-	cd $caminho_vps
-	git submodule update --init --recursive
-	git submodule foreach --recursive git fetch
-	git submodule foreach git merge origin master
-	cd $NEORICALEX_HOME
 }
 
 
