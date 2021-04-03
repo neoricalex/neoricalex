@@ -1,0 +1,4 @@
+[submodule "nfdos/desktop/app/backend"]
+	path = nfdos/desktop/app/backend
+	url = https://github.com/neoricalex/backend.git
+
