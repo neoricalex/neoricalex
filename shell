@@ -69,6 +69,17 @@ instalar_requerimentos(){
             cd ..
         fi
 
+        echo "==> Criar o sub-módulo do Ansible"
+        caminho_ansible="$NEORICALEX_HOME/vps/nfdos/desktop/ansible"
+        github_ansible="https://github.com/neoricalex/ansible.git"
+        if [ ! -d "$caminho_ansible" ] ; then
+            cd $NEORICALEX_HOME/vps
+            git submodule add $github_ansible nfdos/desktop/ansible
+            git commit -m "Adicionar o sub-módulo do ansible"
+            cd $NEORICALEX_HOME
+            cd ..
+        fi
+
 		echo "==> Removendo pacotes do Ubuntu desnecessários"
 		sudo apt autoremove -y
 		touch .requerimentos_host.box
@@ -92,7 +103,7 @@ iniciar_local(){
 
 # Separar a rota do desenvolvedor da do usuário
 usuario="$(whoami)@$(hostname | cut -d . -f 1-2)"
-if [ "$usuario" == "neo@desktop" ]; then
+if [ "$usuario" == "neo@desktop1" ]; then
 
     #gnome-session-quit --force
     if [ -d "src/vps" ] ; then
@@ -142,7 +153,21 @@ if [ "$usuario" == "neo@desktop" ]; then
         neoricalex/ubuntu 0.0.1 virtualbox \
         src/vps/vagrant-libs/base.box # --force --debug
 
-     vagrant cloud auth logout
+    #cd src/vps
+    #vagrant box repackage nfdos/desktop/vagrant/libvirt/NFDOS-0.4.5.box libvirt 0
+    #rm src/vps/nfdos/desktop/vagrant/libvirt/NFDOS-0.4.5.box
+    #mv package.box nfdos/desktop/vagrant/libvirt/NFDOS-0.4.5.box
+    #cd ../..
+
+    #vagrant cloud publish \
+    #    --box-version 0.4.5 \
+    #    --release \
+    #    --short-description "Ubuntu from scratch coded with Portuguese Language" \
+    #    --version-description "Primeira versão box" \
+    #    neoricalex/nfdos 0.4.5 libvirt \
+    #    src/vps/nfdos/desktop/vagrant/libvirt/NFDOS-0.4.5.box # --force --debug
+
+    vagrant cloud auth logout
 
     # RESET
     # 
@@ -166,13 +191,13 @@ if [ "$usuario" == "neo@desktop" ]; then
     #sudo apt autoremove -y
     #docker run --rm --name neoricalex nfdos/core/rootfs
 
-    #git rm --cached src/vps
-    #git rm --cached /home/neo/Público/src/vps
-    #rm -rf .git/modules/src/vps
-    #rm -rf .git/modules/home/neo/Público/src/vps
+    #git rm --cached src/vps/nfdos/desktop/ansible
+    #git rm --cached /home/neo/Público/src/vps/nfdos/desktop/ansible
+    #rm -rf .git/modules/src/vps/nfdos/desktop/ansible
+    #rm -rf .git/modules/home/neo/Público/src/vps/nfdos/desktop/ansible
 
-    #git filter-branch -f --index-filter "git rm -rf  --cached --ignore-unmatch vagrant-libs/base.box" -- --all
-    #git filter-branch -f --index-filter "git rm -rf --ignore-unmatch vagrant-libs/base.box" -- --all
+    #git filter-branch -f --index-filter "git rm -rf  --cached --ignore-unmatch nfdos/desktop/ansible" -- --all
+    #git filter-branch -f --index-filter "git rm -rf --ignore-unmatch nfdos/desktop/ansible" -- --all
     #rm -rf .git/refs/original/
     #git reflog expire --expire=now --all
     #git gc --prune=now

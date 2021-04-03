@@ -39,6 +39,14 @@ checkar_atualizacoes_modulos(){
 	git pull
 	cd $NEORICALEX_HOME
 
+	echo "==> Checkando por atualizações no módulo do Ansible..."
+	caminho_ansible="$NEORICALEX_HOME/vps/nfdos/desktop/ansible"
+	git submodule update
+	cd $caminho_ansible
+	git checkout master
+	git pull
+	cd $NEORICALEX_HOME
+
 }
 
 
