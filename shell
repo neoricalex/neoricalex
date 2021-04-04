@@ -42,10 +42,6 @@ instalar_requerimentos(){
             vagrant plugin install vagrant-vbguest
 		fi
 
-        git submodule update --init --recursive
-        git submodule foreach --recursive git fetch
-        git submodule foreach git merge origin master
-
 		echo "==> Removendo pacotes do Ubuntu desnecessários"
 		sudo apt autoremove -y
 		touch .requerimentos_host.box
@@ -72,32 +68,6 @@ usuario="$(whoami)@$(hostname | cut -d . -f 1-2)"
 if [ "$usuario" == "neo@desktop" ]; then
 
     #gnome-session-quit --force
-    if [ -d "src/vps" ] ; then
-        cd src/vps
-        echo "Atualizar o github:neoricalex/vps..."
-        git add .
-        git commit -m "Atualização Automática via bash shell"
-        git push origin master
-        cd ../..
-    fi
-
-    if [ -d "src/log" ] ; then
-        cd src/log
-        echo "Atualizar o github:neoricalex/log..."
-        git add .
-        git commit -m "Atualização Automática via bash shell"
-        git push origin master
-        cd ../..
-    fi
-
-    if [ -d "src/vps/nfdos/desktop/app/backend" ] ; then
-        cd src/vps/nfdos/desktop/app/backend
-        echo "Atualizar o github:neoricalex/backend..."
-        git add .
-        git commit -m "Atualização Automática via bash shell"
-        git push origin master
-        cd ../../../../../..
-    fi
 
     echo "Atualizar o github:neoricalex/neoricalex..."
     cd src/vps
