@@ -15,18 +15,6 @@ criar_vps(){
 			VAGRANT_VAGRANTFILE=Vagrantfile.VPS_BASE vagrant ssh<<EOF
 #!/bin/bash
 
-echo "==> Gerar e configurar o idioma pt_BR"
-DEBIAN_FRONTEND="teletype" \
-    LANG="pt_BR.UTF-8" \
-    LANGUAGE="pt_BR:br" \
-    LC_ALL="pt_BR.UTF-8"
-
-sudo locale-gen --purge $LANG
-sudo update-locale LANG=$LANG LC_ALL=$LC_ALL LANGUAGE=$LANGUAGE
-
-sudo apt update && sudo apt install -y `check-language-support -l pt_BR`
-
-
 echo "Atualizar repositórios e pacotes..."
 
 sudo rm /etc/apt/sources.list
@@ -94,8 +82,26 @@ sudo apt-get update
 sudo apt-get -y upgrade
 sudo apt-get -y dist-upgrade
 
+echo "==> Gerar e configurar o idioma pt_BR"
+DEBIAN_FRONTEND="teletype" \
+    LANG="pt_BR.UTF-8" \
+    LANGUAGE="pt_BR:br" \
+    LC_ALL="pt_BR.UTF-8"
+
+sudo locale-gen --purge $LANG
+sudo update-locale LANG=$LANG LC_ALL=$LC_ALL LANGUAGE=$LANGUAGE
+
+sudo apt update && sudo apt install -y `check-language-support -l pt_BR`
+
 echo "==> Instalar o Linux/Ubuntu base..."
 sudo apt-get install linux-generic linux-headers-`uname -r` ubuntu-minimal dkms -y
+
+echo "==> Instalar paxotes extras..."
+sudo apt-get install -y build-essential checkinstall libreadline-gplv2-dev \
+    libncursesw5-dev libssl-dev libsqlite3-dev tk-dev libgdbm-dev libc6-dev \
+    libbz2-dev libffi-dev python3-pip unzip lsb-release software-properties-common \
+    curl wget git rsync python-dev python3-venv libterm-readline-gnu-perl \
+    dkms
 
 if ! command -v unzip &> /dev/null;
 then
