@@ -265,24 +265,6 @@ entrar_vps(){
 
 cd /neoricalex
 
-if ! command -v xorriso &> /dev/null;
-then
-	echo "==> Instalar pacotes para a criação da imagem ISO..."
-	sudo apt install -y \
-		binutils \
-		debootstrap \
-		squashfs-tools \
-		xorriso \
-		grub-pc-bin \
-		grub-efi-amd64-bin \
-		mtools \
-		whois \
-		jq \
-		moreutils \
-		make \
-		unzip
-fi
-
 if ! vagrant plugin list | grep "vagrant-libvirt" > /dev/null;
 then
 
