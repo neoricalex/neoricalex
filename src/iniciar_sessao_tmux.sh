@@ -13,22 +13,9 @@ configurar_tmux(){
 	fi	
 }
 
-checkar_atualizacoes_modulos(){
-
-	echo "==> Checkando por atualizações no módulo do Log..."
-	caminho_log="$NEORICALEX_HOME/log"
-	cd $caminho_log
-	git submodule update --init --recursive
-	git submodule foreach --recursive git fetch
-	git submodule foreach git merge origin master
-	cd $NEORICALEX_HOME
-}
-
-
 iniciar_desenvolvimento(){
 
 	configurar_tmux
-	checkar_atualizacoes_modulos
     if ! tmux has-session -t nfdos 2>/dev/null; then
         tmux new-session -s nfdos bash "$NEORICALEX_HOME/sessao_tmux.sh"
     fi
