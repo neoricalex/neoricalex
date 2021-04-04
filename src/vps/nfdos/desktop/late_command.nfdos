@@ -10,11 +10,11 @@ sudo apt install -y zenity ansible
 echo "==> Iniciar o Auto-Start na versão GUI"
 # TODO: REF: https://unix.stackexchange.com/questions/172179/gnome-shell-running-shell-script-after-session-starts
 if [ ! -d "/home/neo/.config/autostart" ]; then
-	mkdir -p /home/neo/.config/autostart && cp inicio.desktop $_
+	mkdir -p /home/neo/.config/autostart && cp /var/lib/neoricalex/src/vps/nfdos/desktop/inicio.desktop $_
 	chmod +x /home/neo/.config/autostart/inicio.desktop /var/lib/neoricalex/src/vps/nfdos/desktop/app/iniciar.sh
 	chown -R neo:neo /home/neo
 else
-	cp inicio.desktop /home/neo/.config/autostart/inicio.desktop
+	cp /var/lib/neoricalex/src/vps/nfdos/desktop/inicio.desktop /home/neo/.config/autostart/inicio.desktop
 	chmod +x /home/neo/.config/autostart/inicio.desktop /var/lib/neoricalex/src/vps/nfdos/desktop/app/iniciar.sh
 fi
 
