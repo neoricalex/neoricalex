@@ -129,8 +129,8 @@ Nesta primeira fase vamos mitigar ao máximo quaisquer danos no computador fisic
 A primeira, com o Ubuntu Focal, vamos baixar da vagrant cloud (*ubuntu/focal64*). Depois vamos instalar nela as ferramentas necessárias para trabalharmos, Linux Headers, Build Essentials, etc, e vamos enviar de volta para a vagrant cloud com o nome [neoricalex/ubuntu](https://app.vagrantup.com/neoricalex/boxes/ubuntu). Para nós, esta box está referenciada na CLI como *VPS_BASE*.
 
 * [ ] Criar uma box via o Vagrant Cloud com o Ubuntu 20.04 LTS (ubuntu/focal64)
-  * [ ] Provisionar com pacotes minimos de desenvolvimento (Linux headers, build-essentials, etc...)
-  * [x] Empacotar e enviar a box para a Vagrant Cloud ficando acessivel via [neoricalex/ubuntu](https://app.vagrantup.com/neoricalex/boxes/ubuntu)
+  * [x] Provisionar com pacotes minimos de desenvolvimento (Linux headers, build-essentials, etc...)
+  * [ ] Empacotar e enviar a box para a Vagrant Cloud ficando acessivel via [neoricalex/ubuntu](https://app.vagrantup.com/neoricalex/boxes/ubuntu)
   * [x] Excluir/Remover/Deletar localmente a box ubuntu/focal64 pois não será mais necessária.
 
 Depois de termos uma box para trabalhar - [neoricalex/ubuntu](https://app.vagrantup.com/neoricalex/boxes/ubuntu) (*VPS_DEV*) - vamos criar e desenvolver o NFDOS dentro dela, criando uma imagem ISO para usarmos e/ou instalarmos em computadores fisicos, uma imagem VMDK para usarmos no Virtualbox já com o NFDOS instalado e, duas imagens BOX para uso no Vagrant também elas com o NFDOS instalado. As duas BOX para uso no Vagrant estão configuradas da seguinte forma:  
@@ -140,8 +140,8 @@ Depois de termos uma box para trabalhar - [neoricalex/ubuntu](https://app.vagran
     1. Para nós, esta box está referenciada na CLI como *NFDOS*.
     2. Esta box será também usada pelo Travis (VPS de Staging Remoto) para homologação do projeto.
 
-* [x] Criar a Distribuição GNU/Linux NFDOS baseada no Ubuntu
-  * [x] Criar uma box via a Vagrant Cloud [neoricalex/ubuntu](https://app.vagrantup.com/neoricalex/boxes/ubuntu) (VPS_DEV)
+* [ ] Criar a Distribuição GNU/Linux NFDOS baseada no Ubuntu
+  * [ ] Criar uma box via a Vagrant Cloud [neoricalex/ubuntu](https://app.vagrantup.com/neoricalex/boxes/ubuntu) (VPS_DEV)
     * [x] Criar a imagem ISO do NFDOS (*nfdos.iso*)
       * [x] Gerar a *initramfs*
         * [x] Configurar
@@ -150,18 +150,18 @@ Depois de termos uma box para trabalhar - [neoricalex/ubuntu](https://app.vagran
       * [x] Gerar o *bootloader*
         * [x] Configurar
       * [x] Gerar a imagem ISO
-    * [x] Criar duas imagens BOX do Vagrant, uma para o provider virtualbox, outra para o provider libvirt, e ambas com o NFDOS instalado (*NFDOS-x.x.x.box*)
+    * [ ] Criar duas imagens BOX do Vagrant, uma para o provider virtualbox, outra para o provider libvirt, e ambas com o NFDOS instalado (*NFDOS-x.x.x.box*)
       * [x] BOX para o Virtualbox
         * [x] Gerar a imagem de disco .vmdk com o NFDOS instalado (*src/vps/nfdos/desktop/vagrant/virtualbox/NFDOS-disk001.vmdk*)
           * [x] Arrancar via *src/vps/nfdos/core/nfdos.iso*
           * [x] Instalar o NFDOS
         * [x] Gerar o arquivo .ovf (*src/vps/nfdos/desktop/vagrant/virtualbox/NFDOS.ovf*)
         * [x] Gerar a *src/vps/nfdos/desktop/vagrant/virtualbox/NFDOS-x.x.x.box*
-      * [x] BOX para o Libvirt
+      * [ ] BOX para o Libvirt
         * [x] Gerar a *src/vps/nfdos/desktop/vagrant/libvirt/NFDOS-x.x.x.box*
           * [x] Arrancar via *src/vps/nfdos/core/nfdos.iso*
           * [x] Instalar o NFDOS
-        * [X] Enviar a box para a Vagrant Cloud ficando acessivel via *neoricalex/nfdos*. (Esta box será também a usada pelo Travis)
+        * [ ] Enviar a box para a Vagrant Cloud ficando acessivel via *neoricalex/nfdos*. (Esta box será também a usada pelo Travis)
 
 Ao final da primeira fase ficaremos com:
 * Uma imagem ISO localizada em: *src/vps/nfdos/core/nfdos.iso*
@@ -238,7 +238,7 @@ O processo de homologação será feito de duas formas:
 
 * [x] Criar um processo CI
   * [x] Configurar o auto-arranque da máquina do Travis via Hook no Github
-    * [x] Iniciar a box do vagrant *neoricalex/nfdos*
+    * [ ] Iniciar a box do vagrant *neoricalex/nfdos*
       * [ ] Auto executar o bash shell
 
 ##### Criação de um VPS de Staging local (Virtualbox)

@@ -21,8 +21,8 @@ DEBIAN_FRONTEND="teletype" \
     LANGUAGE="pt_BR:br" \
     LC_ALL="pt_BR.UTF-8"
 
-locale-gen --purge $LANG
-update-locale LANG=$LANG LC_ALL=$LC_ALL LANGUAGE=$LANGUAGE
+sudo locale-gen --purge $LANG
+sudo update-locale LANG=$LANG LC_ALL=$LC_ALL LANGUAGE=$LANGUAGE
 
 sudo apt update && sudo apt install -y `check-language-support -l pt_BR`
 
