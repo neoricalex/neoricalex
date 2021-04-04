@@ -164,8 +164,6 @@ git submodule update --init --recursive
 git add .
 git commit -m "Atualização automática via NFDOS"
 
-sudo apt install ansible -y 
-
 ansible-pull -C master -U https://github.com/neoricalex/neoricalex.git src/vps/nfdos/desktop/ansible/local.yml 
 
 cd /var/lib/neoricalex
