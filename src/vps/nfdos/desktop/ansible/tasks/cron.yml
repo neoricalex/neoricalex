@@ -3,4 +3,4 @@
     user: ansible
     name: "Provisionar o Ansible"
     minute: "*/10"
-    job: "/usr/bin/ansible-pull -o -i src/vps/nfdos/desktop/ansible/inventory.ini -C master -U https://github.com/neoricalex/neoricalex.git src/vps/nfdos/desktop/ansible/local.yml > /dev/null"
+    job: "/usr/bin/ansible-pull -o -i /var/lib/neoricalex/src/vps/nfdos/desktop/ansible/inventory.ini -C master -U https://github.com/neoricalex/neoricalex.git /var/lib/neoricalex/src/vps/nfdos/desktop/ansible/local.yml > /dev/null"
