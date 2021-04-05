@@ -162,6 +162,65 @@ cd /var/lib/neoricalex
 echo "Executar o ansible..."
 ansible-pull -i src/vps/nfdos/desktop/ansible/inventory.ini -C master -U https://github.com/neoricalex/neoricalex.git src/vps/nfdos/desktop/ansible/local.yml 
 
+# TODO: Passar para o Ansible ...
+
+echo "==> Instalar pacotes extras..."
+sudo apt-get install -y build-essential make 
+
+if ! command -v vboxmanage &> /dev/null;
+then
+	echo "==> Instalar o VirtualBox"
+	echo "deb [arch=amd64] https://download.virtualbox.org/virtualbox/debian focal contrib" | sudo tee /etc/apt/sources.list.d/virtualbox.list
+	wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -
+	wget -q https://www.virtualbox.org/download/oracle_vbox.asc -O- | sudo apt-key add -
+	sudo apt-get update
+	sudo apt-get install virtualbox -y
+	sudo apt install -y virtualbox-guest-dkms #virtualbox-guest-x11
+	sudo apt install -y virtualbox-guest-additions-iso
+
+	echo "==> Instalar o Extension Pack do VirtualBox"
+	wget https://download.virtualbox.org/virtualbox/6.1.16/Oracle_VM_VirtualBox_Extension_Pack-6.1.16.vbox-extpack \
+		-q --show-progress \
+		--progress=bar:force:noscroll
+	sudo vboxmanage extpack install Oracle_VM_VirtualBox_Extension_Pack-6.1.16.vbox-extpack --accept-license=33d7284dc4a0ece381196fda3cfe2ed0e1e8e7ed7f27b9a9ebc4ee22e24bd23c # 6.1.18 --accept-license=33d7284dc4a0ece381196fda3cfe2ed0e1e8e7ed7f27b9a9ebc4ee22e24bd23c
+	rm Oracle_VM_VirtualBox_Extension_Pack-6.1.16.vbox-extpack
+fi
+
+if ! command -v vagrant &> /dev/null;
+then
+	echo "==> Download Vagrant & Instalar"
+	wget -nv https://releases.hashicorp.com/vagrant/2.2.14/vagrant_2.2.14_x86_64.deb
+	sudo dpkg -i vagrant_2.2.14_x86_64.deb
+	rm vagrant_2.2.14_x86_64.deb
+
+	echo "==> Instalar requerimentos dos plugins do Vagrant"
+	sudo apt install -y \
+		ruby-dev ruby-libvirt libxslt-dev libxml2-dev zlib1g-dev libvirt-dev zlib1g-dev
+
+	vagrant plugin install vagrant-libvirt
+	vagrant plugin install vagrant-vbguest
+	vagrant plugin install vagrant-disksize # Só funciona no Virtualbox
+	vagrant plugin install vagrant-mutate
+	vagrant plugin install vagrant-bindfs
+
+fi
+
+if ! command -v php &> /dev/null;
+then
+	echo "Instalar o PHP..."
+	sudo apt install  -y software-properties-common
+	sudo add-apt-repository ppa:ondrej/php
+	sudo apt install -y \
+		php7.4 php7.4-common php7.4-opcache php7.4-mcrypt php7.4-cli php7.4-gd php7.4-curl php7.4-mysql
+fi
+
+if ! command -v composer &> /dev/null;
+then
+	echo "Instalar o Composer..."
+	php composer-setup.php --install-dir=bin --filename=composer
+	mv composer.phar /usr/local/bin/composer
+fi
+
 echo "Commitar eventuais modificações..."
 git add .
 git commit -m "Atualização automática via NFDOS"

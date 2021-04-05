@@ -96,7 +96,7 @@ sudo apt update && sudo apt install -y `check-language-support -l pt_BR`
 echo "==> Instalar o Linux/Ubuntu base..."
 sudo apt-get install linux-generic linux-headers-`uname -r` ubuntu-minimal dkms -y
 
-echo "==> Instalar paxotes extras..."
+echo "==> Instalar pacotes extras..."
 sudo apt-get install -y build-essential checkinstall libreadline-gplv2-dev \
     libncursesw5-dev libssl-dev libsqlite3-dev tk-dev libgdbm-dev libc6-dev \
     libbz2-dev libffi-dev python3-pip unzip lsb-release software-properties-common \
