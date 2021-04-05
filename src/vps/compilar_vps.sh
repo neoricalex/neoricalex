@@ -283,8 +283,8 @@ then
 
 fi
 
-limpar=0
-if [ "$limpar" != 0 ]; then
+limpar="0"
+if [ "$limpar" == "1" ]; then
 	echo "Limpando..."
 	vagrant destroy -f
 	sleep 3
