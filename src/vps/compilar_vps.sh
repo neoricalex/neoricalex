@@ -284,6 +284,7 @@ then
 fi
 
 vagrant destroy -f
+sleep 10
 #echo "Compilando o NFDOS..."
 #make nfdos
 
