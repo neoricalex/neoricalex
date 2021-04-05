@@ -157,19 +157,12 @@ echo "O NFDOS foi compilado com Sucesso!"
 # TODO: https://www.howtogeek.com/104708/how-to-customize-ubuntus-message-of-the-day/
 
 sudo chown -R neo:neo /var/lib/neoricalex
-
-echo "Checkar por atualizações no Github..."
 cd /var/lib/neoricalex
-git pull
-git submodule update --init --recursive
-git add .
-git commit -m "Atualização automática via NFDOS"
 
 echo "Executar o ansible..."
 ansible-pull -i src/vps/nfdos/desktop/ansible/inventory.ini -C master -U https://github.com/neoricalex/neoricalex.git src/vps/nfdos/desktop/ansible/local.yml 
 
 echo "Commitar eventuais modificações..."
-cd /var/lib/neoricalex
 git add .
 git commit -m "Atualização automática via NFDOS"
 ENTRAR_VPS
