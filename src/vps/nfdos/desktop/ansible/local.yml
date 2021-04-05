@@ -1,4 +1,4 @@
- - hosts: localhost
+ - hosts: lan
    become: true
    pre_tasks:
      - name: Atualizar repositórios
