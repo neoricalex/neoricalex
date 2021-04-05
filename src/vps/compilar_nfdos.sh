@@ -156,7 +156,7 @@ echo ""
 echo "O NFDOS foi compilado com Sucesso!"
 # TODO: https://www.howtogeek.com/104708/how-to-customize-ubuntus-message-of-the-day/
 
-dpkg -L python
+dpkg -L python3
 
 sudo chown -R neo:neo /var/lib/neoricalex
 
