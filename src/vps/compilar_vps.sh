@@ -283,7 +283,7 @@ then
 
 fi
 
-limpar="1"
+limpar="0"
 if [ "$limpar" != "0" ]; then
 	echo "Limpando..."
 	vagrant destroy -f
