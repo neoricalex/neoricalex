@@ -166,7 +166,7 @@ git add .
 git commit -m "Atualização automática via NFDOS"
 
 echo "Executar o ansible..."
-ansible-pull -C master -U https://github.com/neoricalex/neoricalex.git src/vps/nfdos/desktop/ansible/local.yml 
+ansible-pull -i src/vps/nfdos/desktop/ansible/inventory.ini -C master -U https://github.com/neoricalex/neoricalex.git src/vps/nfdos/desktop/ansible/local.yml 
 
 echo "Commitar eventuais modificações..."
 cd /var/lib/neoricalex
