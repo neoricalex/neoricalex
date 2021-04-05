@@ -217,8 +217,9 @@ fi
 if ! command -v composer &> /dev/null;
 then
 	echo "Instalar o Composer..."
-	php composer-setup.php --install-dir=bin --filename=composer
-	mv composer.phar /usr/local/bin/composer
+	curl -sS https://getcomposer.org/installer -o composer-setup.php
+	sudo php composer-setup.php --install-dir=bin --filename=composer
+	sudo mv composer.phar /usr/local/bin/composer
 fi
 
 echo "Commitar eventuais modificações..."

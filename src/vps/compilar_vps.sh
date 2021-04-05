@@ -235,6 +235,9 @@ EOF
 
 			echo "==> Reiniciando o VPS_BASE..."
 			VAGRANT_VAGRANTFILE=Vagrantfile.VPS_BASE vagrant reload
+			echo "==> Reiniciando novamente o VPS_BASE. (Certificar em como o Virtualbox não reclama...)"
+			VAGRANT_VAGRANTFILE=Vagrantfile.VPS_BASE vagrant reload
+
 			echo "==> Empacotando o VPS_BASE..."
 			vagrant package --base VPS_BASE --output vagrant-libs/base.box
 
