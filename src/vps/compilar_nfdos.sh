@@ -138,10 +138,10 @@ sudo apt-get autopurge -y
 echo "Nos certificar em como não apagamos coisas \"demais\"..."
 sudo apt install -y linux-generic ubuntu-minimal
 
-echo "==> E vamos nos certificar em como não existem updates para fazer..."
+echo "==> Nos certificar em como não existem updates para fazer..."
 sudo apt update && sudo apt upgrade -y
 
-echo "==> E vamos nos certificar em como não existem entradas antigas do kernel na Grub..."
+echo "==> Por último, vamos nos certificar em como não existem entradas antigas do kernel na Grub..."
 # REF: https://askubuntu.com/questions/176322/removing-old-kernel-entries-in-grub
 sudo apt-get purge $( dpkg --list | grep -P -o "linux-image-\d\S+" | grep -v $(uname -r | grep -P -o ".+\d") ) -y
 LIMPEZA_VPS
