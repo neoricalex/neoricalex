@@ -169,16 +169,16 @@ then
 	wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -
 	wget -q https://www.virtualbox.org/download/oracle_vbox.asc -O- | sudo apt-key add -
 	sudo apt-get update
-	sudo apt-get install virtualbox-6.1 -y
+	sudo apt-get install virtualbox -y
 	sudo apt install -y virtualbox-guest-dkms #virtualbox-guest-x11
 	sudo apt install -y virtualbox-guest-additions-iso
 
 	echo "==> Instalar o Extension Pack do VirtualBox"
-	wget https://download.virtualbox.org/virtualbox/6.1.18/Oracle_VM_VirtualBox_Extension_Pack-6.1.18.vbox-extpack \
+	wget https://download.virtualbox.org/virtualbox/6.1.16/Oracle_VM_VirtualBox_Extension_Pack-6.1.16.vbox-extpack \
 		-q --show-progress \
 		--progress=bar:force:noscroll
-	sudo vboxmanage extpack install Oracle_VM_VirtualBox_Extension_Pack-6.1.18.vbox-extpack --accept-license=33d7284dc4a0ece381196fda3cfe2ed0e1e8e7ed7f27b9a9ebc4ee22e24bd23c
-	rm Oracle_VM_VirtualBox_Extension_Pack-6.1.18.vbox-extpack 
+	sudo vboxmanage extpack install Oracle_VM_VirtualBox_Extension_Pack-6.1.16.vbox-extpack --accept-license=33d7284dc4a0ece381196fda3cfe2ed0e1e8e7ed7f27b9a9ebc4ee22e24bd23c # 6.1.18 --accept-license=33d7284dc4a0ece381196fda3cfe2ed0e1e8e7ed7f27b9a9ebc4ee22e24bd23c
+	rm Oracle_VM_VirtualBox_Extension_Pack-6.1.16.vbox-extpack
 fi 
 
 if ! command -v packer &> /dev/null;
@@ -283,8 +283,8 @@ then
 
 fi
 
-limpar="0"
-if [ "$limpar" == "1" ]; then
+limpar=1
+if [ "$limpar" == 1 ]; then
 	echo "Limpando..."
 	vagrant destroy -f
 	sleep 3
