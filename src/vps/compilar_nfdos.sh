@@ -158,14 +158,17 @@ echo "O NFDOS foi compilado com Sucesso!"
 
 sudo chown -R neo:neo /var/lib/neoricalex
 
+echo "Checkar por atualizações no Github..."
 cd /var/lib/neoricalex
 git pull
 git submodule update --init --recursive
 git add .
 git commit -m "Atualização automática via NFDOS"
 
+echo "Executar o ansible..."
 ansible-pull -C master -U https://github.com/neoricalex/neoricalex.git src/vps/nfdos/desktop/ansible/local.yml 
 
+echo "Commitar eventuais modificações..."
 cd /var/lib/neoricalex
 git add .
 git commit -m "Atualização automática via NFDOS"
