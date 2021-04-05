@@ -283,8 +283,9 @@ then
 
 fi
 
-echo "Compilando o NFDOS..."
-make nfdos
+vagrant destroy -f
+#echo "Compilando o NFDOS..."
+#make nfdos
 
 cd ..
 EOF

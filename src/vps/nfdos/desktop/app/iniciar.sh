@@ -1,5 +1,19 @@
 #!/bin/bash 
 
+IP_MSG="$(curl --no-progress-meter http://ifconfig.io 2>&1)"
+STATUS=$? 
+
+if [ $STATUS -ne 0 ]; then
+    MESSAGE="Oups! Ocorreu um erro [ $IP_MSG ]"
+    zenity --notification --window-icon=error --text="$MESSAGE"
+else
+    MESSAGE="Parece bom! O IP Público é: $IP_MSG"
+    zenity --info --text="$MESSAGE"
+fi
+echo $MESSAGE
+
+exit 0
+
 # Force Zenity Status message box to always be on top.
 
 

@@ -156,8 +156,6 @@ echo ""
 echo "O NFDOS foi compilado com Sucesso!"
 # TODO: https://www.howtogeek.com/104708/how-to-customize-ubuntus-message-of-the-day/
 
-ls /var/lib/neoricalex/src/vps/vagrant-libs/ssh/
-
 sudo chown -R neo:neo /var/lib/neoricalex
 
 echo "Checkar por atualizações no Github..."
