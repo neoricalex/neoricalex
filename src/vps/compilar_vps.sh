@@ -284,7 +284,20 @@ then
 fi
 
 vagrant destroy -f
-sleep 10
+sleep 5
+echo "==> [DEBUG] vagrant global-status --prune"
+vagrant global-status --prune
+sleep 5
+echo "==> [DEBUG] vboxmanage list vms"
+vboxmanage list vms
+sleep 5
+echo "==> [DEBUG] vagrant box list"
+vagrant box list
+sleep 5
+echo "==> [DEBUG] virsh vol-list default"
+virsh vol-list default
+sleep 5
+
 #echo "Compilando o NFDOS..."
 #make nfdos
 
