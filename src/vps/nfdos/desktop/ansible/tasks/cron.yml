@@ -1,6 +1,6 @@
 - name: install cron job (ansible-pull)
-	cron:
-		user: ansible
-		name: "ansible provision"
-		minute: "*/10"
-			job: "/usr/bin/ansible-pull -o -C master -U https://github.com/neoricalex/neoricalex.git src/vps/nfdos/desktop/ansible/local.yml > /dev/null"
+    cron:
+        user: ansible
+        name: "ansible provision"
+        minute: "*/10"
+            job: "/usr/bin/ansible-pull -o -C master -U https://github.com/neoricalex/neoricalex.git src/vps/nfdos/desktop/ansible/local.yml > /dev/null"
