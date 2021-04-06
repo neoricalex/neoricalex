@@ -73,4 +73,11 @@ Vagrant.configure("2") do |config|
 	#config.vm.provision :shell,
 	#path: "vagrant-libs/requerimentos.sh"
 
+	config.vm.provision "shell" do |s|
+		s.inline = <<-SHELL
+		echo "==> Atualizar plugins do Vagrant..."
+		vagrant plugin update
+	SHELL
+	end
+
 end
