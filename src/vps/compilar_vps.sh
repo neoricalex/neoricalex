@@ -102,11 +102,11 @@ sudo apt-get install -y build-essential checkinstall libreadline-gplv2-dev \
     libbz2-dev libffi-dev python3-pip unzip lsb-release software-properties-common \
     curl wget git rsync python-dev python3-venv libterm-readline-gnu-perl 
 
-sudo apt install -y \
-	linux-image-5.8.0-45-generic \
-	linux-headers-5.8.0-45-generic \
-	linux-modules-5.8.0-45-generic \
-	linux-modules-extra-5.8.0-45-generic 
+#sudo apt install -y \
+#	linux-image-5.8.0-45-generic \
+#	linux-headers-5.8.0-45-generic \
+#	linux-modules-5.8.0-45-generic \
+#	linux-modules-extra-5.8.0-45-generic 
 
 if ! command -v xorriso &> /dev/null;
 then
