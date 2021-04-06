@@ -2,11 +2,11 @@
 
 criar_vps(){
 
-	echo "==> Checkar se a box do VPS_DEV foi gerada..."
+	echo "==> Checkar se a neoricalex/ubuntu existe..."
 	vps_dev=$(vagrant box list | grep "neoricalex/ubuntu" > /dev/null)
 	if [ $? == "1" ];
 	then
-		echo "==> Checkar se a box base com o Ubuntu - VPS_BASE - foi gerada..."
+		echo "==> Checkar se a box base com o Ubuntu foi gerada..."
 		if [ ! -f "box/virtualbox/ubuntu-18.04-0.1.box" ];
 		then
 			echo "==> Criando o VPS_BASE..."
@@ -14,10 +14,9 @@ criar_vps(){
 			packer build ubuntu.json
 			cd ..
 		fi
-		echo "==> O VPS_BASE foi gerado e empacotado."
+		echo "==> A box base com o Ubuntu já foi gerada."
 
 	fi
-	echo "==> A box do VPS_DEV já foi gerada."
 
 	if ! vagrant box list | grep "neoricalex/ubuntu" > /dev/null;
 	then
@@ -27,7 +26,8 @@ criar_vps(){
 			--provider virtualbox \
 			box/virtualbox/ubuntu-18.04-0.1.box
 	fi
-
+	echo "==> A neoricalex/ubuntu já existe."
+	
 	echo "==> Provisionando o VPS_DEV..."
 	VAGRANT_VAGRANTFILE=Vagrantfile.VPS_DEV vagrant up
 	echo "==> Reiniciando o VPS_DEV para as configurações ficarem ativas..."
