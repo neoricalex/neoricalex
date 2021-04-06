@@ -23,11 +23,8 @@ instalar_requerimentos(){
             sudo apt-get update
             sudo apt install -y linux-generic -y
             sudo apt install -y dkms build-essential linux-headers-$(uname -r) perl
-            sudo apt install -y binutils gcc make patch
-            sudo apt install -y build-essential linux-headers-$(uname -r)
-            sudo apt install -y virtualbox
-            sudo apt install -y virtualbox-guest-dkms virtualbox-guest-x11
-            sudo apt install -y virtualbox-guest-additions-iso
+            sudo apt install -y binutils gcc make patch libssl-dev
+            sudo apt install -y virtualbox virtualbox-dkms
 
             echo "==> Instalar o Extension Pack do VirtualBox"
             wget https://download.virtualbox.org/virtualbox/6.1.16/Oracle_VM_VirtualBox_Extension_Pack-6.1.16.vbox-extpack \
@@ -35,6 +32,10 @@ instalar_requerimentos(){
                 --progress=bar:force:noscroll
             sudo vboxmanage extpack install Oracle_VM_VirtualBox_Extension_Pack-6.1.16.vbox-extpack --accept-license=33d7284dc4a0ece381196fda3cfe2ed0e1e8e7ed7f27b9a9ebc4ee22e24bd23c # 6.1.18 --accept-license=33d7284dc4a0ece381196fda3cfe2ed0e1e8e7ed7f27b9a9ebc4ee22e24bd23c
             rm Oracle_VM_VirtualBox_Extension_Pack-6.1.16.vbox-extpack 
+
+            #sudo apt install -y virtualbox-guest-dkms virtualbox-guest-x11
+            #sudo apt install -y virtualbox-guest-additions-iso
+            sudo modprobe vboxdrv
 		fi
 
         if ! command -v packer &> /dev/null;
