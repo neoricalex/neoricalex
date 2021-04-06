@@ -35,6 +35,10 @@ echo "${VAGRANT_INSECURE_KEY}" > $SSH_USER_HOME/.ssh/authorized_keys
 chmod 600 $SSH_USER_HOME/.ssh/authorized_keys
 chown -R $SSH_USER:$SSH_USER $SSH_USER_HOME/.ssh
 
+echo "==> Criar a HOME do Vagrant"
+mkdir $SSH_USER_HOME/.vagrant.d
+chown -R $SSH_USER:$SSH_USER $SSH_USER_HOME/.vagrant.d
+
 echo "==> Download Vagrant & Instalar"
 wget -nv https://releases.hashicorp.com/vagrant/2.2.14/vagrant_2.2.14_x86_64.deb
 dpkg -i vagrant_2.2.14_x86_64.deb
