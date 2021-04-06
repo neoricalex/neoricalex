@@ -57,7 +57,7 @@ cd /neoricalex
 #sudo systemctl restart libvirtd
 
 echo "Compilando o NFDOS..."
-make nfdos
+sudo make nfdos
 
 cd ..
 EOF
