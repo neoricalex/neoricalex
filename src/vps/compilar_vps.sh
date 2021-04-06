@@ -67,26 +67,6 @@ then
 
 fi
 
-#echo "Limpando..."
-#vagrant destroy -f
-#sleep 3
-#vagrant box remove neoricalex/nfdos
-#sleep 3
-#virsh vol-delete --pool default neoricalex-VAGRANTSLASH-nfdos_vagrant_box_image_0.img
-#sleep 3
-#echo "==> [DEBUG] vagrant global-status --prune"
-#vagrant global-status --prune
-#sleep 3
-#echo "==> [DEBUG] vboxmanage list vms"
-#vboxmanage list vms
-#sleep 3
-#echo "==> [DEBUG] vagrant box list"
-#vagrant box list
-#sleep 3
-#echo "==> [DEBUG] virsh vol-list default"
-#virsh vol-list default
-#sleep 3
-
 echo "Compilando o NFDOS..."
 make nfdos
 
