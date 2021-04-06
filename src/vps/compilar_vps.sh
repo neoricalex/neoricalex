@@ -125,21 +125,6 @@ then
 		make \
 		unzip
 fi
-EOF
-
-			echo "==> Reiniciando o VPS_BASE..."
-			VAGRANT_VAGRANTFILE=Vagrantfile.VPS_BASE vagrant reload
-			VAGRANT_VAGRANTFILE=Vagrantfile.VPS_BASE vagrant ssh<<EOF
-#!/bin/bash
-
-echo "==> Remover entradas antigas do kernel na Grub..."
-# REF: https://askubuntu.com/questions/176322/removing-old-kernel-entries-in-grub
-sudo apt-get purge $( dpkg --list | grep -P -o "linux-image-\d\S+" | grep -v $(uname -r | grep -P -o ".+\d") ) -y
-EOF
-			echo "==> Reiniciando o VPS_BASE..."
-			VAGRANT_VAGRANTFILE=Vagrantfile.VPS_BASE vagrant reload
-			VAGRANT_VAGRANTFILE=Vagrantfile.VPS_BASE vagrant ssh<<EOF
-#!/bin/bash
 
 if ! command -v kvm-ok &> /dev/null;
 then
@@ -226,14 +211,24 @@ then
 	sudo apt install -y \
 		ruby-dev ruby-libvirt libxslt-dev libxml2-dev zlib1g-dev libvirt-dev zlib1g-dev
 
-	vagrant plugin install vagrant-libvirt
-	vagrant plugin install vagrant-vbguest
-	vagrant plugin install vagrant-disksize # Só funciona no Virtualbox
-	vagrant plugin install vagrant-mutate
-	vagrant plugin install vagrant-bindfs
-	vagrant plugin install vagrant-cachier
+	sudo vagrant plugin install vagrant-libvirt
+	sudo vagrant plugin install vagrant-vbguest
+	sudo vagrant plugin install vagrant-disksize # Só funciona no Virtualbox
+	sudo vagrant plugin install vagrant-mutate
+	sudo vagrant plugin install vagrant-bindfs
+	sudo vagrant plugin install vagrant-cachier
 
 fi
+EOF
+
+			echo "==> Reiniciando o VPS_BASE..."
+			VAGRANT_VAGRANTFILE=Vagrantfile.VPS_BASE vagrant reload
+			VAGRANT_VAGRANTFILE=Vagrantfile.VPS_BASE vagrant ssh<<EOF
+#!/bin/bash
+
+echo "==> Remover entradas antigas do kernel na Grub..."
+# REF: https://askubuntu.com/questions/176322/removing-old-kernel-entries-in-grub
+sudo apt-get purge $( dpkg --list | grep -P -o "linux-image-\d\S+" | grep -v $(uname -r | grep -P -o ".+\d") ) -y
 
 echo "==> Removendo pacotes desnecessários"
 sudo apt autoremove -y
