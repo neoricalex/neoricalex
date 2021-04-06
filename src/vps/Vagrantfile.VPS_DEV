@@ -7,6 +7,26 @@ Vagrant.configure("2") do |config|
 	config.vm.box = "neoricalex/ubuntu"
 	#config.vm.box_version = "0.0.6"
 	#config.vm.box_url = "#{Dir.pwd}/.vagrant-libs/metadata.json" 
+
+	if Vagrant.has_plugin?("vagrant-cachier")
+		# Configure cached packages to be shared between instances of the same base box.
+		# More info on http://fgrehm.viewdocs.io/vagrant-cachier/usage
+		config.cache.scope = :box
+	
+		# OPTIONAL: If you are using VirtualBox, you might want to use that to enable
+		# NFS for shared folders. This is also very useful for vagrant-libvirt if you
+		# want bi-directional sync
+		config.cache.synced_folder_opts = {
+		  type: :nfs,
+		  # The nolock option can be useful for an NFSv3 client that wants to avoid the
+		  # NLM sideband protocol. Without this option, apt-get might hang if it tries
+		  # to lock files needed for /var/cache/* operations. All of this can be avoided
+		  # by using NFSv4 everywhere. Please note that the tcp option is not the default.
+		  mount_options: ['rw', 'vers=3', 'tcp', 'nolock']
+		}
+		# For more information please check http://docs.vagrantup.com/v2/synced-folders/basic_usage.html
+	  end
+
 	config.disksize.size = '128GB'
 	config.ssh.insert_key = false
 	config.ssh.private_key_path = ['~/.vagrant.d/insecure_private_key', 'vagrant-libs/ssh/insegura/neoricalex'] 
@@ -15,6 +35,8 @@ Vagrant.configure("2") do |config|
 	config.vm.synced_folder "./", "/vagrant", disabled: true
 	#config.vm.synced_folder "./", "/neoricalex", disabled: false, type: "rsync", rsync__auto: true, rsync__exclude: ['./vagrant-libs/base.box', './vagrant-libs/ssh/segura*']
 	config.vm.synced_folder "./", "/neoricalex", disabled: false
+
+	config.vm.network :public_network
 	config.vm.network :forwarded_port, guest: 22, host: 1234
 
 	config.vm.provider "virtualbox" do |vb|

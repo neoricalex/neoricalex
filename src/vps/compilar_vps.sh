@@ -231,6 +231,7 @@ then
 	vagrant plugin install vagrant-disksize # Só funciona no Virtualbox
 	vagrant plugin install vagrant-mutate
 	vagrant plugin install vagrant-bindfs
+	vagrant plugin install vagrant-cachier
 
 fi
 
