@@ -9,8 +9,6 @@ criar_vps(){
 		echo "==> Checkar se a box base com o Ubuntu - VPS_BASE - foi gerada..."
 		if [ ! -f "box/virtualbox/ubuntu-18.04-0.1.box" ];
 		then
-			pwd
-			exit
 			echo "==> Criando o VPS_BASE..."
 			cd box 
 			packer build ubuntu.json
