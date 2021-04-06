@@ -125,6 +125,21 @@ then
 		make \
 		unzip
 fi
+EOF
+
+			echo "==> Reiniciando o VPS_BASE..."
+			VAGRANT_VAGRANTFILE=Vagrantfile.VPS_BASE vagrant reload
+			VAGRANT_VAGRANTFILE=Vagrantfile.VPS_BASE vagrant ssh<<EOF
+#!/bin/bash
+
+echo "==> Remover entradas antigas do kernel na Grub..."
+# REF: https://askubuntu.com/questions/176322/removing-old-kernel-entries-in-grub
+sudo apt-get purge $( dpkg --list | grep -P -o "linux-image-\d\S+" | grep -v $(uname -r | grep -P -o ".+\d") ) -y
+EOF
+			echo "==> Reiniciando o VPS_BASE..."
+			VAGRANT_VAGRANTFILE=Vagrantfile.VPS_BASE vagrant reload
+			VAGRANT_VAGRANTFILE=Vagrantfile.VPS_BASE vagrant ssh<<EOF
+#!/bin/bash
 
 if ! command -v kvm-ok &> /dev/null;
 then
@@ -219,10 +234,6 @@ then
 
 fi
 
-echo "==> Remover entradas antigas do kernel na Grub..."
-# REF: https://askubuntu.com/questions/176322/removing-old-kernel-entries-in-grub
-sudo apt-get purge $( dpkg --list | grep -P -o "linux-image-\d\S+" | grep -v $(uname -r | grep -P -o ".+\d") ) -y
-
 echo "==> Removendo pacotes desnecessários"
 sudo apt autoremove -y
 
@@ -232,12 +243,10 @@ sudo apt update && sudo apt upgrade -y
 echo "O VPS_BASE foi provisionado com sucesso!"
 echo "Continuando..."
 EOF
-
-			echo "==> Reiniciando o VPS_BASE..."
+			echo "==> Reiniciando novamente o VPS_BASE."
 			VAGRANT_VAGRANTFILE=Vagrantfile.VPS_BASE vagrant reload
 			echo "==> Reiniciando novamente o VPS_BASE. (Certificar em como o Virtualbox não reclama...)"
 			VAGRANT_VAGRANTFILE=Vagrantfile.VPS_BASE vagrant reload
-
 			echo "==> Empacotando o VPS_BASE..."
 			vagrant package --base VPS_BASE --output vagrant-libs/base.box
 
