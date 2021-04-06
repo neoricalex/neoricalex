@@ -13,9 +13,7 @@ criar_vps(){
 			if [ -d "box/virtualbox" ]; then
 				rm -rf box/virtualbox
 			elif [ -d "box/packer_cache" ]; then
-				rm -rf box/packer_cache
-			elif vagrant box list | grep "neoricalex/ubuntu" > /dev/null; then
-				vagrant box remove neoricalex/ubuntu		
+				rm -rf box/packer_cache	
 			fi
 			
 			echo "==> Criando a box base com o Ubuntu: VPS_DEV..."
