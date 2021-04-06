@@ -239,10 +239,9 @@ sudo apt update && sudo apt upgrade -y
 echo "O VPS_BASE foi provisionado com sucesso!"
 echo "Continuando..."
 EOF
-			echo "==> Reiniciando novamente o VPS_BASE."
-			VAGRANT_VAGRANTFILE=Vagrantfile.VPS_BASE vagrant reload
-			echo "==> Reiniciando novamente o VPS_BASE. (Certificar em como o Virtualbox não reclama...)"
-			VAGRANT_VAGRANTFILE=Vagrantfile.VPS_BASE vagrant reload
+			echo "==> Reiniciando novamente o VPS_BASE. (\"Hard Reboot\")"
+			VAGRANT_VAGRANTFILE=Vagrantfile.VPS_BASE vagrant halt 
+			VAGRANT_VAGRANTFILE=Vagrantfile.VPS_BASE vagrant up
 			echo "==> Empacotando o VPS_BASE..."
 			vagrant package --base VPS_BASE --output vagrant-libs/base.box
 
@@ -284,10 +283,6 @@ then
 
 	echo -e "==> [ WORKAROUND ]: Instalar plugins do Vagrant. \n Não sei porquê, mas se colocarmos a instalação dos plugins nos requerimentos, eles de alguma forma, não ficam \"ativos\" \n"
 	vagrant plugin install vagrant-libvirt
-	vagrant plugin install vagrant-vbguest
-	#vagrant plugin install vagrant-disksize # Só funciona no Virtualbox
-	#vagrant plugin install vagrant-mutate
-	#vagrant plugin install vagrant-bindfs
 
 	echo -e "==> [ WORKAROUND ]: Certificar em como as permissões do KVM estão setadas. \n Não sei porquê, mas se setarmos as permissões nos requerimentos, elas de alguma forma, não ficam \"ativas\" \n"
 	sudo chown root:kvm /dev/kvm

@@ -48,6 +48,7 @@ instalar_requerimentos(){
             echo "==> Instalar plugins do Vagrant"
             vagrant plugin install vagrant-disksize # Só funciona no Virtualbox
             vagrant plugin install vagrant-vbguest
+            vagrant plugin install vagrant-cachier
 		fi
 
 		echo "==> Removendo pacotes do Ubuntu desnecessários"

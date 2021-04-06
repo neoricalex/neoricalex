@@ -3,6 +3,10 @@
 
 # TODO: Ver a lentidão do boot/reboot: https://bugs.launchpad.net/cloud-images/+bug/1874453
 
+if Vagrant.has_plugin?("vagrant-vbguest")
+    config.vbguest.auto_update = false  
+end
+
 Vagrant.configure("2") do |config|
 
 	config.vm.define "VPS_BASE"
