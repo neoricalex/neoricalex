@@ -16,10 +16,11 @@ criar_vps(){
 			elif [ -d "box/packer_cache" ];
 			then
 				rm -rf box/packer_cache
-			elif [ vagrant box list | grep "neoricalex/ubuntu" > /dev/null ];
+			elif vagrant box list | grep "neoricalex/ubuntu" > /dev/null;
 			then
 				vagrant box remove neoricalex/ubuntu		
 			fi
+			
 			echo "==> Criando o VPS_BASE..."
 			cd box 
 			packer build ubuntu.json

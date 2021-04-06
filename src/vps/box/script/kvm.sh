@@ -9,11 +9,6 @@ sudo apt install -y qemu-system qemu qemu-kvm qemu-utils qemu-block-extra \
 sudo usermod -aG kvm vagrant
 sudo usermod -aG libvirt vagrant
 
-sudo chown root:kvm /dev/kvm
-sudo chmod -R 660 /dev/kvm
-sudo udevadm control --reload-rules
-sudo systemctl restart libvirtd
-
 echo "==> Adicionar o grupo kvm"
 sudo groupadd kvm
 
@@ -32,7 +27,12 @@ sudo systemctl restart libvirtd.service
 
 echo "==> Habilitar o IPv4 e IPv6 forwarding"
 sudo sed -i "/net.ipv4.ip_forward=1/ s/# *//" /etc/sysctl.conf
-sudo sed -i "/net.ipv6.conf.all.forwarding=1/ s/# *//" /etc/sysctl.conf
+#sudo sed -i "/net.ipv6.conf.all.forwarding=1/ s/# *//" /etc/sysctl.conf
 
 echo "==> Aplicar as mudanças"
 sudo sysctl -p
+
+#sudo chown root:kvm /dev/kvm
+#sudo chmod -R 660 /dev/kvm
+#sudo udevadm control --reload-rules
+#sudo systemctl restart libvirtd
