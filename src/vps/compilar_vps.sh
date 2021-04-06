@@ -50,10 +50,10 @@ entrar_vps(){
 
 cd /neoricalex
 
-if ! vagrant plugin list | grep "vagrant-libvirt" > /dev/null;
+if ! sudo vagrant plugin list | grep "vagrant-libvirt" > /dev/null;
 then
 	echo -e "==> [ WORKAROUND ]: Instalar plugins do Vagrant. \n Não sei porquê, mas se colocarmos a instalação dos plugins nos requerimentos, eles de alguma forma, não ficam \"ativos\" \n"
-	vagrant plugin install vagrant-libvirt
+	#vagrant plugin install vagrant-libvirt
 	#vagrant plugin install vagrant-vbguest
 	#vagrant plugin install vagrant-disksize # Só funciona no Virtualbox
 	#vagrant plugin install vagrant-mutate
