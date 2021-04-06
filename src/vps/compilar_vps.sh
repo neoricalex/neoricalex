@@ -50,25 +50,56 @@ entrar_vps(){
 
 cd /neoricalex
 
+if ! command -v vboxmanage &> /dev/null;
+then
+	echo "==> Instalar o VirtualBox"
+	sudo apt update && sudo apt-get install virtualbox virtualbox-guest-dkms -y
+
+	echo "==> Instalar o Extension Pack do VirtualBox"
+	wget https://download.virtualbox.org/virtualbox/5.2.42/Oracle_VM_VirtualBox_Extension_Pack-5.2.42.vbox-extpack \
+		-q --show-progress \
+		--progress=bar:force:noscroll
+	sudo vboxmanage extpack install Oracle_VM_VirtualBox_Extension_Pack-5.2.42.vbox-extpack --accept-license=56be48f923303c8cababb0bb4c478284b688ed23f16d775d729b89a2e8e5f9eb # 6.1.16 --accept-license=33d7284dc4a0ece381196fda3cfe2ed0e1e8e7ed7f27b9a9ebc4ee22e24bd23c # 6.1.18 --accept-license=33d7284dc4a0ece381196fda3cfe2ed0e1e8e7ed7f27b9a9ebc4ee22e24bd23c
+	rm Oracle_VM_VirtualBox_Extension_Pack-5.2.42.vbox-extpack
+fi
+
+if ! command -v vagrant &> /dev/null;
+then
+	echo "==> Download Vagrant & Instalar"
+	wget -nv https://releases.hashicorp.com/vagrant/2.2.14/vagrant_2.2.14_x86_64.deb
+	sudo dpkg -i vagrant_2.2.14_x86_64.deb
+	rm vagrant_2.2.14_x86_64.deb
+
+	echo "==> Instalar requerimentos dos plugins do Vagrant"
+	sudo apt install -y \
+		ruby-dev ruby-libvirt libxslt-dev libxml2-dev zlib1g-dev libvirt-dev zlib1g-dev
+
+	vagrant plugin install vagrant-libvirt
+	#vagrant plugin install vagrant-vbguest
+	#vagrant plugin install vagrant-disksize # Só funciona no Virtualbox
+	#vagrant plugin install vagrant-mutate
+	#vagrant plugin install vagrant-bindfs
+	#vagrant plugin install vagrant-cachier
+fi
+
+if ! command -v packer &> /dev/null;
+then
+	echo "==> Instalar Packer"
+	sudo apt install -y wget unzip
+	wget https://releases.hashicorp.com/packer/1.6.4/packer_1.6.4_linux_amd64.zip
+	unzip packer_1.6.4_linux_amd64.zip
+	sudo mv packer /usr/local/bin 
+	rm packer_1.6.4_linux_amd64.zip
+fi
+
 #echo -e "==> [ WORKAROUND ]: Certificar em como as permissões do KVM estão setadas. \n Não sei porquê, mas se setarmos as permissões nos requerimentos, elas de alguma forma, não ficam \"ativas\" \n"
 #sudo chown root:kvm /dev/kvm
 #sudo chmod -R 660 /dev/kvm
 #sudo udevadm control --reload-rules
 #sudo systemctl restart libvirtd
 
-echo "==> Instalar o VirtualBox"
-sudo apt-get install virtualbox virtualbox-guest-dkms -y
-
-echo "==> Instalar o Extension Pack do VirtualBox"
-wget https://download.virtualbox.org/virtualbox/5.2.42/Oracle_VM_VirtualBox_Extension_Pack-5.2.42.vbox-extpack \
-	-q --show-progress \
-	--progress=bar:force:noscroll
-sudo vboxmanage extpack install Oracle_VM_VirtualBox_Extension_Pack-5.2.42.vbox-extpack --accept-license=56be48f923303c8cababb0bb4c478284b688ed23f16d775d729b89a2e8e5f9eb # 6.1.16 --accept-license=33d7284dc4a0ece381196fda3cfe2ed0e1e8e7ed7f27b9a9ebc4ee22e24bd23c # 6.1.18 --accept-license=33d7284dc4a0ece381196fda3cfe2ed0e1e8e7ed7f27b9a9ebc4ee22e24bd23c
-rm Oracle_VM_VirtualBox_Extension_Pack-5.2.42.vbox-extpack
-
 echo "Compilando o NFDOS..."
-# TODO: Retirar a necessidade do sudo 
-sudo make nfdos
+make nfdos
 
 cd ..
 EOF
