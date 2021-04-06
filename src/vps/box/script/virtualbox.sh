@@ -24,13 +24,13 @@ if [[ $PACKER_BUILDER_TYPE =~ virtualbox ]]; then
     fi
 
 	echo "==> Instalar o VirtualBox"
-	sudo apt-get update
-	sudo apt-get install virtualbox virtualbox-guest-dkms -y
+	apt-get update
+	apt-get install virtualbox virtualbox-guest-dkms -y
 
 	echo "==> Instalar o Extension Pack do VirtualBox"
 	wget https://download.virtualbox.org/virtualbox/5.2.42/Oracle_VM_VirtualBox_Extension_Pack-5.2.42.vbox-extpack \
 		-q --show-progress \
 		--progress=bar:force:noscroll
-	sudo vboxmanage extpack install Oracle_VM_VirtualBox_Extension_Pack-5.2.42.vbox-extpack --accept-license=56be48f923303c8cababb0bb4c478284b688ed23f16d775d729b89a2e8e5f9eb # 6.1.16 --accept-license=33d7284dc4a0ece381196fda3cfe2ed0e1e8e7ed7f27b9a9ebc4ee22e24bd23c # 6.1.18 --accept-license=33d7284dc4a0ece381196fda3cfe2ed0e1e8e7ed7f27b9a9ebc4ee22e24bd23c
+	vboxmanage extpack install Oracle_VM_VirtualBox_Extension_Pack-5.2.42.vbox-extpack --accept-license=56be48f923303c8cababb0bb4c478284b688ed23f16d775d729b89a2e8e5f9eb # 6.1.16 --accept-license=33d7284dc4a0ece381196fda3cfe2ed0e1e8e7ed7f27b9a9ebc4ee22e24bd23c # 6.1.18 --accept-license=33d7284dc4a0ece381196fda3cfe2ed0e1e8e7ed7f27b9a9ebc4ee22e24bd23c
 	rm Oracle_VM_VirtualBox_Extension_Pack-5.2.42.vbox-extpack
 fi

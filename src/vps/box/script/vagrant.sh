@@ -35,16 +35,13 @@ echo "${VAGRANT_INSECURE_KEY}" > $SSH_USER_HOME/.ssh/authorized_keys
 chmod 600 $SSH_USER_HOME/.ssh/authorized_keys
 chown -R $SSH_USER:$SSH_USER $SSH_USER_HOME/.ssh
 
-su - $SSH_USER
-cd $SSH_USER_HOME
-
 echo "==> Download Vagrant & Instalar"
 wget -nv https://releases.hashicorp.com/vagrant/2.2.14/vagrant_2.2.14_x86_64.deb
-sudo dpkg -i vagrant_2.2.14_x86_64.deb
+dpkg -i vagrant_2.2.14_x86_64.deb
 rm vagrant_2.2.14_x86_64.deb
 
 echo "==> Instalar requerimentos dos plugins do Vagrant"
-sudo apt install -y \
+apt install -y \
 	ruby-dev ruby-libvirt libxslt-dev libxml2-dev zlib1g-dev libvirt-dev zlib1g-dev
 
 vagrant plugin install vagrant-libvirt
@@ -53,3 +50,4 @@ vagrant plugin install vagrant-disksize # Só funciona no Virtualbox
 vagrant plugin install vagrant-mutate
 vagrant plugin install vagrant-bindfs
 vagrant plugin install vagrant-cachier
+

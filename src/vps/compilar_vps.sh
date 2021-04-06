@@ -52,6 +52,7 @@ entrar_vps(){
 #!/bin/bash
 
 cd /neoricalex
+$USER@$HOSTNAME
 
 if ! vagrant plugin list | grep "vagrant-libvirt" > /dev/null;
 then
