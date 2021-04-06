@@ -2,7 +2,7 @@
 
 criar_vps(){
 
-	echo "==> Checkar se a neoricalex/ubuntu existe..."
+	echo "==> Checkar se a box do Vagrant neoricalex/ubuntu existe..."
 	vps_dev=$(vagrant box list | grep "neoricalex/ubuntu" > /dev/null)
 	if [ $? == "1" ];
 	then
@@ -21,12 +21,12 @@ criar_vps(){
 				vagrant box remove neoricalex/ubuntu		
 			fi
 			
-			echo "==> Criando o VPS_BASE..."
+			echo "==> Criando a box base com o Ubuntu: VPS_DEV..."
 			cd box 
 			packer build ubuntu.json
 			cd ..
 		fi
-		echo "==> A box base com o Ubuntu já foi gerada."
+		echo "==> A box base do VPS_DEV já foi gerada."
 
 	fi
 
