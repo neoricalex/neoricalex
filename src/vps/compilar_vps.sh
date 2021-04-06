@@ -219,12 +219,6 @@ then
 	sudo vagrant plugin install vagrant-cachier
 
 fi
-EOF
-
-			echo "==> Reiniciando o VPS_BASE..."
-			VAGRANT_VAGRANTFILE=Vagrantfile.VPS_BASE vagrant reload
-			VAGRANT_VAGRANTFILE=Vagrantfile.VPS_BASE vagrant ssh<<EOF
-#!/bin/bash
 
 echo "==> Remover entradas antigas do kernel na Grub..."
 # REF: https://askubuntu.com/questions/176322/removing-old-kernel-entries-in-grub
@@ -239,9 +233,9 @@ sudo apt update && sudo apt upgrade -y
 echo "O VPS_BASE foi provisionado com sucesso!"
 echo "Continuando..."
 EOF
-			echo "==> Reiniciando novamente o VPS_BASE. (\"Hard Reboot\")"
-			VAGRANT_VAGRANTFILE=Vagrantfile.VPS_BASE vagrant halt 
-			VAGRANT_VAGRANTFILE=Vagrantfile.VPS_BASE vagrant up
+
+			echo "==> Reiniciando o VPS_BASE..."
+			VAGRANT_VAGRANTFILE=Vagrantfile.VPS_BASE vagrant reload
 			echo "==> Empacotando o VPS_BASE..."
 			vagrant package --base VPS_BASE --output vagrant-libs/base.box
 
