@@ -38,6 +38,16 @@ instalar_requerimentos(){
             rm Oracle_VM_VirtualBox_Extension_Pack-6.1.16.vbox-extpack 
 		fi
 
+        if ! command -v packer &> /dev/null;
+        then
+            echo "==> Instalar Packer"
+            sudo apt install -y wget unzip
+            wget https://releases.hashicorp.com/packer/1.6.4/packer_1.6.4_linux_amd64.zip
+            unzip packer_1.6.4_linux_amd64.zip
+            sudo mv packer /usr/local/bin 
+            rm packer_1.6.4_linux_amd64.zip
+        fi
+
 		if ! command -v vagrant &> /dev/null;
 		then
             echo "==> Download Vagrant & Instalar"
