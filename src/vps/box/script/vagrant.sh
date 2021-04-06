@@ -1,5 +1,21 @@
 #!/bin/bash -eu
 
+echo "==> Download Vagrant & Instalar"
+wget -nv https://releases.hashicorp.com/vagrant/2.2.14/vagrant_2.2.14_x86_64.deb
+sudo dpkg -i vagrant_2.2.14_x86_64.deb
+rm vagrant_2.2.14_x86_64.deb
+
+echo "==> Instalar requerimentos dos plugins do Vagrant"
+sudo apt install -y \
+	ruby-dev ruby-libvirt libxslt-dev libxml2-dev zlib1g-dev libvirt-dev zlib1g-dev
+
+vagrant plugin install vagrant-libvirt
+vagrant plugin install vagrant-vbguest
+vagrant plugin install vagrant-disksize # Só funciona no Virtualbox
+vagrant plugin install vagrant-mutate
+vagrant plugin install vagrant-bindfs
+vagrant plugin install vagrant-cachier
+
 date > /etc/box_build_time
 
 SSH_USER=${SSH_USERNAME:-vagrant}

@@ -3,6 +3,19 @@
 SSH_USER=${SSH_USERNAME:-vagrant}
 
 if [[ $PACKER_BUILDER_TYPE =~ virtualbox ]]; then
+
+	echo "==> Instalar o VirtualBox"
+	sudo apt-get update
+	sudo apt-get install virtualbox -y
+
+	echo "==> Instalar o Extension Pack do VirtualBox"
+	wget https://download.virtualbox.org/virtualbox/6.1.16/Oracle_VM_VirtualBox_Extension_Pack-6.1.16.vbox-extpack \
+		-q --show-progress \
+		--progress=bar:force:noscroll
+	sudo vboxmanage extpack install Oracle_VM_VirtualBox_Extension_Pack-6.1.16.vbox-extpack --accept-license=33d7284dc4a0ece381196fda3cfe2ed0e1e8e7ed7f27b9a9ebc4ee22e24bd23c # 6.1.18 --accept-license=33d7284dc4a0ece381196fda3cfe2ed0e1e8e7ed7f27b9a9ebc4ee22e24bd23c
+	rm Oracle_VM_VirtualBox_Extension_Pack-6.1.16.vbox-extpack
+
+
     echo "==> Installing VirtualBox guest additions"
     # Assuming the following packages are installed
     # apt-get install -y linux-headers-$(uname -r) build-essential perl

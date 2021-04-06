@@ -9,6 +9,17 @@ criar_vps(){
 		echo "==> Checkar se a box base com o Ubuntu foi gerada..."
 		if [ ! -f "box/virtualbox/ubuntu-18.04-0.1.box" ];
 		then
+
+			if [ -d "box/virtualbox" ];
+			then
+				rm -rf box/virtualbox
+			elif [ -d "box/packer_cache" ];
+			then
+				rm -rf box/packer_cache
+			elif [ vagrant box list | grep "neoricalex/ubuntu" > /dev/null ];
+			then
+				vagrant box remove neoricalex/ubuntu		
+			fi
 			echo "==> Criando o VPS_BASE..."
 			cd box 
 			packer build ubuntu.json

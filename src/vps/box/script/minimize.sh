@@ -4,7 +4,7 @@
 echo "==> Configuring locales"
 apt-get -y purge language-pack-en language-pack-gnome-en
 sed -i '/^[^# ]/s/^/# /' /etc/locale.gen
-LANG=en_US.UTF-8
+LANG=pt_BR.UTF-8
 LC_ALL=$LANG
 locale-gen --purge $LANG
 update-locale LANG=$LANG LC_ALL=$LC_ALL
