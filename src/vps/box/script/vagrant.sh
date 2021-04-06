@@ -48,3 +48,9 @@ echo "==> Instalar requerimentos dos plugins do Vagrant"
 apt install -y \
 	ruby-dev ruby-libvirt libxslt-dev libxml2-dev zlib1g-dev libvirt-dev zlib1g-dev
 
+vagrant plugin install vagrant-libvirt
+vagrant plugin install vagrant-vbguest
+vagrant plugin install vagrant-disksize # Só funciona no Virtualbox
+vagrant plugin install vagrant-mutate
+vagrant plugin install vagrant-bindfs
+vagrant plugin install vagrant-cachier
