@@ -35,6 +35,7 @@
         "ssh_username": "{{user `ssh_username`}}",
         "ssh_wait_timeout": "10000s",
         "type": "virtualbox-iso",
+		"name": "VPS_DEV",
         "vboxmanage": [
             ["modifyvm", "{{.Name}}", "--audio", "none"],
             ["modifyvm", "{{.Name}}", "--usb", "off"],
