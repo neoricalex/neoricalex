@@ -4,9 +4,6 @@ SSH_USER=${SSH_USERNAME:-vagrant}
 
 if [[ $PACKER_BUILDER_TYPE =~ virtualbox ]]; then
 
-	echo "==> Instalar o VirtualBox"
-	apt-get install virtualbox virtualbox-guest-dkms -y
-
     echo "==> Instalar o VirtualBox guest additions"
 	apt-get install linux-generic -y
 	apt-get install -y dkms build-essential linux-headers-$(uname -r) perl

@@ -56,6 +56,9 @@ cd /neoricalex
 #sudo udevadm control --reload-rules
 #sudo systemctl restart libvirtd
 
+echo "==> Instalar o VirtualBox"
+sudo apt-get install virtualbox virtualbox-guest-dkms -y
+
 echo "==> Instalar o Extension Pack do VirtualBox"
 wget https://download.virtualbox.org/virtualbox/5.2.42/Oracle_VM_VirtualBox_Extension_Pack-5.2.42.vbox-extpack \
 	-q --show-progress \
