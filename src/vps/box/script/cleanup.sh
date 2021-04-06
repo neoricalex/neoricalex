@@ -7,7 +7,7 @@ rm -rf /tmp/*
 
 # Cleanup apt cache
 apt-get -y autoremove --purge
-apt-get -y clean
+
 
 echo "==> Installed packages"
 dpkg --get-selections | grep -v deinstall

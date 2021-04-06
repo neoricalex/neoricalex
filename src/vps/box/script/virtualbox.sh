@@ -7,9 +7,7 @@ if [[ $PACKER_BUILDER_TYPE =~ virtualbox ]]; then
     echo "==> Instalar o VirtualBox guest additions"
 	apt-get install linux-generic -y
 	apt-get install -y dkms build-essential linux-headers-$(uname -r) perl
-	apt-get install -y binutils gcc make patch libgomp glibc-headers glibc-devel kernel-headers
-	apt-get install -y kernel-devel
-	apt-get install -y kernel-pae-devel
+	apt-get install -y binutils gcc make patch
 
     VBOX_VERSION=$(cat /home/${SSH_USER}/.vbox_version)
     mount -o loop /home/${SSH_USER}/VBoxGuestAdditions_$VBOX_VERSION.iso /mnt

@@ -20,14 +20,13 @@ instalar_requerimentos(){
 		if ! command -v vboxmanage &> /dev/null;
 		then
             echo "==> Instalar o VirtualBox"
-
-            sudo apt install -y build-essential linux-headers-$(uname -r)
-            echo "deb [arch=amd64] https://download.virtualbox.org/virtualbox/debian focal contrib" | sudo tee /etc/apt/sources.list.d/virtualbox.list
-            wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -
-            wget -q https://www.virtualbox.org/download/oracle_vbox.asc -O- | sudo apt-key add -
             sudo apt-get update
+            sudo apt install -y linux-generic -y
+            sudo apt install -y dkms build-essential linux-headers-$(uname -r) perl
+            sudo apt install -y binutils gcc make patch
+            sudo apt install -y build-essential linux-headers-$(uname -r)
             sudo apt install -y virtualbox
-            #sudo apt install -y virtualbox-guest-dkms #virtualbox-guest-x11
+            sudo apt install -y virtualbox-guest-dkms virtualbox-guest-x11
             sudo apt install -y virtualbox-guest-additions-iso
 
             echo "==> Instalar o Extension Pack do VirtualBox"
