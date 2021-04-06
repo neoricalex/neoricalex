@@ -1,9 +1,26 @@
 #!/bin/bash -eu
 
-# Reduce installed languages to just "en_US"
-echo "==> Configuring locales"
-apt-get -y purge language-pack-en language-pack-gnome-en
-sed -i '/^[^# ]/s/^/# /' /etc/locale.gen
+echo "==> Instalar os pacotes em Português"
+apt install -y \
+	language-pack-pt \
+	language-pack-pt-base
+
+echo "==> Remover os pacotes com idioma EN"
+apt purge -y language-pack-en \
+    language-pack-en-base \
+    language-pack-gnome-en \
+    language-pack-gnome-en-base
+
+echo -e "$inicio_cor ==> Instalando o idioma Português $fim_cor"
+echo "America/Sao_Paulo" > /etc/timezone && \
+	dpkg-reconfigure -f noninteractive tzdata && \
+	locale-gen --purge pt_BR.UTF-8 && \
+	sed -i -e 's/# pt_BR.UTF-8 UTF-8/pt_BR.UTF-8 UTF-8/' /etc/locale.gen && \
+	echo 'LANG="pt_BR.UTF-8"\nLANGUAGE="pt_BR:pt"\n'>/etc/default/locale && \
+	dpkg-reconfigure --frontend=noninteractive locales && \
+	update-locale LANG=pt_BR.UTF-8 LANGUAGE=pt_BR
+
+echo "==> Gerar o idioma pt_BR"
 LANG=pt_BR.UTF-8
 LC_ALL=$LANG
 locale-gen --purge $LANG
