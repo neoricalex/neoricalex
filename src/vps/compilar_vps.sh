@@ -73,11 +73,13 @@ then
 		ruby-dev ruby-libvirt libxslt-dev libxml2-dev zlib1g-dev libvirt-dev zlib1g-dev
 
 	vagrant plugin install vagrant-libvirt
-	#vagrant plugin install vagrant-vbguest
+	vagrant plugin install vagrant-vbguest
 	#vagrant plugin install vagrant-disksize # Só funciona no Virtualbox
 	#vagrant plugin install vagrant-mutate
-	#vagrant plugin install vagrant-bindfs
-	#vagrant plugin install vagrant-cachier
+	vagrant plugin install vagrant-bindfs
+	vagrant plugin install vagrant-cachier
+	vagrant plugin install landrush
+	
 fi
 
 if ! command -v packer &> /dev/null;
@@ -130,10 +132,10 @@ then
 	sudo systemctl restart libvirtd
 fi
 
-#vagrant destroy -f
-#vagrant box remove neoricalex/nfdos
-#virsh vol-delete --pool default neoricalex-VAGRANTSLASH-nfdos_vagrant_box_image_0.img
-#virsh vol-delete --pool default NEORICALEX_NFDOS-vdb.qcow2
+vagrant destroy -f
+vagrant box remove neoricalex/nfdos
+virsh vol-delete --pool default neoricalex-VAGRANTSLASH-nfdos_vagrant_box_image_0.img
+virsh vol-delete --pool default NEORICALEX_NFDOS-vdb.qcow2
 
 echo "Compilando o NFDOS..."
 make nfdos

@@ -55,10 +55,13 @@ instalar_requerimentos(){
             rm vagrant_2.2.14_x86_64.deb
 
             echo "==> Instalar plugins do Vagrant"
-            vagrant plugin install vagrant-disksize # Só funciona no Virtualbox
-            vagrant plugin install vagrant-vbguest
-            vagrant plugin install vagrant-cachier
             vagrant plugin install vagrant-libvirt
+            vagrant plugin install vagrant-vbguest
+            vagrant plugin install vagrant-disksize # Só funciona no Virtualbox
+            #vagrant plugin install vagrant-mutate
+            vagrant plugin install vagrant-bindfs
+            vagrant plugin install vagrant-cachier
+            vagrant plugin install landrush
 		fi
 
 		echo "==> Removendo pacotes do Ubuntu desnecessários"

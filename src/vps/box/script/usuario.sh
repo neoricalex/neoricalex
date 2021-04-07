@@ -16,7 +16,7 @@ chmod 440 /etc/sudoers.d/$USUARIO_SSH
 
 HOME_USUARIO_SSH=${HOME_USUARIO_SSH:-/home/${USUARIO_SSH}}
 
-echo "==> Installing vagrant key"
+echo "==> Instalar a Chave SSH Pública do Vagrant"
 mkdir $HOME_USUARIO_SSH/.ssh
 chmod 700 $HOME_USUARIO_SSH/.ssh
 cd $HOME_USUARIO_SSH/.ssh

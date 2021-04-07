@@ -58,26 +58,26 @@ sudo apt-get autoremove -y
 sudo apt-get autoclean -y
 sudo apt-get autopurge -y
 
-# Remove some packages to get a minimal install
-echo "==> Removing all linux kernels except the currrent one"
+echo "==> Remover todos os núcleos do linux excepto o que está a ser usado"
 dpkg --list 'linux-*' | sed '/^ii/!d;/'"$(uname -r | sed "s/\(.*\)-\([^0-9]\+\)/\1/")"'/d;s/^[^ ]* [^ ]* \([^ :]*\).*/\1/;/[0-9]/!d' | xargs apt-get -y purge
-echo "==> Removing linux source"
+
+echo "==> Remover o linux-source"
 dpkg --list | awk '{print $2}' | grep linux-source | xargs apt-get -y purge
-echo "==> Removing documentation"
+
+echo "==> Remover a documentação"
 dpkg --list | awk '{print $2}' | grep -- '-doc$' | xargs apt-get -y purge
 
-#echo "==> Removing X11 libraries"
 #apt-get -y purge libx11-data xauth libxmuu1 libxcb1 libx11-6 libxext6 libxau6 libxdmcp6
-#echo "==> Removing other oddities"
 #apt-get -y purge accountsservice bind9-host busybox-static command-not-found command-not-found-data \
 #    dmidecode dosfstools friendly-recovery geoip-database hdparm info install-info installation-report \
 #    iso-codes krb5-locales language-selector-common laptop-detect lshw mlocate mtr-tiny nano \
 #    ncurses-term nplan ntfs-3g os-prober parted pciutils plymouth popularity-contest powermgmt-base \
 #    publicsuffix python-apt-common shared-mime-info ssh-import-id \
 #    tasksel tcpdump ufw ureadahead usbutils uuid-runtime xdg-user-dirs
+echo "==> Auto-Limpeza"
 apt-get -y autoremove --purge
 
-# Clean up orphaned packages with deborphan
+echo "==> Limpar os pacotes orfãos com o deborphan"
 apt-get -y install --no-install-recommends deborphan
 deborphan --find-config | xargs apt-get -y purge
 while [ -n "$(deborphan --guess-all)" ]; do
@@ -85,11 +85,11 @@ while [ -n "$(deborphan --guess-all)" ]; do
 done
 apt-get -y purge deborphan
 
-# Clean up the apt cache
+echo "==> Limpar o cache do APT"
 apt-get -y autoremove --purge
 apt-get -y clean
 
-echo "==> Removing APT files"
+echo "==> Remover os arquivos do APT"
 find /var/lib/apt -type f -exec rm -rf {} \;
-echo "==> Removing caches"
+echo "==> Remover o cache"
 find /var/cache -type f -exec rm -rf {} \;

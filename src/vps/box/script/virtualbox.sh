@@ -4,7 +4,7 @@ USUARIO_SSH=${SSH_USERNAME:-vagrant}
 
 if [[ $PACKER_BUILDER_TYPE =~ virtualbox ]]; then
 
-    echo "==> Instalar o VirtualBox guest additions"
+    echo "==> Instalar o guest additions do VirtualBox"
     VBOX_VERSION=$(cat /home/${USUARIO_SSH}/.vbox_version)
     mount -o loop /home/${USUARIO_SSH}/VBoxGuestAdditions_$VBOX_VERSION.iso /mnt
     yes|sh /mnt/VBoxLinuxAdditions.run

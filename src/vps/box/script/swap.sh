@@ -1,9 +1,10 @@
 #!/bin/bash
 
 if [ ! -f "/swapfile" ]; then
-	fallocate -l 4G /swapfile
 
-	chmod 600 /swapfile
+	fallocate -l 4G /swapfile
+	chown root:root /swapfile
+	chmod 0600 /swapfile
 	mkswap /swapfile
 	swapon /swapfile
 

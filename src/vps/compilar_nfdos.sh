@@ -154,6 +154,7 @@ entrar_vps(){
 
 echo ""
 echo "O NFDOS foi compilado com Sucesso!"
+exit
 # TODO: https://www.howtogeek.com/104708/how-to-customize-ubuntus-message-of-the-day/
 
 sudo chown -R neo:neo /var/lib/neoricalex

@@ -1,5 +1,5 @@
 {
-    "_comment": "Build with `packer build ubuntu.json`",
+    "_comment": "N/A",
     "builders": [{
         "boot_command": [
             "<esc><esc><enter><wait>",
@@ -72,8 +72,9 @@
 			"script/usuario.sh",
             "script/atualizar.sh",
 			"script/instalar_pacotes.sh",
-			"script/virtualbox.sh"
-
+			"script/virtualbox.sh",
+			"script/motd.sh",
+			"script/limpeza.sh"
         ],
         "type": "shell"
     }],
