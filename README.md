@@ -126,7 +126,7 @@ Gostou da ideia?
 
 Nesta primeira fase vamos mitigar ao máximo quaisquer danos no computador fisico que usamos em nosso dia-a-dia, e vamos criar uma box do vagrant. Para nós, esta box está referenciada na CLI como *VPS_DEV*.
 
-* [ ] Criar uma box via o Vagrant Cloud com o Ubuntu 18.04 LTS
+* [ ] Criar uma box com o Ubuntu 18.04 LTS
   * [x] Provisionar com pacotes de desenvolvimento (Linux headers, build-essentials, etc...)
   * [ ] Empacotar e enviar a box para a Vagrant Cloud ficando acessivel via [neoricalex/ubuntu](https://app.vagrantup.com/neoricalex/boxes/ubuntu)
 
@@ -166,7 +166,7 @@ Ao final da primeira fase ficaremos com:
 * Uma imagem OVF localizada em: *src/vps/nfdos/desktop/vagrant/virtualbox/NFDOS.ovf*
 * Uma imagem BOX para o provider libvirt do Vagrant localizada em: *src/vps/nfdos/desktop/vagrant/libvirt/NFDOS-x.x.x.box*
 * Uma imagem BOX para o provider virtualbox do Vagrant localizada em: *src/vps/nfdos/desktop/vagrant/virtualbox/NFDOS-x.x.x.box*
-* Um VPS ou Box do Vagrant identificado na CLI como VPS_DEV dísponivel online via a Vagrant Cloud no endereço: *neoricalex/ubuntu* e localmente em: *src/vps/box/virtualbox/ubuntu-18.04-0.1.box*
+* Um VPS ou Box do Vagrant identificado na CLI como VPS_DEV dísponivel online via a Vagrant Cloud no endereço: *neoricalex/ubuntu* e localmente em: *src/vps/box/virtualbox/VPS_DEV-x.x.box*
   * Dentro do VPS_DEV:
     * Um VPS do Vagrant para o provider virtualbox com o NFDOS instalado
       * Será usado como VPS de Staging Local

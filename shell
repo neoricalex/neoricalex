@@ -35,7 +35,6 @@ instalar_requerimentos(){
 
             #sudo apt install -y virtualbox-guest-dkms virtualbox-guest-x11
             #sudo apt install -y virtualbox-guest-additions-iso
-            sudo modprobe vboxdrv
 		fi
 
         if ! command -v packer &> /dev/null;
@@ -59,6 +58,7 @@ instalar_requerimentos(){
             vagrant plugin install vagrant-disksize # Só funciona no Virtualbox
             vagrant plugin install vagrant-vbguest
             vagrant plugin install vagrant-cachier
+            vagrant plugin install vagrant-libvirt
 		fi
 
 		echo "==> Removendo pacotes do Ubuntu desnecessários"
