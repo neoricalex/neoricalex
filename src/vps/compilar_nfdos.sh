@@ -232,6 +232,9 @@ git commit -m "Atualização automática via NFDOS"
 ENTRAR_VPS
 }
 
+vagrant status
+exit
+
 if vagrant status | grep "not created" > /dev/null;
 then
 
@@ -244,7 +247,6 @@ then
 	compilar_iso
 
 	echo "==> Adicionar a box neoricalex/nfdos ao Vagrant..."
-	vagrant destroy -f
 	vagrant box add \
 		--name neoricalex/nfdos \
 		--provider $VERSAO_BOX_VAGRANT \
@@ -258,12 +260,12 @@ then
 
 elif vagrant status | grep "is running" > /dev/null;
 then
-	vagrant destroy -f
+
 	entrar_vps
 
 elif vagrant status | grep "shutoff" > /dev/null;
 then
-	vagrant destroy -f
+
 	vagrant up --provider $VERSAO_BOX_VAGRANT
 	entrar_vps
 
