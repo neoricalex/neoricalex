@@ -106,12 +106,12 @@ apt-get -y autoremove --purge
 apt-get -y clean
 
 # Disable IPv6
-if [[ $DISABLE_IPV6 =~ true || $DISABLE_IPV6 =~ 1 || $DISABLE_IPV6 =~ yes ]]; then
-    echo "==> Disabling IPv6"
-    sed -i -e 's/^GRUB_CMDLINE_LINUX=.*/GRUB_CMDLINE_LINUX="ipv6.disable=1"/' \
-        /etc/default/grub
+#if [[ $DISABLE_IPV6 =~ true || $DISABLE_IPV6 =~ 1 || $DISABLE_IPV6 =~ yes ]]; then
+#    echo "==> Disabling IPv6"
+#    sed -i -e 's/^GRUB_CMDLINE_LINUX=.*/GRUB_CMDLINE_LINUX="ipv6.disable=1"/' \
+#        /etc/default/grub
     #update-grub
-fi
+#fi
 
 # Remove grub timeout and splash screen
 sed -i -e '/^GRUB_TIMEOUT=/aGRUB_RECORDFAIL_TIMEOUT=0' \
@@ -120,7 +120,7 @@ sed -i -e '/^GRUB_TIMEOUT=/aGRUB_RECORDFAIL_TIMEOUT=0' \
 update-grub
 
 # SSH tweaks
-echo "UseDNS no" >> /etc/ssh/sshd_config
+#echo "UseDNS no" >> /etc/ssh/sshd_config
 
 # reboot
 echo "====> Shutting down the SSHD service and rebooting..."

@@ -119,7 +119,7 @@ then
 
 	echo "==> Habilitar o IPv4 e IPv6 forwarding"
 	sudo sed -i "/net.ipv4.ip_forward=1/ s/# *//" /etc/sysctl.conf
-	#sudo sed -i "/net.ipv6.conf.all.forwarding=1/ s/# *//" /etc/sysctl.conf
+	sudo sed -i "/net.ipv6.conf.all.forwarding=1/ s/# *//" /etc/sysctl.conf
 
 	echo "==> Aplicar as mudanças"
 	sudo sysctl -p
