@@ -96,6 +96,7 @@ fi
 #sudo udevadm control --reload-rules
 #sudo systemctl restart libvirtd
 
+vagrant destroy -f
 vagrant status
 exit
 
