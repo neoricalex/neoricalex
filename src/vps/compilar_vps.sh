@@ -96,8 +96,11 @@ fi
 #sudo udevadm control --reload-rules
 #sudo systemctl restart libvirtd
 
-echo "Compilando o NFDOS..."
-make nfdos
+vagrant status
+exit
+
+#echo "Compilando o NFDOS..."
+#make nfdos
 
 cd ..
 EOF

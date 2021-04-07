@@ -232,8 +232,6 @@ git commit -m "Atualização automática via NFDOS"
 ENTRAR_VPS
 }
 
-vagrant status
-exit
 
 if vagrant status | grep "not created" > /dev/null;
 then
