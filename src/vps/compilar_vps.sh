@@ -108,6 +108,7 @@ then
 
 	echo "==> Adicionar o usuário vagrant ao grupo kvm"
 	sudo usermod -aG kvm vagrant
+	sudo adduser vagrant kvm
 
 	echo "==> Adicionar o usuário vagrant ao grupo libvirt"
 	sudo usermod -aG libvirt vagrant
@@ -132,6 +133,7 @@ then
 	sudo systemctl restart libvirtd
 fi
 
+echo "==> [ DEBUG ] Certificando em como estamos em uma instalação limpa..."
 vagrant destroy -f
 vagrant box remove neoricalex/nfdos
 virsh vol-delete --pool default neoricalex-VAGRANTSLASH-nfdos_vagrant_box_image_0.img

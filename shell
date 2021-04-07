@@ -22,8 +22,8 @@ instalar_requerimentos(){
             echo "==> Instalar o VirtualBox"
             sudo apt-get update
             sudo apt install -y linux-generic -y
-            sudo apt install -y dkms build-essential linux-headers-$(uname -r) perl
-            sudo apt install -y binutils gcc make patch libssl-dev
+            sudo apt install -y dkms linux-headers-$(uname -r) perl
+            sudo apt install -y binutils gcc patch libssl-dev
             sudo apt install -y virtualbox virtualbox-dkms
 
             echo "==> Instalar o Extension Pack do VirtualBox"
