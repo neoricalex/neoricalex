@@ -67,7 +67,7 @@ entrar_vps(){
 
 echo ""
 echo "O NFDOS foi compilado com Sucesso!"
-exit
+
 # TODO: https://www.howtogeek.com/104708/how-to-customize-ubuntus-message-of-the-day/
 
 sudo chown -R neo:neo /var/lib/neoricalex
@@ -76,6 +76,7 @@ cd /var/lib/neoricalex
 echo "Executar o ansible..."
 ansible-pull -i src/vps/nfdos/desktop/ansible/inventory.ini -C master -U https://github.com/neoricalex/neoricalex.git src/vps/nfdos/desktop/ansible/local.yml 
 
+exit
 # TODO: Passar para o Ansible ...
 
 # Wireguard:
