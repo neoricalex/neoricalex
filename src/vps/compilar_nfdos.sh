@@ -236,11 +236,11 @@ ENTRAR_VPS
 if vagrant status | grep "not created" > /dev/null;
 then
 
-	#echo -e "==> [ WORKAROUND ]: Certificar em como as permissões do KVM estão setadas. \n Não sei porquê, mas se setarmos as permissões nos requerimentos, elas de alguma forma, não ficam \"ativas\" \n"
-	#sudo chown root:kvm /dev/kvm
-	#sudo chmod -R 660 /dev/kvm
-	#sudo udevadm control --reload-rules
-	#sudo systemctl restart libvirtd
+	echo -e "==> [ WORKAROUND ]: Certificar em como as permissões do KVM estão setadas. \n Não sei porquê, mas se setarmos as permissões nos requerimentos, elas de alguma forma, não ficam \"ativas\" \n"
+	sudo chown root:kvm /dev/kvm
+	sudo chmod -R 660 /dev/kvm
+	sudo udevadm control --reload-rules
+	sudo systemctl restart libvirtd
 
 	compilar_iso
 
