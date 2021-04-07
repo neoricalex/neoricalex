@@ -100,6 +100,7 @@ vagrant destroy -f NFDOS
 vagrant box remove neoricalex/nfdos
 virsh vol-delete --pool default neoricalex-VAGRANTSLASH-nfdos_vagrant_box_image_0.img
 virsh vol-delete --pool default NEORICALEX_NFDOS-vdb.qcow2
+vboxmanage unregistervm NFDOS --delete
 virsh vol-list default
 vagrant status
 exit
