@@ -102,6 +102,6 @@
         "vagrantfile_template": "",
         "version": "0.1",
         "virtualbox_guest_os_type": "Ubuntu_64",
-        "vm_name": "ubuntu-18.04"
+        "vm_name": "VPS_DEV"
     }
 }
