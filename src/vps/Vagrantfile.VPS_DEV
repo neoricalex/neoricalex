@@ -3,11 +3,6 @@
 
 Vagrant.configure("2") do |config|
 
-	config.vm.define "VPS_DEV"
-	config.vm.box = "neoricalex/ubuntu"
-	#config.vm.box_version = "0.0.6"
-	#config.vm.box_url = "#{Dir.pwd}/.vagrant-libs/metadata.json" 
-
 	#if Vagrant.has_plugin?("vagrant-cachier")
 		# Configure cached packages to be shared between instances of the same base box.
 		# More info on http://fgrehm.viewdocs.io/vagrant-cachier/usage
@@ -27,23 +22,30 @@ Vagrant.configure("2") do |config|
 		# For more information please check http://docs.vagrantup.com/v2/synced-folders/basic_usage.html
 	  #end
 
+	config.vm.define "VPS_DEV"
+	config.vm.box = "neoricalex/ubuntu"
+	#config.vm.box_version = "0.0.6"
+	#config.vm.box_url = "#{Dir.pwd}/.vagrant-libs/metadata.json" 
 	config.disksize.size = '128GB'
 	config.ssh.insert_key = false
 	config.ssh.private_key_path = ['~/.vagrant.d/insecure_private_key', 'vagrant-libs/ssh/insegura/neoricalex'] 
-	config.vm.provision "file", source: "vagrant-libs/ssh/insegura/neoricalex.pub", destination: "~/.ssh/authorized_keys"
 
-	config.vm.synced_folder "./", "/vagrant", disabled: true
-	#config.vm.synced_folder "./", "/neoricalex", disabled: false, type: "rsync", rsync__auto: true, rsync__exclude: ['./vagrant-libs/base.box', './vagrant-libs/ssh/segura*']
-	#config.vm.synced_folder "./", "/neoricalex", disabled: false, type: "nfs", mount_options: ['rw', 'vers=3', 'tcp'], linux__nfs_options: ['rw','no_subtree_check','all_squash','async']
-	config.vm.synced_folder "./", "/neoricalex", disabled: false, type: "rsync", rsync__exclude: ['./box', './vagrant-libs/ssh/segura']
-	
     config.vm.network "forwarded_port", guest: 22, host: 2222
     #config.vm.network "public_network", ip: "192.168.1.108", bridge: "virbr0"
     #config.vm.network "private_network", type: "dhcp"	
 
+	config.vm.synced_folder "./", "/vagrant", disabled: true
+	#config.vm.synced_folder "./", "/neoricalex", disabled: false, type: "nfs", mount_options: ['rw', 'vers=3', 'tcp'], linux__nfs_options: ['rw','no_subtree_check','all_squash','async']
+	config.vm.synced_folder "./", "/neoricalex", disabled: false, type: "rsync", 
+		rsync__exclude: ['./box', './vagrant-libs/ssh/segura'],
+		rsync__auto: true
+
+	config.vm.provision "file", source: "vagrant-libs/ssh/insegura/neoricalex.pub", destination: "~/.ssh/authorized_keys"
+	
 	config.vm.provider "virtualbox" do |vb|
 		# REF: https://docs.oracle.com/en/virtualization/virtualbox/6.0/user/vboxmanage-modifyvm.html
 		vb.customize ["modifyvm", :id, "--ioapic", "on"]
+		vb.customize ["modifyvm", :id, "--chipset", "ich9"] # piix3
 		vb.customize ["modifyvm", :id, "--graphicscontroller", "vmsvga"]
 		vb.customize ["modifyvm", :id, "--rtcuseutc", "on"]
 		vb.customize ["modifyvm", :id, "--nested-hw-virt", "on"]
