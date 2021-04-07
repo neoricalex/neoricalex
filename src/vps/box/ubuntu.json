@@ -69,10 +69,9 @@
         "expect_disconnect": true,
         "scripts": [
             "script/update.sh",
-			"script/nfdos.sh",
+			"script/instalar_pacotes.sh",
             "script/vagrant.sh",
             "script/virtualbox.sh",
-			"script/kvm.sh",
             "script/motd.sh",
             "script/minimize.sh",
             "script/cleanup.sh"
