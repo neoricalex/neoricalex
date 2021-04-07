@@ -240,11 +240,11 @@ then
 	#sudo chmod -R 660 /dev/kvm
 	#sudo udevadm control --reload-rules
 	#sudo systemctl restart libvirtd
-	vagrant destroy -f --provider $VERSAO_BOX_VAGRANT
 
 	compilar_iso
 
 	echo "==> Adicionar a box neoricalex/nfdos ao Vagrant..."
+	vagrant box remove neoricalex/nfdos
 	vagrant box add \
 		--name neoricalex/nfdos \
 		--provider $VERSAO_BOX_VAGRANT \
