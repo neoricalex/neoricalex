@@ -36,7 +36,7 @@ criar_vps(){
 	echo "==> A neoricalex/ubuntu já existe."
 	
 	echo "==> Provisionando o VPS_DEV..."
-	VAGRANT_VAGRANTFILE=Vagrantfile.VPS_DEV vagrant up
+	VAGRANT_VAGRANTFILE=Vagrantfile.VPS_DEV vagrant up 
 	echo "==> Reiniciando o VPS_DEV para as configurações ficarem ativas..."
 	VAGRANT_VAGRANTFILE=Vagrantfile.VPS_DEV vagrant reload
 }

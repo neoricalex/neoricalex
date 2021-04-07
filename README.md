@@ -150,14 +150,10 @@ Depois de termos uma box para trabalhar - [neoricalex/ubuntu](https://app.vagran
     * [ ] Criar duas imagens BOX do Vagrant, uma para o provider virtualbox, outra para o provider libvirt, e ambas com o NFDOS instalado (*NFDOS-x.x.x.box*)
       * [x] BOX para o Virtualbox
         * [x] Gerar a imagem de disco .vmdk com o NFDOS instalado (*src/vps/nfdos/desktop/vagrant/virtualbox/NFDOS-disk001.vmdk*)
-          * [x] Arrancar via *src/vps/nfdos/core/nfdos.iso*
-          * [x] Instalar o NFDOS
         * [x] Gerar o arquivo .ovf (*src/vps/nfdos/desktop/vagrant/virtualbox/NFDOS.ovf*)
         * [x] Gerar a *src/vps/nfdos/desktop/vagrant/virtualbox/NFDOS-x.x.x.box*
       * [ ] BOX para o Libvirt
         * [x] Gerar a *src/vps/nfdos/desktop/vagrant/libvirt/NFDOS-x.x.x.box*
-          * [x] Arrancar via *src/vps/nfdos/core/nfdos.iso*
-          * [x] Instalar o NFDOS
         * [ ] Enviar a box para a Vagrant Cloud ficando acessivel via *neoricalex/nfdos*. (Esta box será também a usada pelo Travis)
 
 Ao final da primeira fase ficaremos com:

@@ -27,6 +27,7 @@ instalar_requerimentos(){
             sudo apt install -y virtualbox 
             sudo apt install -y virtualbox-dkms
             sudo modprobe vboxdrv
+            sudo modprobe vboxnetflt
 
             echo "==> Instalar o Extension Pack do VirtualBox"
             wget https://download.virtualbox.org/virtualbox/6.1.16/Oracle_VM_VirtualBox_Extension_Pack-6.1.16.vbox-extpack \
