@@ -117,7 +117,7 @@ elif VAGRANT_VAGRANTFILE=Vagrantfile.VPS_DEV vagrant status | grep "aborted" > /
 then
 
 	vboxmanage startvm VPS_DEV --type headless
-	VAGRANT_VAGRANTFILE=Vagrantfile.VPS_DEV vagrant up
+	VAGRANT_VAGRANTFILE=Vagrantfile.VPS_DEV vagrant up --provision
 	entrar_vps
 
 else
