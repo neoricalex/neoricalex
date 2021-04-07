@@ -96,7 +96,7 @@ fi
 #sudo udevadm control --reload-rules
 #sudo systemctl restart libvirtd
 
-vagrant destroy -f --name NFDOS
+vagrant destroy -f NFDOS
 vagrant box remove neoricalex/nfdos
 virsh vol-list default
 vagrant status
