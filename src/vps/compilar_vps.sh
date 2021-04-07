@@ -7,7 +7,7 @@ criar_vps(){
 	if [ $? == "1" ];
 	then
 		echo "==> Checkar se a box base com o Ubuntu foi gerada..."
-		if [ ! -f "box/virtualbox/ubuntu-18.04-0.1.box" ];
+		if [ ! -f "box/virtualbox/VPS_DEV-0.1.box" ];
 		then
 
 			if [ -d "box/virtualbox" ]; then
@@ -31,7 +31,7 @@ criar_vps(){
 		vagrant box add \
 			--name neoricalex/ubuntu \
 			--provider virtualbox \
-			box/virtualbox/ubuntu-18.04-0.1.box
+			box/virtualbox/VPS_DEV-0.1.box
 	fi
 	echo "==> A neoricalex/ubuntu já existe."
 	
