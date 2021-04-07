@@ -100,11 +100,9 @@ fi
 #vagrant box remove neoricalex/nfdos
 #virsh vol-delete --pool default neoricalex-VAGRANTSLASH-nfdos_vagrant_box_image_0.img
 #virsh vol-delete --pool default NEORICALEX_NFDOS-vdb.qcow2
-vagrant up
-exit
 
-#echo "Compilando o NFDOS..."
-#make nfdos
+echo "Compilando o NFDOS..."
+make nfdos
 
 cd ..
 EOF
