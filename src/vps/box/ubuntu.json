@@ -68,7 +68,7 @@
         "execute_command": "echo '{{user `ssh_password`}}'|{{.Vars}} sudo -E -S bash '{{.Path}}'",
         "expect_disconnect": true,
         "scripts": [
-            "script/update.sh",
+            "script/atualizar.sh",
 			"script/instalar_pacotes.sh",
             "script/vagrant.sh",
             "script/virtualbox.sh",
