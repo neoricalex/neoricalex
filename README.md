@@ -166,7 +166,7 @@ Ao final da primeira fase ficaremos com:
 * Uma imagem OVF localizada em: *src/vps/nfdos/desktop/vagrant/virtualbox/NFDOS.ovf*
 * Uma imagem BOX para o provider libvirt do Vagrant localizada em: *src/vps/nfdos/desktop/vagrant/libvirt/NFDOS-x.x.x.box*
 * Uma imagem BOX para o provider virtualbox do Vagrant localizada em: *src/vps/nfdos/desktop/vagrant/virtualbox/NFDOS-x.x.x.box*
-* Um VPS do Vagrant identificado na CLI como VPS_DEV dísponivel online via a Vagrant Cloud no endereço: *neoricalex/ubuntu*
+* Um VPS ou Box do Vagrant identificado na CLI como VPS_DEV dísponivel online via a Vagrant Cloud no endereço: *neoricalex/ubuntu* e localmente em: *src/vps/box/virtualbox/ubuntu-18.04-0.1.box*
   * Dentro do VPS_DEV:
     * Um VPS do Vagrant para o provider virtualbox com o NFDOS instalado
       * Será usado como VPS de Staging Local

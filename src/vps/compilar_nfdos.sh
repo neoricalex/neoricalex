@@ -122,7 +122,7 @@ sudo apt purge -y adwaita-icon-theme geogebra-gnome gir1.2-gtd-1.0 \
 	libopenrawgnome7:amd64 libopenrawgnome-dev libreoffice-gnome libxine2-gnome:amd64 \
 	nautilus-sendto pidgin-gnome-keyring plymouth-theme-ubuntu-gnome-logo \
 	plymouth-theme-ubuntu-gnome-text ubuntu-gnome-wallpapers \
-	ubuntu-gnome-wallpapers-trusty ubuntu-gnome-wallpapers-utopic \
+	ubuntu-gnome-wallpapers-bionic ubuntu-gnome-wallpapers-utopic \
 	ubuntu-gnome-wallpapers-xenial ubuntu-gnome-wallpapers-yakkety
 
 sudo apt autopurge -y
@@ -235,11 +235,11 @@ ENTRAR_VPS
 if vagrant status | grep "not created" > /dev/null;
 then
 
-	echo -e "==> [ WORKAROUND ]: Certificar em como as permissões do KVM estão setadas. \n Não sei porquê, mas se setarmos as permissões nos requerimentos, elas de alguma forma, não ficam \"ativas\" \n"
-	sudo chown root:kvm /dev/kvm
-	sudo chmod -R 660 /dev/kvm
-	sudo udevadm control --reload-rules
-	sudo systemctl restart libvirtd
+	#echo -e "==> [ WORKAROUND ]: Certificar em como as permissões do KVM estão setadas. \n Não sei porquê, mas se setarmos as permissões nos requerimentos, elas de alguma forma, não ficam \"ativas\" \n"
+	#sudo chown root:kvm /dev/kvm
+	#sudo chmod -R 660 /dev/kvm
+	#sudo udevadm control --reload-rules
+	#sudo systemctl restart libvirtd
 
 	compilar_iso
 

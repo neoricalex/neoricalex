@@ -1,5 +1,8 @@
 #!/bin/bash -eu
 
+
+sed -i 's/http:\/\/us./http:\/\/br./g' /etc/apt/sources.list
+
 echo "==> Instalar os pacotes em Português"
 apt install -y \
 	language-pack-pt \
