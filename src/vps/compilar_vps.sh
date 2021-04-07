@@ -90,16 +90,16 @@ then
 	rm packer_1.6.4_linux_amd64.zip
 fi
 
-#echo -e "==> [ WORKAROUND ]: Certificar em como as permissões do KVM estão setadas. \n Não sei porquê, mas se setarmos as permissões nos requerimentos, elas de alguma forma, não ficam \"ativas\" \n"
-#sudo chown root:kvm /dev/kvm
-#sudo chmod -R 660 /dev/kvm
-#sudo udevadm control --reload-rules
-#sudo systemctl restart libvirtd
+echo -e "==> [ WORKAROUND ]: Certificar em como as permissões do KVM estão setadas. \n Não sei porquê, mas se setarmos as permissões nos requerimentos, elas de alguma forma, não ficam \"ativas\" \n"
+sudo chown root:kvm /dev/kvm
+sudo chmod -R 660 /dev/kvm
+sudo udevadm control --reload-rules
+sudo systemctl restart libvirtd
 
-#vagrant destroy -f
-#vagrant box remove neoricalex/nfdos
-#virsh vol-delete --pool default neoricalex-VAGRANTSLASH-nfdos_vagrant_box_image_0.img
-#virsh vol-delete --pool default NEORICALEX_NFDOS-vdb.qcow2
+vagrant destroy -f
+vagrant box remove neoricalex/nfdos
+virsh vol-delete --pool default neoricalex-VAGRANTSLASH-nfdos_vagrant_box_image_0.img
+virsh vol-delete --pool default NEORICALEX_NFDOS-vdb.qcow2
 
 echo "Compilando o NFDOS..."
 make nfdos
