@@ -118,6 +118,7 @@ then
 
 	vboxmanage startvm VPS_DEV --type headless
 	VAGRANT_VAGRANTFILE=Vagrantfile.VPS_DEV vagrant up --provision
+	criar_vps
 	entrar_vps
 
 else
