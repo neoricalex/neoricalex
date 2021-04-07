@@ -1,4 +1,5 @@
  - hosts: lan
+   any_errors_fatal: true
    become: true
    pre_tasks:
      - name: Atualizar repositórios
@@ -9,3 +10,6 @@
      - include: tasks/packages.yml
      - include: tasks/users.yml
      - include: tasks/cron.yml
+   roles: 
+    - { role: prepare }
+    - { role: wireguard }
