@@ -76,6 +76,9 @@ cd /var/lib/neoricalex
 echo "Executar o ansible..."
 ansible-pull -i src/vps/nfdos/desktop/ansible/inventory.ini -C master -U https://github.com/neoricalex/neoricalex.git src/vps/nfdos/desktop/ansible/local.yml 
 
+echo "Infos do Wireguard..."
+sudo wg show wg0
+
 exit
 # TODO: Passar para o Ansible ...
 
