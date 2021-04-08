@@ -133,10 +133,10 @@ then
 	sudo systemctl restart libvirtd
 fi
 
-echo "==> [ DEBUG ] Certificando em como estamos em uma instalação limpa..."
-vagrant destroy -f
-vagrant box remove neoricalex/nfdos
-virsh vol-delete --pool default neoricalex-VAGRANTSLASH-nfdos_vagrant_box_image_0.img
+#echo "==> [ DEBUG ] Certificando em como estamos em uma instalação limpa..."
+#vagrant destroy -f
+#vagrant box remove neoricalex/nfdos
+#virsh vol-delete --pool default neoricalex-VAGRANTSLASH-nfdos_vagrant_box_image_0.img
 
 echo "Compilando o NFDOS..."
 make nfdos

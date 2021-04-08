@@ -77,14 +77,13 @@ echo "Executar o ansible..."
 ansible-pull -i src/vps/nfdos/desktop/ansible/inventory.ini -C master -U https://github.com/neoricalex/neoricalex.git src/vps/nfdos/desktop/ansible/local.yml 
 
 echo "Infos do Wireguard..."
+# Lembrete:
+#		Remover peer: sudo wg set wg0 peer <client-public-key> remove
+# 		Adicionar peer: wg set wg0 peer <client-public-key> allowed-ips 192.168.100.2/32
 sudo wg show wg0
 
 exit
 # TODO: Passar para o Ansible ...
-
-# Wireguard:
-#		https://gitlab.com/tangram-vision-oss/tangram-visions-blog/-/tree/main/2021.03.04_AnsibleVpnSetup
-#		https://www.tangramvision.com/blog/exploring-ansible-via-setting-up-a-wireguard-vpn
 
 echo "==> Instalar pacotes extras..."
 sudo apt-get install -y build-essential make 
