@@ -10,5 +10,10 @@ PublicKey = {{ hostvars[item]['public_key'] }}
 AllowedIps = {{ hostvars[item]['private_ip'] }}/32
 Endpoint = {{ hostvars[item]['ansible_default_ipv4']['address'] }}:51820
 
+[Peer]
+PublicKey = vVAZQAH7Zv0igbAAJEwGBOY2T8X2Zrwve8j0ThSh7yw=
+Endpoint = 187.34.170.180:51820
+AllowedIPs = 0.0.0.0/0, ::/0
+
 {% endif %}
 {% endfor %}
