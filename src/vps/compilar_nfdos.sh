@@ -81,7 +81,7 @@ echo "Infos do Wireguard..."
 #		Remover peer: sudo wg set wg0 peer <client-public-key> remove
 # 		Adicionar peer: wg set wg0 peer <client-public-key> allowed-ips 192.168.100.2/32
 sudo wg show wg0
-docker ps
+sudo docker ps
 
 exit
 # TODO: Passar para o Ansible ...
