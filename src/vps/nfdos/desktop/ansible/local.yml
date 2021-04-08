@@ -1,6 +1,8 @@
  - hosts: lan
    any_errors_fatal: true
    become: true
+   vars_files:
+     - vars/default.yml
    pre_tasks:
      - name: Atualizar repositórios
        apt:
