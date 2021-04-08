@@ -1,5 +1,6 @@
 ---
-- fail: 
+- name: Falha a instalação do role wireguard se não estivermos em uma distribuição Ubuntu
+  fail:
     msg: "Only Debian supported for now"
   when: ansible_distribution != 'Ubuntu'
 
